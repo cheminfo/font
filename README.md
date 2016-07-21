@@ -7,5 +7,5 @@ Inkscape has a template for this: File => Templates => Fontforge Glyph
 
 ## Build the fonts
 
-Run `node index.js`.  
+Run `npm run build`.  
 The fonts will be generated in the `dest` directory along with a CSS and HTML files to check the results.
