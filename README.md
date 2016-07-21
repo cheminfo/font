@@ -8,4 +8,5 @@ Inkscape has a template for this: File => Templates => Fontforge Glyph
 ## Build the fonts
 
 Run `npm run build`.  
-The fonts will be generated in the `dest` directory along with a CSS and HTML files to check the results.
+The fonts will be generated in the `dest` directory along with a CSS and HTML files to check the results. Just open the file ```dest/cheminfo.html``` in your browser to see the result.
+
