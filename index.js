@@ -9,7 +9,7 @@ const files = fs.readdirSync(__dirname + '/svg');
 
 webfontsGenerator({
     files: files.map(file => path.join('svg', file)),
-    dest: 'dest/',
+    dest: 'dist/',
     html: true,
     fontName: 'cheminfo',
     templateOptions: {
