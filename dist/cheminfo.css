@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "cheminfo";
+	src: url("cheminfo.eot?814378d844e8124d4173a96cd3cd6c3d?#iefix") format("embedded-opentype"),
+url("cheminfo.woff?814378d844e8124d4173a96cd3cd6c3d") format("woff");
+}
+
+.ci-icon {
+	line-height: 1;
+}
+
+.ci-icon:before {
+	font-family: cheminfo !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.ci-icon-nmr-13c:before {
+	content: "\f101";
+}
+.ci-icon-nmr-1h:before {
+	content: "\f102";
+}
+.ci-icon-nmr-1h13c:before {
+	content: "\f103";
+}
+.ci-icon-nmr-1h1h:before {
+	content: "\f104";
+}
+.ci-icon-test1:before {
+	content: "\f105";
+}
+.ci-icon-test2:before {
+	content: "\f106";
+}
