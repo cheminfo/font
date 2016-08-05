@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    viewBox="0 0 1000 1000"
-   sodipodi:docname="13C.svg">
+   sodipodi:docname="nmr-13c.svg">
   <defs
      id="defs5498" />
   <sodipodi:namedview
@@ -31,10 +31,10 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.64205296"
-     inkscape:cx="-220.82772"
+     inkscape:cx="261.04688"
      inkscape:cy="564.06871"
-     inkscape:window-x="148"
-     inkscape:window-y="96"
+     inkscape:window-x="-66"
+     inkscape:window-y="28"
      inkscape:current-layer="layer1"
      inkscape:window-maximized="0"
      inkscape:snap-text-baseline="true">
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,95 +63,29 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3390"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'Sans, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;"
-       inkscape:transform-center-x="-8.8105727"
-       inkscape:transform-center-y="174.00881"><flowRegion
-         id="flowRegion3392"><rect
-           id="rect3394"
-           width="281.93832"
-           height="273.12775"
-           x="348.01761"
-           y="471.36563"
-           style="-inkscape-font-specification:'Sans, Normal';font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:40px;text-anchor:start;text-align:start;writing-mode:lr;line-height:100;" /></flowRegion><flowPara
-         id="flowPara3396">H</flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="583.70044"
-       y="215.85902"
-       id="text3398"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3400"
-         x="583.70044"
-         y="215.85902" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="618.94275"
-       y="191.62996"
-       id="text3402"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3404"
-         x="618.94275"
-         y="191.62996" /></text>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3406"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
-         id="flowRegion3408"><rect
-           id="rect3410"
-           width="6.6079297"
-           height="94.713654"
-           x="387.66519"
-           y="504.40527" /></flowRegion><flowPara
-         id="flowPara3412" /></flowRoot>    <text
-       xml:space="preserve"
+    <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:750px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="340"
-       y="800"
-       id="text3414"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3416"
-         x="340"
-         y="800"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:750px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">C</tspan></text>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3418"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
-         id="flowRegion3420"><rect
-           id="rect3422"
-           width="277.23569"
-           height="271.00568"
-           x="35.82259"
-           y="76.400177" /></flowRegion><flowPara
-         id="flowPara3424"
-         style="-inkscape-font-specification:'Sans, Bold';font-family:Sans;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:250px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%">1</flowPara></flowRoot>    <text
-       sodipodi:linespacing="125%"
-       id="text3542"
-       y="450"
-       x="-32"
+       id="text3414">
+      <path
+         d="m 752.35352,580.63965 145.38574,43.94531 q -14.64844,61.15723 -46.14258,102.17285 -31.49414,41.01563 -78.36914,61.88965 -46.50879,20.87402 -118.65234,20.87402 -87.52442,0 -143.18848,-25.26855 -55.29785,-25.63477 -95.58106,-89.72168 -40.2832,-64.08691 -40.2832,-164.0625 0,-133.30078 70.67871,-204.71191 71.04492,-71.77735 200.6836,-71.77735 101.44043,0 159.30175,41.01563 58.22754,41.01562 86.42578,125.97656 L 746.12793,453.56445 Q 738.4375,429.02832 730.01465,417.67578 716.09863,398.63281 695.95703,388.37891 675.81543,378.125 650.91309,378.125 q -56.39649,0 -86.42579,45.41016 -22.70507,33.6914 -22.70507,105.83496 0,89.35547 27.09961,122.68066 27.09961,32.95899 76.17187,32.95899 47.60742,0 71.77734,-26.7334 24.53614,-26.7334 35.52247,-77.63672 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:750px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4164" />
+    </g>
+    <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:375px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="450"
-         x="-32"
-         id="tspan3544"
-         sodipodi:role="line">1</tspan></text>
-    <text
-       xml:space="preserve"
+       id="text3542">
+      <path
+         d="m 152.38721,176.98975 0,273.01025 -75.439456,0 0,-178.89404 q -18.310547,13.91601 -35.522461,22.52197 -17.028809,8.60596 -42.8466797,16.47949 l 0,-61.15722 Q 36.664551,236.68213 57.72168,219.47021 78.778809,202.2583 90.680664,176.98975 l 61.706546,0 z"
+         style=""
+         id="path4161" />
+    </g>
+    <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:375px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="150"
-       y="450"
-       id="text3567"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3569"
-         x="150"
-         y="450">3</tspan></text>
+       id="text3567">
+      <path
+         d="m 237.70752,259.2041 -70.49561,-12.63428 q 8.78907,-33.6914 33.69141,-51.63574 25.08545,-17.94433 70.86182,-17.94433 52.55127,0 75.98877,19.59228 23.4375,19.59229 23.4375,49.25537 0,17.39502 -9.52149,31.49414 -9.52148,14.09912 -28.74756,24.71924 15.56397,3.84522 23.80371,8.97217 13.3667,8.23975 20.69092,21.78955 7.50733,13.3667 7.50733,32.04346 0,23.4375 -12.26807,45.04394 -12.26807,21.42334 -35.33936,33.14209 -23.07128,11.53565 -60.60791,11.53565 -36.62109,0 -57.86132,-8.60596 -21.05713,-8.60596 -34.79004,-25.08545 -13.54981,-16.6626 -20.87403,-41.74805 l 74.52393,-9.88769 q 4.39453,22.52197 13.5498,31.31103 9.33838,8.60596 23.62061,8.60596 15.01465,0 24.90234,-10.98633 10.0708,-10.98633 10.0708,-29.29687 0,-18.67676 -9.70459,-28.93067 -9.52148,-10.2539 -26.00097,-10.2539 -8.78906,0 -24.16992,4.39453 l 3.84521,-53.28369 q 6.22559,0.91552 9.70459,0.91552 14.64844,0 24.35303,-9.33837 9.88769,-9.33838 9.88769,-22.15577 0,-12.26806 -7.32422,-19.59228 -7.32421,-7.32422 -20.1416,-7.32422 -13.18359,0 -21.42334,8.05664 -8.23974,7.87354 -11.16943,27.83203 z"
+         style=""
+         id="path4158" />
+    </g>
   </g>
 </svg>
