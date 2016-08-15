@@ -1,8 +1,11 @@
 {
   "name": "cheminfo-font",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Cheminfo font and CSS to include it in web pages",
+  "main": "dist/cheminfo.css",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node index.js"
