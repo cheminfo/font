@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "cheminfo";
-	src: url("cheminfo.eot?6e79ebbba32bdbfe22a53f204976c11d?#iefix") format("embedded-opentype"),
-url("cheminfo.woff?6e79ebbba32bdbfe22a53f204976c11d") format("woff");
+	src: url("cheminfo.eot?d9c61a1f0b8634bf6d31de7880b650d9?#iefix") format("embedded-opentype"),
+url("cheminfo.woff?d9c61a1f0b8634bf6d31de7880b650d9") format("woff");
 }
 
 .ci-icon {
@@ -15,48 +15,45 @@ url("cheminfo.woff?6e79ebbba32bdbfe22a53f204976c11d") format("woff");
 	vertical-align: top;
 }
 
-.ci-icon-mass-monoisotopic:before {
+.ci-icon-nmr-13c:before {
 	content: "\f101";
 }
-.ci-icon-nmr-13c:before {
+.ci-icon-nmr-1h:before {
 	content: "\f102";
 }
-.ci-icon-nmr-1h:before {
+.ci-icon-nmr-1h13c:before {
 	content: "\f103";
 }
-.ci-icon-nmr-1h13c:before {
+.ci-icon-nmr-1h1h:before {
 	content: "\f104";
 }
-.ci-icon-nmr-1h1h:before {
+.ci-icon-nmr-assignment:before {
 	content: "\f105";
 }
-.ci-icon-nmr-assignment:before {
+.ci-icon-nmr-overlay:before {
 	content: "\f106";
 }
-.ci-icon-nmr-overlay:before {
+.ci-icon-nmr-peak-picking:before {
 	content: "\f107";
 }
-.ci-icon-nmr-peak-picking:before {
+.ci-icon-nmr-search:before {
 	content: "\f108";
 }
-.ci-icon-nmr-search:before {
+.ci-icon-structure-3d-model:before {
 	content: "\f109";
 }
-.ci-icon-structure-3d-model:before {
+.ci-icon-structure-conformers:before {
 	content: "\f10a";
 }
-.ci-icon-structure-conformers:before {
+.ci-icon-structure-diastereotopic:before {
 	content: "\f10b";
 }
-.ci-icon-structure-diastereotopic:before {
+.ci-icon-structure-search:before {
 	content: "\f10c";
 }
-.ci-icon-structure-search:before {
+.ci-icon-test1:before {
 	content: "\f10d";
 }
-.ci-icon-test1:before {
-	content: "\f10e";
-}
 .ci-icon-test2:before {
-	content: "\f10f";
+	content: "\f10e";
 }
