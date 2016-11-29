@@ -27,8 +27,8 @@
 
 		@font-face {
 	font-family: "cheminfo";
-	src: url("cheminfo.eot?9a95afa17fefa79cfba2fe62c87ff07a?#iefix") format("embedded-opentype"),
-url("cheminfo.woff?9a95afa17fefa79cfba2fe62c87ff07a") format("woff");
+	src: url("cheminfo.eot?2ed71f3e79d9e52c2b7e7d61ae4db21e?#iefix") format("embedded-opentype"),
+url("cheminfo.woff?2ed71f3e79d9e52c2b7e7d61ae4db21e") format("woff");
 }
 
 .ci-icon {
@@ -42,65 +42,80 @@ url("cheminfo.woff?9a95afa17fefa79cfba2fe62c87ff07a") format("woff");
 	vertical-align: top;
 }
 
-.ci-icon-mass-monoisotopic:before {
+.ci-icon-edit:before {
 	content: "\f101";
 }
-.ci-icon-nmr-13c:before {
+.ci-icon-mass-monoisotopic:before {
 	content: "\f102";
 }
-.ci-icon-nmr-1h:before {
+.ci-icon-nmr-13c:before {
 	content: "\f103";
 }
-.ci-icon-nmr-1h13c:before {
+.ci-icon-nmr-1h:before {
 	content: "\f104";
 }
-.ci-icon-nmr-1h1h:before {
+.ci-icon-nmr-1h13c:before {
 	content: "\f105";
 }
-.ci-icon-nmr-assignment:before {
+.ci-icon-nmr-1h1h:before {
 	content: "\f106";
 }
-.ci-icon-nmr-impurities:before {
+.ci-icon-nmr-assignment:before {
 	content: "\f107";
 }
-.ci-icon-nmr-multiplet:before {
+.ci-icon-nmr-impurities:before {
 	content: "\f108";
 }
-.ci-icon-nmr-overlay:before {
+.ci-icon-nmr-multiplet:before {
 	content: "\f109";
 }
-.ci-icon-nmr-peak-picking:before {
+.ci-icon-nmr-overlay:before {
 	content: "\f10a";
 }
-.ci-icon-nmr-search:before {
+.ci-icon-nmr-peak-picking:before {
 	content: "\f10b";
 }
-.ci-icon-nmr-simulator:before {
+.ci-icon-nmr-search:before {
 	content: "\f10c";
 }
-.ci-icon-structure-3d-model:before {
+.ci-icon-nmr-simulator:before {
 	content: "\f10d";
 }
-.ci-icon-structure-conformers:before {
+.ci-icon-structure-3d-model:before {
 	content: "\f10e";
 }
-.ci-icon-structure-diastereotopic:before {
+.ci-icon-structure-conformers:before {
 	content: "\f10f";
 }
-.ci-icon-structure-search:before {
+.ci-icon-structure-diastereotopic:before {
 	content: "\f110";
 }
-.ci-icon-test1:before {
+.ci-icon-structure-search:before {
 	content: "\f111";
 }
-.ci-icon-test2:before {
+.ci-icon-test1:before {
 	content: "\f112";
+}
+.ci-icon-test2:before {
+	content: "\f113";
+}
+.ci-icon-test3:before {
+	content: "\f114";
+}
+.ci-icon-test4:before {
+	content: "\f115";
 }
 
 	</style>
 </head>
 <body>
 	<h1>cheminfo</h1>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class="ci-icon ci-icon-edit"></span>
+		</span>
+		<span>edit</span>
+	</div>
 	<div class="preview">
 		<span class="preview__icon">
 			<span class="ci-icon ci-icon-mass-monoisotopic"></span>
@@ -208,6 +223,18 @@ url("cheminfo.woff?9a95afa17fefa79cfba2fe62c87ff07a") format("woff");
 			<span class="ci-icon ci-icon-test2"></span>
 		</span>
 		<span>test2</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class="ci-icon ci-icon-test3"></span>
+		</span>
+		<span>test3</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class="ci-icon ci-icon-test4"></span>
+		</span>
+		<span>test4</span>
 	</div>
 </body>
 </html>
