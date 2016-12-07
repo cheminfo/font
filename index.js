@@ -3,9 +3,11 @@
 const fs = require('fs');
 const path = require('path');
 const webfontsGenerator = require('webfonts-generator');
+var files = fs.readdirSync(__dirname + '/svg');
 
-const files = fs.readdirSync(__dirname + '/svg');
-
+files=files.filter(function(file) {
+    return file.match(/svg$/);
+})
 
 webfontsGenerator({
     files: files.map(file => path.join('svg', file)),
