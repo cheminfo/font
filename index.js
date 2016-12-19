@@ -15,7 +15,7 @@ appendFolder(source);
 appendFooterHtml();
 
 fs.writeFileSync(destination+'style.css', resultsCss.join('\r\n'));
-fs.writeFileSync(destination+'test.html', resultsHtml.join('\r\n'));
+fs.writeFileSync(destination+'index.html', resultsHtml.join('\r\n'));
 
 
 function appendFolder(folder) {
@@ -26,7 +26,6 @@ function appendFolder(folder) {
             appendFolder(fullname);
         } else if (file.match(/svg$/)) {
             var icon=fullname.replace(source+'/','').replace(/\//g,'-').replace(/\..[^\.]*$/g,'');
-            console.log(icon);
             var base64 = fs.readFileSync(fullname, 'base64');
             var dataUrl = 'data:image/svg+xml;base64,' + base64;
             resultsCss.push(`
