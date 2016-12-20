@@ -4,6 +4,7 @@ const fs = require('fs');
 const prefix='ci-icon';
 const source=__dirname + '/svg';
 const destination=__dirname + '/dist/';
+const destination_html=__dirname + '/docs/';
 
 const SVGO = require('svgo');
 const svgo = new SVGO(/*{ custom config object }*/);
@@ -30,7 +31,7 @@ appendFolder(source);
 appendFooterHtml(resultsHtml);
 
 fs.writeFileSync(destination+'style.css', resultsCss.join('\r\n'));
-fs.writeFileSync(destination+'index.html', resultsHtml.join('\r\n'));
+fs.writeFileSync(destination_html+'index.html', resultsHtml.join('\r\n'));
 
 
 function appendFolder(folder) {

@@ -37,9 +37,7 @@ function appendFooterHtml(resultsHtml) {
 function appendEntryHtml(resultsHtml, prefix, icon) {
     resultsHtml.push(`
 <div class="preview" style="font-size: 12px">
-	<span class="preview_icon">
-		<span class="${prefix} ${prefix}-${icon}"></span>
-	</span>
+	<span class="preview_icon ${prefix} ${prefix}-${icon}"></span>
 	<span>${icon}</span>
 </div>            
             `)
