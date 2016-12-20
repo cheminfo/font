@@ -5,14 +5,29 @@ const prefix='ci-icon';
 const source=__dirname + '/svg';
 const destination=__dirname + '/dist/';
 
+const SVGO = require('svgo-sync');
+const svgo = new SVGO(/*{ custom config object }*/);
+const btoa = require('btoa');
+
+const {
+    appendHeaderHtml,
+    appendFooterHtml,
+    appendEntryHtml
+} = require('./util/html.js');
+
+const {
+    appendHeaderCss,
+    appendEntryCss
+} = require('./util/css.js');
+
+
+
 var resultsCss=[];
 var resultsHtml=[];
-appendHeaderCss();
-appendHeaderHtml();
-
+appendHeaderCss(resultsCss, prefix);
+appendHeaderHtml(resultsHtml);
 appendFolder(source);
-
-appendFooterHtml();
+appendFooterHtml(resultsHtml);
 
 fs.writeFileSync(destination+'style.css', resultsCss.join('\r\n'));
 fs.writeFileSync(destination+'index.html', resultsHtml.join('\r\n'));
@@ -20,76 +35,23 @@ fs.writeFileSync(destination+'index.html', resultsHtml.join('\r\n'));
 
 function appendFolder(folder) {
     var files = fs.readdirSync(folder);
+    
     files.forEach(function(file) {
         var fullname=folder+'/'+file;
         if (fs.lstatSync(fullname).isDirectory()) {
             appendFolder(fullname);
         } else if (file.match(/svg$/)) {
             var icon=fullname.replace(source+'/','').replace(/\//g,'-').replace(/\..[^\.]*$/g,'');
-            var base64 = fs.readFileSync(fullname, 'base64');
-            var dataUrl = 'data:image/svg+xml;base64,' + base64;
-            resultsCss.push(`
-.${prefix}-${icon} {
-        content: url('${dataUrl}');
-}
-     `)
-
-            resultsHtml.push(`
-<div class="preview" style="font-size: 12px">
-	<span class="preview_icon">
-		<span class="${prefix} ${prefix}-${icon}"></span>
-	</span>
-	<span>${icon}</span>
-</div>            
-            `)
+            var svg = fs.readFileSync(fullname, 'utf-8');
+            
+            svgo.optimize(svg, function(svg) {
+                var dataUrl = 'data:image/svg+xml;base64,' + btoa(svg.data);
+                appendEntryCss(resultsCss,dataUrl, prefix, icon);
+                appendEntryHtml(resultsHtml,prefix, icon);
+            })
         }
-    })
-}
+    });
 
-
-
-function appendHeaderCss() {
-    resultsCss.push(`
-.${prefix} {
-        width: 1em;
-        height: 1em;
-}
-    `);
-}
-
-
-function appendHeaderHtml() {
-    resultsHtml.push(`
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<style>
-	body {
-			font-family: sans-serif;
-			margin: 0;
-			padding: 10px 20px;
-		}
-
-		.preview {
-			line-height: 1.5em;
-		}
-		.preview_icon {
-		    font-size: 2em
-		}
-
-</style>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-	
-    `);
-}
-
-function appendFooterHtml() {
-    resultsHtml.push(`
-</body>
-</html>	
-    `);
 }
 
 
