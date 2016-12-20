@@ -1,6 +1,6 @@
 {
   "name": "cheminfo-font",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Cheminfo font and CSS to include it in web pages",
   "main": "dist/cheminfo.css",
   "files": [
@@ -20,9 +20,13 @@
     "url": "https://github.com/cheminfo/font/issues"
   },
   "homepage": "https://github.com/cheminfo/font#readme",
+<<<<<<< HEAD
   "devDependencies": {},
   "dependencies": {
     "btoa": "^1.1.2",
     "svgo": "^0.7.1"
   }
+=======
+  "devDependencies": {}
+>>>>>>> d025eeaea3cf94d5c22ad0775764c5c652fba9fd
 }
