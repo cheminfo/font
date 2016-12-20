@@ -20,13 +20,9 @@
     "url": "https://github.com/cheminfo/font/issues"
   },
   "homepage": "https://github.com/cheminfo/font#readme",
-<<<<<<< HEAD
   "devDependencies": {},
   "dependencies": {
     "btoa": "^1.1.2",
     "svgo": "^0.7.1"
   }
-=======
-  "devDependencies": {}
->>>>>>> d025eeaea3cf94d5c22ad0775764c5c652fba9fd
 }
