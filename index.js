@@ -5,7 +5,7 @@ const prefix='ci-icon';
 const source=__dirname + '/svg';
 const destination=__dirname + '/dist/';
 
-const SVGO = require('svgo-sync');
+const SVGO = require('svgo');
 const svgo = new SVGO(/*{ custom config object }*/);
 const btoa = require('btoa');
 
