@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg4152"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   viewBox="0 0 1000 1000"
+   sodipodi:docname="scatter plot.svg">
+  <defs
+     id="defs5498">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4233"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path4235" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4755"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path4757" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4164"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4182"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="838"
+     inkscape:window-width="1440"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.5"
+     inkscape:cx="357.82213"
+     inkscape:cy="459.29481"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:current-layer="svg4152"
+     inkscape:window-maximized="1"
+     objecttolerance="20">
+    <sodipodi:guide
+       orientation="horizontal"
+       position="200"
+       id="guide5596" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3430"
+       empspacing="50" />
+    <sodipodi:guide
+       position="550,1000"
+       orientation="0,1"
+       id="guide4169" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5594">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.66044337;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     id="g6576"
+     transform="matrix(90.848059,0,0,90.848059,129.655,53.614671)">
+    <path
+       inkscape:connector-curvature="0"
+       id="_219440016"
+       class="fil0 str0"
+       d="m 1.4735,0.289989 5.18943,0 c 0.650967,0 1.18351,0.532545 1.18351,1.18351 l 0,5.18943 c 0,0.650967 -0.532545,1.18351 -1.18351,1.18351 l -5.18943,0 c -0.650967,0 -1.18351,-0.532545 -1.18351,-1.18351 l 0,-5.18943 c 0,-0.650967 0.532545,-1.18351 1.18351,-1.18351 z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.66044337;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     id="g6579"
+     transform="matrix(90.848059,0,0,90.848059,129.655,53.614671)">
+    <path
+       inkscape:connector-curvature="0"
+       class="fil0 str1"
+       d="m 4.06823,0.289989 2.59471,0 c 0.650967,0 1.18351,0.532545 1.18351,1.18351 l 0,2.59471 -3.77822,0 0,-3.77822 z"
+       id="path6581" />
+    <path
+       inkscape:connector-curvature="0"
+       id="1"
+       class="fil1"
+       d="m 4.06823,0.289989 2.59471,0 c 0.650967,0 1.18351,0.532545 1.18351,1.18351 l 0,2.59471 -3.77822,0 0,-3.77822 z" />
+  </g>
+  <g
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     id="g6584"
+     transform="matrix(90.848059,0,0,90.848059,129.655,53.614671)">
+    <path
+       inkscape:connector-curvature="0"
+       class="fil0 str1"
+       d="m 4.06823,7.84645 -2.59472,0 C 0.822543,7.84645 0.29,7.313905 0.29,6.66294 l 0,-2.59472 3.77824,0 0,3.77824 z"
+       id="path6586" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6588"
+       class="fil1"
+       d="m 4.06823,7.84645 -2.59472,0 C 0.822543,7.84645 0.29,7.313905 0.29,6.66294 l 0,-2.59472 3.77824,0 0,3.77824 z" />
+  </g>
+</svg>
