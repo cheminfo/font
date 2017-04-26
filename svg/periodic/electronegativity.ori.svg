@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.92.1 r15371"
    viewBox="0 0 1000 1000"
-   sodipodi:docname="titration_a.svg">
+   sodipodi:docname="electronegativity.ori.svg">
   <defs
      id="defs5498">
     <inkscape:perspective
@@ -102,8 +102,8 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.8125"
-     inkscape:cx="517.32721"
-     inkscape:cy="658.39238"
+     inkscape:cx="323.7265"
+     inkscape:cy="559.93084"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:current-layer="svg4152"
@@ -133,78 +133,103 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path
+  <rect
      style="fill:#000000;fill-opacity:0"
-     d="m 469.9,100 h 150 v 50 h -150 z"
      id="rect6365"
-     inkscape:connector-curvature="0" />
-  <g
-     aria-label=" "
+     width="150"
+     height="50"
+     x="500"
+     y="100" />
+  <rect
+     style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect6391"
+     width="788.88"
+     height="935.63605"
+     x="115.938"
+     y="31.18198" />
+  <text
+     xml:space="preserve"
      style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     id="text4555"
-     transform="translate(-30.1)" />
-  <g
-     aria-label=" "
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="-450"
+     y="350"
+     id="text4555"><tspan
+       sodipodi:role="line"
+       id="tspan4553"
+       x="-450"
+       y="350"
+       style="font-size:40px;line-height:1.25"> </tspan></text>
+  <flowRoot
+     xml:space="preserve"
      id="flowRoot4529"
-     transform="translate(-30.1)" />
-  <g
-     aria-label=" "
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+       id="flowRegion4531"><rect
+         id="rect4533"
+         width="400"
+         height="250"
+         x="-650"
+         y="300" /></flowRegion><flowPara
+       id="flowPara4535"
+       style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
      id="flowRoot74"
-     transform="translate(-30.1)" />
-  <g
-     aria-label=" "
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+       id="flowRegion76"><rect
+         id="rect78"
+         width="600"
+         height="600"
+         x="-450"
+         y="200" /></flowRegion><flowPara
+       id="flowPara80"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:426.66665649px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"> </flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
      id="flowRoot90"
-     transform="translate(-30.1)" />
-  <g
-     aria-label=" "
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+       id="flowRegion92"><rect
+         id="rect94"
+         width="550"
+         height="600"
+         x="-450"
+         y="100" /></flowRegion><flowPara
+       id="flowPara96"
+       style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot110"
+     style="font-style:normal;font-weight:normal;font-size:693.33331299px;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     transform="translate(782.46154,33.230774)"><flowRegion
+       id="flowRegion112"
+       style="font-size:693.33331299px"><rect
+         id="rect114"
+         width="748"
+         height="793.84613"
+         x="-450"
+         y="150"
+         style="font-size:693.33331299px" /></flowRegion><flowPara
+       id="flowPara116"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:693.33331299px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'">F</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot118"
      style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     transform="translate(977.23079,-183.84615)"><flowRegion
+       id="flowRegion120"><rect
+         id="rect122"
+         width="550"
+         height="400"
+         x="-400"
+         y="250" /></flowRegion><flowPara
+       id="flowPara124"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:226.66667175px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'">4.0</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
      id="flowRoot126"
-     transform="translate(-30.1)" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4418"
-     d="M 610.37113,722.1953 V 581.68283 H 639.7728 V 722.1953 Z"
-     style="fill:none;stroke:#000000;stroke-width:17.09413528px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4420"
-     d="M 399.20155,668.63336 H 600.4566 V 635.24477 H 399.20155 Z"
-     style="fill:none;stroke:#000000;stroke-width:17.09413528px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4422"
-     d="m 403.41808,122.0781 h 192.70786 v 388.60537 l -47.86359,56.98062 V 750.11798 L 499.8288,818.83393 451.28145,750.11798 V 567.66409 l -47.86337,-56.98062 z"
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:37.26499939;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4424"
-     d="M 520,205.95348 H 403.41808"
-     style="fill:none;stroke:#000000;stroke-width:37.26521301px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4426"
-     d="M 520,277.9768 H 403.41808"
-     style="fill:none;stroke:#000000;stroke-width:37.26521301px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4428"
-     d="M 520,350 H 403.41808"
-     style="fill:none;stroke:#000000;stroke-width:37.26521301px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4430"
-     d="M 520,422.02366 H 403.41808"
-     style="fill:none;stroke:#000000;stroke-width:37.26499939;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4432"
-     d="m 597.60754,684.47618 h 55.04298 v -65.07423 h -55.04298 z"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:17.09399986;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-</svg>
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+       id="flowRegion128"><rect
+         id="rect130"
+         width="50"
+         height="50"
+         x="1150"
+         y="450" /></flowRegion><flowPara
+       id="flowPara132"
+       style="font-size:40px;line-height:1.25"> </flowPara></flowRoot></svg>
