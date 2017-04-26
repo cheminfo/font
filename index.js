@@ -35,7 +35,9 @@ fs.writeFileSync(destination_html+'index.html', resultsHtml.join('\r\n'));
 fs.writeFileSync(destination_html+'style.css', resultsCss.join('\r\n'));
 
 function appendFolder(folder) {
-    var files = fs.readdirSync(folder);
+    var files = fs.readdirSync(folder).filter(
+        a => a.indexOf('.ori.')===-1
+    );
 
     files.forEach(function(file) {
         var fullname=folder+'/'+file;

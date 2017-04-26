@@ -13,7 +13,7 @@
    height="1000"
    id="svg4152"
    version="1.1"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.91 r13725"
    viewBox="0 0 1000 1000"
    sodipodi:docname="mineral-name-formula.svg">
   <defs
@@ -83,8 +83,8 @@
        id="EMFhbasepattern" />
   </defs>
   <sodipodi:namedview
-     inkscape:window-height="1005"
-     inkscape:window-width="1920"
+     inkscape:window-height="1107"
+     inkscape:window-width="2044"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -95,10 +95,10 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.62225397"
-     inkscape:cx="500"
+     inkscape:cx="121.53717"
      inkscape:cy="552.87485"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-x="4"
+     inkscape:window-y="1"
      inkscape:current-layer="svg4152"
      inkscape:window-maximized="1"
      objecttolerance="20"
@@ -130,74 +130,33 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <rect
+  <path
      style="fill:#000000;fill-opacity:0"
-     id="rect6365"
-     width="150"
-     height="50"
-     x="500"
-     y="100" />
-  <flowRoot
-     xml:space="preserve"
-     id="flowRoot37"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
-       id="flowRegion39"><rect
-         id="rect41"
-         width="50"
-         height="50"
-         x="250"
-         y="50" /></flowRegion><flowPara
-       id="flowPara43" /></flowRoot>  <flowRoot
-     xml:space="preserve"
-     id="flowRoot53"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
-       id="flowRegion55"><rect
-         id="rect57"
-         width="100"
-         height="50"
-         x="250"
-         y="100" /></flowRegion><flowPara
-       id="flowPara59" /></flowRoot>  <flowRoot
-     xml:space="preserve"
-     id="flowRoot69"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
-       id="flowRegion71"><rect
-         id="rect73"
-         width="200"
-         height="250"
-         x="1100"
-         y="650" /></flowRegion><flowPara
-       id="flowPara75" /></flowRoot>  <text
-     xml:space="preserve"
+     d="m 500,100 150,0 0,50 -150,0 z"
+     id="rect6365" />
+  <g
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="64.241096"
-     y="292.38376"
-     id="text43"><tspan
-       sodipodi:role="line"
-       id="tspan41"
-       x="64.241096"
-       y="292.38376"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:333.33334351px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'">Oxyde</tspan></text>
-  <text
-     xml:space="preserve"
+     id="flowRoot37" />
+  <g
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="326.24567"
-     y="626.76752"
-     id="text43-4"><tspan
-       sodipodi:role="line"
-       id="tspan41-4"
-       x="326.24567"
-       y="626.76752"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:333.33334351px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'">de</tspan></text>
-  <text
-     xml:space="preserve"
+     id="flowRoot53" />
+  <g
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="231.99854"
-     y="923.89264"
-     id="text43-4-2"><tspan
-       sodipodi:role="line"
-       id="tspan41-4-2"
-       x="231.99854"
-       y="923.89264"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:333.33334351px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'">zinc</tspan></text>
+     id="flowRoot69" />
+  <g
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     id="text43">
+    <path
+       d="m 419.77551,386.85059 q 0,8.85009 -0.91552,15.25878 -0.61036,6.10352 -2.13624,10.07081 -1.52587,3.66211 -3.96728,5.49316 -2.13623,1.83105 -4.88281,1.83105 l -98.87696,0 0,318.29834 q 0,3.05176 -2.13623,5.49317 -1.83105,2.4414 -6.40869,3.96728 -4.57763,1.52588 -12.5122,2.44141 -7.6294,0.91553 -19.22608,0.91553 -11.59668,0 -19.53125,-0.91553 -7.62939,-0.91553 -12.20703,-2.44141 -4.57764,-1.52588 -6.71387,-3.96728 -1.83105,-2.44141 -1.83105,-5.49317 l 0,-318.29834 -98.87696,0 q -3.05175,0 -5.18798,-1.83105 -2.13623,-1.83105 -3.66211,-5.49316 -1.52588,-3.96729 -2.44141,-10.07081 -0.61035,-6.40869 -0.61035,-15.25878 0,-9.15528 0.61035,-15.56397 0.91553,-6.40869 2.44141,-10.0708 1.52588,-3.96728 3.66211,-5.49316 2.13623,-1.83106 5.18798,-1.83106 l 278.32032,0 q 2.74658,0 4.88281,1.83106 2.44141,1.52588 3.96728,5.49316 1.52588,3.66211 2.13624,10.0708 0.91552,6.40869 0.91552,15.56397 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:625px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"
+       id="path4216" />
+    <path
+       d="m 539.40442,738.41309 q 0,3.05175 -1.83106,5.49316 -1.83105,2.13623 -6.40869,3.66211 -4.27246,1.52588 -11.59668,2.13623 -7.32422,0.91553 -18.61572,0.91553 -11.2915,0 -18.61572,-0.91553 -7.32422,-0.61035 -11.90186,-2.13623 -4.27246,-1.52588 -6.10351,-3.66211 -1.83106,-2.44141 -1.83106,-5.49316 l 0,-271.60645 q 0,-3.05176 1.83106,-5.18799 1.83105,-2.4414 6.10351,-3.96728 4.57764,-1.83106 11.90186,-2.74658 7.32422,-0.91553 18.61572,-0.91553 11.2915,0 18.61572,0.91553 7.32422,0.91552 11.59668,2.74658 4.57764,1.52588 6.40869,3.96728 1.83106,2.13623 1.83106,5.18799 l 0,271.60645 z m 5.79834,-364.37989 q 0,23.19336 -9.46045,32.04346 -9.46045,8.8501 -35.09522,8.8501 -25.93994,0 -35.09521,-8.54492 -8.8501,-8.54493 -8.8501,-30.82276 0,-23.19336 9.15528,-32.04346 9.46044,-9.15527 35.40039,-9.15527 25.63476,0 34.79004,8.8501 9.15527,8.54492 9.15527,30.82275 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:625px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"
+       id="path4218" />
+    <path
+       d="m 877.53918,738.41309 q 0,3.05175 -1.83105,5.49316 -1.83105,2.13623 -6.10352,3.66211 -4.27246,1.52588 -11.90185,2.13623 -7.32422,0.91553 -18.31055,0.91553 -11.2915,0 -18.9209,-0.91553 -7.32422,-0.61035 -11.59668,-2.13623 -4.27246,-1.52588 -6.10351,-3.66211 -1.83106,-2.44141 -1.83106,-5.49316 l 0,-155.33448 q 0,-19.83642 -3.05175,-31.12793 -2.74659,-11.2915 -8.23975,-19.22607 -5.49316,-8.23975 -14.34326,-12.51221 -8.54492,-4.57763 -20.1416,-4.57763 -14.64844,0 -29.60205,10.68115 -14.95362,10.68115 -31.12793,31.12793 l 0,180.96924 q 0,3.05175 -1.83106,5.49316 -1.83105,2.13623 -6.40869,3.66211 -4.27246,1.52588 -11.59668,2.13623 -7.32422,0.91553 -18.61572,0.91553 -11.29151,0 -18.61573,-0.91553 -7.32421,-0.61035 -11.90185,-2.13623 -4.27246,-1.52588 -6.10352,-3.66211 -1.83105,-2.44141 -1.83105,-5.49316 l 0,-272.2168 q 0,-3.05176 1.52588,-5.18799 1.52588,-2.44141 5.49316,-3.96728 3.96729,-1.52588 10.0708,-2.13623 6.40869,-0.91553 15.86914,-0.91553 9.76563,0 16.17432,0.91553 6.40869,0.61035 9.76562,2.13623 3.66211,1.52587 5.18799,3.96728 1.52588,2.13623 1.52588,5.18799 l 0,31.4331 q 22.58301,-24.41406 45.77637,-36.62109 23.49853,-12.20703 48.82812,-12.20703 27.771,0 46.6919,9.15527 19.22607,9.15528 30.82275,25.02442 11.90186,15.56396 17.08985,36.62109 5.18798,21.05713 5.18798,50.65918 l 0,168.15186 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:625px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"
+       id="path4220" />
+  </g>
 </svg>

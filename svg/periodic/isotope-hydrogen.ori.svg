@@ -13,7 +13,7 @@
    height="1000"
    id="svg4152"
    version="1.1"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.91 r13725"
    viewBox="0 0 1000 1000"
    sodipodi:docname="isotope-hydrogen.ori.svg">
   <defs
@@ -90,8 +90,8 @@
        id="EMFhbasepattern" />
   </defs>
   <sodipodi:namedview
-     inkscape:window-height="1005"
-     inkscape:window-width="1920"
+     inkscape:window-height="1107"
+     inkscape:window-width="2044"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -102,10 +102,10 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.70710678"
-     inkscape:cx="323.7265"
+     inkscape:cx="-9.3207945"
      inkscape:cy="559.93084"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-x="4"
+     inkscape:window-y="1"
      inkscape:current-layer="svg4152"
      inkscape:window-maximized="1"
      objecttolerance="20"
@@ -133,7 +133,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -151,55 +151,11 @@
      height="935.63605"
      x="115.938"
      y="31.18198" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="-450"
-     y="350"
-     id="text4555"><tspan
-       sodipodi:role="line"
-       id="tspan4553"
-       x="-450"
-       y="350"
-       style="font-size:40px;line-height:1.25"> </tspan></text>
   <flowRoot
-     xml:space="preserve"
-     id="flowRoot4529"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
-       id="flowRegion4531"><rect
-         id="rect4533"
-         width="400"
-         height="250"
-         x="-650"
-         y="300" /></flowRegion><flowPara
-       id="flowPara4535"
-       style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  <flowRoot
-     xml:space="preserve"
-     id="flowRoot74"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
-       id="flowRegion76"><rect
-         id="rect78"
-         width="600"
-         height="600"
-         x="-450"
-         y="200" /></flowRegion><flowPara
-       id="flowPara80"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:426.66665649px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"> </flowPara></flowRoot>  <flowRoot
-     xml:space="preserve"
-     id="flowRoot90"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
-       id="flowRegion92"><rect
-         id="rect94"
-         width="550"
-         height="600"
-         x="-450"
-         y="100" /></flowRegion><flowPara
-       id="flowPara96"
-       style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  <flowRoot
      xml:space="preserve"
      id="flowRoot110"
      style="font-style:normal;font-weight:normal;font-size:693.33331299px;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     transform="translate(751.07692,-13.38461)"><flowRegion
+     transform="translate(759.5622,-69.953153)"><flowRegion
        id="flowRegion112"
        style="font-size:693.33331299px"><rect
          id="rect114"
