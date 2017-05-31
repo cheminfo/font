@@ -9,7 +9,7 @@ function appendHeaderHtml(resultsHtml) {
 			font-family: sans-serif;
 			margin: 0;
 			padding: 10px 20px;
-			background-color: grey;
+			background-color: #DDDDDD;
 		}
 
 		.preview {

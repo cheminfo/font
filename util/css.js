@@ -2,8 +2,10 @@
 function appendHeaderCss(resultsCss, prefix) {
     resultsCss.push(`
 .${prefix} {
-        width: 1em;
-        height: 1em;
+    width: 1em;
+    height: 1em;
+    background-size: 1em 1em;
+    display: inline-block;
 }
     `);
 }
@@ -11,7 +13,7 @@ function appendHeaderCss(resultsCss, prefix) {
 function appendEntryCss(resultsCss,dataUrl, prefix, icon) {
     resultsCss.push(`
 .${prefix}-${icon} {
-        content: url('${dataUrl}');
+    background-image: url('${dataUrl}');
 }
      `)
 }
