@@ -1,77 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1000"
-   height="1000"
-   id="svg4152"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   viewBox="0 0 1000 1000"
-   sodipodi:docname="search-structure.svg">
-  <defs
-     id="defs5498" />
-  <sodipodi:namedview
-     inkscape:window-height="1043"
-     inkscape:window-width="1920"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     id="base"
-     showgrid="false"
-     showguides="false"
-     inkscape:guide-bbox="true"
-     inkscape:zoom="0.454"
-     inkscape:cx="397.40766"
-     inkscape:cy="759.91189"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:current-layer="layer1"
-     inkscape:window-maximized="1">
-    <sodipodi:guide
-       orientation="horizontal"
-       position="200"
-       id="guide5596" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata5594">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m 411.51562,205.11914 -167.73242,92.19141 -4.02734,191.35547 163.70703,99.16601 167.73242,-92.18945 4.02735,-191.35742 -9.87696,-5.98243 -153.83008,-93.18359 z m -0.9707,46.17774 124.20117,75.23437 -3.05664,145.17969 -127.25586,69.94336 -124.20117,-75.23438 3.05469,-145.17969 127.25781,-69.94335 z"
-       id="path4138"
-       inkscape:connector-curvature="0" />
-    <path
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:60;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m 407.48828,51.498047 c -190.17073,4e-6 -344.976559,154.807783 -344.976561,344.978513 0,190.17073 154.805831,344.97656 344.976561,344.97656 190.17073,0 344.97852,-154.80582 344.97852,-344.97656 0,-190.17073 -154.80779,-344.978513 -344.97852,-344.978513 z m 0,60.000003 c 157.74433,0 284.97852,127.23419 284.97852,284.97851 0,157.74433 -127.23419,284.97656 -284.97852,284.97656 -157.74432,0 -284.97656,-127.23223 -284.97656,-284.97656 0,-157.74432 127.23224,-284.97851 284.97656,-284.97851 z"
-       id="path4140"
-       inkscape:connector-curvature="0" />
-    <path
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:120;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m 716.43555,607.35352 -84.85352,84.85351 219.16406,219.16211 84.85157,-84.85352 -219.16211,-219.1621 z"
-       id="path4144"
-       inkscape:connector-curvature="0" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg4152" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
+	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<g>
+	
+		<path fill="none" stroke="#000002" stroke-width="46.2977" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		M415.199,668.968c-173.539,0-315.081-141.541-315.081-315.079c0-173.545,141.542-315.093,315.081-315.093
+		c173.553,0,315.099,141.548,315.099,315.093C730.298,527.427,588.752,668.968,415.199,668.968"/>
+	
+		<polyline fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		887.36,888.085 654.566,576.416 573.075,637.283 805.869,948.952 	"/>
+	
+		<path fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		M805.869,948.952c12.383,16.576,36.082,20.013,52.657,7.634"/>
+	
+		<line fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="858.526" y1="956.586" x2="879.734" y2="940.743"/>
+	
+		<path fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		M879.734,940.743c16.576-12.389,20.012-36.083,7.626-52.656"/>
+	
+		<path fill="none" stroke="#000002" stroke-width="21.304" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		M415.199,612.475c-142.419,0-258.587-116.169-258.587-258.586c0-142.43,116.168-258.59,258.587-258.59
+		c142.437,0,258.598,116.162,258.598,258.59C673.797,496.305,557.636,612.475,415.199,612.475"/>
+	
+		<polygon fill="none" stroke="#000002" stroke-width="40.2131" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		266.632,268.108 415.199,182.329 563.782,268.108 563.782,439.661 415.199,525.441 266.632,439.661 	"/>
+</g>
 </svg>
