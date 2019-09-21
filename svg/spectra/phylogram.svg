@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg4152"
+   version="1.1"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   viewBox="0 0 1000 1000"
+   sodipodi:docname="phylogram.svg">
+  <defs
+     id="defs5498">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4233"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path4235" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4755"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path4757" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4164"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4182"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-6" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-9" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-0" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-60" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-2" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-06" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="1035"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1"
+     inkscape:cx="386.64706"
+     inkscape:cy="457.27848"
+     inkscape:window-x="1600"
+     inkscape:window-y="1"
+     inkscape:current-layer="svg4152"
+     inkscape:window-maximized="1"
+     objecttolerance="20">
+    <sodipodi:guide
+       orientation="horizontal"
+       position="200"
+       id="guide5596"
+       inkscape:locked="false" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3430"
+       empspacing="50" />
+    <sodipodi:guide
+       position="550,1000"
+       orientation="0,1"
+       id="guide4169"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5594">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g981"
+     transform="matrix(1,0,0,-1,0,849.50088)" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 50,550 H 400"
+     id="path107"
+     inkscape:connector-curvature="0" />
+  <image
+     y="240"
+     x="730"
+     id="image979"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAAAoCAIAAAA5RQUlAAAAA3NCSVQICAjb4U/gAAAAP0lEQVR4
+nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCf
+AaQ4AAF7Fv1HAAAAAElFTkSuQmCC
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="200" />
+  <image
+     y="-390"
+     x="730"
+     id="image1010"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAoCAIAAAA0fiJLAAAAA3NCSVQICAjb4U/gAAAALklEQVR4
+nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAxd6AABBCWAZQAAAABJRU5E
+rkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="200"
+     transform="scale(1,-1)" />
+  <image
+     y="660"
+     x="830"
+     id="image1021"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAoCAIAAAA0fiJLAAAAA3NCSVQICAjb4U/gAAAALklEQVR4
+nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAxd6AABBCWAZQAAAABJRU5E
+rkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="100" />
+  <image
+     y="810"
+     x="830"
+     id="image1041"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo
+ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="100" />
+  <image
+     y="510"
+     x="630"
+     id="image1052"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo
+ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="300" />
+  <image
+     y="-770"
+     x="240"
+     id="image1072"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAoCAIAAAA0fiJLAAAAA3NCSVQICAjb4U/gAAAALklEQVR4
+nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAxd6AABBCWAZQAAAABJRU5E
+rkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="150"
+     transform="rotate(90)" />
+  <image
+     y="660"
+     x="830"
+     id="image1092"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAACWCAIAAAAjXF0/AAAAA3NCSVQICAjb4U/gAAAAKElEQVR4
+nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAA4GVG5gABsQHJOwAAAABJRU5ErkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="150"
+     width="40" />
+  <image
+     y="300"
+     x="630"
+     id="image1112"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAACWCAIAAAAjXF0/AAAAA3NCSVQICAjb4U/gAAAAKElEQVR4
+nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAA4GVG5gABsQHJOwAAAABJRU5ErkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="250"
+     width="40" />
+  <image
+     y="400"
+     x="360"
+     id="image1132"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAD6CAIAAABcapIeAAAAA3NCSVQICAjb4U/gAAAANElEQVR4
+nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+Ax2KgABU6YBzQAA
+AABJRU5ErkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="350"
+     width="40" />
+  <image
+     y="740"
+     x="360"
+     id="image1152"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo
+ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="480" />
+  <image
+     y="300"
+     x="650"
+     id="image1172"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo
+ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="100" />
+  <image
+     y="400"
+     x="370"
+     id="image1192"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAAoCAIAAACper6vAAAAA3NCSVQICAjb4U/gAAAAT0lEQVR4
+nO3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAACAlwHhKAABUPJo3wAAAABJRU5ErkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="40"
+     width="280" />
+</svg>
