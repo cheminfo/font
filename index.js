@@ -21,19 +21,24 @@ const { appendHeaderCss, appendEntryCss } = require('./util/css.js');
 
 var resultsCss = [];
 var resultsHtml = [];
-appendHeaderCss(resultsCss, prefix);
-appendHeaderHtml(resultsHtml);
-appendFolder(source);
-appendFooterHtml(resultsHtml);
 
-fs.writeFileSync(destination + 'style.css', resultsCss.join('\r\n'));
-fs.writeFileSync(destination_html + 'index.html', resultsHtml.join('\r\n'));
-fs.writeFileSync(destination_html + 'style.css', resultsCss.join('\r\n'));
+doAll();
 
-function appendFolder(folder) {
+async function doAll() {
+  appendHeaderCss(resultsCss, prefix);
+  appendHeaderHtml(resultsHtml);
+  await appendFolder(source);
+  appendFooterHtml(resultsHtml);
+
+  fs.writeFileSync(destination + 'style.css', resultsCss.join('\r\n'));
+  fs.writeFileSync(destination_html + 'index.html', resultsHtml.join('\r\n'));
+  fs.writeFileSync(destination_html + 'style.css', resultsCss.join('\r\n'));
+}
+
+async function appendFolder(folder) {
   var files = fs.readdirSync(folder).filter(a => a.indexOf('.ori.') === -1);
 
-  files.forEach(function(file) {
+  files.forEach(async function(file) {
     var fullname = folder + '/' + file;
     if (fs.lstatSync(fullname).isDirectory()) {
       appendFolder(fullname);
@@ -44,15 +49,15 @@ function appendFolder(folder) {
         .replace(/\..[^\.]*$/g, '');
       var svg = fs.readFileSync(fullname, 'utf-8');
 
-      svgo.optimize(svg, function(svg) {
-        let newName = fullname.replace(source, svgFolder);
-        fs.outputFileSync(newName, svg.data, 'utf8');
+      let smallSVG = await svgo.optimize(svg);
+      let newName = fullname.replace(source, svgFolder);
+      fs.outputFileSync(newName, smallSVG.data, 'utf8');
 
-        var dataUrl = 'data:image/svg+xml;base64,' + btoa(svg.data);
-        //var dataUrl = 'data:image/svg+xml;utf-8,' + svg.data.replace(/'/g,'\\');
-        appendEntryCss(resultsCss, dataUrl, prefix, icon);
-        appendEntryHtml(resultsHtml, prefix, icon);
-      });
+      var dataUrl = 'data:image/svg+xml;base64,' + btoa(smallSVG.data);
+      //var dataUrl = 'data:image/svg+xml;utf-8,' + svg.data.replace(/'/g,'\\');
+
+      appendEntryCss(resultsCss, dataUrl, prefix, icon);
+      appendEntryHtml(resultsHtml, prefix, icon);
     }
   });
 }
