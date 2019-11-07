@@ -4,11 +4,11 @@
   "description": "Cheminfo font and CSS to include it in web pages",
   "main": "dist/cheminfo.css",
   "files": [
-    "dist"
+    "dist",
+    "svg"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node index.js",
     "test": "echo 1"
   },
