@@ -2,13 +2,13 @@
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" inkscape:version="0.91 r13725" sodipodi:docname="icons.svg"
+	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
 		<polyline fill="none" stroke="#000000" stroke-width="48.9869" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
-		23.903,784.146 186.5,781.5 220.5,755.5 235.5,659.5 276.5,30.5 317.5,781.5 325.5,966.5 349.5,853.5 366.5,799.5 394.5,786.5 
+		23.903,784.146 176.5,781.5 210.5,755.5 225.5,659.5 276.5,30.5 317.5,781.5 335.5,966.5 359.5,853.5 376.5,799.5 404.5,786.5 
 		469.5,783.5 973.5,784.947 	"/>
 </g>
 <path fill="none" stroke="#000000" stroke-width="48.9869" stroke-linejoin="round" stroke-miterlimit="22.9256" stroke-dasharray="25,25" d="
@@ -18,7 +18,7 @@
 		<path fill="none" stroke="#000000" stroke-width="48.9869" stroke-linejoin="round" stroke-miterlimit="22.9256" d="M667.5,102.5
 			c106.948-3.868,176.044,18.818,258,82"/>
 		<path d="M736.882,5.431l-30.309,94.326l37.043,91.894c-44.108-35.725-114.376-68.437-170.73-87.059
-			C627.748,81.956,695.47,44.247,736.882,5.431z"/>
+			C627.748,81.956,695.469,44.247,736.882,5.431z"/>
 	</g>
 </g>
 <line fill="none" stroke="#000000" stroke-width="50" stroke-linejoin="round" stroke-miterlimit="22.9256" stroke-dasharray="25,25" x1="574.5" y1="617.5" x2="885" y2="197"/>
