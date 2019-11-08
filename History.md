@@ -1,3 +1,12 @@
+# [0.17.0](https://github.com/cheminfo/font/compare/v0.16.0...v0.17.0) (2019-11-08)
+
+
+### Features
+
+* new FT and zero filling icons ([eb689bb](https://github.com/cheminfo/font/commit/eb689bb7eb1ef86db4e4c96f8e9b2c3d9942f965))
+
+
+
 ## [0.15.1](https://github.com/cheminfo/font/compare/v0.15.0...v0.15.1) (2019-11-07)
 
 
