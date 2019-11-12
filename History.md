@@ -1,3 +1,20 @@
+# [0.18.0](https://github.com/cheminfo/font/compare/v0.17.0...v0.18.0) (2019-11-12)
+
+
+### Bug Fixes
+
+* fixed geometry ([b821048](https://github.com/cheminfo/font/commit/b8210480a6e98a631dbd0c7c0c8b31724ad2c7f2))
+* improved icons readability. New variant for the assignment icon. ([9a8a405](https://github.com/cheminfo/font/commit/9a8a405f1dbd0c3cf95bc2879ce9b2e992204f46))
+
+
+### Features
+
+* added varian of assignment icon ([1b6c2b3](https://github.com/cheminfo/font/commit/1b6c2b3388f9c12a60129d97923ceb765a1e905d))
+* New icons for peak-picking with and without region$ ([f10deec](https://github.com/cheminfo/font/commit/f10deec6a6e6c2f2b7de9f3cbc2d0e307a7c7b02))
+* New icons for peak-picking with multiplet analysis peak-picking2-analysis ([97cff8e](https://github.com/cheminfo/font/commit/97cff8ed5048740658d930642e746c3a7f743a97))
+
+
+
 # [0.17.0](https://github.com/cheminfo/font/compare/v0.16.0...v0.17.0) (2019-11-08)
 
 
