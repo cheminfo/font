@@ -30,9 +30,9 @@ async function doAll() {
   await appendFolder(source);
   appendFooterHtml(resultsHtml);
 
-  fs.writeFileSync(destination + 'style.css', resultsCss.join('\r\n'));
-  fs.writeFileSync(destination_html + 'index.html', resultsHtml.join('\r\n'));
-  fs.writeFileSync(destination_html + 'style.css', resultsCss.join('\r\n'));
+  fs.outputFileSync(destination + 'style.css', resultsCss.join('\r\n'));
+  fs.outputFileSync(destination_html + 'index.html', resultsHtml.join('\r\n'));
+  fs.outputFileSync(destination_html + 'style.css', resultsCss.join('\r\n'));
 }
 
 async function appendFolder(folder) {
