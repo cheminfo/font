@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" inkscape:version="0.92.1 r15371" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" sodipodi:docname="peaks.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
+	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<sodipodi:namedview  id="base" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" borderopacity="1.0" inkscape:cx="357.82213" inkscape:window-width="1280" objecttolerance="20" showguides="true" bordercolor="#666666" inkscape:current-layer="svg4152" inkscape:window-height="753" inkscape:cy="459.29481" inkscape:window-x="-4" inkscape:window-y="-4" inkscape:pageshadow="2" pagecolor="#ffffff" showgrid="true" inkscape:zoom="0.5" inkscape:window-maximized="1">
+	<sodipodi:guide  id="guide5596" orientation="horizontal" position="200" inkscape:locked="false"></sodipodi:guide>
+	<inkscape:grid  type="xygrid" id="grid3430" empspacing="50"></inkscape:grid>
+	<sodipodi:guide  id="guide4169" orientation="0,1" position="550,1000" inkscape:locked="false"></sodipodi:guide>
+</sodipodi:namedview>
+<polyline fill="none" stroke="#000000" stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" points="38.5,28.5 
+	38.5,962.5 971.5,962.5 "/>
+<text transform="matrix(1 0 0 1 467.4998 896.5)" font-family="'MyriadPro-Regular'" font-size="500">Re</text>
+<text transform="matrix(1 0 0 1 57.4998 354.5)" font-family="'MyriadPro-Regular'" font-size="500">Im</text>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="50" d="M649.5,146.5c79,0,196,41,196,211"/>
+		<path d="M845.5,538.555c-31.611-85.195-85.547-190.898-142.646-256.406L845.5,333.74l142.646-51.592
+			C931.047,347.656,877.095,453.359,845.5,538.555z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="50" d="M417.5,872.5c-79,0-196-41-196-211"/>
+		<path d="M221.499,480.445c31.611,85.195,85.547,190.898,142.647,256.406L221.499,685.26L78.853,736.852
+			C135.952,671.344,189.903,565.641,221.499,480.445z"/>
+	</g>
+</g>
+</svg>
