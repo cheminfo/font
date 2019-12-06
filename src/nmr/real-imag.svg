@@ -12,20 +12,20 @@
 </sodipodi:namedview>
 <polyline fill="none" stroke="#000000" stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" points="38.5,28.5 
 	38.5,962.5 971.5,962.5 "/>
-<text transform="matrix(1 0 0 1 467.4998 896.5)" font-family="'MyriadPro-Regular'" font-size="500">Re</text>
-<text transform="matrix(1 0 0 1 57.4998 354.5)" font-family="'MyriadPro-Regular'" font-size="500">Im</text>
+<text transform="matrix(1 0 0 1 467.5002 896.5)" font-family="'MyriadPro-Regular'" font-size="500">Re</text>
+<text transform="matrix(1 0 0 1 57.5002 354.5)" font-family="'MyriadPro-Regular'" font-size="500">Im</text>
 <g>
 	<g>
-		<path fill="none" stroke="#000000" stroke-width="50" d="M649.5,146.5c79,0,196,41,196,211"/>
-		<path d="M845.5,538.555c-31.611-85.195-85.547-190.898-142.646-256.406L845.5,333.74l142.646-51.592
-			C931.047,347.656,877.095,453.359,845.5,538.555z"/>
+		<path fill="none" stroke="#000000" stroke-width="50" d="M763.5,233.5c79,0,196,41,196,211"/>
+		<path d="M595.297,237.352c85.194-31.611,190.897-85.547,256.406-142.646l-51.592,142.646l51.592,142.646
+			C786.195,322.898,680.492,268.946,595.297,237.352z"/>
 	</g>
 </g>
 <g>
 	<g>
-		<path fill="none" stroke="#000000" stroke-width="50" d="M417.5,872.5c-79,0-196-41-196-211"/>
-		<path d="M221.499,480.445c31.611,85.195,85.547,190.898,142.647,256.406L221.499,685.26L78.853,736.852
-			C135.952,671.344,189.903,565.641,221.499,480.445z"/>
+		<path fill="none" stroke="#000000" stroke-width="50" d="M309.5,729.5c-79,0-196-41-196-211"/>
+		<path d="M475.703,728.647c-85.194,31.611-190.897,85.547-256.405,142.647l51.591-142.647l-51.592-142.646
+			C284.804,643.101,390.508,697.052,475.703,728.647z"/>
 	</g>
 </g>
 </svg>
