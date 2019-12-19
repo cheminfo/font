@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   enable-background="new 0 0 1000 1000"
+   viewBox="0 0 1000 1000"
+   height="1000px"
+   width="1000px"
+   y="0px"
+   x="0px"
+   inkscape:version="1.0beta1 (32d4812, 2019-09-19)"
+   sodipodi:docname="show-peaks.svg"
+   id="svg4152"
+   version="1.1"><metadata
+   id="metadata854">
+  <rdf:RDF>
+    <cc:Work
+       rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    </cc:Work>
+  </rdf:RDF>
+</metadata>
+<defs
+   id="defs852" />
+<sodipodi:namedview
+   inkscape:current-layer="g847"
+   inkscape:window-maximized="0"
+   inkscape:window-y="23"
+   inkscape:window-x="0"
+   inkscape:cy="560"
+   inkscape:cx="400"
+   inkscape:zoom="0.35"
+   showgrid="false"
+   id="namedview850"
+   inkscape:window-height="1035"
+   inkscape:window-width="1635"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   inkscape:document-rotation="0"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+
+<g
+   id="g847">
+	
+		<polyline
+   transform="translate(0,140)"
+   id="polyline833"
+   points="   54.005,697.855 280.66,697.855 340.188,333.723 397.428,697.855 646.981,697.855 717.95,214.67 777.478,697.855 954.211,697.855     "
+   stroke-miterlimit="22.9256"
+   stroke-linejoin="round"
+   stroke-linecap="round"
+   stroke-width="47.4168"
+   stroke="#000002"
+   fill="none" />
+
+	
+		<line
+   id="line835"
+   y2="332.12"
+   x2="337.901"
+   y1="251.258"
+   x1="337.901"
+   stroke-miterlimit="22.9256"
+   stroke-linejoin="round"
+   stroke-linecap="round"
+   stroke-width="41.8189"
+   stroke="#000002"
+   fill="none" />
+
+	
+		<line
+   id="line837"
+   y2="208.34399"
+   x2="715.664"
+   y1="127.48401"
+   x1="715.664"
+   stroke-miterlimit="22.9256"
+   stroke-linejoin="round"
+   stroke-linecap="round"
+   stroke-width="41.8189"
+   stroke="#000002"
+   fill="none" />
+
+	
+		
+	
+</g>
+
+</svg>
