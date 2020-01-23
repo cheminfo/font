@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   enable-background="new 0 0 1000 1000"
+   viewBox="0 0 1000 1000"
+   height="1000px"
+   width="1000px"
+   y="0px"
+   x="0px"
+   inkscape:version="1.0beta1 (32d4812, 2019-09-19)"
+   sodipodi:docname="ft.svg"
+   id="svg4152"
+   version="1.1"><metadata
+   id="metadata858">
+  <rdf:RDF>
+    <cc:Work
+       rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    </cc:Work>
+  </rdf:RDF>
+</metadata>
+<defs
+   id="defs856" />
+<sodipodi:namedview
+   inkscape:current-layer="svg4152"
+   inkscape:window-maximized="0"
+   inkscape:window-y="23"
+   inkscape:window-x="0"
+   inkscape:cy="560"
+   inkscape:cx="400"
+   inkscape:zoom="0.35"
+   showgrid="false"
+   id="namedview854"
+   inkscape:window-height="1035"
+   inkscape:window-width="1635"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   inkscape:document-rotation="0"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+
+<g
+   transform="matrix(1.5416988,0,0,1.4018871,-584.35089,-473.71834)"
+   id="g835">
+	
+		<path
+   inkscape:connector-curvature="0"
+   id="path833"
+   d="m 444.092,954.83 260.101,0.898 c 0,0 18.906,-3.57 32.399,-15.299 11.067,-9.619 16.2,-13.5 22.5,-26.1 0.244,-0.832 16.859,-45.973 17.101,-46.801 9,-37.801 6.299,-23.4 16.199,-90.9 15.443,-190.23 18.9,-309.6 18.9,-309.6"
+   stroke-miterlimit="22.9256"
+   stroke-linejoin="round"
+   stroke-linecap="round"
+   stroke-width="49.3119"
+   stroke="#000000"
+   fill="none" />
+
+</g>
+
+<g
+   transform="matrix(1.5416988,0,0,1.4018871,-584.35089,-473.71834)"
+   id="g839">
+	
+		<path
+   inkscape:connector-curvature="0"
+   id="path837"
+   d="m 812.192,467.029 c 0,-137.7 3.456,119.369 18.899,309.6 9.899,67.5 7.2,53.1 16.2,90.9 0.24,0.828 16.854,45.969 17.1,46.801 6.301,12.6 11.434,16.48 22.5,26.1 13.494,11.729 32.4,15.299 32.4,15.299 l 50.4,-0.898"
+   stroke-miterlimit="22.9256"
+   stroke-linejoin="round"
+   stroke-linecap="round"
+   stroke-width="49.3119"
+   stroke="#000000"
+   fill="none" />
+
+</g>
+
+
+
+
+
+
+
+</svg>
