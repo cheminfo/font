@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    viewBox="0 0 1000 1000"
-   sodipodi:docname="assignment.svg.2020_05_01_16_17_23.0.svg">
+   sodipodi:docname="assignment.svg">
   <defs
      id="defs5498">
     <marker
@@ -97,7 +97,7 @@
   </defs>
   <sodipodi:namedview
      inkscape:window-height="1035"
-     inkscape:window-width="1920"
+     inkscape:window-width="3840"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -107,10 +107,10 @@
      showgrid="false"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:zoom="0.43074198"
-     inkscape:cx="352.84223"
-     inkscape:cy="622.21679"
-     inkscape:window-x="1920"
+     inkscape:zoom="1.2183223"
+     inkscape:cx="-270.01591"
+     inkscape:cy="632.46663"
+     inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:current-layer="g6050"
      inkscape:window-maximized="1"
@@ -177,9 +177,10 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:12.63237572;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -546.38961,871.01774 c 35.19241,0.97757 60.60916,9.77567 63.54186,56.69889 2.9327,46.92322 18.57377,55.72133 65.497,56.6989 46.92322,0.97756 72.33996,24.43917 79.18293,43.01287 6.84297,18.5738 28.34945,22.4841 47.90079,24.4392 19.55134,1.9551 18.57377,1.9551 18.57377,1.9551"
+       d="m -536.61394,975.61742 c 35.19241,0.97757 24.76316,-84.73295 52.3837,-83.49987 23.32074,1.04112 19.94888,92.81072 66.87949,92.29798 68.69742,-0.75055 49.87452,43.10277 79.18293,43.01287 16.52039,-0.09 17.56345,-43.96287 37.1865,-42.95712 27.82821,1.42629 51.4846,2.09968 62.46779,1.26385"
        id="path857"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csscsc" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot859"
