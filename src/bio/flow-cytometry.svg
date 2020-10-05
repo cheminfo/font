@@ -12,7 +12,7 @@
    viewBox="0 0 1000 1000"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="flowCytometry.svg"
+   sodipodi:docname="flow-cytometry.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <defs
      id="defs853" />
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
+     inkscape:zoom="0.39921875"
+     inkscape:cx="366.96117"
+     inkscape:cy="504.29255"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,11 +56,6 @@
        style="fill:#333333;fill-opacity:0.505842;stroke:#0e0000;stroke-width:5.56464;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 300.99067,463.37352 427.98327,-7.34408 c 0,0 -13.28225,19.09474 0,51.40887 13.28225,32.31417 44.27416,51.40881 44.27416,51.40881 l -472.25743,-7.34415 c 0,0 17.70967,-5.87529 17.70967,-44.06466 0,-38.18945 -17.70967,-44.06479 -17.70967,-44.06479 z"
        sodipodi:nodetypes="cczcczc" />
-    <path
-       id="path992"
-       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:27.8232;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 961.34742,501.73335 c 0,258.86268 -207.52122,468.71235 -463.51163,468.71235 C 241.84571,970.4457 34.324497,760.59603 34.324484,501.73335 34.324469,242.87065 241.84569,30.083306 497.83579,30.083306 753.8262,30.083335 961.34742,242.87067 961.34742,501.73335 Z"
-       sodipodi:nodetypes="sssss" />
     <path
        id="rect1640"
        style="fill:none;stroke:#000000;stroke-width:4.5435;stroke-miterlimit:4;stroke-dasharray:none"
