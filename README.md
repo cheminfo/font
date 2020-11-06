@@ -1,5 +1,7 @@
 # cheminfo-font
 
+Contains a list of symbol used in cheminfo.
+
 ## Add new fonts
 
 Just create new files in the `src` directory. They must have a 1000x1000 size. The filename will become the icon name.  
