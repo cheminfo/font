@@ -5,11 +5,11 @@
       <path id="Path_3" data-name="Path 3" d="M340.5,324.5" transform="translate(-110.989)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="39.653" />
     </g>
     <g id="arrow-up" transform="translate(-43.748 -19.505)">
-      <path id="Path_6" data-name="Path 6" d="M698.75,313.029,558.609,172.888,418.468,313.029" transform="translate(-15 569)" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
+      <path id="Path_6" data-name="Path 6" d="M698.75,313.029,558.609,172.888,418.468,313.029" transform="translate(-15 569)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
       <path id="Path_7" data-name="Path 7" d="M643.231,285.27,530.849,172.888,418.467,285.27" transform="translate(12.659 639.434)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" />
     </g>
     <g id="arrow-down" transform="translate(359.719 88.383)">
-      <path id="Path_6-2" data-name="Path 6" d="M698.75,172.888,558.609,313.029,418.468,172.888" transform="translate(-418.468 -116.214)" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
+      <path id="Path_6-2" data-name="Path 6" d="M698.75,172.888,558.609,313.029,418.468,172.888" transform="translate(-418.468 -116.214)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
       <path id="Path_7-2" data-name="Path 7" d="M643.231,172.888,530.849,285.27,418.467,172.888" transform="translate(-390.808 -158.888)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" />
     </g>
   </g>
