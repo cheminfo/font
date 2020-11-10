@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.33.0](https://www.github.com/cheminfo/font/compare/v0.32.0...v0.33.0) (2020-11-10)
+
+
+### Features
+
+* add baseline correction icon ([9e54412](https://www.github.com/cheminfo/font/commit/9e54412a23c317cdda6b1315baaa0b5ff7387ac4))
+
 ## [0.32.0](https://www.github.com/cheminfo/font/compare/v0.31.0...v0.32.0) (2020-11-09)
 
 
