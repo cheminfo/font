@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.33.1](https://www.github.com/cheminfo/font/compare/v0.33.0...v0.33.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* move isotherm icon ([d67b0d0](https://www.github.com/cheminfo/font/commit/d67b0d0e47079a3668ebb040d821b2502e4cc5ae))
+* rename isotherm to assignment ([c6df7ac](https://www.github.com/cheminfo/font/commit/c6df7ac4e09e41eaa8c3c881e3d87db7d4628eda))
+
 ## [0.33.0](https://www.github.com/cheminfo/font/compare/v0.32.0...v0.33.0) (2020-11-10)
 
 
