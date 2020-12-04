@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.33.2](https://www.github.com/cheminfo/font/compare/v0.33.1...v0.33.2) (2020-12-04)
+
+
+### Bug Fixes
+
+* improve multiple-analysis icon ([d058d88](https://www.github.com/cheminfo/font/commit/d058d886371d90aa9e54b580996a1fba65908fbd))
+
 ### [0.33.1](https://www.github.com/cheminfo/font/compare/v0.33.0...v0.33.1) (2020-11-18)
 
 
