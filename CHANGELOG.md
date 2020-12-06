@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.34.1](https://www.github.com/cheminfo/font/compare/v0.34.0...v0.34.1) (2020-12-06)
+
+
+### Bug Fixes
+
+* build ([0c07e6b](https://www.github.com/cheminfo/font/commit/0c07e6bdccc7b9e04d6d6a35ec722dacf926ae49))
+
 ## [0.34.0](https://www.github.com/cheminfo/font/compare/v0.33.1...v0.34.0) (2020-12-06)
 
 
