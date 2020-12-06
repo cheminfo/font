@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.34.0](https://www.github.com/cheminfo/font/compare/v0.33.1...v0.34.0) (2020-12-06)
+
+
+### Features
+
+* add nmr-reference icon ([07a734a](https://www.github.com/cheminfo/font/commit/07a734aa87610611bfdb529bae8b6b65a77422ed))
+
+
+### Bug Fixes
+
+* improve multiple-analysis icon ([d058d88](https://www.github.com/cheminfo/font/commit/d058d886371d90aa9e54b580996a1fba65908fbd))
+
 ### [0.33.1](https://www.github.com/cheminfo/font/compare/v0.33.0...v0.33.1) (2020-11-18)
 
 
