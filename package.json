@@ -1,6 +1,6 @@
 {
   "name": "cheminfo-font",
-  "version": "0.34.0",
+  "version": "0.34.1",
   "description": "Cheminfo font and CSS to include it in web pages",
   "main": "dist/cheminfo.css",
   "files": [
