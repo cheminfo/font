@@ -1,6 +1,6 @@
 <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
   <g id="baseline_correction" data-name="baseline correction" clip-path="url(#clip-baseline_correction)">
-    <path id="baseline" d="M0,0H961.746" transform="translate(27.265 648.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="45" stroke-dasharray="5 100"/>
-    <path id="spectrum" d="M-153.529,949.38c14.928,4.584,51.09,39.489,112.8,39.489s76.691-53.427,127.581-62.8,98.841-30.237,108.461-30.181c76.9-1.17,58.063-490.423,63.823-544.308,8.6,83.481-21.07,528.6,70.224,544.306,21.234,3.653-15.192,5.114,7.847,0,90.607-19.911,79.3-392.121,79.3-392.121s-6.906,293.146,51.71,355.345,84.549-41.324,148.667-31.625S724.691,897.9,724.691,897.9s40.428,51.7,55.4,51.478" transform="translate(187.266 -250.645)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="45"/>
+    <path id="baseline" d="M0,0H961.746" transform="translate(27.265 648.5)" fill="none"  stroke-linecap="square" stroke-linejoin="bevel" stroke-width="45" stroke-dasharray="5 100"/>
+    <path id="spectrum" d="M-153.529,949.38c14.928,4.584,51.09,39.489,112.8,39.489s76.691-53.427,127.581-62.8,98.841-30.237,108.461-30.181c76.9-1.17,58.063-490.423,63.823-544.308,8.6,83.481-21.07,528.6,70.224,544.306,21.234,3.653-15.192,5.114,7.847,0,90.607-19.911,79.3-392.121,79.3-392.121s-6.906,293.146,51.71,355.345,84.549-41.324,148.667-31.625S724.691,897.9,724.691,897.9s40.428,51.7,55.4,51.478" transform="translate(187.266 -250.645)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="45"/>
   </g>
 </svg>

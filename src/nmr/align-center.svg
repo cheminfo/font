@@ -1,16 +1,16 @@
 <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
   <g id="align-center" clip-path="url(#clip-align-center)">
     <g id="spectrum" transform="translate(179.808 -173.885)">
-      <path id="path3736" d="M-71.5,806.784c44.876-.388,119.418-1.382,207.014-.9,81.7-1.17,55.543-253.2,61.663-307.085,9.134,83.481-10.239,291.374,86.758,307.083,22.56,3.653,107.859,5.114,132.337,0,96.267-19.911,67.725-129.929,76.859-213.41,6.028,53.888-9.874,194.965,79.957,214.313,60.223.9,136.628.994,206.9,0" transform="translate(-34 -22.76)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="39.653" />
-      <path id="Path_3" data-name="Path 3" d="M340.5,324.5" transform="translate(-110.989)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="39.653" />
+      <path id="path3736" d="M-71.5,806.784c44.876-.388,119.418-1.382,207.014-.9,81.7-1.17,55.543-253.2,61.663-307.085,9.134,83.481-10.239,291.374,86.758,307.083,22.56,3.653,107.859,5.114,132.337,0,96.267-19.911,67.725-129.929,76.859-213.41,6.028,53.888-9.874,194.965,79.957,214.313,60.223.9,136.628.994,206.9,0" transform="translate(-34 -22.76)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="39.653" />
+      <path id="Path_3" data-name="Path 3" d="M340.5,324.5" transform="translate(-110.989)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="39.653" />
     </g>
     <g id="arrow-up" transform="translate(-43.748 -19.505)">
-      <path id="Path_6" data-name="Path 6" d="M698.75,313.029,558.609,172.888,418.468,313.029" transform="translate(-15 569)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
-      <path id="Path_7" data-name="Path 7" d="M643.231,285.27,530.849,172.888,418.467,285.27" transform="translate(12.659 639.434)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" />
+      <path id="Path_6" data-name="Path 6" d="M698.75,313.029,558.609,172.888,418.468,313.029" transform="translate(-15 569)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
+      <path id="Path_7" data-name="Path 7" d="M643.231,285.27,530.849,172.888,418.467,285.27" transform="translate(12.659 639.434)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="20" />
     </g>
     <g id="arrow-down" transform="translate(359.719 88.383)">
-      <path id="Path_6-2" data-name="Path 6" d="M698.75,172.888,558.609,313.029,418.468,172.888" transform="translate(-418.468 -116.214)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
-      <path id="Path_7-2" data-name="Path 7" d="M643.231,172.888,530.849,285.27,418.467,172.888" transform="translate(-390.808 -158.888)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" />
+      <path id="Path_6-2" data-name="Path 6" d="M698.75,172.888,558.609,313.029,418.468,172.888" transform="translate(-418.468 -116.214)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="35" />
+      <path id="Path_7-2" data-name="Path 7" d="M643.231,172.888,530.849,285.27,418.467,172.888" transform="translate(-390.808 -158.888)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="20" />
     </g>
   </g>
 </svg>

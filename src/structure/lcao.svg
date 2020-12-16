@@ -53,7 +53,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4235" />
     </marker>
@@ -67,7 +67,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4757" />
     </marker>
@@ -82,7 +82,7 @@
       <path
          id="path4164"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <marker
@@ -95,7 +95,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill:#000000;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -117,7 +117,7 @@
       <path
          inkscape:connector-curvature="0"
          transform="scale(0.8)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path4235-6" />
     </marker>
@@ -132,7 +132,7 @@
       <path
          inkscape:connector-curvature="0"
          transform="scale(0.8)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path4757-9" />
     </marker>
@@ -196,7 +196,7 @@
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      id="flowRoot69" />
   <path
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 467.49104,268.61298 A 199.63927,198.4494 0 0 1 267.85178,467.06238 199.63927,198.4494 0 0 1 68.212509,268.61298 199.63927,198.4494 0 0 1 267.85178,70.163574 199.63927,198.4494 0 0 1 467.49104,268.61298 Z"
      id="path41" />
   <g
@@ -211,7 +211,7 @@
   </g>
   <path
      transform="matrix(0.999879,0.01555606,0,1,0,0)"
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:40.00241852;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke-width:40.00241852;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 843.14621,722.01038 A 342.22382,167.45543 0 0 1 500.92239,889.46581 342.22382,167.45543 0 0 1 158.69858,722.01038 342.22382,167.45543 0 0 1 500.92239,554.55495 342.22382,167.45543 0 0 1 843.14621,722.01038 Z"
      id="path996" />
   <g
@@ -222,7 +222,7 @@
        id="path4281" />
   </g>
   <path
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 945.32304,263.68686 A 199.63927,198.4494 0 0 1 745.68378,462.13626 199.63927,198.4494 0 0 1 546.04451,263.68686 199.63927,198.4494 0 0 1 745.68378,65.237457 199.63927,198.4494 0 0 1 945.32304,263.68686 Z"
      id="ellipse4245" />
   <g
