@@ -6,7 +6,7 @@ const source = __dirname + '/src';
 const svgFolder = __dirname + '/svg';
 const destination = __dirname + '/dist/';
 const destination_html = __dirname + '/docs/';
-const destination_react = __dirname + '/react.ts';
+const destination_react = __dirname + '/react.index.ts';
 
 const SVGO = require('svgo');
 const svgo = new SVGO({

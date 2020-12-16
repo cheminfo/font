@@ -1,10 +1,11 @@
 {
-  "include": ["lib-react-tsx", "react.ts"],
+  "include": ["lib-react-tsx", "react.index.ts"],
   "compilerOptions": {
-    "declaration": true,
+    "declaration": false,
     "jsx": "react-jsx",
-    "outDir": "lib-react",
+    "outDir": "lib-react-esm",
     "target": "ES2019",
-    "module": "CommonJS"
+    "moduleResolution": "node",
+    "esModuleInterop": true
   }
 }

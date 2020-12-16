@@ -4,5 +4,6 @@ node_modules
 .DS_Store
 svg
 lib-react-tsx
-lib-react
-react.ts
+lib-react-cjs
+lib-react-esm
+react.index.ts

@@ -2,21 +2,23 @@
   "name": "cheminfo-font",
   "version": "0.34.1",
   "description": "Cheminfo font and CSS to include it in web pages",
-  "main": "dist/cheminfo.css",
+  "main": "lib-react-cjs/react.index.js",
+  "module": "lib-react-esm/react.index.js",
   "files": [
     "dist",
     "svg",
-    "lib-react",
-    "react.js"
+    "lib-react-cjs",
+    "lib-react-esm"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "npm run clean && npm run build-svg && npm run build-react",
-    "build-react": "npm run build-react-tsx && npm run build-react-js",
+    "build-react": "npm run build-react-tsx && npm run build-react-esm && npm run build-react-cjs",
     "build-react-tsx": "svgr --icon --typescript --title-prop --index-template svgr-index-template.js --no-svgo --out-dir lib-react-tsx svg",
-    "build-react-js": "tsc",
+    "build-react-esm": "tsc -p tsconfig.json",
+    "build-react-cjs": "tsc -p tsconfig.cjs.json",
     "build-svg": "node build-svg.js",
-    "clean": "rimraf dist lib-react lib-react-tsx svg",
+    "clean": "rimraf dist lib-react-cjs lib-react-esm lib-react-tsx svg",
     "test": "echo 1"
   },
   "repository": {
