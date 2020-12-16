@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,9 +11,9 @@
    height="1000"
    id="svg4152"
    version="1.1"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
    viewBox="0 0 1000 1000"
-   sodipodi:docname="assignment.svg.2020_05_01_16_17_23.0.svg">
+   sodipodi:docname="assignment.svg">
   <defs
      id="defs5498">
     <marker
@@ -81,23 +79,10 @@
        width="6"
        patternUnits="userSpaceOnUse"
        id="EMFhbasepattern" />
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter907"
-       x="-0.039596961"
-       width="1.0791939"
-       y="-0.12377968"
-       height="1.2475594">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.5270996"
-         id="feGaussianBlur909" />
-    </filter>
   </defs>
   <sodipodi:namedview
      inkscape:window-height="1035"
-     inkscape:window-width="1920"
+     inkscape:window-width="1251"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -110,11 +95,12 @@
      inkscape:zoom="0.43074198"
      inkscape:cx="352.84223"
      inkscape:cy="622.21679"
-     inkscape:window-x="1920"
-     inkscape:window-y="1"
+     inkscape:window-x="217"
+     inkscape:window-y="36"
      inkscape:current-layer="g6050"
-     inkscape:window-maximized="1"
-     objecttolerance="20">
+     inkscape:window-maximized="0"
+     objecttolerance="20"
+     inkscape:document-rotation="0">
     <sodipodi:guide
        orientation="horizontal"
        position="200"
@@ -176,23 +162,20 @@
        id="path5973"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:12.63237572;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -546.38961,871.01774 c 35.19241,0.97757 60.60916,9.77567 63.54186,56.69889 2.9327,46.92322 18.57377,55.72133 65.497,56.6989 46.92322,0.97756 72.33996,24.43917 79.18293,43.01287 6.84297,18.5738 28.34945,22.4841 47.90079,24.4392 19.55134,1.9551 18.57377,1.9551 18.57377,1.9551"
+       style="fill:none;stroke:#000000;stroke-width:12.6324;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -546.38961,870.17558 c 35.19241,0.97757 60.60916,9.77567 63.54186,56.69889 2.9327,46.92322 18.57377,55.72133 65.497,56.6989 46.92322,0.97756 72.33996,24.43913 79.18293,43.01283 6.84297,18.5738 28.34945,22.4841 47.90079,24.4392 19.55134,1.9551 18.57377,1.9551 18.57377,1.9551"
        id="path857"
        inkscape:connector-curvature="0" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot859"
-       
        transform="matrix(0.42107919,0,0,0.42107919,-534.65881,975.86965)"><flowRegion
-         id="flowRegion861"
-         ><rect
-           id="rect863"
-           width="659.32745"
-           height="269.30276"
-           x="232.15755"
-           y="-434.73361"
-           ></flowRegion><flowPara
-         id="flowPara865"
-         >TGATGA</flowPara></flowRoot>  </g>
+   id="flowRegion861"><rect
+     id="rect863"
+     width="659.32745"
+     height="269.30276"
+     x="232.15755"
+     y="-434.73361" /><flowPara
+     id="flowPara865">TGATGA</flowPara></flowRegion>  </flowRoot>
+  </g>
 </svg>
