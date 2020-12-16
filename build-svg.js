@@ -9,7 +9,9 @@ const destination_html = __dirname + '/docs/';
 const destination_react = __dirname + '/react.ts';
 
 const SVGO = require('svgo');
-const svgo = new SVGO(/*{ custom config object }*/);
+const svgo = new SVGO({
+  plugins: [{ removeDimensions: true }],
+});
 const btoa = require('btoa');
 
 const {

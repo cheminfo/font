@@ -13,7 +13,7 @@
     "prepublishOnly": "npm run build",
     "build": "npm run clean && npm run build-svg && npm run build-react",
     "build-react": "npm run build-react-tsx && npm run build-react-js",
-    "build-react-tsx": "svgr --icon --typescript --title-prop --index-template svgr-index-template.js --out-dir lib-react-tsx svg",
+    "build-react-tsx": "svgr --icon --typescript --title-prop --index-template svgr-index-template.js --no-svgo --out-dir lib-react-tsx svg",
     "build-react-js": "tsc",
     "build-svg": "node build-svg.js",
     "clean": "rimraf dist lib-react lib-react-tsx svg",
