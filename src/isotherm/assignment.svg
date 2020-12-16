@@ -13,7 +13,7 @@
    version="1.1"
    inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
    viewBox="0 0 1000 1000"
-   sodipodi:docname="isotherm.svg">
+   sodipodi:docname="assignment.svg">
   <defs
      id="defs5498">
     <marker
@@ -79,19 +79,6 @@
        width="6"
        patternUnits="userSpaceOnUse"
        id="EMFhbasepattern" />
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter907"
-       x="-0.039596961"
-       width="1.0791939"
-       y="-0.12377968"
-       height="1.2475594">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.5270996"
-         id="feGaussianBlur909" />
-    </filter>
   </defs>
   <sodipodi:namedview
      inkscape:window-height="943"
@@ -110,7 +97,7 @@
      inkscape:cy="640.78939"
      inkscape:window-x="0"
      inkscape:window-y="23"
-     inkscape:current-layer="svg4152"
+     inkscape:current-layer="g6050"
      inkscape:window-maximized="0"
      objecttolerance="20"
      inkscape:document-rotation="0">
@@ -183,28 +170,25 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot859"
-       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:192px;line-height:1.25;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter907)"
        transform="matrix(0.42107919,0,0,0.42107919,-534.65881,975.86965)"><flowRegion
          id="flowRegion861"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:192px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+         ><rect
            id="rect863"
            width="659.32745"
            height="269.30276"
            x="232.15755"
            y="-434.73361"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:192px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+            /></flowRegion><flowPara
          id="flowPara865"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:333.333px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">TGATGA</flowPara></flowRoot>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:80.8472px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.421079"
-       x="-324.48187"
-       y="1144.0112"
-       id="text72"><tspan
-         sodipodi:role="line"
-         id="tspan70"
-         x="-324.48187"
-         y="1144.0112"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.021px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.421079">p</tspan></text>
+         >TGATGA</flowPara></flowRoot>
+    <g
+       aria-label="p"
+       id="text72"
+       style="font-style:normal;font-weight:normal;font-size:80.8472px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.421079">
+      <path
+         d="m -292.4848,1123.4858 q 0,4.4597 -1.39701,8.3821 -1.37016,3.9224 -3.65374,6.6627 -2.31045,2.8209 -5.37315,4.4597 -3.06269,1.612 -6.52837,1.612 -2.41791,0 -4.45971,-0.5642 -2.01493,-0.5373 -3.6806,-1.5851 l -2.9015,12.6269 h -5.05076 l 9.4836,-41.0777 h 5.05076 l -0.72537,3.1433 q 2.49851,-1.7463 4.91642,-2.8478 2.41792,-1.1283 5.34628,-1.1283 4.37911,0 6.6627,2.7134 2.31045,2.7135 2.31045,7.603 z m -5.29254,0.9672 q 0,-3.197 -1.39702,-4.9164 -1.39702,-1.7463 -4.45971,-1.7463 -2.22986,0 -4.62091,1.1015 -2.39105,1.1015 -4.45971,2.4985 l -3.92239,17.006 q 1.74627,0.9403 3.33135,1.397 1.58508,0.4567 3.8418,0.4567 2.76717,0 4.97016,-1.3433 2.22985,-1.3432 3.6806,-3.4925 1.53135,-2.2567 2.28359,-5.0239 0.75224,-2.7672 0.75224,-5.9373 z"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.021px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.421079"
+         id="path126" />
+    </g>
   </g>
 </svg>

@@ -159,7 +159,7 @@
        id="tspan52"
        x="196"
        y="586"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:533.33331299px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"><tspan
+       ><tspan
    style="font-size:64.99999762%;baseline-shift:super"
    id="tspan70">32</tspan>S</tspan></text>
   <text
@@ -172,7 +172,7 @@
        id="tspan56"
        x="306"
        y="830"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:120px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'">94.93 %</tspan></text>
+       >94.93 %</tspan></text>
   <path
      style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 103.11999,30 H 892 V 965.63605 H 103.11999 Z"

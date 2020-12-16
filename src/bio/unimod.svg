@@ -129,11 +129,7 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     aria-label="U"
-     transform="scale(1.0083066,0.99176181)"
-     style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:964.88189697px;line-height:1.25;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:24.12204742"
-     id="text37">
+  <g>
     <path
        d="m 612.58079,150.60786 h 212.95245 v 411.77088 q 0,61.24739 -19.31648,115.8989 -18.84535,54.18038 -59.83399,95.16902 -40.5175,40.5175 -85.2752,57.00718 -62.18966,23.08555 -149.3494,23.08555 -50.41131,0 -110.24529,-7.067 -59.36286,-7.06701 -99.40922,-27.79689 -40.04637,-21.20102 -73.49687,-59.83399 -32.97936,-38.63296 -45.22884,-79.6216 -19.78761,-65.95872 -19.78761,-116.84117 V 150.60786 h 212.95245 v 421.66469 q 0,56.53605 31.09482,88.57315 31.56596,31.56596 87.15975,31.56596 55.12264,0 86.21747,-31.09483 31.56596,-31.56596 31.56596,-89.04428 z"
        style="stroke-width:24.12204742"

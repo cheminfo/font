@@ -183,16 +183,16 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot859"
-       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:192px;line-height:1.25;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter907)"
+       
        transform="matrix(0.42107919,0,0,0.42107919,-534.65881,975.86965)"><flowRegion
          id="flowRegion861"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:192px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+         ><rect
            id="rect863"
            width="659.32745"
            height="269.30276"
            x="232.15755"
            y="-434.73361"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:192px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+           ></flowRegion><flowPara
          id="flowPara865"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:333.33334351px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">TGATGA</flowPara></flowRoot>  </g>
+         >TGATGA</flowPara></flowRoot>  </g>
 </svg>
