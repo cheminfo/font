@@ -17,5 +17,5 @@ function appendEntryCss(resultsCss, dataUrl, prefix, icon) {
 
 module.exports = {
   appendHeaderCss,
-  appendEntryCss
+  appendEntryCss,
 };

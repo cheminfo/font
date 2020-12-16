@@ -1,6 +1,5 @@
-
 function appendHeaderHtml(resultsHtml) {
-    resultsHtml.push(`
+  resultsHtml.push(`
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -28,7 +27,7 @@ function appendHeaderHtml(resultsHtml) {
 }
 
 function appendFooterHtml(resultsHtml) {
-    resultsHtml.push(`
+  resultsHtml.push(`
     </div>
 </body>
 </html>	
@@ -36,17 +35,16 @@ function appendFooterHtml(resultsHtml) {
 }
 
 function appendEntryHtml(resultsHtml, prefix, icon) {
-    resultsHtml.push(`
+  resultsHtml.push(`
 <div class="preview" style="font-size: 12px">
 	<span class="preview_icon ${prefix} ${prefix}-${icon}"></span>
 	<span>${icon}</span>
 </div>            
-            `)
+            `);
 }
 
-module.exports={
-    appendFooterHtml,
-    appendHeaderHtml,
-    appendEntryHtml
-}
-
+module.exports = {
+  appendFooterHtml,
+  appendHeaderHtml,
+  appendEntryHtml,
+};

@@ -6,6 +6,7 @@ const source = __dirname + '/src';
 const svgFolder = __dirname + '/svg';
 const destination = __dirname + '/dist/';
 const destination_html = __dirname + '/docs/';
+const destination_react = __dirname + '/react.ts';
 
 const SVGO = require('svgo');
 const svgo = new SVGO(/*{ custom config object }*/);
@@ -14,7 +15,7 @@ const btoa = require('btoa');
 const {
   appendHeaderHtml,
   appendFooterHtml,
-  appendEntryHtml
+  appendEntryHtml,
 } = require('./util/html.js');
 
 const { appendHeaderCss, appendEntryCss } = require('./util/css.js');
@@ -27,21 +28,25 @@ doAll();
 async function doAll() {
   appendHeaderCss(resultsCss, prefix);
   appendHeaderHtml(resultsHtml);
-  await appendFolder(source);
+  const folders = [];
+  await appendFolder(source, folders);
   appendFooterHtml(resultsHtml);
 
   fs.outputFileSync(destination + 'style.css', resultsCss.join('\r\n'));
   fs.outputFileSync(destination_html + 'index.html', resultsHtml.join('\r\n'));
   fs.outputFileSync(destination_html + 'style.css', resultsCss.join('\r\n'));
+
+  fs.outputFileSync(destination_react, buildReactExports(folders));
 }
 
-async function appendFolder(folder) {
-  var files = fs.readdirSync(folder).filter(a => a.indexOf('.ori.') === -1);
+async function appendFolder(folder, allFolders) {
+  var files = fs.readdirSync(folder).filter((a) => a.indexOf('.ori.') === -1);
 
-  files.forEach(async function(file) {
+  files.forEach(async function (file) {
     var fullname = folder + '/' + file;
     if (fs.lstatSync(fullname).isDirectory()) {
-      appendFolder(fullname);
+      allFolders.push(fullname.replace(source + '/', ''));
+      appendFolder(fullname, allFolders);
     } else if (file.match(/svg$/)) {
       var icon = fullname
         .replace(source + '/', '')
@@ -54,10 +59,15 @@ async function appendFolder(folder) {
       fs.outputFileSync(newName, smallSVG.data, 'utf8');
 
       var dataUrl = 'data:image/svg+xml;base64,' + btoa(smallSVG.data);
-      //var dataUrl = 'data:image/svg+xml;utf-8,' + svg.data.replace(/'/g,'\\');
 
       appendEntryCss(resultsCss, dataUrl, prefix, icon);
       appendEntryHtml(resultsHtml, prefix, icon);
     }
   });
+}
+
+function buildReactExports(folders) {
+  return folders
+    .map((folder) => `export * from './lib-react-tsx/${folder}/index';`)
+    .join('\n');
 }
