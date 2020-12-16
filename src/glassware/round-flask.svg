@@ -28,7 +28,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4235" />
     </marker>
@@ -42,7 +42,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4757" />
     </marker>
@@ -57,7 +57,7 @@
       <path
          id="path4164"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <marker
@@ -70,7 +70,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -136,7 +136,7 @@
      inkscape:connector-curvature="0"
      id="path5012"
      d="m 308.06373,553.31284 c -0.87719,7.28047 -1.31578,14.73523 -1.31578,22.28079 0,69.64802 36.66642,130.78826 91.75402,165.1729 l 205.69981,0 c 55.08955,-34.38464 91.75456,-95.52488 91.75456,-165.1729 0,-7.54556 -0.43695,-15.00032 -1.22732,-22.28079 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path5014"
@@ -151,20 +151,20 @@
      inkscape:connector-curvature="0"
      id="path5018"
      d="m 581.39568,50.945697 c -14.6493,-3.947306 -29.8239,4.824611 -33.77096,19.561324 -3.94706,14.649205 4.82337,29.824519 19.56104,33.771809 14.64932,3.94731 29.82392,-4.82461 33.77098,-19.561323 3.94708,-14.649017 -4.82337,-29.82443 -19.56106,-33.77181 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path5020"
      d="m 552.01116,121.03328 c -10.61633,-2.8948 -21.49236,3.421 -24.38688,14.03489 -2.80712,10.61415 3.50868,21.57872 14.12157,24.38586 10.61387,2.89481 21.49285,-3.421 24.38688,-14.03515 2.80811,-10.61389 -3.50769,-21.57872 -14.12157,-24.3856 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path5022"
      d="m 520.08043,82.875369 c -8.24563,-2.28067 -16.75441,2.631618 -18.94738,10.877252 -2.19298,8.333219 2.71923,16.754089 10.96489,19.035019 8.24563,2.19292 16.75441,-2.71927 18.94738,-10.96491 2.19298,-8.24563 -2.7195,-16.754443 -10.96489,-18.947361 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path5024"
      d="m 502.62424,144.62949 c -5.61402,-1.49121 -11.40329,1.84221 -12.89473,7.45623 -1.57883,5.61402 1.75458,11.40327 7.45621,12.98233 5.61402,1.49118 11.40356,-1.84216 12.89475,-7.54384 1.49119,-5.61401 -1.84222,-11.40353 -7.45623,-12.89472 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
 </svg>

@@ -35,7 +35,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4235" />
     </marker>
@@ -49,7 +49,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4757" />
     </marker>
@@ -64,7 +64,7 @@
       <path
          id="path4164"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <marker
@@ -77,7 +77,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -138,14 +138,14 @@
     </rdf:RDF>
   </metadata>
   <rect
-     style="fill:#000000;fill-opacity:0"
+     style="fill-opacity:0"
      id="rect6365"
      width="150"
      height="50"
      x="500"
      y="100" />
   <rect
-     style="fill:#000000;fill-opacity:0;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill-opacity:0;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect6391"
      width="788.88"
      height="935.63605"
@@ -153,7 +153,7 @@
      y="31.18198" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      x="-450"
      y="350"
      id="text4555"><tspan
@@ -165,7 +165,7 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot4529"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"><flowRegion
        id="flowRegion4531"><rect
          id="rect4533"
          width="400"
@@ -176,7 +176,7 @@
        style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  <flowRoot
      xml:space="preserve"
      id="flowRoot74"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"><flowRegion
        id="flowRegion76"><rect
          id="rect78"
          width="600"
@@ -187,7 +187,7 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:426.66665649px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"> </flowPara></flowRoot>  <flowRoot
      xml:space="preserve"
      id="flowRoot90"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"><flowRegion
        id="flowRegion92"><rect
          id="rect94"
          width="550"
@@ -198,7 +198,7 @@
        style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  <flowRoot
      xml:space="preserve"
      id="flowRoot110"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-size:693.33333333px;"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;font-size:693.33333333px;"
      transform="translate(765.07692,-169.38461)"><flowRegion
        id="flowRegion112"
        style="font-size:693.33333333px;"><rect
@@ -212,7 +212,7 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:693.33333333px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';">C</flowPara></flowRoot>  <flowRoot
      xml:space="preserve"
      id="flowRoot118"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      transform="translate(658.46156,397.23077)"><flowRegion
        id="flowRegion120"><rect
          id="rect122"
@@ -224,7 +224,7 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:226.66666667px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'">12.01</flowPara></flowRoot>  <flowRoot
      xml:space="preserve"
      id="flowRoot126"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"><flowRegion
        id="flowRegion128"><rect
          id="rect130"
          width="50"

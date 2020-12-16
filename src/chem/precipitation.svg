@@ -28,7 +28,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path4235"
          inkscape:connector-curvature="0" />
@@ -43,7 +43,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path4757"
          inkscape:connector-curvature="0" />
@@ -59,7 +59,7 @@
       <path
          id="path4164"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)"
          inkscape:connector-curvature="0" />
     </marker>
@@ -73,7 +73,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         style="fill-opacity:1;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
          inkscape:connector-curvature="0" />

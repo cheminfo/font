@@ -33,7 +33,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4235" />
     </marker>
@@ -47,7 +47,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4757" />
     </marker>
@@ -62,7 +62,7 @@
       <path
          id="path4164"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <marker
@@ -75,7 +75,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -137,7 +137,7 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:0"
+     style="fill-opacity:0"
      d="m 500,100 150,0 0,50 -150,0 z"
      id="rect6365" />
   <g
@@ -152,7 +152,7 @@
   </g>
   <g
      transform="translate(694.46156,425.23077)"
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      id="flowRoot118">
     <path
        d="m -255.15625,434.0125 q 0,0.9375 -0.5625,1.6875 -0.5625,0.65625 -1.875,1.125 -1.3125,0.46875 -3.5625,0.65625 -2.25,0.28125 -5.71875,0.28125 -3.5625,0 -5.8125,-0.28125 -2.25,-0.1875 -3.65625,-0.65625 -1.3125,-0.46875 -1.875,-1.125 -0.46875,-0.75 -0.46875,-1.6875 l 0,-49.59375 q 0,-4.21875 -0.84375,-7.6875 -0.75,-3.46875 -2.4375,-5.90625 -1.59375,-2.53125 -4.125,-3.84375 -2.4375,-1.40625 -5.90625,-1.40625 -4.21875,0 -8.53125,3.28125 -4.3125,3.28125 -9.375,9.5625 l 0,55.59375 q 0,0.9375 -0.5625,1.6875 -0.5625,0.65625 -1.96875,1.125 -1.3125,0.46875 -3.5625,0.65625 -2.25,0.28125 -5.625,0.28125 -3.46875,0 -5.71875,-0.28125 -2.25,-0.1875 -3.65625,-0.65625 -1.3125,-0.46875 -1.875,-1.125 -0.5625,-0.75 -0.5625,-1.6875 l 0,-49.59375 q 0,-4.21875 -0.84375,-7.6875 -0.75,-3.46875 -2.34375,-5.90625 -1.59375,-2.53125 -4.125,-3.84375 -2.53125,-1.40625 -5.90625,-1.40625 -4.3125,0 -8.625,3.28125 -4.3125,3.28125 -9.28125,9.5625 l 0,55.59375 q 0,0.9375 -0.5625,1.6875 -0.5625,0.65625 -1.96875,1.125 -1.3125,0.46875 -3.5625,0.65625 -2.25,0.28125 -5.71875,0.28125 -3.46875,0 -5.71875,-0.28125 -2.25,-0.1875 -3.65625,-0.65625 -1.3125,-0.46875 -1.875,-1.125 -0.5625,-0.75 -0.5625,-1.6875 l 0,-83.625 q 0,-0.9375 0.46875,-1.59375 0.46875,-0.75 1.6875,-1.21875 1.21875,-0.46875 3.09375,-0.65625 1.96875,-0.28125 4.875,-0.28125 3,0 4.96875,0.28125 1.96875,0.1875 3,0.65625 1.125,0.46875 1.59375,1.21875 0.46875,0.65625 0.46875,1.59375 l 0,9.65625 q 6.9375,-7.5 13.78125,-11.25 6.9375,-3.75 14.4375,-3.75 5.15625,0 9.28125,1.125 4.125,1.03125 7.3125,3.09375 3.28125,1.96875 5.625,4.78125 2.34375,2.8125 3.9375,6.28125 3.75,-4.03125 7.3125,-6.9375 3.65625,-2.90625 7.125,-4.6875 3.5625,-1.875 7.03125,-2.71875 3.5625,-0.9375 7.21875,-0.9375 8.34375,0 14.0625,2.8125 5.71875,2.8125 9.1875,7.6875 3.5625,4.78125 5.0625,11.25 1.5,6.46875 1.5,13.6875 l 0,53.53125 z"
@@ -171,6 +171,6 @@
        id="path4236" />
   </g>
   <g
-     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      id="flowRoot126" />
 </svg>

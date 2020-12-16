@@ -28,7 +28,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4235" />
     </marker>
@@ -42,7 +42,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4757" />
     </marker>
@@ -57,7 +57,7 @@
       <path
          id="path4164"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <marker
@@ -70,7 +70,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -147,20 +147,20 @@
      inkscape:connector-curvature="0"
      id="path4973"
      d="m 91.99635,338.21903 c -11.39483,6.58003 -15.40698,21.185 -8.82695,32.73944 6.58019,11.39531 21.18468,15.08713 32.57952,8.5071 z m 0,0 391.4357,-225.96961 23.75257,41.24495 -391.4357,225.9712 z M 507.18462,153.49437 c 11.39499,-6.74076 15.4073,-21.34413 8.82711,-32.73944 -6.58035,-11.39531 -21.18452,-15.24626 -32.57968,-8.50551 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+     style="fill-opacity:1;fill-rule:nonzero;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4975"
      d="M 664.46331,802.1367 H 329.20103 l 0.32144,-47.825 h 335.26451 z m -335.10188,-23.9109 -0.16072,23.9109 c -13.32079,0 -23.91329,-10.7508 -23.75256,-23.9109 0.16072,-13.3192 10.91314,-23.9141 24.23393,-23.9141 z M 308.81868,766.3483 476.37049,478.91151 517.61672,502.66327 349.90418,790.1001 Z M 497.07397,490.78739 476.37049,478.91151 c 6.74044,-11.55604 21.34525,-15.40858 32.74024,-8.82855 11.39467,6.58004 15.24658,21.185 8.50599,32.58031 z M 517.61672,478.59006 685.32845,766.0285 644.08303,790.4247 476.37049,502.98472 Z m 147.00826,299.63574 20.70347,-12.1973 c 6.74108,11.3937 2.73052,25.9987 -8.66766,32.7394 -11.39372,6.7408 -26.16004,3.0505 -32.73944,-8.3432 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+     style="fill-opacity:1;fill-rule:nonzero;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4977"
      d="m 876.31298,472.8702 c 11.23204,6.58003 25.99853,2.72908 32.73944,-8.66623 6.57939,-11.55603 2.88773,-26.1594 -8.50599,-32.73944 z m 0,0 -391.4365,-225.96961 24.23425,-41.40726 391.4357,225.9712 z M 509.11073,205.49333 c -11.23459,-6.58003 -25.9998,-2.56677 -32.74024,8.82695 -6.57987,11.39531 -2.88869,26.00028 8.50599,32.58031 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+     style="fill-opacity:1;fill-rule:nonzero;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4979"
      d="m 876.31298,379.46557 c 11.23204,6.58003 25.99853,2.72749 32.73944,-8.66782 6.57939,-11.55444 2.88773,-26.15941 -8.50599,-32.73944 z m 0,0 -391.4365,-225.9712 24.23425,-41.40567 391.4357,225.96961 z M 509.11073,112.0887 c -11.23459,-6.58003 -25.9998,-2.56836 -32.74024,8.82695 -6.57987,11.39372 -2.88869,25.99869 8.50599,32.57872 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+     style="fill-opacity:1;fill-rule:nonzero;stroke:none" />
 </svg>

@@ -28,7 +28,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4235" />
     </marker>
@@ -42,7 +42,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4757" />
     </marker>
@@ -57,7 +57,7 @@
       <path
          id="path4164"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <marker
@@ -70,7 +70,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -131,20 +131,20 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:0"
+     style="fill-opacity:0"
      d="m 500,100 150,0 0,50 -150,0 z"
      id="rect6365" />
   <g
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      id="flowRoot37" />
   <g
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      id="flowRoot53" />
   <g
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      id="flowRoot69" />
   <g
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none"
      id="text43">
     <path
        d="m 419.77551,386.85059 q 0,8.85009 -0.91552,15.25878 -0.61036,6.10352 -2.13624,10.07081 -1.52587,3.66211 -3.96728,5.49316 -2.13623,1.83105 -4.88281,1.83105 l -98.87696,0 0,318.29834 q 0,3.05176 -2.13623,5.49317 -1.83105,2.4414 -6.40869,3.96728 -4.57763,1.52588 -12.5122,2.44141 -7.6294,0.91553 -19.22608,0.91553 -11.59668,0 -19.53125,-0.91553 -7.62939,-0.91553 -12.20703,-2.44141 -4.57764,-1.52588 -6.71387,-3.96728 -1.83105,-2.44141 -1.83105,-5.49317 l 0,-318.29834 -98.87696,0 q -3.05175,0 -5.18798,-1.83105 -2.13623,-1.83105 -3.66211,-5.49316 -1.52588,-3.96729 -2.44141,-10.07081 -0.61035,-6.40869 -0.61035,-15.25878 0,-9.15528 0.61035,-15.56397 0.91553,-6.40869 2.44141,-10.0708 1.52588,-3.96728 3.66211,-5.49316 2.13623,-1.83106 5.18798,-1.83106 l 278.32032,0 q 2.74658,0 4.88281,1.83106 2.44141,1.52588 3.96728,5.49316 1.52588,3.66211 2.13624,10.0708 0.91552,6.40869 0.91552,15.56397 z"

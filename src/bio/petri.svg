@@ -28,7 +28,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4235" />
     </marker>
@@ -42,7 +42,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path4757" />
     </marker>
@@ -57,7 +57,7 @@
       <path
          id="path4164"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <marker
@@ -70,7 +70,7 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -136,7 +136,7 @@
      inkscape:connector-curvature="0"
      id="path4487"
      d="m 389.72786,447.68195 0,63.0767 0,0 c 0,0.6446 0,1.29082 0,1.93575 0,76.62814 111.31157,138.8977 248.75928,138.8977 137.44546,0 248.91586,-62.26956 248.91586,-138.8977 0,-0.64461 0,-1.29082 -0.16316,-1.93575 l 0.16316,0 0,-63.0767 c -164.54902,0 -333.12933,0 -497.67514,0 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4489"
@@ -151,22 +151,22 @@
      inkscape:connector-curvature="0"
      id="path4493"
      d="m 567.01736,362.18199 c -10.32408,-2.74242 -20.96868,3.3875 -23.71333,13.71204 -2.74017,10.32454 3.39022,20.97187 13.71428,23.87583 10.32406,2.74242 20.97331,-3.38782 23.71348,-13.71236 2.90252,-10.48577 -3.38574,-21.1331 -13.71443,-23.87551 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4495"
      d="m 756.08792,361.69813 c -10.48658,-2.90413 -21.13118,3.22627 -23.87599,13.71204 -2.74001,10.32454 3.39022,20.97187 13.71444,23.71428 10.48211,2.74242 21.13119,-3.3875 23.87583,-13.71204 2.74017,-10.32454 -3.39022,-20.97187 -13.71428,-23.71428 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4497"
      d="m 691.5611,440.58369 c -10.32406,-2.74242 -20.97314,3.38798 -23.87583,13.71252 -2.74465,10.48578 3.38574,21.1331 13.87232,23.87551 10.32406,2.74242 20.97314,-3.3875 23.71331,-13.71204 2.74466,-10.32454 -3.38558,-20.97187 -13.7098,-23.87599 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4499"
      d="m 507.16966,477.04261 c -10.32454,-2.74241 -20.97187,3.3875 -23.71428,13.71205 -2.90397,10.48625 3.22643,21.1331 13.71205,23.8755 10.32454,2.74242 20.9741,-3.38749 23.71427,-13.71203 2.74465,-10.48627 -3.38558,-21.1331 -13.71204,-23.87552 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
   <path
      inkscape:connector-curvature="0"
      id="path4501"
@@ -226,5 +226,5 @@
      inkscape:connector-curvature="0"
      id="path4523"
      d="m 292.28989,225.86547 c -120.8293,65.65803 -200.68306,151.9648 -178.42085,192.6174 22.10083,40.8143 137.92934,20.48784 258.59757,-45.1697 120.82945,-65.65753 200.68113,-151.96462 178.42131,-192.77846 -22.10178,-40.65306 -137.9298,-20.48784 -258.59803,45.33076 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none" />
 </svg>
