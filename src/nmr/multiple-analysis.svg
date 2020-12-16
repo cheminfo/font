@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
+<svg stroke="currentColor" fill="currentColor"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -80,7 +80,7 @@
      data-name="Path 3"
      d="M 143.556,245.749"
      fill="none"
-     stroke="#000000"
+     
      stroke-linecap="round"
      stroke-linejoin="round"
      stroke-width="39.653" />
@@ -89,7 +89,7 @@
      data-name="Path 5"
      d="M 213.44601,229.42917 V 77.429165 h 527 V 228.42917"
      fill="none"
-     stroke="#000000"
+     
      stroke-linecap="round"
      stroke-linejoin="round"
      stroke-width="39.653" />

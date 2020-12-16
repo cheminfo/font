@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
+<svg stroke="currentColor" fill="currentColor" version="1.1"
 	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
-		<polyline fill="none" stroke="#000000" stroke-width="48.9869" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		<polyline fill="none"  stroke-width="48.9869" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
 		43.528,957.101 159.71,957.101 188.32,879.328 217.403,956.299 459.5,956.383 498.5,898.5 549.407,52.153 603.5,896.5 
 		646.5,957.101 717.167,957.101 767.249,840.201 819.76,957.101 953.335,957.101 	"/>
 </g>
 <g>
 	<g>
 		
-			<line fill="none" stroke="#000000" stroke-width="39.1895" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="188.5" y1="618.1" x2="188.5" y2="744.5"/>
+			<line fill="none"  stroke-width="39.1895" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="188.5" y1="618.1" x2="188.5" y2="744.5"/>
 		<path d="M188.5,839.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537,26.958l74.537-26.958
 			C233.2,739.356,205.01,794.589,188.5,839.106z"/>
 	</g>
@@ -22,7 +22,7 @@
 <g>
 	<g>
 		
-			<line fill="none" stroke="#000000" stroke-width="39.1895" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="766.5" y1="585.1" x2="766.5" y2="711.5"/>
+			<line fill="none"  stroke-width="39.1895" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="766.5" y1="585.1" x2="766.5" y2="711.5"/>
 		<path d="M766.5,806.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537,26.958l74.537-26.958
 			C811.201,706.356,783.01,761.589,766.5,806.106z"/>
 	</g>
@@ -37,6 +37,6 @@
 		l-48.041-110.253h-1.57l-50.401,111.039L670.08,515.68l74.815-96.075v-2.363l-116.555,15.75v-53.552l115.767,14.963v-1.576
 		l-74.027-96.865l48.041-27.562l48.823,110.254h1.576l48.041-111.042L863.81,295.177z"/>
 </g>
-<path fill="none" stroke="#000000" stroke-width="48.9869" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+<path fill="none"  stroke-width="48.9869" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 	M451.5,952.5"/>
 </svg>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
+<svg stroke="currentColor" fill="currentColor" version="1.1"
 	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" sodipodi:docname="icons.svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" inkscape:version="0.91 r13725"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#000000" stroke-width="50" d="M188.491,960.059c-11.069,11.069-29.019,11.069-40.087,0L38.586,850.24
+<path fill="#FFFFFF"  stroke-width="50" d="M188.491,960.059c-11.069,11.069-29.019,11.069-40.087,0L38.586,850.24
 	c-11.07-11.071-11.072-29.019,0-40.087l297.208-287.211c11.07-11.07,29.019-11.071,40.089,0.001l109.818,109.819
 	c11.07,11.07,11.07,29.017,0,40.087L188.491,960.059z"/>
-<line fill="#FFFFFF" stroke="#000000" stroke-width="80" x1="930" y1="71.47" x2="94.203" y2="907.271"/>
-<polyline stroke="#000000" stroke-width="50" stroke-linecap="square" points="815.25,131.774 873.281,189.806 930.417,136.065 
+<line fill="#FFFFFF"  stroke-width="80" x1="930" y1="71.47" x2="94.203" y2="907.271"/>
+<polyline  stroke-width="50" stroke-linecap="square" points="815.25,131.774 873.281,189.806 930.417,136.065 
 	967.187,73.274 929.851,35.94 870.455,68.183 813.32,129.843 "/>
-<path fill="none" stroke="#000000" stroke-width="50" stroke-linecap="round" d="M280.166,28.167
+<path fill="none"  stroke-width="50" stroke-linecap="round" d="M280.166,28.167
 	c93.974,0,170.155,76.181,170.155,170.155c0,93.974-76.181,170.155-170.155,170.155c-93.974,0-170.155-76.181-170.155-170.155"/>
-<path fill="none" stroke="#000000" stroke-width="50" stroke-linecap="square" d="M197.453,113.308"/>
-<polyline fill="none" stroke="#000000" stroke-width="50" stroke-linecap="square" points="268.979,42.067 392.476,165.563 
+<path fill="none"  stroke-width="50" stroke-linecap="square" d="M197.453,113.308"/>
+<polyline fill="none"  stroke-width="50" stroke-linecap="square" points="268.979,42.067 392.476,165.563 
 	362.306,278.16 249.709,308.33 125.825,184.446 "/>
-<polyline fill="none" stroke="#000000" stroke-width="50" stroke-linecap="square" points="142.569,239.02 230.166,331.268 
+<polyline fill="none"  stroke-width="50" stroke-linecap="square" points="142.569,239.02 230.166,331.268 
 	269.701,333.594 365.825,308.012 395.282,277.004 419.313,178.555 410.011,139.795 332.491,65.376 "/>
-<line fill="#FFFFFF" stroke="#000000" stroke-width="120" stroke-linecap="round" x1="384.131" y1="301.333" x2="940.023" y2="857.225"/>
+<line fill="#FFFFFF"  stroke-width="120" stroke-linecap="round" x1="384.131" y1="301.333" x2="940.023" y2="857.225"/>
 </svg>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
+<svg stroke="currentColor" fill="currentColor" version="1.1"
 	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" inkscape:version="0.91 r13725" sodipodi:docname="science.svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -13,16 +13,16 @@
 <g id="g9494" transform="translate(143.21643,-830.1643)">
 	<path id="path9417" inkscape:connector-curvature="0" d="M162.618,1250.42h360.746v208.723H162.618V1250.42z"/>
 	
-		<path id="path9419" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="31.6681" stroke-linecap="round" stroke-linejoin="round" d="
+		<path id="path9419" inkscape:connector-curvature="0" fill="none"  stroke-width="31.6681" stroke-linecap="round" stroke-linejoin="round" d="
 		M565.579,1004.446H162.618v454.697h360.746v-397.736L565.579,1004.446z"/>
 	
-		<path id="path9425" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="31.475" stroke-linecap="round" stroke-linejoin="round" d="
+		<path id="path9425" inkscape:connector-curvature="0" fill="none"  stroke-width="31.475" stroke-linecap="round" stroke-linejoin="round" d="
 		M162.618,1080.914h69.979"/>
 	
-		<path id="path9427" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="31.475" stroke-linecap="round" stroke-linejoin="round" d="
+		<path id="path9427" inkscape:connector-curvature="0" fill="none"  stroke-width="31.475" stroke-linecap="round" stroke-linejoin="round" d="
 		M162.618,1138.364h69.979"/>
 	
-		<path id="path9429" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="31.475" stroke-linecap="round" stroke-linejoin="round" d="
+		<path id="path9429" inkscape:connector-curvature="0" fill="none"  stroke-width="31.475" stroke-linecap="round" stroke-linejoin="round" d="
 		M162.618,1195.816h69.979"/>
 </g>
 <polygon fill="#FEFEFE" points="641.5,420.5 649.5,441.5 647.5,627.5 618.5,644.5 636.5,622.5 637.5,439.5 "/>

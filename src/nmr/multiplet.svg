@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
+<svg stroke="currentColor" fill="currentColor" version="1.1"
 	 id="svg4152" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -23,7 +23,7 @@
 		c2.646,5.282,6.141,9.508,10.496,12.734c4.416,3.241,9.963,4.818,16.619,4.818c3.367,0,6.604-0.458,9.765-1.448
 		c3.17-0.929,6.399-2.507,9.697-4.683c3.236-2.25,6.664-5.083,10.091-8.641c3.494-3.504,7.325-7.85,11.413-13.072V110.784z"/>
 	
-		<polyline fill="none" stroke="#000000" stroke-width="49.8592" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		<polyline fill="none"  stroke-width="49.8592" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
 		34.5,703.843 131.345,703.843 182.496,557.417 238.63,703.843 326.45,703.843 386.051,173.312 444.162,703.843 552.832,703.843 
 		610.941,173.312 670.544,703.843 758.369,703.843 814.503,557.417 865.657,703.843 962.5,703.843 	"/>
 </g>

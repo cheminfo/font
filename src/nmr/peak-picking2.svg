@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
+<svg stroke="currentColor" fill="currentColor" version="1.1"
 	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="peaks.svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" inkscape:version="0.92.1 r15371"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -10,13 +10,13 @@
 	<inkscape:grid  type="xygrid" empspacing="50" id="grid3430"></inkscape:grid>
 	<sodipodi:guide  inkscape:locked="false" position="550,1000" orientation="0,1" id="guide4169"></sodipodi:guide>
 </sodipodi:namedview>
-<path id="path3736" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="
+<path id="path3736" inkscape:connector-curvature="0" fill="none"  stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="
 	M43.556,943.061c64.942-0.561,18.942-0.561,145.707,0.133C307.5,941.5,274.516,540.484,283.373,462.5
 	c13.218,120.809-19.692,457.958,120.678,480.692c32.647,5.286,156.088,7.401,191.512,0C734.876,914.378,696.282,608.309,709.5,487.5
 	c8.724,77.984-17,429,113,457c87.151,1.308,27.312,0,129-1.439"/>
-<path fill="none" stroke="#000000" stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="M244.5,106.5
+<path fill="none"  stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="M244.5,106.5
 	c79,59,397,144,425,190s26,82,26,82"/>
-<path fill="none" stroke="#000000" stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="M239.5,114.5
+<path fill="none"  stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="M239.5,114.5
 	c89,59,238.867,336.803,289.497,355.152c50.629,18.35,85.522,9.27,85.522,9.27"/>
-<path fill="none" stroke="#000000" stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="M340.5,324.5"/>
+<path fill="none"  stroke-width="39.6529" stroke-linecap="round" stroke-linejoin="round" d="M340.5,324.5"/>
 </svg>

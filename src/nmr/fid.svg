@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
+<svg stroke="currentColor" fill="currentColor"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -67,7 +67,7 @@
    stroke-linejoin="round"
    stroke-linecap="round"
    stroke-width="48.9869"
-   stroke="#000000"
+   
    fill="none" />
 
 </svg>
