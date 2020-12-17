@@ -33,7 +33,7 @@
     return __exportStar(__defProp(module != null ? __create(__getProtoOf(module)) : {}, "default", {value: module, enumerable: true}), module);
   };
 
-  // node_modules/object-assign/index.js
+  // node_modules/.pnpm/object-assign@4.1.1/node_modules/object-assign/index.js
   var require_object_assign = __commonJS((exports, module) => {
     /*
     object-assign
@@ -106,7 +106,7 @@
     };
   });
 
-  // node_modules/react/cjs/react.development.js
+  // node_modules/.pnpm/react@17.0.1/node_modules/react/cjs/react.development.js
   var require_react_development = __commonJS((exports) => {
     /** @license React v17.0.1
      * react.development.js
@@ -1660,7 +1660,7 @@
     }
   });
 
-  // node_modules/react/index.js
+  // node_modules/.pnpm/react@17.0.1/node_modules/react/index.js
   var require_react = __commonJS((exports, module) => {
     "use strict";
     if (false) {
@@ -1670,7 +1670,7 @@
     }
   });
 
-  // node_modules/scheduler/cjs/scheduler.development.js
+  // node_modules/.pnpm/scheduler@0.20.1/node_modules/scheduler/cjs/scheduler.development.js
   var require_scheduler_development = __commonJS((exports) => {
     /** @license React v0.20.1
      * scheduler.development.js
@@ -2319,7 +2319,7 @@
     }
   });
 
-  // node_modules/scheduler/index.js
+  // node_modules/.pnpm/scheduler@0.20.1/node_modules/scheduler/index.js
   var require_scheduler = __commonJS((exports, module) => {
     "use strict";
     if (false) {
@@ -2329,7 +2329,7 @@
     }
   });
 
-  // node_modules/scheduler/cjs/scheduler-tracing.development.js
+  // node_modules/.pnpm/scheduler@0.20.1/node_modules/scheduler/cjs/scheduler-tracing.development.js
   var require_scheduler_tracing_development = __commonJS((exports) => {
     /** @license React v0.20.1
      * scheduler-tracing.development.js
@@ -2617,7 +2617,7 @@
     }
   });
 
-  // node_modules/scheduler/tracing.js
+  // node_modules/.pnpm/scheduler@0.20.1/node_modules/scheduler/tracing.js
   var require_tracing = __commonJS((exports, module) => {
     "use strict";
     if (false) {
@@ -2627,7 +2627,7 @@
     }
   });
 
-  // node_modules/react-dom/cjs/react-dom.development.js
+  // node_modules/.pnpm/react-dom@17.0.1_react@17.0.1/node_modules/react-dom/cjs/react-dom.development.js
   var require_react_dom_development = __commonJS((exports) => {
     /** @license React v17.0.1
      * react-dom.development.js
@@ -20619,7 +20619,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
   });
 
-  // node_modules/react-dom/index.js
+  // node_modules/.pnpm/react-dom@17.0.1_react@17.0.1/node_modules/react-dom/index.js
   var require_react_dom = __commonJS((exports, module) => {
     "use strict";
     if (false) {
@@ -20634,7 +20634,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var react = __toModule(require_react());
   var react_dom = __toModule(require_react_dom());
 
-  // react.index.ts
+  // build/react.index.ts
   var react_index_exports = {};
   __export(react_index_exports, {
     SvgBioDna: () => Dna_default,
@@ -20781,7 +20781,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     SvgXrayRequest: () => Request_default4
   });
 
-  // lib-react-tsx/bio/Dna.tsx
+  // build/lib-react-tsx/bio/Dna.tsx
   var React = __toModule(require_react());
   function SvgDna({
     title,
@@ -20815,7 +20815,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Dna_default = SvgDna;
 
-  // lib-react-tsx/bio/Eppendorf.tsx
+  // build/lib-react-tsx/bio/Eppendorf.tsx
   var React2 = __toModule(require_react());
   function SvgEppendorf({
     title,
@@ -20871,7 +20871,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Eppendorf_default = SvgEppendorf;
 
-  // lib-react-tsx/bio/FlowCytometry.tsx
+  // build/lib-react-tsx/bio/FlowCytometry.tsx
   var React3 = __toModule(require_react());
   function SvgFlowCytometry({
     title,
@@ -20879,9 +20879,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React3.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -20891,9 +20891,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React3.createElement("path", {
       d: "M300.99 463.374l427.984-7.345s-13.282 19.095 0 51.41c13.282 32.313 44.274 51.408 44.274 51.408l-472.257-7.344s17.71-5.875 17.71-44.065-17.71-44.064-17.71-44.064z",
-      fill: "#333",
-      fillOpacity: 0.506,
-      stroke: "#0e0000",
+      fillOpacity: 0.406,
       strokeWidth: 5.565
     }), /* @__PURE__ */ React3.createElement("path", {
       d: "M37.313 441.341c3.548-29.657 6.888-41.127 6.888-41.127l153.21-.46 103.58 63.62s-16.234 2.937-16.234 44.064 16.234 44.065 16.234 44.065l-103.643 64.774-148.72-.146s-7.38-14.688-11.315-57.284c-3.935-42.596-1.967-58.753-1.967-58.753s-2.952-17.626 1.967-58.753z",
@@ -21027,15 +21025,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeWidth: 5.565
     }), /* @__PURE__ */ React3.createElement("path", {
       d: "M883.934 426.653l60.508-44.065s11.806 41.127 13.282 102.818c1.476 61.69-7.38 117.506-7.38 117.506l-73.79-44.065s32.468-39.658 30.992-73.441c-1.475-33.783-23.612-58.753-23.612-58.753z",
-      fill: "#333",
-      fillOpacity: 0.506,
-      stroke: "#0e0000",
-      strokeWidth: 7.79
+      fillOpacity: 0.406,
+      strokeWidth: 5.565
     }));
   }
   var FlowCytometry_default = SvgFlowCytometry;
 
-  // lib-react-tsx/bio/IsoelectricPoint.tsx
+  // build/lib-react-tsx/bio/IsoelectricPoint.tsx
   var React4 = __toModule(require_react());
   function SvgIsoelectricPoint({
     title,
@@ -21058,7 +21054,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str0",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 29.709,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -21069,7 +21064,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var IsoelectricPoint_default = SvgIsoelectricPoint;
 
-  // lib-react-tsx/bio/Microscopy.tsx
+  // build/lib-react-tsx/bio/Microscopy.tsx
   var React5 = __toModule(require_react());
   function SvgMicroscopy({
     title,
@@ -21125,7 +21120,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Microscopy_default = SvgMicroscopy;
 
-  // lib-react-tsx/bio/PeptideCharge.tsx
+  // build/lib-react-tsx/bio/PeptideCharge.tsx
   var React6 = __toModule(require_react());
   function SvgPeptideCharge({
     title,
@@ -21147,7 +21142,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M235.988 69.112c-73.491 0-133.067 59.577-133.067 133.07 0 73.49 59.576 133.067 133.067 133.067 73.493 0 133.069-59.577 133.069-133.068 0-73.492-59.576-133.069-133.069-133.069zM181.89 202.184h108.19M235.993 148.081v108.191M761.589 69.112c-73.491 0-133.068 59.577-133.068 133.07 0 73.49 59.577 133.067 133.068 133.067 73.492 0 133.069-59.577 133.069-133.068 0-73.492-59.577-133.069-133.07-133.069zM707.502 202.184h108.176",
       className: "fil0 str0",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 27.29000375,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -21160,7 +21154,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M236.2 558.724c30.793 0 55.91-25.113 55.91-55.906 0-30.795-25.117-55.91-55.91-55.91-30.79 0-55.919 25.115-55.919 55.91 0 30.793 25.128 55.906 55.92 55.906zM509.769 863.956L387.356 812.28M445.422 461.6c30.792 0 55.91-25.114 55.91-55.907 0-30.795-25.118-55.908-55.91-55.908-30.792 0-55.918 25.113-55.918 55.908 0 30.793 25.126 55.906 55.918 55.906zM527.215 671.938c30.792 0 55.91-25.113 55.91-55.904 0-30.797-25.118-55.91-55.91-55.91-30.793 0-55.918 25.114-55.918 55.91 0 30.79 25.125 55.904 55.918 55.904zM340.948 826.44c30.792 0 55.912-25.114 55.912-55.906 0-30.795-25.12-55.909-55.912-55.909-30.793 0-55.918 25.114-55.918 55.909 0 30.792 25.125 55.906 55.918 55.906zM567.645 930.402c30.793 0 55.909-25.114 55.909-55.906 0-30.797-25.116-55.91-55.909-55.91-30.792 0-55.918 25.114-55.918 55.91 0 30.792 25.126 55.906 55.918 55.906zM514.812 560.03l-44.08-105.025M484.001 655.49l-89.45 80.533M394.859 429.714L290.51 476.453M779.902 812c30.79 0 55.908-25.114 55.908-55.906 0-30.795-25.117-55.908-55.908-55.908-30.793 0-55.92 25.113-55.92 55.908 0 30.793 25.127 55.906 55.92 55.906zM719.256 582.416c30.793 0 55.913-25.113 55.913-55.905 0-30.797-25.12-55.91-55.913-55.91-30.792 0-55.918 25.113-55.918 55.91 0 30.792 25.126 55.905 55.918 55.905zM726.121 786.037l-101.965 56.286M765.603 699.923l-31.795-119.507",
       className: "fil1 str0",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 27.29000375,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -21173,7 +21166,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var PeptideCharge_default = SvgPeptideCharge;
 
-  // lib-react-tsx/bio/Petri.tsx
+  // build/lib-react-tsx/bio/Petri.tsx
   var React7 = __toModule(require_react());
   function SvgPetri({
     title,
@@ -21247,7 +21240,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Petri_default = SvgPetri;
 
-  // lib-react-tsx/bio/Protein.tsx
+  // build/lib-react-tsx/bio/Protein.tsx
   var React8 = __toModule(require_react());
   function SvgProtein({
     title,
@@ -21255,9 +21248,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React8.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -21266,19 +21259,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React8.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React8.createElement("path", {
-      className: "fil0",
       d: "M15.49 11.851l.456.587-.014.013-.014.012-.014.011-.015.01-.015.01-.016.008-.015.007-.016.007-.016.005-.016.005-.017.004-.016.003-.017.002h-.049l-.017-.002-.016-.002-.017-.004-.016-.004-.016-.005-.015-.006-.016-.007-.015-.008-.015-.008-.015-.01-.014-.01-.014-.012-.014-.012-.013-.013-.012-.014-.012-.015-.012-.015-.01-.016-.01-.016-.01-.017-.007-.017-.008-.017-.006-.018-.006-.018-.005-.018-.004-.019-.003-.018-.003-.019-.001-.018-.001-.02v-.037l.002-.018.002-.019.003-.018.004-.019.004-.018.006-.018.006-.017.007-.018.007-.017.009-.016.009-.016.01-.016.01-.016.012-.014.013-.015zm.697.346l-.241.241-.457-.587.242-.24zm1.615-7.582l.398-.639v0l.147.138.125.16.106.18.086.194.068.206.052.218.037.229.023.238.01.248-.001.256-.014.264-.026.271-.036.278-.048.284-.058.288-.069.293-.08.296-.089.298-.099.3-.11.3-.118.3-.129.298-.138.295-.147.293-.157.288-.166.282-.174.276-.184.27-.193.26-.202.25-.21.241-.219.23-.456-.588.196-.204.189-.216.182-.227.175-.237.168-.246.16-.253.153-.26.144-.265.136-.27.128-.274.119-.276.11-.277.1-.277.092-.276.082-.274.073-.271.063-.267.052-.26.043-.255.032-.246.023-.237.012-.227.001-.214-.008-.2-.018-.187-.028-.17-.036-.152-.044-.133-.05-.114-.055-.094-.06-.076-.063-.06v0zm-4.785 4.568l-.669.193v0l-.059-.342-.024-.34.01-.334.039-.328.069-.32.095-.311.118-.301.14-.291.16-.28.177-.27.193-.258.207-.247.219-.235.23-.224.238-.21.245-.199.252-.185.256-.171.258-.157.26-.143.26-.127.258-.111.255-.095.251-.078.246-.06.24-.04.232-.021h.225l.217.025.207.052.197.083.181.118-.398.639-.075-.049-.098-.04-.121-.03-.144-.017h-.163l-.18.016-.195.033-.207.05-.216.067-.223.083-.23.1-.231.113-.234.128-.233.142-.231.154-.227.167-.221.179-.214.189-.204.199-.194.208-.18.216-.167.223-.15.229-.134.234-.115.238-.095.241-.075.244-.053.246-.03.248-.007.249.018.252.044.256zm-.097 4.508l.005-.782v0l.188-.006.156-.02.123-.03.091-.035.063-.038.04-.035.024-.033.017-.036.013-.047.008-.063v-.083l-.01-.1-.022-.115-.032-.128-.043-.138-.053-.147-.062-.152-.068-.158-.075-.161-.079-.164-.082-.165-.085-.165-.085-.164-.085-.163-.084-.16-.08-.158-.076-.153-.07-.15-.065-.145-.058-.142-.048-.14-.038-.14.67-.192.02.073.032.093.044.11.054.122.064.134.07.143.078.15.081.158.085.162.087.167.088.171.086.173.085.175.082.177.077.177.07.178.065.177.055.178.045.177.033.18.018.18v.182l-.024.184-.052.182-.084.172-.115.153-.142.127-.163.098-.181.071-.199.049-.218.027-.239.008v0zm-.85-9.64l.667.199v0l-.048.155-.067.164-.085.191-.103.22-.118.249-.132.276-.142.3-.15.322-.156.342-.157.357-.156.372-.153.381-.147.39-.137.393-.126.395-.11.393-.093.388-.073.379-.05.366-.025.35.002.33.03.307.057.281.087.254.118.228.151.204.192.182.238.16.293.134.352.103.415.067.481.026-.005.782-.54-.03-.485-.078-.432-.127-.382-.175-.332-.222-.281-.267-.229-.307-.175-.34-.125-.363-.08-.38-.037-.395-.002-.404.029-.412.057-.417.08-.422.102-.423.119-.423.133-.42.144-.414.154-.407.159-.397.162-.384.161-.368.16-.35.152-.328.144-.304.132-.277.117-.246.1-.211.077-.172.05-.124.018-.053v0zm-8.958.816l-.521-.512v0l.276-.328.304-.302.327-.274.347-.249.366-.223.382-.2.396-.177.406-.155.416-.134.422-.113.427-.093.429-.074.429-.055.427-.037.422-.019.416-.002.407.015.396.03.384.048.367.062.351.077.332.093.31.108.288.124.264.14.238.159.21.18.179.206.14.236.093.268.03.29-.035.294-.667-.199.012-.104-.01-.09-.032-.092-.063-.105-.1-.115-.14-.118-.176-.118-.211-.112-.243-.104-.27-.094-.297-.083-.32-.07-.338-.058-.356-.043-.37-.03-.382-.013-.391.002-.398.018-.402.035-.403.051-.403.07-.4.087-.392.105-.385.124-.374.142-.36.161-.346.18-.326.2-.306.22-.284.237-.259.257-.233.276v0zm3.164 2.509l.095.774v0l-.249.032-.246.016-.242.001-.239-.012-.234-.025-.229-.038-.223-.05-.217-.062-.211-.072-.204-.083-.196-.093-.189-.102-.18-.11-.171-.12-.162-.126-.152-.135-.141-.142-.13-.148-.12-.156-.106-.162-.093-.169-.08-.174-.064-.181-.047-.186-.03-.19-.01-.194.01-.195.033-.194.053-.191.076-.186.096-.178.117-.17.521.512-.07.104-.056.101-.04.1-.028.099-.016.098-.005.1.005.102.016.105.028.108.04.11.05.113.064.114.075.114.086.114.099.112.109.11.12.105.13.102.138.097.148.09.157.085.164.078.171.07.178.06.185.052.19.043.194.032.2.022.203.01h.207l.21-.015.212-.026v0zm10.683.146l-.575.432v0l-.032-.038-.078-.06-.127-.069-.172-.066-.211-.06-.247-.052-.277-.043-.304-.034-.33-.025-.35-.016-.368-.008-.384-.001-.398.006-.408.012-.416.019-.422.023-.424.028-.426.033-.423.035-.42.04-.412.04-.403.043-.391.044-.377.044-.36.044-.342.044-.32.042-.296.04-.27.038-.24.035-.21.031-.175.027-.095-.774.179-.028.212-.031.243-.035.272-.039.299-.04.322-.043.345-.044.363-.045.38-.044.395-.044.407-.044.416-.04.424-.04.428-.036.431-.033.431-.029.429-.024.424-.018.416-.013.408-.006h.396l.382.01.366.017.348.026.328.037.306.047.284.06.26.074.235.091.211.114.188.149.155.197v0zm-11.171 2.81l-.381-.651v0l.271-.17.308-.136.34-.11.372-.089.401-.07.428-.056.453-.043.473-.03.49-.022.504-.014.515-.007.521-.003h1.048l.519.002.51-.001.499-.005.482-.01.462-.015.438-.025.41-.033.375-.045.339-.056.294-.07.245-.08.188-.087.124-.086.061-.069.02-.043.003-.056-.028-.115-.088-.183.575-.432.151.317.076.33-.021.336-.125.3-.197.23-.24.169-.273.129-.307.1-.34.08-.37.062-.402.047-.428.036-.452.025-.473.016-.49.01-.504.005H11.53l-.523-.002h-.522l-.517.003-.508.008-.495.013-.48.021-.457.03-.433.04-.404.053-.37.065-.33.08-.287.092-.236.104-.18.112v0zm1.156-2.797l.293-.708v0l1.06.587.9.549.748.51.608.477.478.447.358.424.248.413.134.42.004.424-.135.382-.235.3-.297.226-.345.172-.387.131-.421.096-.45.065-.472.036-.484.009-.49-.018-.485-.042-.474-.067-.454-.09-.426-.114-.39-.138-.35-.165-.301-.197-.25-.247-.175-.326-.041-.397.118-.383.237-.33.339-.3.38.652-.244.216-.119.16-.026.08.005.036.046.077.125.12.21.137.28.131.337.12.383.102.418.083.44.062.455.04.458.016.45-.008.433-.033.406-.059.367-.083.316-.107.253-.125.177-.133.1-.122.039-.106-.002-.131-.067-.205-.17-.283-.292-.345-.426-.397-.567-.445-.716-.488-.873-.533-1.039-.575v0zm-2.14-3.4l.643.282-.027.094-.018.09-.009.088-.001.087.006.086.014.087.021.088.03.09.035.09.043.09.05.091.057.091.063.091.069.09.073.089.078.087.082.085.085.083.087.08.09.078.09.075.09.072.09.068.09.065.088.061.086.058.082.054.08.049.074.045.07.04.065.037.057.03-.293.709-.067-.037-.073-.04-.079-.046-.083-.05-.088-.056-.093-.06-.095-.063-.098-.069-.1-.073-.103-.077-.103-.082-.103-.085-.103-.09-.102-.094-.1-.099-.099-.102-.096-.107-.092-.112-.088-.116-.084-.12-.079-.126-.072-.131-.064-.137-.057-.141-.047-.147-.037-.153-.025-.158-.012-.161.002-.166.017-.167.033-.168zm.643.282l-.644-.282.007-.018.008-.018.008-.018.009-.016.01-.017.01-.015.01-.015.012-.014.012-.013.012-.013.013-.012.014-.01.014-.011.014-.01.014-.008.015-.008.016-.008.015-.006.016-.005.016-.005.017-.004.016-.003.017-.002h.016l.017-.001h.017l.017.003.017.002.017.004.017.005.017.005.017.007.016.008.016.009.015.009.015.01.014.01.014.012.013.013.012.013.012.013.011.014.01.015.01.015.01.016.008.016.008.017.007.017.006.017.006.018.005.018.004.018.003.018.003.019.001.019.001.019v.038l-.002.02-.002.018-.004.02-.004.019-.005.019z",
-      fillRule: "nonzero",
-      transform: "matrix(58.61673 0 0 59.70826 -120.089 -16.89)",
-      clipRule: "evenodd",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      transform: "matrix(58.61673 0 0 59.70826 -120.089 -16.89)"
     }));
   }
   var Protein_default = SvgProtein;
 
-  // lib-react-tsx/bio/Seahorse.tsx
+  // build/lib-react-tsx/bio/Seahorse.tsx
   var React9 = __toModule(require_react());
   function SvgSeahorse({
     title,
@@ -21304,7 +21291,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Seahorse_default = SvgSeahorse;
 
-  // lib-react-tsx/bio/SearchDna.tsx
+  // build/lib-react-tsx/bio/SearchDna.tsx
   var React10 = __toModule(require_react());
   function SvgSearchDna({
     title,
@@ -21359,7 +21346,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var SearchDna_default = SvgSearchDna;
 
-  // lib-react-tsx/bio/Unimod.tsx
+  // build/lib-react-tsx/bio/Unimod.tsx
   var React11 = __toModule(require_react());
   function SvgUnimod({
     title,
@@ -21384,7 +21371,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Unimod_default = SvgUnimod;
 
-  // lib-react-tsx/bio/UploadDna.tsx
+  // build/lib-react-tsx/bio/UploadDna.tsx
   var React12 = __toModule(require_react());
   function SvgUploadDna({
     title,
@@ -21431,7 +21418,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var UploadDna_default = SvgUploadDna;
 
-  // lib-react-tsx/chart/Monitoring.tsx
+  // build/lib-react-tsx/chart/Monitoring.tsx
   var React13 = __toModule(require_react());
   function SvgMonitoring({
     title,
@@ -21471,7 +21458,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Monitoring_default = SvgMonitoring;
 
-  // lib-react-tsx/chart/Multi.tsx
+  // build/lib-react-tsx/chart/Multi.tsx
   var React14 = __toModule(require_react());
   function SvgMulti({
     title,
@@ -21517,7 +21504,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Multi_default = SvgMulti;
 
-  // lib-react-tsx/chart/Multi2.tsx
+  // build/lib-react-tsx/chart/Multi2.tsx
   var React15 = __toModule(require_react());
   function SvgMulti2({
     title,
@@ -21563,7 +21550,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Multi2_default = SvgMulti2;
 
-  // lib-react-tsx/chart/ScatterLine.tsx
+  // build/lib-react-tsx/chart/ScatterLine.tsx
   var React16 = __toModule(require_react());
   function SvgScatterLine({
     title,
@@ -21610,7 +21597,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ScatterLine_default = SvgScatterLine;
 
-  // lib-react-tsx/chart/Scatter.tsx
+  // build/lib-react-tsx/chart/Scatter.tsx
   var React17 = __toModule(require_react());
   function SvgScatter({
     title,
@@ -21654,7 +21641,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Scatter_default = SvgScatter;
 
-  // lib-react-tsx/chem/Concentration.tsx
+  // build/lib-react-tsx/chem/Concentration.tsx
   var React18 = __toModule(require_react());
   function SvgConcentration({
     title,
@@ -21692,7 +21679,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Concentration_default = SvgConcentration;
 
-  // lib-react-tsx/chem/IupacNameStructure.tsx
+  // build/lib-react-tsx/chem/IupacNameStructure.tsx
   var React19 = __toModule(require_react());
   function SvgIupacNameStructure({
     title,
@@ -21729,7 +21716,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var IupacNameStructure_default = SvgIupacNameStructure;
 
-  // lib-react-tsx/chem/IupacStructureName.tsx
+  // build/lib-react-tsx/chem/IupacStructureName.tsx
   var React20 = __toModule(require_react());
   function SvgIupacStructureName({
     title,
@@ -21754,7 +21741,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var IupacStructureName_default = SvgIupacStructureName;
 
-  // lib-react-tsx/chem/MineralFormulaName.tsx
+  // build/lib-react-tsx/chem/MineralFormulaName.tsx
   var React21 = __toModule(require_react());
   function SvgMineralFormulaName({
     title,
@@ -21788,7 +21775,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var MineralFormulaName_default = SvgMineralFormulaName;
 
-  // lib-react-tsx/chem/MineralNameFormula.tsx
+  // build/lib-react-tsx/chem/MineralNameFormula.tsx
   var React22 = __toModule(require_react());
   function SvgMineralNameFormula({
     title,
@@ -21825,7 +21812,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var MineralNameFormula_default = SvgMineralNameFormula;
 
-  // lib-react-tsx/chem/Ph.tsx
+  // build/lib-react-tsx/chem/Ph.tsx
   var React23 = __toModule(require_react());
   function SvgPh({
     title,
@@ -21862,7 +21849,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Ph_default = SvgPh;
 
-  // lib-react-tsx/chem/Precipitation.tsx
+  // build/lib-react-tsx/chem/Precipitation.tsx
   var React24 = __toModule(require_react());
   function SvgPrecipitation({
     title,
@@ -21870,9 +21857,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React24.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -21880,7 +21867,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React24.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React24.createElement("g", {
+    }, title) : null, /* @__PURE__ */ React24.createElement("path", {
+      d: "M10.6 1.557L8.997 2.77",
+      transform: "matrix(-48.73938 58.7678 57.8907 48.01196 838.661 32.817)",
       clipRule: "evenodd",
       fillRule: "evenodd",
       strokeWidth: 0.882,
@@ -21888,48 +21877,27 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       imageRendering: "optimizeQuality",
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision"
-    }, /* @__PURE__ */ React24.createElement("path", {
-      className: "fil1 str0",
-      d: "M10.6 1.557L8.997 2.77",
-      transform: "matrix(-48.73938 58.7678 57.8907 48.01196 838.661 -67.183)"
     }), /* @__PURE__ */ React24.createElement("path", {
-      className: "fil1 str0",
       d: "M8.997.343L10.6 1.557",
-      transform: "matrix(-48.73938 58.7678 57.8907 48.01196 838.661 -67.183)",
+      transform: "matrix(-48.73938 58.7678 57.8907 48.01196 838.661 32.817)",
+      clipRule: "evenodd",
+      fillRule: "evenodd",
+      strokeWidth: 0.882,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React24.createElement("path", {
+      d: "M204.243 233.03l609.9-1.415-400 500",
+      fill: "none",
+      strokeWidth: 60,
       strokeLinejoin: "round"
-    })), /* @__PURE__ */ React24.createElement("path", {
-      d: "M3.249.225V.202l.002-.01.002-.012.003-.01.003-.011.003-.011.004-.01.005-.01.005-.01.005-.01L3.287.1l.006-.01L3.3.083l.007-.008.008-.008.007-.007.009-.007.008-.007.01-.006.008-.006.01-.006.01-.005.01-.004.01-.004.01-.004.01-.003.012-.002.01-.002L3.452 0h.046l.011.002.012.002.01.002.011.003.01.004.01.004.01.004.01.005.01.006.01.006.008.006.009.007.008.007.008.007.007.008.007.008.007.009L3.66.1l.006.009.005.01.005.009.005.01.004.01.003.01.004.011.002.011.002.011.001.011.001.012v.011h-.45zm.45 3.25h-.45V.224h.45zm0 0v.022l-.002.012-.002.01-.002.012-.004.01-.003.01-.004.011-.005.01-.005.01-.005.01-.006.008-.006.01-.007.008-.007.008-.007.008-.008.007-.008.007-.009.007-.009.006-.009.006-.01.005-.01.005-.01.005-.01.004-.01.004-.01.003-.011.002-.012.002-.01.001-.012.001H3.45l-.011-.002-.011-.002-.011-.002-.01-.003-.011-.004-.01-.004-.01-.005-.01-.005-.01-.005-.009-.006-.009-.006-.008-.007-.008-.007-.008-.007-.008-.008-.007-.008-.007-.009-.006-.009-.006-.009-.005-.01-.005-.009-.005-.01-.004-.01-.003-.01-.003-.011-.003-.011-.002-.011-.001-.012-.001-.011v-.012h.45z",
-      className: "fil0",
-      transform: "matrix(117.18281 78.6728 -79.86477 118.95824 337.327 -120.399)",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      paintOrder: "markers fill stroke",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React24.createElement("path", {
-      className: "fil1 str0",
-      d: "M3.474 3.929l.795-1.049M2.68 2.88l.794 1.049",
-      transform: "matrix(141.14256 0 0 143.281 236.503 144.46)",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React24.createElement("path", {
-      d: "M3.474 0h.012l.011.001.011.002.012.002.01.002.011.003.01.004.01.004.01.004.01.005.01.006.01.006.008.006.008.006.009.008.007.007.008.008.007.008.007.009.006.008.006.01.005.009.005.01.005.01.004.01.003.01.003.011.003.011.002.011.001.011.001.012v.035l-.002.01-.002.012-.003.01-.003.012-.003.01-.004.01-.005.01-.005.01-.005.01-.006.009-.006.008-.007.009-.007.008-.008.008-.007.007L3.617.4 3.61.406 3.6.412l-.01.006-.009.006-.01.005-.01.004-.01.004-.01.004-.01.003-.011.002-.012.002-.01.002h-.012l-.012.001zM.225.451V0h3.25v.451zm0 0H.214L.202.45.191.448.18.446.169.444.159.44.147.437.138.433.128.43.118.424.108.418.1.412.09.406.082.4.074.392.066.385.059.377.05.37.045.36.038.352.033.342.027.333.022.323.018.313.014.303.01.293.007.282.005.27.003.26 0 .249V.237L0 .226V.214L.001.202l.002-.01L.005.18.007.17.01.157l.004-.01.004-.01.004-.01.005-.01.006-.01L.038.1.045.091.05.082.06.074.066.066.074.059.082.05.09.045.1.039.107.033l.01-.006.01-.005.01-.004.01-.004.01-.004.01-.003L.18.005.19.003.203 0h.012L.225 0z",
-      className: "fil0",
-      transform: "matrix(141.14256 0 0 143.281 236.503 144.46)",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
     }));
   }
   var Precipitation_default = SvgPrecipitation;
 
-  // lib-react-tsx/dsc/Assignment.tsx
+  // build/lib-react-tsx/dsc/Assignment.tsx
   var React25 = __toModule(require_react());
   function SvgAssignment({
     title,
@@ -21973,7 +21941,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Assignment_default = SvgAssignment;
 
-  // lib-react-tsx/ea/Request.tsx
+  // build/lib-react-tsx/ea/Request.tsx
   var React26 = __toModule(require_react());
   function SvgRequest({
     title,
@@ -21998,7 +21966,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Request_default = SvgRequest;
 
-  // lib-react-tsx/glassware/Beaker2.tsx
+  // build/lib-react-tsx/glassware/Beaker2.tsx
   var React27 = __toModule(require_react());
   function SvgBeaker2({
     title,
@@ -22037,7 +22005,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Beaker2_default = SvgBeaker2;
 
-  // lib-react-tsx/glassware/Beaker.tsx
+  // build/lib-react-tsx/glassware/Beaker.tsx
   var React28 = __toModule(require_react());
   function SvgBeaker({
     title,
@@ -22080,7 +22048,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Beaker_default = SvgBeaker;
 
-  // lib-react-tsx/glassware/Erlen.tsx
+  // build/lib-react-tsx/glassware/Erlen.tsx
   var React29 = __toModule(require_react());
   function SvgErlen({
     title,
@@ -22123,7 +22091,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Erlen_default = SvgErlen;
 
-  // lib-react-tsx/glassware/RoundFlask.tsx
+  // build/lib-react-tsx/glassware/RoundFlask.tsx
   var React30 = __toModule(require_react());
   function SvgRoundFlask({
     title,
@@ -22164,7 +22132,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var RoundFlask_default = SvgRoundFlask;
 
-  // lib-react-tsx/glassware/Titration.tsx
+  // build/lib-react-tsx/glassware/Titration.tsx
   var React31 = __toModule(require_react());
   function SvgTitration({
     title,
@@ -22214,7 +22182,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Titration_default = SvgTitration;
 
-  // lib-react-tsx/icp/Request.tsx
+  // build/lib-react-tsx/icp/Request.tsx
   var React32 = __toModule(require_react());
   function SvgRequest2({
     title,
@@ -22239,7 +22207,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Request_default2 = SvgRequest2;
 
-  // lib-react-tsx/inventory/Add.tsx
+  // build/lib-react-tsx/inventory/Add.tsx
   var React33 = __toModule(require_react());
   function SvgAdd({
     title,
@@ -22274,7 +22242,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Add_default = SvgAdd;
 
-  // lib-react-tsx/inventory/Empty.tsx
+  // build/lib-react-tsx/inventory/Empty.tsx
   var React34 = __toModule(require_react());
   function SvgEmpty({
     title,
@@ -22316,7 +22284,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Empty_default = SvgEmpty;
 
-  // lib-react-tsx/inventory/Full.tsx
+  // build/lib-react-tsx/inventory/Full.tsx
   var React35 = __toModule(require_react());
   function SvgFull({
     title,
@@ -22358,7 +22326,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Full_default = SvgFull;
 
-  // lib-react-tsx/inventory/Status.tsx
+  // build/lib-react-tsx/inventory/Status.tsx
   var React36 = __toModule(require_react());
   function SvgStatus({
     title,
@@ -22454,7 +22422,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Status_default = SvgStatus;
 
-  // lib-react-tsx/inventory/Toxic.tsx
+  // build/lib-react-tsx/inventory/Toxic.tsx
   var React37 = __toModule(require_react());
   function SvgToxic({
     title,
@@ -22486,7 +22454,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Toxic_default = SvgToxic;
 
-  // lib-react-tsx/ir/Assignment.tsx
+  // build/lib-react-tsx/ir/Assignment.tsx
   var React38 = __toModule(require_react());
   function SvgAssignment2({
     title,
@@ -22507,33 +22475,23 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React38.createElement("path", {
       d: "M49.941 730.47h883.662M947.568 730.47l-51.27 38.956M896.298 691.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React38.createElement("path", {
       d: "M97.35 114.927c87.832-20.764 119.621 79.197 124.583 157.475 11.576 179.157 25.725 256.15 86.179 252.84 158.21 1.105 12.679-436.775 212.233-419.503 95.92 8.27 85.445 76.992 90.222 155.822 4.962 83.974 6.062 143.326 16.171 209.66 37.85-109.516-11.394-356.845 162.804-360.337 35.649-.734 64.68.919 96.653 2.573",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React38.createElement("path", {
-      d: "M326.284 588.229c0-7.485-6.092-13.576-13.402-13.576-7.485 0-13.576 6.091-13.576 13.576zm0 0v90.333h-26.978V588.23zm-26.978 90.333c0 7.31 6.091 13.402 13.576 13.402 7.31 0 13.402-6.092 13.402-13.402zM644.174 533.576c0-7.484-6.092-13.576-13.576-13.576-7.31 0-13.402 6.092-13.402 13.576zm0 0v90.334h-26.978v-90.334zm-26.978 90.334c0 7.31 6.091 13.402 13.402 13.402 7.484 0 13.576-6.092 13.576-13.402z",
-      fill: "#040404",
-      stroke: "none"
-    }), /* @__PURE__ */ React38.createElement("path", {
-      d: "M447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083-2.39 2.206-5.145 3.307-8.453 3.307-2.205 0-4.043-.55-5.512-1.651-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183-4.777 6.068-7.166 14.336-7.166 24.81 0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524zM742.583 873.76v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189z",
-      stroke: "none"
-    }), /* @__PURE__ */ React38.createElement("path", {
-      d: "M641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694zM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189z",
-      fill: "#040404",
+      d: "M326.284 588.229c0-7.485-6.092-13.576-13.402-13.576-7.485 0-13.576 6.091-13.576 13.576zm0 0v90.333h-26.978V588.23zm-26.978 90.333c0 7.31 6.091 13.402 13.576 13.402 7.31 0 13.402-6.092 13.402-13.402zM644.174 533.576c0-7.484-6.092-13.576-13.576-13.576-7.31 0-13.402 6.092-13.402 13.576zm0 0v90.334h-26.978v-90.334zm-26.978 90.334c0 7.31 6.091 13.402 13.402 13.402 7.484 0 13.576-6.092 13.576-13.402zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083-2.39 2.206-5.145 3.307-8.453 3.307-2.205 0-4.043-.55-5.512-1.651-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183-4.777 6.068-7.166 14.336-7.166 24.81 0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524zM742.583 873.76v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189zM641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694zM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189z",
       stroke: "none"
     }));
   }
   var Assignment_default2 = SvgAssignment2;
 
-  // lib-react-tsx/ir/Overlay.tsx
+  // build/lib-react-tsx/ir/Overlay.tsx
   var React39 = __toModule(require_react());
   function SvgOverlay({
     title,
@@ -22554,141 +22512,107 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React39.createElement("path", {
       d: "M49.941 730.47h883.662M947.568 730.47l-51.27 38.956M896.298 691.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React39.createElement("path", {
-      d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083-2.39 2.206-5.146 3.306-8.453 3.306-2.205 0-4.043-.55-5.512-1.65-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183-4.778 6.067-7.166 14.336-7.166 24.81 0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042-4.042 0-7.166-1.287-9.739-4.042-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525zM743.15 876.725v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19z",
-      stroke: "none"
-    }), /* @__PURE__ */ React39.createElement("path", {
-      d: "M641.873 852.966c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z",
-      fill: "#040404",
+      d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083-2.39 2.206-5.146 3.306-8.453 3.306-2.205 0-4.043-.55-5.512-1.65-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183-4.778 6.067-7.166 14.336-7.166 24.81 0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042-4.042 0-7.166-1.287-9.739-4.042-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525zM743.15 876.725v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19zM641.873 852.966c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M97.35 220.927c87.832-20.764 119.621 79.197 124.583 157.475 11.576 179.157 25.725 256.15 86.179 252.84 158.21 1.105 12.679-436.775 212.233-419.503 95.92 8.27 85.445 76.992 90.222 155.822 4.962 83.974 6.062 143.326 16.171 209.66 37.85-109.516-11.394-356.845 162.804-360.337 35.649-.734 64.68.919 96.653 2.573",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M94.042 91.75l-.736.184-.735.183-.734.369-.55.184-.736.368-.55.368-.552.368-.55.368-.737.368-.368.55-.552.369-.552.552-.368.552-.55.552-.368.552-.368.552-.368.552-.184.734-.368.552-.184.552-.368.734-.184.735-.184.552v.734l-.184.734v.734l-.184.552v.735l.184.734v.734l.184.734.184.735.184.734.184.734.184.552.368.734.184.552.368.735.368.552.368.552.552.552.368.552.55.552.552.368.368.552.552.368.55.368.553.552.736.184.552.368.55.368.734.184.552.184.734.368h.735l.552.184.736.184h3.673l.552-.184.736-.184-6.431-27.93z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M126.75 89.36l-1.838-.183h-2.389l-2.389-.184H115.356l-2.204.184h-2.389l-2.389.184-2.389.368-2.388.184-2.39.368-2.388.552-2.388.368-2.39.552 6.432 27.93 1.837-.368 1.655-.368 1.837-.184 1.655-.368 1.654-.184 1.838-.184 1.654-.184h1.838l1.654-.184h3.492l1.654.184h1.838l1.837.184z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M124.912 118.026h2.206l.552-.184h.734l.736-.184.735-.183.552-.184.734-.369.552-.183.734-.369.552-.368.55-.368.55-.368.553-.368.55-.368.552-.552.552-.552.368-.368.368-.552.55-.55.368-.735.369-.552.184-.552.368-.734.368-.552.184-.734.184-.552.184-.734.184-.735v-.734l.184-.734V103.139l-.184-.734v-.734l-.184-.734v-.552l-.184-.735-.368-.734-.184-.552-.184-.734-.368-.552-.368-.552-.369-.735-.368-.552-.368-.552-.552-.55-.368-.368-.552-.552-.55-.368-.552-.552-.552-.368-.55-.369-.552-.367-.55-.369-.737-.367-.55-.184-.734-.184-.736-.184-.734-.184-.55-.184-.737-.184h-.734l-1.838 28.666zM186.836 110.676l-.55-.552-.735-.184-.55-.368-.736-.184-.552-.368-.734-.184-.734-.184h-.735l-.552-.184H177.467l-.734.184-.736.184-.55.184-.734.184-.55.184-.737.183-.552.369-.55.367-.734.369-.552.368-.552.368-.55.552-.55.368-.369.552-.552.552-.55.552-.368.552-.368.552-.368.735-.368.552-.368.734-.184.734-.184.552-.184.734-.184.735-.184.552-.184.734v2.755l.184.734v.734l.184.552.184.735.184.734.184.552.368.734.184.55.368.552.368.735.368.552.368.552.55.552.368.552.552.368.55.552.55.368.553.552.736.368 15.067-24.256z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M211.643 129.051l-1.47-1.286-1.839-1.654-2.02-1.47-1.838-1.655-1.838-1.47-2.021-1.47-1.837-1.471-2.022-1.47-2.02-1.287-2.022-1.47-2.021-1.286-1.838-1.286-2.021-1.103-15.068 24.256 1.47.918 1.655 1.102 1.654 1.102 1.838 1.287 1.654 1.102 1.655 1.286 1.654 1.286 1.654 1.103 1.655 1.47 1.654 1.286 1.47 1.287 1.655 1.286 1.47 1.286z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M192.9 150.734l.55.552.736.366.55.369.552.367.735.369.55.366.736.184.552.366.734.184h.736l.552.184.735.184h3.49l.55-.184.737-.184.734-.184.55-.184.736-.184.55-.184.735-.366.552-.368.55-.368.736-.368.55-.368.55-.552.55-.368.553-.552.368-.553.55-.552.368-.55.368-.736.368-.552.368-.552.368-.734.184-.736.184-.55.184-.735.184-.552.184-.734.184-.734v-2.757l-.184-.734v-.552l-.184-.736-.184-.734-.184-.552-.184-.737-.368-.55-.184-.734-.368-.552-.368-.552-.368-.734-.368-.552-.55-.552-.368-.553-.552-.368-.55-.55-18.743 21.683zM251.884 174.438l-.368-.552-.368-.552-.55-.552-.553-.552-.552-.369-.55-.55-.55-.368-.55-.368-.552-.366-.735-.368-.552-.184-.734-.368-.552-.184-.734-.184-.55-.184-.735-.184h-.736l-.55-.183h-2.205l-.552.183h-.736l-.734.184-.736.184-.55.184-.734.184-.736.368-.55.184-.735.368-.552.366-.552.368-.736.552-.55.368-.55.552-.369.552-.55.552-.368.552-.552.552-.368.553-.368.552-.184.552-.368.734-.184.55-.368.736-.184.552-.184.734v.737l-.184.734v1.286l-.184.736.184.552v1.47l.184.735.184.55.184.736.184.734.368.552.368.736.184.552.368.735.55.552 23.336-16.538z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M267.87 200.347l-.918-1.654-1.102-2.205-1.286-2.021-1.287-2.205-1.102-2.022-1.286-2.205-1.286-2.02-1.47-2.022-1.287-2.206-1.286-2.02-1.47-2.022-1.287-2.02-.918-1.287-23.336 16.537.552.919 1.286 1.837 1.286 1.838 1.103 1.837 1.286 1.838 1.102 1.837 1.102 2.022 1.103 1.837 1.286 1.837 1.102 1.838.919 2.021 1.102 1.838.918 1.654z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M242.697 214.128l.368.55.368.735.368.552.55.552.368.552.552.368.55.552.55.369.553.552.55.368.552.366.734.368.55.184.552.368.735.184.55.184.734.184.736.184.55.183H256.66l.734-.183h.736l.735-.184.55-.184.736-.184.734-.368.55-.184.736-.368.55-.368.735-.552.552-.368.55-.368.55-.552.553-.552.368-.368.552-.552.368-.552.368-.552.368-.735.368-.552.184-.55.368-.736.184-.552.184-.734.184-.735.184-.552.184-.734V205.671l-.184-.734v-.552l-.184-.736-.184-.734-.184-.552-.368-.736-.184-.734-.368-.553-25.174 13.782zM289.737 257.493l-.184-.734-.184-.736-.184-.734-.368-.55-.369-.735-.184-.552-.368-.552-.552-.734-.368-.552-.368-.552-.552-.368-.368-.552-.552-.369-.552-.552-.55-.368-.55-.368-.735-.368-.55-.368-.55-.184-.736-.368-.55-.183-.735-.184-.55-.184-.736-.184-.734-.184h-3.491l-.736.184-.734.184-.734.184-.737.184-.734.183-.55.368-.736.184-.55.368-.55.368-.735.368-.552.552-.368.368-.55.552-.552.368-.368.552-.55.552-.368.55-.368.552-.368.552-.368.737-.184.55-.369.552-.184.734-.184.736-.184.552-.184.734-.184.736V262.273l.184.735.184.736 27.93-6.248z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M293.044 280.095l-.184-2.021-.184-2.206-.184-2.02-.184-2.022-.368-2.205-.184-2.021-.368-2.205-.368-2.021-.552-2.205-.368-2.022-.368-1.654-27.93 6.248.184 1.286.368 1.838.368 1.654.368 1.655.184 1.837.368 1.655.184 1.654.184 1.654.184 1.655.184 1.654v1.654z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M293.596 288.18l-28.666 1.837-.55-8.085 28.665-1.837z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M264.93 290.017v.735l.185.736.183.552.185.734.184.736.184.734.184.55.368.737.368.552.368.55.368.552.368.552.368.552.552.552.55.552.368.368.55.552.55.368.553.369.734.368.55.368.552.368.736.184.55.184.735.368.736.184h.55l.734.184h.734l.736.184h1.471l.734-.184h.736l.734-.184.736-.184.55-.184.735-.184.55-.368.736-.368.552-.184.55-.368.735-.368.55-.552.552-.368.368-.366.55-.552.552-.553.368-.552.368-.552.368-.552.368-.552.368-.552.368-.734.184-.552.368-.736.184-.552.184-.734.184-.736v-.735l.184-.736V288.178l-28.665 1.838zM295.985 345.878v-1.47l-.184-.735-.185-.552-.184-.736-.184-.734-.184-.552-.368-.736-.184-.552-.368-.734-.368-.553-.368-.552-.368-.55-.55-.552-.368-.552-.55-.366-.55-.552-.553-.368-.55-.369-.552-.368-.55-.368-.55-.368-.736-.368-.55-.184-.735-.184-.736-.368-.55-.184h-.734l-.736-.184h-3.675l-.734.184-.737.184-.55.184-.734.183-.736.184-.552.369-.734.183-.55.369-.55.368-.553.368-.55.368-.552.552-.552.368-.368.552-.552.55-.368.553-.55.55-.369.552-.368.552-.184.552-.368.736-.184.552-.368.734-.184.737-.184.552-.184.734v.736l-.184.734v1.47l28.665-.918z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M296.72 374.91l-.185-5.329v-6.43l-.184-6.8-.184-6.798-.184-3.675-28.665.918.184 3.491.184 6.615v6.8l.184 6.43v5.146zM267.87 375.278l.185.735v1.47l.184.734.184.55.184.736.368.735.184.552.368.736.184.552.368.55.368.552.552.552.368.552.368.552.55.552.552.368.55.55.552.369.55.368.55.366.551.368.734.369.55.183.737.184.55.369.734.184h.736l.734.183h.736l.735.184h1.47l.734-.184h.55l.736-.183.735-.184.736-.184.55-.184.734-.366.55-.184.737-.368.55-.368.55-.369.552-.368.55-.552.55-.368.369-.55.55-.552.368-.552.55-.553.368-.552.368-.55.368-.552.184-.552.368-.734.184-.736.184-.552.184-.735.184-.736.184-.734v-1.286l.184-.734-28.849.368zM297.087 432.24V430.772l-.184-.735v-.552l-.184-.736-.184-.734-.368-.552-.184-.736-.368-.552-.184-.734-.368-.55-.368-.553-.55-.552-.368-.55-.369-.552-.552-.552-.552-.368-.552-.552-.55-.368-.55-.368-.55-.368-.552-.366-.735-.368-.55-.184-.736-.366-.55-.184-.734-.184-.736-.184h-.735l-.55-.184h-2.941l-.736.184-.734.184h-.734l-.736.368-.55.184-.735.184-.55.368-.736.368-.55.368-.55.367-.55.368-.553.368-.55.552-.368.368-.55.552-.368.552-.55.552-.368.55-.368.552-.368.552-.184.735-.368.552-.184.734-.368.552-.185.734v.736l-.183.735-.185.736v1.47l28.666-.368z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M297.822 460.539l-.184-3.675-.184-3.859v-4.042l-.184-4.227v-4.226l-.184-4.594v-3.675l-28.665.368v3.675l.184 4.594v4.594l.184 4.41v4.226l.184 4.043.184 3.49z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M269.156 461.64v.737l.184.734.184.736v.734l.184.737.368.552.185.734.368.552.184.736.368.552.368.552.368.552.55.55.368.552.55.552.368.552.55.369.55.367.55.553.553.368.734.184.552.366.55.368.736.184.55.183.735.368h.734l.736.184.735.184h2.758l.734-.184h.736l.734-.184.737-.184.552-.184.734-.368.734-.184.552-.368.55-.368.552-.368.552-.368.55-.368.55-.552.551-.368.552-.552.368-.552.368-.552.552-.552.368-.55.368-.552.184-.735.368-.552.184-.734.368-.552.184-.734.184-.736v-.55l.184-.735v-2.206l-28.665 1.102zM308.847 502.801l-.55-.368-.736-.368-.55-.368-.735-.368-.55-.368-.736-.184-.55-.184-.734-.184-.737-.184-.55-.183h-.734l-.736-.184h-2.021l-.734.184h-.734l-.552.183-.734.184-.55.184-.735.184-.736.368-.552.184-.55.368-.736.368-.552.368-.55.552-.55.368-.55.55-.553.368-.368.552-.55.55-.368.734-.368.553-.368.552-.368.736-.368.552-.184.734-.184.736-.184.552-.184.734-.184.736-.184.552v2.757l.184.736v.734l.184.736.184.552.184.735.184.55.368.736.184.552.368.734.368.552.368.552.368.552.55.552.368.552.552.552.55.367.55.552 17.64-22.785z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M313.073 513.092l11.944-7.718-1.102.184H319.689l-.918-.184h-1.836l-.736-.184-.735-.184h-.736l-.734-.184-.736-.184-.552-.183-.55-.184-.55-.184h-.55l-.369-.184-.55-.368-.368-.184-.368-.184-.368-.183-.368-.184-.368-.184.55.184-17.64 22.784.55.369 1.102.736 1.287.918 1.286.736 1.286.734 1.47.552 1.287.552 1.47.553 1.286.552 1.47.552 1.47.367 1.471.369 1.287.368 1.47.184 1.654.368 1.47.184 1.47.183 1.471.184h1.654l1.47.184h6.434l1.47-.184 12.128-7.717z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M326.487 534.04h.736l.734-.185h.736l.735-.184.734-.183.552-.369.734-.184.55-.368.736-.184.55-.368.55-.368.551-.366.55-.552.552-.366.552-.552.368-.552.55-.369.369-.552.368-.552.368-.736.368-.552.368-.552.184-.734.368-.552.184-.736.184-.55.184-.735.184-.736V517.494l-.184-.736-.184-.552-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.368-.552-.368-.736-.368-.552-.552-.552-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.55-.369-.55-.368-.736-.368-.55-.184-.553-.368-.734-.184-.736-.184-.552-.184-.734-.183-.736-.184h-.734l-.737-.184h-1.47l1.47 28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M313.808 511.805l-.368.552-.368.734 25.542 13.23.55-1.286.368-.552z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M339.533 524.484l.185-.734.368-.552.184-.736.184-.735.184-.736.184-.55v-.734l.184-.736v-2.021l-.184-.736v-.734l-.184-.552-.184-.736-.184-.734-.368-.55-.184-.737-.369-.55-.183-.552-.369-.552-.368-.734-.55-.552-.368-.552-.55-.368-.368-.55-.55-.552-.55-.367-.553-.368-.736-.55-.55-.368-.734-.368-.55-.184-.736-.368-.735-.184-.55-.184-.736-.184-.734-.184h-.734l-.736-.184H326.124l-.736.184h-.734l-.552.184h-.736l-.735.184-.552.184-.736.367-.55.184-.734.368-.55.368-.55.184-.553.552-.55.368-.55.368-.552.552-.55.368-.368.55-.55.553-.369.552-.368.734-.368.552-.368.734 25.725 12.679zM323.73 461.09v2.206l.185.734v.736l.184.552.184.735.184.734.184.552.368.734.184.552.368.552.368.736.368.552.368.552.55.553.368.55.552.368.55.55.369.368.55.368.736.552.55.369.552.184.734.368.552.368.735.184.552.184.734.184.736.184h.734l.736.184h2.941l.734-.184.55-.184.735-.184.736-.184.55-.184.734-.368.552-.184.736-.368.55-.369.55-.368.551-.368.55-.552.552-.369.368-.552.55-.367.369-.552.368-.55.55-.553.368-.734.184-.552.368-.552.368-.734.184-.736.184-.552.184-.735.184-.734.184-.736v-.734l-28.665-2.206z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M325.201 433.16v3.858l-.184 3.86-.184 3.674-.184 3.675-.184 3.675-.368 3.676-.184 3.49-.184 2.022 28.665 2.205.184-2.205.184-3.675.366-3.859.184-3.859.184-3.858.184-3.86.184-3.858v-4.042zM353.866 434.079v-2.207l-.184-.734v-.736l-.184-.734-.368-.552-.184-.736-.184-.552-.368-.735-.368-.552-.368-.552-.368-.552-.368-.736-.368-.368-.552-.552-.366-.552-.552-.366-.55-.552-.553-.369-.552-.367-.55-.369-.734-.366-.552-.368-.55-.184-.737-.367-.734-.184-.55-.184-.736-.184h-.734l-.736-.184h-2.205l-.734.184h-.736l-.734.184-.55.184-.737.184-.734.184-.55.368-.736.184-.55.368-.553.368-.55.366-.552.368-.55.55-.55.368-.55.552-.369.552-.55.369-.368.552-.368.552-.368.734-.368.552-.368.552-.184.734-.184.55-.368.737-.184.734v.734l-.184.736v.734l-.184.736 28.665.919zM326.487 375.83v1.47l.184.734v.734l.184.736.184.735.184.552.368.736.184.552.368.734.368.552.368.552.368.552.368.552.368.552.55.552.55.552.369.368.55.552.55.366.55.368.736.368.55.369.553.184.734.367.736.184.552.184.734.184.736.184h.735l.736.184H342.108l.734-.184h.553l.736-.184.734-.184.736-.184.552-.368.734-.184.55-.368.552-.368.737-.366.552-.369.55-.368.55-.368.368-.552.55-.368.55-.552.369-.552.368-.552.368-.552.368-.734.368-.55.368-.553.184-.736.184-.55.184-.734.184-.734.184-.736.184-.735v-1.47l-28.665-.55zM327.222 346.98v.184l-.184 9.004-.368 9.004-.184 9.003v1.654l28.665.553v-1.47l.368-9.005.184-8.82.368-9.004zM356.071 348.083v-.919l-.184-.552v-.736l-.184-.734v-.736l-.184-.734-.184-.552-.368-.736-.184-.735-.368-.552-.184-.552-.368-.736-.368-.552-.55-.55-.368-.552-.368-.368-.552-.553-.55-.552-.553-.367-.552-.369-.55-.552-.55-.184-.55-.366-.735-.368-.55-.368-.736-.184-.55-.184-.734-.184-.737-.183-.734-.184h-3.675l-.736.184-.55.183-.734.184-.736.184-.55.184-.735.184-.552.366-.736.368-.552.368-.552.369-.55.368-.55.368-.552.552-.368.368-.552.552-.368.552-.55.552-.369.55-.368.552-.368.735-.184.552-.368.734-.184.552-.184.734-.184.736-.184.552-.184.735v.736l-.184.734 28.849 1.102zM331.08 288.915l-.183.734v.736l.184.735v1.288l.184.734.184.734.184.736.184.552.368.735.184.552.368.552.368.734.368.552.368.552.368.552.55.552.368.368.55.552.55.368.551.55.552.369.552.366.55.368.735.368.55.184.736.368.55.184.734.184.736.184h.735l.734.184h2.94l.737-.184h.552l.734-.184.736-.184.55-.184.734-.368.55-.184.737-.368.552-.368.55-.366.55-.369.55-.367.55-.55.553-.369.368-.55.55-.552.368-.552.368-.552.368-.552.368-.735.368-.552.184-.552.368-.734.184-.734.184-.552.184-.734.184-.735v-.736l-28.482-2.756zM334.756 259.699l-.55 4.042-.735 4.594-.55 4.594-.55 4.594-.552 4.777-.55 4.594-.185 2.021 28.482 2.756.184-1.837.55-4.41.552-4.41.552-4.41.55-4.41.55-4.227.553-4.042z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M363.054 263.925l.184-.735V260.252l-.184-.736v-.552l-.184-.735-.184-.734-.368-.552-.184-.734-.184-.552-.368-.736-.369-.552-.368-.552-.368-.55-.368-.553-.552-.552-.55-.552-.368-.368-.552-.552-.552-.368-.55-.368-.55-.368-.737-.369-.55-.367-.734-.369-.55-.184-.736-.184-.735-.183-.736-.184-.55-.184h-.734l-.734-.184h-1.471l-.736.184h-.734l-.736.184-.55.184-.734.183-.737.184-.552.184-.734.369-.55.367-.552.369-.552.368-.55.368-.55.368-.553.368-.55.552-.55.552-.368.552-.368.552-.55.55-.368.553-.184.552-.368.736-.368.552-.185.734-.183.552-.369.734v.735l-.184.736 28.299 4.226zM348.537 201.45l-.184.734-.184.736-.184.552-.184.734v3.493l.184.734.184.734v.734l.368.552.184.737.184.552.368.734.368.552.184.552.55.552.368.552.368.55.55.552.369.552.552.369.55.552.55.367.552.369.55.368.735.368.55.368.736.184.734.366.734.184.736.184.553.184h.734l.736.184H363.236l.55-.184h.737l.734-.184.55-.184.736-.184.734-.184.55-.368.553-.184.736-.368.552-.368.55-.368.55-.368.55-.552.55-.368.553-.552.368-.368.55-.552.368-.552.368-.735.368-.55.368-.552.368-.736.184-.734.368-.552-27.195-9.188zM359.93 173.335l-.736 1.655-.918 1.838-.919 2.02-.918 2.022-.918 2.021-.918 2.021-.735 2.022-.918 2.205-.734 2.021-.736 2.021-.918 2.022-.735 2.204-.736 2.022-.552 2.021 27.196 9.188.55-1.838.734-1.837.55-1.838.737-1.838.734-1.837.734-1.838.552-1.837.734-1.654.919-1.837.734-1.838.736-1.654.734-1.838.919-1.654.734-1.655z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M385.839 185.647l.368-.736.184-.55.184-.735.184-.734.184-.736.184-.552v-.734l.184-.737v-1.47l-.184-.552v-.734l-.184-.736-.184-.734-.184-.552-.184-.737-.184-.552-.368-.734-.184-.552-.368-.552-.368-.552-.368-.736-.368-.552-.55-.368-.55-.552-.369-.552-.55-.367-.552-.552-.55-.366-.735-.368-.552-.368-.734-.368-.552-.368-.736-.184-.734-.184-.735-.184-.55-.184-.736-.183h-.734l-.736-.184h-1.286l-.736.184h-.735l-.736.183-.55.184-.734.184-.552.184-.736.184-.55.368-.735.184-.552.367-.55.367-.55.367-.55.369-.553.552-.55.367-.55.553-.368.552-.55.552-.368.55-.368.734-.368.552-.368.734 25.908 12.312zM396.864 122.988l-.552.368-.55.552-.368.552-.552.552-.368.734-.368.552-.368.552-.184.735-.368.552-.185.734-.184.552-.184.734-.184.734-.184.552V134.934l.184.734v.735l.184.552.184.734.184.552.369.736.184.734.368.552.368.552.368.735.55.552.368.552.55.552.55.552.368.368.55.552.737.368.55.552.552.184.552.368.734.366.55.184.737.368.734.184.55.184h.736l.734.184h.552l.736.184h1.471l.552-.184h.734l.736-.184.552-.184.734-.184.736-.184.552-.184.735-.367.55-.369.552-.366.736-.368.55-.368.55-.552.55-.368-19.477-20.948z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M422.405 104.245l-1.654.918-2.021 1.102-1.838 1.287-2.021 1.286-1.838 1.102-1.837 1.287-1.838 1.47-1.837 1.286-1.654 1.286-1.838 1.47-1.654 1.287-1.654 1.47-1.655 1.47-1.654 1.471-.55.552 19.477 20.947.184-.366 1.47-1.102 1.287-1.102 1.286-1.103 1.47-1.102 1.287-1.102 1.47-1.102 1.47-1.103 1.47-1.102 1.471-.918 1.47-1.103 1.47-.918 1.655-.918 1.47-.918 1.838-1.103zM437.106 128.867l.552-.367.552-.369.55-.552.55-.367.55-.552.552-.552.368-.369.552-.734.368-.552.368-.552.368-.552.184-.552.368-.734.184-.552.184-.735.184-.734.184-.552.184-.734v-.734l.183-.553v-2.202l-.183-.552v-.735l-.184-.734-.184-.734-.184-.55-.368-.735-.184-.734-.368-.552-.368-.734-.368-.552-.368-.552-.552-.552-.368-.552-.552-.552-.55-.552-.55-.369-.55-.552-.552-.368-.55-.368-.553-.368-.734-.368-.55-.184-.736-.184-.552-.368-.735-.184h-.55l-.736-.184-.734-.184h-2.755l-.736.184h-.55l-.734.184-.736.184-.55.184-.735.183-.736.368-.55.368-.734.368 14.7 24.623zM481.757 84.4l-.736.184-.734.184-.736.183-.55.184-.735.369-.552.183-.736.368-.552.369-.55.367-.55.369-.552.552-.55.368-.553.552-.367.368-.552.552-.368.552-.369.552-.367.552-.369.735-.368.552-.184.552-.368.734-.184.734-.184.55-.184.735-.184.734v1.286l-.183.734.183.735v1.468l.184.734.184.735.184.734.184.734.368.552.184.734.368.552.369.553.367.734.369.552.552.552.368.368.552.552.368.552.55.369.553.368.55.552.55.368.736.184.55.368.553.368.734.184.736.184.55.184.734.184.736.184h.735l.55.183h1.47l.736-.183h.734l-4.226-28.482z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M512.26 82.195h-3.49l-2.94.184h-2.94l-2.94.183-2.757.184-2.756.184-2.757.368-2.756.184-2.756.368-2.756.368-1.655.184 4.226 28.481 1.287-.184 2.388-.368 2.39-.183 2.388-.369 2.389-.184 2.389-.183 2.572-.184 2.572-.184h2.39l2.755-.184h3.123z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M512.627 110.86h.736l.734-.184h.735l.736-.184.734-.184.55-.184.736-.184.735-.367.55-.184.55-.369.736-.368.55-.368.55-.368.553-.552.367-.368.552-.552.55-.368.368-.552.369-.552.552-.552.184-.734.367-.55.369-.553.367-.734.184-.552.184-.734.184-.734.184-.552v-.735l.184-.734v-2.937l-.184-.734-.184-.734-.184-.735-.184-.552-.184-.734-.183-.552-.369-.734-.367-.552-.369-.552-.368-.735-.368-.552-.368-.552-.55-.367-.368-.552-.552-.553-.55-.368-.552-.368-.55-.368-.55-.368-.735-.368-.55-.368-.55-.184-.737-.368-.734-.184-.552-.184-.736-.184h-.734l-.736-.184h-1.471l.369 28.665zM570.141 83.113h-1.472l-.736.184-.736.184h-.736l-.55.184-.736.184-.737.368-.55.184-.55.368-.736.368-.55.368-.556.368-.55.369-.55.367-.55.552-.37.552-.55.368-.365.552-.37.552-.55.735-.364.552-.186.552-.37.734-.182.552-.37.734-.186.552-.182.734-.186.735v1.468l-.186.734v.735l.186.734v.734l.186.734v.552l.182.735.37.734.186.55.182.736.37.55.364.552.37.735.364.552.37.552.55.552.364.368.556.552.55.552.55.367.55.369.55.368.557.368.55.368.736.368.55.184.736.184.55.367h.736l.736.184.737.184h1.472l.55-28.665zM598.807 83.665l-.55 28.665-28.666-.552.55-28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M598.257 112.33h2.202l.737-.184.736-.184.556-.184.736-.184.73-.183.556-.368.55-.184.736-.368.55-.369.55-.367.551-.552.556-.369.55-.368.365-.552.555-.552.364-.552.365-.552.37-.552.364-.552.37-.735.364-.55.186-.552.37-.734.182-.734.186-.735v-.552l.186-.734v-.734l.186-.734v-.735l-.186-.734v-.734l-.186-.734-.186-.735v-.734l-.364-.552-.186-.734-.186-.552-.364-.734-.37-.552-.364-.552-.37-.553-.365-.552-.55-.552-.37-.552-.55-.552-.55-.367-.55-.369-.55-.552-.556-.368-.55-.368-.55-.184-.737-.368-.55-.368-.736-.184-.736-.184-.55-.183-.736-.184h-.737l-.736-.184h-.736l-.55 28.665zM656.135 84.767h-1.467l-.736.184h-.736l-.556.184-.73.184-.737.184-.555.368-.736.184-.55.368-.55.368-.737.368-.55.368-.55.368-.556.368-.364.552-.55.552-.55.369-.37.552-.365.552-.37.734-.364.552-.37.552-.364.734-.186.552-.186.734-.182.553-.186.734-.186.734-.186.734v3.671l.186.735.186.552.186.734.182.736.186.55.364.735.186.552.37.552.364.734.37.552.55.552.364.552.37.368.55.552.55.552.55.368.556.368.55.368.55.368.737.368.55.368.55.184.737.184.736.184.736.184.55.183.736.184h1.472l.55-28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M684.8 85.318l-.55 28.666-28.666-.552.55-28.665zM684.25 113.984H686.46l.736-.184.736-.184.736-.184.55-.184.736-.184.55-.368.737-.184.55-.368.55-.368.556-.368.55-.552.55-.368.55-.368.55-.552.37-.552.55-.552.37-.553.365-.552.37-.552.364-.734.186-.552.364-.552.186-.734.186-.734.182-.735.186-.55v-.734l.186-.734v-2.203l-.186-.734v-.735l-.186-.734-.182-.734-.186-.552-.364-.734-.186-.552-.37-.735-.364-.552-.37-.552-.365-.552-.37-.552-.364-.552-.55-.552-.55-.552-.37-.368-.55-.368-.55-.552-.556-.368-.736-.369-.55-.183-.55-.369-.737-.368-.736-.184-.55-.184-.736-.184-.736-.184h-.736l-.736-.183h-.737l-.55 28.665zM742.318 86.421h-1.472l-.736.184h-.736l-.736.184-.736.184-.55.184-.736.367-.55.184-.737.369-.555.368-.55.368-.55.368-.55.368-.551.368-.556.552-.55.552-.365.368-.55.552-.37.552-.364.735-.37.552-.364.552-.186.734-.37.552-.182.734-.186.552-.186.734-.186.735v.734l-.183.734v2.203l.183.734v.736l.186.55.186.735.186.734.364.552.186.734.364.552.37.552.364.735.37.552.364.552.37.552.55.368.365.552.555.55.55.369.551.367.55.369.736.367.55.369.556.367.736.184.55.184.737.184.736.184.736.184.736.184h1.466l.556-28.665zM770.98 86.972l-.55 28.665-28.667-.552.556-28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M770.43 115.637h2.207l.55-.183.737-.184.736-.184.736-.184.55-.184.736-.368.55-.184.556-.367.736-.369.55-.367.55-.552.55-.369.37-.368.55-.552.366-.55.555-.552.365-.552.37-.552.364-.552.364-.734.37-.552.186-.552.182-.735.186-.734.186-.734.186-.552.182-.734V99.465l-.182-.734-.186-.734-.186-.734-.186-.552-.182-.735-.37-.552-.186-.734-.364-.552-.364-.55-.37-.552-.55-.552-.37-.552-.55-.552-.365-.552-.555-.368-.55-.368-.55-.553-.551-.367-.55-.369-.736-.183-.556-.369-.73-.368-.556-.183-.736-.184-.736-.184-.55-.184h-.737l-.736-.184h-.736l-.55 28.665zM828.312 88.075h-1.472l-.736.184h-.736l-.737.183-.55.184-.736.184-.736.184-.55.368-.55.369-.736.184-.55.368-.556.552-.55.368-.55.368-.551.552-.37.368-.55.552-.365.552-.37.552-.55.55-.364.552-.186.734-.37.552-.182.735-.37.552-.186.734-.182.734-.186.734v1.287l-.186.734v.734l.186.736v.735l.186.734v.734l.182.734.37.552.186.735.182.552.37.734.364.552.37.552.364.552.37.552.55.55.364.552.556.552.55.368.55.552.55.368.551.368.556.369.55.367.736.184.55.368.736.184.55.184.737.184.736.183h.736l.736.184h.736l.55-28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M857.163 88.81l-5.697-.184-5.882-.184-6.063-.184-5.882-.184h-5.327l-.55 28.666 5.327.183h5.882l5.877.184 5.698.184 5.697.184z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React39.createElement("path", {
       d: "M856.243 117.475h1.472l.736-.184h.736l.736-.184.736-.184.55-.184.736-.183.55-.369.737-.184.55-.368.55-.368.55-.368.556-.552.55-.368.55-.368.55-.552.37-.552.55-.55.365-.552.37-.553.364-.552.37-.552.364-.734.186-.552.186-.734.365-.734.186-.552v-.735l.186-.734v-.734l.182-.734v-.735l-.182-.734v-.734l-.186-.734v-.735l-.186-.552-.182-.734-.37-.552-.186-.734-.365-.552-.37-.734-.364-.553-.37-.55-.364-.552-.364-.552-.556-.552-.365-.368-.55-.552-.556-.368-.55-.552-.55-.368-.55-.368-.736-.368-.55-.184-.737-.368-.555-.184-.73-.184-.737-.184-.556-.184-.736-.184h-1.466l-.92 28.666z",
-      fill: "#040404",
       stroke: "none"
     }));
   }
   var Overlay_default = SvgOverlay;
 
-  // lib-react-tsx/isotherm/Assignment.tsx
+  // build/lib-react-tsx/isotherm/Assignment.tsx
   var React40 = __toModule(require_react());
   function SvgAssignment3({
     title,
@@ -22739,7 +22663,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Assignment_default3 = SvgAssignment3;
 
-  // lib-react-tsx/iv/Assignment.tsx
+  // build/lib-react-tsx/iv/Assignment.tsx
   var React41 = __toModule(require_react());
   function SvgAssignment4({
     title,
@@ -22757,195 +22681,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React41.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React41.createElement("defs", null, /* @__PURE__ */ React41.createElement("path", {
-      id: "b",
-      d: "M150 1100h450v250H150z"
+    }, title) : null, /* @__PURE__ */ React41.createElement("path", {
+      d: "M250 710.809a19.661 19.661 0 00-19.662 19.662A19.661 19.661 0 00250 750.133h683.604a19.661 19.661 0 0019.66-19.662 19.661 19.661 0 00-19.66-19.662H250z"
     }), /* @__PURE__ */ React41.createElement("path", {
-      id: "a",
-      d: "M1050 1150h850v350h-850z"
-    })), /* @__PURE__ */ React41.createElement("path", {
-      d: "M250 710.809a19.661 19.661 0 00-19.662 19.662A19.661 19.661 0 00250 750.133h683.604a19.661 19.661 0 0019.66-19.662 19.661 19.661 0 00-19.66-19.662H250z",
-      style: {
-        lineHeight: "normal",
-        fontVariantLigatures: "normal",
-        fontVariantPosition: "normal",
-        fontVariantCaps: "normal",
-        fontVariantNumeric: "normal",
-        fontVariantAlternates: "normal",
-        fontVariantEastAsian: "normal",
-        fontFeatureSettings: "normal",
-        fontVariationSettings: "normal",
-        textIndent: 0,
-        textAlign: "start",
-        textDecorationLine: "none",
-        textDecorationStyle: "solid",
-        textDecorationColor: "#000",
-        textTransform: "none",
-        textOrientation: "mixed",
-        whiteSpace: "normal",
-        inlineSize: 0,
-        isolation: "auto",
-        mixBlendMode: "normal"
-      },
-      color: "#000",
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      overflow: "visible",
-      fill: "#040404",
-      stroke: "none"
+      d: "M947.408 710.81a19.661 19.661 0 00-11.734 4.004l-51.27 38.956a19.661 19.661 0 00-3.761 27.55 19.661 19.661 0 0027.55 3.76l51.27-38.955a19.661 19.661 0 003.76-27.549 19.661 19.661 0 00-15.815-7.765z"
     }), /* @__PURE__ */ React41.createElement("path", {
-      d: "M947.408 710.81a19.661 19.661 0 00-11.734 4.004l-51.27 38.956a19.661 19.661 0 00-3.761 27.55 19.661 19.661 0 0027.55 3.76l51.27-38.955a19.661 19.661 0 003.76-27.549 19.661 19.661 0 00-15.815-7.765z",
-      style: {
-        lineHeight: "normal",
-        fontVariantLigatures: "normal",
-        fontVariantPosition: "normal",
-        fontVariantCaps: "normal",
-        fontVariantNumeric: "normal",
-        fontVariantAlternates: "normal",
-        fontVariantEastAsian: "normal",
-        fontFeatureSettings: "normal",
-        fontVariationSettings: "normal",
-        textIndent: 0,
-        textAlign: "start",
-        textDecorationLine: "none",
-        textDecorationStyle: "solid",
-        textDecorationColor: "#000",
-        textTransform: "none",
-        textOrientation: "mixed",
-        whiteSpace: "normal",
-        inlineSize: 0,
-        isolation: "auto",
-        mixBlendMode: "normal"
-      },
-      color: "#000",
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      overflow: "visible",
-      fill: "#040404",
-      stroke: "none"
+      d: "M896.352 672.04a19.661 19.661 0 00-15.737 7.802 19.661 19.661 0 003.824 27.54l51.27 38.77a19.661 19.661 0 0027.541-3.822 19.661 19.661 0 00-3.822-27.54l-51.272-38.772a19.661 19.661 0 00-11.804-3.979zM300 134.014A15.986 15.986 0 00284.014 150 15.986 15.986 0 00300 165.986c196.67 0 329.094 60.938 413.313 151.172 84.218 90.234 120.7 211.04 120.7 332.842A15.986 15.986 0 00850 665.986 15.986 15.986 0 00865.986 650c0-128.197-38.517-257.392-129.298-354.658C645.905 198.076 503.33 134.014 300 134.014zM199.373 261.646h-37.218l-9.657-28.219h-51.75l-9.656 28.22H54.811l51.562-139.595h41.438zm-55.593-53.812l-17.157-50.063-17.156 50.063zM864.079 816.338l-50.907 139.594H772.86l-50.906-139.594h37.78l33.75 98.063 33.75-98.063zM230.34 733.603A19.661 19.661 0 00250 753.265a19.661 19.661 0 0019.662-19.662V50a19.661 19.661 0 00-19.663-19.66A19.661 19.661 0 00230.34 50v683.603z"
     }), /* @__PURE__ */ React41.createElement("path", {
-      d: "M896.352 672.04a19.661 19.661 0 00-15.737 7.802 19.661 19.661 0 003.824 27.54l51.27 38.77a19.661 19.661 0 0027.541-3.822 19.661 19.661 0 00-3.822-27.54l-51.272-38.772a19.661 19.661 0 00-11.804-3.979zM300 134.014A15.986 15.986 0 00284.014 150 15.986 15.986 0 00300 165.986c196.67 0 329.094 60.938 413.313 151.172 84.218 90.234 120.7 211.04 120.7 332.842A15.986 15.986 0 00850 665.986 15.986 15.986 0 00865.986 650c0-128.197-38.517-257.392-129.298-354.658C645.905 198.076 503.33 134.014 300 134.014z",
-      style: {
-        lineHeight: "normal",
-        fontVariantLigatures: "normal",
-        fontVariantPosition: "normal",
-        fontVariantCaps: "normal",
-        fontVariantNumeric: "normal",
-        fontVariantAlternates: "normal",
-        fontVariantEastAsian: "normal",
-        fontFeatureSettings: "normal",
-        fontVariationSettings: "normal",
-        textIndent: 0,
-        textAlign: "start",
-        textDecorationLine: "none",
-        textDecorationStyle: "solid",
-        textDecorationColor: "#000",
-        textTransform: "none",
-        textOrientation: "mixed",
-        whiteSpace: "normal",
-        inlineSize: 0,
-        isolation: "auto",
-        mixBlendMode: "normal"
-      },
-      color: "#000",
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      overflow: "visible",
-      fill: "#040404",
-      stroke: "none"
+      d: "M230.34 36.195a19.661 19.661 0 004.005 11.734L273.3 99.2a19.661 19.661 0 0027.55 3.761 19.661 19.661 0 003.76-27.55l-38.954-51.27a19.661 19.661 0 00-27.551-3.76 19.661 19.661 0 00-7.766 15.815z"
     }), /* @__PURE__ */ React41.createElement("path", {
-      d: "M199.373 261.646h-37.218l-9.657-28.219h-51.75l-9.656 28.22H54.811l51.562-139.595h41.438zm-55.593-53.812l-17.157-50.063-17.156 50.063zM864.079 816.338l-50.907 139.594H772.86l-50.906-139.594h37.78l33.75 98.063 33.75-98.063z",
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }), /* @__PURE__ */ React41.createElement("g", {
-      color: "#000",
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      fill: "#040404",
-      stroke: "none"
-    }, /* @__PURE__ */ React41.createElement("path", {
-      d: "M230.34 733.603A19.661 19.661 0 00250 753.265a19.661 19.661 0 0019.662-19.662V50a19.661 19.661 0 00-19.663-19.66A19.661 19.661 0 00230.34 50v683.603z",
-      style: {
-        lineHeight: "normal",
-        fontVariantLigatures: "normal",
-        fontVariantPosition: "normal",
-        fontVariantCaps: "normal",
-        fontVariantNumeric: "normal",
-        fontVariantAlternates: "normal",
-        fontVariantEastAsian: "normal",
-        fontFeatureSettings: "normal",
-        fontVariationSettings: "normal",
-        textIndent: 0,
-        textAlign: "start",
-        textDecorationLine: "none",
-        textDecorationStyle: "solid",
-        textDecorationColor: "#000",
-        textTransform: "none",
-        textOrientation: "mixed",
-        whiteSpace: "normal",
-        inlineSize: 0,
-        isolation: "auto",
-        mixBlendMode: "normal"
-      },
-      overflow: "visible"
-    }), /* @__PURE__ */ React41.createElement("path", {
-      d: "M230.34 36.195a19.661 19.661 0 004.005 11.734L273.3 99.2a19.661 19.661 0 0027.55 3.761 19.661 19.661 0 003.76-27.55l-38.954-51.27a19.661 19.661 0 00-27.551-3.76 19.661 19.661 0 00-7.766 15.815z",
-      style: {
-        lineHeight: "normal",
-        fontVariantLigatures: "normal",
-        fontVariantPosition: "normal",
-        fontVariantCaps: "normal",
-        fontVariantNumeric: "normal",
-        fontVariantAlternates: "normal",
-        fontVariantEastAsian: "normal",
-        fontFeatureSettings: "normal",
-        fontVariationSettings: "normal",
-        textIndent: 0,
-        textAlign: "start",
-        textDecorationLine: "none",
-        textDecorationStyle: "solid",
-        textDecorationColor: "#000",
-        textTransform: "none",
-        textOrientation: "mixed",
-        whiteSpace: "normal",
-        inlineSize: 0,
-        isolation: "auto",
-        mixBlendMode: "normal"
-      },
-      overflow: "visible"
-    }), /* @__PURE__ */ React41.createElement("path", {
-      d: "M191.568 87.252a19.661 19.661 0 007.803 15.736 19.661 19.661 0 0027.54-3.824l38.772-51.27a19.661 19.661 0 00-3.824-27.54 19.661 19.661 0 00-27.541 3.821l-38.77 51.272a19.661 19.661 0 00-3.98 11.805z",
-      style: {
-        lineHeight: "normal",
-        fontVariantLigatures: "normal",
-        fontVariantPosition: "normal",
-        fontVariantCaps: "normal",
-        fontVariantNumeric: "normal",
-        fontVariantAlternates: "normal",
-        fontVariantEastAsian: "normal",
-        fontFeatureSettings: "normal",
-        fontVariationSettings: "normal",
-        textIndent: 0,
-        textAlign: "start",
-        textDecorationLine: "none",
-        textDecorationStyle: "solid",
-        textDecorationColor: "#000",
-        textTransform: "none",
-        textOrientation: "mixed",
-        whiteSpace: "normal",
-        inlineSize: 0,
-        isolation: "auto",
-        mixBlendMode: "normal"
-      },
-      overflow: "visible"
-    })));
+      d: "M191.568 87.252a19.661 19.661 0 007.803 15.736 19.661 19.661 0 0027.54-3.824l38.772-51.27a19.661 19.661 0 00-3.824-27.54 19.661 19.661 0 00-27.541 3.821l-38.77 51.272a19.661 19.661 0 00-3.98 11.805z"
+    }));
   }
   var Assignment_default4 = SvgAssignment4;
 
-  // lib-react-tsx/mass/Impurities.tsx
+  // build/lib-react-tsx/mass/Impurities.tsx
   var React42 = __toModule(require_react());
   function SvgImpurities({
     title,
@@ -22953,9 +22703,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React42.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -22964,53 +22714,34 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React42.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React42.createElement("path", {
-      d: "M42.643 676.441h889.73M946.433 676.441l-51.622 39.223M894.811 637.405l51.622 39.036",
+      d: "M42.643 722.441h889.73M946.433 722.441l-51.622 39.223M894.811 683.405l51.622 39.036",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 45.698,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React42.createElement("path", {
-      className: "fil0 str0",
-      d: "M57.383 654.62h853.775M924.736 654.62l-49.634 37.615M875.102 617.004l49.634 37.616",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision",
-      strokeWidth: 91.74455
-    }), /* @__PURE__ */ React42.createElement("path", {
-      className: "fil1",
-      d: "M269.038 561.449h-27.602l.017-.712.054-.703.088-.695.122-.681.154-.67.186-.657.216-.645.247-.628.277-.613.304-.598.334-.58.359-.562.383-.543.41-.522.435-.503.456-.48.48-.458.5-.437.523-.41.54-.387.56-.36.578-.333.594-.307.613-.277.627-.249.641-.216.655-.187.668-.154.678-.123.69-.088.702-.054.71-.017.71.017.7.054.692.088.678.123.668.154.655.187.641.216.627.249.612.277.595.307.577.332.562.36.539.388.522.41.501.437.48.458.456.48.435.503.41.522.383.543.359.563.334.579.304.598.277.613.246.628.217.645.186.657.154.67.121.681.09.695.052.703zm-27.602 92.093v-92.093h27.602v92.093zm0 0h27.602l-.018.712-.053.702-.09.695-.12.682-.154.67-.187.656-.216.645-.247.629-.277.612-.304.599-.334.579-.358.562-.384.543-.41.522-.435.503-.456.48-.48.458-.5.437-.523.41-.539.387-.562.36-.577.333-.594.307-.613.277-.627.25-.64.216-.656.186-.668.154-.678.123-.69.089-.702.053-.71.018-.71-.018-.7-.053-.692-.09-.678-.122-.667-.154-.655-.186-.642-.217-.626-.249-.613-.277-.595-.307-.577-.332-.561-.36-.54-.388-.522-.41-.5-.437-.48-.457-.457-.481-.434-.503-.41-.522-.384-.543-.359-.562-.334-.58-.303-.598-.277-.612-.247-.629-.217-.645-.186-.657-.154-.67-.121-.681-.089-.695-.053-.702zM348.443 48.547H320.85l.017-.709.054-.698.088-.687.121-.678.155-.666.184-.651.218-.64.247-.624.275-.61.306-.593.332-.575.359-.557.385-.54.41-.52.433-.5.456-.477.48-.454.5-.434.523-.408.541-.383.56-.357.577-.332.594-.304.613-.275.625-.247.641-.217.655-.184.668-.155.68-.12.691-.087.7-.054.71-.017.71.017.698.054.691.087.68.12.668.155.655.184.641.217.625.247.613.275.594.304.578.332.56.357.54.383.523.408.5.434.48.454.456.478.433.499.41.52.386.54.358.557.333.575.305.594.275.609.247.624.218.64.185.651.154.666.121.678.089.687.053.698zM320.85 653.542V48.547h27.594v604.995zm0 0h27.594l-.017.709-.054.698-.088.687-.121.678-.155.666-.184.651-.218.64-.247.625-.275.609-.306.592-.332.576-.359.557-.385.54-.41.52-.433.5-.456.477-.48.454-.5.433-.523.409-.541.383-.56.357-.577.332-.594.304-.613.275-.625.247-.641.216-.655.185-.668.154-.68.121-.691.087-.7.053-.71.018-.71-.018-.698-.053-.691-.087-.68-.121-.668-.154-.655-.185-.641-.216-.625-.247-.613-.275-.594-.304-.578-.332-.56-.357-.54-.383-.522-.409-.501-.433-.48-.454-.456-.478-.433-.499-.41-.52-.386-.54-.358-.557-.332-.576-.306-.592-.275-.61-.247-.624-.218-.64-.185-.651-.154-.666-.121-.678-.089-.687-.053-.698zM189.52 491.831h-27.386l.018-.797.054-.788.087-.777.12-.763.153-.751.184-.737.215-.72.245-.704.275-.687.302-.67.33-.65.355-.628.382-.609.406-.586.432-.563.452-.537.476-.513.497-.488.517-.46.536-.433.556-.403.573-.372.59-.343.606-.311.621-.28.638-.242.65-.21.662-.172.674-.137.686-.099.694-.06.705-.02.704.02.695.06.685.1.675.136.662.173.65.209.637.243.621.279.606.31.59.344.574.372.556.403.536.433.516.46.498.488.476.513.452.537.431.563.407.586.381.61.355.628.33.65.302.669.276.687.245.705.214.719.185.737.152.751.121.763.087.777.053.788zm-27.386 161.71v-161.71h27.386v161.71zm0 0h27.386l-.018.798-.053.788-.087.776-.121.764-.153.75-.184.738-.215.719-.245.705-.275.687-.302.67-.33.649-.355.628-.382.61-.406.586-.431.562-.453.538-.476.513-.497.488-.517.46-.535.432-.556.403-.574.373-.59.343-.606.31-.621.28-.638.243-.65.21-.662.172-.674.136-.685.1-.695.06-.704.02-.705-.02-.695-.06-.685-.1-.674-.136-.663-.173-.65-.21-.637-.242-.62-.28-.606-.31-.591-.343-.574-.373-.556-.403-.535-.433-.517-.46-.497-.487-.476-.513-.453-.538-.43-.562-.407-.586-.382-.61-.355-.628-.33-.65-.302-.67-.275-.686-.245-.705-.215-.72-.184-.736-.153-.751-.12-.764-.088-.776-.053-.788zM427.856 561.449h-27.602l.017-.712.054-.703.088-.695.122-.681.154-.67.186-.657.216-.645.247-.628.277-.613.304-.598.334-.58.359-.562.383-.543.41-.522.435-.503.456-.48.48-.458.5-.437.523-.41.54-.387.56-.36.578-.333.594-.307.613-.277.627-.249.641-.216.655-.187.668-.154.678-.123.69-.088.702-.054.71-.017.71.017.701.054.69.088.679.123.668.154.655.187.641.216.627.249.613.277.594.307.577.332.562.36.54.388.521.41.501.437.48.458.456.48.435.503.41.522.383.543.359.563.334.579.304.598.277.613.246.628.217.645.186.657.154.67.121.681.09.695.053.703zm-27.602 92.093v-92.093h27.602v92.093zm0 0h27.602l-.018.712-.053.702-.09.695-.12.682-.154.67-.187.656-.216.645-.247.629-.277.612-.304.599-.334.579-.358.562-.384.543-.41.522-.435.503-.456.48-.48.458-.5.437-.523.41-.539.387-.561.36-.578.333-.594.307-.613.277-.627.25-.64.216-.656.186-.668.154-.678.123-.69.089-.702.053-.71.018-.71-.018-.7-.053-.691-.09-.678-.122-.668-.154-.655-.186-.642-.217-.626-.249-.613-.277-.595-.307-.577-.332-.561-.36-.54-.388-.522-.41-.5-.437-.48-.457-.456-.481-.435-.503-.41-.522-.384-.543-.359-.562-.334-.58-.303-.598-.277-.612-.247-.629-.217-.645-.186-.657-.154-.67-.121-.681-.089-.695-.053-.702zM586.675 561.449h-27.602l.017-.712.054-.703.088-.695.122-.681.154-.67.186-.657.216-.645.247-.628.277-.613.304-.598.334-.58.359-.562.383-.543.41-.522.435-.503.456-.48.48-.458.5-.437.523-.41.54-.387.56-.36.578-.333.594-.307.613-.277.627-.249.641-.216.655-.187.668-.154.678-.123.69-.088.702-.054.71-.017.71.017.701.054.69.088.679.123.668.154.655.187.641.216.627.249.613.277.594.307.577.332.562.36.539.388.522.41.501.437.48.458.456.48.435.503.41.522.383.543.359.563.334.579.304.598.277.613.246.628.217.645.186.657.154.67.121.681.09.695.052.703zm-27.602 92.093v-92.093h27.602v92.093zm0 0h27.602l-.018.712-.053.702-.09.695-.12.682-.154.67-.187.656-.216.645-.247.629-.277.612-.304.599-.334.579-.358.562-.384.543-.41.522-.435.503-.456.48-.48.458-.5.437-.523.41-.539.387-.561.36-.578.333-.594.307-.613.277-.627.25-.64.216-.656.186-.668.154-.678.123-.69.089-.702.053-.71.018-.71-.018-.7-.053-.691-.09-.678-.122-.668-.154-.655-.186-.642-.217-.626-.249-.613-.277-.595-.307-.577-.332-.561-.36-.54-.388-.522-.41-.5-.437-.48-.457-.456-.481-.435-.503-.41-.522-.384-.543-.359-.562-.334-.58-.303-.598-.277-.612-.247-.629-.217-.645-.186-.657-.154-.67-.121-.681-.089-.695-.053-.702zM666.084 561.449h-27.602l.018-.712.053-.703.089-.695.121-.681.154-.67.186-.657.217-.645.247-.628.277-.613.303-.598.334-.58.36-.562.383-.543.41-.522.435-.503.456-.48.48-.458.5-.437.522-.41.54-.387.561-.36.577-.333.595-.307.613-.277.626-.249.642-.216.655-.187.668-.154.678-.123.69-.088.701-.054.71-.017.71.017.701.054.691.088.678.123.668.154.655.187.642.216.626.249.613.277.595.307.577.332.561.36.54.388.522.41.5.437.48.458.456.48.435.503.41.522.384.543.358.563.334.579.304.598.277.613.247.628.216.645.187.657.154.67.12.681.09.695.053.703zm-27.602 92.093v-92.093h27.602v92.093zm0 0h27.602l-.018.712-.053.702-.089.695-.12.682-.155.67-.186.656-.217.645-.246.629-.277.612-.304.599-.334.579-.359.562-.383.543-.41.522-.435.503-.456.48-.48.458-.501.437-.522.41-.54.387-.561.36-.577.333-.595.307-.612.277-.627.25-.641.216-.655.186-.668.154-.678.123-.691.089-.701.053-.71.018-.71-.018-.701-.053-.691-.09-.678-.122-.668-.154-.655-.186-.641-.217-.627-.249-.613-.277-.594-.307-.577-.332-.562-.36-.54-.388-.521-.41-.501-.437-.48-.457-.456-.481-.435-.503-.41-.522-.383-.543-.36-.562-.333-.58-.304-.598-.277-.612-.247-.629-.216-.645-.186-.657-.155-.67-.12-.681-.09-.695-.053-.702zM110.218 561.449H82.616l.018-.712.053-.703.09-.695.12-.681.154-.67.187-.657.217-.645.246-.628.277-.613.304-.598.334-.58.358-.562.384-.543.41-.522.435-.503.456-.48.48-.458.5-.437.522-.41.54-.387.561-.36.577-.333.595-.307.612-.277.627-.249.641-.216.655-.187.668-.154.678-.123.69-.088.702-.054.71-.017.71.017.702.054.69.088.679.123.667.154.655.187.641.216.627.249.613.277.594.307.577.332.561.36.54.388.522.41.5.437.48.458.457.48.435.503.41.522.383.543.359.563.334.579.303.598.277.613.247.628.216.645.187.657.154.67.121.681.089.695.053.703zm-27.602 92.093v-92.093h27.602v92.093zm0 0h27.602l-.017.712-.054.702-.088.695-.121.682-.155.67-.186.656-.217.645-.246.629-.277.612-.304.599-.334.579-.358.562-.384.543-.41.522-.435.503-.456.48-.48.458-.5.437-.522.41-.54.387-.561.36-.577.333-.595.307-.612.277-.627.25-.641.216-.655.186-.668.154-.678.123-.69.089-.702.053-.71.018-.71-.018-.702-.053-.69-.09-.679-.122-.667-.154-.655-.186-.641-.217-.627-.249-.613-.277-.594-.307-.578-.332-.56-.36-.54-.388-.522-.41-.501-.437-.48-.457-.456-.481-.435-.503-.41-.522-.383-.543-.359-.562-.334-.58-.303-.598-.277-.612-.247-.629-.217-.645-.186-.657-.155-.67-.12-.681-.089-.695-.053-.702zM507.157 491.831h-27.385l.017-.797.054-.788.087-.777.12-.763.153-.751.184-.737.215-.72.245-.704.275-.687.302-.67.33-.65.355-.628.382-.609.406-.586.432-.563.452-.537.476-.513.497-.488.517-.46.536-.433.556-.403.573-.372.59-.343.606-.311.622-.28.637-.242.65-.21.662-.172.674-.137.686-.099.694-.06.705-.02.704.02.695.06.685.1.675.136.662.173.65.209.637.243.621.279.606.31.59.344.574.372.556.403.536.433.516.46.498.488.476.513.452.537.431.563.407.586.381.61.355.628.33.65.303.669.275.687.245.705.214.719.185.737.152.751.121.763.087.777.053.788zm-27.385 161.71v-161.71h27.385v161.71zm0 0h27.385l-.018.798-.053.788-.087.776-.121.764-.153.75-.184.738-.215.719-.245.705-.275.687-.302.67-.33.649-.355.628-.382.61-.406.586-.431.562-.453.538-.476.513-.497.488-.516.46-.536.432-.556.403-.574.373-.59.343-.606.31-.621.28-.638.243-.65.21-.662.172-.674.136-.685.1-.695.06-.704.02-.705-.02-.695-.06-.685-.1-.674-.136-.663-.173-.65-.21-.637-.242-.62-.28-.606-.31-.591-.343-.574-.373-.556-.403-.535-.433-.517-.46-.497-.487-.476-.513-.453-.538-.43-.562-.407-.586-.382-.61-.355-.628-.33-.65-.302-.67-.275-.686-.245-.705-.215-.72-.184-.736-.153-.751-.12-.764-.088-.776-.053-.788zM745.385 491.831H718l.018-.797.053-.788.087-.777.121-.763.152-.751.185-.737.215-.72.244-.704.276-.687.302-.67.33-.65.355-.628.382-.609.406-.586.431-.563.452-.537.477-.513.497-.488.516-.46.536-.433.556-.403.574-.372.59-.343.606-.311.621-.28.638-.242.65-.21.662-.172.674-.137.685-.099.695-.06.704-.02.705.02.694.06.686.1.674.136.662.173.65.209.638.243.62.279.606.31.591.344.574.372.556.403.535.433.517.46.497.488.476.513.453.537.43.563.407.586.382.61.355.628.33.65.302.669.275.687.245.705.215.719.184.737.153.751.12.763.088.777.053.788zM718 653.541v-161.71h27.385v161.71zm0 0h27.385l-.017.798-.054.788-.087.776-.12.764-.153.75-.184.738-.215.719-.245.705-.275.687-.302.67-.33.649-.355.628-.382.61-.407.586-.43.562-.453.538-.476.513-.497.488-.517.46-.536.432-.556.403-.573.373-.591.343-.606.31-.62.28-.638.243-.65.21-.662.172-.675.136-.685.1-.694.06-.705.02-.705-.02-.694-.06-.685-.1-.675-.136-.662-.173-.65-.21-.637-.242-.621-.28-.606-.31-.59-.343-.574-.373-.556-.403-.536-.433-.516-.46-.498-.487-.476-.513-.452-.538-.431-.562-.407-.586-.381-.61-.355-.628-.33-.65-.303-.67-.275-.686-.245-.705-.214-.72-.185-.736-.152-.751-.121-.764-.087-.776-.054-.788z",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision",
-      strokeWidth: 91.74455
-    }), /* @__PURE__ */ React42.createElement("path", {
-      className: "fil1",
-      d: "M646.432 807.294v33.598c0 5.308-1.202 9.29-3.604 11.947-2.432 2.654-5.593 3.982-9.545 3.982-3.855 0-6.953-1.328-9.323-3.982-2.37-2.656-3.572-6.639-3.572-11.947v-40.269c0-6.383-.22-11.313-.663-14.822-.412-3.508-1.582-6.417-3.508-8.66-1.898-2.245-4.93-3.383-9.071-3.383-8.281 0-13.718 2.844-16.342 8.535-2.622 5.657-3.95 13.811-3.95 24.43v34.169c0 5.246-1.2 9.229-3.573 11.915-2.37 2.686-5.499 4.014-9.387 4.014-3.824 0-6.953-1.328-9.387-4.014-2.432-2.686-3.666-6.669-3.666-11.915v-72.317c0-4.742 1.106-8.377 3.288-10.84 2.18-2.467 5.088-3.7 8.659-3.7 3.446 0 6.322 1.17 8.66 3.477 2.307 2.308 3.477 5.5 3.477 9.577v2.402c4.363-5.246 9.071-9.103 14.066-11.567 4.993-2.466 10.555-3.698 16.688-3.698 6.353 0 11.821 1.264 16.404 3.792 4.55 2.528 8.312 6.353 11.283 11.473 4.266-5.182 8.819-9.007 13.717-11.505 4.867-2.496 10.272-3.76 16.182-3.76 6.923 0 12.864 1.358 17.858 4.076 4.995 2.718 8.723 6.607 11.19 11.663 2.18 4.551 3.254 11.758 3.254 21.587v49.34c0 5.308-1.2 9.29-3.602 11.947-2.403 2.654-5.595 3.982-9.546 3.982-3.824 0-6.952-1.328-9.387-4.014-2.434-2.686-3.666-6.669-3.666-11.915V798.38c0-5.437-.222-9.767-.696-13.054-.475-3.256-1.707-6.006-3.729-8.25-2.054-2.213-5.12-3.319-9.261-3.319-3.35 0-6.51.98-9.483 2.972-3.002 1.959-5.309 4.615-6.985 7.963-1.864 4.237-2.78 11.79-2.78 22.6zm119.536-72.032l-25.917 106.736c-.886 3.539-1.644 6.289-2.276 8.343-.664 2.022-1.644 3.635-2.97 4.773-1.328 1.138-3.257 1.708-5.785 1.708-6.29 0-9.45-2.719-9.45-8.155 0-1.422.631-4.963 1.865-10.651l25.821-106.737c1.36-5.689 2.657-9.577 3.889-11.663 1.264-2.119 3.666-3.16 7.238-3.16 3.097 0 5.467.726 7.08 2.212 1.643 1.486 2.465 3.54 2.465 6.132 0 1.896-.664 5.405-1.96 10.461zm86.128 47.757l-46.303 51.772h49.527c4.015 0 7.05.948 9.071 2.812 2.055 1.897 3.067 4.33 3.067 7.271 0 2.844-1.012 5.15-3.003 6.953-2.022 1.802-5.056 2.686-9.135 2.686h-68.522c-4.804 0-8.408-1.042-10.779-3.16-2.37-2.086-3.57-4.963-3.57-8.597 0-2.15.822-4.33 2.496-6.543 1.675-2.18 5.12-6.195 10.367-12.073 5.563-6.165 10.62-11.758 15.14-16.752 4.55-4.995 8.755-9.671 12.642-14.034 3.888-4.362 7.112-8.027 9.672-11.061 2.56-3.035 4.615-5.627 6.163-7.777h-37.58c-5.183 0-9.103-.474-11.757-1.39-2.655-.917-3.983-3.35-3.983-7.301 0-2.908.98-5.215 3.002-6.953 1.99-1.738 4.867-2.592 8.565-2.592h58.063c5.373 0 9.481.79 12.357 2.37 2.877 1.548 4.299 4.393 4.299 8.471 0 1.358-.284 2.75-.822 4.203-.568 1.454-1.17 2.624-1.864 3.572-.665.917-1.612 2.054-2.783 3.382a238.487 238.487 0 01-4.33 4.741z",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      strokeWidth: 91.745,
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React42.createElement("path", {
-      className: "fil1",
-      d: "M824.903 561.449h-27.602l.018-.712.053-.703.089-.695.121-.681.154-.67.186-.657.217-.645.247-.628.277-.613.303-.598.334-.58.36-.562.383-.543.41-.522.435-.503.456-.48.48-.458.5-.437.522-.41.54-.387.561-.36.577-.333.595-.307.613-.277.626-.249.642-.216.655-.187.668-.154.678-.123.69-.088.701-.054.71-.017.71.017.701.054.691.088.678.123.668.154.655.187.642.216.626.249.613.277.595.307.577.332.561.36.54.388.522.41.5.437.48.458.456.48.435.503.41.522.384.543.358.563.334.579.304.598.277.613.247.628.216.645.187.657.154.67.12.681.09.695.053.703zm-27.602 92.093v-92.093h27.602v92.093zm0 0h27.602l-.018.712-.053.702-.089.695-.12.682-.155.67-.186.656-.217.645-.246.629-.278.612-.303.599-.334.579-.359.562-.383.543-.41.522-.435.503-.456.48-.48.458-.501.437-.522.41-.54.387-.561.36-.577.333-.595.307-.612.277-.627.25-.641.216-.655.186-.668.154-.678.123-.691.089-.701.053-.71.018-.71-.018-.701-.053-.691-.09-.678-.122-.668-.154-.655-.186-.641-.217-.627-.249-.613-.277-.594-.307-.577-.332-.562-.36-.54-.388-.521-.41-.501-.437-.48-.457-.456-.481-.435-.503-.41-.522-.383-.543-.36-.562-.333-.58-.304-.598-.277-.612-.247-.629-.216-.645-.186-.657-.155-.67-.12-.681-.09-.695-.053-.702z",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision",
-      strokeWidth: 91.74455
+      d: "M285.195 53.989c0-8.88-7.216-16.096-16.096-16.096-8.696 0-15.912 7.215-15.912 16.096zm0 0v658.279h-32.008V53.989zm-32.008 658.279c0 8.879 7.216 16.096 15.912 16.096 8.88 0 16.096-7.217 16.096-16.096zM674.83 421.24c0-8.88-7.03-16.096-15.909-16.096-8.879 0-15.91 7.215-15.91 16.096zm0 0v291.028h-31.819V421.24zm-31.819 291.028c0 8.879 7.031 16.096 15.91 16.096 8.879 0 15.91-7.217 15.91-16.096z",
+      stroke: "none"
+    }), /* @__PURE__ */ React42.createElement("g", {
+      style: {
+        lineHeight: "125%"
+      },
+      fontWeight: 400,
+      fontSize: 180,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }, /* @__PURE__ */ React42.createElement("path", {
+      d: "M605.225 953.334h-26.807v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.932-5.362-5.097 0-8.525 2.11-3.34 2.11-5.362 6.24-2.021 4.13-2.9 10.195t-.879 13.887v46.23H520.85v-98.261h20.478l3.604 12.568h1.494q2.11-3.78 5.01-6.504 2.988-2.724 6.503-4.482 3.516-1.758 7.471-2.55 3.955-.878 7.998-.878 10.108 0 17.139 3.516 7.119 3.427 10.898 10.898h2.198q2.109-3.78 5.097-6.504 2.988-2.724 6.592-4.482 3.603-1.758 7.559-2.55 4.043-.878 8.085-.878 15.82 0 23.819 8.613 8.086 8.526 8.086 27.422v64.072h-26.895v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.931-5.362-9.58 0-13.623 7.647-4.043 7.558-4.043 21.709zM749.717 824.838l-47.9 128.496H677.47l47.9-128.496zM827.851 953.334h-72.246v-15.82l40.166-61.963H758.33v-20.478h67.852v17.402l-38.848 60.38h40.517z"
+    })), /* @__PURE__ */ React42.createElement("path", {
+      d: "M834.83 640c0-2.266-7.03-4.107-15.909-4.107-8.879 0-15.91 1.841-15.91 4.107zm0 0v74.257h-31.819V640zm-31.819 74.257c0 2.265 7.031 4.107 15.91 4.107 8.879 0 15.91-1.842 15.91-4.107zM764.83 632c0-2.266-7.03-4.107-15.909-4.107-8.879 0-15.91 1.841-15.91 4.107zm0 0v74.257h-31.819V632zm-31.819 74.257c0 2.265 7.031 4.107 15.91 4.107 8.879 0 15.91-1.842 15.91-4.107zM581.82 650c0-2.266-7.032-4.107-15.91-4.107-8.88 0-15.91 1.841-15.91 4.107zm0 0v74.257H550V650zM550 724.257c0 2.265 7.03 4.107 15.91 4.107 8.878 0 15.91-1.842 15.91-4.107zM441.82 650c0-2.266-7.031-4.107-15.91-4.107-8.88 0-15.91 1.841-15.91 4.107zm0 0v74.257H410V650zM410 724.257c0 2.265 7.03 4.107 15.91 4.107 8.878 0 15.91-1.842 15.91-4.107zM161.82 650c0-2.266-7.031-4.107-15.91-4.107-8.88 0-15.91 1.841-15.91 4.107zm0 0v74.257H130V650zM130 724.257c0 2.265 7.03 4.107 15.91 4.107 8.879 0 15.91-1.842 15.91-4.107z",
+      stroke: "none"
     }));
   }
   var Impurities_default = SvgImpurities;
 
-  // lib-react-tsx/mass/Monoisotopic.tsx
+  // build/lib-react-tsx/mass/Monoisotopic.tsx
   var React43 = __toModule(require_react());
   function SvgMonoisotopic({
     title,
@@ -23066,7 +22797,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Monoisotopic_default = SvgMonoisotopic;
 
-  // lib-react-tsx/mass/Overlay.tsx
+  // build/lib-react-tsx/mass/Overlay.tsx
   var React44 = __toModule(require_react());
   function SvgOverlay2({
     title,
@@ -23074,9 +22805,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React44.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -23086,24 +22817,33 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React44.createElement("path", {
       d: "M354.945 655.836c0-8.88-6.846-16.096-15.171-16.096-8.51 0-15.357 7.217-15.357 16.096zm0 0v56.432h-30.528v-56.432zm-30.528 56.432c0 8.879 6.846 16.096 15.357 16.096 8.325 0 15.171-7.217 15.171-16.096zM354.945 558.706c0-8.882-6.846-16.097-15.171-16.097-8.51 0-15.357 7.215-15.357 16.097zm0 0v56.426h-30.528v-56.426zm-30.528 56.426c0 8.885 6.846 16.096 15.357 16.096 8.325 0 15.171-7.211 15.171-16.096zM354.945 461.573c0-8.88-6.846-16.096-15.171-16.096-8.51 0-15.357 7.215-15.357 16.096zm0 0v56.429h-30.528v-56.429zm-30.528 56.429c0 8.88 6.846 16.096 15.357 16.096 8.325 0 15.171-7.216 15.171-16.096zM354.945 364.44c0-8.88-6.846-16.095-15.171-16.095-8.51 0-15.357 7.216-15.357 16.096zm0 0v56.43h-30.528v-56.43zm-30.528 56.43c0 8.88 6.846 16.096 15.357 16.096 8.325 0 15.171-7.215 15.171-16.096zM354.945 267.309c0-8.88-6.846-16.096-15.171-16.096-8.51 0-15.357 7.215-15.357 16.096zm0 0v56.614h-30.528v-56.614zm-30.528 56.614c0 8.696 6.846 15.911 15.357 15.911 8.325 0 15.171-7.215 15.171-15.911zM840.973 655.836c0-8.88-6.844-16.096-15.17-16.096-8.51 0-15.168 7.217-15.168 16.096zm0 0v56.432h-30.338v-56.432zm-30.338 56.432c0 8.879 6.658 16.096 15.169 16.096 8.325 0 15.17-7.217 15.17-16.096zM840.973 558.706c0-8.882-6.844-16.097-15.17-16.097-8.51 0-15.168 7.215-15.168 16.097zm0 0v56.426h-30.338v-56.426zm-30.338 56.426c0 8.885 6.658 16.096 15.169 16.096 8.325 0 15.17-7.211 15.17-16.096zM840.973 461.573c0-8.88-6.844-16.096-15.17-16.096-8.51 0-15.168 7.215-15.168 16.096zm0 0v56.429h-30.338v-56.429zm-30.338 56.429c0 8.88 6.658 16.096 15.169 16.096 8.325 0 15.17-7.216 15.17-16.096z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React44.createElement("path", {
       d: "M42.643 722.441h889.73M946.433 722.441l-51.622 39.223M894.811 683.405l51.622 39.036",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 45.698,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React44.createElement("path", {
       d: "M285.195 53.989c0-8.88-7.216-16.096-16.096-16.096-8.696 0-15.912 7.215-15.912 16.096zm0 0v658.279h-32.008V53.989zm-32.008 658.279c0 8.879 7.216 16.096 15.912 16.096 8.88 0 16.096-7.217 16.096-16.096zM674.83 421.24c0-8.88-7.03-16.096-15.909-16.096-8.879 0-15.91 7.215-15.91 16.096zm0 0v291.028h-31.819V421.24zm-31.819 291.028c0 8.879 7.031 16.096 15.91 16.096 8.879 0 15.91-7.217 15.91-16.096z",
-      fill: "#040404",
       stroke: "none"
-    }));
+    }), /* @__PURE__ */ React44.createElement("g", {
+      style: {
+        lineHeight: "125%"
+      },
+      fontWeight: 400,
+      fontSize: 180,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }, /* @__PURE__ */ React44.createElement("path", {
+      d: "M605.225 953.334h-26.807v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.932-5.362-5.097 0-8.525 2.11-3.34 2.11-5.362 6.24-2.021 4.13-2.9 10.195t-.879 13.887v46.23H520.85v-98.261h20.478l3.604 12.568h1.494q2.11-3.78 5.01-6.504 2.988-2.724 6.503-4.482 3.516-1.758 7.471-2.55 3.955-.878 7.998-.878 10.108 0 17.139 3.516 7.119 3.427 10.898 10.898h2.198q2.109-3.78 5.097-6.504 2.988-2.724 6.592-4.482 3.603-1.758 7.559-2.55 4.043-.878 8.085-.878 15.82 0 23.819 8.613 8.086 8.526 8.086 27.422v64.072h-26.895v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.931-5.362-9.58 0-13.623 7.647-4.043 7.558-4.043 21.709zM749.717 824.838l-47.9 128.496H677.47l47.9-128.496zM827.851 953.334h-72.246v-15.82l40.166-61.963H758.33v-20.478h67.852v17.402l-38.848 60.38h40.517z"
+    })));
   }
   var Overlay_default2 = SvgOverlay2;
 
-  // lib-react-tsx/mass/RequestProtein.tsx
+  // build/lib-react-tsx/mass/RequestProtein.tsx
   var React45 = __toModule(require_react());
   function SvgRequestProtein({
     title,
@@ -23137,7 +22877,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var RequestProtein_default = SvgRequestProtein;
 
-  // lib-react-tsx/mass/Request.tsx
+  // build/lib-react-tsx/mass/Request.tsx
   var React46 = __toModule(require_react());
   function SvgRequest3({
     title,
@@ -23165,7 +22905,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Request_default3 = SvgRequest3;
 
-  // lib-react-tsx/mass/Sum.tsx
+  // build/lib-react-tsx/mass/Sum.tsx
   var React47 = __toModule(require_react());
   function SvgSum({
     title,
@@ -23197,7 +22937,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }), /* @__PURE__ */ React47.createElement("path", {
       d: "M895.679 689.633L850 724.226",
       fillRule: "nonzero",
-      stroke: "#201e1e",
       strokeWidth: 28.395291959999998,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23259,7 +22998,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Sum_default = SvgSum;
 
-  // lib-react-tsx/mass/Upload.tsx
+  // build/lib-react-tsx/mass/Upload.tsx
   var React48 = __toModule(require_react());
   function SvgUpload({
     title,
@@ -23280,13 +23019,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React48.createElement("path", {
       d: "M60.27 750H950M964.061 750l-51.622 39.223M912.44 710.964L964.06 750",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 45.698,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React48.createElement("path", {
       d: "M302.823 289.827c0-6.138-7.216-11.125-16.096-11.125-8.696 0-15.912 4.987-15.912 11.125zm0 0v454.97h-32.008v-454.97zm-32.008 454.97c0 6.138 7.216 11.126 15.912 11.126 8.88 0 16.096-4.988 16.096-11.125zM692.459 139.827c0-17.815-7.031-32.29-15.91-32.29-8.879 0-15.91 14.475-15.91 32.29zm0 0v583.807h-31.82V139.827zm-31.82 583.807c0 17.811 7.031 32.289 15.91 32.289 8.879 0 15.91-14.478 15.91-32.29z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React48.createElement("path", {
       transform: "rotate(.457) skewX(.026)",
@@ -23309,7 +23046,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Upload_default = SvgUpload;
 
-  // lib-react-tsx/misc/Chromatography.tsx
+  // build/lib-react-tsx/misc/Chromatography.tsx
   var React49 = __toModule(require_react());
   function SvgChromatography({
     title,
@@ -23330,14 +23067,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React49.createElement("path", {
       d: "M49.941 850.47h883.662M947.568 850.47l-51.27 38.956M896.298 811.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React49.createElement("path", {
       d: "M48.778 730.872c10.983 2.796 44.153 4.518 55.796-25.61 14.843-38.405 7.204-118.945 9.394-210.846 2.852-119.688-3.897-252.065 23.641-273.178C173.235 229.121 150 639.35 180.1 694.107c27.336 49.632 62.365 34.56 106.272 24.677C400 693.205 400.605 521.04 400 477.784c-1.019-79.373 13.328-371.297 11.429-370.944 0 0 5.496 245.006 11.95 360.616C430.392 593.107 450 756.182 520.344 750c79.132-.038 90.787-82.775 90.222-167.836-.753-93.527-5.052-203.405 24.743-207.362 37.396-1.067 33.21 90.955 45.112 195.07 10.722 93.797-4.404 184.937 109.12 174.586 35.53-3.218 113.251 2.089 145.224.307",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 33.181,
       strokeLinecap: "round",
       strokeLinejoin: "round"
@@ -23345,7 +23080,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Chromatography_default = SvgChromatography;
 
-  // lib-react-tsx/misc/Cristal.tsx
+  // build/lib-react-tsx/misc/Cristal.tsx
   var React50 = __toModule(require_react());
   function SvgCristal({
     title,
@@ -23376,7 +23111,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Cristal_default = SvgCristal;
 
-  // lib-react-tsx/misc/Cristal2.tsx
+  // build/lib-react-tsx/misc/Cristal2.tsx
   var React51 = __toModule(require_react());
   function SvgCristal2({
     title,
@@ -23396,55 +23131,45 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React51.createElement("path", {
       d: "M284.74 723.59c-6.913 2.359-10.453 9.775-8.093 16.522 2.192 6.912 9.779 10.45 16.523 8.261zm0 0l181.074-61.54 8.43 24.783-181.074 61.54zm189.504-36.757c6.913-2.36 10.453-9.776 8.093-16.522-2.36-6.912-9.779-10.455-16.523-8.261zM616.54 537.96c-1.348 6.916 3.204 13.828 10.286 15.177 7.081 1.515 13.823-3.038 15.342-10.12zm0 0l39.287-200.967 25.457 5.057-39.116 200.967zm64.744-195.91c1.35-6.912-3.203-13.825-10.285-15.174-7.081-1.517-13.828 3.036-15.172 10.117z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M634.752 74.317c34.393-29.168 82.44-35.069 132.176-21.075l-7.077 25.29c-41.475-11.802-80.93-7.419-108.242 15.679zm132.176-21.075c48.222 13.656 98.128 46.027 138.758 93.909l-19.895 16.86c-37.257-43.836-82.61-73.34-125.94-85.48zm138.758 93.909l-19.895 16.86zm-9.945 8.43l9.27-9.273c5.058 5.058 5.058 13.488 0 18.546-5.057 5.058-13.488 5.058-18.545 0zm9.945-8.43c40.635 47.882 64.404 102.508 69.801 152.075l-25.967 2.866c-5.058-44.678-26.637-94.246-63.73-138.081zm69.801 152.075c5.733 51.591-7.926 97.956-42.32 127.123l-16.856-20.063c27.312-23.098 37.932-61.2 33.21-104.194zm-42.32 127.123c-34.223 29.168-82.274 35.07-132.18 20.907l7.081-25.29c41.475 11.802 80.926 7.587 108.243-15.68zm-132.18 20.906c-48.052-13.656-98.123-45.858-138.758-93.74l20.065-17.028c37.092 43.835 82.445 73.34 125.774 85.48zm-138.758-93.74c-40.46-47.882-64.234-102.676-69.797-152.244l26.133-2.866c4.887 44.679 26.637 94.246 63.73 138.082zm-69.797-152.244c-5.732-51.422 7.922-97.787 42.32-126.954l16.857 19.894c-27.142 23.098-37.932 61.201-33.044 104.194z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M874.496 134c4.048 2.36 7.587 5.396 10.62 9.105 28.326 33.382 1.184 102.845-60.526 155.11-61.705 52.265-134.54 67.608-162.866 34.225-3.034-3.54-5.562-7.586-7.247-11.97 33.214 20.569 97.278 3.203 152.242-43.33 54.963-46.701 82.445-107.06 67.777-143.14z",
-      fill: "#040404",
       fillRule: "evenodd",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M608.11 118.995c2.364-5.058 5.567-9.442 9.61-12.982 37.432-32.877 132.181 14.837 211.593 106.554 79.407 91.718 113.465 192.708 76.038 225.584a39.01 39.01 0 01-14.163 7.924c19.895-41.643-14.838-130.832-85.648-212.602-70.811-81.939-153.761-128.64-197.43-114.478z",
-      fill: "#040404",
       fillRule: "evenodd",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M451.99 485.022c26.469-19.558 61.536-21.58 96.943-8.936l-8.765 24.615c-27.317-9.61-53.616-8.598-72.668 5.564zm96.943-8.936c33.55 11.802 67.608 37.26 94.245 73.173l-21.075 15.508c-23.434-31.525-52.94-53.781-81.935-64.066zm83.625 80.93l10.62-7.757c4.383 5.732 3.038 13.993-2.694 18.376-5.902 4.213-13.998 3.034-18.38-2.868zm8.43-10.12l-16.691 20.234zm-8.26 10.12l9.27-9.276c5.058 5.227 5.058 13.488 0 18.546-5.227 5.227-13.488 5.227-18.546 0zm10.45-7.757c26.642 35.908 40.97 76.038 42.49 111.611l-26.133 1.01c-1.35-30.685-13.993-65.414-37.432-97.113zm42.49 111.611c1.684 37.427-10.456 70.306-36.923 90.032l-15.682-21.075c19.05-14.163 27.651-38.946 26.472-67.947zm-44.68 79.407l7.757 10.625c-5.732 4.213-13.993 3.033-18.38-2.869-4.214-5.732-3.034-13.993 2.698-18.206zm7.757 10.625l-15.682-21.075zm0 0c-26.472 19.555-61.54 21.58-96.948 9.105l8.77-24.788c27.143 9.61 53.615 8.601 72.496-5.392zm-96.948 9.105c-33.549-11.974-67.774-37.431-94.244-73.344l21.075-15.508c23.433 31.525 52.939 53.784 81.94 64.064zm-94.244-73.344c-26.639-35.908-40.97-75.868-42.487-111.441l26.133-1.18c1.349 30.685 13.994 65.413 37.429 97.112zm-42.487-111.441c-1.686-37.597 10.453-70.474 36.923-90.032l15.511 20.906c-18.883 14.162-27.65 38.945-26.301 67.946zm44.679-79.578l-7.756-10.622c5.732-4.215 13.994-3.035 18.377 2.866 4.215 5.732 3.035 13.994-2.866 18.377z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M606.93 524.98c3.204 2.695 6.238 5.733 8.766 9.271 23.774 32.035 6.242 85.48-39.111 119.033-45.523 33.719-101.666 34.898-125.439 2.699-2.529-3.374-4.72-7.082-6.238-10.96 26.976 22.084 76.039 17.871 116.5-12.14 40.635-30.01 58.841-75.703 45.522-107.902z",
-      fill: "#040404",
       fillRule: "evenodd",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M433.612 518.234a36.307 36.307 0 018.261-9.271c30.516-23.267 96.775 12.645 148.03 80.252 51.251 67.607 68.113 141.287 37.597 164.55-3.203 2.53-6.911 4.383-11.129 5.568 18.211-30.01-.167-95.09-45.858-155.45-45.688-60.191-103.35-95.258-136.9-85.649z",
-      fill: "#040404",
       fillRule: "evenodd",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M141.431 563.082c38.272-4.552 75.026 13.824 103.857 47.208l-19.895 17.196c-23.098-26.807-51.928-41.644-80.758-38.271zm103.857 47.208c27.481 32.034 47.713 78.062 53.952 130.497l-26.133 3.203c-5.564-47.207-23.436-88.347-47.714-116.504zm53.952 130.497c6.237 52.6-2.53 102.17-21.75 139.767l-23.266-12.139c16.86-33.044 24.615-77.218 18.883-124.425zm-21.75 139.767c-20.063 39.111-51.591 65.584-89.694 70.136l-3.204-26.132c29-3.373 53.446-24.618 69.632-56.143zm-89.694 70.136c-38.272 4.553-75.195-13.823-103.857-47.037l19.895-17.197c23.098 26.807 51.76 41.64 80.758 38.102zM83.939 903.653c-27.481-32.035-47.713-78.062-53.951-130.667l25.964-3.033c5.732 47.207 23.604 88.347 47.882 116.503zM29.988 772.986c-6.238-52.6 2.529-102 21.75-139.597l23.266 11.969c-17.029 33.214-24.616 77.218-19.052 124.595zm21.75-139.597c20.062-39.117 51.59-65.754 89.693-70.307l3.204 26.133c-29 3.543-53.446 24.618-69.631 56.143z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M280.02 706.393c1.685 4.213 2.865 8.596 3.371 12.98 5.058 41.644-45.353 81.77-112.624 89.696-67.102 8.09-125.605-19.051-130.495-60.696-.504-4.383-.504-8.936.17-13.319 14.33 34.054 67.27 54.964 127.29 47.712 59.853-7.081 106.386-39.79 112.287-76.373z",
-      fill: "#040404",
       fillRule: "evenodd",
       stroke: "none"
     }), /* @__PURE__ */ React51.createElement("path", {
       d: "M102.485 584.157c4.384-2.359 9.105-4.048 13.994-4.722 45.521-6.067 93.066 70.306 106.216 170.962 13.152 100.651-12.981 187.14-58.503 193.382-4.89.675-9.779.334-14.668-.845 36.586-20.4 56.143-98.797 44.341-188.659-11.633-89.696-50.748-160.172-91.38-170.117z",
-      fill: "#040404",
       fillRule: "evenodd",
       stroke: "none"
     }));
   }
   var Cristal2_default = SvgCristal2;
 
-  // lib-react-tsx/misc/CyclicVoltammetry.tsx
+  // build/lib-react-tsx/misc/CyclicVoltammetry.tsx
   var React52 = __toModule(require_react());
   function SvgCyclicVoltammetry({
     title,
@@ -23470,7 +23195,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var CyclicVoltammetry_default = SvgCyclicVoltammetry;
 
-  // lib-react-tsx/misc/Edit.tsx
+  // build/lib-react-tsx/misc/Edit.tsx
   var React53 = __toModule(require_react());
   function SvgEdit({
     title,
@@ -23545,7 +23270,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Edit_default = SvgEdit;
 
-  // lib-react-tsx/misc/ElectronMicroscopy.tsx
+  // build/lib-react-tsx/misc/ElectronMicroscopy.tsx
   var React54 = __toModule(require_react());
   function SvgElectronMicroscopy({
     title,
@@ -23575,7 +23300,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }), /* @__PURE__ */ React54.createElement("path", {
       d: "M789.856 66.216h100.058",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 55.632,
       strokeLinecap: "round",
       strokeLinejoin: "round"
@@ -23583,7 +23307,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ElectronMicroscopy_default = SvgElectronMicroscopy;
 
-  // lib-react-tsx/misc/Peptide.tsx
+  // build/lib-react-tsx/misc/Peptide.tsx
   var React55 = __toModule(require_react());
   function SvgPeptide({
     title,
@@ -23604,7 +23328,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React55.createElement("path", {
       d: "M122.51 335.96c42.683 0 77.33-34.825 77.33-77.329 0-42.504-34.647-77.15-77.33-77.15-42.504 0-77.15 34.646-77.15 77.15 0 42.504 34.646 77.33 77.15 77.33zM500.406 757.431l-169.124-71.434M411.468 201.84c42.505 0 77.15-34.825 77.15-77.33 0-42.504-34.645-77.15-77.15-77.15-42.504 0-77.15 34.646-77.15 77.15 0 42.505 34.646 77.33 77.15 77.33zM524.518 492.226c42.503 0 77.146-34.646 77.146-77.15 0-42.505-34.643-77.33-77.146-77.33-42.507 0-77.332 34.825-77.332 77.33 0 42.504 34.825 77.15 77.332 77.15zM267.168 705.642c42.504 0 77.329-34.827 77.329-77.33 0-42.504-34.825-77.152-77.329-77.152-42.505 0-77.15 34.648-77.15 77.151 0 42.504 34.645 77.331 77.15 77.331zM580.235 849.05c42.503 0 77.33-34.648 77.33-77.151 0-42.504-34.827-77.151-77.33-77.151-42.504 0-77.15 34.647-77.15 77.15 0 42.504 34.646 77.152 77.15 77.152zM507.37 337.746l-60.899-145.014M464.866 469.545l-123.584 111.26M341.64 157.728l-144.122 64.47M873.302 685.637c42.683 0 77.326-34.647 77.326-77.15 0-42.504-34.643-77.327-77.326-77.327-42.504 0-77.151 34.823-77.151 77.326 0 42.504 34.647 77.151 77.15 77.151zM789.719 368.642c42.508 0 77.151-34.646 77.151-77.15 0-42.683-34.643-77.33-77.151-77.33-42.684 0-77.326 34.647-77.326 77.33 0 42.504 34.642 77.15 77.326 77.15zM799.184 649.74L658.28 727.427M853.657 530.8l-43.933-165.015",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 50.719,
       strokeLinecap: "round",
       strokeLinejoin: "round"
@@ -23612,7 +23335,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Peptide_default = SvgPeptide;
 
-  // lib-react-tsx/misc/Percent.tsx
+  // build/lib-react-tsx/misc/Percent.tsx
   var React56 = __toModule(require_react());
   function SvgPercent({
     title,
@@ -23632,7 +23355,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React56.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 100.803,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23643,7 +23365,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Percent_default = SvgPercent;
 
-  // lib-react-tsx/misc/Polymer.tsx
+  // build/lib-react-tsx/misc/Polymer.tsx
   var React57 = __toModule(require_react());
   function SvgPolymer({
     title,
@@ -23671,7 +23393,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Polymer_default = SvgPolymer;
 
-  // lib-react-tsx/misc/SearchRequest.tsx
+  // build/lib-react-tsx/misc/SearchRequest.tsx
   var React58 = __toModule(require_react());
   function SvgSearchRequest({
     title,
@@ -23694,7 +23416,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str0",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.85,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23705,7 +23426,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str1",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.8680981,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23718,7 +23438,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str1",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.849,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23730,7 +23449,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str2",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 24.319,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23739,13 +23457,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       textRendering: "geometricPrecision"
     }), /* @__PURE__ */ React58.createElement("path", {
       d: "M584.777 262.134v151.73L568 414V262.27zm0 151.73c0 11.906-5.141 22.728-13.53 30.577l-11.432-12.178C564.888 427.53 568 421.034 568 414zm-13.53 30.577c-8.252 7.643-19.549 12.446-31.929 12.446l.136-16.776c7.981 0 15.22-3.043 20.36-7.848zm-31.929 12.446H383.462l.135-16.776h155.857zm-155.788-8.388l-.068 8.388a8.343 8.343 0 01-8.388-8.388 8.502 8.502 0 018.523-8.388zm6.358 5.48l-73.26 84.963-12.718-10.892 73.26-85.031zm-79.62 79.551l6.36 5.412c-3.045 3.585-8.389 3.99-11.906.946-3.45-2.975-3.856-8.32-.812-11.838zm-8.184-1.69l18.061-84.965 16.37 3.248-18.061 85.031zm26.246-83.341l-8.253-1.69c.948-4.534 5.412-7.51 10.012-6.563 4.532.946 7.441 5.344 6.426 9.943zm-.067 8.388h-17.927l.136-16.776h17.926zm-17.927 0c-12.379 0-23.676-4.735-31.86-12.378l11.567-12.312c5.208 4.87 12.446 7.914 20.429 7.914zm-31.86-12.378c-8.321-7.78-13.53-18.604-13.53-30.509l16.844-.136c0 7.036 3.111 13.597 8.253 18.333zM264.945 414V262.27l16.844-.136v151.73zm0-151.73c0-11.974 5.209-22.797 13.597-30.577l11.432 12.177c-5.074 4.735-8.185 11.161-8.185 18.264zm13.597-30.577c8.185-7.711 19.482-12.514 31.929-12.514l-.136 16.844c-7.982 0-15.22 2.976-20.361 7.847zm31.929-12.514h228.982l-.136 16.844H310.336zm228.982 0c12.378 0 23.675 4.803 31.86 12.447l-11.567 12.311c-5.208-4.938-12.446-7.914-20.429-7.914zm31.86 12.447c8.322 7.779 13.463 18.602 13.463 30.508L568 262.27c0-7.103-3.112-13.597-8.253-18.332z",
-      fill: "#201e1e",
       stroke: "none"
     }));
   }
   var SearchRequest_default = SvgSearchRequest;
 
-  // lib-react-tsx/misc/Weight.tsx
+  // build/lib-react-tsx/misc/Weight.tsx
   var React59 = __toModule(require_react());
   function SvgWeight({
     title,
@@ -23787,7 +23504,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Weight_default = SvgWeight;
 
-  // lib-react-tsx/misc/Zenodo.tsx
+  // build/lib-react-tsx/misc/Zenodo.tsx
   var React60 = __toModule(require_react());
   function SvgZenodo({
     title,
@@ -23808,7 +23525,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React60.createElement("path", {
       d: "M248.466 72.488H743.88L248.466 745.276H750",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 101.08482749999999,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23821,7 +23537,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Zenodo_default = SvgZenodo;
 
-  // lib-react-tsx/nmr/13C.tsx
+  // build/lib-react-tsx/nmr/13C.tsx
   var React61 = __toModule(require_react());
   function Svg13C({
     title,
@@ -23845,7 +23561,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var C_default = Svg13C;
 
-  // lib-react-tsx/nmr/1H.tsx
+  // build/lib-react-tsx/nmr/1H.tsx
   var React62 = __toModule(require_react());
   function Svg1H({
     title,
@@ -23869,7 +23585,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var H_default = Svg1H;
 
-  // lib-react-tsx/nmr/1H13C.tsx
+  // build/lib-react-tsx/nmr/1H13C.tsx
   var React63 = __toModule(require_react());
   function Svg1H13C({
     title,
@@ -23889,7 +23605,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React63.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 30.004,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23897,7 +23612,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M363.105 35.888l53.128 70.154M309.974 106.042l53.131-70.154"
     }), /* @__PURE__ */ React63.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 41.53,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23905,17 +23619,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M363.114 640.841h576.354M363.105 640.841V64.487"
     }), /* @__PURE__ */ React63.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 30.004,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       d: "M968.07 640.841l-70.158 53.127M897.912 587.713l70.158 53.128"
     }), /* @__PURE__ */ React63.createElement("path", {
-      fill: "#000002",
-      d: "M480.425 505.72c27.762 0 50.405-14.576 50.405-32.437 0-17.87-22.644-32.435-50.405-32.435-27.769 0-50.41 14.565-50.41 32.435 0 17.862 22.641 32.437 50.41 32.437z"
-    }), /* @__PURE__ */ React63.createElement("path", {
-      d: "M284.782 291.987c0 2.158-.043 3.961-.175 5.458a33.608 33.608 0 01-.572 3.875c-.266 1.101-.616 2.026-1.057 2.774-.441.795-1.101 1.672-2.071 2.642-.921 1.012-2.772 2.244-5.459 3.83-2.729 1.542-6.03 3.035-9.947 4.446-3.917 1.406-8.361 2.598-13.423 3.521-5.018.969-10.433 1.454-16.289 1.454-11.442 0-21.743-1.804-30.944-5.327-9.201-3.52-17.036-8.759-23.462-15.756-6.468-7.045-11.398-15.76-14.835-26.281-3.433-10.476-5.192-22.667-5.192-36.624 0-14.171 1.896-26.761 5.677-37.764 3.785-11.005 9.069-20.25 15.89-27.729 6.782-7.485 14.925-13.161 24.433-17.036 9.507-3.874 19.939-5.812 31.38-5.812 4.668 0 9.113.396 13.429 1.188 4.314.75 8.275 1.764 11.931 3.039 3.65 1.231 6.953 2.687 9.855 4.315 2.908 1.629 4.979 3.035 6.122 4.179 1.188 1.144 1.979 2.113 2.376 2.909.44.791.791 1.761 1.056 2.949.262 1.23.441 2.642.571 4.27.131 1.628.175 3.65.175 6.075 0 2.549-.087 4.749-.217 6.554-.175 1.808-.485 3.258-.926 4.406-.441 1.101-.925 1.935-1.542 2.418-.615.529-1.275.792-2.065.792-1.28 0-2.909-.747-4.886-2.245-1.982-1.493-4.537-3.209-7.704-5.061-3.126-1.847-6.869-3.521-11.178-5.018-4.358-1.499-9.556-2.244-15.586-2.244-6.602 0-12.501 1.362-17.694 4.047-5.24 2.729-9.638 6.603-13.293 11.62-3.655 5.017-6.427 11.092-8.318 18.227-1.896 7.171-2.861 15.185-2.861 24.119 0 9.817 1.014 18.311 3.036 25.486 2.025 7.18 4.93 13.074 8.672 17.742 3.742 4.621 8.231 8.096 13.511 10.384 5.284 2.25 11.271 3.393 17.873 3.393 6.031 0 11.223-.707 15.581-2.113 4.402-1.411 8.188-2.996 11.314-4.712 3.122-1.716 5.721-3.257 7.747-4.664 2.026-1.366 3.563-2.027 4.708-2.027.838 0 1.542.131 2.026.485.528.354.969 1.056 1.318 2.07.354 1.057.571 2.463.75 4.309.177 1.846.265 4.315.265 7.437z"
+      d: "M480.425 505.72c27.762 0 50.405-14.576 50.405-32.437 0-17.87-22.644-32.435-50.405-32.435-27.769 0-50.41 14.565-50.41 32.435 0 17.862 22.641 32.437 50.41 32.437zM284.782 291.987c0 2.158-.043 3.961-.175 5.458a33.608 33.608 0 01-.572 3.875c-.266 1.101-.616 2.026-1.057 2.774-.441.795-1.101 1.672-2.071 2.642-.921 1.012-2.772 2.244-5.459 3.83-2.729 1.542-6.03 3.035-9.947 4.446-3.917 1.406-8.361 2.598-13.423 3.521-5.018.969-10.433 1.454-16.289 1.454-11.442 0-21.743-1.804-30.944-5.327-9.201-3.52-17.036-8.759-23.462-15.756-6.468-7.045-11.398-15.76-14.835-26.281-3.433-10.476-5.192-22.667-5.192-36.624 0-14.171 1.896-26.761 5.677-37.764 3.785-11.005 9.069-20.25 15.89-27.729 6.782-7.485 14.925-13.161 24.433-17.036 9.507-3.874 19.939-5.812 31.38-5.812 4.668 0 9.113.396 13.429 1.188 4.314.75 8.275 1.764 11.931 3.039 3.65 1.231 6.953 2.687 9.855 4.315 2.908 1.629 4.979 3.035 6.122 4.179 1.188 1.144 1.979 2.113 2.376 2.909.44.791.791 1.761 1.056 2.949.262 1.23.441 2.642.571 4.27.131 1.628.175 3.65.175 6.075 0 2.549-.087 4.749-.217 6.554-.175 1.808-.485 3.258-.926 4.406-.441 1.101-.925 1.935-1.542 2.418-.615.529-1.275.792-2.065.792-1.28 0-2.909-.747-4.886-2.245-1.982-1.493-4.537-3.209-7.704-5.061-3.126-1.847-6.869-3.521-11.178-5.018-4.358-1.499-9.556-2.244-15.586-2.244-6.602 0-12.501 1.362-17.694 4.047-5.24 2.729-9.638 6.603-13.293 11.62-3.655 5.017-6.427 11.092-8.318 18.227-1.896 7.171-2.861 15.185-2.861 24.119 0 9.817 1.014 18.311 3.036 25.486 2.025 7.18 4.93 13.074 8.672 17.742 3.742 4.621 8.231 8.096 13.511 10.384 5.284 2.25 11.271 3.393 17.873 3.393 6.031 0 11.223-.707 15.581-2.113 4.402-1.411 8.188-2.996 11.314-4.712 3.122-1.716 5.721-3.257 7.747-4.664 2.026-1.366 3.563-2.027 4.708-2.027.838 0 1.542.131 2.026.485.528.354.969 1.056 1.318 2.07.354 1.057.571 2.463.75 4.309.177 1.846.265 4.315.265 7.437z"
     }), /* @__PURE__ */ React63.createElement("path", {
       strokeWidth: 0.966,
       strokeMiterlimit: 22.926,
@@ -23927,13 +23637,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeMiterlimit: 22.926,
       d: "M686.806 805.017c0 1.118-.062 2.053-.184 2.83-.121.769-.283 1.397-.506 1.843-.223.453-.468.796-.752.979-.266.208-.59.305-.955.305h-42.517c-.323 0-.629-.095-.896-.305-.284-.184-.528-.524-.751-.979-.221-.446-.388-1.074-.51-1.843-.118-.777-.179-1.711-.179-2.83 0-1.161.061-2.113.162-2.883.1-.776.243-1.406.466-1.879.223-.479.468-.829.752-1.055.267-.203.59-.325.957-.325h14.354v-50.158l-12.402 6.848c-.913.453-1.646.717-2.237.82-.566.096-1.017-.027-1.362-.367-.345-.33-.571-.916-.688-1.747-.104-.839-.167-2.017-.167-3.52 0-.961.022-1.729.061-2.357.021-.612.122-1.146.284-1.574.166-.444.388-.786.65-1.074.288-.288.672-.566 1.139-.89l16.573-10.717c.182-.165.429-.288.729-.385a6.163 6.163 0 011.161-.244 18.54 18.54 0 011.892-.122c.772-.026 1.767-.026 3.008-.026 1.503 0 2.726.026 3.659.087.935.062 1.63.158 2.115.306.468.114.795.325.956.542.144.246.223.551.223.901v63.676h12.566c.367 0 .69.121.997.324.283.226.55.575.773 1.055.223.472.366 1.103.467 1.879.1.771.162 1.723.162 2.885z"
     }), /* @__PURE__ */ React63.createElement("path", {
-      fill: "#000002",
       d: "M480.425 333.943c27.762 0 50.405-14.566 50.405-32.433 0-17.865-22.644-32.433-50.405-32.433-27.769 0-50.41 14.568-50.41 32.433 0 17.865 22.641 32.433 50.41 32.433zM789.938 330.704c27.766 0 50.406-14.566 50.406-32.433s-22.641-32.433-50.406-32.433c-27.769 0-50.411 14.568-50.411 32.433s22.642 32.433 50.411 32.433zM789.938 181.619c27.766 0 50.406-14.568 50.406-32.434 0-17.864-22.641-32.432-50.406-32.432-27.769 0-50.411 14.568-50.411 32.432-.001 17.866 22.642 32.434 50.411 32.434z"
     }));
   }
   var H13C_default = Svg1H13C;
 
-  // lib-react-tsx/nmr/1H1H.tsx
+  // build/lib-react-tsx/nmr/1H1H.tsx
   var React64 = __toModule(require_react());
   function Svg1H1H({
     title,
@@ -23955,7 +23664,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M449.391 578.71c33.109 0 60.112-27.008 60.112-60.127 0-33.114-27.003-60.119-60.112-60.119-33.12 0-60.125 27.005-60.125 60.119-.001 33.119 27.005 60.127 60.125 60.127z"
     }), /* @__PURE__ */ React64.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 31.354,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23963,7 +23671,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M329.713 40.214l55.516 73.307M274.19 113.521l55.523-73.307"
     }), /* @__PURE__ */ React64.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 43.399,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23971,7 +23678,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M329.722 672.385h602.284M329.713 672.385V70.096"
     }), /* @__PURE__ */ React64.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 31.354,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23995,7 +23701,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var H1H_default = Svg1H1H;
 
-  // lib-react-tsx/nmr/2D.tsx
+  // build/lib-react-tsx/nmr/2D.tsx
   var React65 = __toModule(require_react());
   function Svg2D({
     title,
@@ -24049,7 +23755,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var D_default = Svg2D;
 
-  // lib-react-tsx/nmr/AlignBottom.tsx
+  // build/lib-react-tsx/nmr/AlignBottom.tsx
   var React66 = __toModule(require_react());
   function SvgAlignBottom({
     title,
@@ -24095,7 +23801,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var AlignBottom_default = SvgAlignBottom;
 
-  // lib-react-tsx/nmr/AlignCenter.tsx
+  // build/lib-react-tsx/nmr/AlignCenter.tsx
   var React67 = __toModule(require_react());
   function SvgAlignCenter({
     title,
@@ -24149,7 +23855,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var AlignCenter_default = SvgAlignCenter;
 
-  // lib-react-tsx/nmr/Assignment.tsx
+  // build/lib-react-tsx/nmr/Assignment.tsx
   var React68 = __toModule(require_react());
   function SvgAssignment5({
     title,
@@ -24169,7 +23875,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React68.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926
@@ -24193,7 +23898,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Assignment_default5 = SvgAssignment5;
 
-  // lib-react-tsx/nmr/Assignment2.tsx
+  // build/lib-react-tsx/nmr/Assignment2.tsx
   var React69 = __toModule(require_react());
   function SvgAssignment22({
     title,
@@ -24215,7 +23920,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M821.53 292.639l-83.455 53.397-29.992 94.432c-11.238-55.639-44.56-125.618-76.135-175.875"
     }), /* @__PURE__ */ React69.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 50.126,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24232,7 +23936,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Assignment2_default = SvgAssignment22;
 
-  // lib-react-tsx/nmr/BaselineCorrection.tsx
+  // build/lib-react-tsx/nmr/BaselineCorrection.tsx
   var React70 = __toModule(require_react());
   function SvgBaselineCorrection({
     title,
@@ -24268,7 +23972,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var BaselineCorrection_default = SvgBaselineCorrection;
 
-  // lib-react-tsx/nmr/Fid.tsx
+  // build/lib-react-tsx/nmr/Fid.tsx
   var React71 = __toModule(require_react());
   function SvgFid({
     title,
@@ -24297,7 +24001,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Fid_default = SvgFid;
 
-  // lib-react-tsx/nmr/FourierTransform.tsx
+  // build/lib-react-tsx/nmr/FourierTransform.tsx
   var React72 = __toModule(require_react());
   function SvgFourierTransform({
     title,
@@ -24348,7 +24052,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var FourierTransform_default = SvgFourierTransform;
 
-  // lib-react-tsx/nmr/Ft.tsx
+  // build/lib-react-tsx/nmr/Ft.tsx
   var React73 = __toModule(require_react());
   function SvgFt({
     title,
@@ -24378,7 +24082,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Ft_default = SvgFt;
 
-  // lib-react-tsx/nmr/ImpuritiesStars.tsx
+  // build/lib-react-tsx/nmr/ImpuritiesStars.tsx
   var React74 = __toModule(require_react());
   function SvgImpuritiesStars({
     title,
@@ -24429,7 +24133,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ImpuritiesStars_default = SvgImpuritiesStars;
 
-  // lib-react-tsx/nmr/Impurities.tsx
+  // build/lib-react-tsx/nmr/Impurities.tsx
   var React75 = __toModule(require_react());
   function SvgImpurities2({
     title,
@@ -24458,7 +24162,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Impurities_default2 = SvgImpurities2;
 
-  // lib-react-tsx/nmr/Integrate.tsx
+  // build/lib-react-tsx/nmr/Integrate.tsx
   var React76 = __toModule(require_react());
   function SvgIntegrate({
     title,
@@ -24525,7 +24229,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Integrate_default = SvgIntegrate;
 
-  // lib-react-tsx/nmr/Lineshapedeconvolution.tsx
+  // build/lib-react-tsx/nmr/Lineshapedeconvolution.tsx
   var React77 = __toModule(require_react());
   function SvgLineshapedeconvolution({
     title,
@@ -24597,7 +24301,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Lineshapedeconvolution_default = SvgLineshapedeconvolution;
 
-  // lib-react-tsx/nmr/MultipleAnalysis.tsx
+  // build/lib-react-tsx/nmr/MultipleAnalysis.tsx
   var React78 = __toModule(require_react());
   function SvgMultipleAnalysis({
     title,
@@ -24618,7 +24322,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React78.createElement("path", {
       d: "M24.612 594.712h305.673l61.025-399.9 61.127 399.9h338.338",
       fill: "none",
-      stroke: "#000002",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
@@ -24627,7 +24330,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }), /* @__PURE__ */ React78.createElement("path", {
       d: "M199.548 953.651h371.673l61.024-399.9 63.127 399.9h271.339",
       fill: "none",
-      stroke: "#000002",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
@@ -24635,7 +24337,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }), /* @__PURE__ */ React78.createElement("path", {
       d: "M116.665 775.367c60.181 0 342.086.408 342.086.408l61.025-399.9 62.127 399.9h330.782",
       fill: "none",
-      stroke: "#000002",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       strokeWidth: 49.224,
@@ -24651,7 +24352,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var MultipleAnalysis_default = SvgMultipleAnalysis;
 
-  // lib-react-tsx/nmr/Multiplet.tsx
+  // build/lib-react-tsx/nmr/Multiplet.tsx
   var React79 = __toModule(require_react());
   function SvgMultiplet({
     title,
@@ -24682,7 +24383,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Multiplet_default = SvgMultiplet;
 
-  // lib-react-tsx/nmr/Overlay.tsx
+  // build/lib-react-tsx/nmr/Overlay.tsx
   var React80 = __toModule(require_react());
   function SvgOverlay3({
     title,
@@ -24702,7 +24403,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React80.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 60.777,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24710,7 +24410,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M53.64 725.878h866.719"
     }), /* @__PURE__ */ React80.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 60.777,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24723,7 +24422,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M382.821 142.216c-2.236-13.041-14.607-21.792-27.64-19.569-13.042 2.237-21.792 14.616-19.561 27.641 2.23 13.04 14.611 21.8 27.642 19.569 13.031-2.239 21.791-14.62 19.559-27.641zM394.999 213.33c-2.239-13.033-14.609-21.801-27.641-19.561-13.042 2.231-21.791 14.601-19.57 27.643 2.239 13.03 14.618 21.787 27.65 19.56 13.032-2.231 21.79-14.61 19.561-27.642z"
     }), /* @__PURE__ */ React80.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24733,7 +24431,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Overlay_default3 = SvgOverlay3;
 
-  // lib-react-tsx/nmr/Overlay3Aligned.tsx
+  // build/lib-react-tsx/nmr/Overlay3Aligned.tsx
   var React81 = __toModule(require_react());
   function SvgOverlay3Aligned({
     title,
@@ -24753,7 +24451,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React81.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24762,7 +24459,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M29.127 687.461H334.8l61.025-399.9 61.127 399.9H795.29"
     }), /* @__PURE__ */ React81.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24770,7 +24466,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M204.063 686.396h371.673l61.024-399.898 63.127 399.898h271.339"
     }), /* @__PURE__ */ React81.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 49.224,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
@@ -24780,7 +24475,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Overlay3Aligned_default = SvgOverlay3Aligned;
 
-  // lib-react-tsx/nmr/Overlay3.tsx
+  // build/lib-react-tsx/nmr/Overlay3.tsx
   var React82 = __toModule(require_react());
   function SvgOverlay32({
     title,
@@ -24800,7 +24495,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React82.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24809,7 +24503,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M29.127 465.651H334.8l61.025-399.899 61.127 399.899H795.29"
     }), /* @__PURE__ */ React82.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -24817,7 +24510,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M204.063 911.396h371.673l61.025-399.898 63.127 399.898h271.338"
     }), /* @__PURE__ */ React82.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 49.224,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
@@ -24827,7 +24519,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Overlay3_default = SvgOverlay32;
 
-  // lib-react-tsx/nmr/PeakPicking.tsx
+  // build/lib-react-tsx/nmr/PeakPicking.tsx
   var React83 = __toModule(require_react());
   function SvgPeakPicking({
     title,
@@ -24847,7 +24539,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React83.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926
@@ -24868,7 +24559,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var PeakPicking_default = SvgPeakPicking;
 
-  // lib-react-tsx/nmr/PeakPicking2.tsx
+  // build/lib-react-tsx/nmr/PeakPicking2.tsx
   var React84 = __toModule(require_react());
   function SvgPeakPicking2({
     title,
@@ -24902,7 +24593,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var PeakPicking2_default = SvgPeakPicking2;
 
-  // lib-react-tsx/nmr/Peaks.tsx
+  // build/lib-react-tsx/nmr/Peaks.tsx
   var React85 = __toModule(require_react());
   function SvgPeaks({
     title,
@@ -24924,7 +24615,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeMiterlimit: 22.926,
       strokeLinejoin: "round",
       strokeLinecap: "round",
-      stroke: "#000002",
       fill: "none"
     }, /* @__PURE__ */ React85.createElement("path", {
       strokeWidth: 47.417,
@@ -24936,7 +24626,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Peaks_default = SvgPeaks;
 
-  // lib-react-tsx/nmr/PhaseCorr.tsx
+  // build/lib-react-tsx/nmr/PhaseCorr.tsx
   var React86 = __toModule(require_react());
   function SvgPhaseCorr({
     title,
@@ -24994,7 +24684,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var PhaseCorr_default = SvgPhaseCorr;
 
-  // lib-react-tsx/nmr/PhaseCorrection.tsx
+  // build/lib-react-tsx/nmr/PhaseCorrection.tsx
   var React87 = __toModule(require_react());
   function SvgPhaseCorrection({
     title,
@@ -25047,7 +24737,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var PhaseCorrection_default = SvgPhaseCorrection;
 
-  // lib-react-tsx/nmr/RangePicking.tsx
+  // build/lib-react-tsx/nmr/RangePicking.tsx
   var React88 = __toModule(require_react());
   function SvgRangePicking({
     title,
@@ -25083,7 +24773,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var RangePicking_default = SvgRangePicking;
 
-  // lib-react-tsx/nmr/RealImag.tsx
+  // build/lib-react-tsx/nmr/RealImag.tsx
   var React89 = __toModule(require_react());
   function SvgRealImag({
     title,
@@ -25131,7 +24821,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var RealImag_default = SvgRealImag;
 
-  // lib-react-tsx/nmr/Reference.tsx
+  // build/lib-react-tsx/nmr/Reference.tsx
   var React90 = __toModule(require_react());
   function SvgReference({
     title,
@@ -25151,7 +24841,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React90.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 47.417,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -25159,7 +24848,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M54.005 897.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 414.67l59.528 483.185h176.733"
     }), /* @__PURE__ */ React90.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 41.819,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -25179,7 +24867,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Reference_default = SvgReference;
 
-  // lib-react-tsx/nmr/Search.tsx
+  // build/lib-react-tsx/nmr/Search.tsx
   var React91 = __toModule(require_react());
   function SvgSearch({
     title,
@@ -25199,7 +24887,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React91.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926
@@ -25219,7 +24906,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Search_default = SvgSearch;
 
-  // lib-react-tsx/nmr/Searchq.tsx
+  // build/lib-react-tsx/nmr/Searchq.tsx
   var React92 = __toModule(require_react());
   function SvgSearchq({
     title,
@@ -25239,7 +24926,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React92.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926
@@ -25257,7 +24943,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Searchq_default = SvgSearchq;
 
-  // lib-react-tsx/nmr/Signals.tsx
+  // build/lib-react-tsx/nmr/Signals.tsx
   var React93 = __toModule(require_react());
   function SvgSignals({
     title,
@@ -25285,7 +24971,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Signals_default = SvgSignals;
 
-  // lib-react-tsx/nmr/Simulator.tsx
+  // build/lib-react-tsx/nmr/Simulator.tsx
   var React94 = __toModule(require_react());
   function SvgSimulator({
     title,
@@ -25316,7 +25002,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Simulator_default = SvgSimulator;
 
-  // lib-react-tsx/nmr/Simulatormicro.tsx
+  // build/lib-react-tsx/nmr/Simulatormicro.tsx
   var React95 = __toModule(require_react());
   function SvgSimulatormicro({
     title,
@@ -25368,7 +25054,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Simulatormicro_default = SvgSimulatormicro;
 
-  // lib-react-tsx/nmr/Sum.tsx
+  // build/lib-react-tsx/nmr/Sum.tsx
   var React96 = __toModule(require_react());
   function SvgSum2({
     title,
@@ -25393,7 +25079,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Sum_default2 = SvgSum2;
 
-  // lib-react-tsx/nmr/Tools.tsx
+  // build/lib-react-tsx/nmr/Tools.tsx
   var React97 = __toModule(require_react());
   function SvgTools({
     title,
@@ -25447,7 +25133,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Tools_default = SvgTools;
 
-  // lib-react-tsx/nmr/Tree.tsx
+  // build/lib-react-tsx/nmr/Tree.tsx
   var React98 = __toModule(require_react());
   function SvgTree({
     title,
@@ -25471,7 +25157,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Tree_default = SvgTree;
 
-  // lib-react-tsx/nmr/ZeroFilling.tsx
+  // build/lib-react-tsx/nmr/ZeroFilling.tsx
   var React99 = __toModule(require_react());
   function SvgZeroFilling({
     title,
@@ -25512,7 +25198,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ZeroFilling_default = SvgZeroFilling;
 
-  // lib-react-tsx/periodic/Carbon.tsx
+  // build/lib-react-tsx/periodic/Carbon.tsx
   var React100 = __toModule(require_react());
   function SvgCarbon({
     title,
@@ -25560,7 +25246,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Carbon_default = SvgCarbon;
 
-  // lib-react-tsx/periodic/Electronegativity.tsx
+  // build/lib-react-tsx/periodic/Electronegativity.tsx
   var React101 = __toModule(require_react());
   function SvgElectronegativity({
     title,
@@ -25608,7 +25294,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Electronegativity_default = SvgElectronegativity;
 
-  // lib-react-tsx/periodic/ElectronicBoron.tsx
+  // build/lib-react-tsx/periodic/ElectronicBoron.tsx
   var React102 = __toModule(require_react());
   function SvgElectronicBoron({
     title,
@@ -25657,7 +25343,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ElectronicBoron_default = SvgElectronicBoron;
 
-  // lib-react-tsx/periodic/ElectronicLithium.tsx
+  // build/lib-react-tsx/periodic/ElectronicLithium.tsx
   var React103 = __toModule(require_react());
   function SvgElectronicLithium({
     title,
@@ -25734,7 +25420,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ElectronicLithium_default = SvgElectronicLithium;
 
-  // lib-react-tsx/periodic/IsotopeCarbon.tsx
+  // build/lib-react-tsx/periodic/IsotopeCarbon.tsx
   var React104 = __toModule(require_react());
   function SvgIsotopeCarbon({
     title,
@@ -25773,7 +25459,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var IsotopeCarbon_default = SvgIsotopeCarbon;
 
-  // lib-react-tsx/periodic/IsotopeFluor.tsx
+  // build/lib-react-tsx/periodic/IsotopeFluor.tsx
   var React105 = __toModule(require_react());
   function SvgIsotopeFluor({
     title,
@@ -25821,7 +25507,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var IsotopeFluor_default = SvgIsotopeFluor;
 
-  // lib-react-tsx/periodic/IsotopeHydrogen.tsx
+  // build/lib-react-tsx/periodic/IsotopeHydrogen.tsx
   var React106 = __toModule(require_react());
   function SvgIsotopeHydrogen({
     title,
@@ -25865,7 +25551,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var IsotopeHydrogen_default = SvgIsotopeHydrogen;
 
-  // lib-react-tsx/periodic/Mass.tsx
+  // build/lib-react-tsx/periodic/Mass.tsx
   var React107 = __toModule(require_react());
   function SvgMass({
     title,
@@ -25914,7 +25600,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Mass_default = SvgMass;
 
-  // lib-react-tsx/periodic/OxidationState.tsx
+  // build/lib-react-tsx/periodic/OxidationState.tsx
   var React108 = __toModule(require_react());
   function SvgOxidationState({
     title,
@@ -25977,7 +25663,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var OxidationState_default = SvgOxidationState;
 
-  // lib-react-tsx/raman/Assignment.tsx
+  // build/lib-react-tsx/raman/Assignment.tsx
   var React109 = __toModule(require_react());
   function SvgAssignment6({
     title,
@@ -25998,33 +25684,23 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React109.createElement("path", {
       d: "M49.941 730.47h883.662M947.568 730.47l-51.27 38.956M896.298 691.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React109.createElement("path", {
       d: "M101.35 640.31c87.832-7.236 153.621-89.197 158.583-167.475 11.576-179.157 13.743-241.208 48.179-248.84 74.856.224-33.321 414.776 212.233 419.503 96.256 1.887 87.445-72.992 92.222-151.822 4.962-83.974 4.062-147.325 14.171-213.66 37.85 109.516-11.394 356.845 162.804 360.337 35.649.734 34.68 3.082 66.653 1.427",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React109.createElement("path", {
-      d: "M326.284 161.008c0 7.485-6.092 13.577-13.402 13.577-7.485 0-13.576-6.092-13.576-13.577zm0 0V70.675h-26.978v90.333zm-26.978-90.333c0-7.31 6.091-13.402 13.576-13.402 7.31 0 13.402 6.092 13.402 13.402zM644.174 215.661c0 7.484-6.092 13.576-13.576 13.576-7.31 0-13.402-6.092-13.402-13.576zm0 0v-90.334h-26.978v90.334zm-26.978-90.334c0-7.31 6.091-13.401 13.402-13.401 7.484 0 13.576 6.091 13.576 13.401z",
-      fill: "#040404",
-      stroke: "none"
-    }), /* @__PURE__ */ React109.createElement("path", {
-      d: "M447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083-2.39 2.206-5.145 3.307-8.453 3.307-2.205 0-4.043-.55-5.512-1.651-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183-4.777 6.068-7.166 14.336-7.166 24.81 0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524zM742.583 873.76v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189z",
-      stroke: "none"
-    }), /* @__PURE__ */ React109.createElement("path", {
-      d: "M641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694zM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189z",
-      fill: "#040404",
+      d: "M326.284 161.008c0 7.485-6.092 13.577-13.402 13.577-7.485 0-13.576-6.092-13.576-13.577zm0 0V70.675h-26.978v90.333zm-26.978-90.333c0-7.31 6.091-13.402 13.576-13.402 7.31 0 13.402 6.092 13.402 13.402zM644.174 215.661c0 7.484-6.092 13.576-13.576 13.576-7.31 0-13.402-6.092-13.402-13.576zm0 0v-90.334h-26.978v90.334zm-26.978-90.334c0-7.31 6.091-13.401 13.402-13.401 7.484 0 13.576 6.091 13.576 13.401zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083-2.39 2.206-5.145 3.307-8.453 3.307-2.205 0-4.043-.55-5.512-1.651-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183-4.777 6.068-7.166 14.336-7.166 24.81 0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524zM742.583 873.76v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189zM641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694zM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189z",
       stroke: "none"
     }));
   }
   var Assignment_default6 = SvgAssignment6;
 
-  // lib-react-tsx/raman/Overlay.tsx
+  // build/lib-react-tsx/raman/Overlay.tsx
   var React110 = __toModule(require_react());
   function SvgOverlay4({
     title,
@@ -26045,153 +25721,116 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React110.createElement("path", {
       d: "M49.941 730.47h883.662M947.568 730.47l-51.27 38.956M896.298 691.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React110.createElement("path", {
-      d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083-2.39 2.206-5.146 3.306-8.453 3.306-2.205 0-4.043-.55-5.512-1.65-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183-4.778 6.067-7.166 14.336-7.166 24.81 0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042-4.042 0-7.166-1.287-9.739-4.042-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525zM743.15 876.725v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19z",
-      stroke: "none"
-    }), /* @__PURE__ */ React110.createElement("path", {
-      d: "M641.873 852.966c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z",
-      fill: "#040404",
+      d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083-2.39 2.206-5.146 3.306-8.453 3.306-2.205 0-4.043-.55-5.512-1.65-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183-4.778 6.067-7.166 14.336-7.166 24.81 0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042-4.042 0-7.166-1.287-9.739-4.042-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525zM743.15 876.725v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19zM641.873 852.966c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M100 500c87.833 20.764 145.038-71.722 150-150 11.576-179.157.309-263.626 60.763-260.315C400 100 331.794 510.236 522.995 509.187 609.721 499.132 600 150 629.39 143.707 650 150 639.802 504.508 750 500c35.627-1.438 106.873 3.124 138.845 1.47",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M96.693 629.177l-.736-.184-.735-.184-.734-.368-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.734l-.184-.553v-.734l.184-.734v-.734l.184-.735.184-.734.184-.734.184-.734.184-.552.368-.735.184-.552.368-.734.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.432 27.93z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M129.4 631.566l-1.837.184h-2.389l-2.389.184H118.008l-2.205-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.837l1.655.184h3.492l1.654-.184h1.838l1.837-.184z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M127.563 602.9h2.206l.552.185h.734l.736.183.735.184.552.184.734.369.552.183.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.734.368.553.184.552.369.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734V617.788l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.185.552-.183.734-.369.552-.368.552-.368.734-.368.553-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zM189.487 610.25l-.55.553-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184H180.118l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.184-.552-.368-.55-.368-.734-.368-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.552-.368-.735-.368-.552-.368-.734-.184-.734-.184-.552-.184-.735-.184-.734-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.255z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M214.293 591.876l-1.47 1.286-1.838 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.47-2.022 1.471-2.021 1.286-2.021 1.47-2.021 1.287-1.838 1.286-2.022 1.103-15.067-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.287 1.654-1.102 1.655-1.47 1.654-1.286 1.47-1.287 1.654-1.286 1.47-1.286z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M195.55 570.193l.551-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.552.55.552.368.55.368.737.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.736-.368.55-.184.735-.368.552-.368.552-.368.734-.368.552-.55.552-.368.552-.552.369-.55.55-18.743-21.683zM254.535 546.489l-.368.552-.368.552-.55.552-.553.552-.552.368-.55.55-.55.369-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.183h-.736l-.55.184h-2.205l-.552-.184h-.736l-.734-.183-.736-.184-.55-.184-.734-.184-.737-.368-.55-.184-.734-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.553-.552-.552-.368-.552-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.735v-.736l-.184-.734v-1.286l-.184-.736.184-.552v-1.471l.184-.734.184-.55.184-.736.184-.734.368-.552.368-.736.184-.552.368-.735.55-.552 23.336 16.538z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M270.521 520.58l-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.205-1.286 2.02-1.47 2.022-1.287 2.205-1.286 2.022-1.47 2.021-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.918-2.022 1.103-1.837.918-1.654z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M245.348 506.799l.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.183H259.311l.734.183h.736l.735.184.55.184.736.184.734.368.55.184.736.367.55.369.735.552.552.368.55.368.55.552.552.552.368.368.553.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.735.184.552.184.734v3.492l-.184.735v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.552-25.174-13.781zM292.388 463.434l-.184.734-.185.736-.184.734-.368.55-.368.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.367-.55.184-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.735-.184-.736-.184-.734-.184-.55-.367-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.368-.736-.185-.55-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.737v-3.49l.184-.735.184-.736 27.93 6.248z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M295.695 440.832l-.184 2.021-.184 2.205-.184 2.022-.184 2.021-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.022-.368 1.654-27.93-6.248.184-1.286.368-1.838.368-1.655.368-1.654.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M296.247 432.747l-28.666-1.838-.55 8.086 28.665 1.837z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M267.581 430.91v-.735l.184-.736.184-.552.184-.734.185-.736.184-.734.184-.55.368-.737.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.369.55-.552.55-.367.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.552.368.552.368.553.368.552.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736V432.749l-28.665-1.838zM298.635 375.05V376.518l-.184.735-.184.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.552-.368.552-.368.55-.55.553-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.735-.184-.736-.184-.55-.184-.734-.184-.736-.183-.552-.369-.734-.184-.55-.368-.55-.368-.553-.368-.55-.368-.552-.552-.552-.368-.368-.553-.552-.55-.368-.552-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.735-.184-.736-.184-.552-.184-.734v-.736l-.184-.734v-1.471l28.665.919z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M299.37 346.016l-.184 5.33v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.615v-6.8l.184-6.43v-5.146z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M270.521 345.649l.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.184.737-.183.55-.369.734-.184h.736l.734-.184h.736l.735-.183h1.47l.734.183h.55l.736.184.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.368.552.369.55.552.55.368.368.55.55.552.369.552.55.552.368.552.368.55.368.553.184.552.368.734.184.736.184.552.184.734.184.736.184.735v1.286l.184.734-28.849-.368zM299.738 288.686v1.47l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.369.55-.368.552-.552.552-.552.368-.552.552-.55.367-.55.369-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.737.184h-.734l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.369-.55-.366-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.184-.734-.369-.552-.183-.734-.369-.552-.184-.734v-.736l-.184-.735-.184-.736v-1.47l28.666.368z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M300.473 260.388l-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M271.807 259.286v-.736l.184-.734.184-.736v-.735l.184-.736.368-.552.184-.734.369-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.552.368-.553.55-.368.55-.368.55-.552.553-.368.734-.184.552-.366.55-.368.736-.184.55-.184.735-.367h.734l.736-.184.734-.184H287.427l.734.184h.736l.734.184.736.184.553.183.734.369.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zM311.498 218.126l-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.55.184h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.184-.734-.183-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.551-.55-.552-.368-.368-.552-.55-.55-.368-.735-.368-.552-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.185-.736-.184-.552v-2.757l.184-.736v-.734l.185-.736.184-.552.184-.735.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.553.368-.552.552-.552.55-.366.55-.552 17.64 22.785z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M315.724 207.835l11.944 7.718-1.103-.184h-4.225l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.183-.552.184-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.183-.368.184-.368.184-.368.184.55-.184-17.64-22.785.55-.368 1.102-.736 1.286-.918 1.287-.736 1.286-.735 1.47-.552 1.287-.552 1.47-.552 1.286-.552 1.47-.552 1.47-.368 1.471-.368 1.286-.368 1.47-.184 1.655-.368 1.47-.184 1.47-.183 1.471-.184h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M329.138 186.888h.736l.734.184h.736l.734.184.735.183.552.369.734.184.55.368.736.184.55.367.55.369.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736V203.433l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.183-.734.184-.736.184h-.735l-.736.184h-1.47l1.47-28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M316.46 209.122l-.369-.552-.368-.734 25.542-13.23.55 1.286.368.552z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M342.184 196.443l.184.734.369.552.184.736.184.735.184.736.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.185.737-.368.55-.184.552-.368.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184H328.775l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.368-.55-.183-.734-.368-.55-.369-.55-.183-.553-.552-.55-.368-.55-.369-.552-.552-.55-.367-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.68zM326.382 259.837v-2.206l.184-.734v-.736l.184-.553.184-.734.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.553.368-.552.55-.552.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.55.368.551.552.552.368.368.552.55.368.368.552.369.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.734.184.735.184.736v.734l-28.665 2.205z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M327.852 287.767v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zM356.517 286.848v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.183-.737.368-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.735-.184-.55-.184-.736-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zM329.138 345.097v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184H344.759l.734.184h.552l.737.184.734.184.736.184.552.368.734.184.55.368.552.368.736.366.553.368.55.369.55.368.368.552.55.368.55.552.368.552.368.552.369.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M329.873 373.947v-.184l-.184-9.004-.368-9.004-.184-9.003v-1.655l28.665-.552v1.47l.368 9.005.184 8.82.368 9.004zM358.722 372.844v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.553.552-.55.553-.552.367-.552.369-.55.552-.55.184-.55.366-.735.367-.55.369-.736.184-.55.184-.735.183-.736.184-.734.184h-3.675l-.736-.184-.55-.184-.734-.183-.736-.184-.55-.184-.735-.184-.552-.366-.736-.369-.552-.367-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.553-.552-.368-.552-.55-.552-.368-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zM333.732 432.012l-.184-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.55-.55.553-.369.552-.366.55-.368.734-.368.55-.184.737-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.736.184h.553l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.735.368.552.184.552.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zM337.407 461.228l-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M365.705 457.002l.184.734v2.939l-.184.736v.552l-.184.735-.184.734-.369.552-.183.734-.185.552-.368.736-.368.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.367-.552.552-.552.369-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.183-.735.184-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.184-.737-.183-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.369-.553-.367-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.369-.552-.184-.734-.184-.552-.368-.734v-.735l-.184-.736 28.299-4.226zM351.188 519.477l-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.735l.368-.552.184-.736.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.368.552-.368.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.552-.184h.735l.736-.184H365.887l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.734.368.55.368.553.368.736.184.734.368.552-27.195 9.188zM362.58 547.591l-.735-1.654-.918-1.838-.919-2.02-.918-2.022-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.919-2.022-.734-2.205-.736-2.02-.552-2.022 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.837.552 1.838.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.918 1.654.735 1.655z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M388.49 535.28l.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.736v1.471l-.184.552v.734l-.184.736-.184.734-.184.552-.184.736-.184.553-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.183-.736.184h-.734l-.736.184h-1.286l-.737-.184h-.734l-.736-.184-.55-.183-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zM399.515 597.94l-.552-.369-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.369-.552-.183-.735-.369-.552-.184-.734-.184-.552-.184-.734-.184-.734-.184-.553v-3.49l.184-.735v-.734l.184-.552.184-.734.184-.552.368-.736.185-.734.368-.553.368-.552.368-.734.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.736-.368.735-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M425.056 616.682l-1.654-.918-2.021-1.103-1.838-1.286-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.655-1.287-1.837-1.47-1.654-1.286-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.948.184.367 1.47 1.102 1.287 1.102 1.286 1.102 1.47 1.103 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.102 1.47.919 1.655.918 1.47.918 1.838 1.102zM439.756 592.06l.553.367.552.368.55.553.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.552v2.203l-.183.552v.734l-.184.735-.184.734-.184.55-.368.734-.184.735-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.183-.736-.368-.55-.369-.734-.367 14.7-24.623zM484.408 636.527l-.736-.184-.734-.184-.736-.183-.55-.184-.735-.369-.552-.184-.736-.367-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.553-.552-.367-.552-.369-.552-.367-.553-.369-.734-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.184-.735.184-.734v-1.468l.184-.735.184-.734.184-.734.184-.734.368-.552.184-.735.368-.552.369-.552.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.552-.368.735-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.184h1.47l.736.184h.734l-4.226 28.482z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M514.91 638.732h-3.49l-2.94-.184h-2.94l-2.94-.184-2.756-.183-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.367 2.389.184 2.389.369 2.389.183 2.388.184 2.573.184 2.572.184h2.39l2.755.184h3.123z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M515.278 610.067h.736l.734.184h.735l.736.184.734.184.55.184.736.184.735.367.55.184.55.368.736.369.55.367.55.369.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.368.552-.368.552-.368.734-.368.553-.368.552-.55.367-.368.552-.552.552-.55.369-.552.367-.55.369-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zM572.792 637.813h-1.472l-.736-.183-.736-.184h-.736l-.55-.184-.737-.184-.736-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.552-.55-.368-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.735-.186-.734v-1.468l-.186-.734v-.735l.186-.734v-.734l.186-.734v-.553l.182-.734.37-.734.186-.55.182-.736.37-.55.364-.553.37-.734.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.368.55-.368.55-.368.556-.368.55-.368.737-.368.55-.184.736-.184.55-.368h.736l.736-.183.736-.184H572.24l.55 28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M601.458 637.262l-.55-28.665-28.666.552.55 28.665zM600.908 608.597h2.202l.737.184.736.184.556.184.736.184.73.183.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.364.552.556.552.364.552.365.552.37.552.364.552.37.734.364.55.186.553.37.734.182.734.186.735v.552l.186.734v.734l.186.734v.735l-.186.734v.734l-.186.734-.186.734v.735l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.552-.365.552-.55.553-.37.552-.55.552-.55.367-.55.369-.55.552-.556.368-.55.368-.55.184-.737.368-.55.368-.736.184-.736.183-.55.184-.736.184h-.737l-.736.184h-.736l-.55-28.665zM658.785 636.16h-1.466l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.735-.182-.552-.186-.734-.186-.734-.186-.734V619.802l.186-.734.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.736-.184.737-.184.736-.184.55-.184.736-.183h1.472l.55 28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M687.452 635.609l-.55-28.666-28.667.552.55 28.665zM686.902 606.943h2.208l.736.184.736.184.736.184.55.184.736.184.55.368.736.184.55.368.551.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.552.365.552.37.553.364.734.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.734l-.186.735-.182.734-.186.552-.365.734-.185.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.369-.55.183-.55.369-.737.368-.736.184-.55.184-.736.184-.736.184h-.736l-.736.183h-.737l-.55-28.665zM744.97 634.506H743.496l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.551-.368-.55-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.183-.734-.186-.552-.185-.735-.186-.734v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.185-.735.186-.734.365-.552.186-.734.364-.552.37-.552.364-.735.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.55-.367.551-.369.736-.367.55-.369.556-.368.736-.183.55-.184.736-.184.737-.184.736-.184.736-.184h1.466l.556 28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M773.63 633.955l-.55-28.666-28.666.552.555 28.666z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M773.08 605.29h2.208l.55.183.737.184.736.184.736.184.55.184.736.368.55.184.556.367.736.369.55.367.55.552.55.369.37.367.55.553.365.55.556.552.365.552.37.552.364.552.364.734.37.552.186.552.182.734.186.735.186.734.186.552.182.734v3.671l-.182.735-.186.734-.186.734-.186.552-.182.735-.37.552-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.552-.551.368-.55.368-.736.184-.556.369-.73.367-.556.184-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zM830.963 632.852h-1.472l-.736-.184h-.737l-.736-.183-.55-.184-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.734-.37-.553-.182-.734-.37-.552-.186-.734-.182-.734-.186-.735v-1.286l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.369.551-.367.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.184h.736l.736-.183h.736l.55 28.665z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M859.814 632.117l-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.184h5.882l5.877-.183 5.697-.184 5.698-.184z",
-      fill: "#040404",
       stroke: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
       d: "M858.894 603.452h1.472l.736.184h.736l.736.184.736.184.55.184.736.183.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.552.364.552.37.553.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.735l-.186.552-.182.734-.37.552-.186.734-.365.552-.37.734-.364.552-.37.55-.364.553-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.731.184-.736.184-.556.184-.736.183h-1.466l-.92-28.665z",
-      fill: "#040404",
       stroke: "none"
     }));
   }
   var Overlay_default4 = SvgOverlay4;
 
-  // lib-react-tsx/reaction/Equilibrium.tsx
+  // build/lib-react-tsx/reaction/Equilibrium.tsx
   var React111 = __toModule(require_react());
   function SvgEquilibrium({
     title,
@@ -26275,7 +25914,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Equilibrium_default = SvgEquilibrium;
 
-  // lib-react-tsx/reaction/Search.tsx
+  // build/lib-react-tsx/reaction/Search.tsx
   var React112 = __toModule(require_react());
   function SvgSearch2({
     title,
@@ -26298,7 +25937,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str0",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.85,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -26309,7 +25947,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str1",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.8680981,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -26322,7 +25959,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str1",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.849,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -26334,7 +25970,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str2",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 24.319,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -26350,19 +25985,17 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, /* @__PURE__ */ React112.createElement("path", {
       d: "M264.615 327.049h244.013c8.157 0 14.83 6.673 14.83 14.83v51.23c0 8.156-6.674 14.83-14.83 14.83H264.615c-8.156 0-14.83-6.674-14.83-14.83v-51.23c0-8.157 6.674-14.83 14.83-14.83z",
       className: "fil1",
-      fill: "#201e1e",
       strokeWidth: 35.15589
     }), /* @__PURE__ */ React112.createElement("path", {
       d: "M474.54 500V234.988l132.504 132.507zM540.79 433.747",
       className: "fil2",
-      fill: "#201e1e",
       fillRule: "nonzero",
       strokeWidth: 35.15589
     })));
   }
   var Search_default2 = SvgSearch2;
 
-  // lib-react-tsx/safety/Toxic.tsx
+  // build/lib-react-tsx/safety/Toxic.tsx
   var React113 = __toModule(require_react());
   function SvgToxic2({
     title,
@@ -26399,7 +26032,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Toxic_default2 = SvgToxic2;
 
-  // lib-react-tsx/spectra/Analyse.tsx
+  // build/lib-react-tsx/spectra/Analyse.tsx
   var React114 = __toModule(require_react());
   function SvgAnalyse({
     title,
@@ -26407,10 +26040,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React114.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlnsXlink: "http://www.w3.org/1999/xlink",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -26421,150 +26053,123 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React114.createElement("path", {
       d: "M49.941 850.47h883.662M947.568 850.47l-51.27 38.956M896.298 811.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
-    }), /* @__PURE__ */ React114.createElement("g", {
-      transform: "matrix(1 0 0 -1 0 849.5)"
-    }, /* @__PURE__ */ React114.createElement("path", {
-      d: "M97.35 220.927c87.832-20.764 119.621 79.197 124.583 157.475 11.576 179.157 25.725 256.15 86.179 252.84 158.21 1.105 12.679-436.775 212.233-419.503 95.92 8.27 107.445 74.992 112.222 153.822 4.962 83.974 7.324 167.606 17.433 233.94 37.85-109.516-34.656-379.125 139.542-382.617 35.649-.734 64.68.919 96.653 2.573",
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M97.35 628.574c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.151 86.179-252.84 158.21-1.106 12.679 436.775 212.233 419.502 95.92-8.268 107.445-74.991 112.222-153.82C637.529 399.965 639.89 316.333 650 250c37.85 109.516-34.656 379.125 139.542 382.616 35.649.735 64.68-.918 96.653-2.572",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M94.042 91.75l-.736.184-.735.183-.734.369-.55.184-.736.368-.55.368-.552.368-.55.368-.737.368-.368.55-.552.369-.552.552-.368.552-.55.552-.368.552-.368.552-.368.552-.184.734-.368.552-.184.552-.368.734-.184.735-.184.552v.734l-.184.734v.734l-.184.552v.735l.184.734v.734l.184.734.184.735.184.734.184.734.184.552.368.734.184.552.368.735.368.552.368.552.552.552.368.552.55.552.552.368.368.552.552.368.55.368.553.552.736.184.552.368.55.368.734.184.552.184.734.368h.735l.552.184.736.184h3.673l.552-.184.736-.184-6.431-27.93z",
-      fill: "#040404",
+      d: "M94.042 757.751l-.736-.184-.735-.184-.734-.368-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.735l-.184-.552v-.734l.184-.734v-.734l.184-.735.184-.734.184-.734.184-.734.184-.552.368-.735.184-.552.368-.734.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.431 27.93z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M126.75 89.36l-1.838-.183h-2.389l-2.389-.184H115.356l-2.204.184h-2.389l-2.389.184-2.389.368-2.388.184-2.39.368-2.388.552-2.388.368-2.39.552 6.432 27.93 1.837-.368 1.655-.368 1.837-.184 1.655-.368 1.654-.184 1.838-.184 1.654-.184h1.838l1.654-.184h3.492l1.654.184h1.838l1.837.184z",
-      fill: "#040404",
+      d: "M126.75 760.14l-1.838.184h-2.389l-2.389.184H115.356l-2.204-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.838l1.654.184h3.492l1.654-.184h1.838l1.837-.184z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M124.912 118.026h2.206l.552-.184h.734l.736-.184.735-.183.552-.184.734-.369.552-.183.734-.369.552-.368.55-.368.55-.368.553-.368.55-.368.552-.552.552-.552.368-.368.368-.552.55-.55.368-.735.369-.552.184-.552.368-.734.368-.552.184-.734.184-.552.184-.734.184-.735v-.734l.184-.734V103.139l-.184-.734v-.734l-.184-.734v-.552l-.184-.735-.368-.734-.184-.552-.184-.734-.368-.552-.368-.552-.369-.735-.368-.552-.368-.552-.552-.55-.368-.368-.552-.552-.55-.368-.552-.552-.552-.368-.55-.369-.552-.367-.55-.369-.737-.367-.55-.184-.734-.184-.736-.184-.734-.184-.55-.184-.737-.184h-.734l-1.838 28.666zM186.836 110.676l-.55-.552-.735-.184-.55-.368-.736-.184-.552-.368-.734-.184-.734-.184h-.735l-.552-.184H177.467l-.734.184-.736.184-.55.184-.734.184-.55.184-.737.183-.552.369-.55.367-.734.369-.552.368-.552.368-.55.552-.55.368-.369.552-.552.552-.55.552-.368.552-.368.552-.368.735-.368.552-.368.734-.184.734-.184.552-.184.734-.184.735-.184.552-.184.734v2.755l.184.734v.734l.184.552.184.735.184.734.184.552.368.734.184.55.368.552.368.735.368.552.368.552.55.552.368.552.552.368.55.552.55.368.553.552.736.368 15.067-24.256z",
-      fill: "#040404",
+      d: "M124.912 731.475h2.206l.552.184h.734l.736.183.735.184.552.184.734.368.552.184.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.734.369.552.184.553.368.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734V746.362l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.184.552-.184.734-.368.552-.368.552-.369.734-.368.553-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zM186.836 738.825l-.55.552-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184H177.467l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.184-.552-.368-.55-.368-.734-.368-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.553-.368-.734-.368-.552-.368-.734-.184-.734-.184-.552-.184-.735-.184-.734-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.255z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M211.643 129.051l-1.47-1.286-1.839-1.654-2.02-1.47-1.838-1.655-1.838-1.47-2.021-1.47-1.837-1.471-2.022-1.47-2.02-1.287-2.022-1.47-2.021-1.286-1.838-1.286-2.021-1.103-15.068 24.256 1.47.918 1.655 1.102 1.654 1.102 1.838 1.287 1.654 1.102 1.655 1.286 1.654 1.286 1.654 1.103 1.655 1.47 1.654 1.286 1.47 1.287 1.655 1.286 1.47 1.286z",
-      fill: "#040404",
+      d: "M211.643 720.45l-1.47 1.286-1.839 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.47-2.022 1.471-2.02 1.286-2.022 1.47-2.021 1.287-1.838 1.286-2.021 1.103-15.068-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.287 1.654-1.102 1.655-1.47 1.654-1.286 1.47-1.287 1.655-1.286 1.47-1.286z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M192.9 150.734l.55.552.736.366.55.369.552.367.735.369.55.366.736.184.552.366.734.184h.736l.552.184.735.184h3.49l.55-.184.737-.184.734-.184.55-.184.736-.184.55-.184.735-.366.552-.368.55-.368.736-.368.55-.368.55-.552.55-.368.553-.552.368-.553.55-.552.368-.55.368-.736.368-.552.368-.552.368-.734.184-.736.184-.55.184-.735.184-.552.184-.734.184-.734v-2.757l-.184-.734v-.552l-.184-.736-.184-.734-.184-.552-.184-.737-.368-.55-.184-.734-.368-.552-.368-.552-.368-.734-.368-.552-.55-.552-.368-.553-.552-.368-.55-.55-18.743 21.683zM251.884 174.438l-.368-.552-.368-.552-.55-.552-.553-.552-.552-.369-.55-.55-.55-.368-.55-.368-.552-.366-.735-.368-.552-.184-.734-.368-.552-.184-.734-.184-.55-.184-.735-.184h-.736l-.55-.183h-2.205l-.552.183h-.736l-.734.184-.736.184-.55.184-.734.184-.736.368-.55.184-.735.368-.552.366-.552.368-.736.552-.55.368-.55.552-.369.552-.55.552-.368.552-.552.552-.368.553-.368.552-.184.552-.368.734-.184.55-.368.736-.184.552-.184.734v.737l-.184.734v1.286l-.184.736.184.552v1.47l.184.735.184.55.184.736.184.734.368.552.368.736.184.552.368.735.55.552 23.336-16.538z",
-      fill: "#040404",
+      d: "M192.9 698.767l.55-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.552.55.552.368.55.368.737.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.736-.368.55-.184.735-.368.552-.368.552-.368.734-.368.552-.55.552-.368.552-.552.369-.55.55-18.743-21.683zM251.884 675.063l-.368.552-.368.552-.55.552-.553.552-.552.368-.55.55-.55.369-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.183h-.736l-.55.184h-2.205l-.552-.184h-.736l-.734-.183-.736-.184-.55-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.553-.552-.552-.368-.552-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.735v-.736l-.184-.734v-1.286l-.184-.736.184-.552v-1.471l.184-.734.184-.55.184-.736.184-.734.368-.552.368-.736.184-.553.368-.734.55-.552 23.336 16.538z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M267.87 200.347l-.918-1.654-1.102-2.205-1.286-2.021-1.287-2.205-1.102-2.022-1.286-2.205-1.286-2.02-1.47-2.022-1.287-2.206-1.286-2.02-1.47-2.022-1.287-2.02-.918-1.287-23.336 16.537.552.919 1.286 1.837 1.286 1.838 1.103 1.837 1.286 1.838 1.102 1.837 1.102 2.022 1.103 1.837 1.286 1.837 1.102 1.838.919 2.021 1.102 1.838.918 1.654z",
-      fill: "#040404",
+      d: "M267.87 649.154l-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.204-1.286 2.022-1.47 2.021-1.287 2.205-1.286 2.022-1.47 2.021-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.919-2.022 1.102-1.837.918-1.654z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M242.697 214.128l.368.55.368.735.368.552.55.552.368.552.552.368.55.552.55.369.553.552.55.368.552.366.734.368.55.184.552.368.735.184.55.184.734.184.736.184.55.183H256.66l.734-.183h.736l.735-.184.55-.184.736-.184.734-.368.55-.184.736-.368.55-.368.735-.552.552-.368.55-.368.55-.552.553-.552.368-.368.552-.552.368-.552.368-.552.368-.735.368-.552.184-.55.368-.736.184-.552.184-.734.184-.735.184-.552.184-.734V205.671l-.184-.734v-.552l-.184-.736-.184-.734-.184-.552-.368-.736-.184-.734-.368-.553-25.174 13.782zM289.737 257.493l-.184-.734-.184-.736-.184-.734-.368-.55-.369-.735-.184-.552-.368-.552-.552-.734-.368-.552-.368-.552-.552-.368-.368-.552-.552-.369-.552-.552-.55-.368-.55-.368-.735-.368-.55-.368-.55-.184-.736-.368-.55-.183-.735-.184-.55-.184-.736-.184-.734-.184h-3.491l-.736.184-.734.184-.734.184-.737.184-.734.183-.55.368-.736.184-.55.368-.55.368-.735.368-.552.552-.368.368-.55.552-.552.368-.368.552-.55.552-.368.55-.368.552-.368.552-.368.737-.184.55-.369.552-.184.734-.184.736-.184.552-.184.734-.184.736V262.273l.184.735.184.736 27.93-6.248z",
-      fill: "#040404",
+      d: "M242.697 635.373l.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.184H256.66l.734.184h.736l.735.184.55.184.736.184.734.368.55.184.736.367.55.369.735.552.552.368.55.368.55.552.553.552.368.368.552.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.734.184.552.184.735v3.492l-.184.735v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.552-25.174-13.781zM289.737 592.008l-.184.734-.184.736-.184.734-.368.55-.369.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.367-.55.184-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.734-.184-.737-.184-.734-.184-.55-.367-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.368-.736-.184-.55-.369-.552-.184-.734-.184-.736-.184-.552-.184-.735-.184-.736v-3.49l.184-.735.184-.736 27.93 6.248z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M293.044 280.095l-.184-2.021-.184-2.206-.184-2.02-.184-2.022-.368-2.205-.184-2.021-.368-2.205-.368-2.021-.552-2.205-.368-2.022-.368-1.654-27.93 6.248.184 1.286.368 1.838.368 1.654.368 1.655.184 1.837.368 1.655.184 1.654.184 1.654.184 1.655.184 1.654v1.654z",
-      fill: "#040404",
+      d: "M293.044 569.406l-.184 2.021-.184 2.205-.184 2.022-.184 2.021-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.021-.368 1.655-27.93-6.248.184-1.286.368-1.838.368-1.655.368-1.654.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M293.596 288.18l-28.666 1.837-.55-8.085 28.665-1.837z",
-      fill: "#040404",
+      d: "M293.596 561.321l-28.666-1.838-.55 8.086 28.665 1.837z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M264.93 290.017v.735l.185.736.183.552.185.734.184.736.184.734.184.55.368.737.368.552.368.55.368.552.368.552.368.552.552.552.55.552.368.368.55.552.55.368.553.369.734.368.55.368.552.368.736.184.55.184.735.368.736.184h.55l.734.184h.734l.736.184h1.471l.734-.184h.736l.734-.184.736-.184.55-.184.735-.184.55-.368.736-.368.552-.184.55-.368.735-.368.55-.552.552-.368.368-.366.55-.552.552-.553.368-.552.368-.552.368-.552.368-.552.368-.552.368-.734.184-.552.368-.736.184-.552.184-.734.184-.736v-.735l.184-.736V288.178l-28.665 1.838zM295.985 345.878v-1.47l-.184-.735-.185-.552-.184-.736-.184-.734-.184-.552-.368-.736-.184-.552-.368-.734-.368-.553-.368-.552-.368-.55-.55-.552-.368-.552-.55-.366-.55-.552-.553-.368-.55-.369-.552-.368-.55-.368-.55-.368-.736-.368-.55-.184-.735-.184-.736-.368-.55-.184h-.734l-.736-.184h-3.675l-.734.184-.737.184-.55.184-.734.183-.736.184-.552.369-.734.183-.55.369-.55.368-.553.368-.55.368-.552.552-.552.368-.368.552-.552.55-.368.553-.55.55-.369.552-.368.552-.184.552-.368.736-.184.552-.368.734-.184.737-.184.552-.184.734v.736l-.184.734v1.47l28.665-.918z",
-      fill: "#040404",
+      d: "M264.93 559.483v-.734l.185-.736.183-.552.185-.734.184-.736.184-.735.184-.55.368-.736.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.369.55-.552.55-.367.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.552.368.552.368.552.368.553.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736V561.323l-28.665-1.838zM295.985 503.623v1.47l-.184.735-.185.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.552-.368.552-.368.55-.55.553-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.734-.184-.737-.184-.55-.184-.734-.184-.736-.183-.552-.369-.734-.184-.55-.368-.55-.368-.553-.368-.55-.368-.552-.552-.552-.369-.368-.552-.552-.55-.368-.552-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.735-.184-.736-.184-.552-.184-.734v-.736l-.184-.734v-1.471l28.665.919z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M296.72 374.91l-.185-5.329v-6.43l-.184-6.8-.184-6.798-.184-3.675-28.665.918.184 3.491.184 6.615v6.8l.184 6.43v5.146zM267.87 375.278l.185.735v1.47l.184.734.184.55.184.736.368.735.184.552.368.736.184.552.368.55.368.552.552.552.368.552.368.552.55.552.552.368.55.55.552.369.55.368.55.366.551.368.734.369.55.183.737.184.55.369.734.184h.736l.734.183h.736l.735.184h1.47l.734-.184h.55l.736-.183.735-.184.736-.184.55-.184.734-.366.55-.184.737-.368.55-.368.55-.369.552-.368.55-.552.55-.368.369-.55.55-.552.368-.552.55-.553.368-.552.368-.55.368-.552.184-.552.368-.734.184-.736.184-.552.184-.735.184-.736.184-.734v-1.286l.184-.734-28.849.368zM297.087 432.24V430.772l-.184-.735v-.552l-.184-.736-.184-.734-.368-.552-.184-.736-.368-.552-.184-.734-.368-.55-.368-.553-.55-.552-.368-.55-.369-.552-.552-.552-.552-.368-.552-.552-.55-.368-.55-.368-.55-.368-.552-.366-.735-.368-.55-.184-.736-.366-.55-.184-.734-.184-.736-.184h-.735l-.55-.184h-2.941l-.736.184-.734.184h-.734l-.736.368-.55.184-.735.184-.55.368-.736.368-.55.368-.55.367-.55.368-.553.368-.55.552-.368.368-.55.552-.368.552-.55.552-.368.55-.368.552-.368.552-.184.735-.368.552-.184.734-.368.552-.185.734v.736l-.183.735-.185.736v1.47l28.666-.368z",
-      fill: "#040404",
+      d: "M296.72 474.59l-.185 5.33v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.616V485.8l.184-6.432v-5.145z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M297.822 460.539l-.184-3.675-.184-3.859v-4.042l-.184-4.227v-4.226l-.184-4.594v-3.675l-28.665.368v3.675l.184 4.594v4.594l.184 4.41v4.226l.184 4.043.184 3.49z",
-      fill: "#040404",
+      d: "M267.87 474.223l.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.184.737-.183.55-.369.734-.184h.736l.734-.184h.736l.735-.183h1.47l.734.183h.55l.736.184.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.368.552.369.55.552.55.368.369.55.55.552.368.552.55.552.368.552.368.55.368.553.184.552.368.734.184.736.184.552.184.734.184.736.184.735v1.286l.184.734-28.849-.368zM297.087 417.26v1.47l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.368.55-.369.552-.552.552-.552.368-.552.552-.55.367-.55.369-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.736.184h-.735l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.369-.55-.366-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.184-.734-.368-.552-.184-.734-.368-.552-.185-.734v-.737l-.183-.734-.185-.736v-1.47l28.666.368z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M269.156 461.64v.737l.184.734.184.736v.734l.184.737.368.552.185.734.368.552.184.736.368.552.368.552.368.552.55.55.368.552.55.552.368.552.55.369.55.367.55.553.553.368.734.184.552.366.55.368.736.184.55.183.735.368h.734l.736.184.735.184h2.758l.734-.184h.736l.734-.184.737-.184.552-.184.734-.368.734-.184.552-.368.55-.368.552-.368.552-.368.55-.368.55-.552.551-.368.552-.552.368-.552.368-.552.552-.552.368-.55.368-.552.184-.735.368-.552.184-.734.368-.552.184-.734.184-.736v-.55l.184-.735v-2.206l-28.665 1.102zM308.847 502.801l-.55-.368-.736-.368-.55-.368-.735-.368-.55-.368-.736-.184-.55-.184-.734-.184-.737-.184-.55-.183h-.734l-.736-.184h-2.021l-.734.184h-.734l-.552.183-.734.184-.55.184-.735.184-.736.368-.552.184-.55.368-.736.368-.552.368-.55.552-.55.368-.55.55-.553.368-.368.552-.55.55-.368.734-.368.553-.368.552-.368.736-.368.552-.184.734-.184.736-.184.552-.184.734-.184.736-.184.552v2.757l.184.736v.734l.184.736.184.552.184.735.184.55.368.736.184.552.368.734.368.552.368.552.368.552.55.552.368.552.552.552.55.367.55.552 17.64-22.785z",
-      fill: "#040404",
+      d: "M297.822 388.962l-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M313.073 513.092l11.944-7.718-1.102.184H319.689l-.918-.184h-1.836l-.736-.184-.735-.184h-.736l-.734-.184-.736-.184-.552-.183-.55-.184-.55-.184h-.55l-.369-.184-.55-.368-.368-.184-.368-.184-.368-.183-.368-.184-.368-.184.55.184-17.64 22.784.55.369 1.102.736 1.287.918 1.286.736 1.286.734 1.47.552 1.287.552 1.47.553 1.286.552 1.47.552 1.47.367 1.471.369 1.287.368 1.47.184 1.654.368 1.47.184 1.47.183 1.471.184h1.654l1.47.184h6.434l1.47-.184 12.128-7.717z",
-      fill: "#040404",
+      d: "M269.156 387.86v-.736l.184-.734.184-.736v-.735l.184-.736.368-.552.185-.734.368-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.553.368-.552.55-.368.55-.368.55-.552.553-.368.734-.184.552-.366.55-.368.736-.184.55-.184.735-.367h.734l.736-.184.735-.184h2.758l.734.184h.736l.734.184.737.184.552.183.734.369.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zM308.847 346.7l-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.55.184h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.184-.734-.183-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.55-.55-.553-.368-.368-.552-.55-.55-.368-.735-.368-.552-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736-.184-.553V334.2l.184-.736v-.734l.184-.736.184-.553.184-.734.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.553.368-.552.552-.552.55-.366.55-.552 17.64 22.785z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M326.487 534.04h.736l.734-.185h.736l.735-.184.734-.183.552-.369.734-.184.55-.368.736-.184.55-.368.55-.368.551-.366.55-.552.552-.366.552-.552.368-.552.55-.369.369-.552.368-.552.368-.736.368-.552.368-.552.184-.734.368-.552.184-.736.184-.55.184-.735.184-.736V517.494l-.184-.736-.184-.552-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.368-.552-.368-.736-.368-.552-.552-.552-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.55-.369-.55-.368-.736-.368-.55-.184-.553-.368-.734-.184-.736-.184-.552-.184-.734-.183-.736-.184h-.734l-.737-.184h-1.47l1.47 28.665z",
-      fill: "#040404",
+      d: "M313.073 336.41l11.944 7.717-1.102-.184H319.689l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.183-.552.184-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.183-.368.184-.368.184-.368.184.55-.184-17.64-22.785.55-.368 1.102-.736 1.287-.918 1.286-.736 1.286-.735 1.47-.552 1.287-.552 1.47-.552 1.286-.552 1.47-.552 1.47-.368 1.471-.368 1.287-.368 1.47-.184 1.654-.368 1.47-.184 1.47-.184 1.471-.183h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M313.808 511.805l-.368.552-.368.734 25.542 13.23.55-1.286.368-.552z",
-      fill: "#040404",
+      d: "M326.487 315.462h.736l.734.184h.736l.735.183.734.184.552.369.734.184.55.368.736.184.55.367.55.369.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736V332.007l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.183-.734.184-.736.184h-.734l-.737.184h-1.47l1.47-28.665z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M339.533 524.484l.185-.734.368-.552.184-.736.184-.735.184-.736.184-.55v-.734l.184-.736v-2.021l-.184-.736v-.734l-.184-.552-.184-.736-.184-.734-.368-.55-.184-.737-.369-.55-.183-.552-.369-.552-.368-.734-.55-.552-.368-.552-.55-.368-.368-.55-.55-.552-.55-.367-.553-.368-.736-.55-.55-.368-.734-.368-.55-.184-.736-.368-.735-.184-.55-.184-.736-.184-.734-.184h-.734l-.736-.184H326.124l-.736.184h-.734l-.552.184h-.736l-.735.184-.552.184-.736.367-.55.184-.734.368-.55.368-.55.184-.553.552-.55.368-.55.368-.552.552-.55.368-.368.55-.55.553-.369.552-.368.734-.368.552-.368.734 25.725 12.679zM323.73 461.09v2.206l.185.734v.736l.184.552.184.735.184.734.184.552.368.734.184.552.368.552.368.736.368.552.368.552.55.553.368.55.552.368.55.55.369.368.55.368.736.552.55.369.552.184.734.368.552.368.735.184.552.184.734.184.736.184h.734l.736.184h2.941l.734-.184.55-.184.735-.184.736-.184.55-.184.734-.368.552-.184.736-.368.55-.369.55-.368.551-.368.55-.552.552-.369.368-.552.55-.367.369-.552.368-.55.55-.553.368-.734.184-.552.368-.552.368-.734.184-.736.184-.552.184-.735.184-.734.184-.736v-.734l-28.665-2.206z",
-      fill: "#040404",
+      d: "M313.808 337.696l-.368-.552-.368-.735 25.542-13.23.55 1.287.368.552z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M325.201 433.16v3.858l-.184 3.86-.184 3.674-.184 3.675-.184 3.675-.368 3.676-.184 3.49-.184 2.022 28.665 2.205.184-2.205.184-3.675.366-3.859.184-3.859.184-3.858.184-3.86.184-3.858v-4.042zM353.866 434.079v-2.207l-.184-.734v-.736l-.184-.734-.368-.552-.184-.736-.184-.552-.368-.735-.368-.552-.368-.552-.368-.552-.368-.736-.368-.368-.552-.552-.366-.552-.552-.366-.55-.552-.553-.369-.552-.367-.55-.369-.734-.366-.552-.368-.55-.184-.737-.367-.734-.184-.55-.184-.736-.184h-.734l-.736-.184h-2.205l-.734.184h-.736l-.734.184-.55.184-.737.184-.734.184-.55.368-.736.184-.55.368-.553.368-.55.366-.552.368-.55.55-.55.368-.55.552-.369.552-.55.369-.368.552-.368.552-.368.734-.368.552-.368.552-.184.734-.184.55-.368.737-.184.734v.734l-.184.736v.734l-.184.736 28.665.919zM326.487 375.83v1.47l.184.734v.734l.184.736.184.735.184.552.368.736.184.552.368.734.368.552.368.552.368.552.368.552.368.552.55.552.55.552.369.368.55.552.55.366.55.368.736.368.55.369.553.184.734.367.736.184.552.184.734.184.736.184h.735l.736.184H342.108l.734-.184h.553l.736-.184.734-.184.736-.184.552-.368.734-.184.55-.368.552-.368.737-.366.552-.369.55-.368.55-.368.368-.552.55-.368.55-.552.369-.552.368-.552.368-.552.368-.734.368-.55.368-.553.184-.736.184-.55.184-.734.184-.734.184-.736.184-.735v-1.47l-28.665-.55zM327.222 346.98v.184l-.184 9.004-.368 9.004-.184 9.003v1.654l28.665.553v-1.47l.368-9.005.184-8.82.368-9.004zM356.071 348.083v-.919l-.184-.552v-.736l-.184-.734v-.736l-.184-.734-.184-.552-.368-.736-.184-.735-.368-.552-.184-.552-.368-.736-.368-.552-.55-.55-.368-.552-.368-.368-.552-.553-.55-.552-.553-.367-.552-.369-.55-.552-.55-.184-.55-.366-.735-.368-.55-.368-.736-.184-.55-.184-.734-.184-.737-.183-.734-.184h-3.675l-.736.184-.55.183-.734.184-.736.184-.55.184-.735.184-.552.366-.736.368-.552.368-.552.369-.55.368-.55.368-.552.552-.368.368-.552.552-.368.552-.55.552-.369.55-.368.552-.368.735-.184.552-.368.734-.184.552-.184.734-.184.736-.184.552-.184.735v.736l-.184.734 28.849 1.102zM331.08 288.915l-.183.734v.736l.184.735v1.288l.184.734.184.734.184.736.184.552.368.735.184.552.368.552.368.734.368.552.368.552.368.552.55.552.368.368.55.552.55.368.551.55.552.369.552.366.55.368.735.368.55.184.736.368.55.184.734.184.736.184h.735l.734.184h2.94l.737-.184h.552l.734-.184.736-.184.55-.184.734-.368.55-.184.737-.368.552-.368.55-.366.55-.369.55-.367.55-.55.553-.369.368-.55.55-.552.368-.552.368-.552.368-.552.368-.735.368-.552.184-.552.368-.734.184-.734.184-.552.184-.734.184-.735v-.736l-28.482-2.756zM334.756 259.699l-.55 4.042-.735 4.594-.55 4.594-.55 4.594-.552 4.777-.55 4.594-.185 2.021 28.482 2.756.184-1.837.55-4.41.552-4.41.552-4.41.55-4.41.55-4.227.553-4.042z",
-      fill: "#040404",
+      d: "M339.533 325.017l.185.734.368.552.184.736.184.734.184.737.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.184.737-.369.55-.183.552-.369.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184H326.124l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.368-.55-.184-.734-.367-.55-.369-.55-.183-.553-.553-.55-.367-.55-.369-.552-.552-.55-.367-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.68zM323.73 388.411v-2.206l.185-.734v-.737l.184-.552.184-.734.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.553.368-.552.55-.552.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.551.368.55.552.552.368.368.552.55.368.369.552.368.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.734.184.735.184.736v.734l-28.665 2.205z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M363.054 263.925l.184-.735V260.252l-.184-.736v-.552l-.184-.735-.184-.734-.368-.552-.184-.734-.184-.552-.368-.736-.369-.552-.368-.552-.368-.55-.368-.553-.552-.552-.55-.552-.368-.368-.552-.552-.552-.368-.55-.368-.55-.368-.737-.369-.55-.367-.734-.369-.55-.184-.736-.184-.735-.183-.736-.184-.55-.184h-.734l-.734-.184h-1.471l-.736.184h-.734l-.736.184-.55.184-.734.183-.737.184-.552.184-.734.369-.55.367-.552.369-.552.368-.55.368-.55.368-.553.368-.55.552-.55.552-.368.552-.368.552-.55.55-.368.553-.184.552-.368.736-.368.552-.185.734-.183.552-.369.734v.735l-.184.736 28.299 4.226zM348.537 201.45l-.184.734-.184.736-.184.552-.184.734v3.493l.184.734.184.734v.734l.368.552.184.737.184.552.368.734.368.552.184.552.55.552.368.552.368.55.55.552.369.552.552.369.55.552.55.367.552.369.55.368.735.368.55.368.736.184.734.366.734.184.736.184.553.184h.734l.736.184H363.236l.55-.184h.737l.734-.184.55-.184.736-.184.734-.184.55-.368.553-.184.736-.368.552-.368.55-.368.55-.368.55-.552.55-.368.553-.552.368-.368.55-.552.368-.552.368-.735.368-.55.368-.552.368-.736.184-.734.368-.552-27.195-9.188zM359.93 173.335l-.736 1.655-.918 1.838-.919 2.02-.918 2.022-.918 2.021-.918 2.021-.735 2.022-.918 2.205-.734 2.021-.736 2.021-.918 2.022-.735 2.204-.736 2.022-.552 2.021 27.196 9.188.55-1.838.734-1.837.55-1.838.737-1.838.734-1.837.734-1.838.552-1.837.734-1.654.919-1.837.734-1.838.736-1.654.734-1.838.919-1.654.734-1.655z",
-      fill: "#040404",
+      d: "M325.201 416.341v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zM353.866 415.422v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.183-.737.368-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.734-.184-.55-.184-.737-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zM326.487 473.671v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184H342.108l.734.184h.553l.736.184.734.184.736.184.552.368.734.184.55.368.552.368.737.366.552.368.55.369.55.368.368.552.55.368.55.552.369.552.368.552.368.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M385.839 185.647l.368-.736.184-.55.184-.735.184-.734.184-.736.184-.552v-.734l.184-.737v-1.47l-.184-.552v-.734l-.184-.736-.184-.734-.184-.552-.184-.737-.184-.552-.368-.734-.184-.552-.368-.552-.368-.552-.368-.736-.368-.552-.55-.368-.55-.552-.369-.552-.55-.367-.552-.552-.55-.366-.735-.368-.552-.368-.734-.368-.552-.368-.736-.184-.734-.184-.735-.184-.55-.184-.736-.183h-.734l-.736-.184h-1.286l-.736.184h-.735l-.736.183-.55.184-.734.184-.552.184-.736.184-.55.368-.735.184-.552.367-.55.367-.55.367-.55.369-.553.552-.55.367-.55.553-.368.552-.55.552-.368.55-.368.734-.368.552-.368.734 25.908 12.312zM396.864 122.988l-.552.368-.55.552-.368.552-.552.552-.368.734-.368.552-.368.552-.184.735-.368.552-.185.734-.184.552-.184.734-.184.734-.184.552V134.934l.184.734v.735l.184.552.184.734.184.552.369.736.184.734.368.552.368.552.368.735.55.552.368.552.55.552.55.552.368.368.55.552.737.368.55.552.552.184.552.368.734.366.55.184.737.368.734.184.55.184h.736l.734.184h.552l.736.184h1.471l.552-.184h.734l.736-.184.552-.184.734-.184.736-.184.552-.184.735-.367.55-.369.552-.366.736-.368.55-.368.55-.552.55-.368-19.477-20.948z",
-      fill: "#040404",
+      d: "M327.222 502.52v-.183l-.184-9.004-.368-9.004-.184-9.003v-1.655l28.665-.552v1.47l.368 9.005.184 8.82.368 9.004zM356.071 501.418v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.552.552-.55.553-.553.367-.552.369-.55.552-.55.183-.55.367-.735.367-.55.369-.736.184-.55.184-.734.183-.737.184-.734.184h-3.675l-.736-.184-.55-.184-.734-.183-.736-.184-.55-.184-.735-.184-.552-.366-.736-.369-.552-.367-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.552-.552-.368-.552-.55-.552-.369-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zM331.08 560.586l-.183-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.551-.55.552-.369.552-.366.55-.368.735-.368.55-.184.736-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.737.184h.552l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.734.368.552.184.553.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zM334.756 589.802l-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M422.405 104.245l-1.654.918-2.021 1.102-1.838 1.287-2.021 1.286-1.838 1.102-1.837 1.287-1.838 1.47-1.837 1.286-1.654 1.286-1.838 1.47-1.654 1.287-1.654 1.47-1.655 1.47-1.654 1.471-.55.552 19.477 20.947.184-.366 1.47-1.102 1.287-1.102 1.286-1.103 1.47-1.102 1.287-1.102 1.47-1.102 1.47-1.103 1.47-1.102 1.471-.918 1.47-1.103 1.47-.918 1.655-.918 1.47-.918 1.838-1.103zM437.106 128.867l.552-.367.552-.369.55-.552.55-.367.55-.552.552-.552.368-.369.552-.734.368-.552.368-.552.368-.552.184-.552.368-.734.184-.552.184-.735.184-.734.184-.552.184-.734v-.734l.183-.553v-2.202l-.183-.552v-.735l-.184-.734-.184-.734-.184-.55-.368-.735-.184-.734-.368-.552-.368-.734-.368-.552-.368-.552-.552-.552-.368-.552-.552-.552-.55-.552-.55-.369-.55-.552-.552-.368-.55-.368-.553-.368-.734-.368-.55-.184-.736-.184-.552-.368-.735-.184h-.55l-.736-.184-.734-.184h-2.755l-.736.184h-.55l-.734.184-.736.184-.55.184-.735.183-.736.368-.55.368-.734.368 14.7 24.623zM481.757 84.4l-.736.184-.734.184-.736.183-.55.184-.735.369-.552.183-.736.368-.552.369-.55.367-.55.369-.552.552-.55.368-.553.552-.367.368-.552.552-.368.552-.369.552-.367.552-.369.735-.368.552-.184.552-.368.734-.184.734-.184.55-.184.735-.184.734v1.286l-.183.734.183.735v1.468l.184.734.184.735.184.734.184.734.368.552.184.734.368.552.369.553.367.734.369.552.552.552.368.368.552.552.368.552.55.369.553.368.55.552.55.368.736.184.55.368.553.368.734.184.736.184.55.184.734.184.736.184h.735l.55.183h1.47l.736-.183h.734l-4.226-28.482z",
-      fill: "#040404",
+      d: "M363.054 585.576l.184.734v2.939l-.184.736v.552l-.184.735-.184.734-.368.552-.184.734-.184.552-.368.736-.369.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.367-.552.552-.552.369-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.183-.735.184-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.184-.737-.183-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.369-.553-.367-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.368-.552-.185-.734-.183-.552-.369-.734v-.735l-.184-.736 28.299-4.226zM348.537 648.051l-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.735l.368-.552.184-.736.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.368.552-.368.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.553-.184h.734l.736-.184H363.236l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.734.368.55.368.553.368.736.184.734.368.552-27.195 9.188zM359.93 676.165l-.736-1.654-.918-1.838-.919-2.021-.918-2.021-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.918-2.022-.735-2.205-.736-2.02-.552-2.022 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.837.552 1.838.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.919 1.654.734 1.654zM385.839 663.854l.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.736v1.471l-.184.552v.734l-.184.736-.184.734-.184.552-.184.736-.184.553-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.183-.736.184h-.734l-.736.184h-1.286l-.736-.184h-.735l-.736-.184-.55-.183-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zM396.864 726.513l-.552-.368-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.368-.552-.184-.735-.368-.552-.185-.734-.184-.552-.184-.734-.184-.734-.184-.553v-3.49l.184-.735v-.734l.184-.552.184-.734.184-.552.369-.736.184-.735.368-.552.368-.552.368-.734.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.737-.368.734-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M512.26 82.195h-3.49l-2.94.184h-2.94l-2.94.183-2.757.184-2.756.184-2.757.368-2.756.184-2.756.368-2.756.368-1.655.184 4.226 28.481 1.287-.184 2.388-.368 2.39-.183 2.388-.369 2.389-.184 2.389-.183 2.572-.184 2.572-.184h2.39l2.755-.184h3.123z",
-      fill: "#040404",
+      d: "M422.405 745.256l-1.654-.918-2.021-1.103-1.838-1.286-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.654-1.287-1.838-1.47-1.654-1.286-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.948.184.367 1.47 1.102 1.287 1.102 1.286 1.102 1.47 1.103 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.102 1.47.919 1.655.918 1.47.918 1.838 1.102zM437.106 720.633l.552.368.552.368.55.553.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.552v2.203l-.183.552v.734l-.184.735-.184.734-.184.55-.368.734-.184.735-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.184-.736-.367-.55-.369-.734-.367 14.7-24.623zM481.757 765.101l-.736-.184-.734-.184-.736-.184-.55-.183-.735-.369-.552-.184-.736-.367-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.552-.552-.368-.552-.369-.552-.367-.553-.369-.734-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.183-.735.183-.734v-1.468l.184-.735.184-.734.184-.734.184-.734.368-.552.184-.735.368-.552.369-.552.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.553-.368.734-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.184h1.47l.736.184h.734l-4.226 28.482z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M512.627 110.86h.736l.734-.184h.735l.736-.184.734-.184.55-.184.736-.184.735-.367.55-.184.55-.369.736-.368.55-.368.55-.368.553-.552.367-.368.552-.552.55-.368.368-.552.369-.552.552-.552.184-.734.367-.55.369-.553.367-.734.184-.552.184-.734.184-.734.184-.552v-.735l.184-.734v-2.937l-.184-.734-.184-.734-.184-.735-.184-.552-.184-.734-.183-.552-.369-.734-.367-.552-.369-.552-.368-.735-.368-.552-.368-.552-.55-.367-.368-.552-.552-.553-.55-.368-.552-.368-.55-.368-.55-.368-.735-.368-.55-.368-.55-.184-.737-.368-.734-.184-.552-.184-.736-.184h-.734l-.736-.184h-1.471l.369 28.665zM570.141 83.113h-1.472l-.736.184-.736.184h-.736l-.55.184-.736.184-.737.368-.55.184-.55.368-.736.368-.55.368-.556.368-.55.369-.55.367-.55.552-.37.552-.55.368-.365.552-.37.552-.55.735-.364.552-.186.552-.37.734-.182.552-.37.734-.186.552-.182.734-.186.735v1.468l-.186.734v.735l.186.734v.734l.186.734v.552l.182.735.37.734.186.55.182.736.37.55.364.552.37.735.364.552.37.552.55.552.364.368.556.552.55.552.55.367.55.369.55.368.557.368.55.368.736.368.55.184.736.184.55.367h.736l.736.184.737.184h1.472l.55-28.665zM598.807 83.665l-.55 28.665-28.666-.552.55-28.665z",
-      fill: "#040404",
+      d: "M512.26 767.306h-3.49l-2.94-.184h-2.94l-2.94-.184-2.757-.183-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.367 2.39.184 2.388.369 2.389.183 2.389.184 2.572.184 2.572.184h2.39l2.755.184h3.123z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M598.257 112.33h2.202l.737-.184.736-.184.556-.184.736-.184.73-.183.556-.368.55-.184.736-.368.55-.369.55-.367.551-.552.556-.369.55-.368.365-.552.555-.552.364-.552.365-.552.37-.552.364-.552.37-.735.364-.55.186-.552.37-.734.182-.734.186-.735v-.552l.186-.734v-.734l.186-.734v-.735l-.186-.734v-.734l-.186-.734-.186-.735v-.734l-.364-.552-.186-.734-.186-.552-.364-.734-.37-.552-.364-.552-.37-.553-.365-.552-.55-.552-.37-.552-.55-.552-.55-.367-.55-.369-.55-.552-.556-.368-.55-.368-.55-.184-.737-.368-.55-.368-.736-.184-.736-.184-.55-.183-.736-.184h-.737l-.736-.184h-.736l-.55 28.665zM656.135 84.767h-1.467l-.736.184h-.736l-.556.184-.73.184-.737.184-.555.368-.736.184-.55.368-.55.368-.737.368-.55.368-.55.368-.556.368-.364.552-.55.552-.55.369-.37.552-.365.552-.37.734-.364.552-.37.552-.364.734-.186.552-.186.734-.182.553-.186.734-.186.734-.186.734v3.671l.186.735.186.552.186.734.182.736.186.55.364.735.186.552.37.552.364.734.37.552.55.552.364.552.37.368.55.552.55.552.55.368.556.368.55.368.55.368.737.368.55.368.55.184.737.184.736.184.736.184.55.183.736.184h1.472l.55-28.665z",
-      fill: "#040404",
+      d: "M512.627 738.641h.736l.734.184h.735l.736.184.734.184.55.184.736.183.735.368.55.184.55.368.736.369.55.367.55.369.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.367.552-.369.552-.368.734-.368.552-.368.553-.55.367-.368.552-.552.552-.55.369-.552.367-.55.369-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zM570.141 766.387h-1.472l-.736-.183-.736-.184h-.736l-.55-.184-.736-.184-.737-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.553-.55-.367-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.735-.186-.734v-1.468l-.186-.735v-.734l.186-.734v-.734l.186-.734v-.553l.182-.734.37-.734.186-.55.182-.736.37-.55.364-.553.37-.734.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.368.55-.368.55-.368.557-.368.55-.368.736-.368.55-.184.736-.184.55-.368h.736l.736-.183.737-.184h1.472l.55 28.665z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M684.8 85.318l-.55 28.666-28.666-.552.55-28.665zM684.25 113.984H686.46l.736-.184.736-.184.736-.184.55-.184.736-.184.55-.368.737-.184.55-.368.55-.368.556-.368.55-.552.55-.368.55-.368.55-.552.37-.552.55-.552.37-.553.365-.552.37-.552.364-.734.186-.552.364-.552.186-.734.186-.734.182-.735.186-.55v-.734l.186-.734v-2.203l-.186-.734v-.735l-.186-.734-.182-.734-.186-.552-.364-.734-.186-.552-.37-.735-.364-.552-.37-.552-.365-.552-.37-.552-.364-.552-.55-.552-.55-.552-.37-.368-.55-.368-.55-.552-.556-.368-.736-.369-.55-.183-.55-.369-.737-.368-.736-.184-.55-.184-.736-.184-.736-.184h-.736l-.736-.183h-.737l-.55 28.665zM742.318 86.421h-1.472l-.736.184h-.736l-.736.184-.736.184-.55.184-.736.367-.55.184-.737.369-.555.368-.55.368-.55.368-.55.368-.551.368-.556.552-.55.552-.365.368-.55.552-.37.552-.364.735-.37.552-.364.552-.186.734-.37.552-.182.734-.186.552-.186.734-.186.735v.734l-.183.734v2.203l.183.734v.736l.186.55.186.735.186.734.364.552.186.734.364.552.37.552.364.735.37.552.364.552.37.552.55.368.365.552.555.55.55.369.551.367.55.369.736.367.55.369.556.367.736.184.55.184.737.184.736.184.736.184.736.184h1.466l.556-28.665zM770.98 86.972l-.55 28.665-28.667-.552.556-28.665z",
-      fill: "#040404",
+      d: "M598.807 765.836l-.55-28.665-28.666.552.55 28.665z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M770.43 115.637h2.207l.55-.183.737-.184.736-.184.736-.184.55-.184.736-.368.55-.184.556-.367.736-.369.55-.367.55-.552.55-.369.37-.368.55-.552.366-.55.555-.552.365-.552.37-.552.364-.552.364-.734.37-.552.186-.552.182-.735.186-.734.186-.734.186-.552.182-.734V99.465l-.182-.734-.186-.734-.186-.734-.186-.552-.182-.735-.37-.552-.186-.734-.364-.552-.364-.55-.37-.552-.55-.552-.37-.552-.55-.552-.365-.552-.555-.368-.55-.368-.55-.553-.551-.367-.55-.369-.736-.183-.556-.369-.73-.368-.556-.183-.736-.184-.736-.184-.55-.184h-.737l-.736-.184h-.736l-.55 28.665zM828.312 88.075h-1.472l-.736.184h-.736l-.737.183-.55.184-.736.184-.736.184-.55.368-.55.369-.736.184-.55.368-.556.552-.55.368-.55.368-.551.552-.37.368-.55.552-.365.552-.37.552-.55.55-.364.552-.186.734-.37.552-.182.735-.37.552-.186.734-.182.734-.186.734v1.287l-.186.734v.734l.186.736v.735l.186.734v.734l.182.734.37.552.186.735.182.552.37.734.364.552.37.552.364.552.37.552.55.55.364.552.556.552.55.368.55.552.55.368.551.368.556.369.55.367.736.184.55.368.736.184.55.184.737.184.736.183h.736l.736.184h.736l.55-28.665z",
-      fill: "#040404",
+      d: "M598.257 737.171h2.202l.737.184.736.184.556.184.736.183.73.184.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.365.552.555.552.364.552.365.552.37.552.364.552.37.734.364.55.186.553.37.734.182.734.186.734v.552l.186.735v.734l.186.734v.734l-.186.735v.734l-.186.734-.186.734v.735l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.552-.365.552-.55.553-.37.552-.55.552-.55.367-.55.369-.55.552-.556.367-.55.369-.55.184-.737.368-.55.368-.736.184-.736.183-.55.184-.736.184h-.737l-.736.184h-.736l-.55-28.665zM656.135 764.734h-1.467l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.735-.182-.552-.186-.734-.186-.734-.186-.734V748.376l.186-.734.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.737-.184.736-.184.736-.184.55-.184.736-.183h1.472l.55 28.665z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M857.163 88.81l-5.697-.184-5.882-.184-6.063-.184-5.882-.184h-5.327l-.55 28.666 5.327.183h5.882l5.877.184 5.698.184 5.697.184z",
-      fill: "#040404",
+      d: "M684.8 764.183l-.55-28.666-28.666.552.55 28.665z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M856.243 117.475h1.472l.736-.184h.736l.736-.184.736-.184.55-.184.736-.183.55-.369.737-.184.55-.368.55-.368.55-.368.556-.552.55-.368.55-.368.55-.552.37-.552.55-.55.365-.552.37-.553.364-.552.37-.552.364-.734.186-.552.186-.734.365-.734.186-.552v-.735l.186-.734v-.734l.182-.734v-.735l-.182-.734v-.734l-.186-.734v-.735l-.186-.552-.182-.734-.37-.552-.186-.734-.365-.552-.37-.734-.364-.553-.37-.55-.364-.552-.364-.552-.556-.552-.365-.368-.55-.552-.556-.368-.55-.552-.55-.368-.55-.368-.736-.368-.55-.184-.737-.368-.555-.184-.73-.184-.737-.184-.556-.184-.736-.184h-1.466l-.92 28.666z",
-      fill: "#040404",
+      d: "M684.25 735.517H686.46l.736.184.736.184.736.184.55.184.736.184.55.368.737.184.55.368.55.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.552.365.552.37.552.364.735.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.734l-.186.735-.182.734-.186.552-.364.734-.186.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.368-.55.184-.55.369-.737.368-.736.184-.55.184-.736.184-.736.183h-.736l-.736.184h-.737l-.55-28.665zM742.318 763.08h-1.472l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.55-.368-.551-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.182-.734-.186-.552-.186-.735-.186-.734v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.186-.735.186-.734.364-.552.186-.734.364-.552.37-.553.364-.734.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.551-.367.55-.369.736-.368.55-.368.556-.368.736-.183.55-.184.737-.184.736-.184.736-.184.736-.184h1.466l.556 28.665zM770.98 762.529l-.55-28.666-28.667.552.556 28.666z",
       stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M750-.5v750",
+      d: "M770.43 733.863h2.207l.55.184.737.184.736.184.736.184.55.184.736.368.55.183.556.368.736.369.55.367.55.552.55.369.37.367.55.552.366.55.555.553.365.552.37.552.364.552.364.734.37.552.186.552.182.734.186.735.186.734.186.552.182.734v3.671l-.182.735-.186.734-.186.734-.186.552-.182.734-.37.553-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.552-.551.368-.55.368-.736.184-.556.369-.73.367-.556.184-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zM828.312 761.426h-1.472l-.736-.184h-.736l-.737-.184-.55-.183-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.735-.37-.552-.182-.734-.37-.552-.186-.734-.182-.734-.186-.735v-1.286l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.369.551-.367.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.184h.736l.736-.183h.736l.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M857.163 760.691l-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.184h5.882l5.877-.183 5.698-.184 5.697-.184z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M856.243 732.026h1.472l.736.184h.736l.736.184.736.184.55.183.736.184.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.552.364.552.37.553.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.734l-.186.553-.182.734-.37.552-.186.734-.365.552-.37.734-.364.552-.37.55-.364.553-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.73.184-.737.184-.556.184-.736.183h-1.466l-.92-28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M750 850V100",
       fill: "none",
       strokeWidth: 31.053,
       strokeDasharray: "31.05295017,31.05295017"
-    }), /* @__PURE__ */ React114.createElement("image", {
-      y: -747.501,
-      x: 538.043,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAALuCAYAAADPBxQZAAAABHNCSVQICAgIfAhkiAAAAvBJREFU eJzt3T9OYmEUh+EPOAzDn+HGgpjcUNgZE2JH4gJMbCyo2ITu4Pa6A3vdgb32FvTYW9hLhsxkFKaa NZxinruB90kODfxuQquUsi9JT9M003ZW/N8DEOfn52nxyWTy2drv92kfwlJKlX4CAAAAAAAAAAAA AAAAAIB4eXlJiw+Hw06r+I0IAAAAAAAAAAAAAAAA4H8HxMnJSVq8qqov6zkAAAAAAAAAAAAAAAAA QLy9vaXFR6NRy3oOAAAAAAAAAAAAAAAAABDj8Tgt3u1299ZzAAAAAAAAAAAAAAAAAIDY7XZp8Xa7 XaLT6aQBmqb5kX4CAAAAAAAAAAAAAAAAAIB0QGw2m7T4aDTamO8BAAAAAAAAAAAAAAAAAKKu67T4 9fX1MN7f39MA2+22nX4CAAAAAAAAAAAAAAAAAIB4fX1Ni/d6vZ/WcwAAAAAAAAAAAAAAAACAmM/n afHlcjmI1WqVBri4uOiknwAAAAAAAAAAAAAAAAAAIJ6fn9Pik8lkaz0HAAAAAAAAAAAAAAAAAIjF YpEWv7y87Mfj42MaYDabRfoJAAAAAAAAAAAAAAAAAADi4eEhLV7X9S/rOQAAAAAAAAAAAAAAAABA XF1dpcXPzs6+x93dXRrg4OCgm34CAAAAAAAAAAAAAAAAAIC4vb1Ni89ms9/WcwAAAAAAAAAAAAAA AACAuLm5SYufnp5+a5VS0r6eN00zTT8BAAAAAAAAAAAAAAAAAEDqy+3Hx8d/rOcAAAAAAAAAAAAA AAAAAHF/f58Wn06nXes5AAAAAAAAAAAAAAAAAEDqH6sdHR19Ws8BAAAAAAAAAAAAAAAAAOLp6Skt fnh42LGeAwAAAAAAAAAAAAAAAADEfD5Pi1dV9WU9BwAAAAAAAAAAAAAAAACI9XqdFu/3+23rOQAA AAAAAAAAAAAAAABA1HWdFh8MBjvrOQAAAAAAAAAAAAAAAABAfHx8pMXH43GxngMAAAAAAAAAAAAA AAAApAP+AhDgk/Rz0am9AAAAAElFTkSuQmCC",
-      preserveAspectRatio: "none",
-      height: 748,
-      width: 31.915,
-      transform: "scale(1 -1)",
-      imageRendering: "optimizeSpeed"
-    })));
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M530 850V100",
+      fill: "none",
+      strokeWidth: 31.053,
+      strokeDasharray: "31.0529,31.0529"
+    }));
   }
   var Analyse_default = SvgAnalyse;
 
-  // lib-react-tsx/spectra/Compare.tsx
+  // build/lib-react-tsx/spectra/Compare.tsx
   var React115 = __toModule(require_react());
   function SvgCompare({
     title,
@@ -26585,13 +26190,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React115.createElement("path", {
       d: "M49.941 850.47h883.662M947.568 850.47l-51.27 38.956M896.298 811.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React115.createElement("g", {
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
@@ -26603,7 +26206,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Compare_default = SvgCompare;
 
-  // lib-react-tsx/spectra/Deconvolution.tsx
+  // build/lib-react-tsx/spectra/Deconvolution.tsx
   var React116 = __toModule(require_react());
   function SvgDeconvolution({
     title,
@@ -26624,14 +26227,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React116.createElement("path", {
       d: "M49.941 850.47h883.662M947.568 850.47l-51.27 38.956M896.298 811.7l51.27 38.77",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React116.createElement("path", {
       d: "M94.492 348.574C285.488 350.806 182.212 58.298 300 58.571c126.782-1.063 52.857 285.715 220.345 287.762C628.763 344.998 600 208.57 650 208.57s-8.942 134.84 139.542 132.617c35.653-.514 56.109 1.939 88.081.284M94.492 728.574C300 750 200 600 300 600c100 0 52.857 124.286 220.345 126.333C628.763 724.998 600 500 650 500s-8.942 223.41 139.542 221.188c35.653-.514 56.109 1.939 88.081.284",
       fill: "none",
-      stroke: "#040404",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
@@ -26639,13 +26240,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       fillRule: "evenodd",
       d: "M330 492h250v50H330z"
     }), /* @__PURE__ */ React116.createElement("path", {
-      fill: "#000",
       d: "M430 392h50v250h-50z"
     }));
   }
   var Deconvolution_default = SvgDeconvolution;
 
-  // lib-react-tsx/spectra/Pca.tsx
+  // build/lib-react-tsx/spectra/Pca.tsx
   var React117 = __toModule(require_react());
   function SvgPca({
     title,
@@ -26653,10 +26253,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React117.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlnsXlink: "http://www.w3.org/1999/xlink",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -26676,83 +26275,61 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       cy: 225,
       r: 75,
       stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 350,
-      x: 100,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 260.315,
-      x: 289.505,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 450,
-      x: 250,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 13.108,
-      x: 744.82,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 190.946,
-      x: 792.748,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 126.622,
-      x: 607.342,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 700,
-      x: 550,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 627.342,
-      x: 783.919,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React117.createElement("image", {
-      y: 800,
-      x: 700,
-      xlinkHref: "data:image/png;base64,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",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 150,
-      imageRendering: "optimizeSpeed"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 225,
+      cy: 225,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 114.91,
+      cy: 408.333,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 333.018,
+      cy: 375.991,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 255.18,
+      cy: 550.405,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 683.198,
+      cy: 238.333,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 875.901,
+      cy: 313.378,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 822.838,
+      cy: 128.784,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 781.306,
+      cy: 870.135,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 620.676,
+      cy: 785.901,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React117.createElement("circle", {
+      cx: 874.279,
+      cy: 712.387,
+      r: 75,
+      stroke: "none"
     }));
   }
   var Pca_default = SvgPca;
 
-  // lib-react-tsx/spectra/Phylogram.tsx
+  // build/lib-react-tsx/spectra/Phylogram.tsx
   var React118 = __toModule(require_react());
   function SvgPhylogram({
     title,
@@ -26760,10 +26337,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     ...props
   }) {
     return /* @__PURE__ */ React118.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlnsXlink: "http://www.w3.org/1999/xlink",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -26772,112 +26348,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React118.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React118.createElement("path", {
-      d: "M50 550h350",
+      d: "M50 550h350M650 400h300M850 700h100M850 700h100M850 850h100M750 100h200M750 200h200M650 150h100M850 700v150M650 150v250M650 125v300M400 275v500M400 300h250M850 675v200M750 75v150M375 775h475",
       fill: "none",
-      strokeWidth: 40
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 90,
-      x: 730,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAAAoCAIAAAA5RQUlAAAAA3NCSVQICAjb4U/gAAAAP0lEQVR4 nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCf AaQ4AAF7Fv1HAAAAAElFTkSuQmCC",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 200,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: -240,
-      x: 730,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAoCAIAAAA0fiJLAAAAA3NCSVQICAjb4U/gAAAALklEQVR4 nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAxd6AABBCWAZQAAAABJRU5E rkJggg==",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 200,
-      transform: "scale(1 -1)",
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 740,
-      x: 830,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAoCAIAAAA0fiJLAAAAA3NCSVQICAjb4U/gAAAALklEQVR4 nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAxd6AABBCWAZQAAAABJRU5E rkJggg==",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 100,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 890,
-      x: 830,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 100,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 510,
-      x: 630,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 300,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: -770,
-      x: 90,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAoCAIAAAA0fiJLAAAAA3NCSVQICAjb4U/gAAAALklEQVR4 nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAxd6AABBCWAZQAAAABJRU5E rkJggg==",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 150,
-      transform: "rotate(90)",
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 740,
-      x: 830,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAACWCAIAAAAjXF0/AAAAA3NCSVQICAjb4U/gAAAAKElEQVR4 nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAA4GVG5gABsQHJOwAAAABJRU5ErkJggg==",
-      preserveAspectRatio: "none",
-      height: 150,
-      width: 40,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 150,
-      x: 630,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAACWCAIAAAAjXF0/AAAAA3NCSVQICAjb4U/gAAAAKElEQVR4 nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAA4GVG5gABsQHJOwAAAABJRU5ErkJggg==",
-      preserveAspectRatio: "none",
-      height: 400,
-      width: 40,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 400,
-      x: 360,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAD6CAIAAABcapIeAAAAA3NCSVQICAjb4U/gAAAANElEQVR4 nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+Ax2KgABU6YBzQAA AABJRU5ErkJggg==",
-      preserveAspectRatio: "none",
-      height: 450,
-      width: 40,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 820,
-      x: 360,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 480,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 150,
-      x: 650,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAIAAACHGsgUAAAAA3NCSVQICAjb4U/gAAAAI0lEQVRo ge3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4McALwgAAQoNfCUAAAAASUVORK5CYII=",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 100,
-      imageRendering: "optimizeSpeed"
-    }), /* @__PURE__ */ React118.createElement("image", {
-      y: 400,
-      x: 370,
-      xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAAoCAIAAACper6vAAAAA3NCSVQICAjb4U/gAAAAT0lEQVR4 nO3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAACAlwHhKAABUPJo3wAAAABJRU5ErkJggg==",
-      preserveAspectRatio: "none",
-      height: 40,
-      width: 280,
-      imageRendering: "optimizeSpeed"
+      strokeWidth: 50
     }));
   }
   var Phylogram_default = SvgPhylogram;
 
-  // lib-react-tsx/structure/3DModelText.tsx
+  // build/lib-react-tsx/structure/3DModelText.tsx
   var React119 = __toModule(require_react());
   function Svg3DModelText({
     title,
@@ -26896,13 +26374,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React119.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React119.createElement("path", {
-      d: "M404.514 595.703c0 27.632-5.257 52.182-15.784 73.675-10.526 21.339-25.287 39.323-44.146 53.94-18.859 14.465-41.364 25.574-67.674 33.175-26.316 7.602-54.964 11.264-86.104 11.264-18.853 0-36.54-1.32-53.062-3.95-16.521-2.781-31.139-6.137-43.854-10.084-12.716-4.093-23.242-8.184-31.568-12.43-8.189-4.378-13.596-7.602-16.225-9.943-2.64-2.19-4.537-4.818-5.709-7.602-1.314-2.914-2.486-6.28-3.509-10.087-1.023-3.938-1.749-8.767-2.188-14.618-.44-5.841-.583-12.857-.583-21.194 0-13.74 1.166-23.243 3.36-28.5 2.338-5.27 5.847-7.887 10.378-7.887 2.777 0 7.749 1.89 14.761 5.84 7.018 3.795 15.938 7.898 26.75 12.43 10.823 4.376 23.538 8.48 38.157 12.418 14.47 3.805 31.134 5.698 49.696 5.698 15.641 0 29.533-1.894 41.517-5.545 11.984-3.663 22.213-8.921 30.551-15.652 8.48-6.721 14.761-14.761 18.853-24.407 4.097-9.504 6.291-20.173 6.291-31.867 0-12.858-2.634-24.407-7.6-34.637-4.972-10.383-12.429-19.15-22.219-26.464-9.801-7.162-22.225-12.86-37.277-16.808-14.916-4.092-32.603-5.996-52.918-5.996h-47.947c-3.651 0-6.869-.583-9.35-1.605-2.64-.88-4.829-3.068-6.434-6.137-1.755-3.223-2.926-7.458-3.658-13.013-.731-5.698-1.023-12.87-1.023-21.636 0-8.326.292-15.058 1.023-20.46.731-5.267 1.903-9.36 3.36-12.143 1.612-2.915 3.657-4.818 5.995-5.984 2.486-1.176 5.412-1.76 8.772-1.76h48.381c16.664 0 31.282-1.902 44.151-5.697 12.858-3.95 23.682-9.361 32.305-16.521 8.767-7.16 15.345-15.785 20.024-25.868 4.527-10.234 6.726-21.35 6.726-33.626 0-9.502-1.462-18.418-4.68-26.75-3.069-8.475-7.75-15.79-13.887-21.922-6.138-6.138-14.036-10.966-23.825-14.48-9.646-3.652-21.053-5.406-34.208-5.406-14.91 0-28.797 2.194-41.952 6.583-13.155 4.532-24.847 9.354-35.374 14.618-10.384 5.264-19.293 10.229-26.459 14.76-7.309 4.539-12.721 6.865-16.076 6.865-2.343 0-4.389-.583-5.995-1.457-1.759-1.028-3.217-2.92-4.388-5.846-1.023-2.783-1.903-7.018-2.486-12.43-.583-5.406-.88-12.418-.88-20.898 0-7.155.154-13.155.44-17.83.297-4.681.88-8.635 1.76-11.847.726-3.063 1.897-5.846 3.212-8.034 1.171-2.338 3.366-4.818 6.138-7.601 2.926-2.628 8.778-6.726 17.544-12.132 8.921-5.417 20.03-10.675 33.472-15.79 13.452-5.263 28.802-9.503 46.483-13.155 17.543-3.503 36.551-5.27 57.158-5.27 26.756 0 50.581 3.069 71.337 9.367 20.612 6.28 38.003 15.344 52.181 27.185 14.178 11.835 24.854 26.454 32.163 43.707 7.16 17.247 10.812 36.694 10.812 58.467 0 16.812-2.046 32.448-6.43 47.066-4.24 14.622-10.521 27.633-18.71 39.04-8.332 11.397-18.709 21.043-31.133 29.083-12.43 8.04-26.75 14.036-42.975 17.984v1.309c19.293 2.2 36.837 7.16 52.181 14.772 15.498 7.6 28.505 17.093 39.175 28.5 10.675 11.396 19.001 24.266 24.704 38.74 5.708 14.32 8.479 29.82 8.479 46.483h0zm558.54-122.94h0c0 50.73-6.721 94.287-20.019 130.398-13.305 36.1-32.306 65.633-57.158 88.435-24.854 22.802-54.959 39.609-90.482 50.278-35.665 10.682-77.914 16.08-127.026 16.08h-132.29c-9.504 0-17.396-2.781-23.825-8.325-6.435-5.555-9.651-14.618-9.651-27.19V239.325c0-12.578 3.217-21.636 9.651-27.191 6.429-5.555 14.321-8.332 23.825-8.332h142.079c49.409 0 91.362 5.846 125.713 17.395 34.351 11.544 63.444 28.654 86.978 51.307 23.533 22.659 41.512 50.719 53.793 84.196 12.276 33.333 18.412 72.065 18.412 116.063h0zm-116.494 3.805h0c0-26.311-3.075-50.575-9.213-73.233-6.143-22.52-16.081-42.103-29.676-58.613-13.448-16.526-30.838-29.54-52.188-38.746-21.19-9.35-49.112-14.034-83.755-14.034h-56.861v376.997h58.615c30.843 0 56.867-4.093 77.91-11.99 21.194-8.041 38.739-20.172 52.917-36.254 14.179-16.081 24.705-36.244 31.723-60.222 7.019-23.98 10.528-51.895 10.528-83.905z",
-      fill: "#000002"
+      d: "M404.514 595.703c0 27.632-5.257 52.182-15.784 73.675-10.526 21.339-25.287 39.323-44.146 53.94-18.859 14.465-41.364 25.574-67.674 33.175-26.316 7.602-54.964 11.264-86.104 11.264-18.853 0-36.54-1.32-53.062-3.95-16.521-2.781-31.139-6.137-43.854-10.084-12.716-4.093-23.242-8.184-31.568-12.43-8.189-4.378-13.596-7.602-16.225-9.943-2.64-2.19-4.537-4.818-5.709-7.602-1.314-2.914-2.486-6.28-3.509-10.087-1.023-3.938-1.749-8.767-2.188-14.618-.44-5.841-.583-12.857-.583-21.194 0-13.74 1.166-23.243 3.36-28.5 2.338-5.27 5.847-7.887 10.378-7.887 2.777 0 7.749 1.89 14.761 5.84 7.018 3.795 15.938 7.898 26.75 12.43 10.823 4.376 23.538 8.48 38.157 12.418 14.47 3.805 31.134 5.698 49.696 5.698 15.641 0 29.533-1.894 41.517-5.545 11.984-3.663 22.213-8.921 30.551-15.652 8.48-6.721 14.761-14.761 18.853-24.407 4.097-9.504 6.291-20.173 6.291-31.867 0-12.858-2.634-24.407-7.6-34.637-4.972-10.383-12.429-19.15-22.219-26.464-9.801-7.162-22.225-12.86-37.277-16.808-14.916-4.092-32.603-5.996-52.918-5.996h-47.947c-3.651 0-6.869-.583-9.35-1.605-2.64-.88-4.829-3.068-6.434-6.137-1.755-3.223-2.926-7.458-3.658-13.013-.731-5.698-1.023-12.87-1.023-21.636 0-8.326.292-15.058 1.023-20.46.731-5.267 1.903-9.36 3.36-12.143 1.612-2.915 3.657-4.818 5.995-5.984 2.486-1.176 5.412-1.76 8.772-1.76h48.381c16.664 0 31.282-1.902 44.151-5.697 12.858-3.95 23.682-9.361 32.305-16.521 8.767-7.16 15.345-15.785 20.024-25.868 4.527-10.234 6.726-21.35 6.726-33.626 0-9.502-1.462-18.418-4.68-26.75-3.069-8.475-7.75-15.79-13.887-21.922-6.138-6.138-14.036-10.966-23.825-14.48-9.646-3.652-21.053-5.406-34.208-5.406-14.91 0-28.797 2.194-41.952 6.583-13.155 4.532-24.847 9.354-35.374 14.618-10.384 5.264-19.293 10.229-26.459 14.76-7.309 4.539-12.721 6.865-16.076 6.865-2.343 0-4.389-.583-5.995-1.457-1.759-1.028-3.217-2.92-4.388-5.846-1.023-2.783-1.903-7.018-2.486-12.43-.583-5.406-.88-12.418-.88-20.898 0-7.155.154-13.155.44-17.83.297-4.681.88-8.635 1.76-11.847.726-3.063 1.897-5.846 3.212-8.034 1.171-2.338 3.366-4.818 6.138-7.601 2.926-2.628 8.778-6.726 17.544-12.132 8.921-5.417 20.03-10.675 33.472-15.79 13.452-5.263 28.802-9.503 46.483-13.155 17.543-3.503 36.551-5.27 57.158-5.27 26.756 0 50.581 3.069 71.337 9.367 20.612 6.28 38.003 15.344 52.181 27.185 14.178 11.835 24.854 26.454 32.163 43.707 7.16 17.247 10.812 36.694 10.812 58.467 0 16.812-2.046 32.448-6.43 47.066-4.24 14.622-10.521 27.633-18.71 39.04-8.332 11.397-18.709 21.043-31.133 29.083-12.43 8.04-26.75 14.036-42.975 17.984v1.309c19.293 2.2 36.837 7.16 52.181 14.772 15.498 7.6 28.505 17.093 39.175 28.5 10.675 11.396 19.001 24.266 24.704 38.74 5.708 14.32 8.479 29.82 8.479 46.483h0zm558.54-122.94h0c0 50.73-6.721 94.287-20.019 130.398-13.305 36.1-32.306 65.633-57.158 88.435-24.854 22.802-54.959 39.609-90.482 50.278-35.665 10.682-77.914 16.08-127.026 16.08h-132.29c-9.504 0-17.396-2.781-23.825-8.325-6.435-5.555-9.651-14.618-9.651-27.19V239.325c0-12.578 3.217-21.636 9.651-27.191 6.429-5.555 14.321-8.332 23.825-8.332h142.079c49.409 0 91.362 5.846 125.713 17.395 34.351 11.544 63.444 28.654 86.978 51.307 23.533 22.659 41.512 50.719 53.793 84.196 12.276 33.333 18.412 72.065 18.412 116.063h0zm-116.494 3.805h0c0-26.311-3.075-50.575-9.213-73.233-6.143-22.52-16.081-42.103-29.676-58.613-13.448-16.526-30.838-29.54-52.188-38.746-21.19-9.35-49.112-14.034-83.755-14.034h-56.861v376.997h58.615c30.843 0 56.867-4.093 77.91-11.99 21.194-8.041 38.739-20.172 52.917-36.254 14.179-16.081 24.705-36.244 31.723-60.222 7.019-23.98 10.528-51.895 10.528-83.905z"
     }));
   }
   var DModelText_default = Svg3DModelText;
 
-  // lib-react-tsx/structure/3DModel.tsx
+  // build/lib-react-tsx/structure/3DModel.tsx
   var React120 = __toModule(require_react());
   function Svg3DModel({
     title,
@@ -26921,11 +26398,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React120.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React120.createElement("path", {
-      fill: "#000002",
       d: "M502.616 698.225c111.244 0 201.965-90.735 201.965-201.985 0-111.25-90.72-201.999-201.965-201.999-111.248 0-201.983 90.749-201.983 201.999 0 111.249 90.737 201.985 201.983 201.985z"
     }), /* @__PURE__ */ React120.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 60.471,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -26933,7 +26408,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M449.349 384.629l-100.541-138.86M770.778 772.926L601.53 598.317M780.359 218.159L609.042 390.712M416.17 508.564L244.836 681.133"
     }), /* @__PURE__ */ React120.createElement("path", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 60.471,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
@@ -26942,7 +26416,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var DModel_default = Svg3DModel;
 
-  // lib-react-tsx/structure/Abundance.tsx
+  // build/lib-react-tsx/structure/Abundance.tsx
   var React121 = __toModule(require_react());
   function SvgAbundance({
     title,
@@ -26997,7 +26471,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Abundance_default = SvgAbundance;
 
-  // lib-react-tsx/structure/Atomistic2.tsx
+  // build/lib-react-tsx/structure/Atomistic2.tsx
   var React122 = __toModule(require_react());
   function SvgAtomistic2({
     title,
@@ -27032,7 +26506,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Atomistic2_default = SvgAtomistic2;
 
-  // lib-react-tsx/structure/AtomisticElectron.tsx
+  // build/lib-react-tsx/structure/AtomisticElectron.tsx
   var React123 = __toModule(require_react());
   function SvgAtomisticElectron({
     title,
@@ -27084,7 +26558,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var AtomisticElectron_default = SvgAtomisticElectron;
 
-  // lib-react-tsx/structure/AtomisticNeutron.tsx
+  // build/lib-react-tsx/structure/AtomisticNeutron.tsx
   var React124 = __toModule(require_react());
   function SvgAtomisticNeutron({
     title,
@@ -27105,7 +26579,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React124.createElement("path", {
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 65.811,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -27114,14 +26587,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }), /* @__PURE__ */ React124.createElement("path", {
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 35.61,
       strokeMiterlimit: 10,
       d: "M499.751 660.4c88.232 0 160.204-71.969 160.204-160.208 0-88.237-71.972-160.204-160.204-160.204s-160.196 71.967-160.196 160.204c0 88.24 71.965 160.208 160.196 160.208z"
     }), /* @__PURE__ */ React124.createElement("path", {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      fill: "#000002",
       d: "M166.143 278.772c47.393 0 86.063-38.66 86.063-86.065 0-47.403-38.67-86.066-86.063-86.066-47.413 0-86.069 38.663-86.069 86.066 0 47.405 38.656 86.065 86.069 86.065z"
     }), /* @__PURE__ */ React124.createElement("path", {
       d: "M580.458 584.001c0 2.319-.404 4.389-1.212 6.204-.805 1.816-1.891 3.328-3.254 4.538-1.362 1.21-2.977 2.094-4.841 2.646s-3.755.831-5.675.831h-16.943c-3.532 0-6.58-.351-9.153-1.057s-4.938-1.993-7.107-3.86c-2.17-1.863-4.257-4.385-6.273-7.564-2.016-3.174-4.291-7.285-6.816-12.327l-48.704-91.521a442.368 442.368 0 01-8.618-17.624 319.101 319.101 0 01-7.873-18.379h-.3c.404 7.261.703 14.498.912 21.707.195 7.212.298 14.647.298 22.311v102.417a4.723 4.723 0 01-.828 2.724c-.555.807-1.516 1.488-2.878 2.041-1.364.553-3.2.98-5.522 1.282-2.323.304-5.292.456-8.923.456-3.527 0-6.455-.152-8.771-.456-2.323-.302-4.139-.729-5.453-1.282-1.308-.553-2.211-1.234-2.719-2.041-.508-.808-.758-1.715-.758-2.724V416.387c0-4.74 1.391-8.293 4.159-10.666 2.775-2.367 6.176-3.553 10.21-3.553h21.33c3.833 0 7.06.33 9.682.984 2.622.657 4.973 1.738 7.032 3.25 2.073 1.514 4.013 3.606 5.829 6.278 1.814 2.675 3.679 5.977 5.591 9.91l38.126 71.552c2.211 4.337 4.409 8.6 6.58 12.785a481.342 481.342 0 016.271 12.557 2174.53 2174.53 0 015.9 12.331 674.009 674.009 0 015.604 12.101h.146c-.3-7.059-.528-14.421-.675-22.086a1095.52 1095.52 0 01-.237-21.939v-91.822c0-1.008.307-1.915.912-2.723.604-.807 1.612-1.512 3.024-2.118 1.413-.605 3.282-1.033 5.599-1.287 2.316-.25 5.294-.379 8.924-.379 3.429 0 6.302.129 8.625.379 2.322.254 4.104.682 5.369 1.287 1.258.605 2.143 1.311 2.643 2.118.508.808.766 1.714.766 2.723v175.932z"
@@ -27129,7 +26600,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var AtomisticNeutron_default = SvgAtomisticNeutron;
 
-  // lib-react-tsx/structure/Atomistic.tsx
+  // build/lib-react-tsx/structure/Atomistic.tsx
   var React125 = __toModule(require_react());
   function SvgAtomistic({
     title,
@@ -27180,7 +26651,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Atomistic_default = SvgAtomistic;
 
-  // lib-react-tsx/structure/Bohr.tsx
+  // build/lib-react-tsx/structure/Bohr.tsx
   var React126 = __toModule(require_react());
   function SvgBohr({
     title,
@@ -27224,7 +26695,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Bohr_default = SvgBohr;
 
-  // lib-react-tsx/structure/Conformers.tsx
+  // build/lib-react-tsx/structure/Conformers.tsx
   var React127 = __toModule(require_react());
   function SvgConformers({
     title,
@@ -27248,7 +26719,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Conformers_default = SvgConformers;
 
-  // lib-react-tsx/structure/Diastereotopic.tsx
+  // build/lib-react-tsx/structure/Diastereotopic.tsx
   var React128 = __toModule(require_react());
   function SvgDiastereotopic({
     title,
@@ -27295,7 +26766,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Diastereotopic_default = SvgDiastereotopic;
 
-  // lib-react-tsx/structure/Lcao.tsx
+  // build/lib-react-tsx/structure/Lcao.tsx
   var React129 = __toModule(require_react());
   function SvgLcao({
     title,
@@ -27362,7 +26833,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Lcao_default = SvgLcao;
 
-  // lib-react-tsx/structure/LewisNitrogen.tsx
+  // build/lib-react-tsx/structure/LewisNitrogen.tsx
   var React130 = __toModule(require_react());
   function SvgLewisNitrogen({
     title,
@@ -27399,7 +26870,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var LewisNitrogen_default = SvgLewisNitrogen;
 
-  // lib-react-tsx/structure/LewisOxygen.tsx
+  // build/lib-react-tsx/structure/LewisOxygen.tsx
   var React131 = __toModule(require_react());
   function SvgLewisOxygen({
     title,
@@ -27435,7 +26906,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var LewisOxygen_default = SvgLewisOxygen;
 
-  // lib-react-tsx/structure/Magnifier5.tsx
+  // build/lib-react-tsx/structure/Magnifier5.tsx
   var React132 = __toModule(require_react());
   function SvgMagnifier5({
     title,
@@ -27470,7 +26941,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Magnifier5_default = SvgMagnifier5;
 
-  // lib-react-tsx/structure/Orbital.tsx
+  // build/lib-react-tsx/structure/Orbital.tsx
   var React133 = __toModule(require_react());
   function SvgOrbital({
     title,
@@ -27523,7 +26994,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Orbital_default = SvgOrbital;
 
-  // lib-react-tsx/structure/SearchLipinski.tsx
+  // build/lib-react-tsx/structure/SearchLipinski.tsx
   var React134 = __toModule(require_react());
   function SvgSearchLipinski({
     title,
@@ -27546,7 +27017,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str0",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.85,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -27557,7 +27027,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str1",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.8680981,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -27570,7 +27039,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str1",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 52.849,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -27582,7 +27050,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       className: "fil0 str2",
       clipRule: "evenodd",
       fill: "none",
-      stroke: "#201e1e",
       strokeWidth: 24.319,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -27593,7 +27060,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M527.549 415.683c0 16.134-2.833 30.536-8.421 43.206-5.666 12.67-13.536 23.372-23.766 32.03-10.23 8.656-22.509 15.345-36.91 19.91-14.323 4.644-30.299 6.925-47.848 6.925-9.207 0-17.942-.55-26.285-1.731-8.263-1.101-15.74-2.598-22.35-4.327-6.611-1.811-12.041-3.543-16.213-5.352-4.249-1.732-7.004-3.227-8.341-4.33-1.258-1.18-2.281-2.44-2.912-3.855a26.855 26.855 0 01-1.495-4.957 65.613 65.613 0 01-.786-7.241c-.159-2.912-.237-6.375-.237-10.388 0-4.25.157-7.949.472-10.94.315-2.99.788-5.43 1.495-7.239.708-1.889 1.497-3.148 2.44-3.935.945-.788 1.968-1.18 3.226-1.18 1.497 0 3.857.943 7.004 2.675 3.149 1.81 7.32 3.698 12.436 5.902 5.193 2.125 11.49 4.093 18.808 5.823 7.398 1.811 16.211 2.677 26.521 2.677 8.893 0 17-.945 24.317-2.755 7.319-1.81 13.537-4.8 18.574-8.892 5.115-4.093 8.97-9.208 11.804-15.347 2.755-6.139 4.093-13.537 4.093-22.113 0-7.398-1.103-13.93-3.464-19.676-2.282-5.824-5.901-10.702-10.781-14.637-4.958-4.014-11.333-7.004-19.202-9.05-7.79-1.968-17.314-2.991-28.567-2.991-8.893 0-17 .472-24.318 1.417a160.674 160.674 0 01-20.62 1.337c-4.484 0-7.632-1.1-9.6-3.305-1.89-2.204-2.833-6.374-2.833-12.355V231.452c0-6.138 1.18-10.624 3.54-13.3 2.361-2.676 6.218-4.014 11.413-4.014h141.34c1.417 0 2.677.473 3.935 1.418 1.182.865 2.283 2.36 3.07 4.327.865 2.046 1.496 4.643 1.888 7.949.394 3.306.551 7.318.551 11.884 0 9.207-.786 15.896-2.44 20.066-1.573 4.172-3.935 6.218-7.004 6.218H394v63.903c5.43-.63 10.782-1.023 16.054-1.18a562.841 562.841 0 0116.684-.237c16.132 0 30.534 1.888 43.047 5.666 12.513 3.778 23.06 9.287 31.558 16.605 8.579 7.32 15.031 16.37 19.517 27.23 4.407 10.781 6.69 23.373 6.69 37.696z",
       className: "fil1",
       clipRule: "evenodd",
-      fill: "#201e1e",
       strokeWidth: 74.462,
       imageRendering: "optimizeQuality",
       shapeRendering: "geometricPrecision",
@@ -27602,7 +27068,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var SearchLipinski_default = SvgSearchLipinski;
 
-  // lib-react-tsx/structure/Search.tsx
+  // build/lib-react-tsx/structure/Search.tsx
   var React135 = __toModule(require_react());
   function SvgSearch3({
     title,
@@ -27622,7 +27088,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React135.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926
@@ -27642,7 +27107,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Search_default3 = SvgSearch3;
 
-  // lib-react-tsx/structure/So4.tsx
+  // build/lib-react-tsx/structure/So4.tsx
   var React136 = __toModule(require_react());
   function SvgSo4({
     title,
@@ -27711,7 +27176,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var So4_default = SvgSo4;
 
-  // lib-react-tsx/structure/StructuralIsomers.tsx
+  // build/lib-react-tsx/structure/StructuralIsomers.tsx
   var React137 = __toModule(require_react());
   function SvgStructuralIsomers({
     title,
@@ -27739,7 +27204,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var StructuralIsomers_default = SvgStructuralIsomers;
 
-  // lib-react-tsx/structure/StructuralIsomers2.tsx
+  // build/lib-react-tsx/structure/StructuralIsomers2.tsx
   var React138 = __toModule(require_react());
   function SvgStructuralIsomers2({
     title,
@@ -27761,7 +27226,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M797.952 261.166c0 13.929-1.729 26.394-5.188 37.395-3.463 11.001-8.608 20.361-15.481 28.036-6.832 7.628-15.304 13.484-25.375 17.521-10.115 4.037-21.779 6.034-35.041 6.034-13.087 0-24.485-1.686-34.247-5.102-9.757-3.416-17.876-8.649-24.351-15.66-6.523-7.052-11.401-15.969-14.641-26.792-3.236-10.824-4.88-23.644-4.88-38.459 0-13.618 1.731-25.861 5.236-36.73 3.459-10.867 8.604-20.094 15.436-27.725 6.829-7.628 15.303-13.484 25.417-17.564 10.069-4.081 21.824-6.079 35.131-6.079 12.775 0 23.997 1.686 33.759 5.057 9.711 3.373 17.876 8.562 24.396 15.57 6.563 7.054 11.488 15.881 14.815 26.616 3.376 10.689 5.014 23.29 5.014 37.882h0zm-35.84 1.819c0-8.873-.709-16.9-2.084-24.132-1.375-7.229-3.771-13.441-7.099-18.585-3.327-5.146-7.763-9.139-13.306-11.932-5.548-2.839-12.466-4.26-20.806-4.26-8.383 0-15.437 1.598-21.07 4.747-5.589 3.194-10.16 7.407-13.619 12.687-3.463 5.278-5.899 11.444-7.364 18.497-1.422 7.098-2.13 14.551-2.13 22.447 0 9.183.71 17.433 2.084 24.751 1.378 7.32 3.727 13.574 7.013 18.763 3.283 5.19 7.719 9.181 13.262 11.887 5.542 2.751 12.51 4.126 20.937 4.126 8.387 0 15.39-1.597 21.024-4.703 5.638-3.106 10.205-7.363 13.664-12.731 3.463-5.366 5.9-11.622 7.319-18.763 1.466-7.14 2.175-14.769 2.175-22.799h0zm195.842 79.534a3.46 3.46 0 01-.842 2.308c-.578.708-1.51 1.287-2.794 1.685-1.288.444-3.018.799-5.189 1.065-2.175.266-4.881.4-8.208.4-3.369 0-6.163-.134-8.382-.4-2.171-.265-3.948-.62-5.19-1.065-1.239-.398-2.171-.977-2.705-1.685a3.456 3.456 0 01-.845-2.308v-68H860.9v68c0 .844-.268 1.641-.798 2.308-.531.708-1.421 1.287-2.752 1.685-1.286.444-3.016.799-5.188 1.065-2.175.266-4.925.4-8.296.4-3.283 0-6.031-.134-8.251-.4-2.215-.265-3.993-.62-5.276-1.065-1.289-.398-2.22-.977-2.795-1.685a3.456 3.456 0 01-.845-2.308V183.673c0-.843.268-1.64.845-2.307.575-.708 1.507-1.288 2.795-1.686 1.284-.445 3.062-.8 5.276-1.065 2.22-.267 4.968-.4 8.251-.4 3.372 0 6.121.133 8.296.4 2.172.265 3.901.62 5.188 1.065 1.332.398 2.221.978 2.752 1.686.53.667.798 1.465.798 2.307v61.745h62.898v-61.745c0-.843.268-1.64.845-2.307.534-.708 1.467-1.288 2.705-1.686 1.242-.445 3.02-.8 5.19-1.065 2.219-.267 5.013-.4 8.382-.4 3.327 0 6.033.133 8.208.4 2.172.265 3.902.62 5.189 1.065 1.285.398 2.216.978 2.794 1.686.575.667.842 1.465.842 2.307v158.846zM584.268 503.718c0 13.926-1.73 26.394-5.188 37.394-3.459 11-8.604 20.359-15.481 28.034-6.832 7.63-15.303 13.483-25.372 17.521-10.114 4.038-21.778 6.035-35.044 6.035-13.086 0-24.488-1.686-34.245-5.104-9.76-3.413-17.876-8.648-24.354-15.656-6.52-7.054-11.399-15.968-14.64-26.793-3.238-10.824-4.879-23.645-4.879-38.456 0-13.622 1.73-25.861 5.235-36.729 3.459-10.869 8.604-20.096 15.435-27.724 6.831-7.631 15.304-13.486 25.418-17.569 10.068-4.081 21.824-6.076 35.133-6.076 12.774 0 24.001 1.686 33.759 5.057 9.714 3.371 17.875 8.561 24.396 15.569 6.568 7.052 11.489 15.882 14.816 26.615 3.37 10.69 5.011 23.287 5.011 37.882h0zm-35.841 1.816c0-8.87-.711-16.9-2.085-24.129-1.376-7.23-3.771-13.441-7.1-18.587-3.322-5.145-7.759-9.138-13.307-11.934-5.542-2.836-12.464-4.256-20.804-4.256-8.385 0-15.44 1.597-21.072 4.747-5.589 3.192-10.158 7.406-13.619 12.687-3.458 5.276-5.899 11.443-7.364 18.496-1.417 7.098-2.128 14.549-2.128 22.444 0 9.187.713 17.434 2.086 24.752 1.375 7.32 3.726 13.576 7.008 18.766 3.283 5.19 7.719 9.181 13.262 11.887 5.546 2.752 12.51 4.127 20.941 4.127 8.384 0 15.393-1.598 21.026-4.702 5.634-3.108 10.204-7.364 13.663-12.731 3.459-5.37 5.9-11.622 7.321-18.766 1.461-7.141 2.172-14.771 2.172-22.801z"
     }), /* @__PURE__ */ React138.createElement("g", {
       fill: "none",
-      stroke: "#000002",
       strokeWidth: 32.63,
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -27772,7 +27236,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var StructuralIsomers2_default = SvgStructuralIsomers2;
 
-  // lib-react-tsx/structure/UnsaturationFormula.tsx
+  // build/lib-react-tsx/structure/UnsaturationFormula.tsx
   var React139 = __toModule(require_react());
   function SvgUnsaturationFormula({
     title,
@@ -27816,7 +27280,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var UnsaturationFormula_default = SvgUnsaturationFormula;
 
-  // lib-react-tsx/structure/UnsaturationStructure.tsx
+  // build/lib-react-tsx/structure/UnsaturationStructure.tsx
   var React140 = __toModule(require_react());
   function SvgUnsaturationStructure({
     title,
@@ -27846,7 +27310,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var UnsaturationStructure_default = SvgUnsaturationStructure;
 
-  // lib-react-tsx/tga/Assignment.tsx
+  // build/lib-react-tsx/tga/Assignment.tsx
   var React141 = __toModule(require_react());
   function SvgAssignment7({
     title,
@@ -27890,7 +27354,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var Assignment_default7 = SvgAssignment7;
 
-  // lib-react-tsx/xray/Request.tsx
+  // build/lib-react-tsx/xray/Request.tsx
   var React142 = __toModule(require_react());
   function SvgRequest4({
     title,
