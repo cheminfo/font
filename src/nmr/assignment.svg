@@ -7,20 +7,20 @@
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
-		<path fill="none" stroke="#000002" stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none"stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M45.332,634.783c515.77,0,75.12,0,614.323,0l66.347-389.362l59.074,389.362h99.105"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="44.2079" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="724.551" y1="73.495" x2="724.551" y2="158.975"/>
+		<line fill="none"stroke-width="44.2079" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="724.551" y1="73.495" x2="724.551" y2="158.975"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="61.8902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="45.332" y1="809.969" x2="927.924" y2="809.969"/>
+		<line fill="none"stroke-width="61.8902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="45.332" y1="809.969" x2="927.924" y2="809.969"/>
 	<g>
 		
-			<line fill="none" stroke="#000002" stroke-width="61.8902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="955.191" y1="809.959" x2="855.62" y2="885.373"/>
+			<line fill="none"stroke-width="61.8902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="955.191" y1="809.959" x2="855.62" y2="885.373"/>
 		
-			<line fill="none" stroke="#000002" stroke-width="61.8902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="855.62" y1="734.56" x2="955.191" y2="809.959"/>
+			<line fill="none"stroke-width="61.8902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="855.62" y1="734.56" x2="955.191" y2="809.959"/>
 	</g>
 	
-		<polygon fill="none" stroke="#000002" stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		<polygon fill="none"stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
 		158.572,160.25 308.835,73.495 459.097,160.25 459.097,333.754 308.835,420.506 158.572,333.754 	"/>
 </g>
 </svg>

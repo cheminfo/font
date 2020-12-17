@@ -5,10 +5,10 @@
 	 id="svg4152" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-<path id="path50_1_" fill="none" stroke="#000002" stroke-width="49.2241" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" stroke-dasharray="1,70" d="
+<path id="path50_1_" fill="none"stroke-width="49.2241" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" stroke-dasharray="1,70" d="
 	M29.127,687.461c87.012,0,250.862,0,305.673,0l61.025-399.9l61.127,399.9H795.29"/>
-<path id="path50_2_" fill="none" stroke="#000002" stroke-width="49.2241" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+<path id="path50_2_" fill="none"stroke-width="49.2241" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 	M204.063,686.396c506.491,0-156.849,0,371.673,0l61.024-399.898l63.127,399.898h271.339"/>
-<path id="path50" fill="none" stroke="#000002" stroke-width="49.2241" stroke-linejoin="round" stroke-miterlimit="22.9256" stroke-dasharray="50,30" d="
+<path id="path50" fill="none"stroke-width="49.2241" stroke-linejoin="round" stroke-miterlimit="22.9256" stroke-dasharray="50,30" d="
 	M121.18,688.116c60.181,0,342.086,0.408,342.086,0.408l61.025-399.899l62.127,399.899h330.782"/>
 </svg>

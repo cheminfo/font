@@ -7,12 +7,12 @@
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
-		<line fill="none" stroke="#000002" stroke-width="60.7771" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="53.64" y1="725.878" x2="920.359" y2="725.878"/>
+		<line fill="none"stroke-width="60.7771" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="53.64" y1="725.878" x2="920.359" y2="725.878"/>
 	<g>
 		
-			<line fill="none" stroke="#000002" stroke-width="60.7771" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="947.136" y1="725.868" x2="849.354" y2="799.927"/>
+			<line fill="none"stroke-width="60.7771" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="947.136" y1="725.868" x2="849.354" y2="799.927"/>
 		
-			<line fill="none" stroke="#000002" stroke-width="60.7771" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="849.354" y1="651.824" x2="947.136" y2="725.868"/>
+			<line fill="none"stroke-width="60.7771" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="849.354" y1="651.824" x2="947.136" y2="725.868"/>
 	</g>
 	<path d="M69.844,454.67c13.192,0,23.943-10.758,23.943-23.942c0-13.198-10.753-23.947-23.943-23.947
 		c-13.186,0-23.945,10.749-23.945,23.947C45.899,443.91,56.659,454.67,69.844,454.67z"/>
@@ -55,7 +55,7 @@
 	<path d="M394.999,213.33c-2.239-13.033-14.609-21.801-27.641-19.561c-13.042,2.231-21.791,14.601-19.57,27.643
 		c2.239,13.03,14.618,21.787,27.65,19.56C388.47,238.741,397.228,226.362,394.999,213.33z"/>
 	
-		<path fill="none" stroke="#000002" stroke-width="49.2241" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none"stroke-width="49.2241" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M72.744,560.332c506.492,0-156.848,0,372.673,0l61.025-358.899l62.127,358.899h271.338"/>
 </g>
 </svg>

@@ -7,13 +7,13 @@
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
-		<path fill="none" stroke="#000002" stroke-width="100.8034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none"stroke-width="100.8034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M127.434,119.309c-57.771,63.662-57.973,167.047-0.439,230.936c57.526,63.88,150.991,64.055,208.761,0.393
 		c57.765-63.669,57.961-167.055,0.434-230.934C278.656,55.829,185.204,55.648,127.434,119.309"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="100.8034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="316.6" y1="924.229" x2="672.977" y2="71.633"/>
+		<line fill="none"stroke-width="100.8034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="316.6" y1="924.229" x2="672.977" y2="71.633"/>
 	
-		<path fill="none" stroke="#000002" stroke-width="100.8034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none"stroke-width="100.8034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M653.829,645.28c-57.765,63.654-57.968,167.04-0.439,230.925c57.517,63.881,150.985,64.061,208.754,0.394
 		c57.762-63.664,57.96-167.044,0.43-230.925C805.04,581.787,711.59,581.619,653.829,645.28"/>
 </g>
