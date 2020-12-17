@@ -7,13 +7,13 @@
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="none"stroke-width="65.8106" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000002" stroke-width="65.8106" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M499.757,948.085c246.683,0,447.882-201.198,447.882-447.892c0-246.688-201.199-447.886-447.882-447.886
 		c-246.688,0-447.89,201.198-447.89,447.886C51.867,746.887,253.069,948.085,499.757,948.085z"/>
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="none"stroke-width="35.6102" stroke-miterlimit="10" d="
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000002" stroke-width="35.6102" stroke-miterlimit="10" d="
 		M499.751,660.4c88.232,0,160.204-71.969,160.204-160.208c0-88.237-71.972-160.204-160.204-160.204s-160.196,71.967-160.196,160.204
 		C339.555,588.432,411.52,660.4,499.751,660.4z"/>
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M166.143,278.772c47.393,0,86.063-38.66,86.063-86.065
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#000002" d="M166.143,278.772c47.393,0,86.063-38.66,86.063-86.065
 		c0-47.403-38.67-86.066-86.063-86.066c-47.413,0-86.069,38.663-86.069,86.066C80.074,240.112,118.73,278.772,166.143,278.772z"/>
 	<g>
 		<path d="M580.458,584.001c0,2.319-0.404,4.389-1.212,6.204c-0.805,1.816-1.891,3.328-3.254,4.538
