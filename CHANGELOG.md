@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.0.0](https://www.github.com/cheminfo/font/compare/v0.34.1...v1.0.0) (2020-12-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Importing this project with `import 'cheminfo-font'` will now return React components. To import the css, use `import 'cheminfo-font/dist/style.css'`
+
+### Features
+
+* add esm build ([8a0775b](https://www.github.com/cheminfo/font/commit/8a0775bcc4c9e22b620c44e447067e8dd269fdf8))
+* build and export React components ([b0efe98](https://www.github.com/cheminfo/font/commit/b0efe9846f94a182e3391c018d1807368beb38fc))
+* give a viewBox to the built SVG ([c486689](https://www.github.com/cheminfo/font/commit/c4866895ab33836396ce61bb0ed3af62cebbe0aa))
+* remove inkscape custom style and ori files ([8cdea1b](https://www.github.com/cheminfo/font/commit/8cdea1bcfcc04289940409c887b9266b5ab3acd9))
+
+
+### Bug Fixes
+
+* remove [#000002](https://www.github.com/cheminfo/font/issues/000002) stroke color ([30c6378](https://www.github.com/cheminfo/font/commit/30c6378c3acd8981de4f499c7856be53c5927cda))
+* remove unnecessary flowRoot ([c58813a](https://www.github.com/cheminfo/font/commit/c58813a985dd9519fa78a8c5a37ebb06e74018ce))
+
+
+### Reverts
+
+* Revert "chore: remove fill and stroke 000002" ([acf4df0](https://www.github.com/cheminfo/font/commit/acf4df0ef421e62633839cee9ccda4fe2d01d14d))
+
 ### [0.34.1](https://www.github.com/cheminfo/font/compare/v0.34.0...v0.34.1) (2020-12-06)
 
 
