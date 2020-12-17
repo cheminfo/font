@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg stroke="currentColor" fill="currentColor"
+<svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,9 +11,9 @@
    height="1000"
    id="svg4152"
    version="1.1"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
    viewBox="0 0 1000 1000"
-   sodipodi:docname="precipitation_modified.svg">
+   sodipodi:docname="precipitation.svg">
   <defs
      id="defs5498">
     <marker
@@ -28,7 +26,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path4235"
          inkscape:connector-curvature="0" />
@@ -43,7 +41,7 @@
        inkscape:stockid="TriangleOutL">
       <path
          transform="scale(0.8)"
-         style="fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path4757"
          inkscape:connector-curvature="0" />
@@ -59,7 +57,7 @@
       <path
          id="path4164"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         style="fill-opacity:1;fill-rule:evenodd;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)"
          inkscape:connector-curvature="0" />
     </marker>
@@ -73,14 +71,14 @@
        inkscape:isstock="true">
       <path
          id="path4182"
-         style="fill-opacity:1;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
          inkscape:connector-curvature="0" />
     </marker>
   </defs>
   <sodipodi:namedview
-     inkscape:window-height="1005"
+     inkscape:window-height="1035"
      inkscape:window-width="1920"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -92,13 +90,14 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.70710678"
-     inkscape:cx="345.24563"
+     inkscape:cx="114.02171"
      inkscape:cy="579.98664"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-x="960"
+     inkscape:window-y="23"
      inkscape:current-layer="svg4152"
-     inkscape:window-maximized="1"
-     objecttolerance="20">
+     inkscape:window-maximized="0"
+     objecttolerance="20"
+     inkscape:document-rotation="0">
     <sodipodi:guide
        orientation="horizontal"
        position="200"
@@ -132,10 +131,8 @@
     <g
        transform="matrix(71.388169,0,0,71.388169,-458.8921,525.71415)"
        id="g10303"
-       style="clip-rule:evenodd;fill-rule:evenodd;stroke-width:0.88183707;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke:#000000;stroke-width:0.88183707;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
       <line
-         style="stroke-width:0.88183707;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         class="fil1 str0"
          x1="10.5996"
          y1="1.55652"
          x2="8.9968901"
@@ -145,10 +142,8 @@
     <g
        transform="matrix(71.388169,0,0,71.388169,-458.8921,525.71415)"
        id="g10307"
-       style="clip-rule:evenodd;fill-rule:evenodd;stroke-width:0.88183707;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke:#000000;stroke-width:0.88183707;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
       <line
-         style="stroke-width:0.88183707;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         class="fil1 str0"
          x1="8.9968901"
          y1="0.34274501"
          x2="10.5996"
@@ -157,7 +152,6 @@
     </g>
   </g>
   <g
-     style="clip-rule:evenodd;fill-rule:evenodd;paint-order:markers fill stroke;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      id="g12983"
      transform="matrix(117.18281,78.672801,-79.864766,118.95824,337.32743,-120.39857)">
     <path
@@ -169,36 +163,11 @@
   </g>
   <g
      style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     id="g12987"
-     transform="matrix(141.14256,0,0,143.281,236.50344,144.45968)">
-    <line
-       id="line12989"
-       y2="2.87953"
-       x2="4.2686801"
-       y1="3.9286799"
-       x1="3.4741199"
-       class="fil1 str0" />
-  </g>
-  <g
-     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     id="g12991"
-     transform="matrix(141.14256,0,0,143.281,236.50344,144.45968)">
-    <line
-       id="line12993"
-       y2="3.9286799"
-       x2="3.4741499"
-       y1="2.87953"
-       x1="2.67959"
-       class="fil1 str0" />
-  </g>
-  <g
-     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      id="g12995"
      transform="matrix(141.14256,0,0,143.281,236.50344,144.45968)">
     <path
        id="path12997"
        d="m 3.47416,0 0.01159,2.89071e-4 0.011439,8.80979e-4 0.01126,0.00143159 0.011095,0.0019822 0.010888,0.00251904 0.010696,0.00304212 0.010462,0.0035377 0.010228,0.0040332 0.00998,0.0045288 0.0097,0.0049693 0.00943,0.0054373 0.00914,0.005864 0.00882,0.0062907 0.00851,0.0066899 0.00818,0.0070891 0.00782,0.0074608 0.00746,0.0078324 0.00708,0.0081903 0.00669,0.0085207 0.00628,0.0088373 0.00585,0.0091539 0.00542,0.009443 0.00498,0.009718 0.0045,0.009994 0.00403,0.0102414 0.00354,0.0104754 0.00304,0.0106956 0.00252,0.0109159 0.00197,0.0110948 0.00145,0.0112875 8.672e-4,0.0114527 2.891e-4,0.0116041 -2.891e-4,0.0116041 -8.672e-4,0.0114527 -0.00145,0.0112875 -0.00197,0.0110948 -0.00252,0.0109159 -0.00304,0.0106956 -0.00354,0.0104754 -0.00403,0.0102414 -0.0045,0.009994 -0.00498,0.009718 -0.00542,0.009443 -0.00585,0.009154 -0.00628,0.008837 -0.00669,0.008521 -0.00708,0.00819 -0.00746,0.007832 -0.00782,0.007461 -0.00818,0.007089 -0.00851,0.00669 -0.00882,0.006291 -0.00914,0.005864 -0.00943,0.005437 -0.0097,0.004969 -0.00998,0.004529 -0.010228,0.004033 -0.010462,0.003538 -0.010696,0.003042 -0.010888,0.002519 -0.011095,0.001982 -0.01126,0.001432 -0.011439,8.8097e-4 -0.01159,2.8908e-4 z M 0.2252,0.451005 V 0 h 3.24896 v 0.451005 z m 0,0 -0.0115904,-2.8907e-4 -0.0114389,-8.8098e-4 -0.01126,-0.001432 -0.0110948,-0.001982 -0.0108883,-0.002519 -0.0106956,-0.003042 -0.0104616,-0.003538 -0.0102276,-0.004033 -0.00998,-0.004529 -0.009705,-0.004969 -0.009429,-0.005437 -0.0091401,-0.005864 -0.0088235,-0.006291 -0.0085069,-0.00669 L 0.0737817,0.39241995 0.065963,0.38495895 0.0585022,0.37712695 0.0514269,0.36893695 0.044737,0.36041595 0.03846,0.35157895 0.0326098,0.34242495 0.0271863,0.33298195 0.0222033,0.32326395 0.0177021,0.31326995 0.01366913,0.30302834 0.01013146,0.29255294 0.00708934,0.28185734 0.0045703,0.27094144 0.00260187,0.25984664 0.00115652,0.24855914 2.89308e-4,0.23710644 2.37e-7,0.22550234 2.89308e-4,0.21389824 0.00115652,0.20244554 0.00260187,0.19115804 0.0045703,0.18006324 l 0.00251904,-0.0109159 0.00304212,-0.0106956 0.0035377,-0.0104754 0.0040332,-0.0102414 0.0045012,-0.009994 0.004983,-0.009718 0.0054235,-0.009443 0.0058502,-0.0091539 0.006277,-0.0088373 0.0066899,-0.0085207 0.0070753,-0.0081903 0.0074608,-0.0078324 0.0078187,-0.0074608 0.0081766,-0.0070891 0.0085069,-0.0066899 0.0088235,-0.0062907 0.0091401,-0.005864 0.009429,-0.0054373 0.009705,-0.0049693 0.00998,-0.0045288 L 0.1477704,0.01368235 0.158232,0.01014468 0.1689276,0.00710256 0.1798159,0.00458352 0.1909107,0.00260132 0.2021707,0.00116973 0.2136096,2.88755e-4 0.2252,-3.16e-7 Z"
-       class="fil0"
-       inkscape:connector-curvature="0" />
+       class="fil0" />
   </g>
 </svg>
