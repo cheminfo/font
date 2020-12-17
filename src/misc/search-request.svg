@@ -123,25 +123,25 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#201e1e;stroke-width:52.85045242;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.85045242;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      inkscape:connector-curvature="0"
      id="path3953"
      d="m 423.17675,667.08943 c -166.18084,0 -301.7205,-135.54038 -301.7205,-301.72044 0,-166.18306 135.53894,-301.72646 301.7205,-301.72646 166.18083,0 301.72496,135.54413 301.72496,301.72646 0,166.17932 -135.54413,301.72044 -301.72496,301.72044"
      class="fil0 str0" />
   <polyline
      transform="matrix(74.462113,0,0,74.462113,95.03115,37.217434)"
-     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#201e1e;stroke-width:0.709741;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:0.709741;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      id="polyline3955"
      points="10.4788,11.2768 7.48502,7.2687 6.43703,8.05147 9.43078,12.0595 "
      class="fil0 str1" />
   <path
-     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#201e1e;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      inkscape:connector-curvature="0"
      id="path3957"
      d="m 797.26695,935.19304 c 11.8548,15.876 34.55109,19.16526 50.42506,7.30567"
      class="fil0 str1" />
   <line
-     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#201e1e;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      id="line3959"
      y2="927.32996"
      x2="868"
@@ -149,13 +149,13 @@
      x1="847.69409"
      class="fil0 str1" />
   <path
-     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#201e1e;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      inkscape:connector-curvature="0"
      id="path3961"
      d="m 868,927.33018 c 15.87398,-11.85822 19.16193,-34.54486 7.30397,-50.41866"
      class="fil0 str1" />
   <path
-     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#201e1e;stroke-width:24.31917572;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:24.31917572;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      inkscape:connector-curvature="0"
      id="path3963"
      d="m 423.17675,612.99199 c -136.3818,0 -247.623,-111.2412 -247.623,-247.623 0,-136.38854 111.2412,-247.62304 247.623,-247.62304 136.38703,0 247.62299,111.2345 247.62299,247.62304 0,136.3818 -111.23596,247.623 -247.62299,247.623"
@@ -164,5 +164,5 @@
      inkscape:connector-curvature="0"
      id="path3584"
      d="M 584.77715,262.13406 V 413.86383 L 568,414 V 262.26926 Z m 0,151.72977 c 0,11.90659 -5.14123,22.72852 -13.53076,30.57672 l -11.43147,-12.1773 C 564.88801,427.52896 568,421.03432 568,414.00006 Z m -13.53076,30.57672 c -8.25133,7.64366 -19.54842,12.44612 -31.92826,12.44612 l 0.13629,-16.77529 c 7.98064,0 15.21926,-3.04385 20.3605,-7.84813 z m -31.92826,12.44612 h -155.8564 l 0.13535,-16.77529 H 539.45443 Z M 383.5295,448.499 l -0.0677,8.38767 c -4.66743,0 -8.388,-3.71969 -8.388,-8.38767 0.0676,-4.66799 3.85572,-8.38762 8.52335,-8.38762 z m 6.35857,5.48011 -73.26068,84.96284 -12.71735,-10.89198 73.26068,-85.03102 z m -79.61926,79.55084 6.35858,5.412 c -3.04404,3.58528 -8.38801,3.99028 -11.90566,0.94649 -3.44989,-2.97574 -3.85574,-8.31957 -0.81169,-11.83847 z m -8.18527,-1.69037 18.06151,-84.96465 16.37036,3.2482 -18.06152,85.03102 z m 26.24678,-83.34058 -8.25285,-1.69037 c 0.94704,-4.53357 5.41174,-7.50931 10.01159,-6.56289 4.53227,0.94648 7.44097,5.34382 6.42635,9.94369 z m -0.0677,8.38767 h -17.92618 l 0.13536,-16.77529 h 17.92617 z m -17.92618,0 c -12.37927,0 -23.67617,-4.73429 -31.86127,-12.37795 l 11.56741,-12.31177 c 5.20881,4.87058 12.44686,7.91443 20.42921,7.91443 z m -31.86131,-12.37795 c -8.3205,-7.78008 -13.52923,-18.60389 -13.52923,-30.50866 l 16.84387,-0.1361 c 0,7.03607 3.11171,13.59702 8.25275,18.33312 z M 264.9459,414.00006 V 262.26939 l 16.84387,-0.13545 V 413.8637 Z m 0,-151.73067 c 0,-11.97341 5.20873,-22.7967 13.59686,-30.57607 l 11.43219,12.17626 c -5.07347,4.73519 -8.18518,11.1616 -8.18518,18.26448 z m 13.59686,-30.57607 c 8.18523,-7.71164 19.48211,-12.5145 31.92897,-12.5145 l -0.13535,16.84386 c -7.98216,0 -15.2204,2.97632 -20.36144,7.8469 z m 31.92897,-12.5145 h 228.98269 l -0.13629,16.84386 H 310.33638 Z m 228.98269,0 c 12.37795,0 23.67504,4.80286 31.86013,12.4469 l -11.56778,12.31165 c -5.20749,-4.93837 -12.4461,-7.91469 -20.42864,-7.91469 z m 31.86013,12.4469 c 8.32137,7.77918 13.4626,18.60267 13.4626,30.50834 L 568,262.26952 c 0,-7.10289 -3.11199,-13.59683 -8.25323,-18.33202 z"
-     style="fill:#201e1e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.3375605" />
+     style="fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.3375605" />
 </svg>
