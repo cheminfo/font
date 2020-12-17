@@ -2,10 +2,10 @@
 
 const fs = require('fs-extra');
 const prefix = 'ci-icon';
-const source = __dirname + '/src';
-const svgFolder = __dirname + '/svg';
-const destination = __dirname + '/dist/';
-const destination_html = __dirname + '/docs/';
+const source = __dirname + '/../src';
+const svgFolder = __dirname + '/../svg';
+const destination = __dirname + '/../dist/';
+const destination_html = __dirname + '/../docs/';
 const destination_react = __dirname + '/react.index.ts';
 
 const SVGO = require('svgo');
@@ -25,7 +25,10 @@ const { appendHeaderCss, appendEntryCss } = require('./util/css.js');
 var resultsCss = [];
 var resultsHtml = [];
 
-doAll();
+doAll().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
 
 async function doAll() {
   appendHeaderCss(resultsCss, prefix);
@@ -44,11 +47,11 @@ async function doAll() {
 async function appendFolder(folder, allFolders) {
   var files = fs.readdirSync(folder).filter((a) => a.indexOf('.ori.') === -1);
 
-  files.forEach(async function (file) {
+  for (const file of files) {
     var fullname = folder + '/' + file;
     if (fs.lstatSync(fullname).isDirectory()) {
       allFolders.push(fullname.replace(source + '/', ''));
-      appendFolder(fullname, allFolders);
+      await appendFolder(fullname, allFolders);
     } else if (file.match(/svg$/)) {
       var icon = fullname
         .replace(source + '/', '')
@@ -65,7 +68,7 @@ async function appendFolder(folder, allFolders) {
       appendEntryCss(resultsCss, dataUrl, prefix, icon);
       appendEntryHtml(resultsHtml, prefix, icon);
     }
-  });
+  }
 }
 
 function buildReactExports(folders) {

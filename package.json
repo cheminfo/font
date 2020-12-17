@@ -14,12 +14,12 @@
     "prepublishOnly": "npm run build",
     "build": "npm run clean && npm run build-svg && npm run build-react",
     "build-react": "npm run build-react-tsx && npm run build-react-esm && npm run build-react-cjs && npm run build-react-docs",
-    "build-react-tsx": "svgr --icon --typescript --title-prop --index-template svgr-index-template.js --no-svgo --out-dir lib-react-tsx svg",
+    "build-react-tsx": "svgr --icon --typescript --title-prop --index-template build/svgr-index-template.js --no-svgo --out-dir build/lib-react-tsx svg",
     "build-react-esm": "tsc -p tsconfig.json",
     "build-react-cjs": "tsc -p tsconfig.cjs.json",
     "build-react-docs": "node build/build-react-docs.js",
-    "build-svg": "node build-svg.js",
-    "clean": "rimraf dist lib-react-cjs lib-react-esm lib-react-tsx svg",
+    "build-svg": "node build/build-svg.js",
+    "clean": "rimraf dist lib-react-cjs lib-react-esm build/lib-react-tsx svg",
     "test": "echo 1"
   },
   "repository": {

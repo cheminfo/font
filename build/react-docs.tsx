@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import * as Icons from '../react.index';
+import * as Icons from '../build/react.index';
 
 render(<App />, document.getElementById('root'));
 

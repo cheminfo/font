@@ -1,5 +1,5 @@
 {
-  "include": ["lib-react-tsx", "react.index.ts"],
+  "include": ["build/lib-react-tsx", "build/react.index.ts"],
   "compilerOptions": {
     "declaration": false,
     "jsx": "react-jsx",

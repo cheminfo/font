@@ -2,8 +2,9 @@
 dist
 node_modules
 .DS_Store
+.vscode
 svg
-lib-react-tsx
+build/lib-react-tsx
+build/react.index.ts
 lib-react-cjs
 lib-react-esm
-react.index.ts
