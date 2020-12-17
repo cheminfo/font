@@ -7,26 +7,26 @@
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
-		<path fill="none" stroke="#000002" stroke-width="46.2977" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none" stroke-width="46.2977" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M415.199,668.968c-173.539,0-315.081-141.541-315.081-315.079c0-173.545,141.542-315.093,315.081-315.093
 		c173.553,0,315.099,141.548,315.099,315.093C730.298,527.427,588.752,668.968,415.199,668.968"/>
 	
-		<polyline fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		<polyline fill="none" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
 		887.36,888.085 654.566,576.416 573.075,637.283 805.869,948.952 	"/>
 	
-		<path fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M805.869,948.952c12.383,16.576,36.082,20.013,52.657,7.634"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="858.526" y1="956.586" x2="879.734" y2="940.743"/>
+		<line fill="none" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="858.526" y1="956.586" x2="879.734" y2="940.743"/>
 	
-		<path fill="none" stroke="#000002" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none" stroke-width="46.2962" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M879.734,940.743c16.576-12.389,20.012-36.083,7.626-52.656"/>
 	
-		<path fill="none" stroke="#000002" stroke-width="21.304" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none" stroke-width="21.304" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M415.199,612.475c-142.419,0-258.587-116.169-258.587-258.586c0-142.43,116.168-258.59,258.587-258.59
 		c142.437,0,258.598,116.162,258.598,258.59C673.797,496.305,557.636,612.475,415.199,612.475"/>
 	
-		<polygon fill="none" stroke="#000002" stroke-width="40.2131" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		<polygon fill="none" stroke-width="40.2131" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
 		266.632,268.108 415.199,182.329 563.782,268.108 563.782,439.661 415.199,525.441 266.632,439.661 	"/>
 </g>
 </svg>

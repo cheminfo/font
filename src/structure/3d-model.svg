@@ -6,26 +6,26 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
-	<path fill="#000002" d="M502.616,698.225c111.244,0,201.965-90.735,201.965-201.985c0-111.25-90.72-201.999-201.965-201.999
+	<path d="M502.616,698.225c111.244,0,201.965-90.735,201.965-201.985c0-111.25-90.72-201.999-201.965-201.999
 		c-111.248,0-201.983,90.749-201.983,201.999C300.633,607.489,391.37,698.225,502.616,698.225z"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="449.349" y1="384.629" x2="348.808" y2="245.769"/>
+		<line fill="none" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="449.349" y1="384.629" x2="348.808" y2="245.769"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="770.778" y1="772.926" x2="601.53" y2="598.317"/>
+		<line fill="none" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="770.778" y1="772.926" x2="601.53" y2="598.317"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="780.359" y1="218.159" x2="609.042" y2="390.712"/>
+		<line fill="none" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="780.359" y1="218.159" x2="609.042" y2="390.712"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="416.17" y1="508.564" x2="244.836" y2="681.133"/>
-	<path fill="none" stroke="#000002" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="M852.9,245.769
+		<line fill="none" stroke-width="60.4715" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="416.17" y1="508.564" x2="244.836" y2="681.133"/>
+	<path fill="none" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="M852.9,245.769
 		c56.541,0,102.665-46.109,102.665-102.664c0-56.542-46.124-102.652-102.665-102.652c-56.545,0-102.682,46.11-102.682,102.652
 		C750.219,199.66,796.358,245.769,852.9,245.769z"/>
-	<path fill="none" stroke="#000002" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+	<path fill="none" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M296.398,251.422c56.541,0,102.68-46.124,102.68-102.666c0-56.54-46.139-102.652-102.68-102.652
 		c-56.54,0-102.665,46.112-102.665,102.652C193.734,205.298,239.858,251.422,296.398,251.422z"/>
-	<path fill="none" stroke="#000002" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+	<path fill="none" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M149.512,850.318c56.54,0,102.65-46.125,102.65-102.667c0-56.556-46.11-102.664-102.65-102.664
 		c-56.557,0-102.681,46.108-102.681,102.664C46.832,804.193,92.956,850.318,149.512,850.318z"/>
-	<path fill="none" stroke="#000002" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+	<path fill="none" stroke-width="60.4715" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M847.244,954.845c56.544,0,102.668-46.124,102.668-102.665c0-56.558-46.124-102.668-102.668-102.668
 		c-56.54,0-102.648,46.11-102.648,102.668C744.597,908.721,790.706,954.845,847.244,954.845z"/>
 </g>

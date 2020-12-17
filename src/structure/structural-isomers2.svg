@@ -43,13 +43,13 @@
 		C547.716,521.194,548.427,513.564,548.427,505.534z"/>
 	<g>
 		
-			<line fill="none" stroke="#000002" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="600.127" y1="188.254" x2="372.785" y2="57"/>
+			<line fill="none" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="600.127" y1="188.254" x2="372.785" y2="57"/>
 		
-			<line fill="none" stroke="#000002" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="38.672" y1="250.33" x2="372.785" y2="57"/>
+			<line fill="none" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="38.672" y1="250.33" x2="372.785" y2="57"/>
 		
-			<line fill="none" stroke="#000002" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="38.672" y1="698.881" x2="364.126" y2="505.555"/>
+			<line fill="none" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="38.672" y1="698.881" x2="364.126" y2="505.555"/>
 		
-			<line fill="none" stroke="#000002" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="960.28" y1="698.881" x2="634.823" y2="505.555"/>
+			<line fill="none" stroke-width="32.6295" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="960.28" y1="698.881" x2="634.823" y2="505.555"/>
 	</g>
 </g>
 </svg>

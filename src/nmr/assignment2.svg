@@ -8,10 +8,10 @@
 <path d="M821.53,292.639l-83.455,53.397l-29.992,94.432c-11.238-55.639-44.56-125.618-76.135-175.875"/>
 <g>
 	
-		<path fill="none" stroke="#000002" stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
+		<path fill="none" stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M45.332,934.783c559.962,0,148.575-1.283,635.168-1.283c10.607,0,48-38,58-55l50-379l40,381l27,54l114,0.283"/>
 	
-		<polygon fill="none" stroke="#000002" stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		<polygon fill="none" stroke-width="50.1256" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
 		58.363,250.85 328.835,94.691 599.306,250.85 599.306,563.157 328.835,719.311 58.363,563.157 	"/>
 </g>
 <path fill="none"  stroke-width="48.9869" stroke-linejoin="round" stroke-miterlimit="22.9256" d="M709.996,313.94

@@ -7,20 +7,20 @@
 	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
 	
-		<polyline fill="none" stroke="#000002" stroke-width="47.4168" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
+		<polyline fill="none" stroke-width="47.4168" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
 		54.005,697.855 280.66,697.855 340.188,333.723 397.428,697.855 646.981,697.855 717.95,214.67 777.478,697.855 954.211,697.855 	
 		"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="41.8189" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="337.901" y1="171.258" x2="337.901" y2="252.12"/>
+		<line fill="none" stroke-width="41.8189" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="337.901" y1="171.258" x2="337.901" y2="252.12"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="41.8189" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="715.664" y1="47.484" x2="715.664" y2="128.344"/>
+		<line fill="none" stroke-width="41.8189" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="715.664" y1="47.484" x2="715.664" y2="128.344"/>
 	
-		<line fill="none" stroke="#000002" stroke-width="58.5457" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="54.005" y1="863.579" x2="888.894" y2="863.579"/>
+		<line fill="none" stroke-width="58.5457" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="54.005" y1="863.579" x2="888.894" y2="863.579"/>
 	<g>
 		
-			<line fill="none" stroke="#000002" stroke-width="58.5457" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="914.688" y1="863.572" x2="820.495" y2="934.908"/>
+			<line fill="none" stroke-width="58.5457" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="914.688" y1="863.572" x2="820.495" y2="934.908"/>
 		
-			<line fill="none" stroke="#000002" stroke-width="58.5457" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="820.495" y1="792.244" x2="914.688" y2="863.572"/>
+			<line fill="none" stroke-width="58.5457" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="820.495" y1="792.244" x2="914.688" y2="863.572"/>
 	</g>
 </g>
 </svg>
