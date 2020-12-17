@@ -13,10 +13,11 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "npm run clean && npm run build-svg && npm run build-react",
-    "build-react": "npm run build-react-tsx && npm run build-react-esm && npm run build-react-cjs",
+    "build-react": "npm run build-react-tsx && npm run build-react-esm && npm run build-react-cjs && npm run build-react-docs",
     "build-react-tsx": "svgr --icon --typescript --title-prop --index-template svgr-index-template.js --no-svgo --out-dir lib-react-tsx svg",
     "build-react-esm": "tsc -p tsconfig.json",
     "build-react-cjs": "tsc -p tsconfig.cjs.json",
+    "build-react-docs": "node build/build-react-docs.js",
     "build-svg": "node build-svg.js",
     "clean": "rimraf dist lib-react-cjs lib-react-esm lib-react-tsx svg",
     "test": "echo 1"
@@ -34,8 +35,12 @@
   "devDependencies": {
     "@svgr/cli": "^5.5.0",
     "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "btoa": "^1.2.1",
+    "esbuild": "^0.8.23",
     "fs-extra": "^9.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
     "svgo": "^1.3.2",
     "typescript": "^4.1.3"
