@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/cheminfo/font/compare/v1.0.0...v1.1.0) (2021-01-18)
+
+
+### Features
+
+* add virtual combinatorial icon ([3b53571](https://www.github.com/cheminfo/font/commit/3b535711ee565f01b37e8967fd0dfa3729f8b0e1))
+
 ## [1.0.0](https://www.github.com/cheminfo/font/compare/v0.34.1...v1.0.0) (2020-12-17)
 
 
