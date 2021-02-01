@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/cheminfo/font/compare/v1.1.0...v1.2.0) (2021-02-01)
+
+
+### Features
+
+* add pubchem icon ([89e3e5b](https://www.github.com/cheminfo/font/commit/89e3e5b6e0ef3d98cffd651c9cb6e767145d4009))
+
+
+### Bug Fixes
+
+* build of pubchem ([5426555](https://www.github.com/cheminfo/font/commit/5426555194ca7ac551db660a42aa204f6b604805))
+* center pubchem icon ([84c7319](https://www.github.com/cheminfo/font/commit/84c7319d58a6b4185d9a51376f80ecdc689d22c1))
+
 ## [1.1.0](https://www.github.com/cheminfo/font/compare/v1.0.0...v1.1.0) (2021-01-18)
 
 
