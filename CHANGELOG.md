@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/cheminfo/font/compare/v1.2.0...v1.3.0) (2021-03-16)
+
+
+### Features
+
+* add same top and reset scale icon ([f454678](https://www.github.com/cheminfo/font/commit/f454678292b9c8091170994d11ba8cb0b63b11b6))
+
 ## [1.2.0](https://www.github.com/cheminfo/font/compare/v1.1.0...v1.2.0) (2021-02-01)
 
 
