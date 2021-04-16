@@ -516,7 +516,7 @@
           }
           return element;
         };
-        function createElement147(type, config, children) {
+        function createElement148(type, config, children) {
           var propName;
           var props = {};
           var key = null;
@@ -1564,7 +1564,7 @@
               error("React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
             }
           }
-          var element = createElement147.apply(this, arguments);
+          var element = createElement148.apply(this, arguments);
           if (element == null) {
             return element;
           }
@@ -2637,11 +2637,11 @@
     if (true) {
       (function() {
         "use strict";
-        var React148 = require_react();
+        var React149 = require_react();
         var _assign = require_object_assign();
         var Scheduler = require_scheduler();
         var tracing = require_tracing();
-        var ReactSharedInternals = React148.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React149.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         function warn(format) {
           {
             for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2673,7 +2673,7 @@
             Function.prototype.apply.call(console[level], console, argsWithFormat);
           }
         }
-        if (!React148) {
+        if (!React149) {
           {
             throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
           }
@@ -3889,7 +3889,7 @@
         var didWarnInvalidChild = false;
         function flattenChildren(children) {
           var content = "";
-          React148.Children.forEach(children, function(child) {
+          React149.Children.forEach(children, function(child) {
             if (child == null) {
               return;
             }
@@ -3900,7 +3900,7 @@
         function validateProps(element, props) {
           {
             if (typeof props.children === "object" && props.children !== null) {
-              React148.Children.forEach(props.children, function(child) {
+              React149.Children.forEach(props.children, function(child) {
                 if (child == null) {
                   return;
                 }
@@ -8667,7 +8667,7 @@
             }
           }
         }
-        function createElement147(type, props, rootContainerElement, parentNamespace) {
+        function createElement148(type, props, rootContainerElement, parentNamespace) {
           var isCustomComponentTag;
           var ownerDocument = getOwnerDocumentFromRootContainer(rootContainerElement);
           var domElement;
@@ -9544,7 +9544,7 @@
             }
             parentNamespace = hostContextDev.namespace;
           }
-          var domElement = createElement147(type, props, rootContainerInstance, parentNamespace);
+          var domElement = createElement148(type, props, rootContainerInstance, parentNamespace);
           precacheFiberNode(internalInstanceHandle, domElement);
           updateFiberProps(domElement, props);
           return domElement;
@@ -11106,7 +11106,7 @@
         }
         var fakeInternalInstance = {};
         var isArray = Array.isArray;
-        var emptyRefsObject = new React148.Component().refs;
+        var emptyRefsObject = new React149.Component().refs;
         var didWarnAboutStateAssignmentForComponent;
         var didWarnAboutUninitializedState;
         var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -20699,6 +20699,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     SvgNmr1H13C: () => H13C_default,
     SvgNmr1H1H: () => H1H_default,
     SvgNmr2D: () => D_default,
+    SvgNmrAddFilter: () => AddFilter_default,
     SvgNmrAlignBottom: () => AlignBottom_default,
     SvgNmrAlignCenter: () => AlignCenter_default,
     SvgNmrAssignment: () => Assignment_default5,
@@ -23781,9 +23782,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var D_default = Svg2D;
 
-  // build/lib-react-tsx/nmr/AlignBottom.tsx
+  // build/lib-react-tsx/nmr/AddFilter.tsx
   var React67 = __toModule(require_react());
-  function SvgAlignBottom({
+  function SvgAddFilter({
     title,
     titleId,
     ...props
@@ -23799,37 +23800,39 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React67.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React67.createElement("g", {
-      clipPath: "url(#clip-align-bottom)"
-    }, /* @__PURE__ */ React67.createElement("path", {
-      d: "M74.308 889.139c44.876-.388 119.418-1.382 207.014-.9 81.54-1.168 55.647-252.189 61.657-307.029l.006-.055c9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0",
+    }, title) : null, /* @__PURE__ */ React67.createElement("path", {
+      d: "M38.416 887.681c558.451 0 148.174-1.283 633.454-1.283 10.578 0 47.87-38 57.844-55l44.9-345.78 44.857 347.78 26.927 54 113.692.283",
       fill: "none",
+      stroke: "#000",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      strokeWidth: 39.653
+      strokeMiterlimit: 22.926,
+      strokeWidth: 50.126
     }), /* @__PURE__ */ React67.createElement("g", {
-      fill: "none",
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      stroke: "#000"
     }, /* @__PURE__ */ React67.createElement("path", {
-      "data-name": "Path 6",
-      d: "M640.001 338.057L499.86 478.198 359.719 338.057",
-      strokeWidth: 35
+      "data-name": "Path 9",
+      d: "M687.492 282.78l-51.858 100.095 24.17 110.116c-42.727-48.433-115.375-98.433-175.081-129.992"
     }), /* @__PURE__ */ React67.createElement("path", {
-      "data-name": "Path 7",
-      d: "M612.142 295.383L499.76 407.765l3.764-338.977-3.764 338.977-112.382-112.382",
-      strokeWidth: 20
+      "data-name": "Path 11",
+      d: "M624.301 376.896c68.882 3.825 102.461 21.904 132.651 76.103",
+      fill: "none",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      strokeWidth: 48.987
+    })), /* @__PURE__ */ React67.createElement("path", {
+      d: "M629.812 76.248c18.317 5.053 34.108 20.212 40.424 38.4 2.021 5.937 2.4 10.738 2.4 33.6 0 28.8-1.011 35.876-6.822 47.246a72.107 72.107 0 01-7.706 11.369c-4.169 4.8-75.8 61.521-79.585 62.91-1.642.632-20.844-23.876-20.844-26.528 0-.884 17.054-14.906 37.9-31.076 26.655-20.717 38.4-30.571 39.793-33.476 1.516-3.285 1.895-9.222 1.895-29.56 0-28.676-.884-32.592-7.832-36.382-4.042-2.148-14.654-2.274-244.819-2.274s-240.777.126-244.819 2.274c-6.948 3.79-7.832 7.706-7.832 36.255 0 18.7.505 26.4 1.769 29.56 1.39 3.411 19.581 17.054 101.313 75.922 54.825 39.414 100.934 72.89 102.324 74.406 2.653 2.527 3.032 7.706 11.117 120.767 4.674 64.931 8.716 119.63 9.1 121.4a13.9 13.9 0 003.79 6.316c3.158 2.905 3.916 3.032 23.244 3.032 19.454 0 20.086-.126 23.244-3.032a14.8 14.8 0 003.916-6.948c.253-2.148 2.021-24.886 3.916-50.657 1.769-25.644 3.411-46.867 3.663-47.246.758-.632 33.6 2.148 34.361 2.905 1.011 1.011-5.937 95.5-7.453 101.187-3.79 14.654-14.148 26.655-29.687 34.361l-9.727 4.8h-22.112c-21.6 0-22.486-.126-29.687-3.411-10.738-5.053-19.075-11.622-24.633-19.454-4.927-6.948-5.306-8.337-8.969-31.076-.632-4.421-4.421-52.93-8.211-107.756-3.916-54.952-7.327-100.934-7.58-102.45-.379-1.895-29.813-23.749-93.1-69.353-50.909-36.634-95.25-69.227-98.534-72.385-6.948-6.7-12.759-17.054-15.538-27.413-2.906-11.5-2.653-57.226.379-67.205 4.8-15.159 15.917-27.665 31.455-35.371l9.727-4.8 241.914-.253c193.021-.124 243.177.128 247.846 1.396z"
     }), /* @__PURE__ */ React67.createElement("path", {
-      "data-name": "Path 8",
-      d: "M640.001 338.057L499.86 478.198 359.719 338.057",
-      strokeWidth: 35
-    }))));
+      d: "M.5.5h997.512l2.488 1000H.5z",
+      fill: "none",
+      stroke: "#707070"
+    }));
   }
-  var AlignBottom_default = SvgAlignBottom;
+  var AddFilter_default = SvgAddFilter;
 
-  // build/lib-react-tsx/nmr/AlignCenter.tsx
+  // build/lib-react-tsx/nmr/AlignBottom.tsx
   var React68 = __toModule(require_react());
-  function SvgAlignCenter({
+  function SvgAlignBottom({
     title,
     titleId,
     ...props
@@ -23846,9 +23849,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React68.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React68.createElement("g", {
-      clipPath: "url(#clip-align-center)"
+      clipPath: "url(#clip-align-bottom)"
     }, /* @__PURE__ */ React68.createElement("path", {
-      d: "M74.308 610.139c44.876-.388 119.418-1.382 207.014-.9 81.7-1.17 55.543-253.2 61.663-307.085 9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0",
+      d: "M74.308 889.139c44.876-.388 119.418-1.382 207.014-.9 81.54-1.168 55.647-252.189 61.657-307.029l.006-.055c9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0",
       fill: "none",
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -23859,31 +23862,23 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeLinejoin: "round"
     }, /* @__PURE__ */ React68.createElement("path", {
       "data-name": "Path 6",
-      d: "M640.002 862.524L499.861 722.383 359.72 862.524",
+      d: "M640.001 338.057L499.86 478.198 359.719 338.057",
       strokeWidth: 35
     }), /* @__PURE__ */ React68.createElement("path", {
       "data-name": "Path 7",
-      d: "M612.142 905.199L499.76 792.817 387.378 905.199",
+      d: "M612.142 295.383L499.76 407.765l3.764-338.977-3.764 338.977-112.382-112.382",
       strokeWidth: 20
-    })), /* @__PURE__ */ React68.createElement("g", {
-      fill: "none",
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }, /* @__PURE__ */ React68.createElement("path", {
-      "data-name": "Path 6",
-      d: "M640.001 145.057L499.86 285.198 359.719 145.057",
-      strokeWidth: 35
     }), /* @__PURE__ */ React68.createElement("path", {
-      "data-name": "Path 7",
-      d: "M612.142 102.383L499.76 214.765 387.378 102.383",
-      strokeWidth: 20
+      "data-name": "Path 8",
+      d: "M640.001 338.057L499.86 478.198 359.719 338.057",
+      strokeWidth: 35
     }))));
   }
-  var AlignCenter_default = SvgAlignCenter;
+  var AlignBottom_default = SvgAlignBottom;
 
-  // build/lib-react-tsx/nmr/Assignment.tsx
+  // build/lib-react-tsx/nmr/AlignCenter.tsx
   var React69 = __toModule(require_react());
-  function SvgAssignment5({
+  function SvgAlignCenter({
     title,
     titleId,
     ...props
@@ -23900,33 +23895,44 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React69.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React69.createElement("g", {
+      clipPath: "url(#clip-align-center)"
+    }, /* @__PURE__ */ React69.createElement("path", {
+      d: "M74.308 610.139c44.876-.388 119.418-1.382 207.014-.9 81.7-1.17 55.543-253.2 61.663-307.085 9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0",
       fill: "none",
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
-    }, /* @__PURE__ */ React69.createElement("path", {
-      strokeWidth: 50.126,
-      d: "M45.332 634.783h614.323l66.347-389.362 59.074 389.362h99.105"
-    }), /* @__PURE__ */ React69.createElement("path", {
-      strokeWidth: 44.208,
-      d: "M724.551 73.495v85.48"
-    }), /* @__PURE__ */ React69.createElement("path", {
-      strokeWidth: 61.89,
-      d: "M45.332 809.969h882.592"
+      strokeWidth: 39.653
     }), /* @__PURE__ */ React69.createElement("g", {
-      strokeWidth: 61.89
+      fill: "none",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
     }, /* @__PURE__ */ React69.createElement("path", {
-      d: "M955.191 809.959l-99.571 75.414M855.62 734.56l99.571 75.399"
-    })), /* @__PURE__ */ React69.createElement("path", {
-      strokeWidth: 50.126,
-      d: "M158.572 160.25l150.263-86.755 150.262 86.755v173.504l-150.262 86.752-150.263-86.752z"
-    })));
+      "data-name": "Path 6",
+      d: "M640.002 862.524L499.861 722.383 359.72 862.524",
+      strokeWidth: 35
+    }), /* @__PURE__ */ React69.createElement("path", {
+      "data-name": "Path 7",
+      d: "M612.142 905.199L499.76 792.817 387.378 905.199",
+      strokeWidth: 20
+    })), /* @__PURE__ */ React69.createElement("g", {
+      fill: "none",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }, /* @__PURE__ */ React69.createElement("path", {
+      "data-name": "Path 6",
+      d: "M640.001 145.057L499.86 285.198 359.719 145.057",
+      strokeWidth: 35
+    }), /* @__PURE__ */ React69.createElement("path", {
+      "data-name": "Path 7",
+      d: "M612.142 102.383L499.76 214.765 387.378 102.383",
+      strokeWidth: 20
+    }))));
   }
-  var Assignment_default5 = SvgAssignment5;
+  var AlignCenter_default = SvgAlignCenter;
 
-  // build/lib-react-tsx/nmr/Assignment2.tsx
+  // build/lib-react-tsx/nmr/Assignment.tsx
   var React70 = __toModule(require_react());
-  function SvgAssignment22({
+  function SvgAssignment5({
     title,
     titleId,
     ...props
@@ -23942,29 +23948,34 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React70.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React70.createElement("path", {
-      d: "M821.53 292.639l-83.455 53.397-29.992 94.432c-11.238-55.639-44.56-125.618-76.135-175.875"
-    }), /* @__PURE__ */ React70.createElement("g", {
+    }, title) : null, /* @__PURE__ */ React70.createElement("g", {
       fill: "none",
-      strokeWidth: 50.126,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926
     }, /* @__PURE__ */ React70.createElement("path", {
-      d: "M45.332 934.783c559.962 0 148.575-1.283 635.168-1.283 10.607 0 48-38 58-55l50-379 40 381 27 54 114 .283M58.363 250.85L328.835 94.691 599.306 250.85v312.307L328.835 719.311 58.363 563.157z"
+      strokeWidth: 50.126,
+      d: "M45.332 634.783h614.323l66.347-389.362 59.074 389.362h99.105"
+    }), /* @__PURE__ */ React70.createElement("path", {
+      strokeWidth: 44.208,
+      d: "M724.551 73.495v85.48"
+    }), /* @__PURE__ */ React70.createElement("path", {
+      strokeWidth: 61.89,
+      d: "M45.332 809.969h882.592"
+    }), /* @__PURE__ */ React70.createElement("g", {
+      strokeWidth: 61.89
+    }, /* @__PURE__ */ React70.createElement("path", {
+      d: "M955.191 809.959l-99.571 75.414M855.62 734.56l99.571 75.399"
     })), /* @__PURE__ */ React70.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M709.996 313.94C770.5 353.5 791.5 387.5 790.5 452.5"
-    }));
+      strokeWidth: 50.126,
+      d: "M158.572 160.25l150.263-86.755 150.262 86.755v173.504l-150.262 86.752-150.263-86.752z"
+    })));
   }
-  var Assignment2_default = SvgAssignment22;
+  var Assignment_default5 = SvgAssignment5;
 
-  // build/lib-react-tsx/nmr/BaselineCorrection.tsx
+  // build/lib-react-tsx/nmr/Assignment2.tsx
   var React71 = __toModule(require_react());
-  function SvgBaselineCorrection({
+  function SvgAssignment22({
     title,
     titleId,
     ...props
@@ -23980,27 +23991,29 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React71.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React71.createElement("g", {
-      "data-name": "baseline correction",
-      clipPath: "url(#clip-baseline_correction)",
+    }, title) : null, /* @__PURE__ */ React71.createElement("path", {
+      d: "M821.53 292.639l-83.455 53.397-29.992 94.432c-11.238-55.639-44.56-125.618-76.135-175.875"
+    }), /* @__PURE__ */ React71.createElement("g", {
       fill: "none",
-      strokeWidth: 45
-    }, /* @__PURE__ */ React71.createElement("path", {
-      d: "M27.265 648.5h961.746",
-      strokeLinecap: "square",
-      strokeLinejoin: "bevel",
-      strokeDasharray: "5 100"
-    }), /* @__PURE__ */ React71.createElement("path", {
-      d: "M33.737 698.735c14.928 4.584 51.09 39.489 112.8 39.489s76.691-53.427 127.581-62.8 98.841-30.237 108.461-30.181c76.9-1.17 58.063-490.423 63.823-544.308 8.6 83.481-21.07 528.6 70.224 544.306 21.234 3.653-15.192 5.114 7.847 0 90.607-19.911 79.3-392.121 79.3-392.121s-6.906 293.146 51.71 355.345 84.549-41.324 148.667-31.625 107.807 70.415 107.807 70.415 40.428 51.7 55.4 51.478",
+      strokeWidth: 50.126,
       strokeLinecap: "round",
-      strokeLinejoin: "round"
-    })));
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926
+    }, /* @__PURE__ */ React71.createElement("path", {
+      d: "M45.332 934.783c559.962 0 148.575-1.283 635.168-1.283 10.607 0 48-38 58-55l50-379 40 381 27 54 114 .283M58.363 250.85L328.835 94.691 599.306 250.85v312.307L328.835 719.311 58.363 563.157z"
+    })), /* @__PURE__ */ React71.createElement("path", {
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M709.996 313.94C770.5 353.5 791.5 387.5 790.5 452.5"
+    }));
   }
-  var BaselineCorrection_default = SvgBaselineCorrection;
+  var Assignment2_default = SvgAssignment22;
 
-  // build/lib-react-tsx/nmr/Fid.tsx
+  // build/lib-react-tsx/nmr/BaselineCorrection.tsx
   var React72 = __toModule(require_react());
-  function SvgFid({
+  function SvgBaselineCorrection({
     title,
     titleId,
     ...props
@@ -24016,20 +24029,27 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React72.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React72.createElement("path", {
-      strokeMiterlimit: 22.926,
-      strokeLinejoin: "round",
-      strokeLinecap: "round",
-      strokeWidth: 48.987,
+    }, title) : null, /* @__PURE__ */ React72.createElement("g", {
+      "data-name": "baseline correction",
+      clipPath: "url(#clip-baseline_correction)",
       fill: "none",
-      d: "M149.053 29.608L178.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
-    }));
+      strokeWidth: 45
+    }, /* @__PURE__ */ React72.createElement("path", {
+      d: "M27.265 648.5h961.746",
+      strokeLinecap: "square",
+      strokeLinejoin: "bevel",
+      strokeDasharray: "5 100"
+    }), /* @__PURE__ */ React72.createElement("path", {
+      d: "M33.737 698.735c14.928 4.584 51.09 39.489 112.8 39.489s76.691-53.427 127.581-62.8 98.841-30.237 108.461-30.181c76.9-1.17 58.063-490.423 63.823-544.308 8.6 83.481-21.07 528.6 70.224 544.306 21.234 3.653-15.192 5.114 7.847 0 90.607-19.911 79.3-392.121 79.3-392.121s-6.906 293.146 51.71 355.345 84.549-41.324 148.667-31.625 107.807 70.415 107.807 70.415 40.428 51.7 55.4 51.478",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    })));
   }
-  var Fid_default = SvgFid;
+  var BaselineCorrection_default = SvgBaselineCorrection;
 
-  // build/lib-react-tsx/nmr/FourierTransform.tsx
+  // build/lib-react-tsx/nmr/Fid.tsx
   var React73 = __toModule(require_react());
-  function SvgFourierTransform({
+  function SvgFid({
     title,
     titleId,
     ...props
@@ -24046,41 +24066,19 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React73.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React73.createElement("path", {
-      fill: "none",
-      strokeWidth: 49.312,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M444.092 954.83l260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6M812.192 467.029c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898"
-    }), /* @__PURE__ */ React73.createElement("path", {
-      d: "M494.573 832.361l84.332-51.996 31.562-93.917c10.312 55.815 42.461 126.343 73.191 177.118-56.408-18.446-132.387-33.795-189.085-31.205z"
-    }), /* @__PURE__ */ React73.createElement("path", {
-      fill: "none",
+      strokeLinejoin: "round",
+      strokeLinecap: "round",
       strokeWidth: 48.987,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M462.253 673.862l118.259 106.22"
-    }), /* @__PURE__ */ React73.createElement("path", {
       fill: "none",
-      strokeWidth: 80,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M536.969 53.506c51.065-19.271 334.979 22.168 390.4 0M637.369 86.706c-8.012 84.916 1.6 315.199-71.2 404M637.563 273.225c.967-.04 86.205 16.681 149.405 10.281"
-    }), /* @__PURE__ */ React73.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M29.053 29.608L58.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
+      d: "M149.053 29.608L178.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
     }));
   }
-  var FourierTransform_default = SvgFourierTransform;
+  var Fid_default = SvgFid;
 
-  // build/lib-react-tsx/nmr/Ft.tsx
+  // build/lib-react-tsx/nmr/FourierTransform.tsx
   var React74 = __toModule(require_react());
-  function SvgFt({
+  function SvgFourierTransform({
     title,
     titleId,
     ...props
@@ -24097,20 +24095,41 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React74.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React74.createElement("path", {
-      d: "M444.092 954.83l260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6M812.192 467.029c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898",
-      strokeMiterlimit: 22.926,
-      strokeLinejoin: "round",
-      strokeLinecap: "round",
-      strokeWidth: 49.312,
       fill: "none",
-      transform: "matrix(1.5417 0 0 1.40189 -584.35 -473.718)"
+      strokeWidth: 49.312,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M444.092 954.83l260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6M812.192 467.029c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898"
+    }), /* @__PURE__ */ React74.createElement("path", {
+      d: "M494.573 832.361l84.332-51.996 31.562-93.917c10.312 55.815 42.461 126.343 73.191 177.118-56.408-18.446-132.387-33.795-189.085-31.205z"
+    }), /* @__PURE__ */ React74.createElement("path", {
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M462.253 673.862l118.259 106.22"
+    }), /* @__PURE__ */ React74.createElement("path", {
+      fill: "none",
+      strokeWidth: 80,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M536.969 53.506c51.065-19.271 334.979 22.168 390.4 0M637.369 86.706c-8.012 84.916 1.6 315.199-71.2 404M637.563 273.225c.967-.04 86.205 16.681 149.405 10.281"
+    }), /* @__PURE__ */ React74.createElement("path", {
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M29.053 29.608L58.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
     }));
   }
-  var Ft_default = SvgFt;
+  var FourierTransform_default = SvgFourierTransform;
 
-  // build/lib-react-tsx/nmr/ImpuritiesStars.tsx
+  // build/lib-react-tsx/nmr/Ft.tsx
   var React75 = __toModule(require_react());
-  function SvgImpuritiesStars({
+  function SvgFt({
     title,
     titleId,
     ...props
@@ -24127,41 +24146,20 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React75.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React75.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
+      d: "M444.092 954.83l260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6M812.192 467.029c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898",
+      strokeMiterlimit: 22.926,
+      strokeLinejoin: "round",
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M43.528 957.101H159.71l28.61-77.773 29.083 76.971 242.097.084 39-57.883 50.907-846.347L603.5 896.5l43 60.601h70.667l50.082-116.9 52.511 116.9h133.575"
-    }), /* @__PURE__ */ React75.createElement("path", {
+      strokeWidth: 49.312,
       fill: "none",
-      strokeWidth: 39.19,
-      strokeLinecap: "square",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M188.5 618.1v126.4"
-    }), /* @__PURE__ */ React75.createElement("path", {
-      d: "M188.5 839.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958C233.2 739.356 205.01 794.589 188.5 839.106z"
-    }), /* @__PURE__ */ React75.createElement("path", {
-      fill: "none",
-      strokeWidth: 39.19,
-      strokeLinecap: "square",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M766.5 585.1v126.4"
-    }), /* @__PURE__ */ React75.createElement("path", {
-      d: "M766.5 806.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958c-29.836 34.229-58.027 89.462-74.537 133.979z"
-    }), /* @__PURE__ */ React75.createElement("g", null, /* @__PURE__ */ React75.createElement("path", {
-      d: "M289.078 325.536l-75.804 99.897v1.6l120.489-15.984v54.346L213.274 450.21v2.396l76.602 95.905-50.27 28.771-48.674-111.888h-1.597l-51.07 112.685-45.485-28.77 75.807-97.501v-2.398l-118.1 15.985v-54.346l117.301 15.185v-1.6l-75.012-98.302 48.678-27.971 49.474 111.889h1.596L241.2 297.562l47.878 27.974z"
-    })), /* @__PURE__ */ React75.createElement("g", null, /* @__PURE__ */ React75.createElement("path", {
-      d: "M863.81 295.177l-74.812 98.438v1.576l118.912-15.75v53.552L788.998 418.03v2.361l75.599 94.504-49.612 28.351-48.041-110.253h-1.57l-50.401 111.039-44.893-28.352 74.815-96.075v-2.363l-116.555 15.75V379.44l115.767 14.963v-1.576l-74.027-96.865 48.041-27.562 48.823 110.254h1.576l48.041-111.042 47.249 27.565z"
-    })));
+      transform: "matrix(1.5417 0 0 1.40189 -584.35 -473.718)"
+    }));
   }
-  var ImpuritiesStars_default = SvgImpuritiesStars;
+  var Ft_default = SvgFt;
 
-  // build/lib-react-tsx/nmr/Impurities.tsx
+  // build/lib-react-tsx/nmr/ImpuritiesStars.tsx
   var React76 = __toModule(require_react());
-  function SvgImpurities2({
+  function SvgImpuritiesStars({
     title,
     titleId,
     ...props
@@ -24183,14 +24181,36 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M43.528 787.101h93.182l51.61-99.773 51.083 98.971 255.948.113 54.056-734.259 57.363 734.948h87.397l63.082-96.9 64.511 96.9h131.575"
-    }));
+      d: "M43.528 957.101H159.71l28.61-77.773 29.083 76.971 242.097.084 39-57.883 50.907-846.347L603.5 896.5l43 60.601h70.667l50.082-116.9 52.511 116.9h133.575"
+    }), /* @__PURE__ */ React76.createElement("path", {
+      fill: "none",
+      strokeWidth: 39.19,
+      strokeLinecap: "square",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M188.5 618.1v126.4"
+    }), /* @__PURE__ */ React76.createElement("path", {
+      d: "M188.5 839.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958C233.2 739.356 205.01 794.589 188.5 839.106z"
+    }), /* @__PURE__ */ React76.createElement("path", {
+      fill: "none",
+      strokeWidth: 39.19,
+      strokeLinecap: "square",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M766.5 585.1v126.4"
+    }), /* @__PURE__ */ React76.createElement("path", {
+      d: "M766.5 806.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958c-29.836 34.229-58.027 89.462-74.537 133.979z"
+    }), /* @__PURE__ */ React76.createElement("g", null, /* @__PURE__ */ React76.createElement("path", {
+      d: "M289.078 325.536l-75.804 99.897v1.6l120.489-15.984v54.346L213.274 450.21v2.396l76.602 95.905-50.27 28.771-48.674-111.888h-1.597l-51.07 112.685-45.485-28.77 75.807-97.501v-2.398l-118.1 15.985v-54.346l117.301 15.185v-1.6l-75.012-98.302 48.678-27.971 49.474 111.889h1.596L241.2 297.562l47.878 27.974z"
+    })), /* @__PURE__ */ React76.createElement("g", null, /* @__PURE__ */ React76.createElement("path", {
+      d: "M863.81 295.177l-74.812 98.438v1.576l118.912-15.75v53.552L788.998 418.03v2.361l75.599 94.504-49.612 28.351-48.041-110.253h-1.57l-50.401 111.039-44.893-28.352 74.815-96.075v-2.363l-116.555 15.75V379.44l115.767 14.963v-1.576l-74.027-96.865 48.041-27.562 48.823 110.254h1.576l48.041-111.042 47.249 27.565z"
+    })));
   }
-  var Impurities_default2 = SvgImpurities2;
+  var ImpuritiesStars_default = SvgImpuritiesStars;
 
-  // build/lib-react-tsx/nmr/Integrate.tsx
+  // build/lib-react-tsx/nmr/Impurities.tsx
   var React77 = __toModule(require_react());
-  function SvgIntegrate({
+  function SvgImpurities2({
     title,
     titleId,
     ...props
@@ -24208,56 +24228,18 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React77.createElement("path", {
       fill: "none",
-      strokeWidth: 49.312,
+      strokeWidth: 48.987,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M40.677 920.5H142.5l36-5 25-28 14-59 15-87 19-284s3.841 52.633 21 264c11 75 8 59 18 101 .268.921 18.728 51.077 19 52 7 14 12.703 18.312 25 29 14.993 13.033 36 17 36 17l590-1"
-    }), /* @__PURE__ */ React77.createElement("path", {
-      fill: "none",
-      strokeWidth: 49.312,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M64.5 419.5c197 5 187-13.598 186-190.397-1-176.8-15-207.205 156-202.603"
-    }), /* @__PURE__ */ React77.createElement("ellipse", {
-      strokeWidth: 60,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      cx: 811.5,
-      cy: 117,
-      rx: 35,
-      ry: 28.5
-    }), /* @__PURE__ */ React77.createElement("path", {
-      fill: "none",
-      strokeWidth: 60,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M807.5 87.5c-110-2-156 237-164 349M810.5 90.5c-110-2-105 234-113 346"
-    }), /* @__PURE__ */ React77.createElement("ellipse", {
-      strokeWidth: 60,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      cx: 529.5,
-      cy: 747.98,
-      rx: 35,
-      ry: 28.5
-    }), /* @__PURE__ */ React77.createElement("path", {
-      fill: "none",
-      strokeWidth: 60,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M533.5 777.48c110 2 156-227 164-339M530.5 774.48c110 2 105-224 113-336"
+      d: "M43.528 787.101h93.182l51.61-99.773 51.083 98.971 255.948.113 54.056-734.259 57.363 734.948h87.397l63.082-96.9 64.511 96.9h131.575"
     }));
   }
-  var Integrate_default = SvgIntegrate;
+  var Impurities_default2 = SvgImpurities2;
 
-  // build/lib-react-tsx/nmr/Lineshapedeconvolution.tsx
+  // build/lib-react-tsx/nmr/Integrate.tsx
   var React78 = __toModule(require_react());
-  function SvgLineshapedeconvolution({
+  function SvgIntegrate({
     title,
     titleId,
     ...props
@@ -24279,23 +24261,90 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M211.5 287.5s3.841 43.633 21 255c11 75 19 146 41 213 20 37 72 66 92 78 37 13 61 53 88 79 6 8 33 9 33 9l434-2M35.5 919.5l56 1s21.007-3.967 36-17c12.297-10.688 18-15 25-29 .272-.923 18.732-51.079 19-52 10-42 7-26 18-101 17.159-211.367 21-587 21-434"
+      d: "M40.677 920.5H142.5l36-5 25-28 14-59 15-87 19-284s3.841 52.633 21 264c11 75 8 59 18 101 .268.921 18.728 51.077 19 52 7 14 12.703 18.312 25 29 14.993 13.033 36 17 36 17l590-1"
     }), /* @__PURE__ */ React78.createElement("path", {
+      fill: "none",
+      strokeWidth: 49.312,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M64.5 419.5c197 5 187-13.598 186-190.397-1-176.8-15-207.205 156-202.603"
+    }), /* @__PURE__ */ React78.createElement("ellipse", {
+      strokeWidth: 60,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      cx: 811.5,
+      cy: 117,
+      rx: 35,
+      ry: 28.5
+    }), /* @__PURE__ */ React78.createElement("path", {
+      fill: "none",
+      strokeWidth: 60,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M807.5 87.5c-110-2-156 237-164 349M810.5 90.5c-110-2-105 234-113 346"
+    }), /* @__PURE__ */ React78.createElement("ellipse", {
+      strokeWidth: 60,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      cx: 529.5,
+      cy: 747.98,
+      rx: 35,
+      ry: 28.5
+    }), /* @__PURE__ */ React78.createElement("path", {
+      fill: "none",
+      strokeWidth: 60,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M533.5 777.48c110 2 156-227 164-339M530.5 774.48c110 2 105-224 113-336"
+    }));
+  }
+  var Integrate_default = SvgIntegrate;
+
+  // build/lib-react-tsx/nmr/Lineshapedeconvolution.tsx
+  var React79 = __toModule(require_react());
+  function SvgLineshapedeconvolution({
+    title,
+    titleId,
+    ...props
+  }) {
+    return /* @__PURE__ */ React79.createElement("svg", {
+      stroke: "currentColor",
+      fill: "currentColor",
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props
+    }, title ? /* @__PURE__ */ React79.createElement("title", {
+      id: titleId
+    }, title) : null, /* @__PURE__ */ React79.createElement("path", {
+      fill: "none",
+      strokeWidth: 49.312,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M211.5 287.5s3.841 43.633 21 255c11 75 19 146 41 213 20 37 72 66 92 78 37 13 61 53 88 79 6 8 33 9 33 9l434-2M35.5 919.5l56 1s21.007-3.967 36-17c12.297-10.688 18-15 25-29 .272-.923 18.732-51.079 19-52 10-42 7-26 18-101 17.159-211.367 21-587 21-434"
+    }), /* @__PURE__ */ React79.createElement("path", {
       fill: "none",
       strokeWidth: 49.312,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       d: "M472.5 76.5s3.841 132.633 21 344c11 75 8 59 18 101 .268.921 18.728 51.077 19 52 7 14 12.703 18.312 25 29 14.993 13.033 36 17 36 17l289-1M296.5 618.5l56 1s21.007-3.967 36-17c12.297-10.688 18-15 25-29 .272-.923 18.732-51.079 19-52 10-42 7-26 18-101 17.159-211.367 21-497 21-344"
-    }), /* @__PURE__ */ React78.createElement("path", {
+    }), /* @__PURE__ */ React79.createElement("path", {
       d: "M708.897 831.817l-78.271-60.741-99.021 3.379c48.656-29.23 103.428-84.072 140.201-130.658 2.508 59.295 14.781 135.83 37.091 188.02z"
-    }), /* @__PURE__ */ React78.createElement("path", {
+    }), /* @__PURE__ */ React79.createElement("path", {
       fill: "none",
       strokeWidth: 48.987,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       d: "M583.5 881.5l58-148"
-    }), /* @__PURE__ */ React78.createElement("circle", {
+    }), /* @__PURE__ */ React79.createElement("circle", {
       fill: "none",
       strokeWidth: 48.987,
       strokeLinejoin: "round",
@@ -24303,21 +24352,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       cx: 762.5,
       cy: 238.5,
       r: 197
-    }), /* @__PURE__ */ React78.createElement("circle", {
+    }), /* @__PURE__ */ React79.createElement("circle", {
       strokeWidth: 48.987,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       cx: 762.5,
       cy: 131.5,
       r: 18
-    }), /* @__PURE__ */ React78.createElement("circle", {
+    }), /* @__PURE__ */ React79.createElement("circle", {
       strokeWidth: 48.987,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       cx: 762.5,
       cy: 339.5,
       r: 18
-    }), /* @__PURE__ */ React78.createElement("path", {
+    }), /* @__PURE__ */ React79.createElement("path", {
       fill: "none",
       strokeWidth: 48.987,
       strokeLinejoin: "round",
@@ -24328,13 +24377,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var Lineshapedeconvolution_default = SvgLineshapedeconvolution;
 
   // build/lib-react-tsx/nmr/MultipleAnalysis.tsx
-  var React79 = __toModule(require_react());
+  var React80 = __toModule(require_react());
   function SvgMultipleAnalysis({
     title,
     titleId,
     ...props
   }) {
-    return /* @__PURE__ */ React79.createElement("svg", {
+    return /* @__PURE__ */ React80.createElement("svg", {
       stroke: "currentColor",
       fill: "currentColor",
       xmlns: "http://www.w3.org/2000/svg",
@@ -24343,9 +24392,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       height: "1em",
       "aria-labelledby": titleId,
       ...props
-    }, title ? /* @__PURE__ */ React79.createElement("title", {
+    }, title ? /* @__PURE__ */ React80.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React79.createElement("path", {
+    }, title) : null, /* @__PURE__ */ React80.createElement("path", {
       d: "M24.612 594.712h305.673l61.025-399.9 61.127 399.9h338.338",
       fill: "none",
       strokeLinecap: "round",
@@ -24353,21 +24402,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeMiterlimit: 22.926,
       strokeWidth: 49.224,
       strokeDasharray: "1, 70"
-    }), /* @__PURE__ */ React79.createElement("path", {
+    }), /* @__PURE__ */ React80.createElement("path", {
       d: "M199.548 953.651h371.673l61.024-399.9 63.127 399.9h271.339",
       fill: "none",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       strokeWidth: 49.224
-    }), /* @__PURE__ */ React79.createElement("path", {
+    }), /* @__PURE__ */ React80.createElement("path", {
       d: "M116.665 775.367c60.181 0 342.086.408 342.086.408l61.025-399.9 62.127 399.9h330.782",
       fill: "none",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       strokeWidth: 49.224,
       strokeDasharray: "50, 30"
-    }), /* @__PURE__ */ React79.createElement("path", {
+    }), /* @__PURE__ */ React80.createElement("path", {
       "data-name": "Path 5",
       d: "M213.446 229.43v-152h527v151",
       fill: "none",
@@ -24379,39 +24428,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var MultipleAnalysis_default = SvgMultipleAnalysis;
 
   // build/lib-react-tsx/nmr/Multiplet.tsx
-  var React80 = __toModule(require_react());
-  function SvgMultiplet({
-    title,
-    titleId,
-    ...props
-  }) {
-    return /* @__PURE__ */ React80.createElement("svg", {
-      stroke: "currentColor",
-      fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props
-    }, title ? /* @__PURE__ */ React80.createElement("title", {
-      id: titleId
-    }, title) : null, /* @__PURE__ */ React80.createElement("path", {
-      d: "M235.272 294.355c0 1.324-.394 2.506-1.192 3.506-.792 1.045-2.045 1.907-3.883 2.635-1.786.722-4.225 1.245-7.325 1.639-3.101.405-7 .536-11.809.536-4.748 0-8.64-.131-11.739-.536-3.102-.393-5.61-.915-7.455-1.639-1.848-.727-3.171-1.59-3.891-2.635a6.276 6.276 0 01-1.057-3.506v-81.914c-4.611 4.276-9.104 7.968-13.526 11.14-4.345 3.168-8.769 5.743-13.123 7.717a62.421 62.421 0 01-13.519 4.355c-4.622.921-9.567 1.313-14.721 1.313-12.592 0-23.345-2.51-32.252-7.583-8.906-5.077-16.154-11.939-21.77-20.585-5.6-8.64-9.689-18.724-12.264-30.266-2.578-11.544-3.832-23.687-3.832-36.417 0-15.373 1.648-29.155 5.016-41.361 3.366-12.263 8.244-22.687 14.711-31.329 6.399-8.64 14.318-15.237 23.748-19.856 9.362-4.684 20.321-6.993 32.653-6.993 4.74 0 9.36.464 13.718 1.454 4.352.983 8.775 2.634 13.131 5.003 4.413 2.38 8.966 5.479 13.655 9.312 4.681 3.821 9.894 8.433 15.563 13.982V53.585c0-1.254.325-2.439 1.056-3.364.662-.979 1.846-1.771 3.427-2.441 1.649-.655 3.761-1.117 6.338-1.44 2.577-.328 5.935-.465 10.022-.465 3.891 0 7.128.137 9.766.465 2.637.323 4.749.785 6.271 1.44 1.58.67 2.635 1.461 3.297 2.441.654.926.987 2.111.987 3.364v240.77h-.001zm-48.354-183.571c-6.932-8.775-13.594-15.441-19.985-20.053-6.398-4.68-13.063-6.997-19.994-6.997-6.329 0-11.733 1.587-16.352 4.756-4.553 3.16-8.246 7.388-11.019 12.66-2.774 5.274-4.818 11.147-6.201 17.672a101.145 101.145 0 00-1.984 19.996c0 7.193.602 14.24 1.718 21.17 1.194 6.863 3.04 12.994 5.737 18.268 2.646 5.282 6.141 9.508 10.496 12.734 4.416 3.241 9.963 4.818 16.619 4.818 3.367 0 6.604-.458 9.765-1.448 3.17-.929 6.399-2.507 9.697-4.683 3.236-2.25 6.664-5.083 10.091-8.641 3.494-3.504 7.325-7.85 11.413-13.072v-57.18z"
-    }), /* @__PURE__ */ React80.createElement("path", {
-      fill: "none",
-      strokeWidth: 49.859,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M34.5 703.843h96.845l51.151-146.426 56.134 146.426h87.82l59.601-530.531 58.111 530.531h108.67l58.109-530.531 59.603 530.531h87.825l56.134-146.426 51.154 146.426H962.5"
-    }));
-  }
-  var Multiplet_default = SvgMultiplet;
-
-  // build/lib-react-tsx/nmr/Overlay.tsx
   var React81 = __toModule(require_react());
-  function SvgOverlay3({
+  function SvgMultiplet({
     title,
     titleId,
     ...props
@@ -24428,38 +24446,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React81.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React81.createElement("path", {
+      d: "M235.272 294.355c0 1.324-.394 2.506-1.192 3.506-.792 1.045-2.045 1.907-3.883 2.635-1.786.722-4.225 1.245-7.325 1.639-3.101.405-7 .536-11.809.536-4.748 0-8.64-.131-11.739-.536-3.102-.393-5.61-.915-7.455-1.639-1.848-.727-3.171-1.59-3.891-2.635a6.276 6.276 0 01-1.057-3.506v-81.914c-4.611 4.276-9.104 7.968-13.526 11.14-4.345 3.168-8.769 5.743-13.123 7.717a62.421 62.421 0 01-13.519 4.355c-4.622.921-9.567 1.313-14.721 1.313-12.592 0-23.345-2.51-32.252-7.583-8.906-5.077-16.154-11.939-21.77-20.585-5.6-8.64-9.689-18.724-12.264-30.266-2.578-11.544-3.832-23.687-3.832-36.417 0-15.373 1.648-29.155 5.016-41.361 3.366-12.263 8.244-22.687 14.711-31.329 6.399-8.64 14.318-15.237 23.748-19.856 9.362-4.684 20.321-6.993 32.653-6.993 4.74 0 9.36.464 13.718 1.454 4.352.983 8.775 2.634 13.131 5.003 4.413 2.38 8.966 5.479 13.655 9.312 4.681 3.821 9.894 8.433 15.563 13.982V53.585c0-1.254.325-2.439 1.056-3.364.662-.979 1.846-1.771 3.427-2.441 1.649-.655 3.761-1.117 6.338-1.44 2.577-.328 5.935-.465 10.022-.465 3.891 0 7.128.137 9.766.465 2.637.323 4.749.785 6.271 1.44 1.58.67 2.635 1.461 3.297 2.441.654.926.987 2.111.987 3.364v240.77h-.001zm-48.354-183.571c-6.932-8.775-13.594-15.441-19.985-20.053-6.398-4.68-13.063-6.997-19.994-6.997-6.329 0-11.733 1.587-16.352 4.756-4.553 3.16-8.246 7.388-11.019 12.66-2.774 5.274-4.818 11.147-6.201 17.672a101.145 101.145 0 00-1.984 19.996c0 7.193.602 14.24 1.718 21.17 1.194 6.863 3.04 12.994 5.737 18.268 2.646 5.282 6.141 9.508 10.496 12.734 4.416 3.241 9.963 4.818 16.619 4.818 3.367 0 6.604-.458 9.765-1.448 3.17-.929 6.399-2.507 9.697-4.683 3.236-2.25 6.664-5.083 10.091-8.641 3.494-3.504 7.325-7.85 11.413-13.072v-57.18z"
+    }), /* @__PURE__ */ React81.createElement("path", {
       fill: "none",
-      strokeWidth: 60.777,
+      strokeWidth: 49.859,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M53.64 725.878h866.719"
-    }), /* @__PURE__ */ React81.createElement("g", {
-      fill: "none",
-      strokeWidth: 60.777,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
-    }, /* @__PURE__ */ React81.createElement("path", {
-      d: "M947.136 725.868l-97.782 74.059M849.354 651.824l97.782 74.044"
-    })), /* @__PURE__ */ React81.createElement("path", {
-      d: "M69.844 454.67c13.192 0 23.943-10.758 23.943-23.942 0-13.198-10.753-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.76 23.942 23.945 23.942zM286.296 454.67c13.193 0 23.945-10.758 23.945-23.942 0-13.198-10.751-23.947-23.945-23.947s-23.944 10.749-23.944 23.947c.001 13.182 10.751 23.942 23.944 23.942zM214.149 454.67c13.184 0 23.945-10.758 23.945-23.942 0-13.198-10.761-23.947-23.945-23.947-13.193 0-23.953 10.749-23.953 23.947 0 13.182 10.758 23.942 23.953 23.942zM141.999 454.67c13.187 0 23.945-10.758 23.945-23.942 0-13.198-10.758-23.947-23.945-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zM410.217 454.67c13.188 0 23.947-10.758 23.947-23.942 0-13.198-10.759-23.947-23.947-23.947-13.185 0-23.943 10.749-23.943 23.947 0 13.182 10.758 23.942 23.943 23.942zM626.66 454.67c13.193 0 23.943-10.758 23.943-23.942 0-13.198-10.75-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.761 23.942 23.945 23.942zM554.521 454.67c13.185 0 23.944-10.758 23.944-23.942 0-13.198-10.76-23.947-23.944-23.947-13.193 0-23.945 10.749-23.945 23.947-.001 13.182 10.751 23.942 23.945 23.942zM482.369 454.67c13.189 0 23.939-10.758 23.939-23.942 0-13.198-10.75-23.947-23.939-23.947-13.193 0-23.946 10.749-23.946 23.947-.002 13.182 10.752 23.942 23.946 23.942zM843.115 454.67c13.193 0 23.941-10.758 23.941-23.942 0-13.198-10.748-23.947-23.941-23.947-13.195 0-23.948 10.749-23.948 23.947 0 13.182 10.753 23.942 23.948 23.942zM770.964 454.67c13.189 0 23.944-10.758 23.944-23.942 0-13.198-10.757-23.947-23.944-23.947-13.185 0-23.944 10.749-23.944 23.947 0 13.182 10.76 23.942 23.944 23.942zM698.817 454.67c13.185 0 23.942-10.758 23.942-23.942 0-13.198-10.76-23.947-23.942-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zM347.174 99.073c13.195 0 23.945-10.751 23.945-23.945 0-13.183-10.75-23.945-23.945-23.945-13.182 0-23.942 10.762-23.942 23.945 0 13.193 10.76 23.945 23.942 23.945zM287.042 284.445c2.238-13.034 14.616-21.793 27.643-19.561 13.041 2.229 21.798 14.609 19.569 27.642-2.239 13.032-14.609 21.79-27.643 19.562-13.04-2.231-21.789-14.611-19.569-27.643zM274.875 355.559c2.23-13.034 14.609-21.793 27.643-19.562 13.03 2.238 21.79 14.61 19.56 27.643-2.24 13.042-14.609 21.79-27.643 19.56-13.038-2.229-21.789-14.608-19.56-27.641zM311.393 142.216c2.239-13.041 14.611-21.792 27.643-19.569 13.042 2.237 21.791 14.616 19.562 27.641-2.231 13.04-14.609 21.8-27.643 19.569-13.03-2.239-21.789-14.62-19.562-27.641zM299.221 213.33c2.238-13.033 14.606-21.801 27.642-19.561 13.039 2.231 21.79 14.601 19.569 27.643-2.238 13.03-14.617 21.787-27.649 19.56-13.035-2.231-21.795-14.61-19.562-27.642zM407.173 284.445c-2.238-13.034-14.618-21.793-27.639-19.561-13.042 2.229-21.801 14.609-19.572 27.642 2.239 13.032 14.609 21.79 27.643 19.562 13.041-2.231 21.791-14.611 19.568-27.643zM419.341 355.559c-2.23-13.034-14.609-21.793-27.642-19.562-13.031 2.238-21.792 14.61-19.561 27.643 2.238 13.042 14.609 21.79 27.642 19.56 13.041-2.229 21.794-14.608 19.561-27.641z"
-    }), /* @__PURE__ */ React81.createElement("path", {
-      d: "M382.821 142.216c-2.236-13.041-14.607-21.792-27.64-19.569-13.042 2.237-21.792 14.616-19.561 27.641 2.23 13.04 14.611 21.8 27.642 19.569 13.031-2.239 21.791-14.62 19.559-27.641zM394.999 213.33c-2.239-13.033-14.609-21.801-27.641-19.561-13.042 2.231-21.791 14.601-19.57 27.643 2.239 13.03 14.618 21.787 27.65 19.56 13.032-2.231 21.79-14.61 19.561-27.642z"
-    }), /* @__PURE__ */ React81.createElement("path", {
-      fill: "none",
-      strokeWidth: 49.224,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M72.744 560.332h372.673l61.025-358.899 62.127 358.899h271.338"
+      d: "M34.5 703.843h96.845l51.151-146.426 56.134 146.426h87.82l59.601-530.531 58.111 530.531h108.67l58.109-530.531 59.603 530.531h87.825l56.134-146.426 51.154 146.426H962.5"
     }));
   }
-  var Overlay_default3 = SvgOverlay3;
+  var Multiplet_default = SvgMultiplet;
 
-  // build/lib-react-tsx/nmr/Overlay3Aligned.tsx
+  // build/lib-react-tsx/nmr/Overlay.tsx
   var React82 = __toModule(require_react());
-  function SvgOverlay3Aligned({
+  function SvgOverlay3({
     title,
     titleId,
     ...props
@@ -24477,33 +24478,37 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React82.createElement("path", {
       fill: "none",
-      strokeWidth: 49.224,
+      strokeWidth: 60.777,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      strokeDasharray: "1,70",
-      d: "M29.127 687.461H334.8l61.025-399.9 61.127 399.9H795.29"
+      d: "M53.64 725.878h866.719"
+    }), /* @__PURE__ */ React82.createElement("g", {
+      fill: "none",
+      strokeWidth: 60.777,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926
+    }, /* @__PURE__ */ React82.createElement("path", {
+      d: "M947.136 725.868l-97.782 74.059M849.354 651.824l97.782 74.044"
+    })), /* @__PURE__ */ React82.createElement("path", {
+      d: "M69.844 454.67c13.192 0 23.943-10.758 23.943-23.942 0-13.198-10.753-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.76 23.942 23.945 23.942zM286.296 454.67c13.193 0 23.945-10.758 23.945-23.942 0-13.198-10.751-23.947-23.945-23.947s-23.944 10.749-23.944 23.947c.001 13.182 10.751 23.942 23.944 23.942zM214.149 454.67c13.184 0 23.945-10.758 23.945-23.942 0-13.198-10.761-23.947-23.945-23.947-13.193 0-23.953 10.749-23.953 23.947 0 13.182 10.758 23.942 23.953 23.942zM141.999 454.67c13.187 0 23.945-10.758 23.945-23.942 0-13.198-10.758-23.947-23.945-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zM410.217 454.67c13.188 0 23.947-10.758 23.947-23.942 0-13.198-10.759-23.947-23.947-23.947-13.185 0-23.943 10.749-23.943 23.947 0 13.182 10.758 23.942 23.943 23.942zM626.66 454.67c13.193 0 23.943-10.758 23.943-23.942 0-13.198-10.75-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.761 23.942 23.945 23.942zM554.521 454.67c13.185 0 23.944-10.758 23.944-23.942 0-13.198-10.76-23.947-23.944-23.947-13.193 0-23.945 10.749-23.945 23.947-.001 13.182 10.751 23.942 23.945 23.942zM482.369 454.67c13.189 0 23.939-10.758 23.939-23.942 0-13.198-10.75-23.947-23.939-23.947-13.193 0-23.946 10.749-23.946 23.947-.002 13.182 10.752 23.942 23.946 23.942zM843.115 454.67c13.193 0 23.941-10.758 23.941-23.942 0-13.198-10.748-23.947-23.941-23.947-13.195 0-23.948 10.749-23.948 23.947 0 13.182 10.753 23.942 23.948 23.942zM770.964 454.67c13.189 0 23.944-10.758 23.944-23.942 0-13.198-10.757-23.947-23.944-23.947-13.185 0-23.944 10.749-23.944 23.947 0 13.182 10.76 23.942 23.944 23.942zM698.817 454.67c13.185 0 23.942-10.758 23.942-23.942 0-13.198-10.76-23.947-23.942-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zM347.174 99.073c13.195 0 23.945-10.751 23.945-23.945 0-13.183-10.75-23.945-23.945-23.945-13.182 0-23.942 10.762-23.942 23.945 0 13.193 10.76 23.945 23.942 23.945zM287.042 284.445c2.238-13.034 14.616-21.793 27.643-19.561 13.041 2.229 21.798 14.609 19.569 27.642-2.239 13.032-14.609 21.79-27.643 19.562-13.04-2.231-21.789-14.611-19.569-27.643zM274.875 355.559c2.23-13.034 14.609-21.793 27.643-19.562 13.03 2.238 21.79 14.61 19.56 27.643-2.24 13.042-14.609 21.79-27.643 19.56-13.038-2.229-21.789-14.608-19.56-27.641zM311.393 142.216c2.239-13.041 14.611-21.792 27.643-19.569 13.042 2.237 21.791 14.616 19.562 27.641-2.231 13.04-14.609 21.8-27.643 19.569-13.03-2.239-21.789-14.62-19.562-27.641zM299.221 213.33c2.238-13.033 14.606-21.801 27.642-19.561 13.039 2.231 21.79 14.601 19.569 27.643-2.238 13.03-14.617 21.787-27.649 19.56-13.035-2.231-21.795-14.61-19.562-27.642zM407.173 284.445c-2.238-13.034-14.618-21.793-27.639-19.561-13.042 2.229-21.801 14.609-19.572 27.642 2.239 13.032 14.609 21.79 27.643 19.562 13.041-2.231 21.791-14.611 19.568-27.643zM419.341 355.559c-2.23-13.034-14.609-21.793-27.642-19.562-13.031 2.238-21.792 14.61-19.561 27.643 2.238 13.042 14.609 21.79 27.642 19.56 13.041-2.229 21.794-14.608 19.561-27.641z"
+    }), /* @__PURE__ */ React82.createElement("path", {
+      d: "M382.821 142.216c-2.236-13.041-14.607-21.792-27.64-19.569-13.042 2.237-21.792 14.616-19.561 27.641 2.23 13.04 14.611 21.8 27.642 19.569 13.031-2.239 21.791-14.62 19.559-27.641zM394.999 213.33c-2.239-13.033-14.609-21.801-27.641-19.561-13.042 2.231-21.791 14.601-19.57 27.643 2.239 13.03 14.618 21.787 27.65 19.56 13.032-2.231 21.79-14.61 19.561-27.642z"
     }), /* @__PURE__ */ React82.createElement("path", {
       fill: "none",
       strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M204.063 686.396h371.673l61.024-399.898 63.127 399.898h271.339"
-    }), /* @__PURE__ */ React82.createElement("path", {
-      fill: "none",
-      strokeWidth: 49.224,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      strokeDasharray: "50,30",
-      d: "M121.18 688.116c60.181 0 342.086.408 342.086.408l61.025-399.899 62.127 399.899H917.2"
+      d: "M72.744 560.332h372.673l61.025-358.899 62.127 358.899h271.338"
     }));
   }
-  var Overlay3Aligned_default = SvgOverlay3Aligned;
+  var Overlay_default3 = SvgOverlay3;
 
-  // build/lib-react-tsx/nmr/Overlay3.tsx
+  // build/lib-react-tsx/nmr/Overlay3Aligned.tsx
   var React83 = __toModule(require_react());
-  function SvgOverlay32({
+  function SvgOverlay3Aligned({
     title,
     titleId,
     ...props
@@ -24526,28 +24531,28 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       strokeDasharray: "1,70",
-      d: "M29.127 465.651H334.8l61.025-399.899 61.127 399.899H795.29"
+      d: "M29.127 687.461H334.8l61.025-399.9 61.127 399.9H795.29"
     }), /* @__PURE__ */ React83.createElement("path", {
       fill: "none",
       strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M204.063 911.396h371.673l61.025-399.898 63.127 399.898h271.338"
+      d: "M204.063 686.396h371.673l61.024-399.898 63.127 399.898h271.339"
     }), /* @__PURE__ */ React83.createElement("path", {
       fill: "none",
       strokeWidth: 49.224,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       strokeDasharray: "50,30",
-      d: "M121.18 688.116c60.181 0 342.087.408 342.087.408l61.025-399.899 62.127 399.899h330.782"
+      d: "M121.18 688.116c60.181 0 342.086.408 342.086.408l61.025-399.899 62.127 399.899H917.2"
     }));
   }
-  var Overlay3_default = SvgOverlay32;
+  var Overlay3Aligned_default = SvgOverlay3Aligned;
 
-  // build/lib-react-tsx/nmr/PeakPicking.tsx
+  // build/lib-react-tsx/nmr/Overlay3.tsx
   var React84 = __toModule(require_react());
-  function SvgPeakPicking({
+  function SvgOverlay32({
     title,
     titleId,
     ...props
@@ -24563,31 +24568,35 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React84.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React84.createElement("g", {
+    }, title) : null, /* @__PURE__ */ React84.createElement("path", {
       fill: "none",
+      strokeWidth: 49.224,
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
-    }, /* @__PURE__ */ React84.createElement("path", {
-      strokeWidth: 47.417,
-      d: "M54.005 697.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 214.67l59.528 483.185h176.733"
+      strokeMiterlimit: 22.926,
+      strokeDasharray: "1,70",
+      d: "M29.127 465.651H334.8l61.025-399.899 61.127 399.899H795.29"
     }), /* @__PURE__ */ React84.createElement("path", {
-      strokeWidth: 41.819,
-      d: "M337.901 171.258v80.862M715.664 47.484v80.86"
+      fill: "none",
+      strokeWidth: 49.224,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M204.063 911.396h371.673l61.025-399.898 63.127 399.898h271.338"
     }), /* @__PURE__ */ React84.createElement("path", {
-      strokeWidth: 58.546,
-      d: "M54.005 863.579h834.889"
-    }), /* @__PURE__ */ React84.createElement("g", {
-      strokeWidth: 58.546
-    }, /* @__PURE__ */ React84.createElement("path", {
-      d: "M914.688 863.572l-94.193 71.336M820.495 792.244l94.193 71.328"
-    }))));
+      fill: "none",
+      strokeWidth: 49.224,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      strokeDasharray: "50,30",
+      d: "M121.18 688.116c60.181 0 342.087.408 342.087.408l61.025-399.899 62.127 399.899h330.782"
+    }));
   }
-  var PeakPicking_default = SvgPeakPicking;
+  var Overlay3_default = SvgOverlay32;
 
-  // build/lib-react-tsx/nmr/PeakPicking2.tsx
+  // build/lib-react-tsx/nmr/PeakPicking.tsx
   var React85 = __toModule(require_react());
-  function SvgPeakPicking2({
+  function SvgPeakPicking({
     title,
     titleId,
     ...props
@@ -24603,25 +24612,31 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React85.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React85.createElement("path", {
+    }, title) : null, /* @__PURE__ */ React85.createElement("g", {
       fill: "none",
-      strokeWidth: 39.653,
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      d: "M43.556 943.061c64.942-.561 18.942-.561 145.707.133 118.237-1.694 85.253-402.71 94.11-480.694 13.218 120.809-19.692 457.958 120.678 480.692 32.647 5.286 156.088 7.401 191.512 0C734.876 914.378 696.282 608.309 709.5 487.5c8.724 77.984-17 429 113 457 87.151 1.308 27.312 0 129-1.439M244.5 106.5c79 59 397 144 425 190s26 82 26 82"
+      strokeMiterlimit: 22.926
+    }, /* @__PURE__ */ React85.createElement("path", {
+      strokeWidth: 47.417,
+      d: "M54.005 697.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 214.67l59.528 483.185h176.733"
     }), /* @__PURE__ */ React85.createElement("path", {
-      fill: "none",
-      strokeWidth: 39.653,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      d: "M239.5 114.5c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.522 9.27 85.522 9.27"
-    }));
+      strokeWidth: 41.819,
+      d: "M337.901 171.258v80.862M715.664 47.484v80.86"
+    }), /* @__PURE__ */ React85.createElement("path", {
+      strokeWidth: 58.546,
+      d: "M54.005 863.579h834.889"
+    }), /* @__PURE__ */ React85.createElement("g", {
+      strokeWidth: 58.546
+    }, /* @__PURE__ */ React85.createElement("path", {
+      d: "M914.688 863.572l-94.193 71.336M820.495 792.244l94.193 71.328"
+    }))));
   }
-  var PeakPicking2_default = SvgPeakPicking2;
+  var PeakPicking_default = SvgPeakPicking;
 
-  // build/lib-react-tsx/nmr/Peaks.tsx
+  // build/lib-react-tsx/nmr/PeakPicking2.tsx
   var React86 = __toModule(require_react());
-  function SvgPeaks({
+  function SvgPeakPicking2({
     title,
     titleId,
     ...props
@@ -24637,24 +24652,25 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React86.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React86.createElement("g", {
-      strokeMiterlimit: 22.926,
-      strokeLinejoin: "round",
+    }, title) : null, /* @__PURE__ */ React86.createElement("path", {
+      fill: "none",
+      strokeWidth: 39.653,
       strokeLinecap: "round",
-      fill: "none"
-    }, /* @__PURE__ */ React86.createElement("path", {
-      strokeWidth: 47.417,
-      d: "M54.005 837.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 354.67l59.528 483.185h176.733"
+      strokeLinejoin: "round",
+      d: "M43.556 943.061c64.942-.561 18.942-.561 145.707.133 118.237-1.694 85.253-402.71 94.11-480.694 13.218 120.809-19.692 457.958 120.678 480.692 32.647 5.286 156.088 7.401 191.512 0C734.876 914.378 696.282 608.309 709.5 487.5c8.724 77.984-17 429 113 457 87.151 1.308 27.312 0 129-1.439M244.5 106.5c79 59 397 144 425 190s26 82 26 82"
     }), /* @__PURE__ */ React86.createElement("path", {
-      strokeWidth: 41.819,
-      d: "M337.901 251.258v80.862M715.664 127.484v80.86"
-    })));
+      fill: "none",
+      strokeWidth: 39.653,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      d: "M239.5 114.5c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.522 9.27 85.522 9.27"
+    }));
   }
-  var Peaks_default = SvgPeaks;
+  var PeakPicking2_default = SvgPeakPicking2;
 
-  // build/lib-react-tsx/nmr/PhaseCorr.tsx
+  // build/lib-react-tsx/nmr/Peaks.tsx
   var React87 = __toModule(require_react());
-  function SvgPhaseCorr({
+  function SvgPeaks({
     title,
     titleId,
     ...props
@@ -24670,49 +24686,24 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React87.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React87.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
+    }, title) : null, /* @__PURE__ */ React87.createElement("g", {
+      strokeMiterlimit: 22.926,
+      strokeLinejoin: "round",
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M23.903 784.146L176.5 781.5l34-26 15-96 51-629 41 751 18 185 24-113 17-54 28-13 65-3 504 1.447"
+      fill: "none"
+    }, /* @__PURE__ */ React87.createElement("path", {
+      strokeWidth: 47.417,
+      d: "M54.005 837.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 354.67l59.528 483.185h176.733"
     }), /* @__PURE__ */ React87.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      strokeDasharray: "25,25",
-      d: "M534.5 345.5c80 1 126 12 182 54"
-    }), /* @__PURE__ */ React87.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M667.5 102.5c106.948-3.868 176.044 18.818 258 82"
-    }), /* @__PURE__ */ React87.createElement("path", {
-      d: "M736.882 5.431l-30.309 94.326 37.043 91.894c-44.108-35.725-114.376-68.437-170.73-87.059 54.862-22.636 122.583-60.345 163.996-99.161z"
-    }), /* @__PURE__ */ React87.createElement("path", {
-      fill: "none",
-      strokeWidth: 50,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      strokeDasharray: "25,25",
-      d: "M574.5 617.5L885 197"
-    }), /* @__PURE__ */ React87.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M549.5 654.5v-609"
-    }));
+      strokeWidth: 41.819,
+      d: "M337.901 251.258v80.862M715.664 127.484v80.86"
+    })));
   }
-  var PhaseCorr_default = SvgPhaseCorr;
+  var Peaks_default = SvgPeaks;
 
-  // build/lib-react-tsx/nmr/PhaseCorrection.tsx
+  // build/lib-react-tsx/nmr/PhaseCorr.tsx
   var React88 = __toModule(require_react());
-  function SvgPhaseCorrection({
+  function SvgPhaseCorr({
     title,
     titleId,
     ...props
@@ -24734,38 +24725,43 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M23.903 784.146l153.596.09L225.5 712.5l52-683 37 737L339 970.348l63-186 134.26.599h223.575"
-    }), /* @__PURE__ */ React88.createElement("circle", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      cx: 577.5,
-      cy: 464.5,
-      r: 194.5
+      d: "M23.903 784.146L176.5 781.5l34-26 15-96 51-629 41 751 18 185 24-113 17-54 28-13 65-3 504 1.447"
     }), /* @__PURE__ */ React88.createElement("path", {
       fill: "none",
       strokeWidth: 48.987,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M824.5 193.5c64 62 84 158 82 265"
+      strokeDasharray: "25,25",
+      d: "M534.5 345.5c80 1 126 12 182 54"
     }), /* @__PURE__ */ React88.createElement("path", {
-      d: "M904.291 576.736c-19.604-56.021-53.537-125.708-90.025-169.186l92.525 35.434 93.783-31.95c-38.088 42.082-74.609 110.452-96.283 165.702z"
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M667.5 102.5c106.948-3.868 176.044 18.818 258 82"
+    }), /* @__PURE__ */ React88.createElement("path", {
+      d: "M736.882 5.431l-30.309 94.326 37.043 91.894c-44.108-35.725-114.376-68.437-170.73-87.059 54.862-22.636 122.583-60.345 163.996-99.161z"
     }), /* @__PURE__ */ React88.createElement("path", {
       fill: "none",
       strokeWidth: 50,
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
       strokeDasharray: "25,25",
-      d: "M575.5 478.5L809 245"
+      d: "M574.5 617.5L885 197"
+    }), /* @__PURE__ */ React88.createElement("path", {
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M549.5 654.5v-609"
     }));
   }
-  var PhaseCorrection_default = SvgPhaseCorrection;
+  var PhaseCorr_default = SvgPhaseCorr;
 
-  // build/lib-react-tsx/nmr/RangePicking.tsx
+  // build/lib-react-tsx/nmr/PhaseCorrection.tsx
   var React89 = __toModule(require_react());
-  function SvgRangePicking({
+  function SvgPhaseCorrection({
     title,
     titleId,
     ...props
@@ -24783,25 +24779,42 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React89.createElement("path", {
       fill: "none",
-      strokeWidth: 39.653,
+      strokeWidth: 48.987,
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      d: "M43.556 943.061c64.939-.561 128.939-.561 255.707.136C417.5 941.5 384.515 640.484 393.373 562.5c13.218 120.809-19.69 357.958 120.678 380.692 23.449.308 21.449-.692 41.512 0C694.876 914.378 656.282 682.309 669.5 561.5c8.724 77.984-17 355 113 383 87.151 1.308 57.312 0 159-1.439M67.5 24.5c79 59 397 144 425 190s26 82 26 82M62.5 32.5c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.521 9.27 85.521 9.27"
-    }), /* @__PURE__ */ React89.createElement("path", {
-      d: "M609.5 329.5l31-168c5.5-29 9-54.5 12-75.5H703l-5.5 42.5h1c22.5-32.5 53-48 85-48 38 0 55 24.5 57 50 22-33 52.5-49.5 86.5-50 33 0 59 21.5 59 65 0 10.5-2 28.5-4 41.5l-26.5 142.5H899l25-136c2-9.5 3.5-21 3.5-30.5 0-21-8.5-35-29.5-35-27 0-56.5 33.5-66 85l-21.5 116.5H754l26.5-138c1.5-10 3-19.5 3-28.5 0-18-5.5-35-29.5-35-27 0-58 37-67 86.5l-21 115h-56.5z"
+      strokeMiterlimit: 22.926,
+      d: "M23.903 784.146l153.596.09L225.5 712.5l52-683 37 737L339 970.348l63-186 134.26.599h223.575"
+    }), /* @__PURE__ */ React89.createElement("circle", {
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      cx: 577.5,
+      cy: 464.5,
+      r: 194.5
     }), /* @__PURE__ */ React89.createElement("path", {
       fill: "none",
-      strokeWidth: 39.653,
-      strokeLinecap: "round",
+      strokeWidth: 48.987,
       strokeLinejoin: "round",
-      d: "M267.5 635.5v-152h527v151"
+      strokeMiterlimit: 22.926,
+      d: "M824.5 193.5c64 62 84 158 82 265"
+    }), /* @__PURE__ */ React89.createElement("path", {
+      d: "M904.291 576.736c-19.604-56.021-53.537-125.708-90.025-169.186l92.525 35.434 93.783-31.95c-38.088 42.082-74.609 110.452-96.283 165.702z"
+    }), /* @__PURE__ */ React89.createElement("path", {
+      fill: "none",
+      strokeWidth: 50,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      strokeDasharray: "25,25",
+      d: "M575.5 478.5L809 245"
     }));
   }
-  var RangePicking_default = SvgRangePicking;
+  var PhaseCorrection_default = SvgPhaseCorrection;
 
-  // build/lib-react-tsx/nmr/RealImag.tsx
+  // build/lib-react-tsx/nmr/RangePicking.tsx
   var React90 = __toModule(require_react());
-  function SvgRealImag({
+  function SvgRangePicking({
     title,
     titleId,
     ...props
@@ -24822,34 +24835,22 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeWidth: 39.653,
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      d: "M38.5 28.5v934h933"
-    }), /* @__PURE__ */ React90.createElement("text", {
-      transform: "translate(467.5 896.5)",
-      fontFamily: "'MyriadPro-Regular'",
-      fontSize: 500
-    }, "Re"), /* @__PURE__ */ React90.createElement("text", {
-      transform: "translate(57.5 354.5)",
-      fontFamily: "'MyriadPro-Regular'",
-      fontSize: 500
-    }, "Im"), /* @__PURE__ */ React90.createElement("path", {
-      fill: "none",
-      strokeWidth: 50,
-      d: "M763.5 233.5c79 0 196 41 196 211"
+      d: "M43.556 943.061c64.939-.561 128.939-.561 255.707.136C417.5 941.5 384.515 640.484 393.373 562.5c13.218 120.809-19.69 357.958 120.678 380.692 23.449.308 21.449-.692 41.512 0C694.876 914.378 656.282 682.309 669.5 561.5c8.724 77.984-17 355 113 383 87.151 1.308 57.312 0 159-1.439M67.5 24.5c79 59 397 144 425 190s26 82 26 82M62.5 32.5c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.521 9.27 85.521 9.27"
     }), /* @__PURE__ */ React90.createElement("path", {
-      d: "M595.297 237.352c85.194-31.611 190.897-85.547 256.406-142.646l-51.592 142.646 51.592 142.646c-65.508-57.1-171.211-111.052-256.406-142.646z"
-    }), /* @__PURE__ */ React90.createElement("g", null, /* @__PURE__ */ React90.createElement("path", {
-      fill: "none",
-      strokeWidth: 50,
-      d: "M309.5 729.5c-79 0-196-41-196-211"
+      d: "M609.5 329.5l31-168c5.5-29 9-54.5 12-75.5H703l-5.5 42.5h1c22.5-32.5 53-48 85-48 38 0 55 24.5 57 50 22-33 52.5-49.5 86.5-50 33 0 59 21.5 59 65 0 10.5-2 28.5-4 41.5l-26.5 142.5H899l25-136c2-9.5 3.5-21 3.5-30.5 0-21-8.5-35-29.5-35-27 0-56.5 33.5-66 85l-21.5 116.5H754l26.5-138c1.5-10 3-19.5 3-28.5 0-18-5.5-35-29.5-35-27 0-58 37-67 86.5l-21 115h-56.5z"
     }), /* @__PURE__ */ React90.createElement("path", {
-      d: "M475.703 728.647c-85.194 31.611-190.897 85.547-256.405 142.647l51.591-142.647-51.592-142.646c65.507 57.1 171.211 111.051 256.406 142.646z"
-    })));
+      fill: "none",
+      strokeWidth: 39.653,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      d: "M267.5 635.5v-152h527v151"
+    }));
   }
-  var RealImag_default = SvgRealImag;
+  var RangePicking_default = SvgRangePicking;
 
-  // build/lib-react-tsx/nmr/Reference.tsx
+  // build/lib-react-tsx/nmr/RealImag.tsx
   var React91 = __toModule(require_react());
-  function SvgReference({
+  function SvgRealImag({
     title,
     titleId,
     ...props
@@ -24867,40 +24868,44 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: titleId
     }, title) : null, /* @__PURE__ */ React91.createElement("path", {
       fill: "none",
-      strokeWidth: 47.417,
+      strokeWidth: 39.653,
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M54.005 897.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 414.67l59.528 483.185h176.733"
-    }), /* @__PURE__ */ React91.createElement("path", {
+      d: "M38.5 28.5v934h933"
+    }), /* @__PURE__ */ React91.createElement("text", {
+      transform: "translate(467.5 896.5)",
+      fontFamily: "'MyriadPro-Regular'",
+      fontSize: 500
+    }, "Re"), /* @__PURE__ */ React91.createElement("text", {
+      transform: "translate(57.5 354.5)",
+      fontFamily: "'MyriadPro-Regular'",
+      fontSize: 500
+    }, "Im"), /* @__PURE__ */ React91.createElement("path", {
       fill: "none",
-      strokeWidth: 41.819,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M715.664 247.484v80.86"
-    }), /* @__PURE__ */ React91.createElement("g", {
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 400,
-      fontSize: 266.667,
-      fontFamily: "sans-serif",
-      stroke: "none"
-    }, /* @__PURE__ */ React91.createElement("path", {
-      d: "M29.136 55.701h154.818v35.807q-20.183 18.23-33.724 39.454-16.407 25.78-25.912 57.422-7.552 24.609-10.156 58.203H61.297q6.25-46.745 19.662-78.386 13.411-31.64 42.448-67.708H29.136zM211.558 193.462h56.64v53.125h-56.64zM450.62 246.587H291.507q2.734-23.568 16.536-44.271 13.933-20.834 52.084-49.089 23.307-17.318 29.817-26.302 6.51-8.984 6.51-17.057 0-8.724-6.51-14.844-6.38-6.25-16.145-6.25-10.157 0-16.667 6.38-6.38 6.38-8.594 22.526l-53.125-4.297q3.125-22.395 11.458-34.895 8.334-12.63 23.438-19.271 15.234-6.771 42.057-6.771 27.995 0 43.49 6.38 15.625 6.38 24.479 19.662 8.984 13.15 8.984 29.557 0 17.448-10.286 33.333-10.156 15.886-37.11 34.896-16.015 11.068-21.484 15.495-5.338 4.427-12.63 11.588h82.813zM474.449 55.701h154.818v35.807q-20.183 18.23-33.724 39.454-16.407 25.78-25.912 57.422-7.552 24.609-10.156 58.203H506.61q6.25-46.745 19.662-78.386 13.411-31.64 42.448-67.708h-94.271z"
+      strokeWidth: 50,
+      d: "M763.5 233.5c79 0 196 41 196 211"
+    }), /* @__PURE__ */ React91.createElement("path", {
+      d: "M595.297 237.352c85.194-31.611 190.897-85.547 256.406-142.646l-51.592 142.646 51.592 142.646c-65.508-57.1-171.211-111.052-256.406-142.646z"
+    }), /* @__PURE__ */ React91.createElement("g", null, /* @__PURE__ */ React91.createElement("path", {
+      fill: "none",
+      strokeWidth: 50,
+      d: "M309.5 729.5c-79 0-196-41-196-211"
+    }), /* @__PURE__ */ React91.createElement("path", {
+      d: "M475.703 728.647c-85.194 31.611-190.897 85.547-256.405 142.647l51.591-142.647-51.592-142.646c65.507 57.1 171.211 111.051 256.406 142.646z"
     })));
   }
-  var Reference_default = SvgReference;
+  var RealImag_default = SvgRealImag;
 
-  // build/lib-react-tsx/nmr/ResetScale.tsx
+  // build/lib-react-tsx/nmr/Reference.tsx
   var React92 = __toModule(require_react());
-  function SvgResetScale({
+  function SvgReference({
     title,
     titleId,
     ...props
   }) {
     return /* @__PURE__ */ React92.createElement("svg", {
+      stroke: "currentColor",
+      fill: "currentColor",
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
@@ -24909,18 +24914,37 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React92.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React92.createElement("g", {
-      "data-name": "Group 1"
+    }, title) : null, /* @__PURE__ */ React92.createElement("path", {
+      fill: "none",
+      strokeWidth: 47.417,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M54.005 897.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 414.67l59.528 483.185h176.733"
+    }), /* @__PURE__ */ React92.createElement("path", {
+      fill: "none",
+      strokeWidth: 41.819,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M715.664 247.484v80.86"
+    }), /* @__PURE__ */ React92.createElement("g", {
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 400,
+      fontSize: 266.667,
+      fontFamily: "sans-serif",
+      stroke: "none"
     }, /* @__PURE__ */ React92.createElement("path", {
-      "data-name": "Union 1",
-      d: "M448.722 988.7l-285.93-242.377c-17.662-14.972-17.662-38.984 0-53.956 8.665-7.627 20-11.3 31.66-11.3a49.672 49.672 0 0131.658 11.3l209.282 177.4v-338.53h-398.4S.068 527.554.005 489.846s36.987-40.427 36.987-40.427h398.4V130.227l-209.281 177.4c-17.329 14.689-45.989 14.689-63.319 0-17.662-14.972-17.662-38.984 0-53.956l285.93-242.377c8.331-7.345 19.662-11.3 31.659-11.3a49.907 49.907 0 0131.659 11.3l285.93 242.382c17.662 14.972 17.662 38.984 0 53.956-8.665 7.627-20 11.3-31.659 11.3a49.674 49.674 0 01-31.659-11.3L525.37 130.227v319.191h441.847S1000 454.846 1000 489.845s-32.783 41.391-32.783 41.391H525.37v338.535l209.282-177.4c17.329-14.689 45.989-14.689 63.318 0 17.662 14.972 17.662 38.984 0 53.956L512.04 988.7c-8.331 7.344-19.662 11.3-31.659 11.3a49.914 49.914 0 01-31.659-11.3z"
+      d: "M29.136 55.701h154.818v35.807q-20.183 18.23-33.724 39.454-16.407 25.78-25.912 57.422-7.552 24.609-10.156 58.203H61.297q6.25-46.745 19.662-78.386 13.411-31.64 42.448-67.708H29.136zM211.558 193.462h56.64v53.125h-56.64zM450.62 246.587H291.507q2.734-23.568 16.536-44.271 13.933-20.834 52.084-49.089 23.307-17.318 29.817-26.302 6.51-8.984 6.51-17.057 0-8.724-6.51-14.844-6.38-6.25-16.145-6.25-10.157 0-16.667 6.38-6.38 6.38-8.594 22.526l-53.125-4.297q3.125-22.395 11.458-34.895 8.334-12.63 23.438-19.271 15.234-6.771 42.057-6.771 27.995 0 43.49 6.38 15.625 6.38 24.479 19.662 8.984 13.15 8.984 29.557 0 17.448-10.286 33.333-10.156 15.886-37.11 34.896-16.015 11.068-21.484 15.495-5.338 4.427-12.63 11.588h82.813zM474.449 55.701h154.818v35.807q-20.183 18.23-33.724 39.454-16.407 25.78-25.912 57.422-7.552 24.609-10.156 58.203H506.61q6.25-46.745 19.662-78.386 13.411-31.64 42.448-67.708h-94.271z"
     })));
   }
-  var ResetScale_default = SvgResetScale;
+  var Reference_default = SvgReference;
 
-  // build/lib-react-tsx/nmr/SameTop.tsx
+  // build/lib-react-tsx/nmr/ResetScale.tsx
   var React93 = __toModule(require_react());
-  function SvgSameTop({
+  function SvgResetScale({
     title,
     titleId,
     ...props
@@ -24937,25 +24961,20 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title) : null, /* @__PURE__ */ React93.createElement("g", {
       "data-name": "Group 1"
     }, /* @__PURE__ */ React93.createElement("path", {
-      "data-name": "Path 1",
-      d: "M967.216 0H36.987S-.063 2.979 0 44.3s36.987 45.35 36.987 45.35h930.229s32.783-7 32.783-45.352S967.216 0 967.216 0z"
-    }), /* @__PURE__ */ React93.createElement("path", {
-      "data-name": "Path 2",
-      d: "M235.001 515.329l218.112-174.663v621.787c0 20.859 20.839 37.547 46.887 37.547s46.887-16.687 46.887-37.547V340.666l218.111 174.663c9.03 7.231 21.186 11.125 32.995 11.125 12.156 0 23.964-3.616 32.995-11.125 18.407-14.741 18.407-38.381 0-53.122L532.994 223.575c-8.683-6.953-20.839-11.125-32.995-11.125-12.5 0-24.312 3.894-32.995 11.125L169.012 462.207c-18.408 14.741-18.408 38.381 0 53.122 18.06 14.463 47.929 14.463 65.989 0z"
+      "data-name": "Union 1",
+      d: "M448.722 988.7l-285.93-242.377c-17.662-14.972-17.662-38.984 0-53.956 8.665-7.627 20-11.3 31.66-11.3a49.672 49.672 0 0131.658 11.3l209.282 177.4v-338.53h-398.4S.068 527.554.005 489.846s36.987-40.427 36.987-40.427h398.4V130.227l-209.281 177.4c-17.329 14.689-45.989 14.689-63.319 0-17.662-14.972-17.662-38.984 0-53.956l285.93-242.377c8.331-7.345 19.662-11.3 31.659-11.3a49.907 49.907 0 0131.659 11.3l285.93 242.382c17.662 14.972 17.662 38.984 0 53.956-8.665 7.627-20 11.3-31.659 11.3a49.674 49.674 0 01-31.659-11.3L525.37 130.227v319.191h441.847S1000 454.846 1000 489.845s-32.783 41.391-32.783 41.391H525.37v338.535l209.282-177.4c17.329-14.689 45.989-14.689 63.318 0 17.662 14.972 17.662 38.984 0 53.956L512.04 988.7c-8.331 7.344-19.662 11.3-31.659 11.3a49.914 49.914 0 01-31.659-11.3z"
     })));
   }
-  var SameTop_default = SvgSameTop;
+  var ResetScale_default = SvgResetScale;
 
-  // build/lib-react-tsx/nmr/Search.tsx
+  // build/lib-react-tsx/nmr/SameTop.tsx
   var React94 = __toModule(require_react());
-  function SvgSearch({
+  function SvgSameTop({
     title,
     titleId,
     ...props
   }) {
     return /* @__PURE__ */ React94.createElement("svg", {
-      stroke: "currentColor",
-      fill: "currentColor",
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
@@ -24965,29 +24984,20 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React94.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React94.createElement("g", {
-      fill: "none",
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
+      "data-name": "Group 1"
     }, /* @__PURE__ */ React94.createElement("path", {
-      strokeWidth: 46.91,
-      d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
+      "data-name": "Path 1",
+      d: "M967.216 0H36.987S-.063 2.979 0 44.3s36.987 45.35 36.987 45.35h930.229s32.783-7 32.783-45.352S967.216 0 967.216 0z"
     }), /* @__PURE__ */ React94.createElement("path", {
-      strokeWidth: 46.908,
-      d: "M897.765 890.229l-235.87-315.79-82.569 61.672 235.871 315.791M815.197 951.902c12.543 16.792 36.556 20.275 53.355 7.72M868.553 959.624l21.484-16.054M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"
-    }), /* @__PURE__ */ React94.createElement("path", {
-      strokeWidth: 21.586,
-      d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"
-    }), /* @__PURE__ */ React94.createElement("path", {
-      strokeWidth: 40.745,
-      d: "M228.175 400.361h228.784l43.774-204.311 47.223 204.311h50.245"
+      "data-name": "Path 2",
+      d: "M235.001 515.329l218.112-174.663v621.787c0 20.859 20.839 37.547 46.887 37.547s46.887-16.687 46.887-37.547V340.666l218.111 174.663c9.03 7.231 21.186 11.125 32.995 11.125 12.156 0 23.964-3.616 32.995-11.125 18.407-14.741 18.407-38.381 0-53.122L532.994 223.575c-8.683-6.953-20.839-11.125-32.995-11.125-12.5 0-24.312 3.894-32.995 11.125L169.012 462.207c-18.408 14.741-18.408 38.381 0 53.122 18.06 14.463 47.929 14.463 65.989 0z"
     })));
   }
-  var Search_default = SvgSearch;
+  var SameTop_default = SvgSameTop;
 
-  // build/lib-react-tsx/nmr/Searchq.tsx
+  // build/lib-react-tsx/nmr/Search.tsx
   var React95 = __toModule(require_react());
-  function SvgSearchq({
+  function SvgSearch({
     title,
     titleId,
     ...props
@@ -25013,18 +25023,20 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
     }), /* @__PURE__ */ React95.createElement("path", {
       strokeWidth: 46.908,
-      d: "M897.764 890.229l-235.87-315.79-82.568 61.672 235.871 315.791M815.197 951.902c21.303 26.598 23.303 26.598 53.354 7.72M868.552 959.624l21.485-16.054M890.037 943.57c29.463-22.07 29.463-23.07 7.728-53.342"
-    })), /* @__PURE__ */ React95.createElement("text", {
-      transform: "translate(258.5 538.5)",
-      fontFamily: "'Helvetica'",
-      fontSize: 550
-    }, "?"));
+      d: "M897.765 890.229l-235.87-315.79-82.569 61.672 235.871 315.791M815.197 951.902c12.543 16.792 36.556 20.275 53.355 7.72M868.553 959.624l21.484-16.054M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"
+    }), /* @__PURE__ */ React95.createElement("path", {
+      strokeWidth: 21.586,
+      d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"
+    }), /* @__PURE__ */ React95.createElement("path", {
+      strokeWidth: 40.745,
+      d: "M228.175 400.361h228.784l43.774-204.311 47.223 204.311h50.245"
+    })));
   }
-  var Searchq_default = SvgSearchq;
+  var Search_default = SvgSearch;
 
-  // build/lib-react-tsx/nmr/Signals.tsx
+  // build/lib-react-tsx/nmr/Searchq.tsx
   var React96 = __toModule(require_react());
-  function SvgSignals({
+  function SvgSearchq({
     title,
     titleId,
     ...props
@@ -25040,19 +25052,28 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React96.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React96.createElement("path", {
-      d: "M43.556 773.06c99 12.954 89.087-59.214 105.609-151.341 21.809 85.65 13.614 146.848 80.099 151.474 112.614 7.798 85.254-471.209 94.11-549.193 13.217 120.81-19.695 526.458 120.676 549.193 32.648 5.287 66.089 7.402 101.512 0C684.876 744.378 653.153 344.809 666.37 224c8.724 77.984-18.637 556.991 93.977 549.193 66.617-4.626 58.29-65.824 80.1-151.474 16.521 92.127 6.608 164.295 105.74 151.342",
+    }, title) : null, /* @__PURE__ */ React96.createElement("g", {
       fill: "none",
-      strokeWidth: 39.653,
       strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }));
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926
+    }, /* @__PURE__ */ React96.createElement("path", {
+      strokeWidth: 46.91,
+      d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
+    }), /* @__PURE__ */ React96.createElement("path", {
+      strokeWidth: 46.908,
+      d: "M897.764 890.229l-235.87-315.79-82.568 61.672 235.871 315.791M815.197 951.902c21.303 26.598 23.303 26.598 53.354 7.72M868.552 959.624l21.485-16.054M890.037 943.57c29.463-22.07 29.463-23.07 7.728-53.342"
+    })), /* @__PURE__ */ React96.createElement("text", {
+      transform: "translate(258.5 538.5)",
+      fontFamily: "'Helvetica'",
+      fontSize: 550
+    }, "?"));
   }
-  var Signals_default = SvgSignals;
+  var Searchq_default = SvgSearchq;
 
-  // build/lib-react-tsx/nmr/Simulator.tsx
+  // build/lib-react-tsx/nmr/Signals.tsx
   var React97 = __toModule(require_react());
-  function SvgSimulator({
+  function SvgSignals({
     title,
     titleId,
     ...props
@@ -25069,21 +25090,18 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React97.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React97.createElement("path", {
-      d: "M493.451 251.114c1.298 3.96 2.149 7.125 2.488 9.442.28 2.317-.12 4.07-1.359 5.203-1.19 1.185-3.337 1.869-6.446 2.149-3.11.28-7.346.449-12.775.449-5.596 0-10.006-.107-13.174-.281-3.109-.168-5.538-.506-7.178-.957-1.639-.512-2.828-1.189-3.509-2.095-.621-.906-1.188-2.036-1.64-3.505l-14.416-43.026h-80.506l-13.574 41.898c-.449 1.524-1.02 2.821-1.749 3.898-.681 1.017-1.87 1.862-3.45 2.49-1.581.562-3.9 1.014-6.789 1.238-2.937.231-6.785.34-11.527.34-5.096 0-9.055-.169-11.934-.51-2.879-.334-4.866-1.125-5.938-2.426-1.131-1.242-1.53-3.059-1.19-5.371.34-2.317 1.19-5.428 2.498-9.272L367.37 60.643c.68-1.865 1.41-3.396 2.317-4.578.909-1.133 2.32-2.038 4.24-2.658 1.918-.564 4.585-.962 8.026-1.133 3.389-.168 7.975-.28 13.575-.28 6.496 0 11.696.11 15.604.28 3.84.169 6.838.567 8.987 1.133 2.148.62 3.738 1.526 4.64 2.773.958 1.184 1.749 2.825 2.43 4.972l66.262 189.962h0zM395.02 93.944h-.168l-30.309 91.078h60.774L395.02 93.944h0zm313.173 109.115c0 7.636-1.021 14.528-3.109 20.697-2.142 6.217-5.03 11.7-8.699 16.448a55.787 55.787 0 01-13.291 12.21c-5.089 3.45-10.814 6.294-16.962 8.484-6.15 2.19-12.775 3.843-19.783 4.86-7.011 1.073-14.84 1.583-23.471 1.583h-56.927c-3.646 0-6.728-1.073-9.218-3.223-2.489-2.146-3.729-5.651-3.729-10.513V66.748c0-4.862 1.257-8.385 3.729-10.515 2.47-2.133 5.547-3.221 9.218-3.221h53.816c13.117 0 24.279 1.141 33.365 3.33 9.091 2.193 16.786 5.544 23.004 10.012 6.276 4.462 11.026 10.12 14.363 16.959 3.279 6.842 4.979 14.925 4.979 24.201 0 5.196-.679 10.064-2.039 14.642-1.299 4.581-3.219 8.765-5.767 12.497-2.548 3.783-5.649 7.067-9.386 9.947-3.671 2.883-7.91 5.202-12.668 6.955 6.109 1.132 11.705 3.056 16.854 5.823 5.085 2.776 9.615 6.274 13.401 10.686 3.789 4.354 6.831 9.44 9.038 15.32 2.21 5.826 3.282 12.383 3.282 19.675h0zm-56.309-90.234c0-4.354-.68-8.194-1.977-11.59a20.589 20.589 0 00-5.999-8.537c-2.599-2.261-5.93-4.013-10.006-5.258-4.009-1.187-9.412-1.807-16.105-1.807h-22.049v55.63h24.357c6.278 0 11.313-.736 15.036-2.206 3.798-1.467 6.905-3.561 9.395-6.108 2.479-2.597 4.298-5.65 5.538-9.155 1.192-3.448 1.81-7.124 1.81-10.969h0zm11.087 91.758c0-4.975-.798-9.437-2.499-13.34-1.63-3.957-4.058-7.237-7.228-9.895-3.218-2.601-7.295-4.694-12.272-6.103-4.978-1.414-11.452-2.151-19.385-2.151h-25.836v60.948h31.486c6.056 0 11.135-.623 15.322-1.926 4.119-1.242 7.688-3.11 10.745-5.592 3.041-2.491 5.419-5.602 7.118-9.275 1.699-3.729 2.549-7.918 2.549-12.666z"
-    }), /* @__PURE__ */ React97.createElement("path", {
+      d: "M43.556 773.06c99 12.954 89.087-59.214 105.609-151.341 21.809 85.65 13.614 146.848 80.099 151.474 112.614 7.798 85.254-471.209 94.11-549.193 13.217 120.81-19.695 526.458 120.676 549.193 32.648 5.287 66.089 7.402 101.512 0C684.876 744.378 653.153 344.809 666.37 224c8.724 77.984-18.637 556.991 93.977 549.193 66.617-4.626 58.29-65.824 80.1-151.474 16.521 92.127 6.608 164.295 105.74 151.342",
       fill: "none",
-      strokeWidth: 49.312,
+      strokeWidth: 39.653,
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M40.677 918.5h95.78l50.591-144.818L242.565 918.5h86.862l58.943-524.723L445.842 918.5h107.484l57.472-524.723 58.95 524.723h86.862l55.519-144.818L862.718 918.5H958.5"
+      strokeLinejoin: "round"
     }));
   }
-  var Simulator_default = SvgSimulator;
+  var Signals_default = SvgSignals;
 
-  // build/lib-react-tsx/nmr/Simulatormicro.tsx
+  // build/lib-react-tsx/nmr/Simulator.tsx
   var React98 = __toModule(require_react());
-  function SvgSimulatormicro({
+  function SvgSimulator({
     title,
     titleId,
     ...props
@@ -25100,42 +25118,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React98.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React98.createElement("path", {
-      fill: "none",
-      strokeWidth: 49.312,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M40.677 918.5h95.78l50.591-797.277L242.565 918.5h86.862l58.943-798 57.472 798h107.484l57.472-170 58.95 170h86.862l55.519-265 50.589 265H958.5"
-    }), /* @__PURE__ */ React98.createElement("path", {
-      fill: "none",
-      strokeWidth: 75,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      strokeDasharray: "40,40",
-      d: "M558.5 126.5v288"
+      d: "M493.451 251.114c1.298 3.96 2.149 7.125 2.488 9.442.28 2.317-.12 4.07-1.359 5.203-1.19 1.185-3.337 1.869-6.446 2.149-3.11.28-7.346.449-12.775.449-5.596 0-10.006-.107-13.174-.281-3.109-.168-5.538-.506-7.178-.957-1.639-.512-2.828-1.189-3.509-2.095-.621-.906-1.188-2.036-1.64-3.505l-14.416-43.026h-80.506l-13.574 41.898c-.449 1.524-1.02 2.821-1.749 3.898-.681 1.017-1.87 1.862-3.45 2.49-1.581.562-3.9 1.014-6.789 1.238-2.937.231-6.785.34-11.527.34-5.096 0-9.055-.169-11.934-.51-2.879-.334-4.866-1.125-5.938-2.426-1.131-1.242-1.53-3.059-1.19-5.371.34-2.317 1.19-5.428 2.498-9.272L367.37 60.643c.68-1.865 1.41-3.396 2.317-4.578.909-1.133 2.32-2.038 4.24-2.658 1.918-.564 4.585-.962 8.026-1.133 3.389-.168 7.975-.28 13.575-.28 6.496 0 11.696.11 15.604.28 3.84.169 6.838.567 8.987 1.133 2.148.62 3.738 1.526 4.64 2.773.958 1.184 1.749 2.825 2.43 4.972l66.262 189.962h0zM395.02 93.944h-.168l-30.309 91.078h60.774L395.02 93.944h0zm313.173 109.115c0 7.636-1.021 14.528-3.109 20.697-2.142 6.217-5.03 11.7-8.699 16.448a55.787 55.787 0 01-13.291 12.21c-5.089 3.45-10.814 6.294-16.962 8.484-6.15 2.19-12.775 3.843-19.783 4.86-7.011 1.073-14.84 1.583-23.471 1.583h-56.927c-3.646 0-6.728-1.073-9.218-3.223-2.489-2.146-3.729-5.651-3.729-10.513V66.748c0-4.862 1.257-8.385 3.729-10.515 2.47-2.133 5.547-3.221 9.218-3.221h53.816c13.117 0 24.279 1.141 33.365 3.33 9.091 2.193 16.786 5.544 23.004 10.012 6.276 4.462 11.026 10.12 14.363 16.959 3.279 6.842 4.979 14.925 4.979 24.201 0 5.196-.679 10.064-2.039 14.642-1.299 4.581-3.219 8.765-5.767 12.497-2.548 3.783-5.649 7.067-9.386 9.947-3.671 2.883-7.91 5.202-12.668 6.955 6.109 1.132 11.705 3.056 16.854 5.823 5.085 2.776 9.615 6.274 13.401 10.686 3.789 4.354 6.831 9.44 9.038 15.32 2.21 5.826 3.282 12.383 3.282 19.675h0zm-56.309-90.234c0-4.354-.68-8.194-1.977-11.59a20.589 20.589 0 00-5.999-8.537c-2.599-2.261-5.93-4.013-10.006-5.258-4.009-1.187-9.412-1.807-16.105-1.807h-22.049v55.63h24.357c6.278 0 11.313-.736 15.036-2.206 3.798-1.467 6.905-3.561 9.395-6.108 2.479-2.597 4.298-5.65 5.538-9.155 1.192-3.448 1.81-7.124 1.81-10.969h0zm11.087 91.758c0-4.975-.798-9.437-2.499-13.34-1.63-3.957-4.058-7.237-7.228-9.895-3.218-2.601-7.295-4.694-12.272-6.103-4.978-1.414-11.452-2.151-19.385-2.151h-25.836v60.948h31.486c6.056 0 11.135-.623 15.322-1.926 4.119-1.242 7.688-3.11 10.745-5.592 3.041-2.491 5.419-5.602 7.118-9.275 1.699-3.729 2.549-7.918 2.549-12.666z"
     }), /* @__PURE__ */ React98.createElement("path", {
       fill: "none",
       strokeWidth: 49.312,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeMiterlimit: 22.926,
-      d: "M583 105h325v325H583z"
-    }), /* @__PURE__ */ React98.createElement("path", {
-      fill: "none",
-      strokeWidth: 75,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      strokeDasharray: "40,40",
-      d: "M932.5 128.5v288M605.5 82.5h288M605.5 453.5h288"
-    }), /* @__PURE__ */ React98.createElement("path", {
-      d: "M700.17 262.665c0 15.469 1.531 25.862 4.593 31.179 3.062 5.318 8.565 7.977 16.517 7.977 12.674 0 23.147-8.835 31.42-26.506 8.271-17.67 12.408-40.147 12.408-67.435v-43.022h30.453v108.281c0 9.885 1.02 17.136 3.062 21.753 2.039 4.62 5.209 6.929 9.506 6.929 4.618 0 8.138-2.281 10.555-6.848 2.417-4.565 3.625-11.305 3.625-20.223v-4.512h6.93c.105.861.186 1.8.241 2.82.053 1.021.081 2.497.081 4.431 0 12.246-2.606 21.728-7.815 28.44-5.212 6.714-12.543 10.07-21.995 10.07-11.064 0-19.391-4.698-24.975-14.1-5.588-9.398-8.435-23.605-8.541-42.619-5.05 19.553-11.79 33.894-20.222 43.022-8.435 9.134-19.095 13.698-31.986 13.698-9.668 0-17.672-2.875-24.008-8.621-6.34-5.745-10.744-14.204-13.213-25.378-.217 2.042-.322 5.156-.322 9.346 0 13.857 3.517 29.352 10.554 46.487 7.034 17.133 10.554 27.256 10.554 30.373 0 4.295-1.236 7.679-3.705 10.151-2.473 2.47-5.856 3.706-10.152 3.706-5.05 0-8.676-1.8-10.876-5.398-2.203-3.6-3.304-9.481-3.304-17.644 0-1.934.215-8.298.645-19.095.429-10.795.645-20.6.645-29.406 0-7.948-.16-19.119-.482-33.516-.322-14.394-.484-24.814-.484-31.26v-80.889h30.293v97.809z"
+      d: "M40.677 918.5h95.78l50.591-144.818L242.565 918.5h86.862l58.943-524.723L445.842 918.5h107.484l57.472-524.723 58.95 524.723h86.862l55.519-144.818L862.718 918.5H958.5"
     }));
   }
-  var Simulatormicro_default = SvgSimulatormicro;
+  var Simulator_default = SvgSimulator;
 
-  // build/lib-react-tsx/nmr/Sum.tsx
+  // build/lib-react-tsx/nmr/Simulatormicro.tsx
   var React99 = __toModule(require_react());
-  function SvgSum2({
+  function SvgSimulatormicro({
     title,
     titleId,
     ...props
@@ -25152,15 +25149,42 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React99.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React99.createElement("path", {
-      "data-name": "Path 1",
-      d: "M713.547 237.766l84.27-.682V77.631s-5.122-24.916-20.866-40.995-42.111-23.322-42.111-23.322H115.788s-38.483 9.884-54.3 33.69-8.969 61.533-8.969 61.533l274.61 388.2a7.294 7.294 0 011.321 3.719 8.6 8.6 0 01-1.321 3.945L60.85 873.556s-17.841 40.987-5.111 69.46 56.026 44.435 56.026 44.435h694.089s30-5.73 46.746-21.809 20.254-42.505 20.254-42.505v-234.49h-91.555l2 194.646s.146 1.94-.87 2.829-3.194.729-3.194.729l-606.513-3.5s-1.678-.251-2-1.062.7-2.183.7-2.183l242.047-340.2s12.2-18.089 12.2-38.858-12.2-44.218-12.2-44.218L164.056 106.218a1.98 1.98 0 01.257-1.136 1.909 1.909 0 01.943-.47l540.54-2s3.231.076 5.083 1.861 2.327 5.276 2.327 5.276z"
+      fill: "none",
+      strokeWidth: 49.312,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M40.677 918.5h95.78l50.591-797.277L242.565 918.5h86.862l58.943-798 57.472 798h107.484l57.472-170 58.95 170h86.862l55.519-265 50.589 265H958.5"
+    }), /* @__PURE__ */ React99.createElement("path", {
+      fill: "none",
+      strokeWidth: 75,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      strokeDasharray: "40,40",
+      d: "M558.5 126.5v288"
+    }), /* @__PURE__ */ React99.createElement("path", {
+      fill: "none",
+      strokeWidth: 49.312,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M583 105h325v325H583z"
+    }), /* @__PURE__ */ React99.createElement("path", {
+      fill: "none",
+      strokeWidth: 75,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      strokeDasharray: "40,40",
+      d: "M932.5 128.5v288M605.5 82.5h288M605.5 453.5h288"
+    }), /* @__PURE__ */ React99.createElement("path", {
+      d: "M700.17 262.665c0 15.469 1.531 25.862 4.593 31.179 3.062 5.318 8.565 7.977 16.517 7.977 12.674 0 23.147-8.835 31.42-26.506 8.271-17.67 12.408-40.147 12.408-67.435v-43.022h30.453v108.281c0 9.885 1.02 17.136 3.062 21.753 2.039 4.62 5.209 6.929 9.506 6.929 4.618 0 8.138-2.281 10.555-6.848 2.417-4.565 3.625-11.305 3.625-20.223v-4.512h6.93c.105.861.186 1.8.241 2.82.053 1.021.081 2.497.081 4.431 0 12.246-2.606 21.728-7.815 28.44-5.212 6.714-12.543 10.07-21.995 10.07-11.064 0-19.391-4.698-24.975-14.1-5.588-9.398-8.435-23.605-8.541-42.619-5.05 19.553-11.79 33.894-20.222 43.022-8.435 9.134-19.095 13.698-31.986 13.698-9.668 0-17.672-2.875-24.008-8.621-6.34-5.745-10.744-14.204-13.213-25.378-.217 2.042-.322 5.156-.322 9.346 0 13.857 3.517 29.352 10.554 46.487 7.034 17.133 10.554 27.256 10.554 30.373 0 4.295-1.236 7.679-3.705 10.151-2.473 2.47-5.856 3.706-10.152 3.706-5.05 0-8.676-1.8-10.876-5.398-2.203-3.6-3.304-9.481-3.304-17.644 0-1.934.215-8.298.645-19.095.429-10.795.645-20.6.645-29.406 0-7.948-.16-19.119-.482-33.516-.322-14.394-.484-24.814-.484-31.26v-80.889h30.293v97.809z"
     }));
   }
-  var Sum_default2 = SvgSum2;
+  var Simulatormicro_default = SvgSimulatormicro;
 
-  // build/lib-react-tsx/nmr/Tools.tsx
+  // build/lib-react-tsx/nmr/Sum.tsx
   var React100 = __toModule(require_react());
-  function SvgTools({
+  function SvgSum2({
     title,
     titleId,
     ...props
@@ -25177,44 +25201,15 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React100.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React100.createElement("path", {
-      fill: "#FFF",
-      strokeWidth: 50,
-      d: "M188.491 960.059c-11.069 11.069-29.019 11.069-40.087 0L38.586 850.24c-11.07-11.071-11.072-29.019 0-40.087l297.208-287.211c11.07-11.07 29.019-11.071 40.089.001l109.818 109.819c11.07 11.07 11.07 29.017 0 40.087l-297.21 287.21z"
-    }), /* @__PURE__ */ React100.createElement("path", {
-      fill: "#FFF",
-      strokeWidth: 80,
-      d: "M930 71.47L94.203 907.271"
-    }), /* @__PURE__ */ React100.createElement("path", {
-      strokeWidth: 50,
-      strokeLinecap: "square",
-      d: "M815.25 131.774l58.031 58.032 57.136-53.741 36.77-62.791-37.336-37.334-59.396 32.243-57.135 61.66"
-    }), /* @__PURE__ */ React100.createElement("path", {
-      fill: "none",
-      strokeWidth: 50,
-      strokeLinecap: "round",
-      d: "M280.166 28.167c93.974 0 170.155 76.181 170.155 170.155S374.14 368.477 280.166 368.477s-170.155-76.181-170.155-170.155"
-    }), /* @__PURE__ */ React100.createElement("path", {
-      fill: "none",
-      strokeWidth: 50,
-      strokeLinecap: "square",
-      d: "M268.979 42.067l123.497 123.496-30.17 112.597-112.597 30.17-123.884-123.884"
-    }), /* @__PURE__ */ React100.createElement("path", {
-      fill: "none",
-      strokeWidth: 50,
-      strokeLinecap: "square",
-      d: "M142.569 239.02l87.597 92.248 39.535 2.326 96.124-25.582 29.457-31.008 24.031-98.449-9.302-38.76-77.52-74.419"
-    }), /* @__PURE__ */ React100.createElement("path", {
-      fill: "#FFF",
-      strokeWidth: 120,
-      strokeLinecap: "round",
-      d: "M384.131 301.333l555.892 555.892"
+      "data-name": "Path 1",
+      d: "M713.547 237.766l84.27-.682V77.631s-5.122-24.916-20.866-40.995-42.111-23.322-42.111-23.322H115.788s-38.483 9.884-54.3 33.69-8.969 61.533-8.969 61.533l274.61 388.2a7.294 7.294 0 011.321 3.719 8.6 8.6 0 01-1.321 3.945L60.85 873.556s-17.841 40.987-5.111 69.46 56.026 44.435 56.026 44.435h694.089s30-5.73 46.746-21.809 20.254-42.505 20.254-42.505v-234.49h-91.555l2 194.646s.146 1.94-.87 2.829-3.194.729-3.194.729l-606.513-3.5s-1.678-.251-2-1.062.7-2.183.7-2.183l242.047-340.2s12.2-18.089 12.2-38.858-12.2-44.218-12.2-44.218L164.056 106.218a1.98 1.98 0 01.257-1.136 1.909 1.909 0 01.943-.47l540.54-2s3.231.076 5.083 1.861 2.327 5.276 2.327 5.276z"
     }));
   }
-  var Tools_default = SvgTools;
+  var Sum_default2 = SvgSum2;
 
-  // build/lib-react-tsx/nmr/Tree.tsx
+  // build/lib-react-tsx/nmr/Tools.tsx
   var React101 = __toModule(require_react());
-  function SvgTree({
+  function SvgTools({
     title,
     titleId,
     ...props
@@ -25231,14 +25226,44 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React101.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React101.createElement("path", {
-      d: "M499.307 43.814a21.397 21.397 0 00-21.075 21.698V290.25l-193.664 84.127A21.397 21.397 0 00271.698 394v216.098l-145.464 85.23a21.397 21.397 0 00-10.578 18.46V944a21.397 21.397 0 1042.79 0V726.049l134.718-78.936 134.719 78.936V944a21.397 21.397 0 1042.79 0V713.787a21.397 21.397 0 00-10.58-18.459l-145.605-85.314v-201.98l185.14-80.425 185.14 80.424v202.059l-145.598 85.23a21.397 21.397 0 00-10.586 18.465V944a21.397 21.397 0 1042.789 0V726.055l134.785-78.903 134.653 78.897V944a21.397 21.397 0 1042.79 0V713.787a21.397 21.397 0 00-10.58-18.459L727.56 610.096V394a21.397 21.397 0 00-12.871-19.623L521.023 290.25V65.512a21.397 21.397 0 00-21.716-21.698z"
+      fill: "#FFF",
+      strokeWidth: 50,
+      d: "M188.491 960.059c-11.069 11.069-29.019 11.069-40.087 0L38.586 850.24c-11.07-11.071-11.072-29.019 0-40.087l297.208-287.211c11.07-11.07 29.019-11.071 40.089.001l109.818 109.819c11.07 11.07 11.07 29.017 0 40.087l-297.21 287.21z"
+    }), /* @__PURE__ */ React101.createElement("path", {
+      fill: "#FFF",
+      strokeWidth: 80,
+      d: "M930 71.47L94.203 907.271"
+    }), /* @__PURE__ */ React101.createElement("path", {
+      strokeWidth: 50,
+      strokeLinecap: "square",
+      d: "M815.25 131.774l58.031 58.032 57.136-53.741 36.77-62.791-37.336-37.334-59.396 32.243-57.135 61.66"
+    }), /* @__PURE__ */ React101.createElement("path", {
+      fill: "none",
+      strokeWidth: 50,
+      strokeLinecap: "round",
+      d: "M280.166 28.167c93.974 0 170.155 76.181 170.155 170.155S374.14 368.477 280.166 368.477s-170.155-76.181-170.155-170.155"
+    }), /* @__PURE__ */ React101.createElement("path", {
+      fill: "none",
+      strokeWidth: 50,
+      strokeLinecap: "square",
+      d: "M268.979 42.067l123.497 123.496-30.17 112.597-112.597 30.17-123.884-123.884"
+    }), /* @__PURE__ */ React101.createElement("path", {
+      fill: "none",
+      strokeWidth: 50,
+      strokeLinecap: "square",
+      d: "M142.569 239.02l87.597 92.248 39.535 2.326 96.124-25.582 29.457-31.008 24.031-98.449-9.302-38.76-77.52-74.419"
+    }), /* @__PURE__ */ React101.createElement("path", {
+      fill: "#FFF",
+      strokeWidth: 120,
+      strokeLinecap: "round",
+      d: "M384.131 301.333l555.892 555.892"
     }));
   }
-  var Tree_default = SvgTree;
+  var Tools_default = SvgTools;
 
-  // build/lib-react-tsx/nmr/ZeroFilling.tsx
+  // build/lib-react-tsx/nmr/Tree.tsx
   var React102 = __toModule(require_react());
-  function SvgZeroFilling({
+  function SvgTree({
     title,
     titleId,
     ...props
@@ -25255,31 +25280,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React102.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React102.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M27.989 24.288l24.468 939.363 52.128-677.659 29.787 456.383 44.681-297.873 23.404 202.128 38.298-108.511 26.596 42.339h698.936"
-    }), /* @__PURE__ */ React102.createElement("path", {
-      fill: "none",
-      strokeWidth: 48.987,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      strokeDasharray: "50,50",
-      d: "M293.947 55.51v886.864"
-    }), /* @__PURE__ */ React102.createElement("path", {
-      d: "M786.083 122.546c22.189 42.847 30.287 92.068 30.287 147.656 0 43.728-3.812 84.928-17.435 123.597-25.708 72.732-70.201 109.094-133.482 109.094-43.292 0-78.888-19.661-106.787-58.996-29.886-41.965-40.824-98.985-40.824-171.058 0-56.689 5.995-105.469 25.991-146.338 27.026-55.588 68.555-83.386 124.585-83.386 50.536 0 89.757 26.48 117.665 79.431zm-50.098 308.539c12.079-35.35 18.126-86.502 18.126-153.472 0-53.353-3.624-95.941-10.875-127.778-13.629-59.279-39.114-82.172-76.465-82.172-37.359 0-62.953 23.769-76.796 84.803-7.251 32.496-10.875 75.312-10.875 128.443 0 49.84 3.732 89.689 11.206 119.549 14.057 55.767 40.424 76.898 79.102 76.898 32.3 0 54.489-10.924 66.577-46.271z"
-    }), /* @__PURE__ */ React102.createElement("path", {
-      strokeWidth: 50,
-      d: "M763.095 123.225l-180.85 307.447"
+      d: "M499.307 43.814a21.397 21.397 0 00-21.075 21.698V290.25l-193.664 84.127A21.397 21.397 0 00271.698 394v216.098l-145.464 85.23a21.397 21.397 0 00-10.578 18.46V944a21.397 21.397 0 1042.79 0V726.049l134.718-78.936 134.719 78.936V944a21.397 21.397 0 1042.79 0V713.787a21.397 21.397 0 00-10.58-18.459l-145.605-85.314v-201.98l185.14-80.425 185.14 80.424v202.059l-145.598 85.23a21.397 21.397 0 00-10.586 18.465V944a21.397 21.397 0 1042.789 0V726.055l134.785-78.903 134.653 78.897V944a21.397 21.397 0 1042.79 0V713.787a21.397 21.397 0 00-10.58-18.459L727.56 610.096V394a21.397 21.397 0 00-12.871-19.623L521.023 290.25V65.512a21.397 21.397 0 00-21.716-21.698z"
     }));
   }
-  var ZeroFilling_default = SvgZeroFilling;
+  var Tree_default = SvgTree;
 
-  // build/lib-react-tsx/periodic/Carbon.tsx
+  // build/lib-react-tsx/nmr/ZeroFilling.tsx
   var React103 = __toModule(require_react());
-  function SvgCarbon({
+  function SvgZeroFilling({
     title,
     titleId,
     ...props
@@ -25296,38 +25304,31 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React103.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React103.createElement("path", {
-      d: "M500 100h150v50H500z",
-      fill: "none"
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M27.989 24.288l24.468 939.363 52.128-677.659 29.787 456.383 44.681-297.873 23.404 202.128 38.298-108.511 26.596 42.339h698.936"
     }), /* @__PURE__ */ React103.createElement("path", {
-      d: "M105.938 31.182h788.88v935.636h-788.88z",
-      strokeWidth: 40,
-      fill: "none"
+      fill: "none",
+      strokeWidth: 48.987,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      strokeDasharray: "50,50",
+      d: "M293.947 55.51v886.864"
     }), /* @__PURE__ */ React103.createElement("path", {
-      d: "M659.806 520.928q0 8.463-.677 14.557-.339 5.755-1.354 10.156-1.016 4.063-2.709 7.11-1.692 3.047-5.416 7.11-3.724 3.723-14.557 9.817-10.495 6.094-26.068 11.849-15.235 5.417-35.209 9.14-19.635 3.724-42.656 3.724-45.026 0-81.25-13.88t-61.614-41.302q-25.391-27.76-38.933-69.062-13.541-41.302-13.541-96.146 0-55.86 14.896-99.193 14.895-43.333 41.64-72.786 26.745-29.453 63.985-44.688Q493.92 142.1 538.947 142.1q18.28 0 35.208 3.047 16.927 3.047 31.146 8.125 14.557 4.74 26.068 11.172 11.51 6.432 15.911 11.171 4.74 4.401 6.432 7.448 1.693 3.047 2.709 7.787 1.015 4.74 1.354 11.172.677 6.432.677 15.911 0 10.156-.677 17.266-.677 7.11-2.37 11.51-1.693 4.401-4.062 6.432-2.37 2.032-5.417 2.032-5.078 0-12.865-5.756-7.786-6.093-20.312-13.203-12.188-7.448-29.453-13.203-16.927-6.094-40.625-6.094-26.068 0-46.72 10.834-20.312 10.495-34.869 30.469-14.219 19.635-21.667 47.734-7.447 28.099-7.447 63.307 0 38.594 7.786 67.031 8.125 28.1 22.682 46.38 14.896 18.282 35.547 27.423 20.99 8.802 47.057 8.802 23.698 0 40.964-5.417 17.266-5.755 29.453-12.526 12.526-6.77 20.313-12.188 8.125-5.416 12.526-5.416 3.385 0 5.416 1.354 2.032 1.354 3.386 5.417 1.354 4.062 2.031 11.51.677 7.11.677 19.297z",
-      fontWeight: 400,
-      fontSize: 693.333,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }), /* @__PURE__ */ React103.createElement("g", {
-      style: {
-        lineHeight: ".01%"
-      },
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }, /* @__PURE__ */ React103.createElement("path", {
-      d: "M340.94 834.496q0 3.1-.331 5.313-.332 2.103-.996 3.43-.554 1.218-1.329 1.772-.774.553-1.77.553H257.49q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.438-1.881.775-.664 1.771-.664h26.673v-93.19l-23.02 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988.443-1.218 1.217-1.992.775-.775 2.103-1.66l30.768-19.922q.554-.443 1.328-.664.886-.332 2.214-.443 1.328-.221 3.431-.221 2.214-.111 5.645-.111 4.205 0 6.75.221 2.657.11 3.985.554 1.328.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312zM457.373 833.722q0 3.21-.332 5.534-.221 2.213-.775 3.652-.553 1.439-1.439 2.103-.885.553-1.992.553h-82.343q-2.435 0-4.206-.443-1.771-.442-2.878-1.66-1.107-1.328-1.66-3.763-.443-2.435-.443-6.308 0-3.653.332-6.198.332-2.657 1.218-4.649.885-2.103 2.213-3.984 1.44-1.992 3.653-4.317l24.791-26.562q7.416-7.747 11.953-14.056 4.538-6.42 7.084-11.621 2.545-5.313 3.43-9.74.997-4.427.997-8.411 0-3.652-1.218-6.862-1.106-3.32-3.43-5.755-2.214-2.435-5.645-3.763-3.431-1.44-8.08-1.44-6.53 0-11.62 1.661-4.981 1.66-8.855 3.763-3.763 1.992-6.308 3.763-2.546 1.66-3.985 1.66-.996 0-1.77-.664-.665-.664-1.107-2.213-.443-1.55-.775-4.095-.221-2.657-.221-6.42 0-2.545.11-4.205.222-1.771.554-2.989.332-1.328.885-2.213.553-.996 1.882-2.324 1.438-1.329 5.09-3.32 3.764-2.104 9.187-3.985 5.423-1.992 11.953-3.32 6.53-1.329 13.613-1.329 11.179 0 19.48 2.878 8.41 2.767 13.945 7.858 5.534 4.98 8.19 11.953 2.767 6.862 2.767 14.83 0 6.974-1.328 13.725-1.328 6.751-5.534 14.61-4.206 7.747-11.843 17.265-7.636 9.407-20.254 21.914l-16.712 17.155h56.446q1.106 0 1.992.664.996.664 1.66 2.103.664 1.328.996 3.652.332 2.214.332 5.313zM513.376 829.627q0 10.293-3.653 13.834-3.541 3.542-12.838 3.542-9.297 0-12.839-3.431-3.541-3.542-3.541-13.281 0-10.404 3.541-13.946 3.653-3.541 13.06-3.541 9.186 0 12.728 3.541 3.542 3.431 3.542 13.282zM636.006 773.403q0 17.155-2.767 30.99-2.767 13.834-9.076 23.573-6.198 9.74-16.27 14.942-9.96 5.202-24.459 5.202-14.72 0-24.349-4.98-9.629-5.092-15.273-14.5-5.645-9.518-7.969-23.131-2.213-13.724-2.213-30.99 0-17.044 2.766-30.878 2.878-13.946 9.076-23.685 6.309-9.74 16.27-14.942 10.071-5.202 24.46-5.202 14.72 0 24.348 5.092 9.74 4.98 15.384 14.498 5.645 9.408 7.858 23.132 2.214 13.613 2.214 30.879zm-29.33 1.438q0-10.182-.553-17.93-.553-7.857-1.77-13.613-1.108-5.755-2.878-9.74-1.66-3.983-4.095-6.308-2.435-2.435-5.534-3.43-3.1-.997-6.862-.997-6.53 0-10.847 3.21-4.205 3.099-6.751 9.407-2.435 6.309-3.431 15.717-.996 9.407-.996 21.914 0 15.273 1.217 25.345 1.218 9.96 3.763 15.937 2.657 5.866 6.752 8.301 4.095 2.324 9.85 2.324 4.316 0 7.637-1.328 3.32-1.439 5.755-4.206 2.545-2.767 4.206-6.972 1.66-4.206 2.656-9.74 1.107-5.534 1.439-12.506.442-6.973.442-15.385zM746.904 834.496q0 3.1-.332 5.313-.332 2.103-.996 3.43-.553 1.218-1.328 1.772-.775.553-1.77.553h-79.024q-.886 0-1.66-.553-.775-.554-1.44-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.222-5.312.332-2.214.885-3.542.664-1.328 1.439-1.881.775-.664 1.77-.664h26.674v-93.19l-23.02 12.727q-2.546 1.218-4.207 1.55-1.55.221-2.545-.664-.886-.996-1.218-3.32-.332-2.325-.332-6.53 0-2.657.111-4.317.11-1.77.553-2.988.443-1.218 1.218-1.992.775-.775 2.103-1.66l30.768-19.922q.553-.443 1.328-.664.885-.332 2.214-.443 1.328-.221 3.43-.221 2.214-.111 5.645-.111 4.206 0 6.751.221 2.657.11 3.985.554 1.328.332 1.77.996.443.664.443 1.66v118.314h23.353q.996 0 1.771.664.885.553 1.439 1.881.664 1.328.885 3.542.332 2.103.332 5.312z"
-    })));
+      d: "M786.083 122.546c22.189 42.847 30.287 92.068 30.287 147.656 0 43.728-3.812 84.928-17.435 123.597-25.708 72.732-70.201 109.094-133.482 109.094-43.292 0-78.888-19.661-106.787-58.996-29.886-41.965-40.824-98.985-40.824-171.058 0-56.689 5.995-105.469 25.991-146.338 27.026-55.588 68.555-83.386 124.585-83.386 50.536 0 89.757 26.48 117.665 79.431zm-50.098 308.539c12.079-35.35 18.126-86.502 18.126-153.472 0-53.353-3.624-95.941-10.875-127.778-13.629-59.279-39.114-82.172-76.465-82.172-37.359 0-62.953 23.769-76.796 84.803-7.251 32.496-10.875 75.312-10.875 128.443 0 49.84 3.732 89.689 11.206 119.549 14.057 55.767 40.424 76.898 79.102 76.898 32.3 0 54.489-10.924 66.577-46.271z"
+    }), /* @__PURE__ */ React103.createElement("path", {
+      strokeWidth: 50,
+      d: "M763.095 123.225l-180.85 307.447"
+    }));
   }
-  var Carbon_default = SvgCarbon;
+  var ZeroFilling_default = SvgZeroFilling;
 
-  // build/lib-react-tsx/periodic/Electronegativity.tsx
+  // build/lib-react-tsx/periodic/Carbon.tsx
   var React104 = __toModule(require_react());
-  function SvgElectronegativity({
+  function SvgCarbon({
     title,
     titleId,
     ...props
@@ -25344,14 +25345,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React104.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React104.createElement("path", {
-      d: "M499.9 100h150v50h-150z",
+      d: "M500 100h150v50H500z",
       fill: "none"
     }), /* @__PURE__ */ React104.createElement("path", {
-      d: "M103.838 31.182h788.88v935.636h-788.88z",
+      d: "M105.938 31.182h788.88v935.636h-788.88z",
       strokeWidth: 40,
       fill: "none"
     }), /* @__PURE__ */ React104.createElement("path", {
-      d: "M621.877 388.387q0 10.156-1.015 17.266-.678 6.77-2.709 10.833-1.693 4.062-4.062 6.094-2.37 2.031-5.417 2.031H465.471v117.812h134.4q3.048 0 5.418 1.693t4.062 5.755q2.031 4.063 2.708 10.834 1.016 6.77 1.016 16.927 0 10.156-1.016 16.927-.677 6.77-2.708 11.172-1.693 4.4-4.062 6.432-2.37 1.693-5.417 1.693H465.47v163.177q0 3.724-2.031 6.432-2.032 2.708-7.448 4.74-5.078 1.692-13.542 2.708-8.463 1.016-21.667 1.016-12.864 0-21.666-1.016-8.464-1.016-13.542-2.708-5.078-2.032-7.448-4.74-2.031-2.708-2.031-6.432v-397.11q0-14.895 7.448-21.328 7.786-6.77 18.958-6.77h206.172q3.047 0 5.417 2.03 2.37 1.693 4.062 6.095 2.031 4.062 2.709 11.171 1.015 7.11 1.015 17.266z",
+      d: "M659.806 520.928q0 8.463-.677 14.557-.339 5.755-1.354 10.156-1.016 4.063-2.709 7.11-1.692 3.047-5.416 7.11-3.724 3.723-14.557 9.817-10.495 6.094-26.068 11.849-15.235 5.417-35.209 9.14-19.635 3.724-42.656 3.724-45.026 0-81.25-13.88t-61.614-41.302q-25.391-27.76-38.933-69.062-13.541-41.302-13.541-96.146 0-55.86 14.896-99.193 14.895-43.333 41.64-72.786 26.745-29.453 63.985-44.688Q493.92 142.1 538.947 142.1q18.28 0 35.208 3.047 16.927 3.047 31.146 8.125 14.557 4.74 26.068 11.172 11.51 6.432 15.911 11.171 4.74 4.401 6.432 7.448 1.693 3.047 2.709 7.787 1.015 4.74 1.354 11.172.677 6.432.677 15.911 0 10.156-.677 17.266-.677 7.11-2.37 11.51-1.693 4.401-4.062 6.432-2.37 2.032-5.417 2.032-5.078 0-12.865-5.756-7.786-6.093-20.312-13.203-12.188-7.448-29.453-13.203-16.927-6.094-40.625-6.094-26.068 0-46.72 10.834-20.312 10.495-34.869 30.469-14.219 19.635-21.667 47.734-7.447 28.099-7.447 63.307 0 38.594 7.786 67.031 8.125 28.1 22.682 46.38 14.896 18.282 35.547 27.423 20.99 8.802 47.057 8.802 23.698 0 40.964-5.417 17.266-5.755 29.453-12.526 12.526-6.77 20.313-12.188 8.125-5.416 12.526-5.416 3.385 0 5.416 1.354 2.032 1.354 3.386 5.417 1.354 4.062 2.031 11.51.677 7.11.677 19.297z",
       fontWeight: 400,
       fontSize: 693.333,
       fontFamily: "sans-serif",
@@ -25368,14 +25369,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       wordSpacing: 0,
       stroke: "none"
     }, /* @__PURE__ */ React104.createElement("path", {
-      d: "M657.365 223.315q0 5.645-1.217 8.633-1.107 2.878-3.1 2.878h-12.727v25.898q0 1.107-.664 1.992-.664.775-2.324 1.328-1.66.554-4.317.775-2.656.332-6.862.332-3.984 0-6.751-.332-2.656-.221-4.316-.775-1.55-.553-2.214-1.328-.553-.885-.553-1.992v-25.898h-54.786q-1.549 0-2.766-.332-1.218-.443-2.103-1.771-.775-1.439-1.218-3.985-.332-2.656-.332-6.972 0-3.542.11-6.087.222-2.657.554-4.76.443-2.102 1.107-3.984.775-1.881 1.882-3.984l44.492-78.47q.553-.996 1.881-1.66 1.328-.775 3.653-1.218 2.434-.553 6.087-.775 3.652-.221 8.854-.221 5.644 0 9.629.332 3.984.221 6.308.885 2.435.554 3.542 1.44 1.107.885 1.107 2.102v86.218h12.728q1.77 0 2.988 2.766 1.328 2.657 1.328 8.965zm-45.045-77.584h-.222l-37.74 65.853h37.962zM708.94 248.55q0 10.293-3.652 13.834-3.541 3.542-12.838 3.542-9.297 0-12.839-3.431-3.541-3.542-3.541-13.281 0-10.404 3.541-13.946 3.653-3.541 13.06-3.541 9.186 0 12.728 3.541 3.542 3.431 3.542 13.282zM831.57 192.326q0 17.155-2.766 30.99-2.767 13.834-9.076 23.574-6.197 9.74-16.27 14.94-9.96 5.203-24.459 5.203-14.72 0-24.349-4.98-9.629-5.092-15.273-14.5-5.645-9.518-7.969-23.13-2.213-13.725-2.213-30.99 0-17.045 2.767-30.88 2.877-13.945 9.075-23.684 6.309-9.74 16.27-14.942 10.071-5.202 24.46-5.202 14.72 0 24.348 5.092 9.74 4.98 15.384 14.498 5.645 9.408 7.858 23.132 2.214 13.613 2.214 30.879zm-29.329 1.439q0-10.183-.553-17.93-.553-7.858-1.77-13.613-1.108-5.756-2.878-9.74-1.66-3.984-4.095-6.309-2.435-2.435-5.534-3.43-3.1-.997-6.862-.997-6.53 0-10.847 3.21-4.205 3.099-6.75 9.407-2.436 6.31-3.432 15.717t-.996 21.914q0 15.273 1.217 25.345 1.218 9.96 3.763 15.937 2.657 5.866 6.752 8.301 4.095 2.324 9.85 2.324 4.316 0 7.637-1.328 3.32-1.439 5.755-4.206 2.546-2.767 4.206-6.972 1.66-4.206 2.656-9.74 1.107-5.534 1.439-12.506.442-6.973.442-15.384z"
+      d: "M340.94 834.496q0 3.1-.331 5.313-.332 2.103-.996 3.43-.554 1.218-1.329 1.772-.774.553-1.77.553H257.49q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.438-1.881.775-.664 1.771-.664h26.673v-93.19l-23.02 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988.443-1.218 1.217-1.992.775-.775 2.103-1.66l30.768-19.922q.554-.443 1.328-.664.886-.332 2.214-.443 1.328-.221 3.431-.221 2.214-.111 5.645-.111 4.205 0 6.75.221 2.657.11 3.985.554 1.328.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312zM457.373 833.722q0 3.21-.332 5.534-.221 2.213-.775 3.652-.553 1.439-1.439 2.103-.885.553-1.992.553h-82.343q-2.435 0-4.206-.443-1.771-.442-2.878-1.66-1.107-1.328-1.66-3.763-.443-2.435-.443-6.308 0-3.653.332-6.198.332-2.657 1.218-4.649.885-2.103 2.213-3.984 1.44-1.992 3.653-4.317l24.791-26.562q7.416-7.747 11.953-14.056 4.538-6.42 7.084-11.621 2.545-5.313 3.43-9.74.997-4.427.997-8.411 0-3.652-1.218-6.862-1.106-3.32-3.43-5.755-2.214-2.435-5.645-3.763-3.431-1.44-8.08-1.44-6.53 0-11.62 1.661-4.981 1.66-8.855 3.763-3.763 1.992-6.308 3.763-2.546 1.66-3.985 1.66-.996 0-1.77-.664-.665-.664-1.107-2.213-.443-1.55-.775-4.095-.221-2.657-.221-6.42 0-2.545.11-4.205.222-1.771.554-2.989.332-1.328.885-2.213.553-.996 1.882-2.324 1.438-1.329 5.09-3.32 3.764-2.104 9.187-3.985 5.423-1.992 11.953-3.32 6.53-1.329 13.613-1.329 11.179 0 19.48 2.878 8.41 2.767 13.945 7.858 5.534 4.98 8.19 11.953 2.767 6.862 2.767 14.83 0 6.974-1.328 13.725-1.328 6.751-5.534 14.61-4.206 7.747-11.843 17.265-7.636 9.407-20.254 21.914l-16.712 17.155h56.446q1.106 0 1.992.664.996.664 1.66 2.103.664 1.328.996 3.652.332 2.214.332 5.313zM513.376 829.627q0 10.293-3.653 13.834-3.541 3.542-12.838 3.542-9.297 0-12.839-3.431-3.541-3.542-3.541-13.281 0-10.404 3.541-13.946 3.653-3.541 13.06-3.541 9.186 0 12.728 3.541 3.542 3.431 3.542 13.282zM636.006 773.403q0 17.155-2.767 30.99-2.767 13.834-9.076 23.573-6.198 9.74-16.27 14.942-9.96 5.202-24.459 5.202-14.72 0-24.349-4.98-9.629-5.092-15.273-14.5-5.645-9.518-7.969-23.131-2.213-13.724-2.213-30.99 0-17.044 2.766-30.878 2.878-13.946 9.076-23.685 6.309-9.74 16.27-14.942 10.071-5.202 24.46-5.202 14.72 0 24.348 5.092 9.74 4.98 15.384 14.498 5.645 9.408 7.858 23.132 2.214 13.613 2.214 30.879zm-29.33 1.438q0-10.182-.553-17.93-.553-7.857-1.77-13.613-1.108-5.755-2.878-9.74-1.66-3.983-4.095-6.308-2.435-2.435-5.534-3.43-3.1-.997-6.862-.997-6.53 0-10.847 3.21-4.205 3.099-6.751 9.407-2.435 6.309-3.431 15.717-.996 9.407-.996 21.914 0 15.273 1.217 25.345 1.218 9.96 3.763 15.937 2.657 5.866 6.752 8.301 4.095 2.324 9.85 2.324 4.316 0 7.637-1.328 3.32-1.439 5.755-4.206 2.545-2.767 4.206-6.972 1.66-4.206 2.656-9.74 1.107-5.534 1.439-12.506.442-6.973.442-15.385zM746.904 834.496q0 3.1-.332 5.313-.332 2.103-.996 3.43-.553 1.218-1.328 1.772-.775.553-1.77.553h-79.024q-.886 0-1.66-.553-.775-.554-1.44-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.222-5.312.332-2.214.885-3.542.664-1.328 1.439-1.881.775-.664 1.77-.664h26.674v-93.19l-23.02 12.727q-2.546 1.218-4.207 1.55-1.55.221-2.545-.664-.886-.996-1.218-3.32-.332-2.325-.332-6.53 0-2.657.111-4.317.11-1.77.553-2.988.443-1.218 1.218-1.992.775-.775 2.103-1.66l30.768-19.922q.553-.443 1.328-.664.885-.332 2.214-.443 1.328-.221 3.43-.221 2.214-.111 5.645-.111 4.206 0 6.751.221 2.657.11 3.985.554 1.328.332 1.77.996.443.664.443 1.66v118.314h23.353q.996 0 1.771.664.885.553 1.439 1.881.664 1.328.885 3.542.332 2.103.332 5.312z"
     })));
   }
-  var Electronegativity_default = SvgElectronegativity;
+  var Carbon_default = SvgCarbon;
 
-  // build/lib-react-tsx/periodic/ElectronicBoron.tsx
+  // build/lib-react-tsx/periodic/Electronegativity.tsx
   var React105 = __toModule(require_react());
-  function SvgElectronicBoron({
+  function SvgElectronegativity({
     title,
     titleId,
     ...props
@@ -25392,39 +25393,38 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React105.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React105.createElement("path", {
-      d: "M500 100h150v50H500z",
+      d: "M499.9 100h150v50h-150z",
       fill: "none"
     }), /* @__PURE__ */ React105.createElement("path", {
-      d: "M105.12 32.364H894V968H105.12z",
+      d: "M103.838 31.182h788.88v935.636h-788.88z",
       strokeWidth: 40,
       fill: "none"
     }), /* @__PURE__ */ React105.createElement("path", {
-      d: "M704.18 503.873q0 26.953-7.422 48.828-7.422 21.875-20.703 38.672-12.89 16.797-31.25 28.906-17.969 12.11-39.844 19.922-21.875 7.812-46.875 11.719-24.61 3.515-55.078 3.515H368.633q-12.89 0-21.875-7.422-8.594-7.812-8.594-25V182.388q0-17.187 8.594-24.61 8.984-7.812 21.875-7.812h126.953q46.484 0 78.516 7.813 32.421 7.812 54.296 23.828 22.266 15.625 33.985 39.844 11.719 24.219 11.719 57.031 0 18.36-4.688 34.766-4.687 16.015-13.672 29.297-8.984 13.28-22.265 23.437-12.891 10.156-29.688 16.406 21.484 3.907 39.453 13.672 18.36 9.766 31.64 25.39 13.673 15.235 21.485 35.938 7.813 20.703 7.813 46.485zM571.367 290.982q0-15.234-4.687-27.344-4.688-12.11-14.063-19.922-9.375-8.203-23.828-12.5-14.062-4.296-37.89-4.296h-51.954v131.25h57.422q22.266 0 35.547-5.079 13.281-5.468 21.875-14.453 8.984-9.375 13.281-21.484 4.297-12.5 4.297-26.172zm26.172 216.406q0-17.578-5.86-31.25-5.859-14.062-17.187-23.437-11.328-9.375-28.906-14.453-17.578-5.078-45.703-5.078h-60.938v143.75h74.22q21.483 0 35.937-4.297 14.843-4.688 25.39-13.282 10.938-8.984 16.797-21.875 6.25-13.28 6.25-30.078z",
+      d: "M621.877 388.387q0 10.156-1.015 17.266-.678 6.77-2.709 10.833-1.693 4.062-4.062 6.094-2.37 2.031-5.417 2.031H465.471v117.812h134.4q3.048 0 5.418 1.693t4.062 5.755q2.031 4.063 2.708 10.834 1.016 6.77 1.016 16.927 0 10.156-1.016 16.927-.677 6.77-2.708 11.172-1.693 4.4-4.062 6.432-2.37 1.693-5.417 1.693H465.47v163.177q0 3.724-2.031 6.432-2.032 2.708-7.448 4.74-5.078 1.692-13.542 2.708-8.463 1.016-21.667 1.016-12.864 0-21.666-1.016-8.464-1.016-13.542-2.708-5.078-2.032-7.448-4.74-2.031-2.708-2.031-6.432v-397.11q0-14.895 7.448-21.328 7.786-6.77 18.958-6.77h206.172q3.047 0 5.417 2.03 2.37 1.693 4.062 6.095 2.031 4.062 2.709 11.171 1.015 7.11 1.015 17.266z",
       fontWeight: 400,
-      fontSize: 40,
+      fontSize: 693.333,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
     }), /* @__PURE__ */ React105.createElement("g", {
       style: {
-        lineHeight: 1.25
+        lineHeight: ".01%"
       },
       fontWeight: 400,
-      fontSize: 40,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
     }, /* @__PURE__ */ React105.createElement("path", {
-      d: "M215.604 838.839q0 2.005-.215 3.437-.215 1.36-.644 2.22-.358.788-.86 1.146-.5.358-1.145.358h-51.133q-.573 0-1.074-.358-.502-.358-.931-1.146-.359-.86-.573-2.22-.215-1.432-.215-3.437 0-2.077.143-3.438.215-1.432.573-2.292.43-.859.93-1.217.502-.43 1.147-.43h17.259v-60.3l-14.896 8.236q-1.647.788-2.721 1.003-1.003.143-1.647-.43-.573-.644-.788-2.148-.215-1.504-.215-4.225 0-1.72.072-2.793.071-1.146.358-1.934.286-.788.787-1.289.502-.501 1.361-1.074l19.909-12.89q.358-.287.86-.43.572-.215 1.432-.287.859-.143 2.22-.143 1.432-.072 3.652-.072 2.721 0 4.368.143 1.72.072 2.579.359.859.214 1.145.644.287.43.287 1.074v76.556h15.11q.645 0 1.146.43.573.358.931 1.217.43.86.573 2.292.215 1.36.215 3.438zM276.477 825.518q0 5.443-2.077 9.597-2.005 4.153-5.73 6.946-3.723 2.793-8.808 4.154-5.085 1.432-11.029 1.432-3.58 0-6.875-.573-3.222-.501-5.8-1.289-2.579-.86-4.297-1.719-1.72-.859-2.507-1.575-.788-.788-1.217-2.363-.43-1.648-.43-4.799 0-2.076.143-3.294.143-1.289.43-2.005.286-.788.716-1.003.43-.286 1.074-.286.788 0 2.292.93 1.576.86 3.867 1.934 2.292 1.075 5.3 2.006 3.08.93 6.946.93 2.435 0 4.297-.5 1.934-.502 3.294-1.433 1.433-.93 2.149-2.363.716-1.432.716-3.294 0-2.149-1.36-3.653-1.29-1.575-3.51-2.721-2.148-1.146-4.941-2.149-2.722-1.002-5.658-2.22-2.864-1.217-5.657-2.793-2.722-1.575-4.942-3.867-2.148-2.291-3.509-5.514-1.289-3.223-1.289-7.735 0-4.583 1.79-8.378 1.79-3.868 5.157-6.589 3.366-2.721 8.164-4.225 4.87-1.504 10.885-1.504 3.008 0 5.801.43 2.865.43 5.156 1.074 2.292.644 3.867 1.432 1.576.716 2.22 1.29.717.5 1.003 1.073.287.502.43 1.29.143.716.215 1.861.143 1.075.143 2.722 0 1.933-.143 3.15-.072 1.218-.358 1.934-.215.717-.645 1.003-.43.215-1.003.215-.644 0-2.005-.716-1.36-.788-3.437-1.647-2.006-.86-4.727-1.576-2.65-.788-6.087-.788-2.435 0-4.225.502-1.79.5-2.937 1.432-1.145.93-1.718 2.22-.573 1.217-.573 2.65 0 2.22 1.36 3.724 1.361 1.504 3.581 2.65 2.22 1.145 5.013 2.148 2.865 1.002 5.73 2.22 2.936 1.146 5.729 2.721 2.864 1.576 5.084 3.867 2.22 2.292 3.58 5.515 1.362 3.15 1.362 7.52zM349.38 779.67q0 2.077-.215 3.581-.143 1.433-.5 2.364-.359.93-.932 1.36-.573.358-1.289.358h-53.281q-1.576 0-2.722-.286-1.145-.287-1.862-1.074-.716-.86-1.074-2.435-.286-1.576-.286-4.082 0-2.364.215-4.01.214-1.72.787-3.008.573-1.361 1.433-2.579.93-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.936-4.154 4.583-7.52 1.647-3.437 2.22-6.302.645-2.864.645-5.442 0-2.364-.788-4.44-.716-2.149-2.22-3.725-1.432-1.575-3.652-2.434-2.22-.931-5.228-.931-4.225 0-7.52 1.074-3.222 1.074-5.729 2.435-2.435 1.289-4.082 2.435-1.647 1.074-2.578 1.074-.645 0-1.146-.43-.43-.43-.716-1.432-.286-1.003-.501-2.65-.143-1.719-.143-4.154 0-1.647.071-2.72.143-1.147.358-1.934.215-.86.573-1.433.358-.644 1.218-1.504.93-.86 3.294-2.148 2.435-1.36 5.944-2.578 3.509-1.29 7.734-2.149 4.225-.86 8.809-.86 7.233 0 12.604 1.863 5.443 1.79 9.023 5.085 3.581 3.222 5.3 7.734 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.859 4.369-3.58 9.454-2.721 5.013-7.663 11.171-4.941 6.088-13.105 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.644 2.364.215 1.432.215 3.438zM457.089 838.337q0 2.077-.215 3.581-.144 1.432-.502 2.363t-.93 1.36q-.573.359-1.29.359h-53.28q-1.576 0-2.722-.286-1.146-.287-1.862-1.075-.716-.86-1.074-2.435-.287-1.575-.287-4.082 0-2.363.215-4.01.215-1.719.788-3.008.573-1.36 1.432-2.578.931-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.937-4.154 4.584-7.52 1.647-3.438 2.22-6.302.644-2.865.644-5.443 0-2.363-.788-4.44-.716-2.148-2.22-3.724-1.432-1.575-3.652-2.435-2.22-.93-5.228-.93-4.225 0-7.52 1.073-3.222 1.075-5.728 2.435-2.435 1.29-4.083 2.435-1.647 1.074-2.578 1.074-.644 0-1.145-.43-.43-.429-.717-1.432-.286-1.002-.5-2.65-.144-1.718-.144-4.153 0-1.647.071-2.721.144-1.146.359-1.934.214-.86.572-1.432.359-.645 1.218-1.504.93-.86 3.294-2.148 2.435-1.361 5.944-2.579 3.51-1.289 7.735-2.148 4.225-.86 8.808-.86 7.233 0 12.604 1.863 5.443 1.79 9.024 5.084 3.58 3.223 5.3 7.735 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.86 4.369-3.58 9.453-2.722 5.013-7.663 11.172-4.942 6.087-13.106 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.645 2.364.215 1.432.215 3.437zM517.102 825.518q0 5.443-2.077 9.597-2.005 4.153-5.73 6.946-3.723 2.793-8.808 4.154-5.085 1.432-11.029 1.432-3.58 0-6.875-.573-3.222-.501-5.8-1.289-2.579-.86-4.297-1.719-1.719-.859-2.507-1.575-.788-.788-1.217-2.363-.43-1.648-.43-4.799 0-2.076.143-3.294.144-1.289.43-2.005.286-.788.716-1.003.43-.286 1.074-.286.788 0 2.292.93 1.576.86 3.867 1.934 2.292 1.075 5.3 2.006 3.08.93 6.946.93 2.435 0 4.297-.5 1.934-.502 3.294-1.433 1.433-.93 2.149-2.363.716-1.432.716-3.294 0-2.149-1.36-3.653-1.29-1.575-3.51-2.721-2.148-1.146-4.941-2.149-2.722-1.002-5.658-2.22-2.864-1.217-5.657-2.793-2.722-1.575-4.942-3.867-2.148-2.291-3.509-5.514-1.289-3.223-1.289-7.735 0-4.583 1.79-8.378 1.79-3.868 5.157-6.589 3.366-2.721 8.164-4.225 4.87-1.504 10.885-1.504 3.008 0 5.801.43 2.865.43 5.156 1.074 2.292.644 3.867 1.432 1.576.716 2.22 1.29.717.5 1.003 1.073.287.502.43 1.29.143.716.215 1.861.143 1.075.143 2.722 0 1.933-.143 3.15-.072 1.218-.358 1.934-.215.717-.645 1.003-.43.215-1.003.215-.644 0-2.005-.716-1.36-.788-3.437-1.647-2.006-.86-4.727-1.576-2.65-.788-6.087-.788-2.435 0-4.225.502-1.79.5-2.937 1.432-1.145.93-1.718 2.22-.573 1.217-.573 2.65 0 2.22 1.36 3.724 1.361 1.504 3.581 2.65 2.22 1.145 5.013 2.148 2.865 1.002 5.73 2.22 2.936 1.146 5.729 2.721 2.864 1.576 5.084 3.867 2.22 2.292 3.58 5.515 1.362 3.15 1.362 7.52zM590.005 779.67q0 2.077-.215 3.581-.143 1.433-.5 2.364-.359.93-.932 1.36-.573.358-1.289.358h-53.281q-1.576 0-2.722-.286-1.145-.287-1.862-1.074-.716-.86-1.074-2.435-.286-1.576-.286-4.082 0-2.364.215-4.01.214-1.72.787-3.008.573-1.361 1.433-2.579.93-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.936-4.154 4.583-7.52 1.647-3.437 2.22-6.302.645-2.864.645-5.442 0-2.364-.788-4.44-.716-2.149-2.22-3.725-1.432-1.575-3.652-2.434-2.22-.931-5.228-.931-4.225 0-7.52 1.074-3.222 1.074-5.729 2.435-2.435 1.289-4.082 2.435-1.647 1.074-2.578 1.074-.644 0-1.146-.43-.43-.43-.716-1.432-.286-1.003-.501-2.65-.143-1.719-.143-4.154 0-1.647.071-2.72.143-1.147.358-1.934.215-.86.573-1.433.358-.644 1.218-1.504.93-.86 3.294-2.148 2.435-1.36 5.944-2.578 3.509-1.29 7.734-2.149 4.225-.86 8.809-.86 7.233 0 12.604 1.863 5.443 1.79 9.023 5.085 3.581 3.222 5.3 7.734 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.859 4.369-3.58 9.454-2.721 5.013-7.663 11.171-4.941 6.088-13.105 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.644 2.364.215 1.432.215 3.438zM697.714 838.337q0 2.077-.215 3.581-.144 1.432-.502 2.363t-.93 1.36q-.573.359-1.29.359h-53.28q-1.576 0-2.722-.286-1.146-.287-1.862-1.075-.716-.86-1.074-2.435-.287-1.575-.287-4.082 0-2.363.215-4.01.215-1.719.788-3.008.573-1.36 1.432-2.578.931-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.937-4.154 4.584-7.52 1.647-3.438 2.22-6.302.644-2.865.644-5.443 0-2.363-.788-4.44-.716-2.148-2.22-3.724-1.432-1.575-3.652-2.435-2.22-.93-5.228-.93-4.225 0-7.52 1.073-3.222 1.075-5.728 2.435-2.435 1.29-4.082 2.435-1.648 1.074-2.579 1.074-.644 0-1.145-.43-.43-.429-.717-1.432-.286-1.002-.5-2.65-.144-1.718-.144-4.153 0-1.647.071-2.721.144-1.146.359-1.934.214-.86.572-1.432.359-.645 1.218-1.504.93-.86 3.294-2.148 2.435-1.361 5.944-2.579 3.51-1.289 7.735-2.148 4.225-.86 8.808-.86 7.233 0 12.604 1.863 5.443 1.79 9.024 5.084 3.58 3.223 5.3 7.735 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.86 4.369-3.58 9.453-2.722 5.013-7.663 11.172-4.942 6.087-13.106 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.645 2.364.215 1.432.215 3.437zM777.063 810.694q0 8.522-1.862 15.397-1.79 6.804-5.3 11.602t-8.737 7.376q-5.228 2.578-11.96 2.578-2.793 0-5.156-.573-2.291-.501-4.512-1.575-2.148-1.146-4.296-2.793-2.149-1.647-4.44-3.867v30.078q0 .716-.43 1.289t-1.504.93q-1.003.43-2.721.645-1.72.215-4.369.215-2.65 0-4.368-.215-1.72-.215-2.793-.644-1.003-.358-1.433-.931-.43-.573-.43-1.29v-89.231q0-.716.359-1.218.358-.572 1.217-.93.931-.359 2.363-.502 1.504-.215 3.724-.215 2.149 0 3.581.215 1.504.143 2.363.501.931.359 1.29.931.358.502.358 1.218v7.52q2.793-2.865 5.442-5.014 2.722-2.22 5.515-3.652 2.793-1.504 5.729-2.22 3.008-.716 6.373-.716 7.019 0 11.96 2.793 4.941 2.721 8.02 7.52 3.152 4.798 4.584 11.171 1.433 6.374 1.433 13.607zm-18.764 1.29q0-4.083-.644-7.807-.573-3.795-2.077-6.732-1.432-2.936-3.867-4.655-2.363-1.79-5.944-1.79-1.79 0-3.58.573-1.72.501-3.582 1.719-1.79 1.217-3.723 3.15-1.934 1.934-4.083 4.799v21.055q3.796 4.798 7.234 7.447 3.437 2.579 7.161 2.579 3.51 0 5.944-1.79 2.507-1.791 4.082-4.656 1.576-2.936 2.292-6.588.787-3.653.787-7.305zM850.11 780.172q0 2.005-.215 3.437-.215 1.361-.645 2.22-.358.788-.86 1.146-.5.358-1.145.358h-51.133q-.573 0-1.074-.358-.501-.358-.931-1.146-.358-.859-.573-2.22-.215-1.432-.215-3.437 0-2.077.143-3.438.215-1.432.573-2.291.43-.86.931-1.218.501-.43 1.146-.43h17.26v-60.299l-14.897 8.236q-1.647.788-2.721 1.002-1.003.144-1.647-.43-.573-.644-.788-2.148-.215-1.504-.215-4.225 0-1.719.072-2.793.071-1.146.358-1.934.286-.787.788-1.289.501-.5 1.36-1.074l19.91-12.89q.357-.287.859-.43.572-.215 1.432-.287.86-.143 2.22-.143 1.432-.071 3.652-.071 2.722 0 4.369.143 1.718.071 2.578.358.86.215 1.146.644.286.43.286 1.075v76.556h15.11q.645 0 1.147.43.573.357.93 1.217.43.86.574 2.291.214 1.361.214 3.438z"
+      d: "M657.365 223.315q0 5.645-1.217 8.633-1.107 2.878-3.1 2.878h-12.727v25.898q0 1.107-.664 1.992-.664.775-2.324 1.328-1.66.554-4.317.775-2.656.332-6.862.332-3.984 0-6.751-.332-2.656-.221-4.316-.775-1.55-.553-2.214-1.328-.553-.885-.553-1.992v-25.898h-54.786q-1.549 0-2.766-.332-1.218-.443-2.103-1.771-.775-1.439-1.218-3.985-.332-2.656-.332-6.972 0-3.542.11-6.087.222-2.657.554-4.76.443-2.102 1.107-3.984.775-1.881 1.882-3.984l44.492-78.47q.553-.996 1.881-1.66 1.328-.775 3.653-1.218 2.434-.553 6.087-.775 3.652-.221 8.854-.221 5.644 0 9.629.332 3.984.221 6.308.885 2.435.554 3.542 1.44 1.107.885 1.107 2.102v86.218h12.728q1.77 0 2.988 2.766 1.328 2.657 1.328 8.965zm-45.045-77.584h-.222l-37.74 65.853h37.962zM708.94 248.55q0 10.293-3.652 13.834-3.541 3.542-12.838 3.542-9.297 0-12.839-3.431-3.541-3.542-3.541-13.281 0-10.404 3.541-13.946 3.653-3.541 13.06-3.541 9.186 0 12.728 3.541 3.542 3.431 3.542 13.282zM831.57 192.326q0 17.155-2.766 30.99-2.767 13.834-9.076 23.574-6.197 9.74-16.27 14.94-9.96 5.203-24.459 5.203-14.72 0-24.349-4.98-9.629-5.092-15.273-14.5-5.645-9.518-7.969-23.13-2.213-13.725-2.213-30.99 0-17.045 2.767-30.88 2.877-13.945 9.075-23.684 6.309-9.74 16.27-14.942 10.071-5.202 24.46-5.202 14.72 0 24.348 5.092 9.74 4.98 15.384 14.498 5.645 9.408 7.858 23.132 2.214 13.613 2.214 30.879zm-29.329 1.439q0-10.183-.553-17.93-.553-7.858-1.77-13.613-1.108-5.756-2.878-9.74-1.66-3.984-4.095-6.309-2.435-2.435-5.534-3.43-3.1-.997-6.862-.997-6.53 0-10.847 3.21-4.205 3.099-6.75 9.407-2.436 6.31-3.432 15.717t-.996 21.914q0 15.273 1.217 25.345 1.218 9.96 3.763 15.937 2.657 5.866 6.752 8.301 4.095 2.324 9.85 2.324 4.316 0 7.637-1.328 3.32-1.439 5.755-4.206 2.546-2.767 4.206-6.972 1.66-4.206 2.656-9.74 1.107-5.534 1.439-12.506.442-6.973.442-15.384z"
     })));
   }
-  var ElectronicBoron_default = SvgElectronicBoron;
+  var Electronegativity_default = SvgElectronegativity;
 
-  // build/lib-react-tsx/periodic/ElectronicLithium.tsx
+  // build/lib-react-tsx/periodic/ElectronicBoron.tsx
   var React106 = __toModule(require_react());
-  function SvgElectronicLithium({
+  function SvgElectronicBoron({
     title,
     titleId,
     ...props
@@ -25444,64 +25444,36 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M500 100h150v50H500z",
       fill: "none"
     }), /* @__PURE__ */ React106.createElement("path", {
-      d: "M115.938 31.182h788.88v935.636h-788.88z",
+      d: "M105.12 32.364H894V968H105.12z",
       strokeWidth: 40,
       fill: "none"
-    }), /* @__PURE__ */ React106.createElement("g", {
-      style: {
-        lineHeight: ".01%"
-      },
-      fontWeight: 700,
-      fontSize: 693.333,
-      fontFamily: "Calibri",
+    }), /* @__PURE__ */ React106.createElement("path", {
+      d: "M704.18 503.873q0 26.953-7.422 48.828-7.422 21.875-20.703 38.672-12.89 16.797-31.25 28.906-17.969 12.11-39.844 19.922-21.875 7.812-46.875 11.719-24.61 3.515-55.078 3.515H368.633q-12.89 0-21.875-7.422-8.594-7.812-8.594-25V182.388q0-17.187 8.594-24.61 8.984-7.812 21.875-7.812h126.953q46.484 0 78.516 7.813 32.421 7.812 54.296 23.828 22.266 15.625 33.985 39.844 11.719 24.219 11.719 57.031 0 18.36-4.688 34.766-4.687 16.015-13.672 29.297-8.984 13.28-22.265 23.437-12.891 10.156-29.688 16.406 21.484 3.907 39.453 13.672 18.36 9.766 31.64 25.39 13.673 15.235 21.485 35.938 7.813 20.703 7.813 46.485zM571.367 290.982q0-15.234-4.687-27.344-4.688-12.11-14.063-19.922-9.375-8.203-23.828-12.5-14.062-4.296-37.89-4.296h-51.954v131.25h57.422q22.266 0 35.547-5.079 13.281-5.468 21.875-14.453 8.984-9.375 13.281-21.484 4.297-12.5 4.297-26.172zm26.172 216.406q0-17.578-5.86-31.25-5.859-14.062-17.187-23.437-11.328-9.375-28.906-14.453-17.578-5.078-45.703-5.078h-60.938v143.75h74.22q21.483 0 35.937-4.297 14.843-4.688 25.39-13.282 10.938-8.984 16.797-21.875 6.25-13.28 6.25-30.078z",
+      fontWeight: 400,
+      fontSize: 40,
+      fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
-    }, /* @__PURE__ */ React106.createElement("path", {
-      d: "M563.514 619.376q0 10.156-1.015 17.265-.677 6.771-2.37 11.51-1.693 4.402-4.401 6.433-2.37 2.031-5.755 2.031H349.218q-11.172 0-18.959-6.432-7.448-6.77-7.448-21.667V230.73q0-3.385 2.032-6.094 2.37-2.708 7.447-4.4 5.079-1.694 13.542-2.71 8.802-1.015 21.667-1.015 13.203 0 21.666 1.016 8.464 1.015 13.542 2.708 5.078 1.693 7.11 4.401 2.37 2.709 2.37 6.094v352.422h137.786q3.385 0 5.755 2.031 2.708 1.693 4.401 6.094 1.693 4.062 2.37 11.172 1.015 6.77 1.015 16.927zM696.9 645.105q0 3.385-2.031 6.094-2.032 2.37-7.11 4.062-4.74 1.693-12.864 2.37-8.125 1.016-20.651 1.016t-20.651-1.016q-8.125-.677-13.204-2.37-4.74-1.693-6.77-4.062-2.032-2.709-2.032-6.094V343.803q0-3.386 2.032-5.755 2.03-2.709 6.77-4.401 5.079-2.032 13.204-3.047 8.125-1.016 20.65-1.016 12.527 0 20.652 1.016 8.125 1.015 12.864 3.047 5.078 1.692 7.11 4.4 2.03 2.37 2.03 5.756v301.302zm6.432-404.219q0 25.73-10.495 35.547-10.494 9.818-38.932 9.818-28.776 0-38.932-9.48-9.818-9.479-9.818-34.192 0-25.73 10.156-35.547 10.495-10.156 39.271-10.156 28.438 0 38.594 9.818 10.156 9.479 10.156 34.192z",
+    }), /* @__PURE__ */ React106.createElement("g", {
       style: {
         lineHeight: 1.25
-      }
-    })), /* @__PURE__ */ React106.createElement("g", {
-      style: {
-        lineHeight: ".01%"
       },
       fontWeight: 400,
+      fontSize: 40,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
     }, /* @__PURE__ */ React106.createElement("path", {
-      d: "M326.94 891.163q0 3.099-.331 5.313-.332 2.102-.996 3.43-.554 1.218-1.329 1.771-.774.554-1.77.554H243.49q-.885 0-1.66-.554-.775-.553-1.439-1.77-.553-1.329-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.438-1.882.775-.664 1.771-.664h26.673v-93.19l-23.02 12.728q-2.546 1.218-4.206 1.55-1.55.22-2.546-.664-.885-.997-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.771.554-2.988.443-1.218 1.217-1.993.775-.774 2.103-1.66l30.768-19.922q.554-.442 1.328-.664.886-.332 2.214-.442 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.75.22 2.657.112 3.985.554 1.328.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.554 1.44 1.882.663 1.328.885 3.542.332 2.102.332 5.312zM421.016 870.577q0 8.412-3.21 14.83-3.098 6.42-8.854 10.737-5.755 4.316-13.613 6.419-7.858 2.213-17.044 2.213-5.534 0-10.625-.885-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.657-2.657-1.328-3.874-2.434-1.218-1.218-1.882-3.653-.664-2.545-.664-7.415 0-3.21.222-5.091.22-1.992.664-3.1.442-1.217 1.106-1.549.664-.442 1.66-.442 1.218 0 3.542 1.438 2.435 1.329 5.977 2.989 3.541 1.66 8.19 3.099 4.759 1.438 10.736 1.438 3.763 0 6.64-.774 2.988-.775 5.091-2.214 2.214-1.439 3.32-3.652 1.107-2.214 1.107-5.091 0-3.32-2.102-5.645-1.993-2.435-5.424-4.206-3.32-1.77-7.636-3.32-4.206-1.55-8.744-3.43-4.427-1.882-8.743-4.317-4.206-2.435-7.637-5.977-3.32-3.542-5.423-8.522-1.992-4.98-1.992-11.953 0-7.083 2.766-12.95 2.767-5.976 7.97-10.182 5.201-4.205 12.616-6.53 7.526-2.324 16.823-2.324 4.649 0 8.965.664 4.427.664 7.969 1.66 3.542.997 5.976 2.214 2.435 1.107 3.431 1.992 1.107.775 1.55 1.66.443.775.664 1.992.221 1.107.332 2.878.221 1.66.221 4.206 0 2.988-.221 4.87-.11 1.881-.553 2.988-.332 1.107-.996 1.55-.664.331-1.55.331-.996 0-3.099-1.106-2.103-1.218-5.312-2.546-3.1-1.328-7.305-2.435-4.095-1.217-9.408-1.217-3.763 0-6.53.774-2.766.775-4.537 2.214t-2.657 3.431q-.885 1.882-.885 4.095 0 3.431 2.103 5.755t5.534 4.095q3.43 1.771 7.747 3.32 4.427 1.55 8.854 3.432 4.538 1.77 8.854 4.205 4.428 2.435 7.859 5.977 3.43 3.542 5.533 8.522 2.103 4.87 2.103 11.621z",
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 700,
-      fontSize: 226.667,
-      fontFamily: "Calibri"
-    }), /* @__PURE__ */ React106.createElement("path", {
-      d: "M496.653 803.867q0 2.086-.216 3.597-.144 1.438-.503 2.374-.36.935-.936 1.366-.575.36-1.295.36H440.18q-1.583 0-2.734-.288-1.15-.287-1.87-1.079-.72-.863-1.08-2.446-.287-1.582-.287-4.1 0-2.374.216-4.029.216-1.727.791-3.021.576-1.367 1.439-2.59.935-1.295 2.374-2.806l16.115-17.266q4.82-5.035 7.77-9.136 2.949-4.172 4.603-7.554 1.655-3.453 2.23-6.33.648-2.878.648-5.468 0-2.374-.792-4.46-.719-2.158-2.23-3.741-1.438-1.583-3.669-2.446-2.23-.935-5.251-.935-4.245 0-7.554 1.079-3.237 1.079-5.755 2.446-2.446 1.295-4.1 2.446-1.655 1.079-2.59 1.079-.648 0-1.152-.432-.431-.431-.719-1.439-.288-1.007-.504-2.661-.143-1.727-.143-4.173 0-1.654.071-2.734.144-1.15.36-1.942.216-.863.576-1.439.36-.647 1.223-1.51.935-.864 3.309-2.159 2.446-1.367 5.97-2.59 3.526-1.294 7.77-2.158 4.245-.863 8.85-.863 7.265 0 12.66 1.87 5.468 1.799 9.065 5.108 3.597 3.237 5.324 7.77 1.798 4.46 1.798 9.64 0 4.532-.863 8.92-.864 4.389-3.597 9.496-2.734 5.036-7.698 11.223-4.964 6.115-13.165 14.244l-10.863 11.15h36.69q.719 0 1.295.432.647.432 1.079 1.367.431.864.647 2.374.216 1.44.216 3.454z",
-      fontSize: "65%",
-      baselineShift: "super"
-    }), /* @__PURE__ */ React106.createElement("path", {
-      d: "M608.503 890.388q0 3.21-.332 5.534-.221 2.214-.775 3.653-.553 1.438-1.438 2.102-.886.554-1.993.554h-82.343q-2.435 0-4.206-.443-1.77-.443-2.878-1.66-1.106-1.328-1.66-3.763-.442-2.435-.442-6.309 0-3.652.332-6.198.332-2.656 1.217-4.648.885-2.103 2.214-3.984 1.438-1.993 3.652-4.317l24.792-26.562q7.415-7.748 11.953-14.056 4.537-6.42 7.083-11.621 2.546-5.313 3.431-9.74.996-4.427.996-8.411 0-3.653-1.217-6.862-1.107-3.32-3.431-5.756-2.214-2.435-5.645-3.763-3.43-1.438-8.08-1.438-6.53 0-11.62 1.66-4.98 1.66-8.855 3.763-3.763 1.992-6.308 3.763-2.546 1.66-3.985 1.66-.996 0-1.77-.664-.664-.664-1.107-2.214-.443-1.55-.775-4.095-.221-2.656-.221-6.419 0-2.546.11-4.206.222-1.77.554-2.988.332-1.328.885-2.214.554-.996 1.882-2.324 1.439-1.328 5.09-3.32 3.764-2.103 9.187-3.985 5.423-1.992 11.953-3.32 6.53-1.328 13.614-1.328 11.178 0 19.479 2.878 8.411 2.767 13.945 7.858 5.534 4.98 8.19 11.953 2.767 6.862 2.767 14.83 0 6.973-1.328 13.725-1.328 6.75-5.534 14.609-4.206 7.747-11.842 17.266-7.637 9.407-20.254 21.914l-16.713 17.155h56.446q1.107 0 1.992.664.996.664 1.66 2.102.664 1.329.996 3.653.332 2.213.332 5.312zM701.25 870.577q0 8.412-3.209 14.83-3.099 6.42-8.854 10.737-5.755 4.316-13.613 6.419-7.859 2.213-17.045 2.213-5.534 0-10.625-.885-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.657-2.656-1.328-3.874-2.434-1.217-1.218-1.881-3.653-.664-2.545-.664-7.415 0-3.21.22-5.091.222-1.992.665-3.1.443-1.217 1.107-1.549.664-.442 1.66-.442 1.217 0 3.542 1.438 2.434 1.329 5.976 2.989t8.19 3.099q4.76 1.438 10.736 1.438 3.763 0 6.64-.774 2.989-.775 5.092-2.214 2.213-1.439 3.32-3.652 1.107-2.214 1.107-5.091 0-3.32-2.103-5.645-1.992-2.435-5.423-4.206-3.32-1.77-7.637-3.32-4.206-1.55-8.743-3.43-4.428-1.882-8.744-4.317-4.206-2.435-7.637-5.977-3.32-3.542-5.423-8.522-1.992-4.98-1.992-11.953 0-7.083 2.767-12.95 2.767-5.976 7.969-10.182 5.201-4.205 12.617-6.53 7.526-2.324 16.823-2.324 4.648 0 8.965.664 4.427.664 7.968 1.66 3.542.997 5.977 2.214 2.435 1.107 3.43 1.992 1.108.775 1.55 1.66.443.775.664 1.992.222 1.107.332 2.878.222 1.66.222 4.206 0 2.988-.222 4.87-.11 1.881-.553 2.988-.332 1.107-.996 1.55-.664.331-1.55.331-.996 0-3.098-1.106-2.103-1.218-5.313-2.546-3.099-1.328-7.305-2.435-4.095-1.217-9.407-1.217-3.763 0-6.53.774-2.767.775-4.538 2.214-1.77 1.439-2.656 3.431-.886 1.882-.886 4.095 0 3.431 2.103 5.755t5.534 4.095q3.431 1.771 7.748 3.32 4.427 1.55 8.854 3.432 4.537 1.77 8.854 4.205 4.427 2.435 7.858 5.977 3.43 3.542 5.534 8.522 2.103 4.87 2.103 11.621z",
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 700,
-      fontSize: 226.667,
-      fontFamily: "Calibri"
-    }), /* @__PURE__ */ React106.createElement("path", {
-      d: "M776.024 804.37q0 2.014-.216 3.453-.216 1.367-.647 2.23-.36.792-.863 1.151-.504.36-1.152.36h-51.365q-.575 0-1.079-.36-.503-.36-.935-1.15-.36-.864-.576-2.23-.215-1.44-.215-3.454 0-2.086.143-3.453.216-1.439.576-2.302.432-.863.935-1.223.504-.432 1.151-.432h17.338v-60.573l-14.964 8.273q-1.654.791-2.733 1.007-1.008.144-1.655-.432-.576-.647-.791-2.158-.216-1.51-.216-4.244 0-1.727.072-2.806.072-1.151.36-1.942.287-.792.79-1.295.504-.504 1.368-1.08l19.999-12.949q.36-.287.863-.431.576-.216 1.439-.288.863-.144 2.23-.144 1.439-.072 3.67-.072 2.733 0 4.387.144 1.727.072 2.59.36.864.216 1.151.647.288.432.288 1.08v76.903h15.18q.647 0 1.15.432.576.36.936 1.223.431.863.575 2.302.216 1.367.216 3.453z",
-      fontSize: "65%",
-      baselineShift: "super"
+      d: "M215.604 838.839q0 2.005-.215 3.437-.215 1.36-.644 2.22-.358.788-.86 1.146-.5.358-1.145.358h-51.133q-.573 0-1.074-.358-.502-.358-.931-1.146-.359-.86-.573-2.22-.215-1.432-.215-3.437 0-2.077.143-3.438.215-1.432.573-2.292.43-.859.93-1.217.502-.43 1.147-.43h17.259v-60.3l-14.896 8.236q-1.647.788-2.721 1.003-1.003.143-1.647-.43-.573-.644-.788-2.148-.215-1.504-.215-4.225 0-1.72.072-2.793.071-1.146.358-1.934.286-.788.787-1.289.502-.501 1.361-1.074l19.909-12.89q.358-.287.86-.43.572-.215 1.432-.287.859-.143 2.22-.143 1.432-.072 3.652-.072 2.721 0 4.368.143 1.72.072 2.579.359.859.214 1.145.644.287.43.287 1.074v76.556h15.11q.645 0 1.146.43.573.358.931 1.217.43.86.573 2.292.215 1.36.215 3.438zM276.477 825.518q0 5.443-2.077 9.597-2.005 4.153-5.73 6.946-3.723 2.793-8.808 4.154-5.085 1.432-11.029 1.432-3.58 0-6.875-.573-3.222-.501-5.8-1.289-2.579-.86-4.297-1.719-1.72-.859-2.507-1.575-.788-.788-1.217-2.363-.43-1.648-.43-4.799 0-2.076.143-3.294.143-1.289.43-2.005.286-.788.716-1.003.43-.286 1.074-.286.788 0 2.292.93 1.576.86 3.867 1.934 2.292 1.075 5.3 2.006 3.08.93 6.946.93 2.435 0 4.297-.5 1.934-.502 3.294-1.433 1.433-.93 2.149-2.363.716-1.432.716-3.294 0-2.149-1.36-3.653-1.29-1.575-3.51-2.721-2.148-1.146-4.941-2.149-2.722-1.002-5.658-2.22-2.864-1.217-5.657-2.793-2.722-1.575-4.942-3.867-2.148-2.291-3.509-5.514-1.289-3.223-1.289-7.735 0-4.583 1.79-8.378 1.79-3.868 5.157-6.589 3.366-2.721 8.164-4.225 4.87-1.504 10.885-1.504 3.008 0 5.801.43 2.865.43 5.156 1.074 2.292.644 3.867 1.432 1.576.716 2.22 1.29.717.5 1.003 1.073.287.502.43 1.29.143.716.215 1.861.143 1.075.143 2.722 0 1.933-.143 3.15-.072 1.218-.358 1.934-.215.717-.645 1.003-.43.215-1.003.215-.644 0-2.005-.716-1.36-.788-3.437-1.647-2.006-.86-4.727-1.576-2.65-.788-6.087-.788-2.435 0-4.225.502-1.79.5-2.937 1.432-1.145.93-1.718 2.22-.573 1.217-.573 2.65 0 2.22 1.36 3.724 1.361 1.504 3.581 2.65 2.22 1.145 5.013 2.148 2.865 1.002 5.73 2.22 2.936 1.146 5.729 2.721 2.864 1.576 5.084 3.867 2.22 2.292 3.58 5.515 1.362 3.15 1.362 7.52zM349.38 779.67q0 2.077-.215 3.581-.143 1.433-.5 2.364-.359.93-.932 1.36-.573.358-1.289.358h-53.281q-1.576 0-2.722-.286-1.145-.287-1.862-1.074-.716-.86-1.074-2.435-.286-1.576-.286-4.082 0-2.364.215-4.01.214-1.72.787-3.008.573-1.361 1.433-2.579.93-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.936-4.154 4.583-7.52 1.647-3.437 2.22-6.302.645-2.864.645-5.442 0-2.364-.788-4.44-.716-2.149-2.22-3.725-1.432-1.575-3.652-2.434-2.22-.931-5.228-.931-4.225 0-7.52 1.074-3.222 1.074-5.729 2.435-2.435 1.289-4.082 2.435-1.647 1.074-2.578 1.074-.645 0-1.146-.43-.43-.43-.716-1.432-.286-1.003-.501-2.65-.143-1.719-.143-4.154 0-1.647.071-2.72.143-1.147.358-1.934.215-.86.573-1.433.358-.644 1.218-1.504.93-.86 3.294-2.148 2.435-1.36 5.944-2.578 3.509-1.29 7.734-2.149 4.225-.86 8.809-.86 7.233 0 12.604 1.863 5.443 1.79 9.023 5.085 3.581 3.222 5.3 7.734 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.859 4.369-3.58 9.454-2.721 5.013-7.663 11.171-4.941 6.088-13.105 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.644 2.364.215 1.432.215 3.438zM457.089 838.337q0 2.077-.215 3.581-.144 1.432-.502 2.363t-.93 1.36q-.573.359-1.29.359h-53.28q-1.576 0-2.722-.286-1.146-.287-1.862-1.075-.716-.86-1.074-2.435-.287-1.575-.287-4.082 0-2.363.215-4.01.215-1.719.788-3.008.573-1.36 1.432-2.578.931-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.937-4.154 4.584-7.52 1.647-3.438 2.22-6.302.644-2.865.644-5.443 0-2.363-.788-4.44-.716-2.148-2.22-3.724-1.432-1.575-3.652-2.435-2.22-.93-5.228-.93-4.225 0-7.52 1.073-3.222 1.075-5.728 2.435-2.435 1.29-4.083 2.435-1.647 1.074-2.578 1.074-.644 0-1.145-.43-.43-.429-.717-1.432-.286-1.002-.5-2.65-.144-1.718-.144-4.153 0-1.647.071-2.721.144-1.146.359-1.934.214-.86.572-1.432.359-.645 1.218-1.504.93-.86 3.294-2.148 2.435-1.361 5.944-2.579 3.51-1.289 7.735-2.148 4.225-.86 8.808-.86 7.233 0 12.604 1.863 5.443 1.79 9.024 5.084 3.58 3.223 5.3 7.735 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.86 4.369-3.58 9.453-2.722 5.013-7.663 11.172-4.942 6.087-13.106 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.645 2.364.215 1.432.215 3.437zM517.102 825.518q0 5.443-2.077 9.597-2.005 4.153-5.73 6.946-3.723 2.793-8.808 4.154-5.085 1.432-11.029 1.432-3.58 0-6.875-.573-3.222-.501-5.8-1.289-2.579-.86-4.297-1.719-1.719-.859-2.507-1.575-.788-.788-1.217-2.363-.43-1.648-.43-4.799 0-2.076.143-3.294.144-1.289.43-2.005.286-.788.716-1.003.43-.286 1.074-.286.788 0 2.292.93 1.576.86 3.867 1.934 2.292 1.075 5.3 2.006 3.08.93 6.946.93 2.435 0 4.297-.5 1.934-.502 3.294-1.433 1.433-.93 2.149-2.363.716-1.432.716-3.294 0-2.149-1.36-3.653-1.29-1.575-3.51-2.721-2.148-1.146-4.941-2.149-2.722-1.002-5.658-2.22-2.864-1.217-5.657-2.793-2.722-1.575-4.942-3.867-2.148-2.291-3.509-5.514-1.289-3.223-1.289-7.735 0-4.583 1.79-8.378 1.79-3.868 5.157-6.589 3.366-2.721 8.164-4.225 4.87-1.504 10.885-1.504 3.008 0 5.801.43 2.865.43 5.156 1.074 2.292.644 3.867 1.432 1.576.716 2.22 1.29.717.5 1.003 1.073.287.502.43 1.29.143.716.215 1.861.143 1.075.143 2.722 0 1.933-.143 3.15-.072 1.218-.358 1.934-.215.717-.645 1.003-.43.215-1.003.215-.644 0-2.005-.716-1.36-.788-3.437-1.647-2.006-.86-4.727-1.576-2.65-.788-6.087-.788-2.435 0-4.225.502-1.79.5-2.937 1.432-1.145.93-1.718 2.22-.573 1.217-.573 2.65 0 2.22 1.36 3.724 1.361 1.504 3.581 2.65 2.22 1.145 5.013 2.148 2.865 1.002 5.73 2.22 2.936 1.146 5.729 2.721 2.864 1.576 5.084 3.867 2.22 2.292 3.58 5.515 1.362 3.15 1.362 7.52zM590.005 779.67q0 2.077-.215 3.581-.143 1.433-.5 2.364-.359.93-.932 1.36-.573.358-1.289.358h-53.281q-1.576 0-2.722-.286-1.145-.287-1.862-1.074-.716-.86-1.074-2.435-.286-1.576-.286-4.082 0-2.364.215-4.01.214-1.72.787-3.008.573-1.361 1.433-2.579.93-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.936-4.154 4.583-7.52 1.647-3.437 2.22-6.302.645-2.864.645-5.442 0-2.364-.788-4.44-.716-2.149-2.22-3.725-1.432-1.575-3.652-2.434-2.22-.931-5.228-.931-4.225 0-7.52 1.074-3.222 1.074-5.729 2.435-2.435 1.289-4.082 2.435-1.647 1.074-2.578 1.074-.644 0-1.146-.43-.43-.43-.716-1.432-.286-1.003-.501-2.65-.143-1.719-.143-4.154 0-1.647.071-2.72.143-1.147.358-1.934.215-.86.573-1.433.358-.644 1.218-1.504.93-.86 3.294-2.148 2.435-1.36 5.944-2.578 3.509-1.29 7.734-2.149 4.225-.86 8.809-.86 7.233 0 12.604 1.863 5.443 1.79 9.023 5.085 3.581 3.222 5.3 7.734 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.859 4.369-3.58 9.454-2.721 5.013-7.663 11.171-4.941 6.088-13.105 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.644 2.364.215 1.432.215 3.438zM697.714 838.337q0 2.077-.215 3.581-.144 1.432-.502 2.363t-.93 1.36q-.573.359-1.29.359h-53.28q-1.576 0-2.722-.286-1.146-.287-1.862-1.075-.716-.86-1.074-2.435-.287-1.575-.287-4.082 0-2.363.215-4.01.215-1.719.788-3.008.573-1.36 1.432-2.578.931-1.289 2.363-2.793l16.042-17.187q4.798-5.013 7.734-9.095 2.937-4.154 4.584-7.52 1.647-3.438 2.22-6.302.644-2.865.644-5.443 0-2.363-.788-4.44-.716-2.148-2.22-3.724-1.432-1.575-3.652-2.435-2.22-.93-5.228-.93-4.225 0-7.52 1.073-3.222 1.075-5.728 2.435-2.435 1.29-4.082 2.435-1.648 1.074-2.579 1.074-.644 0-1.145-.43-.43-.429-.717-1.432-.286-1.002-.5-2.65-.144-1.718-.144-4.153 0-1.647.071-2.721.144-1.146.359-1.934.214-.86.572-1.432.359-.645 1.218-1.504.93-.86 3.294-2.148 2.435-1.361 5.944-2.579 3.51-1.289 7.735-2.148 4.225-.86 8.808-.86 7.233 0 12.604 1.863 5.443 1.79 9.024 5.084 3.58 3.223 5.3 7.735 1.79 4.44 1.79 9.596 0 4.512-.86 8.88-.86 4.369-3.58 9.453-2.722 5.013-7.663 11.172-4.942 6.087-13.106 14.18l-10.814 11.1h36.524q.716 0 1.289.43.644.43 1.074 1.36.43.86.645 2.364.215 1.432.215 3.437zM777.063 810.694q0 8.522-1.862 15.397-1.79 6.804-5.3 11.602t-8.737 7.376q-5.228 2.578-11.96 2.578-2.793 0-5.156-.573-2.291-.501-4.512-1.575-2.148-1.146-4.296-2.793-2.149-1.647-4.44-3.867v30.078q0 .716-.43 1.289t-1.504.93q-1.003.43-2.721.645-1.72.215-4.369.215-2.65 0-4.368-.215-1.72-.215-2.793-.644-1.003-.358-1.433-.931-.43-.573-.43-1.29v-89.231q0-.716.359-1.218.358-.572 1.217-.93.931-.359 2.363-.502 1.504-.215 3.724-.215 2.149 0 3.581.215 1.504.143 2.363.501.931.359 1.29.931.358.502.358 1.218v7.52q2.793-2.865 5.442-5.014 2.722-2.22 5.515-3.652 2.793-1.504 5.729-2.22 3.008-.716 6.373-.716 7.019 0 11.96 2.793 4.941 2.721 8.02 7.52 3.152 4.798 4.584 11.171 1.433 6.374 1.433 13.607zm-18.764 1.29q0-4.083-.644-7.807-.573-3.795-2.077-6.732-1.432-2.936-3.867-4.655-2.363-1.79-5.944-1.79-1.79 0-3.58.573-1.72.501-3.582 1.719-1.79 1.217-3.723 3.15-1.934 1.934-4.083 4.799v21.055q3.796 4.798 7.234 7.447 3.437 2.579 7.161 2.579 3.51 0 5.944-1.79 2.507-1.791 4.082-4.656 1.576-2.936 2.292-6.588.787-3.653.787-7.305zM850.11 780.172q0 2.005-.215 3.437-.215 1.361-.645 2.22-.358.788-.86 1.146-.5.358-1.145.358h-51.133q-.573 0-1.074-.358-.501-.358-.931-1.146-.358-.859-.573-2.22-.215-1.432-.215-3.437 0-2.077.143-3.438.215-1.432.573-2.291.43-.86.931-1.218.501-.43 1.146-.43h17.26v-60.299l-14.897 8.236q-1.647.788-2.721 1.002-1.003.144-1.647-.43-.573-.644-.788-2.148-.215-1.504-.215-4.225 0-1.719.072-2.793.071-1.146.358-1.934.286-.787.788-1.289.501-.5 1.36-1.074l19.91-12.89q.357-.287.859-.43.572-.215 1.432-.287.86-.143 2.22-.143 1.432-.071 3.652-.071 2.722 0 4.369.143 1.718.071 2.578.358.86.215 1.146.644.286.43.286 1.075v76.556h15.11q.645 0 1.147.43.573.357.93 1.217.43.86.574 2.291.214 1.361.214 3.438z"
     })));
   }
-  var ElectronicLithium_default = SvgElectronicLithium;
+  var ElectronicBoron_default = SvgElectronicBoron;
 
-  // build/lib-react-tsx/periodic/IsotopeCarbon.tsx
+  // build/lib-react-tsx/periodic/ElectronicLithium.tsx
   var React107 = __toModule(require_react());
-  function SvgIsotopeCarbon({
+  function SvgElectronicLithium({
     title,
     titleId,
     ...props
@@ -25524,23 +25496,61 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M115.938 31.182h788.88v935.636h-788.88z",
       strokeWidth: 40,
       fill: "none"
-    }), /* @__PURE__ */ React107.createElement("path", {
-      d: "M669.037 661.338q0 8.464-.677 14.557-.339 5.756-1.354 10.157-1.016 4.062-2.709 7.109-1.692 3.047-5.416 7.11-3.724 3.723-14.558 9.817-10.494 6.094-26.067 11.85-15.235 5.416-35.209 9.14-19.635 3.724-42.656 3.724-45.026 0-81.25-13.88t-61.615-41.303q-25.39-27.76-38.932-69.062-13.542-41.302-13.542-96.146 0-55.86 14.896-99.193t41.64-72.786q26.746-29.453 63.985-44.688 37.578-15.234 82.604-15.234 18.282 0 35.209 3.047 16.927 3.047 31.146 8.125 14.557 4.74 26.067 11.172t15.912 11.172q4.74 4.4 6.432 7.448 1.693 3.046 2.708 7.786 1.016 4.74 1.355 11.172.677 6.432.677 15.911 0 10.157-.677 17.266-.677 7.11-2.37 11.51-1.693 4.401-4.063 6.433-2.37 2.03-5.416 2.03-5.078 0-12.865-5.754-7.786-6.094-20.312-13.203-12.188-7.448-29.454-13.204-16.927-6.093-40.625-6.093-26.067 0-46.718 10.833-20.313 10.495-34.87 30.469-14.219 19.635-21.667 47.734-7.448 28.1-7.448 63.307 0 38.594 7.787 67.032 8.125 28.099 22.682 46.38 14.896 18.281 35.547 27.422 20.99 8.802 47.057 8.802 23.698 0 40.964-5.417 17.265-5.755 29.453-12.526 12.526-6.77 20.312-12.187 8.125-5.417 12.526-5.417 3.386 0 5.417 1.354 2.031 1.354 3.386 5.417 1.354 4.062 2.03 11.51.678 7.11.678 19.297z",
-      fontWeight: 400,
+    }), /* @__PURE__ */ React107.createElement("g", {
+      style: {
+        lineHeight: ".01%"
+      },
+      fontWeight: 700,
       fontSize: 693.333,
+      fontFamily: "Calibri",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }, /* @__PURE__ */ React107.createElement("path", {
+      d: "M563.514 619.376q0 10.156-1.015 17.265-.677 6.771-2.37 11.51-1.693 4.402-4.401 6.433-2.37 2.031-5.755 2.031H349.218q-11.172 0-18.959-6.432-7.448-6.77-7.448-21.667V230.73q0-3.385 2.032-6.094 2.37-2.708 7.447-4.4 5.079-1.694 13.542-2.71 8.802-1.015 21.667-1.015 13.203 0 21.666 1.016 8.464 1.015 13.542 2.708 5.078 1.693 7.11 4.401 2.37 2.709 2.37 6.094v352.422h137.786q3.385 0 5.755 2.031 2.708 1.693 4.401 6.094 1.693 4.062 2.37 11.172 1.015 6.77 1.015 16.927zM696.9 645.105q0 3.385-2.031 6.094-2.032 2.37-7.11 4.062-4.74 1.693-12.864 2.37-8.125 1.016-20.651 1.016t-20.651-1.016q-8.125-.677-13.204-2.37-4.74-1.693-6.77-4.062-2.032-2.709-2.032-6.094V343.803q0-3.386 2.032-5.755 2.03-2.709 6.77-4.401 5.079-2.032 13.204-3.047 8.125-1.016 20.65-1.016 12.527 0 20.652 1.016 8.125 1.015 12.864 3.047 5.078 1.692 7.11 4.4 2.03 2.37 2.03 5.756v301.302zm6.432-404.219q0 25.73-10.495 35.547-10.494 9.818-38.932 9.818-28.776 0-38.932-9.48-9.818-9.479-9.818-34.192 0-25.73 10.156-35.547 10.495-10.156 39.271-10.156 28.438 0 38.594 9.818 10.156 9.479 10.156 34.192z",
+      style: {
+        lineHeight: 1.25
+      }
+    })), /* @__PURE__ */ React107.createElement("g", {
+      style: {
+        lineHeight: ".01%"
+      },
+      fontWeight: 400,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
+    }, /* @__PURE__ */ React107.createElement("path", {
+      d: "M326.94 891.163q0 3.099-.331 5.313-.332 2.102-.996 3.43-.554 1.218-1.329 1.771-.774.554-1.77.554H243.49q-.885 0-1.66-.554-.775-.553-1.439-1.77-.553-1.329-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.438-1.882.775-.664 1.771-.664h26.673v-93.19l-23.02 12.728q-2.546 1.218-4.206 1.55-1.55.22-2.546-.664-.885-.997-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.771.554-2.988.443-1.218 1.217-1.993.775-.774 2.103-1.66l30.768-19.922q.554-.442 1.328-.664.886-.332 2.214-.442 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.75.22 2.657.112 3.985.554 1.328.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.554 1.44 1.882.663 1.328.885 3.542.332 2.102.332 5.312zM421.016 870.577q0 8.412-3.21 14.83-3.098 6.42-8.854 10.737-5.755 4.316-13.613 6.419-7.858 2.213-17.044 2.213-5.534 0-10.625-.885-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.657-2.657-1.328-3.874-2.434-1.218-1.218-1.882-3.653-.664-2.545-.664-7.415 0-3.21.222-5.091.22-1.992.664-3.1.442-1.217 1.106-1.549.664-.442 1.66-.442 1.218 0 3.542 1.438 2.435 1.329 5.977 2.989 3.541 1.66 8.19 3.099 4.759 1.438 10.736 1.438 3.763 0 6.64-.774 2.988-.775 5.091-2.214 2.214-1.439 3.32-3.652 1.107-2.214 1.107-5.091 0-3.32-2.102-5.645-1.993-2.435-5.424-4.206-3.32-1.77-7.636-3.32-4.206-1.55-8.744-3.43-4.427-1.882-8.743-4.317-4.206-2.435-7.637-5.977-3.32-3.542-5.423-8.522-1.992-4.98-1.992-11.953 0-7.083 2.766-12.95 2.767-5.976 7.97-10.182 5.201-4.205 12.616-6.53 7.526-2.324 16.823-2.324 4.649 0 8.965.664 4.427.664 7.969 1.66 3.542.997 5.976 2.214 2.435 1.107 3.431 1.992 1.107.775 1.55 1.66.443.775.664 1.992.221 1.107.332 2.878.221 1.66.221 4.206 0 2.988-.221 4.87-.11 1.881-.553 2.988-.332 1.107-.996 1.55-.664.331-1.55.331-.996 0-3.099-1.106-2.103-1.218-5.312-2.546-3.1-1.328-7.305-2.435-4.095-1.217-9.408-1.217-3.763 0-6.53.774-2.766.775-4.537 2.214t-2.657 3.431q-.885 1.882-.885 4.095 0 3.431 2.103 5.755t5.534 4.095q3.43 1.771 7.747 3.32 4.427 1.55 8.854 3.432 4.538 1.77 8.854 4.205 4.428 2.435 7.859 5.977 3.43 3.542 5.533 8.522 2.103 4.87 2.103 11.621z",
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 700,
+      fontSize: 226.667,
+      fontFamily: "Calibri"
     }), /* @__PURE__ */ React107.createElement("path", {
-      d: "M270.787 292.24q0 3.099-.332 5.312-.332 2.103-.996 3.431-.554 1.218-1.328 1.771-.775.554-1.771.554h-79.024q-.885 0-1.66-.554-.775-.553-1.439-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.221-5.313.332-2.213.886-3.541.664-1.328 1.439-1.882.774-.664 1.77-.664h26.674v-93.19l-23.021 12.728q-2.546 1.217-4.206 1.55-1.55.22-2.546-.665-.885-.996-1.217-3.32-.332-2.324-.332-6.53 0-2.656.11-4.316.111-1.771.554-2.989.443-1.217 1.217-1.992.775-.774 2.103-1.66l30.769-19.922q.553-.442 1.328-.664.885-.332 2.213-.443 1.328-.22 3.431-.22 2.214-.112 5.645-.112 4.205 0 6.751.222 2.656.11 3.984.553 1.329.332 1.771.996.443.664.443 1.66V280.84h23.353q.996 0 1.77.664.886.554 1.44 1.882.663 1.328.885 3.541.332 2.103.332 5.313zM386.555 261.361q0 10.736-4.095 19.037-4.095 8.3-11.4 13.945-7.304 5.644-17.487 8.633-10.182 2.877-22.246 2.877-7.304 0-13.724-1.106-6.419-.997-11.4-2.546-4.87-1.55-8.079-3.21-3.21-1.66-4.206-2.545-.996-.886-1.55-1.992-.442-1.107-.885-2.546-.332-1.55-.553-3.763-.11-2.324-.11-5.534 0-5.312.885-7.305.885-2.102 2.656-2.102 1.107 0 3.763 1.549 2.767 1.439 6.973 3.21 4.206 1.66 9.85 3.21 5.645 1.438 12.839 1.438 6.087 0 10.735-1.439 4.649-1.439 7.858-3.984 3.32-2.656 4.87-6.309 1.66-3.763 1.66-8.3 0-4.98-1.992-8.965-1.881-3.985-5.755-6.752-3.763-2.877-9.629-4.427-5.755-1.55-13.613-1.55h-12.396q-1.439 0-2.435-.331-.996-.443-1.66-1.66-.664-1.218-.996-3.32-.222-2.214-.222-5.645 0-3.21.222-5.202.332-2.103.885-3.21.664-1.106 1.55-1.55.996-.442 2.324-.442h12.506q6.42 0 11.4-1.439 4.98-1.55 8.3-4.316 3.432-2.767 5.203-6.64 1.77-3.985 1.77-8.744 0-3.653-1.217-6.862-1.217-3.32-3.652-5.645-2.324-2.435-6.088-3.763-3.763-1.439-8.854-1.439-5.755 0-10.846 1.771-5.091 1.66-9.186 3.763-3.985 1.993-6.862 3.763-2.767 1.771-4.095 1.771-.886 0-1.55-.332-.664-.443-1.107-1.55-.442-1.106-.664-3.209-.22-2.103-.22-5.423 0-2.767.11-4.538.11-1.881.442-3.099.332-1.217.775-2.103.554-.885 1.66-1.881 1.107-1.107 4.538-3.21 3.431-2.103 8.633-4.095 5.202-1.992 11.953-3.32 6.862-1.439 14.83-1.439 10.404 0 18.373 2.435 8.08 2.435 13.503 7.083 5.534 4.538 8.3 11.29 2.878 6.64 2.878 15.051 0 6.53-1.66 12.175-1.66 5.644-4.87 10.071-3.21 4.428-8.08 7.526-4.758 3.1-11.067 4.649v.332q7.526.885 13.503 3.874 5.976 2.877 10.071 7.304 4.206 4.427 6.42 10.072 2.213 5.534 2.213 11.953z"
-    }));
+      d: "M496.653 803.867q0 2.086-.216 3.597-.144 1.438-.503 2.374-.36.935-.936 1.366-.575.36-1.295.36H440.18q-1.583 0-2.734-.288-1.15-.287-1.87-1.079-.72-.863-1.08-2.446-.287-1.582-.287-4.1 0-2.374.216-4.029.216-1.727.791-3.021.576-1.367 1.439-2.59.935-1.295 2.374-2.806l16.115-17.266q4.82-5.035 7.77-9.136 2.949-4.172 4.603-7.554 1.655-3.453 2.23-6.33.648-2.878.648-5.468 0-2.374-.792-4.46-.719-2.158-2.23-3.741-1.438-1.583-3.669-2.446-2.23-.935-5.251-.935-4.245 0-7.554 1.079-3.237 1.079-5.755 2.446-2.446 1.295-4.1 2.446-1.655 1.079-2.59 1.079-.648 0-1.152-.432-.431-.431-.719-1.439-.288-1.007-.504-2.661-.143-1.727-.143-4.173 0-1.654.071-2.734.144-1.15.36-1.942.216-.863.576-1.439.36-.647 1.223-1.51.935-.864 3.309-2.159 2.446-1.367 5.97-2.59 3.526-1.294 7.77-2.158 4.245-.863 8.85-.863 7.265 0 12.66 1.87 5.468 1.799 9.065 5.108 3.597 3.237 5.324 7.77 1.798 4.46 1.798 9.64 0 4.532-.863 8.92-.864 4.389-3.597 9.496-2.734 5.036-7.698 11.223-4.964 6.115-13.165 14.244l-10.863 11.15h36.69q.719 0 1.295.432.647.432 1.079 1.367.431.864.647 2.374.216 1.44.216 3.454z",
+      fontSize: "65%",
+      baselineShift: "super"
+    }), /* @__PURE__ */ React107.createElement("path", {
+      d: "M608.503 890.388q0 3.21-.332 5.534-.221 2.214-.775 3.653-.553 1.438-1.438 2.102-.886.554-1.993.554h-82.343q-2.435 0-4.206-.443-1.77-.443-2.878-1.66-1.106-1.328-1.66-3.763-.442-2.435-.442-6.309 0-3.652.332-6.198.332-2.656 1.217-4.648.885-2.103 2.214-3.984 1.438-1.993 3.652-4.317l24.792-26.562q7.415-7.748 11.953-14.056 4.537-6.42 7.083-11.621 2.546-5.313 3.431-9.74.996-4.427.996-8.411 0-3.653-1.217-6.862-1.107-3.32-3.431-5.756-2.214-2.435-5.645-3.763-3.43-1.438-8.08-1.438-6.53 0-11.62 1.66-4.98 1.66-8.855 3.763-3.763 1.992-6.308 3.763-2.546 1.66-3.985 1.66-.996 0-1.77-.664-.664-.664-1.107-2.214-.443-1.55-.775-4.095-.221-2.656-.221-6.419 0-2.546.11-4.206.222-1.77.554-2.988.332-1.328.885-2.214.554-.996 1.882-2.324 1.439-1.328 5.09-3.32 3.764-2.103 9.187-3.985 5.423-1.992 11.953-3.32 6.53-1.328 13.614-1.328 11.178 0 19.479 2.878 8.411 2.767 13.945 7.858 5.534 4.98 8.19 11.953 2.767 6.862 2.767 14.83 0 6.973-1.328 13.725-1.328 6.75-5.534 14.609-4.206 7.747-11.842 17.266-7.637 9.407-20.254 21.914l-16.713 17.155h56.446q1.107 0 1.992.664.996.664 1.66 2.102.664 1.329.996 3.653.332 2.213.332 5.312zM701.25 870.577q0 8.412-3.209 14.83-3.099 6.42-8.854 10.737-5.755 4.316-13.613 6.419-7.859 2.213-17.045 2.213-5.534 0-10.625-.885-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.657-2.656-1.328-3.874-2.434-1.217-1.218-1.881-3.653-.664-2.545-.664-7.415 0-3.21.22-5.091.222-1.992.665-3.1.443-1.217 1.107-1.549.664-.442 1.66-.442 1.217 0 3.542 1.438 2.434 1.329 5.976 2.989t8.19 3.099q4.76 1.438 10.736 1.438 3.763 0 6.64-.774 2.989-.775 5.092-2.214 2.213-1.439 3.32-3.652 1.107-2.214 1.107-5.091 0-3.32-2.103-5.645-1.992-2.435-5.423-4.206-3.32-1.77-7.637-3.32-4.206-1.55-8.743-3.43-4.428-1.882-8.744-4.317-4.206-2.435-7.637-5.977-3.32-3.542-5.423-8.522-1.992-4.98-1.992-11.953 0-7.083 2.767-12.95 2.767-5.976 7.969-10.182 5.201-4.205 12.617-6.53 7.526-2.324 16.823-2.324 4.648 0 8.965.664 4.427.664 7.968 1.66 3.542.997 5.977 2.214 2.435 1.107 3.43 1.992 1.108.775 1.55 1.66.443.775.664 1.992.222 1.107.332 2.878.222 1.66.222 4.206 0 2.988-.222 4.87-.11 1.881-.553 2.988-.332 1.107-.996 1.55-.664.331-1.55.331-.996 0-3.098-1.106-2.103-1.218-5.313-2.546-3.099-1.328-7.305-2.435-4.095-1.217-9.407-1.217-3.763 0-6.53.774-2.767.775-4.538 2.214-1.77 1.439-2.656 3.431-.886 1.882-.886 4.095 0 3.431 2.103 5.755t5.534 4.095q3.431 1.771 7.748 3.32 4.427 1.55 8.854 3.432 4.537 1.77 8.854 4.205 4.427 2.435 7.858 5.977 3.43 3.542 5.534 8.522 2.103 4.87 2.103 11.621z",
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 700,
+      fontSize: 226.667,
+      fontFamily: "Calibri"
+    }), /* @__PURE__ */ React107.createElement("path", {
+      d: "M776.024 804.37q0 2.014-.216 3.453-.216 1.367-.647 2.23-.36.792-.863 1.151-.504.36-1.152.36h-51.365q-.575 0-1.079-.36-.503-.36-.935-1.15-.36-.864-.576-2.23-.215-1.44-.215-3.454 0-2.086.143-3.453.216-1.439.576-2.302.432-.863.935-1.223.504-.432 1.151-.432h17.338v-60.573l-14.964 8.273q-1.654.791-2.733 1.007-1.008.144-1.655-.432-.576-.647-.791-2.158-.216-1.51-.216-4.244 0-1.727.072-2.806.072-1.151.36-1.942.287-.792.79-1.295.504-.504 1.368-1.08l19.999-12.949q.36-.287.863-.431.576-.216 1.439-.288.863-.144 2.23-.144 1.439-.072 3.67-.072 2.733 0 4.387.144 1.727.072 2.59.36.864.216 1.151.647.288.432.288 1.08v76.903h15.18q.647 0 1.15.432.576.36.936 1.223.431.863.575 2.302.216 1.367.216 3.453z",
+      fontSize: "65%",
+      baselineShift: "super"
+    })));
   }
-  var IsotopeCarbon_default = SvgIsotopeCarbon;
+  var ElectronicLithium_default = SvgElectronicLithium;
 
-  // build/lib-react-tsx/periodic/IsotopeFluor.tsx
+  // build/lib-react-tsx/periodic/IsotopeCarbon.tsx
   var React108 = __toModule(require_react());
-  function SvgIsotopeFluor({
+  function SvgIsotopeCarbon({
     title,
     titleId,
     ...props
@@ -25564,31 +25574,22 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeWidth: 40,
       fill: "none"
     }), /* @__PURE__ */ React108.createElement("path", {
-      d: "M660.593 411.105q0 10.156-1.016 17.266-.677 6.77-2.708 10.833-1.693 4.062-4.063 6.094-2.37 2.03-5.417 2.03H504.186v117.813h134.401q3.047 0 5.417 1.693 2.37 1.693 4.062 5.755 2.032 4.063 2.709 10.834 1.015 6.77 1.015 16.927 0 10.156-1.015 16.927-.677 6.77-2.709 11.172-1.692 4.4-4.062 6.432-2.37 1.693-5.417 1.693h-134.4V799.75q0 3.724-2.032 6.432-2.031 2.708-7.448 4.74-5.078 1.692-13.542 2.708-8.463 1.016-21.666 1.016-12.865 0-21.667-1.016-8.463-1.016-13.542-2.708-5.078-2.032-7.447-4.74-2.032-2.708-2.032-6.432V402.64q0-14.895 7.448-21.328 7.787-6.77 18.959-6.77h206.171q3.047 0 5.417 2.03 2.37 1.693 4.063 6.094 2.03 4.063 2.708 11.172 1.016 7.11 1.016 17.266z",
+      d: "M669.037 661.338q0 8.464-.677 14.557-.339 5.756-1.354 10.157-1.016 4.062-2.709 7.109-1.692 3.047-5.416 7.11-3.724 3.723-14.558 9.817-10.494 6.094-26.067 11.85-15.235 5.416-35.209 9.14-19.635 3.724-42.656 3.724-45.026 0-81.25-13.88t-61.615-41.303q-25.39-27.76-38.932-69.062-13.542-41.302-13.542-96.146 0-55.86 14.896-99.193t41.64-72.786q26.746-29.453 63.985-44.688 37.578-15.234 82.604-15.234 18.282 0 35.209 3.047 16.927 3.047 31.146 8.125 14.557 4.74 26.067 11.172t15.912 11.172q4.74 4.4 6.432 7.448 1.693 3.046 2.708 7.786 1.016 4.74 1.355 11.172.677 6.432.677 15.911 0 10.157-.677 17.266-.677 7.11-2.37 11.51-1.693 4.401-4.063 6.433-2.37 2.03-5.416 2.03-5.078 0-12.865-5.754-7.786-6.094-20.312-13.203-12.188-7.448-29.454-13.204-16.927-6.093-40.625-6.093-26.067 0-46.718 10.833-20.313 10.495-34.87 30.469-14.219 19.635-21.667 47.734-7.448 28.1-7.448 63.307 0 38.594 7.787 67.032 8.125 28.099 22.682 46.38 14.896 18.281 35.547 27.422 20.99 8.802 47.057 8.802 23.698 0 40.964-5.417 17.265-5.755 29.453-12.526 12.526-6.77 20.312-12.187 8.125-5.417 12.526-5.417 3.386 0 5.417 1.354 2.031 1.354 3.386 5.417 1.354 4.062 2.03 11.51.678 7.11.678 19.297z",
       fontWeight: 400,
       fontSize: 693.333,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
-    }), /* @__PURE__ */ React108.createElement("g", {
-      style: {
-        lineHeight: ".01%"
-      },
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }, /* @__PURE__ */ React108.createElement("path", {
-      d: "M302.787 327.932q0 3.1-.332 5.313-.332 2.103-.996 3.43-.554 1.218-1.328 1.772-.775.553-1.771.553h-79.024q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.439-1.881.774-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988.443-1.218 1.217-1.992.775-.775 2.103-1.66l30.769-19.922q.553-.443 1.328-.664.885-.333 2.213-.443 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.751.221 2.656.11 3.984.554 1.329.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312zM419.551 260.862q0 8.743-.885 18.151-.886 9.297-3.431 18.262-2.435 8.965-6.862 17.044-4.317 8.08-11.29 14.167-6.861 5.976-16.822 9.518-9.85 3.542-23.353 3.542-4.76 0-9.518-.664-4.649-.665-8.522-1.66-3.874-.997-6.641-2.104-2.656-1.106-3.874-2.213-1.217-1.217-1.77-3.431-.554-2.214-.554-6.198 0-3.652.11-5.866.222-2.213.665-3.43.553-1.218 1.217-1.55.775-.443 1.771-.443 1.328 0 3.763.775 2.435.774 5.866 1.77 3.542.997 7.969 1.771 4.427.775 9.85.775 9.297 0 15.716-3.32 6.42-3.32 10.404-8.965t5.866-13.06q1.881-7.415 2.103-15.605-5.092 3.21-12.286 5.644-7.194 2.324-16.49 2.324-11.4 0-19.369-2.988-7.969-2.988-12.95-8.633-4.98-5.644-7.304-13.724-2.213-8.08-2.213-18.261 0-10.736 3.21-19.7 3.209-9.076 9.517-15.606 6.309-6.641 15.717-10.293 9.407-3.653 21.803-3.653 9.96 0 17.376 2.325 7.526 2.324 12.839 6.64 5.423 4.317 8.965 10.514 3.652 6.088 5.644 13.614 2.103 7.526 2.878 16.27.885 8.743.885 18.261zm-28.887-3.984q0-11.843-1.328-19.812-1.328-7.968-3.984-12.727-2.656-4.76-6.64-6.752-3.985-1.992-9.298-1.992-5.201 0-8.964 1.882-3.763 1.77-6.309 5.09-2.435 3.321-3.652 7.859-1.218 4.538-1.218 9.96 0 5.867.996 10.404 1.107 4.427 3.32 7.416 2.325 2.877 5.977 4.316 3.653 1.439 8.854 1.439 6.42 0 12.064-1.882 5.755-1.992 10.182-5.201z"
-    })));
+    }), /* @__PURE__ */ React108.createElement("path", {
+      d: "M270.787 292.24q0 3.099-.332 5.312-.332 2.103-.996 3.431-.554 1.218-1.328 1.771-.775.554-1.771.554h-79.024q-.885 0-1.66-.554-.775-.553-1.439-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.221-5.313.332-2.213.886-3.541.664-1.328 1.439-1.882.774-.664 1.77-.664h26.674v-93.19l-23.021 12.728q-2.546 1.217-4.206 1.55-1.55.22-2.546-.665-.885-.996-1.217-3.32-.332-2.324-.332-6.53 0-2.656.11-4.316.111-1.771.554-2.989.443-1.217 1.217-1.992.775-.774 2.103-1.66l30.769-19.922q.553-.442 1.328-.664.885-.332 2.213-.443 1.328-.22 3.431-.22 2.214-.112 5.645-.112 4.205 0 6.751.222 2.656.11 3.984.553 1.329.332 1.771.996.443.664.443 1.66V280.84h23.353q.996 0 1.77.664.886.554 1.44 1.882.663 1.328.885 3.541.332 2.103.332 5.313zM386.555 261.361q0 10.736-4.095 19.037-4.095 8.3-11.4 13.945-7.304 5.644-17.487 8.633-10.182 2.877-22.246 2.877-7.304 0-13.724-1.106-6.419-.997-11.4-2.546-4.87-1.55-8.079-3.21-3.21-1.66-4.206-2.545-.996-.886-1.55-1.992-.442-1.107-.885-2.546-.332-1.55-.553-3.763-.11-2.324-.11-5.534 0-5.312.885-7.305.885-2.102 2.656-2.102 1.107 0 3.763 1.549 2.767 1.439 6.973 3.21 4.206 1.66 9.85 3.21 5.645 1.438 12.839 1.438 6.087 0 10.735-1.439 4.649-1.439 7.858-3.984 3.32-2.656 4.87-6.309 1.66-3.763 1.66-8.3 0-4.98-1.992-8.965-1.881-3.985-5.755-6.752-3.763-2.877-9.629-4.427-5.755-1.55-13.613-1.55h-12.396q-1.439 0-2.435-.331-.996-.443-1.66-1.66-.664-1.218-.996-3.32-.222-2.214-.222-5.645 0-3.21.222-5.202.332-2.103.885-3.21.664-1.106 1.55-1.55.996-.442 2.324-.442h12.506q6.42 0 11.4-1.439 4.98-1.55 8.3-4.316 3.432-2.767 5.203-6.64 1.77-3.985 1.77-8.744 0-3.653-1.217-6.862-1.217-3.32-3.652-5.645-2.324-2.435-6.088-3.763-3.763-1.439-8.854-1.439-5.755 0-10.846 1.771-5.091 1.66-9.186 3.763-3.985 1.993-6.862 3.763-2.767 1.771-4.095 1.771-.886 0-1.55-.332-.664-.443-1.107-1.55-.442-1.106-.664-3.209-.22-2.103-.22-5.423 0-2.767.11-4.538.11-1.881.442-3.099.332-1.217.775-2.103.554-.885 1.66-1.881 1.107-1.107 4.538-3.21 3.431-2.103 8.633-4.095 5.202-1.992 11.953-3.32 6.862-1.439 14.83-1.439 10.404 0 18.373 2.435 8.08 2.435 13.503 7.083 5.534 4.538 8.3 11.29 2.878 6.64 2.878 15.051 0 6.53-1.66 12.175-1.66 5.644-4.87 10.071-3.21 4.428-8.08 7.526-4.758 3.1-11.067 4.649v.332q7.526.885 13.503 3.874 5.976 2.877 10.071 7.304 4.206 4.427 6.42 10.072 2.213 5.534 2.213 11.953z"
+    }));
   }
-  var IsotopeFluor_default = SvgIsotopeFluor;
+  var IsotopeCarbon_default = SvgIsotopeCarbon;
 
-  // build/lib-react-tsx/periodic/IsotopeHydrogen.tsx
+  // build/lib-react-tsx/periodic/IsotopeFluor.tsx
   var React109 = __toModule(require_react());
-  function SvgIsotopeHydrogen({
+  function SvgIsotopeFluor({
     title,
     titleId,
     ...props
@@ -25612,27 +25613,31 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeWidth: 40,
       fill: "none"
     }), /* @__PURE__ */ React109.createElement("path", {
-      d: "M699.224 743.86q0 3.385-2.37 6.093-2.031 2.708-7.11 4.401-5.078 1.693-13.541 2.708-8.464 1.016-21.328 1.016-13.203 0-22.006-1.016-8.463-1.015-13.541-2.708-4.74-1.693-7.11-4.4-2.03-2.71-2.03-6.095V566.802H446.332v177.057q0 3.386-2.031 6.094t-7.11 4.401q-5.078 1.693-13.541 2.708-8.464 1.016-21.667 1.016-12.865 0-21.667-1.016-8.463-1.015-13.541-2.708-5.078-1.693-7.448-4.4-2.031-2.71-2.031-6.095V330.161q0-3.385 2.03-6.093 2.37-2.709 7.449-4.401 5.078-1.693 13.541-2.709 8.802-1.015 21.667-1.015 13.203 0 21.667 1.015 8.463 1.016 13.541 2.709 5.079 1.692 7.11 4.4 2.031 2.709 2.031 6.094V490.97h163.854V330.16q0-3.385 2.031-6.093 2.37-2.709 7.11-4.401 5.078-1.693 13.541-2.709 8.803-1.015 22.006-1.015 12.864 0 21.328 1.015 8.463 1.016 13.541 2.709 5.079 1.692 7.11 4.4 2.37 2.709 2.37 6.094V743.86z",
+      d: "M660.593 411.105q0 10.156-1.016 17.266-.677 6.77-2.708 10.833-1.693 4.062-4.063 6.094-2.37 2.03-5.417 2.03H504.186v117.813h134.401q3.047 0 5.417 1.693 2.37 1.693 4.062 5.755 2.032 4.063 2.709 10.834 1.015 6.77 1.015 16.927 0 10.156-1.015 16.927-.677 6.77-2.709 11.172-1.692 4.4-4.062 6.432-2.37 1.693-5.417 1.693h-134.4V799.75q0 3.724-2.032 6.432-2.031 2.708-7.448 4.74-5.078 1.692-13.542 2.708-8.463 1.016-21.666 1.016-12.865 0-21.667-1.016-8.463-1.016-13.542-2.708-5.078-2.032-7.447-4.74-2.032-2.708-2.032-6.432V402.64q0-14.895 7.448-21.328 7.787-6.77 18.959-6.77h206.171q3.047 0 5.417 2.03 2.37 1.693 4.063 6.094 2.03 4.063 2.708 11.172 1.016 7.11 1.016 17.266z",
       fontWeight: 400,
       fontSize: 693.333,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
-    }), /* @__PURE__ */ React109.createElement("path", {
-      d: "M320.787 335.932q0 3.1-.332 5.313-.332 2.103-.996 3.43-.554 1.218-1.328 1.772-.775.553-1.771.553h-79.024q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.439-1.881.774-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988.443-1.218 1.217-1.992.775-.775 2.103-1.66l30.769-19.922q.553-.443 1.328-.664.885-.333 2.213-.443 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.751.221 2.656.11 3.984.554 1.329.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312z",
+    }), /* @__PURE__ */ React109.createElement("g", {
+      style: {
+        lineHeight: ".01%"
+      },
       fontWeight: 400,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
-    }));
+    }, /* @__PURE__ */ React109.createElement("path", {
+      d: "M302.787 327.932q0 3.1-.332 5.313-.332 2.103-.996 3.43-.554 1.218-1.328 1.772-.775.553-1.771.553h-79.024q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.439-1.881.774-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988.443-1.218 1.217-1.992.775-.775 2.103-1.66l30.769-19.922q.553-.443 1.328-.664.885-.333 2.213-.443 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.751.221 2.656.11 3.984.554 1.329.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312zM419.551 260.862q0 8.743-.885 18.151-.886 9.297-3.431 18.262-2.435 8.965-6.862 17.044-4.317 8.08-11.29 14.167-6.861 5.976-16.822 9.518-9.85 3.542-23.353 3.542-4.76 0-9.518-.664-4.649-.665-8.522-1.66-3.874-.997-6.641-2.104-2.656-1.106-3.874-2.213-1.217-1.217-1.77-3.431-.554-2.214-.554-6.198 0-3.652.11-5.866.222-2.213.665-3.43.553-1.218 1.217-1.55.775-.443 1.771-.443 1.328 0 3.763.775 2.435.774 5.866 1.77 3.542.997 7.969 1.771 4.427.775 9.85.775 9.297 0 15.716-3.32 6.42-3.32 10.404-8.965t5.866-13.06q1.881-7.415 2.103-15.605-5.092 3.21-12.286 5.644-7.194 2.324-16.49 2.324-11.4 0-19.369-2.988-7.969-2.988-12.95-8.633-4.98-5.644-7.304-13.724-2.213-8.08-2.213-18.261 0-10.736 3.21-19.7 3.209-9.076 9.517-15.606 6.309-6.641 15.717-10.293 9.407-3.653 21.803-3.653 9.96 0 17.376 2.325 7.526 2.324 12.839 6.64 5.423 4.317 8.965 10.514 3.652 6.088 5.644 13.614 2.103 7.526 2.878 16.27.885 8.743.885 18.261zm-28.887-3.984q0-11.843-1.328-19.812-1.328-7.968-3.984-12.727-2.656-4.76-6.64-6.752-3.985-1.992-9.298-1.992-5.201 0-8.964 1.882-3.763 1.77-6.309 5.09-2.435 3.321-3.652 7.859-1.218 4.538-1.218 9.96 0 5.867.996 10.404 1.107 4.427 3.32 7.416 2.325 2.877 5.977 4.316 3.653 1.439 8.854 1.439 6.42 0 12.064-1.882 5.755-1.992 10.182-5.201z"
+    })));
   }
-  var IsotopeHydrogen_default = SvgIsotopeHydrogen;
+  var IsotopeFluor_default = SvgIsotopeFluor;
 
-  // build/lib-react-tsx/periodic/Mass.tsx
+  // build/lib-react-tsx/periodic/IsotopeHydrogen.tsx
   var React110 = __toModule(require_react());
-  function SvgMass({
+  function SvgIsotopeHydrogen({
     title,
     titleId,
     ...props
@@ -25652,36 +25657,31 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       d: "M500 100h150v50H500z",
       fill: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
-      d: "M129.833 50H870v850H129.833z",
-      strokeWidth: 50.639,
+      d: "M115.938 31.182h788.88v935.636h-788.88z",
+      strokeWidth: 40,
       fill: "none"
     }), /* @__PURE__ */ React110.createElement("path", {
-      d: "M656.009 518.506q0 8.138-.651 13.997-.326 5.534-1.302 9.766-.977 3.906-2.604 6.836-1.628 2.93-5.209 6.836-3.58 3.58-13.997 9.44-10.091 5.859-25.065 11.393-14.649 5.208-33.854 8.789-18.88 3.58-41.016 3.58-43.294 0-78.125-13.346-34.83-13.346-59.245-39.713-24.414-26.693-37.435-66.406-13.02-39.714-13.02-92.448 0-53.711 14.322-95.378 14.323-41.667 40.04-69.987 25.715-28.32 61.523-42.969 36.133-14.648 79.427-14.648 17.578 0 33.854 2.93t29.948 7.812q13.997 4.557 25.065 10.742 11.068 6.185 15.3 10.742 4.557 4.232 6.184 7.162 1.628 2.93 2.605 7.487.976 4.557 1.302 10.742.65 6.185.65 15.3 0 9.765-.65 16.601-.651 6.836-2.279 11.068-1.628 4.232-3.906 6.185-2.279 1.953-5.209 1.953-4.882 0-12.37-5.534-7.486-5.86-19.53-12.695-11.72-7.162-28.32-12.696-16.277-5.86-39.063-5.86-25.066 0-44.922 10.418-19.532 10.09-33.529 29.296-13.672 18.88-20.833 45.899-7.162 27.018-7.162 60.872 0 37.11 7.487 64.453 7.813 27.019 21.81 44.597 14.323 17.578 34.18 26.367 20.182 8.464 45.247 8.464 22.787 0 39.388-5.209 16.602-5.534 28.32-12.044 12.045-6.51 19.532-11.719 7.812-5.208 12.044-5.208 3.255 0 5.208 1.302 1.954 1.302 3.256 5.208 1.302 3.906 1.953 11.068.65 6.836.65 18.555z",
+      d: "M699.224 743.86q0 3.385-2.37 6.093-2.031 2.708-7.11 4.401-5.078 1.693-13.541 2.708-8.464 1.016-21.328 1.016-13.203 0-22.006-1.016-8.463-1.015-13.541-2.708-4.74-1.693-7.11-4.4-2.03-2.71-2.03-6.095V566.802H446.332v177.057q0 3.386-2.031 6.094t-7.11 4.401q-5.078 1.693-13.541 2.708-8.464 1.016-21.667 1.016-12.865 0-21.667-1.016-8.463-1.015-13.541-2.708-5.078-1.693-7.448-4.4-2.031-2.71-2.031-6.095V330.161q0-3.385 2.03-6.093 2.37-2.709 7.449-4.401 5.078-1.693 13.541-2.709 8.802-1.015 21.667-1.015 13.203 0 21.667 1.015 8.463 1.016 13.541 2.709 5.079 1.692 7.11 4.4 2.031 2.709 2.031 6.094V490.97h163.854V330.16q0-3.385 2.031-6.093 2.37-2.709 7.11-4.401 5.078-1.693 13.541-2.709 8.803-1.015 22.006-1.015 12.864 0 21.328 1.015 8.463 1.016 13.541 2.709 5.079 1.692 7.11 4.4 2.37 2.709 2.37 6.094V743.86z",
       fontWeight: 400,
-      fontSize: 506.667,
+      fontSize: 693.333,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
-    }), /* @__PURE__ */ React110.createElement("g", {
-      style: {
-        lineHeight: 1.25
-      },
+    }), /* @__PURE__ */ React110.createElement("path", {
+      d: "M320.787 335.932q0 3.1-.332 5.313-.332 2.103-.996 3.43-.554 1.218-1.328 1.772-.775.553-1.771.553h-79.024q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.439-1.881.774-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988.443-1.218 1.217-1.992.775-.775 2.103-1.66l30.769-19.922q.553-.443 1.328-.664.885-.333 2.213-.443 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.751.221 2.656.11 3.984.554 1.329.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312z",
       fontWeight: 400,
-      fontSize: 40,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
-    }, /* @__PURE__ */ React110.createElement("path", {
-      d: "M341.403 802.081q0 3.076-.33 5.273-.329 2.088-.988 3.406-.55 1.209-1.318 1.758-.77.55-1.758.55h-78.443q-.879 0-1.648-.55-.769-.55-1.428-1.758-.55-1.318-.879-3.406-.33-2.197-.33-5.273 0-3.186.22-5.273.33-2.198.88-3.516.659-1.318 1.428-1.868.769-.659 1.757-.659h26.477V698.26l-22.851 12.634q-2.527 1.209-4.175 1.539-1.538.22-2.527-.66-.879-.988-1.208-3.296-.33-2.307-.33-6.481 0-2.637.11-4.285.11-1.758.55-2.966.439-1.209 1.208-1.978.769-.769 2.087-1.648l30.542-19.775q.55-.44 1.319-.66.878-.33 2.197-.439 1.318-.22 3.406-.22 2.197-.11 5.603-.11 4.174 0 6.701.22 2.637.11 3.955.55 1.319.33 1.758.988.44.66.44 1.648v117.444h23.18q.99 0 1.759.66.878.549 1.428 1.867.659 1.318.879 3.516.33 2.087.33 5.273zM456.98 801.312q0 3.186-.33 5.493-.22 2.197-.77 3.626-.549 1.428-1.427 2.087-.88.55-1.978.55h-81.738q-2.417 0-4.175-.44t-2.856-1.648q-1.1-1.318-1.648-3.735-.44-2.417-.44-6.263 0-3.625.33-6.152.33-2.637 1.208-4.614.88-2.088 2.197-3.955 1.429-1.978 3.626-4.285l24.61-26.367q7.36-7.69 11.865-13.953 4.504-6.372 7.03-11.535 2.528-5.274 3.407-9.668.988-4.395.988-8.35 0-3.626-1.208-6.812-1.099-3.295-3.406-5.712-2.197-2.417-5.603-3.736-3.406-1.428-8.02-1.428-6.482 0-11.536 1.648-4.943 1.648-8.789 3.735-3.735 1.978-6.262 3.736-2.527 1.648-3.955 1.648-.989 0-1.758-.66-.659-.659-1.098-2.197-.44-1.538-.77-4.065-.22-2.637-.22-6.372 0-2.527.11-4.175.22-1.758.55-2.966.33-1.318.879-2.197.55-.989 1.868-2.307 1.428-1.319 5.053-3.296 3.736-2.088 9.119-3.955 5.383-1.978 11.865-3.296 6.482-1.319 13.513-1.319 11.097 0 19.336 2.857 8.35 2.746 13.843 7.8 5.493 4.944 8.13 11.865 2.747 6.812 2.747 14.722 0 6.921-1.319 13.623-1.318 6.702-5.493 14.502-4.175 7.69-11.755 17.139-7.58 9.338-20.105 21.753l-16.59 17.028h56.03q1.1 0 1.978.66.989.659 1.648 2.087.66 1.318.989 3.626.33 2.197.33 5.273zM512.57 797.247q0 10.217-3.625 13.733-3.516 3.516-12.744 3.516-9.229 0-12.745-3.406-3.515-3.516-3.515-13.184 0-10.327 3.515-13.843 3.626-3.515 12.964-3.515 9.119 0 12.635 3.515 3.515 3.406 3.515 13.184zM633.86 741.436q0 17.03-2.747 30.762-2.747 13.733-9.009 23.401-6.152 9.668-16.15 14.832-9.888 5.163-24.28 5.163-14.612 0-24.17-4.944-9.558-5.053-15.16-14.392-5.604-9.448-7.911-22.961-2.197-13.623-2.197-30.762 0-16.919 2.746-30.652 2.857-13.843 9.01-23.51 6.261-9.668 16.15-14.832 9.997-5.164 24.279-5.164 14.612 0 24.17 5.054 9.668 4.944 15.27 14.392 5.604 9.339 7.801 22.962 2.197 13.513 2.197 30.651zm-29.114 1.429q0-10.108-.55-17.798-.55-7.8-1.758-13.513-1.098-5.713-2.856-9.668-1.648-3.955-4.065-6.263-2.417-2.417-5.493-3.405-3.076-.99-6.812-.99-6.482 0-10.766 3.187-4.175 3.076-6.702 9.338-2.417 6.263-3.406 15.6-.988 9.34-.988 21.754 0 15.161 1.208 25.159 1.209 9.887 3.735 15.82 2.637 5.823 6.702 8.24 4.065 2.307 9.778 2.307 4.285 0 7.58-1.319 3.296-1.428 5.713-4.174 2.527-2.747 4.175-6.922 1.648-4.175 2.637-9.668 1.099-5.493 1.428-12.414.44-6.922.44-15.271zM743.942 802.081q0 3.076-.33 5.273-.329 2.088-.988 3.406-.55 1.209-1.318 1.758-.77.55-1.758.55h-78.443q-.878 0-1.648-.55-.769-.55-1.428-1.758-.55-1.318-.879-3.406-.33-2.197-.33-5.273 0-3.186.22-5.273.33-2.198.88-3.516.659-1.318 1.428-1.868.769-.659 1.757-.659h26.477V698.26l-22.851 12.634q-2.527 1.209-4.175 1.539-1.538.22-2.527-.66-.879-.988-1.208-3.296-.33-2.307-.33-6.481 0-2.637.11-4.285.11-1.758.55-2.966.439-1.209 1.208-1.978.769-.769 2.087-1.648l30.542-19.775q.55-.44 1.319-.66.878-.33 2.197-.439 1.318-.22 3.406-.22 2.197-.11 5.603-.11 4.174 0 6.701.22 2.637.11 3.955.55 1.319.33 1.758.988.44.66.44 1.648v117.444h23.18q.99 0 1.759.66.879.549 1.428 1.867.659 1.318.879 3.516.33 2.087.33 5.273z"
-    })));
+    }));
   }
-  var Mass_default = SvgMass;
+  var IsotopeHydrogen_default = SvgIsotopeHydrogen;
 
-  // build/lib-react-tsx/periodic/OxidationState.tsx
+  // build/lib-react-tsx/periodic/Mass.tsx
   var React111 = __toModule(require_react());
-  function SvgOxidationState({
+  function SvgMass({
     title,
     titleId,
     ...props
@@ -25698,53 +25698,39 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React111.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React111.createElement("path", {
-      d: "M499.5 99.5v51h151v-51zm1 1h149v49h-149z"
+      d: "M500 100h150v50H500z",
+      fill: "none"
     }), /* @__PURE__ */ React111.createElement("path", {
-      d: "M95.938 11.182v975.636h828.88V11.182zm40 40h748.88v895.636h-748.88z"
+      d: "M129.833 50H870v850H129.833z",
+      strokeWidth: 50.639,
+      fill: "none"
     }), /* @__PURE__ */ React111.createElement("path", {
-      d: "M566.738 687.095q0 3.385-2.37 6.093-2.03 2.709-7.109 4.401-5.078 1.693-13.541 2.709-8.464 1.015-21.329 1.015-13.203 0-22.005-1.015-8.463-1.016-13.541-2.709-4.74-1.692-7.11-4.4-2.031-2.709-2.031-6.094V510.037H313.848v177.058q0 3.385-2.031 6.093-2.032 2.709-7.11 4.401-5.078 1.693-13.542 2.709-8.463 1.015-21.666 1.015-12.865 0-21.667-1.015-8.463-1.016-13.542-2.709-5.078-1.692-7.447-4.4-2.032-2.709-2.032-6.094V273.397q0-3.386 2.032-6.094 2.37-2.708 7.447-4.401 5.079-1.693 13.542-2.708 8.802-1.016 21.667-1.016 13.203 0 21.666 1.016 8.464 1.015 13.542 2.708 5.078 1.693 7.11 4.4 2.03 2.71 2.03 6.095v160.807h163.855V273.397q0-3.386 2.031-6.094 2.37-2.708 7.11-4.401 5.078-1.693 13.541-2.708 8.802-1.016 22.005-1.016 12.865 0 21.329 1.016 8.463 1.015 13.541 2.708 5.078 1.693 7.11 4.4 2.37 2.71 2.37 6.095z",
+      d: "M656.009 518.506q0 8.138-.651 13.997-.326 5.534-1.302 9.766-.977 3.906-2.604 6.836-1.628 2.93-5.209 6.836-3.58 3.58-13.997 9.44-10.091 5.859-25.065 11.393-14.649 5.208-33.854 8.789-18.88 3.58-41.016 3.58-43.294 0-78.125-13.346-34.83-13.346-59.245-39.713-24.414-26.693-37.435-66.406-13.02-39.714-13.02-92.448 0-53.711 14.322-95.378 14.323-41.667 40.04-69.987 25.715-28.32 61.523-42.969 36.133-14.648 79.427-14.648 17.578 0 33.854 2.93t29.948 7.812q13.997 4.557 25.065 10.742 11.068 6.185 15.3 10.742 4.557 4.232 6.184 7.162 1.628 2.93 2.605 7.487.976 4.557 1.302 10.742.65 6.185.65 15.3 0 9.765-.65 16.601-.651 6.836-2.279 11.068-1.628 4.232-3.906 6.185-2.279 1.953-5.209 1.953-4.882 0-12.37-5.534-7.486-5.86-19.53-12.695-11.72-7.162-28.32-12.696-16.277-5.86-39.063-5.86-25.066 0-44.922 10.418-19.532 10.09-33.529 29.296-13.672 18.88-20.833 45.899-7.162 27.018-7.162 60.872 0 37.11 7.487 64.453 7.813 27.019 21.81 44.597 14.323 17.578 34.18 26.367 20.182 8.464 45.247 8.464 22.787 0 39.388-5.209 16.602-5.534 28.32-12.044 12.045-6.51 19.532-11.719 7.812-5.208 12.044-5.208 3.255 0 5.208 1.302 1.954 1.302 3.256 5.208 1.302 3.906 1.953 11.068.65 6.836.65 18.555z",
       fontWeight: 400,
-      fontSize: 693.333,
+      fontSize: 506.667,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
     }), /* @__PURE__ */ React111.createElement("g", {
       style: {
-        lineHeight: ".01%"
+        lineHeight: 1.25
       },
       fontWeight: 400,
+      fontSize: 40,
       fontFamily: "sans-serif",
       letterSpacing: 0,
       wordSpacing: 0,
       stroke: "none"
     }, /* @__PURE__ */ React111.createElement("path", {
-      d: "M718.212 288.694q0 3.099-.332 5.202-.332 2.103-.996 3.43-.664 1.218-1.55 1.772-.885.553-1.88.553h-34.421v37.52q0 1.106-.554 1.992-.553.774-1.881 1.439-1.328.553-3.542.885-2.213.332-5.534.332-3.32 0-5.534-.332-2.213-.332-3.541-.885-1.328-.664-1.992-1.44-.554-.885-.554-1.991v-37.52h-34.31q-.996 0-1.881-.553-.775-.554-1.44-1.771-.663-1.328-1.106-3.431-.332-2.103-.332-5.202 0-2.988.332-5.091.332-2.214.886-3.431.664-1.328 1.438-1.882.775-.553 1.771-.553h34.642v-37.409q0-1.107.554-1.992.664-.996 1.992-1.55 1.328-.664 3.541-.996 2.214-.332 5.534-.332t5.534.332q2.214.332 3.542.996 1.328.554 1.881 1.55.554.885.554 1.992v37.409h34.752q.886 0 1.66.553.886.554 1.44 1.882.663 1.217.995 3.43.332 2.104.332 5.092zM828.447 341.266q0 3.099-.332 5.312-.332 2.103-.996 3.431-.554 1.218-1.329 1.77-.774.554-1.77.554h-79.024q-.885 0-1.66-.553-.775-.553-1.439-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.221-5.313.332-2.213.886-3.542.664-1.328 1.438-1.881.775-.664 1.771-.664h26.673v-93.19l-23.02 12.728q-2.546 1.217-4.206 1.55-1.55.22-2.546-.665-.885-.996-1.217-3.32-.332-2.324-.332-6.53 0-2.656.11-4.317.111-1.77.554-2.988.442-1.217 1.217-1.992.775-.775 2.103-1.66L775.1 209.56q.554-.443 1.328-.664.886-.332 2.214-.443 1.328-.221 3.431-.221 2.214-.11 5.645-.11 4.205 0 6.75.22 2.657.111 3.985.554 1.328.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.329.885 3.542.332 2.103.332 5.313z"
-    })), /* @__PURE__ */ React111.createElement("g", {
-      style: {
-        lineHeight: ".01%"
-      },
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }, /* @__PURE__ */ React111.createElement("path", {
-      d: "M715.941 694.663q0 6.419-1.217 8.965-1.217 2.545-3.874 2.545H664.81q-2.767 0-3.985-2.545-1.217-2.657-1.217-8.965 0-6.198 1.217-8.744 1.218-2.545 3.985-2.545h46.041q1.328 0 2.214.553.996.553 1.66 1.882.664 1.328.885 3.541.332 2.214.332 5.313zM827.061 739.266q0 3.099-.332 5.312-.332 2.103-.996 3.431-.553 1.218-1.328 1.77-.775.554-1.77.554H743.61q-.886 0-1.66-.553-.775-.553-1.44-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.222-5.313.332-2.213.885-3.542.664-1.328 1.439-1.881.775-.664 1.77-.664h26.674v-93.19l-23.02 12.728q-2.546 1.217-4.207 1.55-1.55.22-2.545-.665-.886-.996-1.218-3.32-.332-2.324-.332-6.53 0-2.656.111-4.317.11-1.77.553-2.988.443-1.217 1.218-1.992.775-.775 2.103-1.66l30.768-19.922q.553-.443 1.328-.664.885-.332 2.214-.443 1.328-.221 3.43-.221 2.214-.11 5.645-.11 4.206 0 6.751.22 2.657.111 3.985.554 1.328.332 1.77.996.443.664.443 1.66v118.314h23.353q.996 0 1.771.664.885.553 1.439 1.881.664 1.329.885 3.542.332 2.103.332 5.313z"
-    })), /* @__PURE__ */ React111.createElement("path", {
-      d: "M824.29 477.276q0 17.155-2.767 30.99-2.767 13.834-9.076 23.574-6.198 9.74-16.27 14.941-9.96 5.202-24.459 5.202-14.72 0-24.349-4.98-9.629-5.092-15.273-14.5-5.645-9.518-7.969-23.13-2.214-13.725-2.214-30.99 0-17.045 2.767-30.88 2.878-13.945 9.076-23.684 6.309-9.74 16.27-14.942 10.071-5.201 24.46-5.201 14.72 0 24.348 5.09 9.74 4.981 15.384 14.5 5.645 9.407 7.858 23.13 2.214 13.614 2.214 30.88zm-29.33 1.439q0-10.183-.553-17.93-.553-7.858-1.77-13.613-1.108-5.756-2.878-9.74-1.66-3.984-4.096-6.308-2.434-2.435-5.533-3.431-3.1-.997-6.862-.997-6.53 0-10.847 3.21-4.205 3.099-6.751 9.408-2.435 6.308-3.431 15.716-.996 9.407-.996 21.914 0 15.273 1.217 25.345 1.218 9.96 3.763 15.937 2.657 5.866 6.752 8.301 4.095 2.324 9.85 2.324 4.316 0 7.637-1.328 3.32-1.439 5.755-4.205 2.545-2.767 4.206-6.973 1.66-4.206 2.656-9.74 1.107-5.534 1.439-12.506.442-6.973.442-15.384z",
-      fontWeight: 400,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }));
+      d: "M341.403 802.081q0 3.076-.33 5.273-.329 2.088-.988 3.406-.55 1.209-1.318 1.758-.77.55-1.758.55h-78.443q-.879 0-1.648-.55-.769-.55-1.428-1.758-.55-1.318-.879-3.406-.33-2.197-.33-5.273 0-3.186.22-5.273.33-2.198.88-3.516.659-1.318 1.428-1.868.769-.659 1.757-.659h26.477V698.26l-22.851 12.634q-2.527 1.209-4.175 1.539-1.538.22-2.527-.66-.879-.988-1.208-3.296-.33-2.307-.33-6.481 0-2.637.11-4.285.11-1.758.55-2.966.439-1.209 1.208-1.978.769-.769 2.087-1.648l30.542-19.775q.55-.44 1.319-.66.878-.33 2.197-.439 1.318-.22 3.406-.22 2.197-.11 5.603-.11 4.174 0 6.701.22 2.637.11 3.955.55 1.319.33 1.758.988.44.66.44 1.648v117.444h23.18q.99 0 1.759.66.878.549 1.428 1.867.659 1.318.879 3.516.33 2.087.33 5.273zM456.98 801.312q0 3.186-.33 5.493-.22 2.197-.77 3.626-.549 1.428-1.427 2.087-.88.55-1.978.55h-81.738q-2.417 0-4.175-.44t-2.856-1.648q-1.1-1.318-1.648-3.735-.44-2.417-.44-6.263 0-3.625.33-6.152.33-2.637 1.208-4.614.88-2.088 2.197-3.955 1.429-1.978 3.626-4.285l24.61-26.367q7.36-7.69 11.865-13.953 4.504-6.372 7.03-11.535 2.528-5.274 3.407-9.668.988-4.395.988-8.35 0-3.626-1.208-6.812-1.099-3.295-3.406-5.712-2.197-2.417-5.603-3.736-3.406-1.428-8.02-1.428-6.482 0-11.536 1.648-4.943 1.648-8.789 3.735-3.735 1.978-6.262 3.736-2.527 1.648-3.955 1.648-.989 0-1.758-.66-.659-.659-1.098-2.197-.44-1.538-.77-4.065-.22-2.637-.22-6.372 0-2.527.11-4.175.22-1.758.55-2.966.33-1.318.879-2.197.55-.989 1.868-2.307 1.428-1.319 5.053-3.296 3.736-2.088 9.119-3.955 5.383-1.978 11.865-3.296 6.482-1.319 13.513-1.319 11.097 0 19.336 2.857 8.35 2.746 13.843 7.8 5.493 4.944 8.13 11.865 2.747 6.812 2.747 14.722 0 6.921-1.319 13.623-1.318 6.702-5.493 14.502-4.175 7.69-11.755 17.139-7.58 9.338-20.105 21.753l-16.59 17.028h56.03q1.1 0 1.978.66.989.659 1.648 2.087.66 1.318.989 3.626.33 2.197.33 5.273zM512.57 797.247q0 10.217-3.625 13.733-3.516 3.516-12.744 3.516-9.229 0-12.745-3.406-3.515-3.516-3.515-13.184 0-10.327 3.515-13.843 3.626-3.515 12.964-3.515 9.119 0 12.635 3.515 3.515 3.406 3.515 13.184zM633.86 741.436q0 17.03-2.747 30.762-2.747 13.733-9.009 23.401-6.152 9.668-16.15 14.832-9.888 5.163-24.28 5.163-14.612 0-24.17-4.944-9.558-5.053-15.16-14.392-5.604-9.448-7.911-22.961-2.197-13.623-2.197-30.762 0-16.919 2.746-30.652 2.857-13.843 9.01-23.51 6.261-9.668 16.15-14.832 9.997-5.164 24.279-5.164 14.612 0 24.17 5.054 9.668 4.944 15.27 14.392 5.604 9.339 7.801 22.962 2.197 13.513 2.197 30.651zm-29.114 1.429q0-10.108-.55-17.798-.55-7.8-1.758-13.513-1.098-5.713-2.856-9.668-1.648-3.955-4.065-6.263-2.417-2.417-5.493-3.405-3.076-.99-6.812-.99-6.482 0-10.766 3.187-4.175 3.076-6.702 9.338-2.417 6.263-3.406 15.6-.988 9.34-.988 21.754 0 15.161 1.208 25.159 1.209 9.887 3.735 15.82 2.637 5.823 6.702 8.24 4.065 2.307 9.778 2.307 4.285 0 7.58-1.319 3.296-1.428 5.713-4.174 2.527-2.747 4.175-6.922 1.648-4.175 2.637-9.668 1.099-5.493 1.428-12.414.44-6.922.44-15.271zM743.942 802.081q0 3.076-.33 5.273-.329 2.088-.988 3.406-.55 1.209-1.318 1.758-.77.55-1.758.55h-78.443q-.878 0-1.648-.55-.769-.55-1.428-1.758-.55-1.318-.879-3.406-.33-2.197-.33-5.273 0-3.186.22-5.273.33-2.198.88-3.516.659-1.318 1.428-1.868.769-.659 1.757-.659h26.477V698.26l-22.851 12.634q-2.527 1.209-4.175 1.539-1.538.22-2.527-.66-.879-.988-1.208-3.296-.33-2.307-.33-6.481 0-2.637.11-4.285.11-1.758.55-2.966.439-1.209 1.208-1.978.769-.769 2.087-1.648l30.542-19.775q.55-.44 1.319-.66.878-.33 2.197-.439 1.318-.22 3.406-.22 2.197-.11 5.603-.11 4.174 0 6.701.22 2.637.11 3.955.55 1.319.33 1.758.988.44.66.44 1.648v117.444h23.18q.99 0 1.759.66.879.549 1.428 1.867.659 1.318.879 3.516.33 2.087.33 5.273z"
+    })));
   }
-  var OxidationState_default = SvgOxidationState;
+  var Mass_default = SvgMass;
 
-  // build/lib-react-tsx/raman/Assignment.tsx
+  // build/lib-react-tsx/periodic/OxidationState.tsx
   var React112 = __toModule(require_react());
-  function SvgAssignment6({
+  function SvgOxidationState({
     title,
     titleId,
     ...props
@@ -25761,27 +25747,53 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React112.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React112.createElement("path", {
-      d: "M49.941 730.47h883.662M947.568 730.47l-51.27 38.956M896.298 691.7l51.27 38.77",
-      fill: "none",
-      strokeWidth: 39.323,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      d: "M499.5 99.5v51h151v-51zm1 1h149v49h-149z"
     }), /* @__PURE__ */ React112.createElement("path", {
-      d: "M101.35 640.31c87.832-7.236 153.621-89.197 158.583-167.475 11.576-179.157 13.743-241.208 48.179-248.84 74.856.224-33.321 414.776 212.233 419.503 96.256 1.887 87.445-72.992 92.222-151.822 4.962-83.974 4.062-147.325 14.171-213.66 37.85 109.516-11.394 356.845 162.804 360.337 35.649.734 34.68 3.082 66.653 1.427",
-      fill: "none",
-      strokeWidth: 31.973,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      d: "M95.938 11.182v975.636h828.88V11.182zm40 40h748.88v895.636h-748.88z"
     }), /* @__PURE__ */ React112.createElement("path", {
-      d: "M326.284 161.008c0 7.485-6.092 13.577-13.402 13.577-7.485 0-13.576-6.092-13.576-13.577zm0 0V70.675h-26.978v90.333zm-26.978-90.333c0-7.31 6.091-13.402 13.576-13.402 7.31 0 13.402 6.092 13.402 13.402zM644.174 215.661c0 7.484-6.092 13.576-13.576 13.576-7.31 0-13.402-6.092-13.402-13.576zm0 0v-90.334h-26.978v90.334zm-26.978-90.334c0-7.31 6.091-13.401 13.402-13.401 7.484 0 13.576 6.091 13.576 13.401zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083-2.39 2.206-5.145 3.307-8.453 3.307-2.205 0-4.043-.55-5.512-1.651-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183-4.777 6.068-7.166 14.336-7.166 24.81 0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524zM742.583 873.76v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189zM641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694zM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189z",
+      d: "M566.738 687.095q0 3.385-2.37 6.093-2.03 2.709-7.109 4.401-5.078 1.693-13.541 2.709-8.464 1.015-21.329 1.015-13.203 0-22.005-1.015-8.463-1.016-13.541-2.709-4.74-1.692-7.11-4.4-2.031-2.709-2.031-6.094V510.037H313.848v177.058q0 3.385-2.031 6.093-2.032 2.709-7.11 4.401-5.078 1.693-13.542 2.709-8.463 1.015-21.666 1.015-12.865 0-21.667-1.015-8.463-1.016-13.542-2.709-5.078-1.692-7.447-4.4-2.032-2.709-2.032-6.094V273.397q0-3.386 2.032-6.094 2.37-2.708 7.447-4.401 5.079-1.693 13.542-2.708 8.802-1.016 21.667-1.016 13.203 0 21.666 1.016 8.464 1.015 13.542 2.708 5.078 1.693 7.11 4.4 2.03 2.71 2.03 6.095v160.807h163.855V273.397q0-3.386 2.031-6.094 2.37-2.708 7.11-4.401 5.078-1.693 13.541-2.708 8.802-1.016 22.005-1.016 12.865 0 21.329 1.016 8.463 1.015 13.541 2.708 5.078 1.693 7.11 4.4 2.37 2.71 2.37 6.095z",
+      fontWeight: 400,
+      fontSize: 693.333,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }), /* @__PURE__ */ React112.createElement("g", {
+      style: {
+        lineHeight: ".01%"
+      },
+      fontWeight: 400,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }, /* @__PURE__ */ React112.createElement("path", {
+      d: "M718.212 288.694q0 3.099-.332 5.202-.332 2.103-.996 3.43-.664 1.218-1.55 1.772-.885.553-1.88.553h-34.421v37.52q0 1.106-.554 1.992-.553.774-1.881 1.439-1.328.553-3.542.885-2.213.332-5.534.332-3.32 0-5.534-.332-2.213-.332-3.541-.885-1.328-.664-1.992-1.44-.554-.885-.554-1.991v-37.52h-34.31q-.996 0-1.881-.553-.775-.554-1.44-1.771-.663-1.328-1.106-3.431-.332-2.103-.332-5.202 0-2.988.332-5.091.332-2.214.886-3.431.664-1.328 1.438-1.882.775-.553 1.771-.553h34.642v-37.409q0-1.107.554-1.992.664-.996 1.992-1.55 1.328-.664 3.541-.996 2.214-.332 5.534-.332t5.534.332q2.214.332 3.542.996 1.328.554 1.881 1.55.554.885.554 1.992v37.409h34.752q.886 0 1.66.553.886.554 1.44 1.882.663 1.217.995 3.43.332 2.104.332 5.092zM828.447 341.266q0 3.099-.332 5.312-.332 2.103-.996 3.431-.554 1.218-1.329 1.77-.774.554-1.77.554h-79.024q-.885 0-1.66-.553-.775-.553-1.439-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.221-5.313.332-2.213.886-3.542.664-1.328 1.438-1.881.775-.664 1.771-.664h26.673v-93.19l-23.02 12.728q-2.546 1.217-4.206 1.55-1.55.22-2.546-.665-.885-.996-1.217-3.32-.332-2.324-.332-6.53 0-2.656.11-4.317.111-1.77.554-2.988.442-1.217 1.217-1.992.775-.775 2.103-1.66L775.1 209.56q.554-.443 1.328-.664.886-.332 2.214-.443 1.328-.221 3.431-.221 2.214-.11 5.645-.11 4.205 0 6.75.22 2.657.111 3.985.554 1.328.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.329.885 3.542.332 2.103.332 5.313z"
+    })), /* @__PURE__ */ React112.createElement("g", {
+      style: {
+        lineHeight: ".01%"
+      },
+      fontWeight: 400,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }, /* @__PURE__ */ React112.createElement("path", {
+      d: "M715.941 694.663q0 6.419-1.217 8.965-1.217 2.545-3.874 2.545H664.81q-2.767 0-3.985-2.545-1.217-2.657-1.217-8.965 0-6.198 1.217-8.744 1.218-2.545 3.985-2.545h46.041q1.328 0 2.214.553.996.553 1.66 1.882.664 1.328.885 3.541.332 2.214.332 5.313zM827.061 739.266q0 3.099-.332 5.312-.332 2.103-.996 3.431-.553 1.218-1.328 1.77-.775.554-1.77.554H743.61q-.886 0-1.66-.553-.775-.553-1.44-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.222-5.313.332-2.213.885-3.542.664-1.328 1.439-1.881.775-.664 1.77-.664h26.674v-93.19l-23.02 12.728q-2.546 1.217-4.207 1.55-1.55.22-2.545-.665-.886-.996-1.218-3.32-.332-2.324-.332-6.53 0-2.656.111-4.317.11-1.77.553-2.988.443-1.217 1.218-1.992.775-.775 2.103-1.66l30.768-19.922q.553-.443 1.328-.664.885-.332 2.214-.443 1.328-.221 3.43-.221 2.214-.11 5.645-.11 4.206 0 6.751.22 2.657.111 3.985.554 1.328.332 1.77.996.443.664.443 1.66v118.314h23.353q.996 0 1.771.664.885.553 1.439 1.881.664 1.329.885 3.542.332 2.103.332 5.313z"
+    })), /* @__PURE__ */ React112.createElement("path", {
+      d: "M824.29 477.276q0 17.155-2.767 30.99-2.767 13.834-9.076 23.574-6.198 9.74-16.27 14.941-9.96 5.202-24.459 5.202-14.72 0-24.349-4.98-9.629-5.092-15.273-14.5-5.645-9.518-7.969-23.13-2.214-13.725-2.214-30.99 0-17.045 2.767-30.88 2.878-13.945 9.076-23.684 6.309-9.74 16.27-14.942 10.071-5.201 24.46-5.201 14.72 0 24.348 5.09 9.74 4.981 15.384 14.5 5.645 9.407 7.858 23.13 2.214 13.614 2.214 30.88zm-29.33 1.439q0-10.183-.553-17.93-.553-7.858-1.77-13.613-1.108-5.756-2.878-9.74-1.66-3.984-4.096-6.308-2.434-2.435-5.533-3.431-3.1-.997-6.862-.997-6.53 0-10.847 3.21-4.205 3.099-6.751 9.408-2.435 6.308-3.431 15.716-.996 9.407-.996 21.914 0 15.273 1.217 25.345 1.218 9.96 3.763 15.937 2.657 5.866 6.752 8.301 4.095 2.324 9.85 2.324 4.316 0 7.637-1.328 3.32-1.439 5.755-4.205 2.545-2.767 4.206-6.973 1.66-4.206 2.656-9.74 1.107-5.534 1.439-12.506.442-6.973.442-15.384z",
+      fontWeight: 400,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
       stroke: "none"
     }));
   }
-  var Assignment_default6 = SvgAssignment6;
+  var OxidationState_default = SvgOxidationState;
 
-  // build/lib-react-tsx/raman/Overlay.tsx
+  // build/lib-react-tsx/raman/Assignment.tsx
   var React113 = __toModule(require_react());
-  function SvgOverlay4({
+  function SvgAssignment6({
     title,
     titleId,
     ...props
@@ -25804,114 +25816,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083-2.39 2.206-5.146 3.306-8.453 3.306-2.205 0-4.043-.55-5.512-1.65-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183-4.778 6.067-7.166 14.336-7.166 24.81 0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042-4.042 0-7.166-1.287-9.739-4.042-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525zM743.15 876.725v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19zM641.873 852.966c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M100 500c87.833 20.764 145.038-71.722 150-150 11.576-179.157.309-263.626 60.763-260.315C400 100 331.794 510.236 522.995 509.187 609.721 499.132 600 150 629.39 143.707 650 150 639.802 504.508 750 500c35.627-1.438 106.873 3.124 138.845 1.47",
+      d: "M101.35 640.31c87.832-7.236 153.621-89.197 158.583-167.475 11.576-179.157 13.743-241.208 48.179-248.84 74.856.224-33.321 414.776 212.233 419.503 96.256 1.887 87.445-72.992 92.222-151.822 4.962-83.974 4.062-147.325 14.171-213.66 37.85 109.516-11.394 356.845 162.804 360.337 35.649.734 34.68 3.082 66.653 1.427",
       fill: "none",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M96.693 629.177l-.736-.184-.735-.184-.734-.368-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.734l-.184-.553v-.734l.184-.734v-.734l.184-.735.184-.734.184-.734.184-.734.184-.552.368-.735.184-.552.368-.734.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.432 27.93z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M129.4 631.566l-1.837.184h-2.389l-2.389.184H118.008l-2.205-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.837l1.655.184h3.492l1.654-.184h1.838l1.837-.184z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M127.563 602.9h2.206l.552.185h.734l.736.183.735.184.552.184.734.369.552.183.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.734.368.553.184.552.369.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734V617.788l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.185.552-.183.734-.369.552-.368.552-.368.734-.368.553-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zM189.487 610.25l-.55.553-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184H180.118l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.184-.552-.368-.55-.368-.734-.368-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.552-.368-.735-.368-.552-.368-.734-.184-.734-.184-.552-.184-.735-.184-.734-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.255z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M214.293 591.876l-1.47 1.286-1.838 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.47-2.022 1.471-2.021 1.286-2.021 1.47-2.021 1.287-1.838 1.286-2.022 1.103-15.067-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.287 1.654-1.102 1.655-1.47 1.654-1.286 1.47-1.287 1.654-1.286 1.47-1.286z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M195.55 570.193l.551-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.552.55.552.368.55.368.737.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.736-.368.55-.184.735-.368.552-.368.552-.368.734-.368.552-.55.552-.368.552-.552.369-.55.55-18.743-21.683zM254.535 546.489l-.368.552-.368.552-.55.552-.553.552-.552.368-.55.55-.55.369-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.183h-.736l-.55.184h-2.205l-.552-.184h-.736l-.734-.183-.736-.184-.55-.184-.734-.184-.737-.368-.55-.184-.734-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.553-.552-.552-.368-.552-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.735v-.736l-.184-.734v-1.286l-.184-.736.184-.552v-1.471l.184-.734.184-.55.184-.736.184-.734.368-.552.368-.736.184-.552.368-.735.55-.552 23.336 16.538z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M270.521 520.58l-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.205-1.286 2.02-1.47 2.022-1.287 2.205-1.286 2.022-1.47 2.021-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.918-2.022 1.103-1.837.918-1.654z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M245.348 506.799l.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.183H259.311l.734.183h.736l.735.184.55.184.736.184.734.368.55.184.736.367.55.369.735.552.552.368.55.368.55.552.552.552.368.368.553.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.735.184.552.184.734v3.492l-.184.735v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.552-25.174-13.781zM292.388 463.434l-.184.734-.185.736-.184.734-.368.55-.368.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.367-.55.184-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.735-.184-.736-.184-.734-.184-.55-.367-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.368-.736-.185-.55-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.737v-3.49l.184-.735.184-.736 27.93 6.248z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M295.695 440.832l-.184 2.021-.184 2.205-.184 2.022-.184 2.021-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.022-.368 1.654-27.93-6.248.184-1.286.368-1.838.368-1.655.368-1.654.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M296.247 432.747l-28.666-1.838-.55 8.086 28.665 1.837z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M267.581 430.91v-.735l.184-.736.184-.552.184-.734.185-.736.184-.734.184-.55.368-.737.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.369.55-.552.55-.367.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.552.368.552.368.553.368.552.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736V432.749l-28.665-1.838zM298.635 375.05V376.518l-.184.735-.184.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.552-.368.552-.368.55-.55.553-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.735-.184-.736-.184-.55-.184-.734-.184-.736-.183-.552-.369-.734-.184-.55-.368-.55-.368-.553-.368-.55-.368-.552-.552-.552-.368-.368-.553-.552-.55-.368-.552-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.735-.184-.736-.184-.552-.184-.734v-.736l-.184-.734v-1.471l28.665.919z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M299.37 346.016l-.184 5.33v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.615v-6.8l.184-6.43v-5.146z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M270.521 345.649l.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.184.737-.183.55-.369.734-.184h.736l.734-.184h.736l.735-.183h1.47l.734.183h.55l.736.184.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.368.552.369.55.552.55.368.368.55.55.552.369.552.55.552.368.552.368.55.368.553.184.552.368.734.184.736.184.552.184.734.184.736.184.735v1.286l.184.734-28.849-.368zM299.738 288.686v1.47l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.369.55-.368.552-.552.552-.552.368-.552.552-.55.367-.55.369-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.737.184h-.734l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.369-.55-.366-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.184-.734-.369-.552-.183-.734-.369-.552-.184-.734v-.736l-.184-.735-.184-.736v-1.47l28.666.368z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M300.473 260.388l-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M271.807 259.286v-.736l.184-.734.184-.736v-.735l.184-.736.368-.552.184-.734.369-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.552.368-.553.55-.368.55-.368.55-.552.553-.368.734-.184.552-.366.55-.368.736-.184.55-.184.735-.367h.734l.736-.184.734-.184H287.427l.734.184h.736l.734.184.736.184.553.183.734.369.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zM311.498 218.126l-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.55.184h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.184-.734-.183-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.551-.55-.552-.368-.368-.552-.55-.55-.368-.735-.368-.552-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.185-.736-.184-.552v-2.757l.184-.736v-.734l.185-.736.184-.552.184-.735.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.553.368-.552.552-.552.55-.366.55-.552 17.64 22.785z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M315.724 207.835l11.944 7.718-1.103-.184h-4.225l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.183-.552.184-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.183-.368.184-.368.184-.368.184.55-.184-17.64-22.785.55-.368 1.102-.736 1.286-.918 1.287-.736 1.286-.735 1.47-.552 1.287-.552 1.47-.552 1.286-.552 1.47-.552 1.47-.368 1.471-.368 1.286-.368 1.47-.184 1.655-.368 1.47-.184 1.47-.183 1.471-.184h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M329.138 186.888h.736l.734.184h.736l.734.184.735.183.552.369.734.184.55.368.736.184.55.367.55.369.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736V203.433l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.183-.734.184-.736.184h-.735l-.736.184h-1.47l1.47-28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M316.46 209.122l-.369-.552-.368-.734 25.542-13.23.55 1.286.368.552z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M342.184 196.443l.184.734.369.552.184.736.184.735.184.736.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.185.737-.368.55-.184.552-.368.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184H328.775l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.368-.55-.183-.734-.368-.55-.369-.55-.183-.553-.552-.55-.368-.55-.369-.552-.552-.55-.367-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.68zM326.382 259.837v-2.206l.184-.734v-.736l.184-.553.184-.734.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.553.368-.552.55-.552.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.55.368.551.552.552.368.368.552.55.368.368.552.369.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.734.184.735.184.736v.734l-28.665 2.205z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M327.852 287.767v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zM356.517 286.848v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.183-.737.368-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.735-.184-.55-.184-.736-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zM329.138 345.097v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184H344.759l.734.184h.552l.737.184.734.184.736.184.552.368.734.184.55.368.552.368.736.366.553.368.55.369.55.368.368.552.55.368.55.552.368.552.368.552.369.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M329.873 373.947v-.184l-.184-9.004-.368-9.004-.184-9.003v-1.655l28.665-.552v1.47l.368 9.005.184 8.82.368 9.004zM358.722 372.844v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.553.552-.55.553-.552.367-.552.369-.55.552-.55.184-.55.366-.735.367-.55.369-.736.184-.55.184-.735.183-.736.184-.734.184h-3.675l-.736-.184-.55-.184-.734-.183-.736-.184-.55-.184-.735-.184-.552-.366-.736-.369-.552-.367-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.553-.552-.368-.552-.55-.552-.368-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zM333.732 432.012l-.184-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.55-.55.553-.369.552-.366.55-.368.734-.368.55-.184.737-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.736.184h.553l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.735.368.552.184.552.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zM337.407 461.228l-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M365.705 457.002l.184.734v2.939l-.184.736v.552l-.184.735-.184.734-.369.552-.183.734-.185.552-.368.736-.368.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.367-.552.552-.552.369-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.183-.735.184-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.184-.737-.183-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.369-.553-.367-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.369-.552-.184-.734-.184-.552-.368-.734v-.735l-.184-.736 28.299-4.226zM351.188 519.477l-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.735l.368-.552.184-.736.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.368.552-.368.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.552-.184h.735l.736-.184H365.887l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.734.368.55.368.553.368.736.184.734.368.552-27.195 9.188zM362.58 547.591l-.735-1.654-.918-1.838-.919-2.02-.918-2.022-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.919-2.022-.734-2.205-.736-2.02-.552-2.022 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.837.552 1.838.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.918 1.654.735 1.655z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M388.49 535.28l.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.736v1.471l-.184.552v.734l-.184.736-.184.734-.184.552-.184.736-.184.553-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.183-.736.184h-.734l-.736.184h-1.286l-.737-.184h-.734l-.736-.184-.55-.183-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zM399.515 597.94l-.552-.369-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.369-.552-.183-.735-.369-.552-.184-.734-.184-.552-.184-.734-.184-.734-.184-.553v-3.49l.184-.735v-.734l.184-.552.184-.734.184-.552.368-.736.185-.734.368-.553.368-.552.368-.734.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.736-.368.735-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M425.056 616.682l-1.654-.918-2.021-1.103-1.838-1.286-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.655-1.287-1.837-1.47-1.654-1.286-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.948.184.367 1.47 1.102 1.287 1.102 1.286 1.102 1.47 1.103 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.102 1.47.919 1.655.918 1.47.918 1.838 1.102zM439.756 592.06l.553.367.552.368.55.553.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.552v2.203l-.183.552v.734l-.184.735-.184.734-.184.55-.368.734-.184.735-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.183-.736-.368-.55-.369-.734-.367 14.7-24.623zM484.408 636.527l-.736-.184-.734-.184-.736-.183-.55-.184-.735-.369-.552-.184-.736-.367-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.553-.552-.367-.552-.369-.552-.367-.553-.369-.734-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.184-.735.184-.734v-1.468l.184-.735.184-.734.184-.734.184-.734.368-.552.184-.735.368-.552.369-.552.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.552-.368.735-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.184h1.47l.736.184h.734l-4.226 28.482z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M514.91 638.732h-3.49l-2.94-.184h-2.94l-2.94-.184-2.756-.183-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.367 2.389.184 2.389.369 2.389.183 2.388.184 2.573.184 2.572.184h2.39l2.755.184h3.123z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M515.278 610.067h.736l.734.184h.735l.736.184.734.184.55.184.736.184.735.367.55.184.55.368.736.369.55.367.55.369.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.368.552-.368.552-.368.734-.368.553-.368.552-.55.367-.368.552-.552.552-.55.369-.552.367-.55.369-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zM572.792 637.813h-1.472l-.736-.183-.736-.184h-.736l-.55-.184-.737-.184-.736-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.552-.55-.368-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.735-.186-.734v-1.468l-.186-.734v-.735l.186-.734v-.734l.186-.734v-.553l.182-.734.37-.734.186-.55.182-.736.37-.55.364-.553.37-.734.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.368.55-.368.55-.368.556-.368.55-.368.737-.368.55-.184.736-.184.55-.368h.736l.736-.183.736-.184H572.24l.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M601.458 637.262l-.55-28.665-28.666.552.55 28.665zM600.908 608.597h2.202l.737.184.736.184.556.184.736.184.73.183.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.364.552.556.552.364.552.365.552.37.552.364.552.37.734.364.55.186.553.37.734.182.734.186.735v.552l.186.734v.734l.186.734v.735l-.186.734v.734l-.186.734-.186.734v.735l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.552-.365.552-.55.553-.37.552-.55.552-.55.367-.55.369-.55.552-.556.368-.55.368-.55.184-.737.368-.55.368-.736.184-.736.183-.55.184-.736.184h-.737l-.736.184h-.736l-.55-28.665zM658.785 636.16h-1.466l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.735-.182-.552-.186-.734-.186-.734-.186-.734V619.802l.186-.734.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.736-.184.737-.184.736-.184.55-.184.736-.183h1.472l.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M687.452 635.609l-.55-28.666-28.667.552.55 28.665zM686.902 606.943h2.208l.736.184.736.184.736.184.55.184.736.184.55.368.736.184.55.368.551.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.552.365.552.37.553.364.734.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.734l-.186.735-.182.734-.186.552-.365.734-.185.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.369-.55.183-.55.369-.737.368-.736.184-.55.184-.736.184-.736.184h-.736l-.736.183h-.737l-.55-28.665zM744.97 634.506H743.496l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.551-.368-.55-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.183-.734-.186-.552-.185-.735-.186-.734v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.185-.735.186-.734.365-.552.186-.734.364-.552.37-.552.364-.735.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.55-.367.551-.369.736-.367.55-.369.556-.368.736-.183.55-.184.736-.184.737-.184.736-.184.736-.184h1.466l.556 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M773.63 633.955l-.55-28.666-28.666.552.555 28.666z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M773.08 605.29h2.208l.55.183.737.184.736.184.736.184.55.184.736.368.55.184.556.367.736.369.55.367.55.552.55.369.37.367.55.553.365.55.556.552.365.552.37.552.364.552.364.734.37.552.186.552.182.734.186.735.186.734.186.552.182.734v3.671l-.182.735-.186.734-.186.734-.186.552-.182.735-.37.552-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.552-.551.368-.55.368-.736.184-.556.369-.73.367-.556.184-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zM830.963 632.852h-1.472l-.736-.184h-.737l-.736-.183-.55-.184-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.734-.37-.553-.182-.734-.37-.552-.186-.734-.182-.734-.186-.735v-1.286l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.369.551-.367.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.184h.736l.736-.183h.736l.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M859.814 632.117l-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.184h5.882l5.877-.183 5.697-.184 5.698-.184z",
-      stroke: "none"
-    }), /* @__PURE__ */ React113.createElement("path", {
-      d: "M858.894 603.452h1.472l.736.184h.736l.736.184.736.184.55.184.736.183.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.552.364.552.37.553.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.735l-.186.552-.182.734-.37.552-.186.734-.365.552-.37.734-.364.552-.37.55-.364.553-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.731.184-.736.184-.556.184-.736.183h-1.466l-.92-28.665z",
+      d: "M326.284 161.008c0 7.485-6.092 13.577-13.402 13.577-7.485 0-13.576-6.092-13.576-13.577zm0 0V70.675h-26.978v90.333zm-26.978-90.333c0-7.31 6.091-13.402 13.576-13.402 7.31 0 13.402 6.092 13.402 13.402zM644.174 215.661c0 7.484-6.092 13.576-13.576 13.576-7.31 0-13.402-6.092-13.402-13.576zm0 0v-90.334h-26.978v90.334zm-26.978-90.334c0-7.31 6.091-13.401 13.402-13.401 7.484 0 13.576 6.091 13.576 13.401zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083-2.39 2.206-5.145 3.307-8.453 3.307-2.205 0-4.043-.55-5.512-1.651-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183-4.777 6.068-7.166 14.336-7.166 24.81 0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524zM742.583 873.76v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189zM641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694zM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189z",
       stroke: "none"
     }));
   }
-  var Overlay_default4 = SvgOverlay4;
+  var Assignment_default6 = SvgAssignment6;
 
-  // build/lib-react-tsx/reaction/Equilibrium.tsx
+  // build/lib-react-tsx/raman/Overlay.tsx
   var React114 = __toModule(require_react());
-  function SvgEquilibrium({
+  function SvgOverlay4({
     title,
     titleId,
     ...props
@@ -25928,74 +25847,120 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React114.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React114.createElement("path", {
-      d: "M126.157 256.415v60.835l-1.299-.039-1.282-.118-1.262-.194-1.244-.267-1.22-.34-1.2-.41-1.172-.477-1.147-.544-1.118-.611-1.088-.67-1.057-.734-1.025-.79-.989-.85-.953-.902-.917-.956-.876-1.006-.837-1.057-.793-1.105-.75-1.15-.703-1.191-.656-1.235-.608-1.274-.559-1.31-.504-1.349-.452-1.381-.397-1.413-.341-1.443-.282-1.472-.221-1.497-.162-1.522-.097-1.545-.033-1.565.033-1.566.097-1.544.162-1.523.22-1.497.283-1.472.341-1.443.397-1.413.452-1.381.504-1.348.559-1.311.608-1.274.656-1.235.703-1.192.75-1.149.793-1.105.837-1.056.876-1.007.917-.956.953-.902.99-.849 1.024-.79 1.057-.735 1.088-.67 1.118-.61 1.147-.545 1.172-.477 1.2-.41 1.22-.34 1.244-.268 1.262-.193 1.282-.12 1.3-.038zm701.611 60.835h-701.61v-60.835h701.61v60.835zm0 0v-60.835l1.3.039 1.281.12 1.263.192 1.243.268 1.22.34 1.2.41 1.172.477 1.147.544 1.119.611 1.088.67 1.057.734 1.024.791.99.849.953.902.917.957.876 1.006.837 1.056.793 1.105.75 1.15.704 1.192.653 1.234.61 1.274.557 1.31.506 1.349.455 1.381.396 1.413.338 1.443.279 1.473.22 1.496.161 1.523.096 1.545.032 1.565-.032 1.565-.096 1.545-.161 1.522-.22 1.497-.28 1.472-.337 1.443-.396 1.413-.455 1.382-.506 1.348-.558 1.31-.609 1.274-.653 1.235-.704 1.192-.75 1.15-.793 1.104-.837 1.057-.876 1.006-.917.956-.953.903-.99.848-1.024.791-1.057.734-1.088.67-1.12.611-1.146.544-1.172.477-1.2.41-1.22.34-1.243.268-1.263.193-1.282.12-1.299.039z",
-      className: "fil0",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      stroke: "none",
-      strokeWidth: 0.882,
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React114.createElement("path", {
-      className: "fil1 str0",
-      d: "M867.823 286.866l-114.436 86.593",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      strokeWidth: 62.96436594,
+      d: "M49.941 730.47h883.662M947.568 730.47l-51.27 38.956M896.298 691.7l51.27 38.77",
+      fill: "none",
+      strokeWidth: 39.323,
       strokeLinecap: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React114.createElement("path", {
-      className: "fil1 str0",
-      d: "M753.387 200.2l114.436 86.666",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      strokeWidth: 62.96436594,
+      d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083-2.39 2.206-5.146 3.306-8.453 3.306-2.205 0-4.043-.55-5.512-1.65-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183-4.778 6.067-7.166 14.336-7.166 24.81 0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898zm110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042-4.042 0-7.166-1.287-9.739-4.042-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525zM743.15 876.725v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19zM641.873 852.966c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M100 500c87.833 20.764 145.038-71.722 150-150 11.576-179.157.309-263.626 60.763-260.315C400 100 331.794 510.236 522.995 509.187 609.721 499.132 600 150 629.39 143.707 650 150 639.802 504.508 750 500c35.627-1.438 106.873 3.124 138.845 1.47",
+      fill: "none",
+      strokeWidth: 31.973,
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React114.createElement("path", {
-      d: "M874.384 486.192v60.836l1.3-.04 1.282-.118 1.262-.193 1.244-.267 1.22-.34 1.2-.41 1.172-.478 1.146-.544 1.12-.61 1.087-.671 1.057-.733 1.025-.791.989-.849.953-.902.917-.957.876-1.006.836-1.056.794-1.105.75-1.15.703-1.192.656-1.234.608-1.274.558-1.311.505-1.348.452-1.381.397-1.414.34-1.442.283-1.473.22-1.496.163-1.523.097-1.545.032-1.565-.032-1.565-.097-1.545-.162-1.523-.22-1.496-.283-1.473-.341-1.442-.397-1.413-.452-1.382-.505-1.348-.558-1.31-.608-1.274-.656-1.235-.703-1.192-.75-1.15-.794-1.104-.836-1.057-.876-1.006-.917-.956-.953-.903-.99-.848-1.024-.791-1.057-.734-1.088-.67-1.119-.611-1.146-.544-1.173-.477-1.199-.41-1.22-.34-1.244-.268-1.262-.194-1.282-.119-1.3-.039zm-701.61 60.836h701.61v-60.836h-701.61v60.836zm0 0v-60.836l-1.3.04-1.282.119-1.262.193-1.244.267-1.22.34-1.2.411-1.172.477-1.146.544-1.119.61-1.088.67-1.057.735-1.025.79-.989.85-.954.902-.916.956-.876 1.006-.837 1.057-.793 1.105-.75 1.149-.704 1.192-.653 1.235-.61 1.274-.557 1.31-.506 1.348-.455 1.382-.397 1.413-.337 1.443-.279 1.472-.22 1.497-.162 1.522-.095 1.545-.032 1.565.032 1.565.095 1.545.162 1.523.22 1.496.279 1.473.337 1.443.397 1.413.455 1.381.506 1.348.557 1.31.61 1.275.653 1.234.704 1.192.75 1.15.793 1.105.837 1.056.876 1.007.916.956.954.902.99.849 1.024.79 1.057.735 1.088.67 1.12.61 1.145.545 1.173.477 1.199.41 1.22.34 1.244.268 1.262.193 1.282.12 1.3.038z",
-      className: "fil0",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      stroke: "none",
-      strokeWidth: 0.882,
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      d: "M96.693 629.177l-.736-.184-.735-.184-.734-.368-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.734l-.184-.553v-.734l.184-.734v-.734l.184-.735.184-.734.184-.734.184-.734.184-.552.368-.735.184-.552.368-.734.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.432 27.93z",
+      stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      className: "fil1 str0",
-      d: "M132.72 516.643l114.434 86.594",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      strokeWidth: 62.96436594,
-      strokeLinecap: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      d: "M129.4 631.566l-1.837.184h-2.389l-2.389.184H118.008l-2.205-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.837l1.655.184h3.492l1.654-.184h1.838l1.837-.184z",
+      stroke: "none"
     }), /* @__PURE__ */ React114.createElement("path", {
-      className: "fil1 str0",
-      d: "M247.154 429.978L132.72 516.643",
-      clipRule: "evenodd",
-      fillRule: "evenodd",
-      strokeWidth: 62.96436594,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      d: "M127.563 602.9h2.206l.552.185h.734l.736.183.735.184.552.184.734.369.552.183.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.734.368.553.184.552.369.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734V617.788l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.185.552-.183.734-.369.552-.368.552-.368.734-.368.553-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zM189.487 610.25l-.55.553-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184H180.118l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.184-.552-.368-.55-.368-.734-.368-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.552-.368-.735-.368-.552-.368-.734-.184-.734-.184-.552-.184-.735-.184-.734-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.255z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M214.293 591.876l-1.47 1.286-1.838 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.47-2.022 1.471-2.021 1.286-2.021 1.47-2.021 1.287-1.838 1.286-2.022 1.103-15.067-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.287 1.654-1.102 1.655-1.47 1.654-1.286 1.47-1.287 1.654-1.286 1.47-1.286z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M195.55 570.193l.551-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.552.55.552.368.55.368.737.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.736-.368.55-.184.735-.368.552-.368.552-.368.734-.368.552-.55.552-.368.552-.552.369-.55.55-18.743-21.683zM254.535 546.489l-.368.552-.368.552-.55.552-.553.552-.552.368-.55.55-.55.369-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.183h-.736l-.55.184h-2.205l-.552-.184h-.736l-.734-.183-.736-.184-.55-.184-.734-.184-.737-.368-.55-.184-.734-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.553-.552-.552-.368-.552-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.735v-.736l-.184-.734v-1.286l-.184-.736.184-.552v-1.471l.184-.734.184-.55.184-.736.184-.734.368-.552.368-.736.184-.552.368-.735.55-.552 23.336 16.538z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M270.521 520.58l-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.205-1.286 2.02-1.47 2.022-1.287 2.205-1.286 2.022-1.47 2.021-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.918-2.022 1.103-1.837.918-1.654z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M245.348 506.799l.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.183H259.311l.734.183h.736l.735.184.55.184.736.184.734.368.55.184.736.367.55.369.735.552.552.368.55.368.55.552.552.552.368.368.553.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.735.184.552.184.734v3.492l-.184.735v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.552-25.174-13.781zM292.388 463.434l-.184.734-.185.736-.184.734-.368.55-.368.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.367-.55.184-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.735-.184-.736-.184-.734-.184-.55-.367-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.368-.736-.185-.55-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.737v-3.49l.184-.735.184-.736 27.93 6.248z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M295.695 440.832l-.184 2.021-.184 2.205-.184 2.022-.184 2.021-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.022-.368 1.654-27.93-6.248.184-1.286.368-1.838.368-1.655.368-1.654.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M296.247 432.747l-28.666-1.838-.55 8.086 28.665 1.837z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M267.581 430.91v-.735l.184-.736.184-.552.184-.734.185-.736.184-.734.184-.55.368-.737.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.369.55-.552.55-.367.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.552.368.552.368.553.368.552.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736V432.749l-28.665-1.838zM298.635 375.05V376.518l-.184.735-.184.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.552-.368.552-.368.55-.55.553-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.735-.184-.736-.184-.55-.184-.734-.184-.736-.183-.552-.369-.734-.184-.55-.368-.55-.368-.553-.368-.55-.368-.552-.552-.552-.368-.368-.553-.552-.55-.368-.552-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.735-.184-.736-.184-.552-.184-.734v-.736l-.184-.734v-1.471l28.665.919z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M299.37 346.016l-.184 5.33v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.615v-6.8l.184-6.43v-5.146z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M270.521 345.649l.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.184.737-.183.55-.369.734-.184h.736l.734-.184h.736l.735-.183h1.47l.734.183h.55l.736.184.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.368.552.369.55.552.55.368.368.55.55.552.369.552.55.552.368.552.368.55.368.553.184.552.368.734.184.736.184.552.184.734.184.736.184.735v1.286l.184.734-28.849-.368zM299.738 288.686v1.47l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.369.55-.368.552-.552.552-.552.368-.552.552-.55.367-.55.369-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.737.184h-.734l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.369-.55-.366-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.184-.734-.369-.552-.183-.734-.369-.552-.184-.734v-.736l-.184-.735-.184-.736v-1.47l28.666.368z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M300.473 260.388l-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M271.807 259.286v-.736l.184-.734.184-.736v-.735l.184-.736.368-.552.184-.734.369-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.552.368-.553.55-.368.55-.368.55-.552.553-.368.734-.184.552-.366.55-.368.736-.184.55-.184.735-.367h.734l.736-.184.734-.184H287.427l.734.184h.736l.734.184.736.184.553.183.734.369.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zM311.498 218.126l-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.55.184h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.184-.734-.183-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.551-.55-.552-.368-.368-.552-.55-.55-.368-.735-.368-.552-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.185-.736-.184-.552v-2.757l.184-.736v-.734l.185-.736.184-.552.184-.735.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.553.368-.552.552-.552.55-.366.55-.552 17.64 22.785z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M315.724 207.835l11.944 7.718-1.103-.184h-4.225l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.183-.552.184-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.183-.368.184-.368.184-.368.184.55-.184-17.64-22.785.55-.368 1.102-.736 1.286-.918 1.287-.736 1.286-.735 1.47-.552 1.287-.552 1.47-.552 1.286-.552 1.47-.552 1.47-.368 1.471-.368 1.286-.368 1.47-.184 1.655-.368 1.47-.184 1.47-.183 1.471-.184h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M329.138 186.888h.736l.734.184h.736l.734.184.735.183.552.369.734.184.55.368.736.184.55.367.55.369.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736V203.433l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.183-.734.184-.736.184h-.735l-.736.184h-1.47l1.47-28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M316.46 209.122l-.369-.552-.368-.734 25.542-13.23.55 1.286.368.552z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M342.184 196.443l.184.734.369.552.184.736.184.735.184.736.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.185.737-.368.55-.184.552-.368.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184H328.775l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.368-.55-.183-.734-.368-.55-.369-.55-.183-.553-.552-.55-.368-.55-.369-.552-.552-.55-.367-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.68zM326.382 259.837v-2.206l.184-.734v-.736l.184-.553.184-.734.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.553.368-.552.55-.552.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.55.368.551.552.552.368.368.552.55.368.368.552.369.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.734.184.735.184.736v.734l-28.665 2.205z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M327.852 287.767v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zM356.517 286.848v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.183-.737.368-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.735-.184-.55-.184-.736-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zM329.138 345.097v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184H344.759l.734.184h.552l.737.184.734.184.736.184.552.368.734.184.55.368.552.368.736.366.553.368.55.369.55.368.368.552.55.368.55.552.368.552.368.552.369.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M329.873 373.947v-.184l-.184-9.004-.368-9.004-.184-9.003v-1.655l28.665-.552v1.47l.368 9.005.184 8.82.368 9.004zM358.722 372.844v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.553.552-.55.553-.552.367-.552.369-.55.552-.55.184-.55.366-.735.367-.55.369-.736.184-.55.184-.735.183-.736.184-.734.184h-3.675l-.736-.184-.55-.184-.734-.183-.736-.184-.55-.184-.735-.184-.552-.366-.736-.369-.552-.367-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.553-.552-.368-.552-.55-.552-.368-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zM333.732 432.012l-.184-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.55-.55.553-.369.552-.366.55-.368.734-.368.55-.184.737-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.736.184h.553l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.735.368.552.184.552.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zM337.407 461.228l-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M365.705 457.002l.184.734v2.939l-.184.736v.552l-.184.735-.184.734-.369.552-.183.734-.185.552-.368.736-.368.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.367-.552.552-.552.369-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.183-.735.184-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.184-.737-.183-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.369-.553-.367-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.369-.552-.184-.734-.184-.552-.368-.734v-.735l-.184-.736 28.299-4.226zM351.188 519.477l-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.735l.368-.552.184-.736.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.368.552-.368.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.552-.184h.735l.736-.184H365.887l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.734.368.55.368.553.368.736.184.734.368.552-27.195 9.188zM362.58 547.591l-.735-1.654-.918-1.838-.919-2.02-.918-2.022-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.919-2.022-.734-2.205-.736-2.02-.552-2.022 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.837.552 1.838.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.918 1.654.735 1.655z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M388.49 535.28l.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.736v1.471l-.184.552v.734l-.184.736-.184.734-.184.552-.184.736-.184.553-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.183-.736.184h-.734l-.736.184h-1.286l-.737-.184h-.734l-.736-.184-.55-.183-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zM399.515 597.94l-.552-.369-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.369-.552-.183-.735-.369-.552-.184-.734-.184-.552-.184-.734-.184-.734-.184-.553v-3.49l.184-.735v-.734l.184-.552.184-.734.184-.552.368-.736.185-.734.368-.553.368-.552.368-.734.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.736-.368.735-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M425.056 616.682l-1.654-.918-2.021-1.103-1.838-1.286-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.655-1.287-1.837-1.47-1.654-1.286-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.948.184.367 1.47 1.102 1.287 1.102 1.286 1.102 1.47 1.103 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.102 1.47.919 1.655.918 1.47.918 1.838 1.102zM439.756 592.06l.553.367.552.368.55.553.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.552v2.203l-.183.552v.734l-.184.735-.184.734-.184.55-.368.734-.184.735-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.183-.736-.368-.55-.369-.734-.367 14.7-24.623zM484.408 636.527l-.736-.184-.734-.184-.736-.183-.55-.184-.735-.369-.552-.184-.736-.367-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.553-.552-.367-.552-.369-.552-.367-.553-.369-.734-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.184-.735.184-.734v-1.468l.184-.735.184-.734.184-.734.184-.734.368-.552.184-.735.368-.552.369-.552.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.552-.368.735-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.184h1.47l.736.184h.734l-4.226 28.482z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M514.91 638.732h-3.49l-2.94-.184h-2.94l-2.94-.184-2.756-.183-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.367 2.389.184 2.389.369 2.389.183 2.388.184 2.573.184 2.572.184h2.39l2.755.184h3.123z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M515.278 610.067h.736l.734.184h.735l.736.184.734.184.55.184.736.184.735.367.55.184.55.368.736.369.55.367.55.369.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.368.552-.368.552-.368.734-.368.553-.368.552-.55.367-.368.552-.552.552-.55.369-.552.367-.55.369-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zM572.792 637.813h-1.472l-.736-.183-.736-.184h-.736l-.55-.184-.737-.184-.736-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.552-.55-.368-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.735-.186-.734v-1.468l-.186-.734v-.735l.186-.734v-.734l.186-.734v-.553l.182-.734.37-.734.186-.55.182-.736.37-.55.364-.553.37-.734.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.368.55-.368.55-.368.556-.368.55-.368.737-.368.55-.184.736-.184.55-.368h.736l.736-.183.736-.184H572.24l.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M601.458 637.262l-.55-28.665-28.666.552.55 28.665zM600.908 608.597h2.202l.737.184.736.184.556.184.736.184.73.183.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.364.552.556.552.364.552.365.552.37.552.364.552.37.734.364.55.186.553.37.734.182.734.186.735v.552l.186.734v.734l.186.734v.735l-.186.734v.734l-.186.734-.186.734v.735l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.552-.365.552-.55.553-.37.552-.55.552-.55.367-.55.369-.55.552-.556.368-.55.368-.55.184-.737.368-.55.368-.736.184-.736.183-.55.184-.736.184h-.737l-.736.184h-.736l-.55-28.665zM658.785 636.16h-1.466l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.735-.182-.552-.186-.734-.186-.734-.186-.734V619.802l.186-.734.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.736-.184.737-.184.736-.184.55-.184.736-.183h1.472l.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M687.452 635.609l-.55-28.666-28.667.552.55 28.665zM686.902 606.943h2.208l.736.184.736.184.736.184.55.184.736.184.55.368.736.184.55.368.551.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.552.365.552.37.553.364.734.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.734l-.186.735-.182.734-.186.552-.365.734-.185.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.369-.55.183-.55.369-.737.368-.736.184-.55.184-.736.184-.736.184h-.736l-.736.183h-.737l-.55-28.665zM744.97 634.506H743.496l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.551-.368-.55-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.183-.734-.186-.552-.185-.735-.186-.734v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.185-.735.186-.734.365-.552.186-.734.364-.552.37-.552.364-.735.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.55-.367.551-.369.736-.367.55-.369.556-.368.736-.183.55-.184.736-.184.737-.184.736-.184.736-.184h1.466l.556 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M773.63 633.955l-.55-28.666-28.666.552.555 28.666z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M773.08 605.29h2.208l.55.183.737.184.736.184.736.184.55.184.736.368.55.184.556.367.736.369.55.367.55.552.55.369.37.367.55.553.365.55.556.552.365.552.37.552.364.552.364.734.37.552.186.552.182.734.186.735.186.734.186.552.182.734v3.671l-.182.735-.186.734-.186.734-.186.552-.182.735-.37.552-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.552-.551.368-.55.368-.736.184-.556.369-.73.367-.556.184-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zM830.963 632.852h-1.472l-.736-.184h-.737l-.736-.183-.55-.184-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.734-.37-.553-.182-.734-.37-.552-.186-.734-.182-.734-.186-.735v-1.286l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.369.551-.367.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.184h.736l.736-.183h.736l.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M859.814 632.117l-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.184h5.882l5.877-.183 5.697-.184 5.698-.184z",
+      stroke: "none"
+    }), /* @__PURE__ */ React114.createElement("path", {
+      d: "M858.894 603.452h1.472l.736.184h.736l.736.184.736.184.55.184.736.183.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.552.364.552.37.553.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.735l-.186.552-.182.734-.37.552-.186.734-.365.552-.37.734-.364.552-.37.55-.364.553-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.731.184-.736.184-.556.184-.736.183h-1.466l-.92-28.665z",
+      stroke: "none"
     }));
   }
-  var Equilibrium_default = SvgEquilibrium;
+  var Overlay_default4 = SvgOverlay4;
 
-  // build/lib-react-tsx/reaction/Search.tsx
+  // build/lib-react-tsx/reaction/Equilibrium.tsx
   var React115 = __toModule(require_react());
-  function SvgSearch2({
+  function SvgEquilibrium({
     title,
     titleId,
     ...props
@@ -26012,71 +25977,74 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React115.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React115.createElement("path", {
-      d: "M423.177 667.09c-166.181 0-301.72-135.541-301.72-301.721 0-166.183 135.538-301.726 301.72-301.726 166.18 0 301.725 135.544 301.725 301.726 0 166.18-135.544 301.72-301.725 301.72",
-      className: "fil0 str0",
-      clipRule: "evenodd",
-      fill: "none",
-      strokeWidth: 52.85,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React115.createElement("path", {
-      className: "fil0 str1",
-      clipRule: "evenodd",
-      fill: "none",
-      strokeWidth: 52.8680981,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision",
-      d: "M875.305 876.912L652.382 578.46l-78.036 58.287 222.921 298.446"
-    }), /* @__PURE__ */ React115.createElement("path", {
-      d: "M797.267 935.193c11.855 15.876 34.551 19.165 50.425 7.306M847.694 942.498L868 927.33M868 927.33c15.874-11.858 19.162-34.545 7.304-50.418",
-      className: "fil0 str1",
-      clipRule: "evenodd",
-      fill: "none",
-      strokeWidth: 52.849,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React115.createElement("path", {
-      d: "M423.177 612.992c-136.382 0-247.623-111.241-247.623-247.623 0-136.389 111.241-247.623 247.623-247.623 136.387 0 247.623 111.234 247.623 247.623 0 136.382-111.236 247.623-247.623 247.623",
-      className: "fil0 str2",
-      clipRule: "evenodd",
-      fill: "none",
-      strokeWidth: 24.319,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React115.createElement("g", {
+      d: "M126.157 256.415v60.835l-1.299-.039-1.282-.118-1.262-.194-1.244-.267-1.22-.34-1.2-.41-1.172-.477-1.147-.544-1.118-.611-1.088-.67-1.057-.734-1.025-.79-.989-.85-.953-.902-.917-.956-.876-1.006-.837-1.057-.793-1.105-.75-1.15-.703-1.191-.656-1.235-.608-1.274-.559-1.31-.504-1.349-.452-1.381-.397-1.413-.341-1.443-.282-1.472-.221-1.497-.162-1.522-.097-1.545-.033-1.565.033-1.566.097-1.544.162-1.523.22-1.497.283-1.472.341-1.443.397-1.413.452-1.381.504-1.348.559-1.311.608-1.274.656-1.235.703-1.192.75-1.149.793-1.105.837-1.056.876-1.007.917-.956.953-.902.99-.849 1.024-.79 1.057-.735 1.088-.67 1.118-.61 1.147-.545 1.172-.477 1.2-.41 1.22-.34 1.244-.268 1.262-.193 1.282-.12 1.3-.038zm701.611 60.835h-701.61v-60.835h701.61v60.835zm0 0v-60.835l1.3.039 1.281.12 1.263.192 1.243.268 1.22.34 1.2.41 1.172.477 1.147.544 1.119.611 1.088.67 1.057.734 1.024.791.99.849.953.902.917.957.876 1.006.837 1.056.793 1.105.75 1.15.704 1.192.653 1.234.61 1.274.557 1.31.506 1.349.455 1.381.396 1.413.338 1.443.279 1.473.22 1.496.161 1.523.096 1.545.032 1.565-.032 1.565-.096 1.545-.161 1.522-.22 1.497-.28 1.472-.337 1.443-.396 1.413-.455 1.382-.506 1.348-.558 1.31-.609 1.274-.653 1.235-.704 1.192-.75 1.15-.793 1.104-.837 1.057-.876 1.006-.917.956-.953.903-.99.848-1.024.791-1.057.734-1.088.67-1.12.611-1.146.544-1.172.477-1.2.41-1.22.34-1.243.268-1.263.193-1.282.12-1.299.039z",
+      className: "fil0",
       clipRule: "evenodd",
       fillRule: "evenodd",
+      stroke: "none",
+      strokeWidth: 0.882,
       imageRendering: "optimizeQuality",
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision"
-    }, /* @__PURE__ */ React115.createElement("path", {
-      d: "M264.615 327.049h244.013c8.157 0 14.83 6.673 14.83 14.83v51.23c0 8.156-6.674 14.83-14.83 14.83H264.615c-8.156 0-14.83-6.674-14.83-14.83v-51.23c0-8.157 6.674-14.83 14.83-14.83z",
-      className: "fil1",
-      strokeWidth: 35.15589
     }), /* @__PURE__ */ React115.createElement("path", {
-      d: "M474.54 500V234.988l132.504 132.507zM540.79 433.747",
-      className: "fil2",
-      fillRule: "nonzero",
-      strokeWidth: 35.15589
-    })));
+      className: "fil1 str0",
+      d: "M867.823 286.866l-114.436 86.593",
+      clipRule: "evenodd",
+      fillRule: "evenodd",
+      strokeWidth: 62.96436594,
+      strokeLinecap: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React115.createElement("path", {
+      className: "fil1 str0",
+      d: "M753.387 200.2l114.436 86.666",
+      clipRule: "evenodd",
+      fillRule: "evenodd",
+      strokeWidth: 62.96436594,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React115.createElement("path", {
+      d: "M874.384 486.192v60.836l1.3-.04 1.282-.118 1.262-.193 1.244-.267 1.22-.34 1.2-.41 1.172-.478 1.146-.544 1.12-.61 1.087-.671 1.057-.733 1.025-.791.989-.849.953-.902.917-.957.876-1.006.836-1.056.794-1.105.75-1.15.703-1.192.656-1.234.608-1.274.558-1.311.505-1.348.452-1.381.397-1.414.34-1.442.283-1.473.22-1.496.163-1.523.097-1.545.032-1.565-.032-1.565-.097-1.545-.162-1.523-.22-1.496-.283-1.473-.341-1.442-.397-1.413-.452-1.382-.505-1.348-.558-1.31-.608-1.274-.656-1.235-.703-1.192-.75-1.15-.794-1.104-.836-1.057-.876-1.006-.917-.956-.953-.903-.99-.848-1.024-.791-1.057-.734-1.088-.67-1.119-.611-1.146-.544-1.173-.477-1.199-.41-1.22-.34-1.244-.268-1.262-.194-1.282-.119-1.3-.039zm-701.61 60.836h701.61v-60.836h-701.61v60.836zm0 0v-60.836l-1.3.04-1.282.119-1.262.193-1.244.267-1.22.34-1.2.411-1.172.477-1.146.544-1.119.61-1.088.67-1.057.735-1.025.79-.989.85-.954.902-.916.956-.876 1.006-.837 1.057-.793 1.105-.75 1.149-.704 1.192-.653 1.235-.61 1.274-.557 1.31-.506 1.348-.455 1.382-.397 1.413-.337 1.443-.279 1.472-.22 1.497-.162 1.522-.095 1.545-.032 1.565.032 1.565.095 1.545.162 1.523.22 1.496.279 1.473.337 1.443.397 1.413.455 1.381.506 1.348.557 1.31.61 1.275.653 1.234.704 1.192.75 1.15.793 1.105.837 1.056.876 1.007.916.956.954.902.99.849 1.024.79 1.057.735 1.088.67 1.12.61 1.145.545 1.173.477 1.199.41 1.22.34 1.244.268 1.262.193 1.282.12 1.3.038z",
+      className: "fil0",
+      clipRule: "evenodd",
+      fillRule: "evenodd",
+      stroke: "none",
+      strokeWidth: 0.882,
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React115.createElement("path", {
+      className: "fil1 str0",
+      d: "M132.72 516.643l114.434 86.594",
+      clipRule: "evenodd",
+      fillRule: "evenodd",
+      strokeWidth: 62.96436594,
+      strokeLinecap: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React115.createElement("path", {
+      className: "fil1 str0",
+      d: "M247.154 429.978L132.72 516.643",
+      clipRule: "evenodd",
+      fillRule: "evenodd",
+      strokeWidth: 62.96436594,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }));
   }
-  var Search_default2 = SvgSearch2;
+  var Equilibrium_default = SvgEquilibrium;
 
-  // build/lib-react-tsx/safety/Toxic.tsx
+  // build/lib-react-tsx/reaction/Search.tsx
   var React116 = __toModule(require_react());
-  function SvgToxic2({
+  function SvgSearch2({
     title,
     titleId,
     ...props
@@ -26093,16 +26061,97 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React116.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React116.createElement("path", {
+      d: "M423.177 667.09c-166.181 0-301.72-135.541-301.72-301.721 0-166.183 135.538-301.726 301.72-301.726 166.18 0 301.725 135.544 301.725 301.726 0 166.18-135.544 301.72-301.725 301.72",
+      className: "fil0 str0",
+      clipRule: "evenodd",
+      fill: "none",
+      strokeWidth: 52.85,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React116.createElement("path", {
+      className: "fil0 str1",
+      clipRule: "evenodd",
+      fill: "none",
+      strokeWidth: 52.8680981,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision",
+      d: "M875.305 876.912L652.382 578.46l-78.036 58.287 222.921 298.446"
+    }), /* @__PURE__ */ React116.createElement("path", {
+      d: "M797.267 935.193c11.855 15.876 34.551 19.165 50.425 7.306M847.694 942.498L868 927.33M868 927.33c15.874-11.858 19.162-34.545 7.304-50.418",
+      className: "fil0 str1",
+      clipRule: "evenodd",
+      fill: "none",
+      strokeWidth: 52.849,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React116.createElement("path", {
+      d: "M423.177 612.992c-136.382 0-247.623-111.241-247.623-247.623 0-136.389 111.241-247.623 247.623-247.623 136.387 0 247.623 111.234 247.623 247.623 0 136.382-111.236 247.623-247.623 247.623",
+      className: "fil0 str2",
+      clipRule: "evenodd",
+      fill: "none",
+      strokeWidth: 24.319,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React116.createElement("g", {
+      clipRule: "evenodd",
+      fillRule: "evenodd",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }, /* @__PURE__ */ React116.createElement("path", {
+      d: "M264.615 327.049h244.013c8.157 0 14.83 6.673 14.83 14.83v51.23c0 8.156-6.674 14.83-14.83 14.83H264.615c-8.156 0-14.83-6.674-14.83-14.83v-51.23c0-8.157 6.674-14.83 14.83-14.83z",
+      className: "fil1",
+      strokeWidth: 35.15589
+    }), /* @__PURE__ */ React116.createElement("path", {
+      d: "M474.54 500V234.988l132.504 132.507zM540.79 433.747",
+      className: "fil2",
+      fillRule: "nonzero",
+      strokeWidth: 35.15589
+    })));
+  }
+  var Search_default2 = SvgSearch2;
+
+  // build/lib-react-tsx/safety/Toxic.tsx
+  var React117 = __toModule(require_react());
+  function SvgToxic2({
+    title,
+    titleId,
+    ...props
+  }) {
+    return /* @__PURE__ */ React117.createElement("svg", {
+      stroke: "currentColor",
+      fill: "currentColor",
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props
+    }, title ? /* @__PURE__ */ React117.createElement("title", {
+      id: titleId
+    }, title) : null, /* @__PURE__ */ React117.createElement("path", {
       d: "M336.034 221.151h103.78v-97.184h129.385v97.184h103.585c32.007 0 58.195 26.188 58.195 58.194v427.338c0 32.2-26.188 58.391-58.195 58.391h-336.75c-32.007 0-58.194-26.19-58.194-58.39V279.344c0-32.006 26.187-58.194 58.194-58.194z",
       fillRule: "evenodd",
       stroke: "none"
-    }), /* @__PURE__ */ React116.createElement("path", {
+    }), /* @__PURE__ */ React117.createElement("path", {
       d: "M420.027 156.943h168.958V81.097H420.027z",
       fill: "none",
       strokeWidth: 58.194,
       strokeLinecap: "round",
       strokeLinejoin: "round"
-    }), /* @__PURE__ */ React116.createElement("path", {
+    }), /* @__PURE__ */ React117.createElement("path", {
       d: "M420.027 156.943h168.958V81.097H420.027zM649.7 393.406c0-60.328-64.983-109.211-145.29-109.211-80.115 0-145.099 48.883-145.099 109.211 0 32.201 18.622 61.104 48.108 81.084a42.96 42.96 0 00-.581 7.177c0 20.95 13.772 38.796 32.588 45.198.581 13.578 11.833 24.441 25.606 24.441h78.95c13.772 0 24.83-10.863 25.411-24.441 19.01-6.402 32.59-24.248 32.59-45.198 0-2.521-.195-4.85-.584-7.177 29.68-19.98 48.302-48.883 48.302-81.084zM596.357 652.95c-.777 2.139-1.358 4.076-1.746 6.21l-48.884-21.339 55.479-24.052v.385c5.237 11.833 18.816 17.267 30.649 12.029 11.832-5.043 17.264-18.814 12.027-30.458a23.748 23.748 0 00-13.58-12.8c5.432-7.178 7.178-17.07 3.299-25.994-5.82-13.19-20.95-19.204-33.947-13.385-13.19 5.626-19.204 20.756-13.385 33.947.777 1.94 1.94 3.686 3.298 5.432l-83.024 36.082-2.134.965-1.94-.965-83.023-36.082c1.358-1.747 2.328-3.492 3.297-5.432 5.626-13.19-.388-28.321-13.384-33.947-12.997-5.82-28.322.195-33.947 13.385a25.52 25.52 0 003.298 25.994c-6.013 2.133-11.057 6.596-13.773 12.8-5.043 11.644.388 25.415 12.027 30.458 11.833 5.238 25.605-.196 30.649-12.03l.194-.384 55.284 24.052-48.883 21.339c-.194-2.134-.777-4.071-1.746-6.21-5.625-12.995-20.756-19.01-33.947-13.38-12.997 5.818-19.01 20.947-13.384 33.942 3.88 9.12 12.415 14.743 21.532 15.519-2.716 5.629-2.91 12.414-.195 18.624 5.238 11.833 18.817 17.262 30.65 12.029 11.833-5.048 17.07-18.82 12.026-30.653l-.194-.192 75.458-32.982 75.653 32.982-.194.192c-5.237 11.833.194 25.605 12.027 30.653 11.638 5.233 25.411-.196 30.455-12.029 2.715-6.21 2.522-12.995 0-18.624 9.117-.777 17.458-6.4 21.337-15.52 5.82-12.994-.194-28.123-13.384-33.942-12.997-5.629-28.127.385-33.947 13.38zM441.172 437.246c-24.248 0-43.84-19.786-43.84-44.034 0-24.247 19.592-43.84 43.84-43.84 24.247 0 43.84 19.593 43.84 43.84 0 24.248-19.593 44.034-43.84 44.034zm126.669 0c-24.248 0-44.034-19.786-44.034-44.034 0-24.247 19.786-43.84 44.034-43.84 24.247 0 43.84 19.593 43.84 43.84 0 24.248-19.593 44.034-43.84 44.034z",
       fill: "#fefefe",
       fillRule: "evenodd",
@@ -26112,153 +26161,16 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var Toxic_default2 = SvgToxic2;
 
   // build/lib-react-tsx/spectra/Analyse.tsx
-  var React117 = __toModule(require_react());
+  var React118 = __toModule(require_react());
   function SvgAnalyse({
     title,
     titleId,
     ...props
   }) {
-    return /* @__PURE__ */ React117.createElement("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
-      stroke: "currentColor",
-      fill: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props
-    }, title ? /* @__PURE__ */ React117.createElement("title", {
-      id: titleId
-    }, title) : null, /* @__PURE__ */ React117.createElement("path", {
-      d: "M49.941 850.47h883.662M947.568 850.47l-51.27 38.956M896.298 811.7l51.27 38.77",
-      fill: "none",
-      strokeWidth: 39.323,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M97.35 628.574c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.151 86.179-252.84 158.21-1.106 12.679 436.775 212.233 419.502 95.92-8.268 107.445-74.991 112.222-153.82C637.529 399.965 639.89 316.333 650 250c37.85 109.516-34.656 379.125 139.542 382.616 35.649.735 64.68-.918 96.653-2.572",
-      fill: "none",
-      strokeWidth: 31.973,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M94.042 757.751l-.736-.184-.735-.184-.734-.368-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.735l-.184-.552v-.734l.184-.734v-.734l.184-.735.184-.734.184-.734.184-.734.184-.552.368-.735.184-.552.368-.734.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.431 27.93z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M126.75 760.14l-1.838.184h-2.389l-2.389.184H115.356l-2.204-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.838l1.654.184h3.492l1.654-.184h1.838l1.837-.184z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M124.912 731.475h2.206l.552.184h.734l.736.183.735.184.552.184.734.368.552.184.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.734.369.552.184.553.368.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734V746.362l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.184.552-.184.734-.368.552-.368.552-.369.734-.368.553-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zM186.836 738.825l-.55.552-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184H177.467l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.184-.552-.368-.55-.368-.734-.368-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.553-.368-.734-.368-.552-.368-.734-.184-.734-.184-.552-.184-.735-.184-.734-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.255z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M211.643 720.45l-1.47 1.286-1.839 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.47-2.022 1.471-2.02 1.286-2.022 1.47-2.021 1.287-1.838 1.286-2.021 1.103-15.068-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.287 1.654-1.102 1.655-1.47 1.654-1.286 1.47-1.287 1.655-1.286 1.47-1.286z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M192.9 698.767l.55-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.552.55.552.368.55.368.737.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.736-.368.55-.184.735-.368.552-.368.552-.368.734-.368.552-.55.552-.368.552-.552.369-.55.55-18.743-21.683zM251.884 675.063l-.368.552-.368.552-.55.552-.553.552-.552.368-.55.55-.55.369-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.183h-.736l-.55.184h-2.205l-.552-.184h-.736l-.734-.183-.736-.184-.55-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.553-.552-.552-.368-.552-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.735v-.736l-.184-.734v-1.286l-.184-.736.184-.552v-1.471l.184-.734.184-.55.184-.736.184-.734.368-.552.368-.736.184-.553.368-.734.55-.552 23.336 16.538z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M267.87 649.154l-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.204-1.286 2.022-1.47 2.021-1.287 2.205-1.286 2.022-1.47 2.021-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.919-2.022 1.102-1.837.918-1.654z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M242.697 635.373l.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.184H256.66l.734.184h.736l.735.184.55.184.736.184.734.368.55.184.736.367.55.369.735.552.552.368.55.368.55.552.553.552.368.368.552.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.734.184.552.184.735v3.492l-.184.735v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.552-25.174-13.781zM289.737 592.008l-.184.734-.184.736-.184.734-.368.55-.369.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.367-.55.184-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.734-.184-.737-.184-.734-.184-.55-.367-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.368-.736-.184-.55-.369-.552-.184-.734-.184-.736-.184-.552-.184-.735-.184-.736v-3.49l.184-.735.184-.736 27.93 6.248z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M293.044 569.406l-.184 2.021-.184 2.205-.184 2.022-.184 2.021-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.021-.368 1.655-27.93-6.248.184-1.286.368-1.838.368-1.655.368-1.654.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M293.596 561.321l-28.666-1.838-.55 8.086 28.665 1.837z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M264.93 559.483v-.734l.185-.736.183-.552.185-.734.184-.736.184-.735.184-.55.368-.736.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.369.55-.552.55-.367.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.552.368.552.368.552.368.553.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736V561.323l-28.665-1.838zM295.985 503.623v1.47l-.184.735-.185.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.552-.368.552-.368.55-.55.553-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.734-.184-.737-.184-.55-.184-.734-.184-.736-.183-.552-.369-.734-.184-.55-.368-.55-.368-.553-.368-.55-.368-.552-.552-.552-.369-.368-.552-.552-.55-.368-.552-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.735-.184-.736-.184-.552-.184-.734v-.736l-.184-.734v-1.471l28.665.919z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M296.72 474.59l-.185 5.33v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.616V485.8l.184-6.432v-5.145z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M267.87 474.223l.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.184.737-.183.55-.369.734-.184h.736l.734-.184h.736l.735-.183h1.47l.734.183h.55l.736.184.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.368.552.369.55.552.55.368.369.55.55.552.368.552.55.552.368.552.368.55.368.553.184.552.368.734.184.736.184.552.184.734.184.736.184.735v1.286l.184.734-28.849-.368zM297.087 417.26v1.47l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.368.55-.369.552-.552.552-.552.368-.552.552-.55.367-.55.369-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.736.184h-.735l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.369-.55-.366-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.184-.734-.368-.552-.184-.734-.368-.552-.185-.734v-.737l-.183-.734-.185-.736v-1.47l28.666.368z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M297.822 388.962l-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M269.156 387.86v-.736l.184-.734.184-.736v-.735l.184-.736.368-.552.185-.734.368-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.553.368-.552.55-.368.55-.368.55-.552.553-.368.734-.184.552-.366.55-.368.736-.184.55-.184.735-.367h.734l.736-.184.735-.184h2.758l.734.184h.736l.734.184.737.184.552.183.734.369.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zM308.847 346.7l-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.55.184h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.184-.734-.183-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.55-.55-.553-.368-.368-.552-.55-.55-.368-.735-.368-.552-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736-.184-.553V334.2l.184-.736v-.734l.184-.736.184-.553.184-.734.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.553.368-.552.552-.552.55-.366.55-.552 17.64 22.785z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M313.073 336.41l11.944 7.717-1.102-.184H319.689l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.183-.552.184-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.183-.368.184-.368.184-.368.184.55-.184-17.64-22.785.55-.368 1.102-.736 1.287-.918 1.286-.736 1.286-.735 1.47-.552 1.287-.552 1.47-.552 1.286-.552 1.47-.552 1.47-.368 1.471-.368 1.287-.368 1.47-.184 1.654-.368 1.47-.184 1.47-.184 1.471-.183h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M326.487 315.462h.736l.734.184h.736l.735.183.734.184.552.369.734.184.55.368.736.184.55.367.55.369.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736V332.007l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.183-.734.184-.736.184h-.734l-.737.184h-1.47l1.47-28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M313.808 337.696l-.368-.552-.368-.735 25.542-13.23.55 1.287.368.552z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M339.533 325.017l.185.734.368.552.184.736.184.734.184.737.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.184.737-.369.55-.183.552-.369.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184H326.124l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.368-.55-.184-.734-.367-.55-.369-.55-.183-.553-.553-.55-.367-.55-.369-.552-.552-.55-.367-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.68zM323.73 388.411v-2.206l.185-.734v-.737l.184-.552.184-.734.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.553.368-.552.55-.552.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.551.368.55.552.552.368.368.552.55.368.369.552.368.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.734.184.735.184.736v.734l-28.665 2.205z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M325.201 416.341v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zM353.866 415.422v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.183-.737.368-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.734-.184-.55-.184-.737-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zM326.487 473.671v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184H342.108l.734.184h.553l.736.184.734.184.736.184.552.368.734.184.55.368.552.368.737.366.552.368.55.369.55.368.368.552.55.368.55.552.369.552.368.552.368.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M327.222 502.52v-.183l-.184-9.004-.368-9.004-.184-9.003v-1.655l28.665-.552v1.47l.368 9.005.184 8.82.368 9.004zM356.071 501.418v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.552.552-.55.553-.553.367-.552.369-.55.552-.55.183-.55.367-.735.367-.55.369-.736.184-.55.184-.734.183-.737.184-.734.184h-3.675l-.736-.184-.55-.184-.734-.183-.736-.184-.55-.184-.735-.184-.552-.366-.736-.369-.552-.367-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.552-.552-.368-.552-.55-.552-.369-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zM331.08 560.586l-.183-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.551-.55.552-.369.552-.366.55-.368.735-.368.55-.184.736-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.737.184h.552l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.734.368.552.184.553.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zM334.756 589.802l-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M363.054 585.576l.184.734v2.939l-.184.736v.552l-.184.735-.184.734-.368.552-.184.734-.184.552-.368.736-.369.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.367-.552.552-.552.369-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.183-.735.184-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.184-.737-.183-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.369-.553-.367-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.368-.552-.185-.734-.183-.552-.369-.734v-.735l-.184-.736 28.299-4.226zM348.537 648.051l-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.735l.368-.552.184-.736.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.368.552-.368.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.553-.184h.734l.736-.184H363.236l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.734.368.55.368.553.368.736.184.734.368.552-27.195 9.188zM359.93 676.165l-.736-1.654-.918-1.838-.919-2.021-.918-2.021-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.918-2.022-.735-2.205-.736-2.02-.552-2.022 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.837.552 1.838.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.919 1.654.734 1.654zM385.839 663.854l.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.736v1.471l-.184.552v.734l-.184.736-.184.734-.184.552-.184.736-.184.553-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.183-.736.184h-.734l-.736.184h-1.286l-.736-.184h-.735l-.736-.184-.55-.183-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zM396.864 726.513l-.552-.368-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.368-.552-.184-.735-.368-.552-.185-.734-.184-.552-.184-.734-.184-.734-.184-.553v-3.49l.184-.735v-.734l.184-.552.184-.734.184-.552.369-.736.184-.735.368-.552.368-.552.368-.734.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.737-.368.734-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M422.405 745.256l-1.654-.918-2.021-1.103-1.838-1.286-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.654-1.287-1.838-1.47-1.654-1.286-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.948.184.367 1.47 1.102 1.287 1.102 1.286 1.102 1.47 1.103 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.102 1.47.919 1.655.918 1.47.918 1.838 1.102zM437.106 720.633l.552.368.552.368.55.553.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.552v2.203l-.183.552v.734l-.184.735-.184.734-.184.55-.368.734-.184.735-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.184-.736-.367-.55-.369-.734-.367 14.7-24.623zM481.757 765.101l-.736-.184-.734-.184-.736-.184-.55-.183-.735-.369-.552-.184-.736-.367-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.552-.552-.368-.552-.369-.552-.367-.553-.369-.734-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.183-.735.183-.734v-1.468l.184-.735.184-.734.184-.734.184-.734.368-.552.184-.735.368-.552.369-.552.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.553-.368.734-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.184h1.47l.736.184h.734l-4.226 28.482z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M512.26 767.306h-3.49l-2.94-.184h-2.94l-2.94-.184-2.757-.183-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.367 2.39.184 2.388.369 2.389.183 2.389.184 2.572.184 2.572.184h2.39l2.755.184h3.123z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M512.627 738.641h.736l.734.184h.735l.736.184.734.184.55.184.736.183.735.368.55.184.55.368.736.369.55.367.55.369.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.367.552-.369.552-.368.734-.368.552-.368.553-.55.367-.368.552-.552.552-.55.369-.552.367-.55.369-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zM570.141 766.387h-1.472l-.736-.183-.736-.184h-.736l-.55-.184-.736-.184-.737-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.553-.55-.367-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.735-.186-.734v-1.468l-.186-.735v-.734l.186-.734v-.734l.186-.734v-.553l.182-.734.37-.734.186-.55.182-.736.37-.55.364-.553.37-.734.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.368.55-.368.55-.368.557-.368.55-.368.736-.368.55-.184.736-.184.55-.368h.736l.736-.183.737-.184h1.472l.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M598.807 765.836l-.55-28.665-28.666.552.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M598.257 737.171h2.202l.737.184.736.184.556.184.736.183.73.184.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.365.552.555.552.364.552.365.552.37.552.364.552.37.734.364.55.186.553.37.734.182.734.186.734v.552l.186.735v.734l.186.734v.734l-.186.735v.734l-.186.734-.186.734v.735l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.552-.365.552-.55.553-.37.552-.55.552-.55.367-.55.369-.55.552-.556.367-.55.369-.55.184-.737.368-.55.368-.736.184-.736.183-.55.184-.736.184h-.737l-.736.184h-.736l-.55-28.665zM656.135 764.734h-1.467l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.735-.182-.552-.186-.734-.186-.734-.186-.734V748.376l.186-.734.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.737-.184.736-.184.736-.184.55-.184.736-.183h1.472l.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M684.8 764.183l-.55-28.666-28.666.552.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M684.25 735.517H686.46l.736.184.736.184.736.184.55.184.736.184.55.368.737.184.55.368.55.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.552.365.552.37.552.364.735.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.734l-.186.735-.182.734-.186.552-.364.734-.186.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.368-.55.184-.55.369-.737.368-.736.184-.55.184-.736.184-.736.183h-.736l-.736.184h-.737l-.55-28.665zM742.318 763.08h-1.472l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.55-.368-.551-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.182-.734-.186-.552-.186-.735-.186-.734v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.186-.735.186-.734.364-.552.186-.734.364-.552.37-.553.364-.734.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.551-.367.55-.369.736-.368.55-.368.556-.368.736-.183.55-.184.737-.184.736-.184.736-.184.736-.184h1.466l.556 28.665zM770.98 762.529l-.55-28.666-28.667.552.556 28.666z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M770.43 733.863h2.207l.55.184.737.184.736.184.736.184.55.184.736.368.55.183.556.368.736.369.55.367.55.552.55.369.37.367.55.552.366.55.555.553.365.552.37.552.364.552.364.734.37.552.186.552.182.734.186.735.186.734.186.552.182.734v3.671l-.182.735-.186.734-.186.734-.186.552-.182.734-.37.553-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.552-.551.368-.55.368-.736.184-.556.369-.73.367-.556.184-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zM828.312 761.426h-1.472l-.736-.184h-.736l-.737-.184-.55-.183-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.735-.37-.552-.182-.734-.37-.552-.186-.734-.182-.734-.186-.735v-1.286l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.369.551-.367.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.184h.736l.736-.183h.736l.55 28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M857.163 760.691l-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.184h5.882l5.877-.183 5.698-.184 5.697-.184z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M856.243 732.026h1.472l.736.184h.736l.736.184.736.184.55.183.736.184.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.552.364.552.37.553.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.734l-.186.553-.182.734-.37.552-.186.734-.365.552-.37.734-.364.552-.37.55-.364.553-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.73.184-.737.184-.556.184-.736.183h-1.466l-.92-28.665z",
-      stroke: "none"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M750 850V100",
-      fill: "none",
-      strokeWidth: 31.053,
-      strokeDasharray: "31.05295017,31.05295017"
-    }), /* @__PURE__ */ React117.createElement("path", {
-      d: "M530 850V100",
-      fill: "none",
-      strokeWidth: 31.053,
-      strokeDasharray: "31.0529,31.0529"
-    }));
-  }
-  var Analyse_default = SvgAnalyse;
-
-  // build/lib-react-tsx/spectra/Compare.tsx
-  var React118 = __toModule(require_react());
-  function SvgCompare({
-    title,
-    titleId,
-    ...props
-  }) {
     return /* @__PURE__ */ React118.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -26272,22 +26184,122 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
-    }), /* @__PURE__ */ React118.createElement("g", {
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M97.35 628.574c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.151 86.179-252.84 158.21-1.106 12.679 436.775 212.233 419.502 95.92-8.268 107.445-74.991 112.222-153.82C637.529 399.965 639.89 316.333 650 250c37.85 109.516-34.656 379.125 139.542 382.616 35.649.735 64.68-.918 96.653-2.572",
       fill: "none",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
-    }, /* @__PURE__ */ React118.createElement("path", {
-      d: "M97.35 628.574c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.151 86.179-252.84 158.21-1.106 12.679 436.775 212.233 419.502 95.92-8.268 107.445-74.991 112.222-153.82C637.529 399.965 639.89 316.333 650 250c37.85 109.516-34.656 379.125 139.542 382.616 35.649.735 64.68-.918 96.653-2.572"
     }), /* @__PURE__ */ React118.createElement("path", {
-      d: "M100 750c87.833 20.764 150-50 150-100 0 0 0-50 50-50 100 0 23.442 176.46 222.995 159.187C600 750 643.223 756.83 648 678c0-50 2 22 2-78 0 100-32.005 150.551 142.193 154.042 35.649.735 64.68-.918 96.652-2.572"
-    })));
+      d: "M94.042 757.751l-.736-.184-.735-.184-.734-.368-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.735l-.184-.552v-.734l.184-.734v-.734l.184-.735.184-.734.184-.734.184-.734.184-.552.368-.735.184-.552.368-.734.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.431 27.93z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M126.75 760.14l-1.838.184h-2.389l-2.389.184H115.356l-2.204-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.838l1.654.184h3.492l1.654-.184h1.838l1.837-.184z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M124.912 731.475h2.206l.552.184h.734l.736.183.735.184.552.184.734.368.552.184.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.734.369.552.184.553.368.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734V746.362l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.184.552-.184.734-.368.552-.368.552-.369.734-.368.553-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zM186.836 738.825l-.55.552-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184H177.467l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.184-.552-.368-.55-.368-.734-.368-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.553-.368-.734-.368-.552-.368-.734-.184-.734-.184-.552-.184-.735-.184-.734-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.255z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M211.643 720.45l-1.47 1.286-1.839 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.47-2.022 1.471-2.02 1.286-2.022 1.47-2.021 1.287-1.838 1.286-2.021 1.103-15.068-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.287 1.654-1.102 1.655-1.47 1.654-1.286 1.47-1.287 1.655-1.286 1.47-1.286z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M192.9 698.767l.55-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.552.55.552.368.55.368.737.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.736-.368.55-.184.735-.368.552-.368.552-.368.734-.368.552-.55.552-.368.552-.552.369-.55.55-18.743-21.683zM251.884 675.063l-.368.552-.368.552-.55.552-.553.552-.552.368-.55.55-.55.369-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.183h-.736l-.55.184h-2.205l-.552-.184h-.736l-.734-.183-.736-.184-.55-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.553-.552-.552-.368-.552-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.735v-.736l-.184-.734v-1.286l-.184-.736.184-.552v-1.471l.184-.734.184-.55.184-.736.184-.734.368-.552.368-.736.184-.553.368-.734.55-.552 23.336 16.538z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M267.87 649.154l-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.204-1.286 2.022-1.47 2.021-1.287 2.205-1.286 2.022-1.47 2.021-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.919-2.022 1.102-1.837.918-1.654z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M242.697 635.373l.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.184H256.66l.734.184h.736l.735.184.55.184.736.184.734.368.55.184.736.367.55.369.735.552.552.368.55.368.55.552.553.552.368.368.552.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.734.184.552.184.735v3.492l-.184.735v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.552-25.174-13.781zM289.737 592.008l-.184.734-.184.736-.184.734-.368.55-.369.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.367-.55.184-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.734-.184-.737-.184-.734-.184-.55-.367-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.368-.736-.184-.55-.369-.552-.184-.734-.184-.736-.184-.552-.184-.735-.184-.736v-3.49l.184-.735.184-.736 27.93 6.248z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M293.044 569.406l-.184 2.021-.184 2.205-.184 2.022-.184 2.021-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.021-.368 1.655-27.93-6.248.184-1.286.368-1.838.368-1.655.368-1.654.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M293.596 561.321l-28.666-1.838-.55 8.086 28.665 1.837z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M264.93 559.483v-.734l.185-.736.183-.552.185-.734.184-.736.184-.735.184-.55.368-.736.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.369.55-.552.55-.367.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.552.368.552.368.552.368.553.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736V561.323l-28.665-1.838zM295.985 503.623v1.47l-.184.735-.185.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.552-.368.552-.368.55-.55.553-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.734-.184-.737-.184-.55-.184-.734-.184-.736-.183-.552-.369-.734-.184-.55-.368-.55-.368-.553-.368-.55-.368-.552-.552-.552-.369-.368-.552-.552-.55-.368-.552-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.735-.184-.736-.184-.552-.184-.734v-.736l-.184-.734v-1.471l28.665.919z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M296.72 474.59l-.185 5.33v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.616V485.8l.184-6.432v-5.145z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M267.87 474.223l.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.184.737-.183.55-.369.734-.184h.736l.734-.184h.736l.735-.183h1.47l.734.183h.55l.736.184.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.368.552.369.55.552.55.368.369.55.55.552.368.552.55.552.368.552.368.55.368.553.184.552.368.734.184.736.184.552.184.734.184.736.184.735v1.286l.184.734-28.849-.368zM297.087 417.26v1.47l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.368.55-.369.552-.552.552-.552.368-.552.552-.55.367-.55.369-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.736.184h-.735l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.369-.55-.366-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.553-.368-.552-.184-.734-.368-.552-.184-.734-.368-.552-.185-.734v-.737l-.183-.734-.185-.736v-1.47l28.666.368z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M297.822 388.962l-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M269.156 387.86v-.736l.184-.734.184-.736v-.735l.184-.736.368-.552.185-.734.368-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.553.368-.552.55-.368.55-.368.55-.552.553-.368.734-.184.552-.366.55-.368.736-.184.55-.184.735-.367h.734l.736-.184.735-.184h2.758l.734.184h.736l.734.184.737.184.552.183.734.369.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zM308.847 346.7l-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.55.184h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.184-.734-.183-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.55-.55-.553-.368-.368-.552-.55-.55-.368-.735-.368-.552-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736-.184-.553V334.2l.184-.736v-.734l.184-.736.184-.553.184-.734.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.553.368-.552.552-.552.55-.366.55-.552 17.64 22.785z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M313.073 336.41l11.944 7.717-1.102-.184H319.689l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.183-.552.184-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.183-.368.184-.368.184-.368.184.55-.184-17.64-22.785.55-.368 1.102-.736 1.287-.918 1.286-.736 1.286-.735 1.47-.552 1.287-.552 1.47-.552 1.286-.552 1.47-.552 1.47-.368 1.471-.368 1.287-.368 1.47-.184 1.654-.368 1.47-.184 1.47-.184 1.471-.183h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M326.487 315.462h.736l.734.184h.736l.735.183.734.184.552.369.734.184.55.368.736.184.55.367.55.369.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736V332.007l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.183-.734.184-.736.184h-.734l-.737.184h-1.47l1.47-28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M313.808 337.696l-.368-.552-.368-.735 25.542-13.23.55 1.287.368.552z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M339.533 325.017l.185.734.368.552.184.736.184.734.184.737.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.184.737-.369.55-.183.552-.369.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184H326.124l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.368-.55-.184-.734-.367-.55-.369-.55-.183-.553-.553-.55-.367-.55-.369-.552-.552-.55-.367-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.68zM323.73 388.411v-2.206l.185-.734v-.737l.184-.552.184-.734.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.553.368-.552.55-.552.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.551.368.55.552.552.368.368.552.55.368.369.552.368.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.734.184.735.184.736v.734l-28.665 2.205z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M325.201 416.341v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zM353.866 415.422v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.183-.737.368-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.734-.184-.55-.184-.737-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zM326.487 473.671v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184H342.108l.734.184h.553l.736.184.734.184.736.184.552.368.734.184.55.368.552.368.737.366.552.368.55.369.55.368.368.552.55.368.55.552.369.552.368.552.368.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M327.222 502.52v-.183l-.184-9.004-.368-9.004-.184-9.003v-1.655l28.665-.552v1.47l.368 9.005.184 8.82.368 9.004zM356.071 501.418v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.552.552-.55.553-.553.367-.552.369-.55.552-.55.183-.55.367-.735.367-.55.369-.736.184-.55.184-.734.183-.737.184-.734.184h-3.675l-.736-.184-.55-.184-.734-.183-.736-.184-.55-.184-.735-.184-.552-.366-.736-.369-.552-.367-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.552-.552-.368-.552-.55-.552-.369-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zM331.08 560.586l-.183-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.551-.55.552-.369.552-.366.55-.368.735-.368.55-.184.736-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.737.184h.552l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.734.368.552.184.553.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zM334.756 589.802l-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M363.054 585.576l.184.734v2.939l-.184.736v.552l-.184.735-.184.734-.368.552-.184.734-.184.552-.368.736-.369.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.367-.552.552-.552.369-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.183-.735.184-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.184-.737-.183-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.369-.553-.367-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.368-.552-.185-.734-.183-.552-.369-.734v-.735l-.184-.736 28.299-4.226zM348.537 648.051l-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.735l.368-.552.184-.736.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.368.552-.368.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.553-.184h.734l.736-.184H363.236l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.734.368.55.368.553.368.736.184.734.368.552-27.195 9.188zM359.93 676.165l-.736-1.654-.918-1.838-.919-2.021-.918-2.021-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.918-2.022-.735-2.205-.736-2.02-.552-2.022 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.837.552 1.838.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.919 1.654.734 1.654zM385.839 663.854l.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.736v1.471l-.184.552v.734l-.184.736-.184.734-.184.552-.184.736-.184.553-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.183-.736.184h-.734l-.736.184h-1.286l-.736-.184h-.735l-.736-.184-.55-.183-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zM396.864 726.513l-.552-.368-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.368-.552-.184-.735-.368-.552-.185-.734-.184-.552-.184-.734-.184-.734-.184-.553v-3.49l.184-.735v-.734l.184-.552.184-.734.184-.552.369-.736.184-.735.368-.552.368-.552.368-.734.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.737-.368.734-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M422.405 745.256l-1.654-.918-2.021-1.103-1.838-1.286-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.654-1.287-1.838-1.47-1.654-1.286-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.948.184.367 1.47 1.102 1.287 1.102 1.286 1.102 1.47 1.103 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.102 1.47.919 1.655.918 1.47.918 1.838 1.102zM437.106 720.633l.552.368.552.368.55.553.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.552v2.203l-.183.552v.734l-.184.735-.184.734-.184.55-.368.734-.184.735-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.184-.736-.367-.55-.369-.734-.367 14.7-24.623zM481.757 765.101l-.736-.184-.734-.184-.736-.184-.55-.183-.735-.369-.552-.184-.736-.367-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.552-.552-.368-.552-.369-.552-.367-.553-.369-.734-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.183-.735.183-.734v-1.468l.184-.735.184-.734.184-.734.184-.734.368-.552.184-.735.368-.552.369-.552.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.553-.368.734-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.184h1.47l.736.184h.734l-4.226 28.482z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M512.26 767.306h-3.49l-2.94-.184h-2.94l-2.94-.184-2.757-.183-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.367 2.39.184 2.388.369 2.389.183 2.389.184 2.572.184 2.572.184h2.39l2.755.184h3.123z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M512.627 738.641h.736l.734.184h.735l.736.184.734.184.55.184.736.183.735.368.55.184.55.368.736.369.55.367.55.369.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.367.552-.369.552-.368.734-.368.552-.368.553-.55.367-.368.552-.552.552-.55.369-.552.367-.55.369-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zM570.141 766.387h-1.472l-.736-.183-.736-.184h-.736l-.55-.184-.736-.184-.737-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.553-.55-.367-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.735-.186-.734v-1.468l-.186-.735v-.734l.186-.734v-.734l.186-.734v-.553l.182-.734.37-.734.186-.55.182-.736.37-.55.364-.553.37-.734.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.368.55-.368.55-.368.557-.368.55-.368.736-.368.55-.184.736-.184.55-.368h.736l.736-.183.737-.184h1.472l.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M598.807 765.836l-.55-28.665-28.666.552.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M598.257 737.171h2.202l.737.184.736.184.556.184.736.183.73.184.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.365.552.555.552.364.552.365.552.37.552.364.552.37.734.364.55.186.553.37.734.182.734.186.734v.552l.186.735v.734l.186.734v.734l-.186.735v.734l-.186.734-.186.734v.735l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.552-.365.552-.55.553-.37.552-.55.552-.55.367-.55.369-.55.552-.556.367-.55.369-.55.184-.737.368-.55.368-.736.184-.736.183-.55.184-.736.184h-.737l-.736.184h-.736l-.55-28.665zM656.135 764.734h-1.467l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.735-.182-.552-.186-.734-.186-.734-.186-.734V748.376l.186-.734.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.737-.184.736-.184.736-.184.55-.184.736-.183h1.472l.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M684.8 764.183l-.55-28.666-28.666.552.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M684.25 735.517H686.46l.736.184.736.184.736.184.55.184.736.184.55.368.737.184.55.368.55.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.552.365.552.37.552.364.735.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.734l-.186.735-.182.734-.186.552-.364.734-.186.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.368-.55.184-.55.369-.737.368-.736.184-.55.184-.736.184-.736.183h-.736l-.736.184h-.737l-.55-28.665zM742.318 763.08h-1.472l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.55-.368-.551-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.182-.734-.186-.552-.186-.735-.186-.734v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.186-.735.186-.734.364-.552.186-.734.364-.552.37-.553.364-.734.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.551-.367.55-.369.736-.368.55-.368.556-.368.736-.183.55-.184.737-.184.736-.184.736-.184.736-.184h1.466l.556 28.665zM770.98 762.529l-.55-28.666-28.667.552.556 28.666z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M770.43 733.863h2.207l.55.184.737.184.736.184.736.184.55.184.736.368.55.183.556.368.736.369.55.367.55.552.55.369.37.367.55.552.366.55.555.553.365.552.37.552.364.552.364.734.37.552.186.552.182.734.186.735.186.734.186.552.182.734v3.671l-.182.735-.186.734-.186.734-.186.552-.182.734-.37.553-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.552-.551.368-.55.368-.736.184-.556.369-.73.367-.556.184-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zM828.312 761.426h-1.472l-.736-.184h-.736l-.737-.184-.55-.183-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.735-.37-.552-.182-.734-.37-.552-.186-.734-.182-.734-.186-.735v-1.286l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.369.551-.367.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.184h.736l.736-.183h.736l.55 28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M857.163 760.691l-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.184h5.882l5.877-.183 5.698-.184 5.697-.184z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M856.243 732.026h1.472l.736.184h.736l.736.184.736.184.55.183.736.184.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.552.364.552.37.553.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.734l-.186.553-.182.734-.37.552-.186.734-.365.552-.37.734-.364.552-.37.55-.364.553-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.73.184-.737.184-.556.184-.736.183h-1.466l-.92-28.665z",
+      stroke: "none"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M750 850V100",
+      fill: "none",
+      strokeWidth: 31.053,
+      strokeDasharray: "31.05295017,31.05295017"
+    }), /* @__PURE__ */ React118.createElement("path", {
+      d: "M530 850V100",
+      fill: "none",
+      strokeWidth: 31.053,
+      strokeDasharray: "31.0529,31.0529"
+    }));
   }
-  var Compare_default = SvgCompare;
+  var Analyse_default = SvgAnalyse;
 
-  // build/lib-react-tsx/spectra/Deconvolution.tsx
+  // build/lib-react-tsx/spectra/Compare.tsx
   var React119 = __toModule(require_react());
-  function SvgDeconvolution({
+  function SvgCompare({
     title,
     titleId,
     ...props
@@ -26309,32 +26321,30 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       strokeWidth: 39.323,
       strokeLinecap: "round",
       strokeLinejoin: "round"
-    }), /* @__PURE__ */ React119.createElement("path", {
-      d: "M94.492 348.574C285.488 350.806 182.212 58.298 300 58.571c126.782-1.063 52.857 285.715 220.345 287.762C628.763 344.998 600 208.57 650 208.57s-8.942 134.84 139.542 132.617c35.653-.514 56.109 1.939 88.081.284M94.492 728.574C300 750 200 600 300 600c100 0 52.857 124.286 220.345 126.333C628.763 724.998 600 500 650 500s-8.942 223.41 139.542 221.188c35.653-.514 56.109 1.939 88.081.284",
+    }), /* @__PURE__ */ React119.createElement("g", {
       fill: "none",
       strokeWidth: 31.973,
       strokeLinecap: "round",
       strokeLinejoin: "round"
+    }, /* @__PURE__ */ React119.createElement("path", {
+      d: "M97.35 628.574c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.151 86.179-252.84 158.21-1.106 12.679 436.775 212.233 419.502 95.92-8.268 107.445-74.991 112.222-153.82C637.529 399.965 639.89 316.333 650 250c37.85 109.516-34.656 379.125 139.542 382.616 35.649.735 64.68-.918 96.653-2.572"
     }), /* @__PURE__ */ React119.createElement("path", {
-      fillRule: "evenodd",
-      d: "M330 492h250v50H330z"
-    }), /* @__PURE__ */ React119.createElement("path", {
-      d: "M430 392h50v250h-50z"
-    }));
+      d: "M100 750c87.833 20.764 150-50 150-100 0 0 0-50 50-50 100 0 23.442 176.46 222.995 159.187C600 750 643.223 756.83 648 678c0-50 2 22 2-78 0 100-32.005 150.551 142.193 154.042 35.649.735 64.68-.918 96.652-2.572"
+    })));
   }
-  var Deconvolution_default = SvgDeconvolution;
+  var Compare_default = SvgCompare;
 
-  // build/lib-react-tsx/spectra/Pca.tsx
+  // build/lib-react-tsx/spectra/Deconvolution.tsx
   var React120 = __toModule(require_react());
-  function SvgPca({
+  function SvgDeconvolution({
     title,
     titleId,
     ...props
   }) {
     return /* @__PURE__ */ React120.createElement("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
+      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -26342,75 +26352,30 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React120.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React120.createElement("ellipse", {
-      cx: 75,
-      cy: 425,
-      rx: 325,
-      ry: 125,
-      stroke: "none",
-      fill: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 225,
-      cy: 225,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 225,
-      cy: 225,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 114.91,
-      cy: 408.333,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 333.018,
-      cy: 375.991,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 255.18,
-      cy: 550.405,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 683.198,
-      cy: 238.333,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 875.901,
-      cy: 313.378,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 822.838,
-      cy: 128.784,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 781.306,
-      cy: 870.135,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 620.676,
-      cy: 785.901,
-      r: 75,
-      stroke: "none"
-    }), /* @__PURE__ */ React120.createElement("circle", {
-      cx: 874.279,
-      cy: 712.387,
-      r: 75,
-      stroke: "none"
+    }, title) : null, /* @__PURE__ */ React120.createElement("path", {
+      d: "M49.941 850.47h883.662M947.568 850.47l-51.27 38.956M896.298 811.7l51.27 38.77",
+      fill: "none",
+      strokeWidth: 39.323,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React120.createElement("path", {
+      d: "M94.492 348.574C285.488 350.806 182.212 58.298 300 58.571c126.782-1.063 52.857 285.715 220.345 287.762C628.763 344.998 600 208.57 650 208.57s-8.942 134.84 139.542 132.617c35.653-.514 56.109 1.939 88.081.284M94.492 728.574C300 750 200 600 300 600c100 0 52.857 124.286 220.345 126.333C628.763 724.998 600 500 650 500s-8.942 223.41 139.542 221.188c35.653-.514 56.109 1.939 88.081.284",
+      fill: "none",
+      strokeWidth: 31.973,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React120.createElement("path", {
+      fillRule: "evenodd",
+      d: "M330 492h250v50H330z"
+    }), /* @__PURE__ */ React120.createElement("path", {
+      d: "M430 392h50v250h-50z"
     }));
   }
-  var Pca_default = SvgPca;
+  var Deconvolution_default = SvgDeconvolution;
 
-  // build/lib-react-tsx/spectra/Phylogram.tsx
+  // build/lib-react-tsx/spectra/Pca.tsx
   var React121 = __toModule(require_react());
-  function SvgPhylogram({
+  function SvgPca({
     title,
     titleId,
     ...props
@@ -26426,25 +26391,83 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React121.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React121.createElement("path", {
-      d: "M50 550h350M650 400h300M850 700h100M850 700h100M850 850h100M750 100h200M750 200h200M650 150h100M850 700v150M650 150v250M650 125v300M400 275v500M400 300h250M850 675v200M750 75v150M375 775h475",
-      fill: "none",
-      strokeWidth: 50
+    }, title) : null, /* @__PURE__ */ React121.createElement("ellipse", {
+      cx: 75,
+      cy: 425,
+      rx: 325,
+      ry: 125,
+      stroke: "none",
+      fill: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 225,
+      cy: 225,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 225,
+      cy: 225,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 114.91,
+      cy: 408.333,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 333.018,
+      cy: 375.991,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 255.18,
+      cy: 550.405,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 683.198,
+      cy: 238.333,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 875.901,
+      cy: 313.378,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 822.838,
+      cy: 128.784,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 781.306,
+      cy: 870.135,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 620.676,
+      cy: 785.901,
+      r: 75,
+      stroke: "none"
+    }), /* @__PURE__ */ React121.createElement("circle", {
+      cx: 874.279,
+      cy: 712.387,
+      r: 75,
+      stroke: "none"
     }));
   }
-  var Phylogram_default = SvgPhylogram;
+  var Pca_default = SvgPca;
 
-  // build/lib-react-tsx/structure/3DModelText.tsx
+  // build/lib-react-tsx/spectra/Phylogram.tsx
   var React122 = __toModule(require_react());
-  function Svg3DModelText({
+  function SvgPhylogram({
     title,
     titleId,
     ...props
   }) {
     return /* @__PURE__ */ React122.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -26453,14 +26476,16 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React122.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React122.createElement("path", {
-      d: "M404.514 595.703c0 27.632-5.257 52.182-15.784 73.675-10.526 21.339-25.287 39.323-44.146 53.94-18.859 14.465-41.364 25.574-67.674 33.175-26.316 7.602-54.964 11.264-86.104 11.264-18.853 0-36.54-1.32-53.062-3.95-16.521-2.781-31.139-6.137-43.854-10.084-12.716-4.093-23.242-8.184-31.568-12.43-8.189-4.378-13.596-7.602-16.225-9.943-2.64-2.19-4.537-4.818-5.709-7.602-1.314-2.914-2.486-6.28-3.509-10.087-1.023-3.938-1.749-8.767-2.188-14.618-.44-5.841-.583-12.857-.583-21.194 0-13.74 1.166-23.243 3.36-28.5 2.338-5.27 5.847-7.887 10.378-7.887 2.777 0 7.749 1.89 14.761 5.84 7.018 3.795 15.938 7.898 26.75 12.43 10.823 4.376 23.538 8.48 38.157 12.418 14.47 3.805 31.134 5.698 49.696 5.698 15.641 0 29.533-1.894 41.517-5.545 11.984-3.663 22.213-8.921 30.551-15.652 8.48-6.721 14.761-14.761 18.853-24.407 4.097-9.504 6.291-20.173 6.291-31.867 0-12.858-2.634-24.407-7.6-34.637-4.972-10.383-12.429-19.15-22.219-26.464-9.801-7.162-22.225-12.86-37.277-16.808-14.916-4.092-32.603-5.996-52.918-5.996h-47.947c-3.651 0-6.869-.583-9.35-1.605-2.64-.88-4.829-3.068-6.434-6.137-1.755-3.223-2.926-7.458-3.658-13.013-.731-5.698-1.023-12.87-1.023-21.636 0-8.326.292-15.058 1.023-20.46.731-5.267 1.903-9.36 3.36-12.143 1.612-2.915 3.657-4.818 5.995-5.984 2.486-1.176 5.412-1.76 8.772-1.76h48.381c16.664 0 31.282-1.902 44.151-5.697 12.858-3.95 23.682-9.361 32.305-16.521 8.767-7.16 15.345-15.785 20.024-25.868 4.527-10.234 6.726-21.35 6.726-33.626 0-9.502-1.462-18.418-4.68-26.75-3.069-8.475-7.75-15.79-13.887-21.922-6.138-6.138-14.036-10.966-23.825-14.48-9.646-3.652-21.053-5.406-34.208-5.406-14.91 0-28.797 2.194-41.952 6.583-13.155 4.532-24.847 9.354-35.374 14.618-10.384 5.264-19.293 10.229-26.459 14.76-7.309 4.539-12.721 6.865-16.076 6.865-2.343 0-4.389-.583-5.995-1.457-1.759-1.028-3.217-2.92-4.388-5.846-1.023-2.783-1.903-7.018-2.486-12.43-.583-5.406-.88-12.418-.88-20.898 0-7.155.154-13.155.44-17.83.297-4.681.88-8.635 1.76-11.847.726-3.063 1.897-5.846 3.212-8.034 1.171-2.338 3.366-4.818 6.138-7.601 2.926-2.628 8.778-6.726 17.544-12.132 8.921-5.417 20.03-10.675 33.472-15.79 13.452-5.263 28.802-9.503 46.483-13.155 17.543-3.503 36.551-5.27 57.158-5.27 26.756 0 50.581 3.069 71.337 9.367 20.612 6.28 38.003 15.344 52.181 27.185 14.178 11.835 24.854 26.454 32.163 43.707 7.16 17.247 10.812 36.694 10.812 58.467 0 16.812-2.046 32.448-6.43 47.066-4.24 14.622-10.521 27.633-18.71 39.04-8.332 11.397-18.709 21.043-31.133 29.083-12.43 8.04-26.75 14.036-42.975 17.984v1.309c19.293 2.2 36.837 7.16 52.181 14.772 15.498 7.6 28.505 17.093 39.175 28.5 10.675 11.396 19.001 24.266 24.704 38.74 5.708 14.32 8.479 29.82 8.479 46.483h0zm558.54-122.94h0c0 50.73-6.721 94.287-20.019 130.398-13.305 36.1-32.306 65.633-57.158 88.435-24.854 22.802-54.959 39.609-90.482 50.278-35.665 10.682-77.914 16.08-127.026 16.08h-132.29c-9.504 0-17.396-2.781-23.825-8.325-6.435-5.555-9.651-14.618-9.651-27.19V239.325c0-12.578 3.217-21.636 9.651-27.191 6.429-5.555 14.321-8.332 23.825-8.332h142.079c49.409 0 91.362 5.846 125.713 17.395 34.351 11.544 63.444 28.654 86.978 51.307 23.533 22.659 41.512 50.719 53.793 84.196 12.276 33.333 18.412 72.065 18.412 116.063h0zm-116.494 3.805h0c0-26.311-3.075-50.575-9.213-73.233-6.143-22.52-16.081-42.103-29.676-58.613-13.448-16.526-30.838-29.54-52.188-38.746-21.19-9.35-49.112-14.034-83.755-14.034h-56.861v376.997h58.615c30.843 0 56.867-4.093 77.91-11.99 21.194-8.041 38.739-20.172 52.917-36.254 14.179-16.081 24.705-36.244 31.723-60.222 7.019-23.98 10.528-51.895 10.528-83.905z"
+      d: "M50 550h350M650 400h300M850 700h100M850 700h100M850 850h100M750 100h200M750 200h200M650 150h100M850 700v150M650 150v250M650 125v300M400 275v500M400 300h250M850 675v200M750 75v150M375 775h475",
+      fill: "none",
+      strokeWidth: 50
     }));
   }
-  var DModelText_default = Svg3DModelText;
+  var Phylogram_default = SvgPhylogram;
 
-  // build/lib-react-tsx/structure/3DModel.tsx
+  // build/lib-react-tsx/structure/3DModelText.tsx
   var React123 = __toModule(require_react());
-  function Svg3DModel({
+  function Svg3DModelText({
     title,
     titleId,
     ...props
@@ -26477,27 +26502,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React123.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React123.createElement("path", {
-      d: "M502.616 698.225c111.244 0 201.965-90.735 201.965-201.985 0-111.25-90.72-201.999-201.965-201.999-111.248 0-201.983 90.749-201.983 201.999 0 111.249 90.737 201.985 201.983 201.985z"
-    }), /* @__PURE__ */ React123.createElement("path", {
-      fill: "none",
-      strokeWidth: 60.471,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M449.349 384.629l-100.541-138.86M770.778 772.926L601.53 598.317M780.359 218.159L609.042 390.712M416.17 508.564L244.836 681.133"
-    }), /* @__PURE__ */ React123.createElement("path", {
-      fill: "none",
-      strokeWidth: 60.471,
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M852.9 245.769c56.541 0 102.665-46.109 102.665-102.664 0-56.542-46.124-102.652-102.665-102.652-56.545 0-102.682 46.11-102.682 102.652.001 56.555 46.14 102.664 102.682 102.664zM296.398 251.422c56.541 0 102.68-46.124 102.68-102.666 0-56.54-46.139-102.652-102.68-102.652-56.54 0-102.665 46.112-102.665 102.652.001 56.542 46.125 102.666 102.665 102.666zM149.512 850.318c56.54 0 102.65-46.125 102.65-102.667 0-56.556-46.11-102.664-102.65-102.664-56.557 0-102.681 46.108-102.681 102.664.001 56.542 46.125 102.667 102.681 102.667zM847.244 954.845c56.544 0 102.668-46.124 102.668-102.665 0-56.558-46.124-102.668-102.668-102.668-56.54 0-102.648 46.11-102.648 102.668.001 56.541 46.11 102.665 102.648 102.665z"
+      d: "M404.514 595.703c0 27.632-5.257 52.182-15.784 73.675-10.526 21.339-25.287 39.323-44.146 53.94-18.859 14.465-41.364 25.574-67.674 33.175-26.316 7.602-54.964 11.264-86.104 11.264-18.853 0-36.54-1.32-53.062-3.95-16.521-2.781-31.139-6.137-43.854-10.084-12.716-4.093-23.242-8.184-31.568-12.43-8.189-4.378-13.596-7.602-16.225-9.943-2.64-2.19-4.537-4.818-5.709-7.602-1.314-2.914-2.486-6.28-3.509-10.087-1.023-3.938-1.749-8.767-2.188-14.618-.44-5.841-.583-12.857-.583-21.194 0-13.74 1.166-23.243 3.36-28.5 2.338-5.27 5.847-7.887 10.378-7.887 2.777 0 7.749 1.89 14.761 5.84 7.018 3.795 15.938 7.898 26.75 12.43 10.823 4.376 23.538 8.48 38.157 12.418 14.47 3.805 31.134 5.698 49.696 5.698 15.641 0 29.533-1.894 41.517-5.545 11.984-3.663 22.213-8.921 30.551-15.652 8.48-6.721 14.761-14.761 18.853-24.407 4.097-9.504 6.291-20.173 6.291-31.867 0-12.858-2.634-24.407-7.6-34.637-4.972-10.383-12.429-19.15-22.219-26.464-9.801-7.162-22.225-12.86-37.277-16.808-14.916-4.092-32.603-5.996-52.918-5.996h-47.947c-3.651 0-6.869-.583-9.35-1.605-2.64-.88-4.829-3.068-6.434-6.137-1.755-3.223-2.926-7.458-3.658-13.013-.731-5.698-1.023-12.87-1.023-21.636 0-8.326.292-15.058 1.023-20.46.731-5.267 1.903-9.36 3.36-12.143 1.612-2.915 3.657-4.818 5.995-5.984 2.486-1.176 5.412-1.76 8.772-1.76h48.381c16.664 0 31.282-1.902 44.151-5.697 12.858-3.95 23.682-9.361 32.305-16.521 8.767-7.16 15.345-15.785 20.024-25.868 4.527-10.234 6.726-21.35 6.726-33.626 0-9.502-1.462-18.418-4.68-26.75-3.069-8.475-7.75-15.79-13.887-21.922-6.138-6.138-14.036-10.966-23.825-14.48-9.646-3.652-21.053-5.406-34.208-5.406-14.91 0-28.797 2.194-41.952 6.583-13.155 4.532-24.847 9.354-35.374 14.618-10.384 5.264-19.293 10.229-26.459 14.76-7.309 4.539-12.721 6.865-16.076 6.865-2.343 0-4.389-.583-5.995-1.457-1.759-1.028-3.217-2.92-4.388-5.846-1.023-2.783-1.903-7.018-2.486-12.43-.583-5.406-.88-12.418-.88-20.898 0-7.155.154-13.155.44-17.83.297-4.681.88-8.635 1.76-11.847.726-3.063 1.897-5.846 3.212-8.034 1.171-2.338 3.366-4.818 6.138-7.601 2.926-2.628 8.778-6.726 17.544-12.132 8.921-5.417 20.03-10.675 33.472-15.79 13.452-5.263 28.802-9.503 46.483-13.155 17.543-3.503 36.551-5.27 57.158-5.27 26.756 0 50.581 3.069 71.337 9.367 20.612 6.28 38.003 15.344 52.181 27.185 14.178 11.835 24.854 26.454 32.163 43.707 7.16 17.247 10.812 36.694 10.812 58.467 0 16.812-2.046 32.448-6.43 47.066-4.24 14.622-10.521 27.633-18.71 39.04-8.332 11.397-18.709 21.043-31.133 29.083-12.43 8.04-26.75 14.036-42.975 17.984v1.309c19.293 2.2 36.837 7.16 52.181 14.772 15.498 7.6 28.505 17.093 39.175 28.5 10.675 11.396 19.001 24.266 24.704 38.74 5.708 14.32 8.479 29.82 8.479 46.483h0zm558.54-122.94h0c0 50.73-6.721 94.287-20.019 130.398-13.305 36.1-32.306 65.633-57.158 88.435-24.854 22.802-54.959 39.609-90.482 50.278-35.665 10.682-77.914 16.08-127.026 16.08h-132.29c-9.504 0-17.396-2.781-23.825-8.325-6.435-5.555-9.651-14.618-9.651-27.19V239.325c0-12.578 3.217-21.636 9.651-27.191 6.429-5.555 14.321-8.332 23.825-8.332h142.079c49.409 0 91.362 5.846 125.713 17.395 34.351 11.544 63.444 28.654 86.978 51.307 23.533 22.659 41.512 50.719 53.793 84.196 12.276 33.333 18.412 72.065 18.412 116.063h0zm-116.494 3.805h0c0-26.311-3.075-50.575-9.213-73.233-6.143-22.52-16.081-42.103-29.676-58.613-13.448-16.526-30.838-29.54-52.188-38.746-21.19-9.35-49.112-14.034-83.755-14.034h-56.861v376.997h58.615c30.843 0 56.867-4.093 77.91-11.99 21.194-8.041 38.739-20.172 52.917-36.254 14.179-16.081 24.705-36.244 31.723-60.222 7.019-23.98 10.528-51.895 10.528-83.905z"
     }));
   }
-  var DModel_default = Svg3DModel;
+  var DModelText_default = Svg3DModelText;
 
-  // build/lib-react-tsx/structure/Abundance.tsx
+  // build/lib-react-tsx/structure/3DModel.tsx
   var React124 = __toModule(require_react());
-  function SvgAbundance({
+  function Svg3DModel({
     title,
     titleId,
     ...props
@@ -26513,46 +26525,28 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React124.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React124.createElement("g", {
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 400,
-      fontSize: 36.754,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none",
-      strokeWidth: 0.919
-    }, /* @__PURE__ */ React124.createElement("path", {
-      d: "M305.859 267.243q7.002 7.11 11.147 16.589 4.144 9.479 4.144 25.221 0 17.774-6.002 33.177-5.86 15.404-18.15 26.406-12.004 10.664-28.296 16.42-16.15 5.586-39.3 5.586-26.44 0-45.446-4.91-18.865-4.908-30.726-11.002V319.38h5.573q12.29 8.802 29.297 15.234 17.15 6.432 31.298 6.432 8.288 0 18.006-1.523 9.718-1.693 16.435-7.11 5.288-4.231 8.432-10.156 3.144-6.094 3.144-17.435 0-11.002-4.288-16.927-4.287-6.093-11.29-8.633-7.002-2.708-16.863-2.877-9.86-.339-18.293-.339h-11.718V231.02h12.147q11.147 0 19.722-.846 8.575-.846 14.577-3.893 6.288-3.216 9.432-8.464 3.144-5.416 3.144-15.742 0-7.617-3.287-12.187-3.287-4.74-8.289-7.448-5.573-3.047-13.148-4.063-7.574-1.015-13.005-1.015-13.433 0-29.153 5.586-15.72 5.416-30.44 15.742h-5.288v-54.675q11.719-5.586 31.87-10.664 20.15-5.247 40.872-5.247 20.15 0 35.299 4.232 15.148 4.062 25.009 11.002 11.719 8.295 17.435 20.143 5.716 11.85 5.716 27.76 0 20.99-11.004 37.579-11.004 16.42-29.01 20.99v2.37q7.288 1.184 15.434 4.739 8.146 3.554 14.863 10.325zM534.802 385.394H367.739v-41.64q19.15-16.42 38.3-34.87 19.293-18.45 30.869-31.823 17.292-19.805 24.58-34.531 7.289-14.727 7.289-29.115 0-17.265-9.432-26.575-9.29-9.48-26.868-9.48-13.147 0-27.724 6.433-14.434 6.432-26.867 16.42h-4.574v-56.03q10.147-5.247 29.869-10.494 19.864-5.248 39.729-5.248 40.015 0 61.023 19.974 21.008 19.805 21.008 56.198 0 23.867-10.147 45.365-10.004 21.497-30.726 44.349-13.005 14.218-26.152 26.237-13.148 11.848-18.722 16.588h95.608z",
-      fontSize: 318.532,
-      baselineShift: "super"
+    }, title) : null, /* @__PURE__ */ React124.createElement("path", {
+      d: "M502.616 698.225c111.244 0 201.965-90.735 201.965-201.985 0-111.25-90.72-201.999-201.965-201.999-111.248 0-201.983 90.749-201.983 201.999 0 111.249 90.737 201.985 201.983 201.985z"
     }), /* @__PURE__ */ React124.createElement("path", {
-      d: "M853.23 476.853q0 57.291-41.115 93.229-40.894 35.677-111.25 35.677-40.675 0-71.017-8.333-30.12-8.594-56.504-21.615v-92.969h9.234q26.164 24.74 58.484 38.021 32.54 13.281 62.44 13.281 7.696 0 20.228-1.562 12.532-1.563 20.447-5.208 9.674-4.688 15.83-11.72 6.377-7.03 6.377-20.833 0-12.76-9.235-21.875-9.014-9.375-26.603-14.323-18.469-5.208-39.136-9.635-20.447-4.688-38.476-11.719-41.334-15.885-59.583-42.969-18.029-27.343-18.029-67.708 0-54.167 40.895-88.281 41.114-34.376 105.534-34.376 32.32 0 63.76 7.553 31.661 7.291 54.747 18.49V319.3h-9.015q-19.787-18.75-48.59-31.25-28.582-12.76-58.483-12.76-10.554 0-21.107 1.823-10.334 1.562-20.008 6.25-8.574 3.906-14.73 11.979-6.157 7.812-6.157 17.969 0 15.364 9.894 23.698 9.894 8.073 37.377 14.843 18.029 4.427 34.519 8.594 16.71 4.167 35.837 11.459 37.597 14.583 55.406 39.843 18.029 25 18.029 65.105z"
-    })), /* @__PURE__ */ React124.createElement("g", {
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 400,
-      fontSize: 40,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }, /* @__PURE__ */ React124.createElement("path", {
-      d: "M331.135 828.153q0 10.957-2.812 20.391-2.813 9.434-8.555 15.879-6.211 6.973-15.41 10.488-9.2 3.457-21.446 3.457-4.336 0-9.375-.527t-6.62-.938v-17.168h2.343q1.758.82 4.98 1.758 3.282.938 8.907.938 4.57 0 8.965-1.113 4.394-1.172 7.558-3.633 3.457-2.637 5.684-6.563 2.226-3.984 2.988-9.55-5.098 2.93-9.492 4.511-4.336 1.524-10.84 1.524-4.922 0-9.434-1.172-4.453-1.23-8.144-3.75-4.863-3.457-7.793-9.082-2.871-5.684-2.871-14.297 0-14.004 9.726-22.793 9.786-8.848 25.606-8.848 8.144 0 14.414 2.168 6.328 2.11 10.898 6.504 5.332 5.04 8.028 12.832 2.695 7.793 2.695 18.984zm-22.441-3.28q0-7.15-1.407-11.72-1.347-4.628-3.75-7.148-1.699-1.875-3.925-2.695-2.227-.82-4.688-.82-2.285 0-4.394.82-2.051.761-3.985 2.695-1.816 1.875-2.988 4.922-1.113 3.047-1.113 7.265 0 4.102 1.23 6.915 1.23 2.753 3.399 4.394 2.05 1.582 4.804 2.227 2.813.644 6.094.644 2.637 0 5.742-.644 3.106-.703 4.805-1.407 0-.644.058-1.816.118-1.23.118-3.633zM419.553 856.571h-11.895v20.332h-21.503v-20.332h-42.247v-16.523l40.84-50.625h22.91v51.21h11.895zm-33.398-15.937V809.11l-25.372 31.524zM456.936 876.67h-21.914v-23.028h21.914zM545.12 828.153q0 10.957-2.813 20.391-2.813 9.434-8.555 15.879-6.21 6.973-15.41 10.488-9.2 3.457-21.445 3.457-4.336 0-9.375-.527-5.04-.527-6.621-.938v-17.168h2.343q1.758.82 4.98 1.758 3.282.938 8.907.938 4.57 0 8.965-1.113 4.395-1.172 7.559-3.633 3.457-2.637 5.683-6.563 2.227-3.984 2.988-9.55-5.097 2.93-9.492 4.511-4.336 1.524-10.84 1.524-4.921 0-9.433-1.172-4.453-1.23-8.145-3.75-4.863-3.457-7.793-9.082-2.87-5.684-2.87-14.297 0-14.004 9.726-22.793 9.785-8.848 25.605-8.848 8.145 0 14.414 2.168 6.328 2.11 10.899 6.504 5.332 5.04 8.027 12.832 2.695 7.793 2.695 18.984zm-22.442-3.28q0-7.15-1.406-11.72-1.348-4.628-3.75-7.148-1.7-1.875-3.926-2.695-2.227-.82-4.688-.82-2.285 0-4.394.82-2.05.761-3.984 2.695-1.817 1.875-2.989 4.922-1.113 3.047-1.113 7.265 0 4.102 1.23 6.915 1.231 2.753 3.399 4.394 2.05 1.582 4.805 2.227 2.812.644 6.093.644 2.637 0 5.743-.644 3.105-.703 4.804-1.407 0-.644.059-1.816.117-1.23.117-3.633zM623.752 835.77q2.871 2.462 4.57 5.743 1.7 3.281 1.7 8.73 0 6.153-2.461 11.485-2.403 5.332-7.442 9.14-4.921 3.692-11.601 5.684-6.621 1.933-16.113 1.933-10.84 0-18.633-1.699-7.735-1.699-12.598-3.808v-19.16h2.285q5.04 3.046 12.012 5.273 7.031 2.227 12.832 2.227 3.398 0 7.383-.528 3.984-.586 6.738-2.46 2.168-1.466 3.457-3.516 1.29-2.11 1.29-6.036 0-3.808-1.759-5.859-1.757-2.11-4.629-2.988-2.87-.938-6.914-.996-4.043-.118-7.5-.118h-4.804v-15.585h4.98q4.57 0 8.086-.293t5.977-1.348q2.578-1.113 3.867-2.93 1.289-1.875 1.289-5.449 0-2.637-1.348-4.219-1.347-1.64-3.398-2.578-2.285-1.055-5.39-1.406-3.106-.352-5.333-.352-5.508 0-11.953 1.934-6.445 1.875-12.48 5.45h-2.168v-18.927q4.804-1.933 13.066-3.691 8.262-1.816 16.758-1.816 8.262 0 14.473 1.464 6.21 1.407 10.253 3.809 4.805 2.871 7.149 6.973 2.344 4.101 2.344 9.609 0 7.266-4.512 13.008-4.512 5.683-11.895 7.265v.82q2.989.41 6.328 1.641 3.34 1.23 6.094 3.575zM740.764 815.966q0 14.59-6.738 21.621-6.739 7.031-19.63 7.031-13.3 0-20.038-7.09-6.68-7.148-6.68-21.328 0-14.472 6.855-21.445 6.856-7.031 19.864-7.031 13.125 0 19.746 7.031 6.62 6.973 6.62 21.21zm45.703-26.543l-45.703 87.246h-15.762l45.703-87.246zm37.09 60.41q0 14.59-6.738 21.621-6.739 7.031-19.63 7.031-13.3 0-20.038-7.09-6.68-7.148-6.68-21.327 0-14.473 6.855-21.446 6.856-7.031 19.864-7.031 13.125 0 19.746 7.031 6.62 6.973 6.62 21.211zm-100.078-33.691q0-9.375-2.168-12.657-2.168-3.28-7.09-3.28t-7.09 3.28q-2.168 3.282-2.168 12.715 0 9.434 2.168 12.715 2.168 3.281 7.09 3.281t7.09-3.28q2.168-3.282 2.168-12.774zm82.793 33.867q0-9.375-2.168-12.656-2.168-3.282-7.09-3.282t-7.09 3.282q-2.168 3.28-2.168 12.715 0 9.433 2.168 12.714 2.168 3.282 7.09 3.282t7.09-3.282q2.168-3.28 2.168-12.773z"
-    })), /* @__PURE__ */ React124.createElement("path", {
-      d: "M103.12 30H892v935.636H103.12z",
-      strokeWidth: 40,
-      fill: "none"
+      fill: "none",
+      strokeWidth: 60.471,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M449.349 384.629l-100.541-138.86M770.778 772.926L601.53 598.317M780.359 218.159L609.042 390.712M416.17 508.564L244.836 681.133"
+    }), /* @__PURE__ */ React124.createElement("path", {
+      fill: "none",
+      strokeWidth: 60.471,
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M852.9 245.769c56.541 0 102.665-46.109 102.665-102.664 0-56.542-46.124-102.652-102.665-102.652-56.545 0-102.682 46.11-102.682 102.652.001 56.555 46.14 102.664 102.682 102.664zM296.398 251.422c56.541 0 102.68-46.124 102.68-102.666 0-56.54-46.139-102.652-102.68-102.652-56.54 0-102.665 46.112-102.665 102.652.001 56.542 46.125 102.666 102.665 102.666zM149.512 850.318c56.54 0 102.65-46.125 102.65-102.667 0-56.556-46.11-102.664-102.65-102.664-56.557 0-102.681 46.108-102.681 102.664.001 56.542 46.125 102.667 102.681 102.667zM847.244 954.845c56.544 0 102.668-46.124 102.668-102.665 0-56.558-46.124-102.668-102.668-102.668-56.54 0-102.648 46.11-102.648 102.668.001 56.541 46.11 102.665 102.648 102.665z"
     }));
   }
-  var Abundance_default = SvgAbundance;
+  var DModel_default = Svg3DModel;
 
-  // build/lib-react-tsx/structure/Atomistic2.tsx
+  // build/lib-react-tsx/structure/Abundance.tsx
   var React125 = __toModule(require_react());
-  function SvgAtomistic2({
+  function SvgAbundance({
     title,
     titleId,
     ...props
@@ -26569,25 +26563,45 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React125.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React125.createElement("g", {
-      fill: "none",
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 400,
+      fontSize: 36.754,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none",
+      strokeWidth: 0.919
     }, /* @__PURE__ */ React125.createElement("path", {
-      d: "M328.952 111.542c74.853-43.267 209.754 50.505 301.388 209.26 91.634 158.754 105.288 322.444 30.6 365.548-74.855 43.103-209.755-50.506-301.389-209.261-91.633-158.755-105.288-322.445-30.599-365.547z",
-      strokeWidth: 53.631784800000005
+      d: "M305.859 267.243q7.002 7.11 11.147 16.589 4.144 9.479 4.144 25.221 0 17.774-6.002 33.177-5.86 15.404-18.15 26.406-12.004 10.664-28.296 16.42-16.15 5.586-39.3 5.586-26.44 0-45.446-4.91-18.865-4.908-30.726-11.002V319.38h5.573q12.29 8.802 29.297 15.234 17.15 6.432 31.298 6.432 8.288 0 18.006-1.523 9.718-1.693 16.435-7.11 5.288-4.231 8.432-10.156 3.144-6.094 3.144-17.435 0-11.002-4.288-16.927-4.287-6.093-11.29-8.633-7.002-2.708-16.863-2.877-9.86-.339-18.293-.339h-11.718V231.02h12.147q11.147 0 19.722-.846 8.575-.846 14.577-3.893 6.288-3.216 9.432-8.464 3.144-5.416 3.144-15.742 0-7.617-3.287-12.187-3.287-4.74-8.289-7.448-5.573-3.047-13.148-4.063-7.574-1.015-13.005-1.015-13.433 0-29.153 5.586-15.72 5.416-30.44 15.742h-5.288v-54.675q11.719-5.586 31.87-10.664 20.15-5.247 40.872-5.247 20.15 0 35.299 4.232 15.148 4.062 25.009 11.002 11.719 8.295 17.435 20.143 5.716 11.85 5.716 27.76 0 20.99-11.004 37.579-11.004 16.42-29.01 20.99v2.37q7.288 1.184 15.434 4.739 8.146 3.554 14.863 10.325zM534.802 385.394H367.739v-41.64q19.15-16.42 38.3-34.87 19.293-18.45 30.869-31.823 17.292-19.805 24.58-34.531 7.289-14.727 7.289-29.115 0-17.265-9.432-26.575-9.29-9.48-26.868-9.48-13.147 0-27.724 6.433-14.434 6.432-26.867 16.42h-4.574v-56.03q10.147-5.247 29.869-10.494 19.864-5.248 39.729-5.248 40.015 0 61.023 19.974 21.008 19.805 21.008 56.198 0 23.867-10.147 45.365-10.004 21.497-30.726 44.349-13.005 14.218-26.152 26.237-13.148 11.848-18.722 16.588h95.608z",
+      fontSize: 318.532,
+      baselineShift: "super"
     }), /* @__PURE__ */ React125.createElement("path", {
-      d: "M782.35 232.952c43.103 74.853-50.506 209.754-209.261 301.388-158.755 91.634-322.445 105.288-365.547 30.6-43.267-74.855 50.505-209.755 209.26-301.389 158.754-91.633 322.444-105.288 365.547-30.599z",
-      strokeWidth: 53.631784800000005
-    }), /* @__PURE__ */ React125.createElement("path", {
-      d: "M494.945 340.05c-32.573 0-58.895 26.322-58.895 58.895 0 32.574 26.322 58.896 58.895 58.896 32.574 0 58.896-26.322 58.896-58.896 0-32.573-26.322-58.895-58.896-58.895z",
-      strokeWidth: 52.6687
-    })));
+      d: "M853.23 476.853q0 57.291-41.115 93.229-40.894 35.677-111.25 35.677-40.675 0-71.017-8.333-30.12-8.594-56.504-21.615v-92.969h9.234q26.164 24.74 58.484 38.021 32.54 13.281 62.44 13.281 7.696 0 20.228-1.562 12.532-1.563 20.447-5.208 9.674-4.688 15.83-11.72 6.377-7.03 6.377-20.833 0-12.76-9.235-21.875-9.014-9.375-26.603-14.323-18.469-5.208-39.136-9.635-20.447-4.688-38.476-11.719-41.334-15.885-59.583-42.969-18.029-27.343-18.029-67.708 0-54.167 40.895-88.281 41.114-34.376 105.534-34.376 32.32 0 63.76 7.553 31.661 7.291 54.747 18.49V319.3h-9.015q-19.787-18.75-48.59-31.25-28.582-12.76-58.483-12.76-10.554 0-21.107 1.823-10.334 1.562-20.008 6.25-8.574 3.906-14.73 11.979-6.157 7.812-6.157 17.969 0 15.364 9.894 23.698 9.894 8.073 37.377 14.843 18.029 4.427 34.519 8.594 16.71 4.167 35.837 11.459 37.597 14.583 55.406 39.843 18.029 25 18.029 65.105z"
+    })), /* @__PURE__ */ React125.createElement("g", {
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 400,
+      fontSize: 40,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }, /* @__PURE__ */ React125.createElement("path", {
+      d: "M331.135 828.153q0 10.957-2.812 20.391-2.813 9.434-8.555 15.879-6.211 6.973-15.41 10.488-9.2 3.457-21.446 3.457-4.336 0-9.375-.527t-6.62-.938v-17.168h2.343q1.758.82 4.98 1.758 3.282.938 8.907.938 4.57 0 8.965-1.113 4.394-1.172 7.558-3.633 3.457-2.637 5.684-6.563 2.226-3.984 2.988-9.55-5.098 2.93-9.492 4.511-4.336 1.524-10.84 1.524-4.922 0-9.434-1.172-4.453-1.23-8.144-3.75-4.863-3.457-7.793-9.082-2.871-5.684-2.871-14.297 0-14.004 9.726-22.793 9.786-8.848 25.606-8.848 8.144 0 14.414 2.168 6.328 2.11 10.898 6.504 5.332 5.04 8.028 12.832 2.695 7.793 2.695 18.984zm-22.441-3.28q0-7.15-1.407-11.72-1.347-4.628-3.75-7.148-1.699-1.875-3.925-2.695-2.227-.82-4.688-.82-2.285 0-4.394.82-2.051.761-3.985 2.695-1.816 1.875-2.988 4.922-1.113 3.047-1.113 7.265 0 4.102 1.23 6.915 1.23 2.753 3.399 4.394 2.05 1.582 4.804 2.227 2.813.644 6.094.644 2.637 0 5.742-.644 3.106-.703 4.805-1.407 0-.644.058-1.816.118-1.23.118-3.633zM419.553 856.571h-11.895v20.332h-21.503v-20.332h-42.247v-16.523l40.84-50.625h22.91v51.21h11.895zm-33.398-15.937V809.11l-25.372 31.524zM456.936 876.67h-21.914v-23.028h21.914zM545.12 828.153q0 10.957-2.813 20.391-2.813 9.434-8.555 15.879-6.21 6.973-15.41 10.488-9.2 3.457-21.445 3.457-4.336 0-9.375-.527-5.04-.527-6.621-.938v-17.168h2.343q1.758.82 4.98 1.758 3.282.938 8.907.938 4.57 0 8.965-1.113 4.395-1.172 7.559-3.633 3.457-2.637 5.683-6.563 2.227-3.984 2.988-9.55-5.097 2.93-9.492 4.511-4.336 1.524-10.84 1.524-4.921 0-9.433-1.172-4.453-1.23-8.145-3.75-4.863-3.457-7.793-9.082-2.87-5.684-2.87-14.297 0-14.004 9.726-22.793 9.785-8.848 25.605-8.848 8.145 0 14.414 2.168 6.328 2.11 10.899 6.504 5.332 5.04 8.027 12.832 2.695 7.793 2.695 18.984zm-22.442-3.28q0-7.15-1.406-11.72-1.348-4.628-3.75-7.148-1.7-1.875-3.926-2.695-2.227-.82-4.688-.82-2.285 0-4.394.82-2.05.761-3.984 2.695-1.817 1.875-2.989 4.922-1.113 3.047-1.113 7.265 0 4.102 1.23 6.915 1.231 2.753 3.399 4.394 2.05 1.582 4.805 2.227 2.812.644 6.093.644 2.637 0 5.743-.644 3.105-.703 4.804-1.407 0-.644.059-1.816.117-1.23.117-3.633zM623.752 835.77q2.871 2.462 4.57 5.743 1.7 3.281 1.7 8.73 0 6.153-2.461 11.485-2.403 5.332-7.442 9.14-4.921 3.692-11.601 5.684-6.621 1.933-16.113 1.933-10.84 0-18.633-1.699-7.735-1.699-12.598-3.808v-19.16h2.285q5.04 3.046 12.012 5.273 7.031 2.227 12.832 2.227 3.398 0 7.383-.528 3.984-.586 6.738-2.46 2.168-1.466 3.457-3.516 1.29-2.11 1.29-6.036 0-3.808-1.759-5.859-1.757-2.11-4.629-2.988-2.87-.938-6.914-.996-4.043-.118-7.5-.118h-4.804v-15.585h4.98q4.57 0 8.086-.293t5.977-1.348q2.578-1.113 3.867-2.93 1.289-1.875 1.289-5.449 0-2.637-1.348-4.219-1.347-1.64-3.398-2.578-2.285-1.055-5.39-1.406-3.106-.352-5.333-.352-5.508 0-11.953 1.934-6.445 1.875-12.48 5.45h-2.168v-18.927q4.804-1.933 13.066-3.691 8.262-1.816 16.758-1.816 8.262 0 14.473 1.464 6.21 1.407 10.253 3.809 4.805 2.871 7.149 6.973 2.344 4.101 2.344 9.609 0 7.266-4.512 13.008-4.512 5.683-11.895 7.265v.82q2.989.41 6.328 1.641 3.34 1.23 6.094 3.575zM740.764 815.966q0 14.59-6.738 21.621-6.739 7.031-19.63 7.031-13.3 0-20.038-7.09-6.68-7.148-6.68-21.328 0-14.472 6.855-21.445 6.856-7.031 19.864-7.031 13.125 0 19.746 7.031 6.62 6.973 6.62 21.21zm45.703-26.543l-45.703 87.246h-15.762l45.703-87.246zm37.09 60.41q0 14.59-6.738 21.621-6.739 7.031-19.63 7.031-13.3 0-20.038-7.09-6.68-7.148-6.68-21.327 0-14.473 6.855-21.446 6.856-7.031 19.864-7.031 13.125 0 19.746 7.031 6.62 6.973 6.62 21.211zm-100.078-33.691q0-9.375-2.168-12.657-2.168-3.28-7.09-3.28t-7.09 3.28q-2.168 3.282-2.168 12.715 0 9.434 2.168 12.715 2.168 3.281 7.09 3.281t7.09-3.28q2.168-3.282 2.168-12.774zm82.793 33.867q0-9.375-2.168-12.656-2.168-3.282-7.09-3.282t-7.09 3.282q-2.168 3.28-2.168 12.715 0 9.433 2.168 12.714 2.168 3.282 7.09 3.282t7.09-3.282q2.168-3.28 2.168-12.773z"
+    })), /* @__PURE__ */ React125.createElement("path", {
+      d: "M103.12 30H892v935.636H103.12z",
+      strokeWidth: 40,
+      fill: "none"
+    }));
   }
-  var Atomistic2_default = SvgAtomistic2;
+  var Abundance_default = SvgAbundance;
 
-  // build/lib-react-tsx/structure/AtomisticElectron.tsx
+  // build/lib-react-tsx/structure/Atomistic2.tsx
   var React126 = __toModule(require_react());
-  function SvgAtomisticElectron({
+  function SvgAtomistic2({
     title,
     titleId,
     ...props
@@ -26603,43 +26617,26 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React126.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React126.createElement("path", {
+    }, title) : null, /* @__PURE__ */ React126.createElement("g", {
       fill: "none",
-      d: "M352-84h150v50H352z"
-    }), /* @__PURE__ */ React126.createElement("path", {
-      d: "M499.318 174.78c-180.085 0-326.065 145.98-326.065 326.212 0 180.088 145.98 326.065 326.065 326.065 180.084 0 326.212-145.977 326.212-326.065 0-180.232-146.128-326.212-326.212-326.212z",
-      fill: "none",
-      strokeWidth: 40,
       strokeLinecap: "round",
       strokeLinejoin: "round"
+    }, /* @__PURE__ */ React126.createElement("path", {
+      d: "M328.952 111.542c74.853-43.267 209.754 50.505 301.388 209.26 91.634 158.754 105.288 322.444 30.6 365.548-74.855 43.103-209.755-50.506-301.389-209.261-91.633-158.755-105.288-322.445-30.599-365.547z",
+      strokeWidth: 53.631784800000005
     }), /* @__PURE__ */ React126.createElement("path", {
-      d: "M329.396 129.742c-54.712 0-99.15 44.439-99.15 99.151 0 54.712 44.438 99.15 99.15 99.15s99.15-44.438 99.15-99.15-44.438-99.15-99.15-99.15z",
-      fill: "none",
-      strokeWidth: 39.974,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      d: "M782.35 232.952c43.103 74.853-50.506 209.754-209.261 301.388-158.755 91.634-322.445 105.288-365.547 30.6-43.267-74.855 50.505-209.755 209.26-301.389 158.754-91.633 322.444-105.288 365.547-30.599z",
+      strokeWidth: 53.631784800000005
     }), /* @__PURE__ */ React126.createElement("path", {
-      d: "M329.396 147.32c-45.057 0-81.573 36.516-81.573 81.573 0 45.057 36.516 81.573 81.573 81.573 45.057 0 81.574-36.516 81.574-81.573 0-45.057-36.517-81.573-81.574-81.573z",
-      fill: "#fefefe",
-      fillRule: "evenodd",
-      stroke: "none"
-    }), /* @__PURE__ */ React126.createElement("path", {
-      d: "M275.655 224.893h103.483",
-      fill: "none",
-      strokeWidth: 30.021,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React126.createElement("circle", {
-      cx: 500.098,
-      cy: 501.154,
-      r: 25
-    }));
+      d: "M494.945 340.05c-32.573 0-58.895 26.322-58.895 58.895 0 32.574 26.322 58.896 58.895 58.896 32.574 0 58.896-26.322 58.896-58.896 0-32.573-26.322-58.895-58.896-58.895z",
+      strokeWidth: 52.6687
+    })));
   }
-  var AtomisticElectron_default = SvgAtomisticElectron;
+  var Atomistic2_default = SvgAtomistic2;
 
-  // build/lib-react-tsx/structure/AtomisticNeutron.tsx
+  // build/lib-react-tsx/structure/AtomisticElectron.tsx
   var React127 = __toModule(require_react());
-  function SvgAtomisticNeutron({
+  function SvgAtomisticElectron({
     title,
     titleId,
     ...props
@@ -26656,32 +26653,42 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React127.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React127.createElement("path", {
-      clipRule: "evenodd",
       fill: "none",
-      strokeWidth: 65.811,
+      d: "M352-84h150v50H352z"
+    }), /* @__PURE__ */ React127.createElement("path", {
+      d: "M499.318 174.78c-180.085 0-326.065 145.98-326.065 326.212 0 180.088 145.98 326.065 326.065 326.065 180.084 0 326.212-145.977 326.212-326.065 0-180.232-146.128-326.212-326.212-326.212z",
+      fill: "none",
+      strokeWidth: 40,
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926,
-      d: "M499.757 948.085c246.683 0 447.882-201.198 447.882-447.892 0-246.688-201.199-447.886-447.882-447.886-246.688 0-447.89 201.198-447.89 447.886 0 246.694 201.202 447.892 447.89 447.892z"
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React127.createElement("path", {
-      clipRule: "evenodd",
+      d: "M329.396 129.742c-54.712 0-99.15 44.439-99.15 99.151 0 54.712 44.438 99.15 99.15 99.15s99.15-44.438 99.15-99.15-44.438-99.15-99.15-99.15z",
       fill: "none",
-      strokeWidth: 35.61,
-      strokeMiterlimit: 10,
-      d: "M499.751 660.4c88.232 0 160.204-71.969 160.204-160.208 0-88.237-71.972-160.204-160.204-160.204s-160.196 71.967-160.196 160.204c0 88.24 71.965 160.208 160.196 160.208z"
+      strokeWidth: 39.974,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React127.createElement("path", {
+      d: "M329.396 147.32c-45.057 0-81.573 36.516-81.573 81.573 0 45.057 36.516 81.573 81.573 81.573 45.057 0 81.574-36.516 81.574-81.573 0-45.057-36.517-81.573-81.574-81.573z",
+      fill: "#fefefe",
       fillRule: "evenodd",
-      clipRule: "evenodd",
-      d: "M166.143 278.772c47.393 0 86.063-38.66 86.063-86.065 0-47.403-38.67-86.066-86.063-86.066-47.413 0-86.069 38.663-86.069 86.066 0 47.405 38.656 86.065 86.069 86.065z"
+      stroke: "none"
     }), /* @__PURE__ */ React127.createElement("path", {
-      d: "M580.458 584.001c0 2.319-.404 4.389-1.212 6.204-.805 1.816-1.891 3.328-3.254 4.538-1.362 1.21-2.977 2.094-4.841 2.646s-3.755.831-5.675.831h-16.943c-3.532 0-6.58-.351-9.153-1.057s-4.938-1.993-7.107-3.86c-2.17-1.863-4.257-4.385-6.273-7.564-2.016-3.174-4.291-7.285-6.816-12.327l-48.704-91.521a442.368 442.368 0 01-8.618-17.624 319.101 319.101 0 01-7.873-18.379h-.3c.404 7.261.703 14.498.912 21.707.195 7.212.298 14.647.298 22.311v102.417a4.723 4.723 0 01-.828 2.724c-.555.807-1.516 1.488-2.878 2.041-1.364.553-3.2.98-5.522 1.282-2.323.304-5.292.456-8.923.456-3.527 0-6.455-.152-8.771-.456-2.323-.302-4.139-.729-5.453-1.282-1.308-.553-2.211-1.234-2.719-2.041-.508-.808-.758-1.715-.758-2.724V416.387c0-4.74 1.391-8.293 4.159-10.666 2.775-2.367 6.176-3.553 10.21-3.553h21.33c3.833 0 7.06.33 9.682.984 2.622.657 4.973 1.738 7.032 3.25 2.073 1.514 4.013 3.606 5.829 6.278 1.814 2.675 3.679 5.977 5.591 9.91l38.126 71.552c2.211 4.337 4.409 8.6 6.58 12.785a481.342 481.342 0 016.271 12.557 2174.53 2174.53 0 015.9 12.331 674.009 674.009 0 015.604 12.101h.146c-.3-7.059-.528-14.421-.675-22.086a1095.52 1095.52 0 01-.237-21.939v-91.822c0-1.008.307-1.915.912-2.723.604-.807 1.612-1.512 3.024-2.118 1.413-.605 3.282-1.033 5.599-1.287 2.316-.25 5.294-.379 8.924-.379 3.429 0 6.302.129 8.625.379 2.322.254 4.104.682 5.369 1.287 1.258.605 2.143 1.311 2.643 2.118.508.808.766 1.714.766 2.723v175.932z"
+      d: "M275.655 224.893h103.483",
+      fill: "none",
+      strokeWidth: 30.021,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React127.createElement("circle", {
+      cx: 500.098,
+      cy: 501.154,
+      r: 25
     }));
   }
-  var AtomisticNeutron_default = SvgAtomisticNeutron;
+  var AtomisticElectron_default = SvgAtomisticElectron;
 
-  // build/lib-react-tsx/structure/Atomistic.tsx
+  // build/lib-react-tsx/structure/AtomisticNeutron.tsx
   var React128 = __toModule(require_react());
-  function SvgAtomistic({
+  function SvgAtomisticNeutron({
     title,
     titleId,
     ...props
@@ -26698,41 +26705,32 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React128.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React128.createElement("path", {
-      d: "M498.035 147.601c-151.635 0-274.552 122.917-274.552 274.675 0 151.637 122.917 274.551 274.552 274.551 151.634 0 274.677-122.914 274.677-274.551 0-151.758-123.043-274.675-274.677-274.675z",
+      clipRule: "evenodd",
       fill: "none",
-      strokeWidth: 40.183,
+      strokeWidth: 65.811,
       strokeLinecap: "round",
-      strokeLinejoin: "round"
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926,
+      d: "M499.757 948.085c246.683 0 447.882-201.198 447.882-447.892 0-246.688-201.199-447.886-447.882-447.886-246.688 0-447.89 201.198-447.89 447.886 0 246.694 201.202 447.892 447.89 447.892z"
     }), /* @__PURE__ */ React128.createElement("path", {
-      d: "M321.396 107.742c-54.712 0-99.15 44.439-99.15 99.151 0 54.712 44.438 99.15 99.15 99.15s99.15-44.438 99.15-99.15-44.438-99.15-99.15-99.15z",
+      clipRule: "evenodd",
       fill: "none",
-      strokeWidth: 41.374,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      strokeWidth: 35.61,
+      strokeMiterlimit: 10,
+      d: "M499.751 660.4c88.232 0 160.204-71.969 160.204-160.208 0-88.237-71.972-160.204-160.204-160.204s-160.196 71.967-160.196 160.204c0 88.24 71.965 160.208 160.196 160.208z"
     }), /* @__PURE__ */ React128.createElement("path", {
-      d: "M321.396 125.32c-45.057 0-81.573 36.516-81.573 81.573 0 45.057 36.516 81.573 81.573 81.573 45.057 0 81.574-36.516 81.574-81.573 0-45.057-36.517-81.573-81.574-81.573z",
-      fill: "#fefefe",
       fillRule: "evenodd",
-      stroke: "none"
+      clipRule: "evenodd",
+      d: "M166.143 278.772c47.393 0 86.063-38.66 86.063-86.065 0-47.403-38.67-86.066-86.063-86.066-47.413 0-86.069 38.663-86.069 86.066 0 47.405 38.656 86.065 86.069 86.065z"
     }), /* @__PURE__ */ React128.createElement("path", {
-      d: "M498.035 294.903c-70.309 0-127.373 56.94-127.373 127.373 0 70.309 57.064 127.251 127.373 127.251 70.31 0 127.373-56.942 127.373-127.251 0-70.432-57.063-127.373-127.373-127.373z",
-      fill: "none",
-      strokeWidth: 32.242,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React128.createElement("path", {
-      d: "M269.655 206.893h103.483M446.294 422.276h103.482M498.035 370.411V474.02",
-      fill: "none",
-      strokeWidth: 35.021,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      d: "M580.458 584.001c0 2.319-.404 4.389-1.212 6.204-.805 1.816-1.891 3.328-3.254 4.538-1.362 1.21-2.977 2.094-4.841 2.646s-3.755.831-5.675.831h-16.943c-3.532 0-6.58-.351-9.153-1.057s-4.938-1.993-7.107-3.86c-2.17-1.863-4.257-4.385-6.273-7.564-2.016-3.174-4.291-7.285-6.816-12.327l-48.704-91.521a442.368 442.368 0 01-8.618-17.624 319.101 319.101 0 01-7.873-18.379h-.3c.404 7.261.703 14.498.912 21.707.195 7.212.298 14.647.298 22.311v102.417a4.723 4.723 0 01-.828 2.724c-.555.807-1.516 1.488-2.878 2.041-1.364.553-3.2.98-5.522 1.282-2.323.304-5.292.456-8.923.456-3.527 0-6.455-.152-8.771-.456-2.323-.302-4.139-.729-5.453-1.282-1.308-.553-2.211-1.234-2.719-2.041-.508-.808-.758-1.715-.758-2.724V416.387c0-4.74 1.391-8.293 4.159-10.666 2.775-2.367 6.176-3.553 10.21-3.553h21.33c3.833 0 7.06.33 9.682.984 2.622.657 4.973 1.738 7.032 3.25 2.073 1.514 4.013 3.606 5.829 6.278 1.814 2.675 3.679 5.977 5.591 9.91l38.126 71.552c2.211 4.337 4.409 8.6 6.58 12.785a481.342 481.342 0 016.271 12.557 2174.53 2174.53 0 015.9 12.331 674.009 674.009 0 015.604 12.101h.146c-.3-7.059-.528-14.421-.675-22.086a1095.52 1095.52 0 01-.237-21.939v-91.822c0-1.008.307-1.915.912-2.723.604-.807 1.612-1.512 3.024-2.118 1.413-.605 3.282-1.033 5.599-1.287 2.316-.25 5.294-.379 8.924-.379 3.429 0 6.302.129 8.625.379 2.322.254 4.104.682 5.369 1.287 1.258.605 2.143 1.311 2.643 2.118.508.808.766 1.714.766 2.723v175.932z"
     }));
   }
-  var Atomistic_default = SvgAtomistic;
+  var AtomisticNeutron_default = SvgAtomisticNeutron;
 
-  // build/lib-react-tsx/structure/Bohr.tsx
+  // build/lib-react-tsx/structure/Atomistic.tsx
   var React129 = __toModule(require_react());
-  function SvgBohr({
+  function SvgAtomistic({
     title,
     titleId,
     ...props
@@ -26749,34 +26747,41 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React129.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React129.createElement("path", {
-      d: "M490.253 62.562c-187.603 0-339.69 152.088-339.69 339.69 0 187.481 152.087 339.57 339.69 339.57 187.48 0 339.57-152.089 339.57-339.57 0-187.602-152.09-339.69-339.57-339.69z",
+      d: "M498.035 147.601c-151.635 0-274.552 122.917-274.552 274.675 0 151.637 122.917 274.551 274.552 274.551 151.634 0 274.677-122.914 274.677-274.551 0-151.758-123.043-274.675-274.677-274.675z",
       fill: "none",
-      strokeWidth: 37.125,
+      strokeWidth: 40.183,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React129.createElement("path", {
-      d: "M490.253 195.592c-114.22 0-206.66 92.441-206.66 206.66 0 114.1 92.44 206.662 206.66 206.662 114.098 0 206.66-92.563 206.66-206.661 0-114.22-92.562-206.66-206.66-206.66z",
+      d: "M321.396 107.742c-54.712 0-99.15 44.439-99.15 99.151 0 54.712 44.438 99.15 99.15 99.15s99.15-44.438 99.15-99.15-44.438-99.15-99.15-99.15z",
       fill: "none",
-      strokeWidth: 37.125,
+      strokeWidth: 41.374,
       strokeLinecap: "round",
       strokeLinejoin: "round"
     }), /* @__PURE__ */ React129.createElement("path", {
-      d: "M490.253 326.272c-41.95 0-75.981 34.03-75.981 75.98 0 41.954 34.03 75.859 75.98 75.859 41.954 0 75.859-33.905 75.859-75.858 0-41.95-33.905-75.981-75.858-75.981z",
-      fill: "none",
-      strokeWidth: 37.125,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React129.createElement("path", {
-      d: "M490.253 326.272c-41.95 0-75.981 34.03-75.981 75.98 0 41.954 34.03 75.859 75.98 75.859 41.954 0 75.859-33.905 75.859-75.858 0-41.95-33.905-75.981-75.858-75.981zM490.253 148.32c27.474 0 49.872 22.275 49.872 49.871 0 27.473-22.398 49.871-49.872 49.871-27.595 0-49.87-22.398-49.87-49.87 0-27.597 22.275-49.872 49.87-49.872zM490.253 556.32c27.474 0 49.872 22.401 49.872 49.872 0 27.596-22.398 49.872-49.872 49.872-27.595 0-49.87-22.276-49.87-49.872 0-27.471 22.275-49.872 49.87-49.872zM833.16 352.383c27.6 0 49.873 22.275 49.873 49.87 0 27.474-22.273 49.872-49.872 49.872-27.596 0-49.87-22.398-49.87-49.872 0-27.595 22.274-49.87 49.87-49.87z",
+      d: "M321.396 125.32c-45.057 0-81.573 36.516-81.573 81.573 0 45.057 36.516 81.573 81.573 81.573 45.057 0 81.574-36.516 81.574-81.573 0-45.057-36.517-81.573-81.574-81.573z",
+      fill: "#fefefe",
       fillRule: "evenodd",
       stroke: "none"
+    }), /* @__PURE__ */ React129.createElement("path", {
+      d: "M498.035 294.903c-70.309 0-127.373 56.94-127.373 127.373 0 70.309 57.064 127.251 127.373 127.251 70.31 0 127.373-56.942 127.373-127.251 0-70.432-57.063-127.373-127.373-127.373z",
+      fill: "none",
+      strokeWidth: 32.242,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React129.createElement("path", {
+      d: "M269.655 206.893h103.483M446.294 422.276h103.482M498.035 370.411V474.02",
+      fill: "none",
+      strokeWidth: 35.021,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
     }));
   }
-  var Bohr_default = SvgBohr;
+  var Atomistic_default = SvgAtomistic;
 
-  // build/lib-react-tsx/structure/Conformers.tsx
+  // build/lib-react-tsx/structure/Bohr.tsx
   var React130 = __toModule(require_react());
-  function SvgConformers({
+  function SvgBohr({
     title,
     titleId,
     ...props
@@ -26793,14 +26798,34 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React130.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React130.createElement("path", {
-      d: "M607.912 83.936a15.002 15.002 0 00-10.676 4.017L439.258 235.32H204.564l-147.023-144a15.002 15.002 0 00-23.303 18.526l151.397 248.283a15.002 15.002 0 0012.808 7.191H449.84a15.002 15.002 0 0012.709-7.033l157.627-251.396a15.002 15.002 0 00-12.264-22.955zM533.836 188.12l-92.295 147.2H206.865l-84.414-138.432 65.496 64.146a15.002 15.002 0 0010.496 4.285h246.725a15.002 15.002 0 0010.23-4.03l78.438-73.169zM950.018 341.566a15.002 15.002 0 00-10.706 3.993L790.632 483.64l-236.056 1.52a15.002 15.002 0 00-12.47 6.81L389.15 726.695a15.002 15.002 0 0022.524 19.407l144.144-127.934L796.85 613.6a15.002 15.002 0 0012.396-6.985l152.955-242.053a15.002 15.002 0 00-12.183-22.996zm-74.76 104.424L788.2 583.758l-238.486 4.52a15.002 15.002 0 00-9.672 3.779l-64.865 57.57 87.658-134.52 233.826-1.505a15.002 15.002 0 0010.111-4.008l68.485-63.604z"
+      d: "M490.253 62.562c-187.603 0-339.69 152.088-339.69 339.69 0 187.481 152.087 339.57 339.69 339.57 187.48 0 339.57-152.089 339.57-339.57 0-187.602-152.09-339.69-339.57-339.69z",
+      fill: "none",
+      strokeWidth: 37.125,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React130.createElement("path", {
+      d: "M490.253 195.592c-114.22 0-206.66 92.441-206.66 206.66 0 114.1 92.44 206.662 206.66 206.662 114.098 0 206.66-92.563 206.66-206.661 0-114.22-92.562-206.66-206.66-206.66z",
+      fill: "none",
+      strokeWidth: 37.125,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React130.createElement("path", {
+      d: "M490.253 326.272c-41.95 0-75.981 34.03-75.981 75.98 0 41.954 34.03 75.859 75.98 75.859 41.954 0 75.859-33.905 75.859-75.858 0-41.95-33.905-75.981-75.858-75.981z",
+      fill: "none",
+      strokeWidth: 37.125,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React130.createElement("path", {
+      d: "M490.253 326.272c-41.95 0-75.981 34.03-75.981 75.98 0 41.954 34.03 75.859 75.98 75.859 41.954 0 75.859-33.905 75.859-75.858 0-41.95-33.905-75.981-75.858-75.981zM490.253 148.32c27.474 0 49.872 22.275 49.872 49.871 0 27.473-22.398 49.871-49.872 49.871-27.595 0-49.87-22.398-49.87-49.87 0-27.597 22.275-49.872 49.87-49.872zM490.253 556.32c27.474 0 49.872 22.401 49.872 49.872 0 27.596-22.398 49.872-49.872 49.872-27.595 0-49.87-22.276-49.87-49.872 0-27.471 22.275-49.872 49.87-49.872zM833.16 352.383c27.6 0 49.873 22.275 49.873 49.87 0 27.474-22.273 49.872-49.872 49.872-27.596 0-49.87-22.398-49.87-49.872 0-27.595 22.274-49.87 49.87-49.87z",
+      fillRule: "evenodd",
+      stroke: "none"
     }));
   }
-  var Conformers_default = SvgConformers;
+  var Bohr_default = SvgBohr;
 
-  // build/lib-react-tsx/structure/Diastereotopic.tsx
+  // build/lib-react-tsx/structure/Conformers.tsx
   var React131 = __toModule(require_react());
-  function SvgDiastereotopic({
+  function SvgConformers({
     title,
     titleId,
     ...props
@@ -26817,37 +26842,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React131.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React131.createElement("path", {
-      d: "M252.565 300.988c0 1.382-.436 2.695-1.39 3.79-.939 1.164-2.477 2.111-4.59 2.77-2.12.731-4.96 1.313-8.531 1.748-3.577.443-8.026.66-13.486.66-5.544 0-10.139-.216-13.78-.66-3.578-.434-6.497-1.017-8.533-1.748-2.048-.659-3.579-1.606-4.448-2.77-.954-1.095-1.388-2.408-1.388-3.79V189.2H93.022v111.788a5.99 5.99 0 01-1.312 3.79c-.876 1.164-2.329 2.111-4.517 2.77-2.114.731-4.96 1.313-8.533 1.748-3.571.443-8.089.66-13.633.66-5.396 0-9.922-.216-13.563-.66-3.642-.434-6.561-1.017-8.679-1.748-2.113-.659-3.643-1.606-4.59-2.77-.955-1.095-1.39-2.408-1.39-3.79V39.873c0-1.39.435-2.702 1.39-3.789.948-1.173 2.478-2.12 4.59-2.779 2.118-.723 5.037-1.305 8.679-1.747 3.641-.436 8.167-.653 13.563-.653 5.542 0 10.062.218 13.633.653 3.573.442 6.419 1.024 8.533 1.747 2.188.659 3.641 1.606 4.517 2.779.878 1.086 1.312 2.398 1.312 3.789v101.501h103.396V39.873c0-1.39.436-2.702 1.388-3.789.869-1.173 2.399-2.12 4.448-2.779 2.036-.723 4.955-1.305 8.533-1.747 3.641-.436 8.236-.653 13.78-.653 5.459 0 9.909.218 13.486.653 3.572.442 6.413 1.024 8.531 1.747 2.111.659 3.65 1.606 4.59 2.779.953 1.086 1.39 2.398 1.39 3.789v261.115zM967.05 165.071c0 25.301-3.361 47.033-9.989 65.037-6.639 18.011-16.118 32.747-28.517 44.119-12.391 11.374-27.414 19.759-45.131 25.085-17.796 5.318-38.868 8.021-63.367 8.021h-65.99c-4.736 0-8.674-1.39-11.888-4.16-3.2-2.772-4.812-7.292-4.812-13.563V48.622c0-6.272 1.612-10.792 4.812-13.563 3.214-2.772 7.151-4.154 11.888-4.154h70.881c24.644 0 45.565 2.912 62.704 8.68 17.13 5.753 31.644 14.285 43.389 25.588 11.738 11.305 20.706 25.302 26.831 42.001 6.115 16.624 9.189 35.948 9.189 57.897h0zm-58.118 1.894c0-13.12-1.529-25.231-4.597-36.527-3.057-11.226-8.018-21.002-14.804-29.238-6.699-8.244-15.381-14.735-26.033-19.324-10.565-4.666-24.492-7.001-41.774-7.001h-28.362v188.052H822.6c15.389 0 28.362-2.042 38.865-5.978 10.568-4.014 19.325-10.062 26.397-18.083 7.074-8.027 12.321-18.083 15.822-30.047 3.502-11.958 5.248-25.884 5.248-41.854z"
-    }), /* @__PURE__ */ React131.createElement("g", {
-      fill: "none",
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
-    }, /* @__PURE__ */ React131.createElement("path", {
-      strokeWidth: 37.088,
-      d: "M508.229 777.649v148.985"
-    }), /* @__PURE__ */ React131.createElement("path", {
-      strokeWidth: 37.086,
-      d: "M572.738 814.893L443.717 889.39"
-    }), /* @__PURE__ */ React131.createElement("path", {
-      strokeWidth: 37.084,
-      d: "M572.738 889.39l-129.021-74.497"
-    })), /* @__PURE__ */ React131.createElement("path", {
-      d: "M472.871 641.211L210.263 386.17l103.529-73.225 207.06 320.692 444.43 222.213-22.727 42.928-434.331-222.215L73.902 893.727l-22.728-40.403z"
-    }), /* @__PURE__ */ React131.createElement("path", {
-      d: "M538.127 585.561l34.592-34.599 34.599 34.599-34.599 34.591z"
-    }), /* @__PURE__ */ React131.createElement("path", {
-      d: "M601.906 521.671l34.596-34.596 34.594 34.594-34.596 34.597zM665.827 457.916l34.6-34.6 34.597 34.597-34.6 34.6z",
-      strokeWidth: 0.99999
-    }), /* @__PURE__ */ React131.createElement("path", {
-      d: "M729.665 394.022l34.592-34.601 34.6 34.601-34.6 34.591z"
+      d: "M607.912 83.936a15.002 15.002 0 00-10.676 4.017L439.258 235.32H204.564l-147.023-144a15.002 15.002 0 00-23.303 18.526l151.397 248.283a15.002 15.002 0 0012.808 7.191H449.84a15.002 15.002 0 0012.709-7.033l157.627-251.396a15.002 15.002 0 00-12.264-22.955zM533.836 188.12l-92.295 147.2H206.865l-84.414-138.432 65.496 64.146a15.002 15.002 0 0010.496 4.285h246.725a15.002 15.002 0 0010.23-4.03l78.438-73.169zM950.018 341.566a15.002 15.002 0 00-10.706 3.993L790.632 483.64l-236.056 1.52a15.002 15.002 0 00-12.47 6.81L389.15 726.695a15.002 15.002 0 0022.524 19.407l144.144-127.934L796.85 613.6a15.002 15.002 0 0012.396-6.985l152.955-242.053a15.002 15.002 0 00-12.183-22.996zm-74.76 104.424L788.2 583.758l-238.486 4.52a15.002 15.002 0 00-9.672 3.779l-64.865 57.57 87.658-134.52 233.826-1.505a15.002 15.002 0 0010.111-4.008l68.485-63.604z"
     }));
   }
-  var Diastereotopic_default = SvgDiastereotopic;
+  var Conformers_default = SvgConformers;
 
-  // build/lib-react-tsx/structure/Lcao.tsx
+  // build/lib-react-tsx/structure/Diastereotopic.tsx
   var React132 = __toModule(require_react());
-  function SvgLcao({
+  function SvgDiastereotopic({
     title,
     titleId,
     ...props
@@ -26864,57 +26866,37 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React132.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React132.createElement("path", {
-      d: "M467.491 268.613a199.64 198.45 0 01-199.64 198.45 199.64 198.45 0 01-199.638-198.45 199.64 198.45 0 01199.639-198.45 199.64 198.45 0 01199.639 198.45z",
-      fill: "none",
-      strokeWidth: 40
+      d: "M252.565 300.988c0 1.382-.436 2.695-1.39 3.79-.939 1.164-2.477 2.111-4.59 2.77-2.12.731-4.96 1.313-8.531 1.748-3.577.443-8.026.66-13.486.66-5.544 0-10.139-.216-13.78-.66-3.578-.434-6.497-1.017-8.533-1.748-2.048-.659-3.579-1.606-4.448-2.77-.954-1.095-1.388-2.408-1.388-3.79V189.2H93.022v111.788a5.99 5.99 0 01-1.312 3.79c-.876 1.164-2.329 2.111-4.517 2.77-2.114.731-4.96 1.313-8.533 1.748-3.571.443-8.089.66-13.633.66-5.396 0-9.922-.216-13.563-.66-3.642-.434-6.561-1.017-8.679-1.748-2.113-.659-3.643-1.606-4.59-2.77-.955-1.095-1.39-2.408-1.39-3.79V39.873c0-1.39.435-2.702 1.39-3.789.948-1.173 2.478-2.12 4.59-2.779 2.118-.723 5.037-1.305 8.679-1.747 3.641-.436 8.167-.653 13.563-.653 5.542 0 10.062.218 13.633.653 3.573.442 6.419 1.024 8.533 1.747 2.188.659 3.641 1.606 4.517 2.779.878 1.086 1.312 2.398 1.312 3.789v101.501h103.396V39.873c0-1.39.436-2.702 1.388-3.789.869-1.173 2.399-2.12 4.448-2.779 2.036-.723 4.955-1.305 8.533-1.747 3.641-.436 8.236-.653 13.78-.653 5.459 0 9.909.218 13.486.653 3.572.442 6.413 1.024 8.531 1.747 2.111.659 3.65 1.606 4.59 2.779.953 1.086 1.39 2.398 1.39 3.789v261.115zM967.05 165.071c0 25.301-3.361 47.033-9.989 65.037-6.639 18.011-16.118 32.747-28.517 44.119-12.391 11.374-27.414 19.759-45.131 25.085-17.796 5.318-38.868 8.021-63.367 8.021h-65.99c-4.736 0-8.674-1.39-11.888-4.16-3.2-2.772-4.812-7.292-4.812-13.563V48.622c0-6.272 1.612-10.792 4.812-13.563 3.214-2.772 7.151-4.154 11.888-4.154h70.881c24.644 0 45.565 2.912 62.704 8.68 17.13 5.753 31.644 14.285 43.389 25.588 11.738 11.305 20.706 25.302 26.831 42.001 6.115 16.624 9.189 35.948 9.189 57.897h0zm-58.118 1.894c0-13.12-1.529-25.231-4.597-36.527-3.057-11.226-8.018-21.002-14.804-29.238-6.699-8.244-15.381-14.735-26.033-19.324-10.565-4.666-24.492-7.001-41.774-7.001h-28.362v188.052H822.6c15.389 0 28.362-2.042 38.865-5.978 10.568-4.014 19.325-10.062 26.397-18.083 7.074-8.027 12.321-18.083 15.822-30.047 3.502-11.958 5.248-25.884 5.248-41.854z"
     }), /* @__PURE__ */ React132.createElement("g", {
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 400,
-      fontSize: 40,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
+      fill: "none",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926
     }, /* @__PURE__ */ React132.createElement("path", {
-      d: "M273.225 323.34q0 3.418-.367 5.86-.366 2.318-1.098 3.783-.61 1.343-1.465 1.953-.855.61-1.953.61h-87.158q-.977 0-1.832-.61-.854-.61-1.586-1.953-.61-1.465-.977-3.784-.366-2.441-.366-5.86 0-3.54.244-5.859.366-2.441.976-3.906.733-1.465 1.587-2.075.855-.732 1.954-.732h29.418V207.983l-25.39 14.038q-2.808 1.343-4.639 1.71-1.709.244-2.807-.733-.977-1.099-1.343-3.662-.366-2.564-.366-7.202 0-2.93.122-4.761.122-1.953.61-3.296.488-1.343 1.343-2.197.854-.855 2.32-1.831l33.935-21.973q.61-.488 1.464-.732.977-.367 2.442-.489 1.465-.244 3.784-.244 2.441-.122 6.226-.122 4.638 0 7.446.244 2.93.122 4.394.61 1.465.367 1.954 1.1.488.732.488 1.83v130.494h25.757q1.098 0 1.953.732.976.61 1.587 2.075.732 1.465.976 3.906.367 2.32.367 5.86zM376.984 300.635q0 9.277-3.54 16.357-3.418 7.08-9.765 11.84-6.348 4.762-15.015 7.081-8.667 2.441-18.799 2.441-6.103 0-11.719-.976-5.493-.855-9.887-2.197-4.395-1.465-7.325-2.93-2.93-1.465-4.272-2.686-1.343-1.342-2.075-4.028-.733-2.808-.733-8.179 0-3.54.245-5.615.244-2.197.732-3.418.488-1.343 1.22-1.709.733-.488 1.832-.488 1.343 0 3.906 1.587 2.686 1.465 6.592 3.296 3.906 1.83 9.033 3.418 5.249 1.587 11.84 1.587 4.151 0 7.325-.855 3.296-.854 5.615-2.441 2.442-1.587 3.662-4.029 1.221-2.441 1.221-5.615 0-3.662-2.32-6.226-2.197-2.685-5.98-4.638-3.663-1.953-8.424-3.662-4.638-1.71-9.643-3.784-4.883-2.076-9.644-4.761-4.638-2.686-8.423-6.592-3.662-3.906-5.981-9.4-2.197-5.493-2.197-13.183 0-7.813 3.052-14.282 3.051-6.592 8.789-11.23 5.737-4.64 13.916-7.203 8.3-2.563 18.554-2.563 5.127 0 9.888.732 4.883.733 8.79 1.831 3.905 1.099 6.59 2.442 2.686 1.22 3.785 2.197 1.22.854 1.709 1.83.488.855.732 2.198.245 1.22.367 3.174.244 1.831.244 4.639 0 3.296-.244 5.37-.122 2.076-.61 3.297-.367 1.22-1.1 1.709-.732.366-1.708.366-1.099 0-3.418-1.22-2.32-1.344-5.86-2.808-3.418-1.465-8.056-2.686-4.517-1.343-10.376-1.343-4.15 0-7.202.855-3.052.854-5.005 2.441-1.953 1.587-2.93 3.784-.977 2.075-.977 4.517 0 3.784 2.32 6.348 2.32 2.563 6.103 4.516 3.784 1.953 8.545 3.662 4.883 1.71 9.766 3.784 5.005 1.954 9.765 4.64 4.883 2.685 8.667 6.59 3.785 3.907 6.104 9.4 2.32 5.371 2.32 12.818z"
+      strokeWidth: 37.088,
+      d: "M508.229 777.649v148.985"
+    }), /* @__PURE__ */ React132.createElement("path", {
+      strokeWidth: 37.086,
+      d: "M572.738 814.893L443.717 889.39"
+    }), /* @__PURE__ */ React132.createElement("path", {
+      strokeWidth: 37.084,
+      d: "M572.738 889.39l-129.021-74.497"
     })), /* @__PURE__ */ React132.createElement("path", {
-      transform: "skewY(.891) scale(.99988 1)",
-      d: "M843.146 722.01a342.224 167.455 0 01-342.224 167.456A342.224 167.455 0 01158.7 722.01a342.224 167.455 0 01342.223-167.455A342.224 167.455 0 01843.146 722.01z",
-      fill: "none",
-      strokeWidth: 40.002
+      d: "M472.871 641.211L210.263 386.17l103.529-73.225 207.06 320.692 444.43 222.213-22.727 42.928-434.331-222.215L73.902 893.727l-22.728-40.403z"
     }), /* @__PURE__ */ React132.createElement("path", {
-      d: "M604.273 652.167q0 6.775-1.648 9.522-1.648 2.563-4.76 2.563h-40.65q6.775 5.127 12.085 12.452 5.493 7.14 9.338 15.93 3.846 8.606 6.043 18.677 2.197 9.887 2.197 20.507 0 19.043-4.76 33.692-4.761 14.465-14.65 26.184-9.704 11.535-25.085 18.31-15.38 6.775-34.24 6.775-20.691 0-35.523-6.042-14.648-6.226-24.353-17.578-9.521-11.536-14.465-27.832-4.944-16.297-4.944-36.438 0-20.325 5.493-36.988 5.676-16.662 16.48-28.381 10.803-11.719 27.1-17.944 16.479-6.409 38.451-6.409h81.3q2.197 0 3.478.732 1.282.733 2.014 2.38.733 1.649.916 4.03.183 2.38.183 5.858zm-48.34 81.116q0-10.803-2.014-20.874-1.831-10.254-5.86-19.043-4.028-8.972-10.436-16.296-6.226-7.508-14.649-12.818h-7.324q-14.282 0-24.902 4.761-10.437 4.578-17.212 13-6.775 8.424-10.071 19.96-3.113 11.535-3.113 25.268 0 13.366 2.564 25.085 2.563 11.536 8.24 20.325 5.859 8.606 15.197 13.733 9.339 4.944 23.071 4.944 22.522 0 34.424-14.832 12.085-15.015 12.085-43.213z",
-      fontWeight: 400,
-      fontSize: 40,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
+      d: "M538.127 585.561l34.592-34.599 34.599 34.599-34.599 34.591z"
     }), /* @__PURE__ */ React132.createElement("path", {
-      d: "M945.323 263.687a199.64 198.45 0 01-199.64 198.45 199.64 198.45 0 01-199.638-198.45 199.64 198.45 0 01199.639-198.45 199.64 198.45 0 01199.639 198.45z",
-      fill: "none",
-      strokeWidth: 40
-    }), /* @__PURE__ */ React132.createElement("g", {
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 400,
-      fontSize: 40,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
-    }, /* @__PURE__ */ React132.createElement("path", {
-      d: "M751.057 318.414q0 3.418-.367 5.859-.366 2.32-1.098 3.784-.61 1.343-1.465 1.953-.855.61-1.953.61h-87.159q-.976 0-1.83-.61-.855-.61-1.587-1.953-.61-1.465-.977-3.784-.366-2.441-.366-5.86 0-3.54.244-5.859.366-2.441.976-3.906.733-1.465 1.587-2.075.855-.733 1.953-.733h29.42V203.057l-25.391 14.038q-2.808 1.343-4.639 1.71-1.709.243-2.807-.733-.977-1.099-1.343-3.662-.366-2.564-.366-7.202 0-2.93.122-4.761.122-1.953.61-3.296.488-1.343 1.343-2.197.854-.855 2.32-1.831l33.935-21.973q.61-.488 1.464-.732.977-.367 2.442-.489 1.465-.244 3.784-.244 2.441-.122 6.226-.122 4.638 0 7.446.244 2.93.122 4.394.61 1.465.367 1.954 1.1.488.732.488 1.83V305.84h25.757q1.098 0 1.953.733.976.61 1.587 2.075.732 1.465.976 3.906.367 2.32.367 5.86zM854.816 295.709q0 9.277-3.54 16.357-3.418 7.08-9.765 11.84-6.348 4.762-15.015 7.08-8.667 2.442-18.799 2.442-6.103 0-11.719-.976-5.493-.855-9.887-2.198-4.395-1.464-7.325-2.93-2.93-1.464-4.272-2.685-1.343-1.343-2.075-4.028-.733-2.808-.733-8.179 0-3.54.245-5.615.244-2.197.732-3.418.488-1.343 1.22-1.709.733-.488 1.832-.488 1.343 0 3.906 1.587 2.686 1.464 6.592 3.296 3.906 1.83 9.033 3.417 5.249 1.587 11.84 1.587 4.151 0 7.325-.854 3.296-.855 5.615-2.441 2.442-1.587 3.662-4.029 1.221-2.441 1.221-5.615 0-3.662-2.32-6.226-2.197-2.685-5.98-4.638-3.663-1.953-8.424-3.662-4.638-1.71-9.643-3.785-4.883-2.075-9.644-4.76-4.638-2.686-8.423-6.592-3.662-3.906-5.981-9.4-2.197-5.493-2.197-13.183 0-7.813 3.052-14.282 3.051-6.592 8.789-11.23 5.737-4.64 13.916-7.203 8.3-2.563 18.554-2.563 5.127 0 9.888.732 4.883.732 8.789 1.831 3.906 1.099 6.592 2.441 2.685 1.221 3.784 2.198 1.22.854 1.709 1.83.488.855.732 2.198.245 1.22.367 3.174.244 1.83.244 4.639 0 3.295-.244 5.37-.122 2.076-.61 3.297-.367 1.22-1.1 1.708-.732.367-1.708.367-1.099 0-3.418-1.221-2.32-1.343-5.86-2.808-3.418-1.464-8.056-2.685-4.517-1.343-10.376-1.343-4.15 0-7.202.855-3.052.854-5.005 2.441-1.953 1.587-2.93 3.784-.977 2.075-.977 4.517 0 3.784 2.32 6.347 2.32 2.564 6.103 4.517 3.784 1.953 8.545 3.662 4.883 1.71 9.766 3.784 5.005 1.953 9.765 4.639 4.883 2.686 8.667 6.592 3.785 3.906 6.104 9.4 2.32 5.37 2.32 12.817z"
-    })));
+      d: "M601.906 521.671l34.596-34.596 34.594 34.594-34.596 34.597zM665.827 457.916l34.6-34.6 34.597 34.597-34.6 34.6z",
+      strokeWidth: 0.99999
+    }), /* @__PURE__ */ React132.createElement("path", {
+      d: "M729.665 394.022l34.592-34.601 34.6 34.601-34.6 34.591z"
+    }));
   }
-  var Lcao_default = SvgLcao;
+  var Diastereotopic_default = SvgDiastereotopic;
 
-  // build/lib-react-tsx/structure/LewisNitrogen.tsx
+  // build/lib-react-tsx/structure/Lcao.tsx
   var React133 = __toModule(require_react());
-  function SvgLewisNitrogen({
+  function SvgLcao({
     title,
     titleId,
     ...props
@@ -26931,10 +26913,28 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React133.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React133.createElement("path", {
-      d: "M500 100h150v50H500z",
-      fill: "none"
+      d: "M467.491 268.613a199.64 198.45 0 01-199.64 198.45 199.64 198.45 0 01-199.638-198.45 199.64 198.45 0 01199.639-198.45 199.64 198.45 0 01199.639 198.45z",
+      fill: "none",
+      strokeWidth: 40
+    }), /* @__PURE__ */ React133.createElement("g", {
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 400,
+      fontSize: 40,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
+    }, /* @__PURE__ */ React133.createElement("path", {
+      d: "M273.225 323.34q0 3.418-.367 5.86-.366 2.318-1.098 3.783-.61 1.343-1.465 1.953-.855.61-1.953.61h-87.158q-.977 0-1.832-.61-.854-.61-1.586-1.953-.61-1.465-.977-3.784-.366-2.441-.366-5.86 0-3.54.244-5.859.366-2.441.976-3.906.733-1.465 1.587-2.075.855-.732 1.954-.732h29.418V207.983l-25.39 14.038q-2.808 1.343-4.639 1.71-1.709.244-2.807-.733-.977-1.099-1.343-3.662-.366-2.564-.366-7.202 0-2.93.122-4.761.122-1.953.61-3.296.488-1.343 1.343-2.197.854-.855 2.32-1.831l33.935-21.973q.61-.488 1.464-.732.977-.367 2.442-.489 1.465-.244 3.784-.244 2.441-.122 6.226-.122 4.638 0 7.446.244 2.93.122 4.394.61 1.465.367 1.954 1.1.488.732.488 1.83v130.494h25.757q1.098 0 1.953.732.976.61 1.587 2.075.732 1.465.976 3.906.367 2.32.367 5.86zM376.984 300.635q0 9.277-3.54 16.357-3.418 7.08-9.765 11.84-6.348 4.762-15.015 7.081-8.667 2.441-18.799 2.441-6.103 0-11.719-.976-5.493-.855-9.887-2.197-4.395-1.465-7.325-2.93-2.93-1.465-4.272-2.686-1.343-1.342-2.075-4.028-.733-2.808-.733-8.179 0-3.54.245-5.615.244-2.197.732-3.418.488-1.343 1.22-1.709.733-.488 1.832-.488 1.343 0 3.906 1.587 2.686 1.465 6.592 3.296 3.906 1.83 9.033 3.418 5.249 1.587 11.84 1.587 4.151 0 7.325-.855 3.296-.854 5.615-2.441 2.442-1.587 3.662-4.029 1.221-2.441 1.221-5.615 0-3.662-2.32-6.226-2.197-2.685-5.98-4.638-3.663-1.953-8.424-3.662-4.638-1.71-9.643-3.784-4.883-2.076-9.644-4.761-4.638-2.686-8.423-6.592-3.662-3.906-5.981-9.4-2.197-5.493-2.197-13.183 0-7.813 3.052-14.282 3.051-6.592 8.789-11.23 5.737-4.64 13.916-7.203 8.3-2.563 18.554-2.563 5.127 0 9.888.732 4.883.733 8.79 1.831 3.905 1.099 6.59 2.442 2.686 1.22 3.785 2.197 1.22.854 1.709 1.83.488.855.732 2.198.245 1.22.367 3.174.244 1.831.244 4.639 0 3.296-.244 5.37-.122 2.076-.61 3.297-.367 1.22-1.1 1.709-.732.366-1.708.366-1.099 0-3.418-1.22-2.32-1.344-5.86-2.808-3.418-1.465-8.056-2.686-4.517-1.343-10.376-1.343-4.15 0-7.202.855-3.052.854-5.005 2.441-1.953 1.587-2.93 3.784-.977 2.075-.977 4.517 0 3.784 2.32 6.348 2.32 2.563 6.103 4.516 3.784 1.953 8.545 3.662 4.883 1.71 9.766 3.784 5.005 1.954 9.765 4.64 4.883 2.685 8.667 6.59 3.785 3.907 6.104 9.4 2.32 5.371 2.32 12.818z"
+    })), /* @__PURE__ */ React133.createElement("path", {
+      transform: "skewY(.891) scale(.99988 1)",
+      d: "M843.146 722.01a342.224 167.455 0 01-342.224 167.456A342.224 167.455 0 01158.7 722.01a342.224 167.455 0 01342.223-167.455A342.224 167.455 0 01843.146 722.01z",
+      fill: "none",
+      strokeWidth: 40.002
     }), /* @__PURE__ */ React133.createElement("path", {
-      d: "M706.961 697.498q0 8.984-3.125 16.015-3.125 7.032-8.594 11.719-5.078 4.688-12.5 7.031-7.031 1.953-14.453 1.953h-43.75q-13.672 0-23.828-2.734-9.766-2.734-18.36-9.766-8.203-7.421-16.015-19.53-7.813-12.5-17.578-32.032L422.977 433.826q-10.938-21.094-22.266-45.313-11.328-24.61-20.313-47.656h-.78q1.562 28.125 2.343 56.25.781 27.734.781 57.422v264.453q0 3.906-2.344 7.031-1.953 3.125-7.421 5.469-5.079 1.953-14.063 3.125-8.984 1.172-23.047 1.172-13.672 0-22.656-1.172-8.984-1.172-14.063-3.125-5.078-2.344-7.03-5.469-1.954-3.125-1.954-7.031V264.685q0-18.36 10.547-27.344 10.937-9.375 26.562-9.375h55.079q14.843 0 25 2.735 10.156 2.344 17.968 8.203 8.203 5.86 15.235 16.406 7.031 10.156 14.453 25.39l98.437 184.766q8.594 16.797 16.797 33.204 8.594 16.015 16.406 32.421 7.813 16.016 15.235 31.641t14.453 31.25h.39q-1.171-27.344-1.953-57.031-.39-29.688-.39-56.64V243.2q0-3.906 2.344-7.031 2.343-3.125 7.812-5.47 5.469-2.343 14.453-3.124 8.985-1.172 23.047-1.172 13.281 0 22.266 1.172 8.984.781 13.672 3.125 5.078 2.344 7.03 5.469 1.954 3.125 1.954 7.03v454.298z",
+      d: "M604.273 652.167q0 6.775-1.648 9.522-1.648 2.563-4.76 2.563h-40.65q6.775 5.127 12.085 12.452 5.493 7.14 9.338 15.93 3.846 8.606 6.043 18.677 2.197 9.887 2.197 20.507 0 19.043-4.76 33.692-4.761 14.465-14.65 26.184-9.704 11.535-25.085 18.31-15.38 6.775-34.24 6.775-20.691 0-35.523-6.042-14.648-6.226-24.353-17.578-9.521-11.536-14.465-27.832-4.944-16.297-4.944-36.438 0-20.325 5.493-36.988 5.676-16.662 16.48-28.381 10.803-11.719 27.1-17.944 16.479-6.409 38.451-6.409h81.3q2.197 0 3.478.732 1.282.733 2.014 2.38.733 1.649.916 4.03.183 2.38.183 5.858zm-48.34 81.116q0-10.803-2.014-20.874-1.831-10.254-5.86-19.043-4.028-8.972-10.436-16.296-6.226-7.508-14.649-12.818h-7.324q-14.282 0-24.902 4.761-10.437 4.578-17.212 13-6.775 8.424-10.071 19.96-3.113 11.535-3.113 25.268 0 13.366 2.564 25.085 2.563 11.536 8.24 20.325 5.859 8.606 15.197 13.733 9.339 4.944 23.071 4.944 22.522 0 34.424-14.832 12.085-15.015 12.085-43.213z",
       fontWeight: 400,
       fontSize: 40,
       fontFamily: "sans-serif",
@@ -26942,16 +26942,28 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       wordSpacing: 0,
       stroke: "none"
     }), /* @__PURE__ */ React133.createElement("path", {
-      d: "M398.638 72c27.52 0 49.793 22.273 49.793 49.792 0 27.52-22.273 49.793-49.793 49.793s-49.792-22.273-49.792-49.793S371.118 72 398.638 72zM600 70c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S572.48 70 600 70zM174 400c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S146.48 400 174 400zM822 400c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S794.48 400 822 400zM500 778c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S472.48 778 500 778z",
-      fillRule: "evenodd",
+      d: "M945.323 263.687a199.64 198.45 0 01-199.64 198.45 199.64 198.45 0 01-199.638-198.45 199.64 198.45 0 01199.639-198.45 199.64 198.45 0 01199.639 198.45z",
+      fill: "none",
+      strokeWidth: 40
+    }), /* @__PURE__ */ React133.createElement("g", {
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 400,
+      fontSize: 40,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
       stroke: "none"
-    }));
+    }, /* @__PURE__ */ React133.createElement("path", {
+      d: "M751.057 318.414q0 3.418-.367 5.859-.366 2.32-1.098 3.784-.61 1.343-1.465 1.953-.855.61-1.953.61h-87.159q-.976 0-1.83-.61-.855-.61-1.587-1.953-.61-1.465-.977-3.784-.366-2.441-.366-5.86 0-3.54.244-5.859.366-2.441.976-3.906.733-1.465 1.587-2.075.855-.733 1.953-.733h29.42V203.057l-25.391 14.038q-2.808 1.343-4.639 1.71-1.709.243-2.807-.733-.977-1.099-1.343-3.662-.366-2.564-.366-7.202 0-2.93.122-4.761.122-1.953.61-3.296.488-1.343 1.343-2.197.854-.855 2.32-1.831l33.935-21.973q.61-.488 1.464-.732.977-.367 2.442-.489 1.465-.244 3.784-.244 2.441-.122 6.226-.122 4.638 0 7.446.244 2.93.122 4.394.61 1.465.367 1.954 1.1.488.732.488 1.83V305.84h25.757q1.098 0 1.953.733.976.61 1.587 2.075.732 1.465.976 3.906.367 2.32.367 5.86zM854.816 295.709q0 9.277-3.54 16.357-3.418 7.08-9.765 11.84-6.348 4.762-15.015 7.08-8.667 2.442-18.799 2.442-6.103 0-11.719-.976-5.493-.855-9.887-2.198-4.395-1.464-7.325-2.93-2.93-1.464-4.272-2.685-1.343-1.343-2.075-4.028-.733-2.808-.733-8.179 0-3.54.245-5.615.244-2.197.732-3.418.488-1.343 1.22-1.709.733-.488 1.832-.488 1.343 0 3.906 1.587 2.686 1.464 6.592 3.296 3.906 1.83 9.033 3.417 5.249 1.587 11.84 1.587 4.151 0 7.325-.854 3.296-.855 5.615-2.441 2.442-1.587 3.662-4.029 1.221-2.441 1.221-5.615 0-3.662-2.32-6.226-2.197-2.685-5.98-4.638-3.663-1.953-8.424-3.662-4.638-1.71-9.643-3.785-4.883-2.075-9.644-4.76-4.638-2.686-8.423-6.592-3.662-3.906-5.981-9.4-2.197-5.493-2.197-13.183 0-7.813 3.052-14.282 3.051-6.592 8.789-11.23 5.737-4.64 13.916-7.203 8.3-2.563 18.554-2.563 5.127 0 9.888.732 4.883.732 8.789 1.831 3.906 1.099 6.592 2.441 2.685 1.221 3.784 2.198 1.22.854 1.709 1.83.488.855.732 2.198.245 1.22.367 3.174.244 1.83.244 4.639 0 3.295-.244 5.37-.122 2.076-.61 3.297-.367 1.22-1.1 1.708-.732.367-1.708.367-1.099 0-3.418-1.221-2.32-1.343-5.86-2.808-3.418-1.464-8.056-2.685-4.517-1.343-10.376-1.343-4.15 0-7.202.855-3.052.854-5.005 2.441-1.953 1.587-2.93 3.784-.977 2.075-.977 4.517 0 3.784 2.32 6.347 2.32 2.564 6.103 4.517 3.784 1.953 8.545 3.662 4.883 1.71 9.766 3.784 5.005 1.953 9.765 4.639 4.883 2.686 8.667 6.592 3.785 3.906 6.104 9.4 2.32 5.37 2.32 12.817z"
+    })));
   }
-  var LewisNitrogen_default = SvgLewisNitrogen;
+  var Lcao_default = SvgLcao;
 
-  // build/lib-react-tsx/structure/LewisOxygen.tsx
+  // build/lib-react-tsx/structure/LewisNitrogen.tsx
   var React134 = __toModule(require_react());
-  function SvgLewisOxygen({
+  function SvgLewisNitrogen({
     title,
     titleId,
     ...props
@@ -26968,26 +26980,27 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React134.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React134.createElement("path", {
-      d: "M410.638 50c27.52 0 49.793 22.273 49.793 49.792 0 27.52-22.273 49.793-49.793 49.793s-49.792-22.273-49.792-49.793S383.118 50 410.638 50zM577.858 50c27.518 0 49.792 22.273 49.792 49.792 0 27.52-22.274 49.793-49.792 49.793-27.403 0-49.795-22.273-49.795-49.793S550.455 50 577.858 50z",
-      fillRule: "evenodd",
+      d: "M500 100h150v50H500z",
+      fill: "none"
+    }), /* @__PURE__ */ React134.createElement("path", {
+      d: "M706.961 697.498q0 8.984-3.125 16.015-3.125 7.032-8.594 11.719-5.078 4.688-12.5 7.031-7.031 1.953-14.453 1.953h-43.75q-13.672 0-23.828-2.734-9.766-2.734-18.36-9.766-8.203-7.421-16.015-19.53-7.813-12.5-17.578-32.032L422.977 433.826q-10.938-21.094-22.266-45.313-11.328-24.61-20.313-47.656h-.78q1.562 28.125 2.343 56.25.781 27.734.781 57.422v264.453q0 3.906-2.344 7.031-1.953 3.125-7.421 5.469-5.079 1.953-14.063 3.125-8.984 1.172-23.047 1.172-13.672 0-22.656-1.172-8.984-1.172-14.063-3.125-5.078-2.344-7.03-5.469-1.954-3.125-1.954-7.031V264.685q0-18.36 10.547-27.344 10.937-9.375 26.562-9.375h55.079q14.843 0 25 2.735 10.156 2.344 17.968 8.203 8.203 5.86 15.235 16.406 7.031 10.156 14.453 25.39l98.437 184.766q8.594 16.797 16.797 33.204 8.594 16.015 16.406 32.421 7.813 16.016 15.235 31.641t14.453 31.25h.39q-1.171-27.344-1.953-57.031-.39-29.688-.39-56.64V243.2q0-3.906 2.344-7.031 2.343-3.125 7.812-5.47 5.469-2.343 14.453-3.124 8.985-1.172 23.047-1.172 13.281 0 22.266 1.172 8.984.781 13.672 3.125 5.078 2.344 7.03 5.469 1.954 3.125 1.954 7.03v454.298z",
+      fontWeight: 400,
+      fontSize: 40,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
       stroke: "none"
     }), /* @__PURE__ */ React134.createElement("path", {
-      d: "M384.168 280.304c-64.136 67.401-64.136 176.78 0 244.183 64.252 67.517 168.385 67.517 232.521 0 64.25-67.403 64.25-176.782 0-244.183-64.136-67.517-168.27-67.517-232.521 0z",
-      fill: "none",
-      strokeWidth: 58.305,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React134.createElement("path", {
-      d: "M237.356 329.048c0 27.52-22.273 49.79-49.793 49.79s-49.792-22.27-49.792-49.79 22.273-49.793 49.792-49.793c27.52 0 49.793 22.273 49.793 49.793zM237.356 496.382c0 27.403-22.273 49.677-49.793 49.677s-49.792-22.274-49.792-49.677c0-27.518 22.273-49.792 49.792-49.792 27.52 0 49.793 22.274 49.793 49.792zM808.745 350.504c27.404 0 49.675 22.272 49.675 49.792 0 27.521-22.271 49.792-49.675 49.792-27.52 0-49.794-22.27-49.794-49.792 0-27.52 22.273-49.792 49.794-49.792zM500.428 651.007c27.521 0 49.792 22.274 49.792 49.792 0 27.52-22.27 49.795-49.792 49.795-27.52 0-49.793-22.274-49.793-49.795 0-27.518 22.272-49.792 49.793-49.792z",
+      d: "M398.638 72c27.52 0 49.793 22.273 49.793 49.792 0 27.52-22.273 49.793-49.793 49.793s-49.792-22.273-49.792-49.793S371.118 72 398.638 72zM600 70c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S572.48 70 600 70zM174 400c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S146.48 400 174 400zM822 400c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S794.48 400 822 400zM500 778c27.52 0 49.792 22.273 49.792 49.792 0 27.52-22.272 49.793-49.792 49.793-27.52 0-49.793-22.273-49.793-49.793S472.48 778 500 778z",
       fillRule: "evenodd",
       stroke: "none"
     }));
   }
-  var LewisOxygen_default = SvgLewisOxygen;
+  var LewisNitrogen_default = SvgLewisNitrogen;
 
-  // build/lib-react-tsx/structure/Magnifier5.tsx
+  // build/lib-react-tsx/structure/LewisOxygen.tsx
   var React135 = __toModule(require_react());
-  function SvgMagnifier5({
+  function SvgLewisOxygen({
     title,
     titleId,
     ...props
@@ -27004,25 +27017,26 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React135.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React135.createElement("path", {
-      d: "M580.305 27.525c-182.445 0-331.588 149.146-331.588 331.59 0 181.776 148.064 330.45 329.596 331.537a26.707 26.707 0 001.992.051c182.444 0 331.59-149.143 331.59-331.588 0-182.444-149.146-331.59-331.59-331.59zm0 53.409c153.404 0 278.181 124.777 278.181 278.181S733.71 637.297 580.305 637.297s-278.18-124.778-278.18-278.182S426.901 80.934 580.305 80.934z"
+      d: "M410.638 50c27.52 0 49.793 22.273 49.793 49.792 0 27.52-22.273 49.793-49.793 49.793s-49.792-22.273-49.792-49.793S383.118 50 410.638 50zM577.858 50c27.518 0 49.792 22.273 49.792 49.792 0 27.52-22.274 49.793-49.792 49.793-27.403 0-49.795-22.273-49.795-49.793S550.455 50 577.858 50z",
+      fillRule: "evenodd",
+      stroke: "none"
     }), /* @__PURE__ */ React135.createElement("path", {
-      d: "M349.785 547.707a26.707 26.707 0 00-22.53 10.7L101.993 860.013a26.707 26.707 0 1042.791 31.96l209.268-280.19 36.043 26.974-209.3 280.234a26.707 26.707 0 1042.79 31.96L448.85 649.343a26.707 26.707 0 00-5.395-37.36l-78.803-58.978a26.707 26.707 0 00-14.867-5.299z"
+      d: "M384.168 280.304c-64.136 67.401-64.136 176.78 0 244.183 64.252 67.517 168.385 67.517 232.521 0 64.25-67.403 64.25-176.782 0-244.183-64.136-67.517-168.27-67.517-232.521 0z",
+      fill: "none",
+      strokeWidth: 58.305,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React135.createElement("path", {
-      d: "M203.086 907.97a26.707 26.707 0 00-22.313 11.05c-3.228 4.333-9.171 5.195-13.582 1.91a26.707 26.707 0 10-31.904 42.83c27.7 20.634 67.628 14.94 88.318-12.836a26.707 26.707 0 00-20.52-42.953z"
-    }), /* @__PURE__ */ React135.createElement("path", {
-      d: "M129.361 900.033a26.707 26.707 0 00-14.65 48.254l20.478 15.4a26.707 26.707 0 1032.1-42.685l-20.478-15.4a26.707 26.707 0 00-17.45-5.569z"
-    }), /* @__PURE__ */ React135.createElement("path", {
-      d: "M124.285 848.992a26.707 26.707 0 00-22.312 11.049c-20.634 27.7-14.941 67.63 12.836 88.32a26.707 26.707 0 1031.904-42.832c-4.334-3.228-5.195-9.172-1.91-13.582a26.707 26.707 0 00-20.518-42.955zM580.305 96.662c-144.618 0-262.617 117.992-262.617 262.453 0 144.157 117.507 261.933 261.707 262.43a12.288 12.288 0 00.91.023c144.461 0 262.453-117.991 262.453-262.453 0-144.461-117.992-262.453-262.453-262.453zm0 24.574c131.098 0 237.879 106.781 237.879 237.88 0 131.097-106.781 237.878-237.88 237.878-131.27 0-238.042-106.78-238.042-237.879 0-131.098 106.773-237.879 238.043-237.879z"
-    }), /* @__PURE__ */ React135.createElement("path", {
-      d: "M682.207 417.602c0 16.219-2.785 30.8-8.52 43.578-5.733 12.943-13.597 23.755-23.918 32.438-10.485 8.683-22.772 15.564-37.353 20.151-14.417 4.587-30.636 7.045-48.33 7.045-9.338 0-18.185-.655-26.54-1.802s-15.891-2.622-22.608-4.424c-6.717-1.802-12.123-3.604-16.383-5.406-4.26-1.802-7.045-3.277-8.519-4.423-1.147-1.147-2.294-2.458-2.949-3.768a67.759 67.759 0 01-1.474-5.08 67.005 67.005 0 01-.82-7.371c-.163-2.95-.163-6.39-.163-10.485 0-4.26.163-8.028.491-10.977.328-3.113.82-5.57 1.475-7.372.655-1.802 1.474-3.113 2.457-3.932.983-.82 1.966-1.147 3.277-1.147 1.474 0 3.931.82 7.044 2.621 3.277 1.802 7.373 3.768 12.615 6.062 5.243 2.13 11.632 4.096 19.004 5.734 7.372 1.966 16.383 2.785 26.704 2.785 9.01 0 17.202-.983 24.574-2.785 7.537-1.802 13.762-4.915 18.84-9.01 5.243-4.096 9.011-9.339 11.96-15.564 2.785-6.062 4.096-13.598 4.096-22.28 0-7.537-1.147-14.09-3.44-19.824-2.294-5.898-6.062-10.813-10.977-14.909-4.915-3.931-11.468-7.044-19.332-9.01-7.863-1.966-17.53-3.113-28.834-3.113-9.01 0-17.202.492-24.574 1.475-7.536.983-14.417 1.31-20.97 1.31-4.423 0-7.7-1.147-9.666-3.276-1.802-2.294-2.785-6.554-2.785-12.451v-130.9c0-6.225 1.147-10.812 3.604-13.433 2.294-2.785 6.226-4.096 11.468-4.096H654.52c1.31 0 2.621.492 3.932 1.474 1.147.82 2.293 2.294 3.112 4.26.82 2.13 1.475 4.751 1.966 8.028.328 3.44.492 7.372.492 12.123 0 9.174-.82 16.055-2.458 20.15-1.638 4.26-3.931 6.39-7.044 6.39H547.212v64.549c5.57-.656 10.977-.983 16.22-1.147 5.406-.164 10.976-.328 16.873-.328 16.383 0 30.964 1.966 43.579 5.734 12.615 3.768 23.264 9.338 31.783 16.71 8.683 7.537 15.236 16.547 19.823 27.524 4.423 10.976 6.717 23.755 6.717 38.172z",
+      d: "M237.356 329.048c0 27.52-22.273 49.79-49.793 49.79s-49.792-22.27-49.792-49.79 22.273-49.793 49.792-49.793c27.52 0 49.793 22.273 49.793 49.793zM237.356 496.382c0 27.403-22.273 49.677-49.793 49.677s-49.792-22.274-49.792-49.677c0-27.518 22.273-49.792 49.792-49.792 27.52 0 49.793 22.274 49.793 49.792zM808.745 350.504c27.404 0 49.675 22.272 49.675 49.792 0 27.521-22.271 49.792-49.675 49.792-27.52 0-49.794-22.27-49.794-49.792 0-27.52 22.273-49.792 49.794-49.792zM500.428 651.007c27.521 0 49.792 22.274 49.792 49.792 0 27.52-22.27 49.795-49.792 49.795-27.52 0-49.793-22.274-49.793-49.795 0-27.518 22.272-49.792 49.793-49.792z",
+      fillRule: "evenodd",
       stroke: "none"
     }));
   }
-  var Magnifier5_default = SvgMagnifier5;
+  var LewisOxygen_default = SvgLewisOxygen;
 
-  // build/lib-react-tsx/structure/Orbital.tsx
+  // build/lib-react-tsx/structure/Magnifier5.tsx
   var React136 = __toModule(require_react());
-  function SvgOrbital({
+  function SvgMagnifier5({
     title,
     titleId,
     ...props
@@ -27039,43 +27053,25 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React136.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React136.createElement("path", {
-      d: "M495.208 408.23c-19.731 19.591-94.242 91.617-105.556 105.143-102.382 133.565.138 234.568 105.418 236.36 108.178 1.795 219.39-99.07 114.248-236.36-26.352-31.048-63.885-64.578-104.865-105.558-5.795-5.795-3.174-5.519-9.245.415z",
-      fill: "none",
-      stroke: "#fefefe",
-      strokeWidth: 68.991,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      d: "M580.305 27.525c-182.445 0-331.588 149.146-331.588 331.59 0 181.776 148.064 330.45 329.596 331.537a26.707 26.707 0 001.992.051c182.444 0 331.59-149.143 331.59-331.588 0-182.444-149.146-331.59-331.59-331.59zm0 53.409c153.404 0 278.181 124.777 278.181 278.181S733.71 637.297 580.305 637.297s-278.18-124.778-278.18-278.182S426.901 80.934 580.305 80.934z"
     }), /* @__PURE__ */ React136.createElement("path", {
-      d: "M495.208 408.23c-19.731 19.591-94.242 91.617-105.556 105.143-102.382 133.565.138 234.568 105.418 236.36 108.178 1.795 219.39-99.07 114.248-236.36-26.352-31.048-63.885-64.578-104.865-105.558-5.795-5.795-3.174-5.519-9.245.415z",
-      stroke: "none"
+      d: "M349.785 547.707a26.707 26.707 0 00-22.53 10.7L101.993 860.013a26.707 26.707 0 1042.791 31.96l209.268-280.19 36.043 26.974-209.3 280.234a26.707 26.707 0 1042.79 31.96L448.85 649.343a26.707 26.707 0 00-5.395-37.36l-78.803-58.978a26.707 26.707 0 00-14.867-5.299z"
     }), /* @__PURE__ */ React136.createElement("path", {
-      d: "M499.486 313.16c156.197 0 283 56.158 283 125.426 0 69.126-126.803 125.287-283 125.287-156.334 0-283-56.16-283-125.287 0-69.268 126.666-125.426 283-125.426zm0 80.581c97.414 0 176.34 20.008 176.34 44.845 0 24.696-78.926 44.705-176.34 44.705-97.416 0-176.34-20.009-176.34-44.705 0-24.837 78.924-44.845 176.34-44.845z",
-      fill: "none",
-      stroke: "#fefefe",
-      strokeWidth: 41.395,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      d: "M203.086 907.97a26.707 26.707 0 00-22.313 11.05c-3.228 4.333-9.171 5.195-13.582 1.91a26.707 26.707 0 10-31.904 42.83c27.7 20.634 67.628 14.94 88.318-12.836a26.707 26.707 0 00-20.52-42.953z"
     }), /* @__PURE__ */ React136.createElement("path", {
-      d: "M499.486 313.16c156.197 0 283 56.158 283 125.426 0 69.126-126.803 125.287-283 125.287-156.334 0-283-56.16-283-125.287 0-69.268 126.666-125.426 283-125.426zm0 80.581c97.414 0 176.34 20.008 176.34 44.845 0 24.696-78.926 44.705-176.34 44.705-97.416 0-176.34-20.009-176.34-44.705 0-24.837 78.924-44.845 176.34-44.845z",
-      fillRule: "evenodd",
-      stroke: "none"
+      d: "M129.361 900.033a26.707 26.707 0 00-14.65 48.254l20.478 15.4a26.707 26.707 0 1032.1-42.685l-20.478-15.4a26.707 26.707 0 00-17.45-5.569z"
     }), /* @__PURE__ */ React136.createElement("path", {
-      d: "M495.208 386.29c-19.731-18.49-94.242-86.928-105.556-99.623C287.27 160 389.79 64.517 495.07 62.723c108.178-1.794 219.39 93.828 114.248 223.944-26.352 29.39-63.885 61.126-104.865 99.9-5.795 5.518-3.174 5.38-9.245-.277z",
-      fill: "none",
-      stroke: "#fefefe",
-      strokeWidth: 41.395,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
+      d: "M124.285 848.992a26.707 26.707 0 00-22.312 11.049c-20.634 27.7-14.941 67.63 12.836 88.32a26.707 26.707 0 1031.904-42.832c-4.334-3.228-5.195-9.172-1.91-13.582a26.707 26.707 0 00-20.518-42.955zM580.305 96.662c-144.618 0-262.617 117.992-262.617 262.453 0 144.157 117.507 261.933 261.707 262.43a12.288 12.288 0 00.91.023c144.461 0 262.453-117.991 262.453-262.453 0-144.461-117.992-262.453-262.453-262.453zm0 24.574c131.098 0 237.879 106.781 237.879 237.88 0 131.097-106.781 237.878-237.88 237.878-131.27 0-238.042-106.78-238.042-237.879 0-131.098 106.773-237.879 238.043-237.879z"
     }), /* @__PURE__ */ React136.createElement("path", {
-      d: "M495.208 386.29c-19.731-18.49-94.242-86.928-105.556-99.623C287.27 160 389.79 64.517 495.07 62.723c108.178-1.794 219.39 93.828 114.248 223.944-26.352 29.39-63.885 61.126-104.865 99.9-5.795 5.518-3.174 5.38-9.245-.277z",
+      d: "M682.207 417.602c0 16.219-2.785 30.8-8.52 43.578-5.733 12.943-13.597 23.755-23.918 32.438-10.485 8.683-22.772 15.564-37.353 20.151-14.417 4.587-30.636 7.045-48.33 7.045-9.338 0-18.185-.655-26.54-1.802s-15.891-2.622-22.608-4.424c-6.717-1.802-12.123-3.604-16.383-5.406-4.26-1.802-7.045-3.277-8.519-4.423-1.147-1.147-2.294-2.458-2.949-3.768a67.759 67.759 0 01-1.474-5.08 67.005 67.005 0 01-.82-7.371c-.163-2.95-.163-6.39-.163-10.485 0-4.26.163-8.028.491-10.977.328-3.113.82-5.57 1.475-7.372.655-1.802 1.474-3.113 2.457-3.932.983-.82 1.966-1.147 3.277-1.147 1.474 0 3.931.82 7.044 2.621 3.277 1.802 7.373 3.768 12.615 6.062 5.243 2.13 11.632 4.096 19.004 5.734 7.372 1.966 16.383 2.785 26.704 2.785 9.01 0 17.202-.983 24.574-2.785 7.537-1.802 13.762-4.915 18.84-9.01 5.243-4.096 9.011-9.339 11.96-15.564 2.785-6.062 4.096-13.598 4.096-22.28 0-7.537-1.147-14.09-3.44-19.824-2.294-5.898-6.062-10.813-10.977-14.909-4.915-3.931-11.468-7.044-19.332-9.01-7.863-1.966-17.53-3.113-28.834-3.113-9.01 0-17.202.492-24.574 1.475-7.536.983-14.417 1.31-20.97 1.31-4.423 0-7.7-1.147-9.666-3.276-1.802-2.294-2.785-6.554-2.785-12.451v-130.9c0-6.225 1.147-10.812 3.604-13.433 2.294-2.785 6.226-4.096 11.468-4.096H654.52c1.31 0 2.621.492 3.932 1.474 1.147.82 2.293 2.294 3.112 4.26.82 2.13 1.475 4.751 1.966 8.028.328 3.44.492 7.372.492 12.123 0 9.174-.82 16.055-2.458 20.15-1.638 4.26-3.931 6.39-7.044 6.39H547.212v64.549c5.57-.656 10.977-.983 16.22-1.147 5.406-.164 10.976-.328 16.873-.328 16.383 0 30.964 1.966 43.579 5.734 12.615 3.768 23.264 9.338 31.783 16.71 8.683 7.537 15.236 16.547 19.823 27.524 4.423 10.976 6.717 23.755 6.717 38.172z",
       stroke: "none"
     }));
   }
-  var Orbital_default = SvgOrbital;
+  var Magnifier5_default = SvgMagnifier5;
 
-  // build/lib-react-tsx/structure/SearchLipinski.tsx
+  // build/lib-react-tsx/structure/Orbital.tsx
   var React137 = __toModule(require_react());
-  function SvgSearchLipinski({
+  function SvgOrbital({
     title,
     titleId,
     ...props
@@ -27092,64 +27088,43 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React137.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React137.createElement("path", {
-      d: "M423.177 667.09c-166.181 0-301.72-135.541-301.72-301.721 0-166.183 135.538-301.726 301.72-301.726 166.18 0 301.725 135.544 301.725 301.726 0 166.18-135.544 301.72-301.725 301.72",
-      className: "fil0 str0",
-      clipRule: "evenodd",
+      d: "M495.208 408.23c-19.731 19.591-94.242 91.617-105.556 105.143-102.382 133.565.138 234.568 105.418 236.36 108.178 1.795 219.39-99.07 114.248-236.36-26.352-31.048-63.885-64.578-104.865-105.558-5.795-5.795-3.174-5.519-9.245.415z",
       fill: "none",
-      strokeWidth: 52.85,
+      stroke: "#fefefe",
+      strokeWidth: 68.991,
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React137.createElement("path", {
-      className: "fil0 str1",
-      clipRule: "evenodd",
+      d: "M495.208 408.23c-19.731 19.591-94.242 91.617-105.556 105.143-102.382 133.565.138 234.568 105.418 236.36 108.178 1.795 219.39-99.07 114.248-236.36-26.352-31.048-63.885-64.578-104.865-105.558-5.795-5.795-3.174-5.519-9.245.415z",
+      stroke: "none"
+    }), /* @__PURE__ */ React137.createElement("path", {
+      d: "M499.486 313.16c156.197 0 283 56.158 283 125.426 0 69.126-126.803 125.287-283 125.287-156.334 0-283-56.16-283-125.287 0-69.268 126.666-125.426 283-125.426zm0 80.581c97.414 0 176.34 20.008 176.34 44.845 0 24.696-78.926 44.705-176.34 44.705-97.416 0-176.34-20.009-176.34-44.705 0-24.837 78.924-44.845 176.34-44.845z",
       fill: "none",
-      strokeWidth: 52.8680981,
+      stroke: "#fefefe",
+      strokeWidth: 41.395,
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision",
-      d: "M875.305 876.912L652.382 578.46l-78.036 58.287 222.921 298.446"
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React137.createElement("path", {
-      d: "M797.267 935.193c11.855 15.876 34.551 19.165 50.425 7.306M847.694 942.498L868 927.33M868 927.33c15.874-11.858 19.162-34.545 7.304-50.418",
-      className: "fil0 str1",
-      clipRule: "evenodd",
+      d: "M499.486 313.16c156.197 0 283 56.158 283 125.426 0 69.126-126.803 125.287-283 125.287-156.334 0-283-56.16-283-125.287 0-69.268 126.666-125.426 283-125.426zm0 80.581c97.414 0 176.34 20.008 176.34 44.845 0 24.696-78.926 44.705-176.34 44.705-97.416 0-176.34-20.009-176.34-44.705 0-24.837 78.924-44.845 176.34-44.845z",
+      fillRule: "evenodd",
+      stroke: "none"
+    }), /* @__PURE__ */ React137.createElement("path", {
+      d: "M495.208 386.29c-19.731-18.49-94.242-86.928-105.556-99.623C287.27 160 389.79 64.517 495.07 62.723c108.178-1.794 219.39 93.828 114.248 223.944-26.352 29.39-63.885 61.126-104.865 99.9-5.795 5.518-3.174 5.38-9.245-.277z",
       fill: "none",
-      strokeWidth: 52.849,
+      stroke: "#fefefe",
+      strokeWidth: 41.395,
       strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      strokeLinejoin: "round"
     }), /* @__PURE__ */ React137.createElement("path", {
-      d: "M423.177 612.992c-136.382 0-247.623-111.241-247.623-247.623 0-136.389 111.241-247.623 247.623-247.623 136.387 0 247.623 111.234 247.623 247.623 0 136.382-111.236 247.623-247.623 247.623",
-      className: "fil0 str2",
-      clipRule: "evenodd",
-      fill: "none",
-      strokeWidth: 24.319,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
-    }), /* @__PURE__ */ React137.createElement("path", {
-      d: "M527.549 415.683c0 16.134-2.833 30.536-8.421 43.206-5.666 12.67-13.536 23.372-23.766 32.03-10.23 8.656-22.509 15.345-36.91 19.91-14.323 4.644-30.299 6.925-47.848 6.925-9.207 0-17.942-.55-26.285-1.731-8.263-1.101-15.74-2.598-22.35-4.327-6.611-1.811-12.041-3.543-16.213-5.352-4.249-1.732-7.004-3.227-8.341-4.33-1.258-1.18-2.281-2.44-2.912-3.855a26.855 26.855 0 01-1.495-4.957 65.613 65.613 0 01-.786-7.241c-.159-2.912-.237-6.375-.237-10.388 0-4.25.157-7.949.472-10.94.315-2.99.788-5.43 1.495-7.239.708-1.889 1.497-3.148 2.44-3.935.945-.788 1.968-1.18 3.226-1.18 1.497 0 3.857.943 7.004 2.675 3.149 1.81 7.32 3.698 12.436 5.902 5.193 2.125 11.49 4.093 18.808 5.823 7.398 1.811 16.211 2.677 26.521 2.677 8.893 0 17-.945 24.317-2.755 7.319-1.81 13.537-4.8 18.574-8.892 5.115-4.093 8.97-9.208 11.804-15.347 2.755-6.139 4.093-13.537 4.093-22.113 0-7.398-1.103-13.93-3.464-19.676-2.282-5.824-5.901-10.702-10.781-14.637-4.958-4.014-11.333-7.004-19.202-9.05-7.79-1.968-17.314-2.991-28.567-2.991-8.893 0-17 .472-24.318 1.417a160.674 160.674 0 01-20.62 1.337c-4.484 0-7.632-1.1-9.6-3.305-1.89-2.204-2.833-6.374-2.833-12.355V231.452c0-6.138 1.18-10.624 3.54-13.3 2.361-2.676 6.218-4.014 11.413-4.014h141.34c1.417 0 2.677.473 3.935 1.418 1.182.865 2.283 2.36 3.07 4.327.865 2.046 1.496 4.643 1.888 7.949.394 3.306.551 7.318.551 11.884 0 9.207-.786 15.896-2.44 20.066-1.573 4.172-3.935 6.218-7.004 6.218H394v63.903c5.43-.63 10.782-1.023 16.054-1.18a562.841 562.841 0 0116.684-.237c16.132 0 30.534 1.888 43.047 5.666 12.513 3.778 23.06 9.287 31.558 16.605 8.579 7.32 15.031 16.37 19.517 27.23 4.407 10.781 6.69 23.373 6.69 37.696z",
-      className: "fil1",
-      clipRule: "evenodd",
-      strokeWidth: 74.462,
-      imageRendering: "optimizeQuality",
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision"
+      d: "M495.208 386.29c-19.731-18.49-94.242-86.928-105.556-99.623C287.27 160 389.79 64.517 495.07 62.723c108.178-1.794 219.39 93.828 114.248 223.944-26.352 29.39-63.885 61.126-104.865 99.9-5.795 5.518-3.174 5.38-9.245-.277z",
+      stroke: "none"
     }));
   }
-  var SearchLipinski_default = SvgSearchLipinski;
+  var Orbital_default = SvgOrbital;
 
-  // build/lib-react-tsx/structure/Search.tsx
+  // build/lib-react-tsx/structure/SearchLipinski.tsx
   var React138 = __toModule(require_react());
-  function SvgSearch3({
+  function SvgSearchLipinski({
     title,
     titleId,
     ...props
@@ -27165,30 +27140,65 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React138.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React138.createElement("g", {
+    }, title) : null, /* @__PURE__ */ React138.createElement("path", {
+      d: "M423.177 667.09c-166.181 0-301.72-135.541-301.72-301.721 0-166.183 135.538-301.726 301.72-301.726 166.18 0 301.725 135.544 301.725 301.726 0 166.18-135.544 301.72-301.725 301.72",
+      className: "fil0 str0",
+      clipRule: "evenodd",
       fill: "none",
+      strokeWidth: 52.85,
       strokeLinecap: "round",
       strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
-    }, /* @__PURE__ */ React138.createElement("path", {
-      strokeWidth: 46.298,
-      d: "M415.199 668.968c-173.539 0-315.081-141.541-315.081-315.079 0-173.545 141.542-315.093 315.081-315.093 173.553 0 315.099 141.548 315.099 315.093 0 173.538-141.546 315.079-315.099 315.079"
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
     }), /* @__PURE__ */ React138.createElement("path", {
-      strokeWidth: 46.296,
-      d: "M887.36 888.085L654.566 576.416l-81.491 60.867 232.794 311.669M805.869 948.952c12.383 16.576 36.082 20.013 52.657 7.634M858.526 956.586l21.208-15.843M879.734 940.743c16.576-12.389 20.012-36.083 7.626-52.656"
+      className: "fil0 str1",
+      clipRule: "evenodd",
+      fill: "none",
+      strokeWidth: 52.8680981,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision",
+      d: "M875.305 876.912L652.382 578.46l-78.036 58.287 222.921 298.446"
     }), /* @__PURE__ */ React138.createElement("path", {
-      strokeWidth: 21.304,
-      d: "M415.199 612.475c-142.419 0-258.587-116.169-258.587-258.586 0-142.43 116.168-258.59 258.587-258.59 142.437 0 258.598 116.162 258.598 258.59 0 142.416-116.161 258.586-258.598 258.586"
+      d: "M797.267 935.193c11.855 15.876 34.551 19.165 50.425 7.306M847.694 942.498L868 927.33M868 927.33c15.874-11.858 19.162-34.545 7.304-50.418",
+      className: "fil0 str1",
+      clipRule: "evenodd",
+      fill: "none",
+      strokeWidth: 52.849,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
     }), /* @__PURE__ */ React138.createElement("path", {
-      strokeWidth: 40.213,
-      d: "M266.632 268.108l148.567-85.779 148.583 85.779v171.553l-148.583 85.78-148.567-85.78z"
-    })));
+      d: "M423.177 612.992c-136.382 0-247.623-111.241-247.623-247.623 0-136.389 111.241-247.623 247.623-247.623 136.387 0 247.623 111.234 247.623 247.623 0 136.382-111.236 247.623-247.623 247.623",
+      className: "fil0 str2",
+      clipRule: "evenodd",
+      fill: "none",
+      strokeWidth: 24.319,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }), /* @__PURE__ */ React138.createElement("path", {
+      d: "M527.549 415.683c0 16.134-2.833 30.536-8.421 43.206-5.666 12.67-13.536 23.372-23.766 32.03-10.23 8.656-22.509 15.345-36.91 19.91-14.323 4.644-30.299 6.925-47.848 6.925-9.207 0-17.942-.55-26.285-1.731-8.263-1.101-15.74-2.598-22.35-4.327-6.611-1.811-12.041-3.543-16.213-5.352-4.249-1.732-7.004-3.227-8.341-4.33-1.258-1.18-2.281-2.44-2.912-3.855a26.855 26.855 0 01-1.495-4.957 65.613 65.613 0 01-.786-7.241c-.159-2.912-.237-6.375-.237-10.388 0-4.25.157-7.949.472-10.94.315-2.99.788-5.43 1.495-7.239.708-1.889 1.497-3.148 2.44-3.935.945-.788 1.968-1.18 3.226-1.18 1.497 0 3.857.943 7.004 2.675 3.149 1.81 7.32 3.698 12.436 5.902 5.193 2.125 11.49 4.093 18.808 5.823 7.398 1.811 16.211 2.677 26.521 2.677 8.893 0 17-.945 24.317-2.755 7.319-1.81 13.537-4.8 18.574-8.892 5.115-4.093 8.97-9.208 11.804-15.347 2.755-6.139 4.093-13.537 4.093-22.113 0-7.398-1.103-13.93-3.464-19.676-2.282-5.824-5.901-10.702-10.781-14.637-4.958-4.014-11.333-7.004-19.202-9.05-7.79-1.968-17.314-2.991-28.567-2.991-8.893 0-17 .472-24.318 1.417a160.674 160.674 0 01-20.62 1.337c-4.484 0-7.632-1.1-9.6-3.305-1.89-2.204-2.833-6.374-2.833-12.355V231.452c0-6.138 1.18-10.624 3.54-13.3 2.361-2.676 6.218-4.014 11.413-4.014h141.34c1.417 0 2.677.473 3.935 1.418 1.182.865 2.283 2.36 3.07 4.327.865 2.046 1.496 4.643 1.888 7.949.394 3.306.551 7.318.551 11.884 0 9.207-.786 15.896-2.44 20.066-1.573 4.172-3.935 6.218-7.004 6.218H394v63.903c5.43-.63 10.782-1.023 16.054-1.18a562.841 562.841 0 0116.684-.237c16.132 0 30.534 1.888 43.047 5.666 12.513 3.778 23.06 9.287 31.558 16.605 8.579 7.32 15.031 16.37 19.517 27.23 4.407 10.781 6.69 23.373 6.69 37.696z",
+      className: "fil1",
+      clipRule: "evenodd",
+      strokeWidth: 74.462,
+      imageRendering: "optimizeQuality",
+      shapeRendering: "geometricPrecision",
+      textRendering: "geometricPrecision"
+    }));
   }
-  var Search_default3 = SvgSearch3;
+  var SearchLipinski_default = SvgSearchLipinski;
 
-  // build/lib-react-tsx/structure/So4.tsx
+  // build/lib-react-tsx/structure/Search.tsx
   var React139 = __toModule(require_react());
-  function SvgSo4({
+  function SvgSearch3({
     title,
     titleId,
     ...props
@@ -27204,60 +27214,30 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React139.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React139.createElement("path", {
-      d: "M449.65 685.624c-3.342 12.496-16.276 20.051-28.918 16.566-12.498-3.342-20.053-16.278-16.712-28.92zm0 0l149.093-556.129-45.63-12.207L404.021 673.27zm103.464-568.336c3.343-12.642 16.279-20.053 28.92-16.71 12.643 3.341 20.052 16.274 16.709 28.917z",
-      stroke: "none"
-    }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M594.966 52.332c-36.472-9.737-73.82 11.916-83.556 48.245-9.736 36.329 11.916 73.82 48.247 83.557 36.325 9.736 73.675-11.916 83.41-48.245 9.735-36.33-11.772-73.821-48.1-83.557zM443.11 618.776c-36.328-9.735-73.675 11.772-83.41 48.102-9.737 36.475 11.77 73.821 48.245 83.556 36.328 9.735 73.675-11.772 83.41-48.244 9.737-36.329-11.77-73.675-48.245-83.414z",
-      fillRule: "evenodd",
-      stroke: "none"
-    }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M356.939 362.729c-21.362 79.779 26.01 161.739 105.79 183.1 79.779 21.36 161.739-26.013 183.1-105.791 21.36-79.634-26.014-161.738-105.79-183.1-79.635-21.362-161.74 26.012-183.1 105.791z",
+    }, title) : null, /* @__PURE__ */ React139.createElement("g", {
       fill: "none",
-      strokeWidth: 58.853,
       strokeLinecap: "round",
-      strokeLinejoin: "round"
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926
+    }, /* @__PURE__ */ React139.createElement("path", {
+      strokeWidth: 46.298,
+      d: "M415.199 668.968c-173.539 0-315.081-141.541-315.081-315.079 0-173.545 141.542-315.093 315.081-315.093 173.553 0 315.099 141.548 315.099 315.093 0 173.538-141.546 315.079-315.099 315.079"
     }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M785.623 453.114c12.497 3.343 20.053 16.278 16.567 28.92-3.343 12.643-16.277 20.052-28.92 16.71zm0 0L229.495 304.021l-12.207 45.63 555.981 149.093zM217.288 349.65c-12.642-3.342-20.054-16.275-16.711-28.918 3.343-12.497 16.276-20.054 28.918-16.711z",
-      stroke: "none"
+      strokeWidth: 46.296,
+      d: "M887.36 888.085L654.566 576.416l-81.491 60.867 232.794 311.669M805.869 948.952c12.383 16.576 36.082 20.013 52.657 7.634M858.526 956.586l21.208-15.843M879.734 940.743c16.576-12.389 20.012-36.083 7.626-52.656"
     }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M152.331 307.944c-9.735 36.33 11.916 73.676 48.246 83.412 36.33 9.736 73.82-11.77 83.557-48.245 9.737-36.33-11.916-73.676-48.245-83.412-36.33-9.736-73.822 11.77-83.558 48.245z",
-      fillRule: "evenodd",
-      stroke: "none"
+      strokeWidth: 21.304,
+      d: "M415.199 612.475c-142.419 0-258.587-116.169-258.587-258.586 0-142.43 116.168-258.59 258.587-258.59 142.437 0 258.598 116.162 258.598 258.59 0 142.416-116.161 258.586-258.598 258.586"
     }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M375.539 367.67c-18.6 69.46 22.669 140.959 92.13 159.559 69.461 18.6 140.96-22.67 159.56-92.133 18.6-69.46-22.67-140.957-92.133-159.557-69.46-18.601-140.957 22.669-159.557 92.13z",
-      fill: "#fefefe",
-      fillRule: "evenodd",
-      stroke: "none"
-    }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M718.776 459.657c-9.736 36.325 11.772 73.675 48.102 83.41 36.475 9.735 73.822-11.772 83.556-48.101 9.735-36.472-11.771-73.82-48.244-83.556-36.33-9.736-73.675 11.916-83.414 48.247z",
-      fillRule: "evenodd",
-      stroke: "none"
-    }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50.262 50.262 0 01-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726.288-.146.577-.146.88-.146.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.391 41.391 0 00-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394 2.034-1.743 4.65-3.051 7.556-3.923 2.907-.872 5.96-1.308 9.3-1.308 1.744 0 3.489.145 5.232.436 1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308-.145.437-.289.727-.433.872-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871-2.178 0-4.068.29-5.666.871-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.514 10.514 0 00-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342 2.18 1.163 4.069 2.616 5.667 4.36 1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711zm-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881 1.743 2.761 4.214 4.94 7.266 6.54 3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z",
-      fill: "none",
-      strokeWidth: 14.532,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50.262 50.262 0 01-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726.288-.146.577-.146.88-.146.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.391 41.391 0 00-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394 2.034-1.743 4.65-3.051 7.556-3.923 2.907-.872 5.96-1.308 9.3-1.308 1.744 0 3.489.145 5.232.436 1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308-.145.437-.289.727-.433.872-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871-2.178 0-4.068.29-5.666.871-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.514 10.514 0 00-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342 2.18 1.163 4.069 2.616 5.667 4.36 1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711zm-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881 1.743 2.761 4.214 4.94 7.266 6.54 3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z",
-      stroke: "none"
-    }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.908 2.908 0 01-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z",
-      fill: "none",
-      strokeWidth: 7.266,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React139.createElement("path", {
-      d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.908 2.908 0 01-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z",
-      stroke: "none"
-    }));
+      strokeWidth: 40.213,
+      d: "M266.632 268.108l148.567-85.779 148.583 85.779v171.553l-148.583 85.78-148.567-85.78z"
+    })));
   }
-  var So4_default = SvgSo4;
+  var Search_default3 = SvgSearch3;
 
-  // build/lib-react-tsx/structure/StructuralIsomers.tsx
+  // build/lib-react-tsx/structure/So4.tsx
   var React140 = __toModule(require_react());
-  function SvgStructuralIsomers({
+  function SvgSo4({
     title,
     titleId,
     ...props
@@ -27274,18 +27254,59 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React140.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React140.createElement("path", {
-      d: "M91.996 338.219c-11.394 6.58-15.407 21.185-8.827 32.74 6.58 11.395 21.185 15.087 32.58 8.507zm0 0l391.436-225.97 23.753 41.245-391.436 225.972zm415.189-184.725c11.395-6.74 15.407-21.344 8.827-32.74-6.58-11.394-21.185-15.245-32.58-8.505zM664.463 802.137H329.201l.321-47.825h335.265zm-335.102-23.911l-.16 23.91c-13.321 0-23.914-10.75-23.753-23.91.16-13.32 10.913-23.914 24.234-23.914zm-20.542-11.878L476.37 478.912l41.247 23.751L349.904 790.1zm188.255-275.56l-20.704-11.876c6.74-11.557 21.346-15.41 32.74-8.829 11.395 6.58 15.247 21.185 8.507 32.58zm20.543-12.198L685.328 766.03l-41.245 24.396-167.713-287.44zm147.008 299.636l20.703-12.198c6.742 11.394 2.731 26-8.667 32.74-11.394 6.74-26.16 3.05-32.74-8.343zM876.313 472.87c11.232 6.58 25.999 2.73 32.74-8.666 6.579-11.556 2.887-26.16-8.507-32.74zm0 0L484.876 246.9l24.235-41.407 391.435 225.972zM509.111 205.493c-11.235-6.58-26-2.566-32.74 8.827-6.58 11.396-2.89 26 8.505 32.58z",
+      d: "M449.65 685.624c-3.342 12.496-16.276 20.051-28.918 16.566-12.498-3.342-20.053-16.278-16.712-28.92zm0 0l149.093-556.129-45.63-12.207L404.021 673.27zm103.464-568.336c3.343-12.642 16.279-20.053 28.92-16.71 12.643 3.341 20.052 16.274 16.709 28.917z",
       stroke: "none"
     }), /* @__PURE__ */ React140.createElement("path", {
-      d: "M876.313 379.466c11.232 6.58 25.999 2.727 32.74-8.668 6.579-11.555 2.887-26.16-8.507-32.74zm0 0L484.876 153.494l24.235-41.405 391.435 225.97zM509.111 112.089c-11.235-6.58-26-2.569-32.74 8.827-6.58 11.393-2.89 25.998 8.505 32.578z",
+      d: "M594.966 52.332c-36.472-9.737-73.82 11.916-83.556 48.245-9.736 36.329 11.916 73.82 48.247 83.557 36.325 9.736 73.675-11.916 83.41-48.245 9.735-36.33-11.772-73.821-48.1-83.557zM443.11 618.776c-36.328-9.735-73.675 11.772-83.41 48.102-9.737 36.475 11.77 73.821 48.245 83.556 36.328 9.735 73.675-11.772 83.41-48.244 9.737-36.329-11.77-73.675-48.245-83.414z",
+      fillRule: "evenodd",
+      stroke: "none"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M356.939 362.729c-21.362 79.779 26.01 161.739 105.79 183.1 79.779 21.36 161.739-26.013 183.1-105.791 21.36-79.634-26.014-161.738-105.79-183.1-79.635-21.362-161.74 26.012-183.1 105.791z",
+      fill: "none",
+      strokeWidth: 58.853,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M785.623 453.114c12.497 3.343 20.053 16.278 16.567 28.92-3.343 12.643-16.277 20.052-28.92 16.71zm0 0L229.495 304.021l-12.207 45.63 555.981 149.093zM217.288 349.65c-12.642-3.342-20.054-16.275-16.711-28.918 3.343-12.497 16.276-20.054 28.918-16.711z",
+      stroke: "none"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M152.331 307.944c-9.735 36.33 11.916 73.676 48.246 83.412 36.33 9.736 73.82-11.77 83.557-48.245 9.737-36.33-11.916-73.676-48.245-83.412-36.33-9.736-73.822 11.77-83.558 48.245z",
+      fillRule: "evenodd",
+      stroke: "none"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M375.539 367.67c-18.6 69.46 22.669 140.959 92.13 159.559 69.461 18.6 140.96-22.67 159.56-92.133 18.6-69.46-22.67-140.957-92.133-159.557-69.46-18.601-140.957 22.669-159.557 92.13z",
+      fill: "#fefefe",
+      fillRule: "evenodd",
+      stroke: "none"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M718.776 459.657c-9.736 36.325 11.772 73.675 48.102 83.41 36.475 9.735 73.822-11.772 83.556-48.101 9.735-36.472-11.771-73.82-48.244-83.556-36.33-9.736-73.675 11.916-83.414 48.247z",
+      fillRule: "evenodd",
+      stroke: "none"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50.262 50.262 0 01-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726.288-.146.577-.146.88-.146.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.391 41.391 0 00-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394 2.034-1.743 4.65-3.051 7.556-3.923 2.907-.872 5.96-1.308 9.3-1.308 1.744 0 3.489.145 5.232.436 1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308-.145.437-.289.727-.433.872-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871-2.178 0-4.068.29-5.666.871-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.514 10.514 0 00-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342 2.18 1.163 4.069 2.616 5.667 4.36 1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711zm-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881 1.743 2.761 4.214 4.94 7.266 6.54 3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z",
+      fill: "none",
+      strokeWidth: 14.532,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50.262 50.262 0 01-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726.288-.146.577-.146.88-.146.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.391 41.391 0 00-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394 2.034-1.743 4.65-3.051 7.556-3.923 2.907-.872 5.96-1.308 9.3-1.308 1.744 0 3.489.145 5.232.436 1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308-.145.437-.289.727-.433.872-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871-2.178 0-4.068.29-5.666.871-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.514 10.514 0 00-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342 2.18 1.163 4.069 2.616 5.667 4.36 1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711zm-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881 1.743 2.761 4.214 4.94 7.266 6.54 3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z",
+      stroke: "none"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.908 2.908 0 01-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z",
+      fill: "none",
+      strokeWidth: 7.266,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React140.createElement("path", {
+      d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.908 2.908 0 01-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z",
       stroke: "none"
     }));
   }
-  var StructuralIsomers_default = SvgStructuralIsomers;
+  var So4_default = SvgSo4;
 
-  // build/lib-react-tsx/structure/StructuralIsomers2.tsx
+  // build/lib-react-tsx/structure/StructuralIsomers.tsx
   var React141 = __toModule(require_react());
-  function SvgStructuralIsomers2({
+  function SvgStructuralIsomers({
     title,
     titleId,
     ...props
@@ -27302,22 +27323,18 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React141.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React141.createElement("path", {
-      d: "M797.952 261.166c0 13.929-1.729 26.394-5.188 37.395-3.463 11.001-8.608 20.361-15.481 28.036-6.832 7.628-15.304 13.484-25.375 17.521-10.115 4.037-21.779 6.034-35.041 6.034-13.087 0-24.485-1.686-34.247-5.102-9.757-3.416-17.876-8.649-24.351-15.66-6.523-7.052-11.401-15.969-14.641-26.792-3.236-10.824-4.88-23.644-4.88-38.459 0-13.618 1.731-25.861 5.236-36.73 3.459-10.867 8.604-20.094 15.436-27.725 6.829-7.628 15.303-13.484 25.417-17.564 10.069-4.081 21.824-6.079 35.131-6.079 12.775 0 23.997 1.686 33.759 5.057 9.711 3.373 17.876 8.562 24.396 15.57 6.563 7.054 11.488 15.881 14.815 26.616 3.376 10.689 5.014 23.29 5.014 37.882h0zm-35.84 1.819c0-8.873-.709-16.9-2.084-24.132-1.375-7.229-3.771-13.441-7.099-18.585-3.327-5.146-7.763-9.139-13.306-11.932-5.548-2.839-12.466-4.26-20.806-4.26-8.383 0-15.437 1.598-21.07 4.747-5.589 3.194-10.16 7.407-13.619 12.687-3.463 5.278-5.899 11.444-7.364 18.497-1.422 7.098-2.13 14.551-2.13 22.447 0 9.183.71 17.433 2.084 24.751 1.378 7.32 3.727 13.574 7.013 18.763 3.283 5.19 7.719 9.181 13.262 11.887 5.542 2.751 12.51 4.126 20.937 4.126 8.387 0 15.39-1.597 21.024-4.703 5.638-3.106 10.205-7.363 13.664-12.731 3.463-5.366 5.9-11.622 7.319-18.763 1.466-7.14 2.175-14.769 2.175-22.799h0zm195.842 79.534a3.46 3.46 0 01-.842 2.308c-.578.708-1.51 1.287-2.794 1.685-1.288.444-3.018.799-5.189 1.065-2.175.266-4.881.4-8.208.4-3.369 0-6.163-.134-8.382-.4-2.171-.265-3.948-.62-5.19-1.065-1.239-.398-2.171-.977-2.705-1.685a3.456 3.456 0 01-.845-2.308v-68H860.9v68c0 .844-.268 1.641-.798 2.308-.531.708-1.421 1.287-2.752 1.685-1.286.444-3.016.799-5.188 1.065-2.175.266-4.925.4-8.296.4-3.283 0-6.031-.134-8.251-.4-2.215-.265-3.993-.62-5.276-1.065-1.289-.398-2.22-.977-2.795-1.685a3.456 3.456 0 01-.845-2.308V183.673c0-.843.268-1.64.845-2.307.575-.708 1.507-1.288 2.795-1.686 1.284-.445 3.062-.8 5.276-1.065 2.22-.267 4.968-.4 8.251-.4 3.372 0 6.121.133 8.296.4 2.172.265 3.901.62 5.188 1.065 1.332.398 2.221.978 2.752 1.686.53.667.798 1.465.798 2.307v61.745h62.898v-61.745c0-.843.268-1.64.845-2.307.534-.708 1.467-1.288 2.705-1.686 1.242-.445 3.02-.8 5.19-1.065 2.219-.267 5.013-.4 8.382-.4 3.327 0 6.033.133 8.208.4 2.172.265 3.902.62 5.189 1.065 1.285.398 2.216.978 2.794 1.686.575.667.842 1.465.842 2.307v158.846zM584.268 503.718c0 13.926-1.73 26.394-5.188 37.394-3.459 11-8.604 20.359-15.481 28.034-6.832 7.63-15.303 13.483-25.372 17.521-10.114 4.038-21.778 6.035-35.044 6.035-13.086 0-24.488-1.686-34.245-5.104-9.76-3.413-17.876-8.648-24.354-15.656-6.52-7.054-11.399-15.968-14.64-26.793-3.238-10.824-4.879-23.645-4.879-38.456 0-13.622 1.73-25.861 5.235-36.729 3.459-10.869 8.604-20.096 15.435-27.724 6.831-7.631 15.304-13.486 25.418-17.569 10.068-4.081 21.824-6.076 35.133-6.076 12.774 0 24.001 1.686 33.759 5.057 9.714 3.371 17.875 8.561 24.396 15.569 6.568 7.052 11.489 15.882 14.816 26.615 3.37 10.69 5.011 23.287 5.011 37.882h0zm-35.841 1.816c0-8.87-.711-16.9-2.085-24.129-1.376-7.23-3.771-13.441-7.1-18.587-3.322-5.145-7.759-9.138-13.307-11.934-5.542-2.836-12.464-4.256-20.804-4.256-8.385 0-15.44 1.597-21.072 4.747-5.589 3.192-10.158 7.406-13.619 12.687-3.458 5.276-5.899 11.443-7.364 18.496-1.417 7.098-2.128 14.549-2.128 22.444 0 9.187.713 17.434 2.086 24.752 1.375 7.32 3.726 13.576 7.008 18.766 3.283 5.19 7.719 9.181 13.262 11.887 5.546 2.752 12.51 4.127 20.941 4.127 8.384 0 15.393-1.598 21.026-4.702 5.634-3.108 10.204-7.364 13.663-12.731 3.459-5.37 5.9-11.622 7.321-18.766 1.461-7.141 2.172-14.771 2.172-22.801z"
-    }), /* @__PURE__ */ React141.createElement("g", {
-      fill: "none",
-      strokeWidth: 32.63,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
-    }, /* @__PURE__ */ React141.createElement("path", {
-      d: "M600.127 188.254L372.785 57M38.672 250.33L372.785 57M38.672 698.881l325.454-193.326M960.28 698.881L634.823 505.555"
-    })));
+      d: "M91.996 338.219c-11.394 6.58-15.407 21.185-8.827 32.74 6.58 11.395 21.185 15.087 32.58 8.507zm0 0l391.436-225.97 23.753 41.245-391.436 225.972zm415.189-184.725c11.395-6.74 15.407-21.344 8.827-32.74-6.58-11.394-21.185-15.245-32.58-8.505zM664.463 802.137H329.201l.321-47.825h335.265zm-335.102-23.911l-.16 23.91c-13.321 0-23.914-10.75-23.753-23.91.16-13.32 10.913-23.914 24.234-23.914zm-20.542-11.878L476.37 478.912l41.247 23.751L349.904 790.1zm188.255-275.56l-20.704-11.876c6.74-11.557 21.346-15.41 32.74-8.829 11.395 6.58 15.247 21.185 8.507 32.58zm20.543-12.198L685.328 766.03l-41.245 24.396-167.713-287.44zm147.008 299.636l20.703-12.198c6.742 11.394 2.731 26-8.667 32.74-11.394 6.74-26.16 3.05-32.74-8.343zM876.313 472.87c11.232 6.58 25.999 2.73 32.74-8.666 6.579-11.556 2.887-26.16-8.507-32.74zm0 0L484.876 246.9l24.235-41.407 391.435 225.972zM509.111 205.493c-11.235-6.58-26-2.566-32.74 8.827-6.58 11.396-2.89 26 8.505 32.58z",
+      stroke: "none"
+    }), /* @__PURE__ */ React141.createElement("path", {
+      d: "M876.313 379.466c11.232 6.58 25.999 2.727 32.74-8.668 6.579-11.555 2.887-26.16-8.507-32.74zm0 0L484.876 153.494l24.235-41.405 391.435 225.97zM509.111 112.089c-11.235-6.58-26-2.569-32.74 8.827-6.58 11.393-2.89 25.998 8.505 32.578z",
+      stroke: "none"
+    }));
   }
-  var StructuralIsomers2_default = SvgStructuralIsomers2;
+  var StructuralIsomers_default = SvgStructuralIsomers;
 
-  // build/lib-react-tsx/structure/UnsaturationFormula.tsx
+  // build/lib-react-tsx/structure/StructuralIsomers2.tsx
   var React142 = __toModule(require_react());
-  function SvgUnsaturationFormula({
+  function SvgStructuralIsomers2({
     title,
     titleId,
     ...props
@@ -27333,35 +27350,23 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ...props
     }, title ? /* @__PURE__ */ React142.createElement("title", {
       id: titleId
-    }, title) : null, /* @__PURE__ */ React142.createElement("g", {
-      style: {
-        lineHeight: 1.25
-      },
-      fontWeight: 400,
-      fontSize: 40,
-      fontFamily: "sans-serif",
-      letterSpacing: 0,
-      wordSpacing: 0,
-      stroke: "none"
+    }, title) : null, /* @__PURE__ */ React142.createElement("path", {
+      d: "M797.952 261.166c0 13.929-1.729 26.394-5.188 37.395-3.463 11.001-8.608 20.361-15.481 28.036-6.832 7.628-15.304 13.484-25.375 17.521-10.115 4.037-21.779 6.034-35.041 6.034-13.087 0-24.485-1.686-34.247-5.102-9.757-3.416-17.876-8.649-24.351-15.66-6.523-7.052-11.401-15.969-14.641-26.792-3.236-10.824-4.88-23.644-4.88-38.459 0-13.618 1.731-25.861 5.236-36.73 3.459-10.867 8.604-20.094 15.436-27.725 6.829-7.628 15.303-13.484 25.417-17.564 10.069-4.081 21.824-6.079 35.131-6.079 12.775 0 23.997 1.686 33.759 5.057 9.711 3.373 17.876 8.562 24.396 15.57 6.563 7.054 11.488 15.881 14.815 26.616 3.376 10.689 5.014 23.29 5.014 37.882h0zm-35.84 1.819c0-8.873-.709-16.9-2.084-24.132-1.375-7.229-3.771-13.441-7.099-18.585-3.327-5.146-7.763-9.139-13.306-11.932-5.548-2.839-12.466-4.26-20.806-4.26-8.383 0-15.437 1.598-21.07 4.747-5.589 3.194-10.16 7.407-13.619 12.687-3.463 5.278-5.899 11.444-7.364 18.497-1.422 7.098-2.13 14.551-2.13 22.447 0 9.183.71 17.433 2.084 24.751 1.378 7.32 3.727 13.574 7.013 18.763 3.283 5.19 7.719 9.181 13.262 11.887 5.542 2.751 12.51 4.126 20.937 4.126 8.387 0 15.39-1.597 21.024-4.703 5.638-3.106 10.205-7.363 13.664-12.731 3.463-5.366 5.9-11.622 7.319-18.763 1.466-7.14 2.175-14.769 2.175-22.799h0zm195.842 79.534a3.46 3.46 0 01-.842 2.308c-.578.708-1.51 1.287-2.794 1.685-1.288.444-3.018.799-5.189 1.065-2.175.266-4.881.4-8.208.4-3.369 0-6.163-.134-8.382-.4-2.171-.265-3.948-.62-5.19-1.065-1.239-.398-2.171-.977-2.705-1.685a3.456 3.456 0 01-.845-2.308v-68H860.9v68c0 .844-.268 1.641-.798 2.308-.531.708-1.421 1.287-2.752 1.685-1.286.444-3.016.799-5.188 1.065-2.175.266-4.925.4-8.296.4-3.283 0-6.031-.134-8.251-.4-2.215-.265-3.993-.62-5.276-1.065-1.289-.398-2.22-.977-2.795-1.685a3.456 3.456 0 01-.845-2.308V183.673c0-.843.268-1.64.845-2.307.575-.708 1.507-1.288 2.795-1.686 1.284-.445 3.062-.8 5.276-1.065 2.22-.267 4.968-.4 8.251-.4 3.372 0 6.121.133 8.296.4 2.172.265 3.901.62 5.188 1.065 1.332.398 2.221.978 2.752 1.686.53.667.798 1.465.798 2.307v61.745h62.898v-61.745c0-.843.268-1.64.845-2.307.534-.708 1.467-1.288 2.705-1.686 1.242-.445 3.02-.8 5.19-1.065 2.219-.267 5.013-.4 8.382-.4 3.327 0 6.033.133 8.208.4 2.172.265 3.902.62 5.189 1.065 1.285.398 2.216.978 2.794 1.686.575.667.842 1.465.842 2.307v158.846zM584.268 503.718c0 13.926-1.73 26.394-5.188 37.394-3.459 11-8.604 20.359-15.481 28.034-6.832 7.63-15.303 13.483-25.372 17.521-10.114 4.038-21.778 6.035-35.044 6.035-13.086 0-24.488-1.686-34.245-5.104-9.76-3.413-17.876-8.648-24.354-15.656-6.52-7.054-11.399-15.968-14.64-26.793-3.238-10.824-4.879-23.645-4.879-38.456 0-13.622 1.73-25.861 5.235-36.729 3.459-10.869 8.604-20.096 15.435-27.724 6.831-7.631 15.304-13.486 25.418-17.569 10.068-4.081 21.824-6.076 35.133-6.076 12.774 0 24.001 1.686 33.759 5.057 9.714 3.371 17.875 8.561 24.396 15.569 6.568 7.052 11.489 15.882 14.816 26.615 3.37 10.69 5.011 23.287 5.011 37.882h0zm-35.841 1.816c0-8.87-.711-16.9-2.085-24.129-1.376-7.23-3.771-13.441-7.1-18.587-3.322-5.145-7.759-9.138-13.307-11.934-5.542-2.836-12.464-4.256-20.804-4.256-8.385 0-15.44 1.597-21.072 4.747-5.589 3.192-10.158 7.406-13.619 12.687-3.458 5.276-5.899 11.443-7.364 18.496-1.417 7.098-2.128 14.549-2.128 22.444 0 9.187.713 17.434 2.086 24.752 1.375 7.32 3.726 13.576 7.008 18.766 3.283 5.19 7.719 9.181 13.262 11.887 5.546 2.752 12.51 4.127 20.941 4.127 8.384 0 15.393-1.598 21.026-4.702 5.634-3.108 10.204-7.364 13.663-12.731 3.459-5.37 5.9-11.622 7.321-18.766 1.461-7.141 2.172-14.771 2.172-22.801z"
+    }), /* @__PURE__ */ React142.createElement("g", {
+      fill: "none",
+      strokeWidth: 32.63,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926
     }, /* @__PURE__ */ React142.createElement("path", {
-      d: "M304.813 630.063q0 5.859-.47 10.078-.234 3.984-.937 7.03-.703 2.813-1.875 4.923-1.172 2.11-3.75 4.922-2.578 2.578-10.078 6.797-7.265 4.218-18.047 8.203-10.547 3.75-24.375 6.328-13.594 2.578-29.531 2.578-31.172 0-56.25-9.61-25.078-9.609-42.656-28.593Q99.266 623.5 89.89 594.906q-9.375-28.593-9.375-66.562 0-38.672 10.312-68.672 10.313-30 28.828-50.39 18.516-20.391 44.297-30.938 26.016-10.547 57.188-10.547 12.656 0 24.375 2.11 11.718 2.109 21.562 5.624 10.078 3.281 18.047 7.735 7.969 4.453 11.016 7.734 3.28 3.047 4.453 5.156 1.172 2.11 1.875 5.39.703 3.282.937 7.735.469 4.453.469 11.016 0 7.031-.469 11.953t-1.64 7.969q-1.172 3.047-2.813 4.453-1.64 1.406-3.75 1.406-3.515 0-8.906-3.984-5.39-4.219-14.063-9.14-8.437-5.157-20.39-9.141-11.719-4.22-28.125-4.22-18.047 0-32.344 7.5-14.063 7.266-24.14 21.094-9.844 13.594-15 33.047-5.157 19.454-5.157 43.829 0 26.718 5.39 46.406 5.626 19.453 15.704 32.11 10.312 12.655 24.61 18.984 14.53 6.093 32.577 6.093 16.407 0 28.36-3.75 11.953-3.984 20.39-8.672 8.672-4.687 14.063-8.437 5.625-3.75 8.672-3.75 2.344 0 3.75.937 1.406.938 2.344 3.75.937 2.813 1.406 7.97.469 4.921.469 13.359z"
-    }), /* @__PURE__ */ React142.createElement("path", {
-      d: "M465.688 706.188q0 14.93-4.57 27.726-4.571 12.645-13.407 21.938-8.836 9.14-21.785 14.472-12.95 5.18-29.86 5.18-13.71 0-23.918-3.2-10.207-3.046-17.671-8.835-7.465-5.942-12.188-14.32-4.723-8.38-7.617-18.891-2.742-10.512-3.809-22.852-1.066-12.34-1.066-26.203 0-11.578 1.066-24.223 1.219-12.644 4.418-24.832 3.352-12.187 9.293-23.156 5.942-11.12 15.235-19.347 9.445-8.38 22.699-13.254 13.406-4.875 31.687-4.875 5.79 0 11.578.761 5.942.61 10.97 1.676 5.027 1.067 8.53 2.438 3.504 1.37 4.57 2.437 1.22.914 1.829 2.133.61 1.219.914 2.742.457 1.371.61 3.504.152 2.133.152 5.18 0 4.722-.305 7.922-.152 3.046-.762 4.875-.61 1.675-1.676 2.437-1.066.762-2.59.762-1.827 0-4.722-.914-2.895-1.067-7.008-2.285-4.113-1.22-9.75-2.133-5.484-.914-12.797-.914-12.34 0-20.87 4.57-8.532 4.57-13.864 12.492-5.332 7.77-7.77 18.13-2.437 10.359-2.59 21.937 3.352-2.133 7.618-4.266 4.418-2.133 9.445-3.656 5.18-1.524 11.121-2.438 5.942-1.066 12.645-1.066 14.93 0 25.593 4.113 10.664 4.113 17.368 11.73 6.855 7.618 10.054 18.434 3.2 10.817 3.2 24.07zm-39.305 3.808q0-7.77-1.371-13.559-1.371-5.94-4.418-9.902-3.047-4.113-8.074-6.094-5.028-2.132-12.188-2.132-4.266 0-8.379.761-4.113.762-8.074 2.133-3.961 1.371-7.617 3.352-3.657 1.828-6.856 3.96 0 16.301 1.828 27.27 1.828 10.817 5.332 17.215 3.657 6.398 8.989 9.14 5.484 2.59 12.644 2.59 7.008 0 12.188-2.59 5.332-2.59 8.836-7.312 3.504-4.723 5.332-10.969 1.828-6.398 1.828-13.863z",
-      fontSize: "65%",
-      baselineShift: "sub"
-    }), /* @__PURE__ */ React142.createElement("path", {
-      d: "M745.203 667.563q0 2.343-1.64 4.218-1.407 1.875-4.922 3.047-3.516 1.172-9.375 1.875-5.86.703-14.766.703-9.14 0-15.234-.703-5.86-.703-9.375-1.875-3.282-1.172-4.922-3.047-1.407-1.875-1.407-4.218V544.984H570.125v122.578q0 2.344-1.406 4.22-1.407 1.874-4.922 3.046-3.516 1.172-9.375 1.875-5.86.703-15 .703-8.906 0-15-.703-5.86-.703-9.375-1.875-3.516-1.172-5.156-3.047-1.407-1.875-1.407-4.218V381.156q0-2.344 1.407-4.219 1.64-1.875 5.156-3.046 3.515-1.172 9.375-1.875 6.094-.704 15-.704 9.14 0 15 .704 5.86.703 9.375 1.875 3.515 1.171 4.922 3.046 1.406 1.875 1.406 4.22v111.327h113.438V381.156q0-2.344 1.406-4.219 1.64-1.875 4.922-3.046 3.515-1.172 9.375-1.875 6.093-.704 15.234-.704 8.906 0 14.766.704 5.859.703 9.375 1.875 3.515 1.171 4.922 3.046 1.64 1.875 1.64 4.22v286.406z"
-    }), /* @__PURE__ */ React142.createElement("path", {
-      d: "M926.938 706.188q0 14.93-4.57 27.726-4.571 12.645-13.407 21.938-8.836 9.14-21.785 14.472-12.95 5.18-29.86 5.18-13.71 0-23.918-3.2-10.207-3.046-17.671-8.835-7.465-5.942-12.188-14.32-4.723-8.38-7.617-18.891-2.742-10.512-3.809-22.852-1.066-12.34-1.066-26.203 0-11.578 1.066-24.223 1.219-12.644 4.418-24.832 3.352-12.187 9.293-23.156 5.942-11.12 15.235-19.347 9.445-8.38 22.699-13.254 13.406-4.875 31.687-4.875 5.79 0 11.578.761 5.942.61 10.97 1.676 5.027 1.067 8.53 2.438 3.504 1.37 4.57 2.437 1.22.914 1.829 2.133.61 1.219.914 2.742.457 1.371.61 3.504.152 2.133.152 5.18 0 4.722-.305 7.922-.152 3.046-.762 4.875-.61 1.675-1.676 2.437-1.066.762-2.59.762-1.828 0-4.722-.914-2.895-1.067-7.008-2.285-4.113-1.22-9.75-2.133-5.484-.914-12.797-.914-12.34 0-20.87 4.57-8.532 4.57-13.864 12.492-5.332 7.77-7.77 18.13-2.437 10.359-2.59 21.937 3.352-2.133 7.618-4.266 4.418-2.133 9.445-3.656 5.18-1.524 11.121-2.438 5.942-1.066 12.645-1.066 14.93 0 25.593 4.113 10.664 4.113 17.368 11.73 6.855 7.618 10.054 18.434 3.2 10.817 3.2 24.07zm-39.305 3.808q0-7.77-1.371-13.559-1.371-5.94-4.418-9.902-3.047-4.113-8.074-6.094-5.028-2.132-12.188-2.132-4.266 0-8.379.761-4.113.762-8.074 2.133-3.961 1.371-7.617 3.352-3.657 1.828-6.856 3.96 0 16.301 1.828 27.27 1.828 10.817 5.332 17.215 3.657 6.398 8.989 9.14 5.484 2.59 12.644 2.59 7.008 0 12.188-2.59 5.332-2.59 8.836-7.312 3.504-4.723 5.332-10.969 1.828-6.398 1.828-13.863z",
-      fontSize: "65%",
-      baselineShift: "sub"
+      d: "M600.127 188.254L372.785 57M38.672 250.33L372.785 57M38.672 698.881l325.454-193.326M960.28 698.881L634.823 505.555"
     })));
   }
-  var UnsaturationFormula_default = SvgUnsaturationFormula;
+  var StructuralIsomers2_default = SvgStructuralIsomers2;
 
-  // build/lib-react-tsx/structure/UnsaturationStructure.tsx
+  // build/lib-react-tsx/structure/UnsaturationFormula.tsx
   var React143 = __toModule(require_react());
-  function SvgUnsaturationStructure({
+  function SvgUnsaturationFormula({
     title,
     titleId,
     ...props
@@ -27378,28 +27383,42 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React143.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React143.createElement("g", {
-      fill: "none",
-      strokeWidth: 43.255,
-      strokeLinecap: "round",
-      strokeLinejoin: "round",
-      strokeMiterlimit: 22.926
+      style: {
+        lineHeight: 1.25
+      },
+      fontWeight: 400,
+      fontSize: 40,
+      fontFamily: "sans-serif",
+      letterSpacing: 0,
+      wordSpacing: 0,
+      stroke: "none"
     }, /* @__PURE__ */ React143.createElement("path", {
-      d: "M529.4 586.817H47.701l240.852-372.074L529.4 586.817h0zM951.455 411.419H469.751L710.604 39.344l240.851 372.075h0zM290.169 212.852L710.378 38.395M534.877 586.905l415.025-171.863M50.906 585.358L472.405 409.6"
+      d: "M304.813 630.063q0 5.859-.47 10.078-.234 3.984-.937 7.03-.703 2.813-1.875 4.923-1.172 2.11-3.75 4.922-2.578 2.578-10.078 6.797-7.265 4.218-18.047 8.203-10.547 3.75-24.375 6.328-13.594 2.578-29.531 2.578-31.172 0-56.25-9.61-25.078-9.609-42.656-28.593Q99.266 623.5 89.89 594.906q-9.375-28.593-9.375-66.562 0-38.672 10.312-68.672 10.313-30 28.828-50.39 18.516-20.391 44.297-30.938 26.016-10.547 57.188-10.547 12.656 0 24.375 2.11 11.718 2.109 21.562 5.624 10.078 3.281 18.047 7.735 7.969 4.453 11.016 7.734 3.28 3.047 4.453 5.156 1.172 2.11 1.875 5.39.703 3.282.937 7.735.469 4.453.469 11.016 0 7.031-.469 11.953t-1.64 7.969q-1.172 3.047-2.813 4.453-1.64 1.406-3.75 1.406-3.515 0-8.906-3.984-5.39-4.219-14.063-9.14-8.437-5.157-20.39-9.141-11.719-4.22-28.125-4.22-18.047 0-32.344 7.5-14.063 7.266-24.14 21.094-9.844 13.594-15 33.047-5.157 19.454-5.157 43.829 0 26.718 5.39 46.406 5.626 19.453 15.704 32.11 10.312 12.655 24.61 18.984 14.53 6.093 32.577 6.093 16.407 0 28.36-3.75 11.953-3.984 20.39-8.672 8.672-4.687 14.063-8.437 5.625-3.75 8.672-3.75 2.344 0 3.75.937 1.406.938 2.344 3.75.937 2.813 1.406 7.97.469 4.921.469 13.359z"
+    }), /* @__PURE__ */ React143.createElement("path", {
+      d: "M465.688 706.188q0 14.93-4.57 27.726-4.571 12.645-13.407 21.938-8.836 9.14-21.785 14.472-12.95 5.18-29.86 5.18-13.71 0-23.918-3.2-10.207-3.046-17.671-8.835-7.465-5.942-12.188-14.32-4.723-8.38-7.617-18.891-2.742-10.512-3.809-22.852-1.066-12.34-1.066-26.203 0-11.578 1.066-24.223 1.219-12.644 4.418-24.832 3.352-12.187 9.293-23.156 5.942-11.12 15.235-19.347 9.445-8.38 22.699-13.254 13.406-4.875 31.687-4.875 5.79 0 11.578.761 5.942.61 10.97 1.676 5.027 1.067 8.53 2.438 3.504 1.37 4.57 2.437 1.22.914 1.829 2.133.61 1.219.914 2.742.457 1.371.61 3.504.152 2.133.152 5.18 0 4.722-.305 7.922-.152 3.046-.762 4.875-.61 1.675-1.676 2.437-1.066.762-2.59.762-1.827 0-4.722-.914-2.895-1.067-7.008-2.285-4.113-1.22-9.75-2.133-5.484-.914-12.797-.914-12.34 0-20.87 4.57-8.532 4.57-13.864 12.492-5.332 7.77-7.77 18.13-2.437 10.359-2.59 21.937 3.352-2.133 7.618-4.266 4.418-2.133 9.445-3.656 5.18-1.524 11.121-2.438 5.942-1.066 12.645-1.066 14.93 0 25.593 4.113 10.664 4.113 17.368 11.73 6.855 7.618 10.054 18.434 3.2 10.817 3.2 24.07zm-39.305 3.808q0-7.77-1.371-13.559-1.371-5.94-4.418-9.902-3.047-4.113-8.074-6.094-5.028-2.132-12.188-2.132-4.266 0-8.379.761-4.113.762-8.074 2.133-3.961 1.371-7.617 3.352-3.657 1.828-6.856 3.96 0 16.301 1.828 27.27 1.828 10.817 5.332 17.215 3.657 6.398 8.989 9.14 5.484 2.59 12.644 2.59 7.008 0 12.188-2.59 5.332-2.59 8.836-7.312 3.504-4.723 5.332-10.969 1.828-6.398 1.828-13.863z",
+      fontSize: "65%",
+      baselineShift: "sub"
+    }), /* @__PURE__ */ React143.createElement("path", {
+      d: "M745.203 667.563q0 2.343-1.64 4.218-1.407 1.875-4.922 3.047-3.516 1.172-9.375 1.875-5.86.703-14.766.703-9.14 0-15.234-.703-5.86-.703-9.375-1.875-3.282-1.172-4.922-3.047-1.407-1.875-1.407-4.218V544.984H570.125v122.578q0 2.344-1.406 4.22-1.407 1.874-4.922 3.046-3.516 1.172-9.375 1.875-5.86.703-15 .703-8.906 0-15-.703-5.86-.703-9.375-1.875-3.516-1.172-5.156-3.047-1.407-1.875-1.407-4.218V381.156q0-2.344 1.407-4.219 1.64-1.875 5.156-3.046 3.515-1.172 9.375-1.875 6.094-.704 15-.704 9.14 0 15 .704 5.86.703 9.375 1.875 3.515 1.171 4.922 3.046 1.406 1.875 1.406 4.22v111.327h113.438V381.156q0-2.344 1.406-4.219 1.64-1.875 4.922-3.046 3.515-1.172 9.375-1.875 6.093-.704 15.234-.704 8.906 0 14.766.704 5.859.703 9.375 1.875 3.515 1.171 4.922 3.046 1.64 1.875 1.64 4.22v286.406z"
+    }), /* @__PURE__ */ React143.createElement("path", {
+      d: "M926.938 706.188q0 14.93-4.57 27.726-4.571 12.645-13.407 21.938-8.836 9.14-21.785 14.472-12.95 5.18-29.86 5.18-13.71 0-23.918-3.2-10.207-3.046-17.671-8.835-7.465-5.942-12.188-14.32-4.723-8.38-7.617-18.891-2.742-10.512-3.809-22.852-1.066-12.34-1.066-26.203 0-11.578 1.066-24.223 1.219-12.644 4.418-24.832 3.352-12.187 9.293-23.156 5.942-11.12 15.235-19.347 9.445-8.38 22.699-13.254 13.406-4.875 31.687-4.875 5.79 0 11.578.761 5.942.61 10.97 1.676 5.027 1.067 8.53 2.438 3.504 1.37 4.57 2.437 1.22.914 1.829 2.133.61 1.219.914 2.742.457 1.371.61 3.504.152 2.133.152 5.18 0 4.722-.305 7.922-.152 3.046-.762 4.875-.61 1.675-1.676 2.437-1.066.762-2.59.762-1.828 0-4.722-.914-2.895-1.067-7.008-2.285-4.113-1.22-9.75-2.133-5.484-.914-12.797-.914-12.34 0-20.87 4.57-8.532 4.57-13.864 12.492-5.332 7.77-7.77 18.13-2.437 10.359-2.59 21.937 3.352-2.133 7.618-4.266 4.418-2.133 9.445-3.656 5.18-1.524 11.121-2.438 5.942-1.066 12.645-1.066 14.93 0 25.593 4.113 10.664 4.113 17.368 11.73 6.855 7.618 10.054 18.434 3.2 10.817 3.2 24.07zm-39.305 3.808q0-7.77-1.371-13.559-1.371-5.94-4.418-9.902-3.047-4.113-8.074-6.094-5.028-2.132-12.188-2.132-4.266 0-8.379.761-4.113.762-8.074 2.133-3.961 1.371-7.617 3.352-3.657 1.828-6.856 3.96 0 16.301 1.828 27.27 1.828 10.817 5.332 17.215 3.657 6.398 8.989 9.14 5.484 2.59 12.644 2.59 7.008 0 12.188-2.59 5.332-2.59 8.836-7.312 3.504-4.723 5.332-10.969 1.828-6.398 1.828-13.863z",
+      fontSize: "65%",
+      baselineShift: "sub"
     })));
   }
-  var UnsaturationStructure_default = SvgUnsaturationStructure;
+  var UnsaturationFormula_default = SvgUnsaturationFormula;
 
-  // build/lib-react-tsx/structure/Virtual.tsx
+  // build/lib-react-tsx/structure/UnsaturationStructure.tsx
   var React144 = __toModule(require_react());
-  function SvgVirtual({
+  function SvgUnsaturationStructure({
     title,
     titleId,
     ...props
   }) {
     return /* @__PURE__ */ React144.createElement("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
       stroke: "currentColor",
       fill: "currentColor",
+      xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
@@ -27408,66 +27427,96 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React144.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React144.createElement("g", {
-      transform: "rotate(113.866 257.648 239.32)"
+      fill: "none",
+      strokeWidth: 43.255,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeMiterlimit: 22.926
     }, /* @__PURE__ */ React144.createElement("path", {
+      d: "M529.4 586.817H47.701l240.852-372.074L529.4 586.817h0zM951.455 411.419H469.751L710.604 39.344l240.851 372.075h0zM290.169 212.852L710.378 38.395M534.877 586.905l415.025-171.863M50.906 585.358L472.405 409.6"
+    })));
+  }
+  var UnsaturationStructure_default = SvgUnsaturationStructure;
+
+  // build/lib-react-tsx/structure/Virtual.tsx
+  var React145 = __toModule(require_react());
+  function SvgVirtual({
+    title,
+    titleId,
+    ...props
+  }) {
+    return /* @__PURE__ */ React145.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      stroke: "currentColor",
+      fill: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props
+    }, title ? /* @__PURE__ */ React145.createElement("title", {
+      id: titleId
+    }, title) : null, /* @__PURE__ */ React145.createElement("g", {
+      transform: "rotate(113.866 257.648 239.32)"
+    }, /* @__PURE__ */ React145.createElement("path", {
       strokeWidth: 60,
       strokeLinejoin: "round",
       d: "M133.234 116.347h170v170h-170z"
-    }), /* @__PURE__ */ React144.createElement("circle", {
+    }), /* @__PURE__ */ React145.createElement("circle", {
       cx: 568.114,
       cy: 201.347,
       r: 100,
       strokeWidth: 60,
       strokeLinejoin: "round"
-    }), /* @__PURE__ */ React144.createElement("path", {
+    }), /* @__PURE__ */ React145.createElement("path", {
       d: "M245.509 201.347h290.42",
       fill: "#000",
       stroke: "#000",
       strokeWidth: 100
-    }), /* @__PURE__ */ React144.createElement("path", {
+    }), /* @__PURE__ */ React145.createElement("path", {
       strokeWidth: 60,
       strokeLinejoin: "round",
       d: "M133.234 116.347h170v170h-170z"
-    }), /* @__PURE__ */ React144.createElement("circle", {
+    }), /* @__PURE__ */ React145.createElement("circle", {
       cx: 568.114,
       cy: 201.347,
       r: 100,
       strokeWidth: 60,
       strokeLinejoin: "round"
-    }), /* @__PURE__ */ React144.createElement("path", {
+    }), /* @__PURE__ */ React145.createElement("path", {
       d: "M245.509 201.347h290.42",
       fill: "#000",
       stroke: "#000",
       strokeWidth: 100
-    })), /* @__PURE__ */ React144.createElement("g", {
+    })), /* @__PURE__ */ React145.createElement("g", {
       transform: "rotate(-34.262 235.323 312.714)"
-    }, /* @__PURE__ */ React144.createElement("circle", {
+    }, /* @__PURE__ */ React145.createElement("circle", {
       cx: 820.135,
       cy: 570.359,
       r: 100,
       strokeWidth: 60,
       strokeLinejoin: "round"
-    }), /* @__PURE__ */ React144.createElement("path", {
+    }), /* @__PURE__ */ React145.createElement("path", {
       d: "M497.53 570.36h290.42",
       fill: "#000",
       stroke: "#000",
       strokeWidth: 100
-    }), /* @__PURE__ */ React144.createElement("circle", {
+    }), /* @__PURE__ */ React145.createElement("circle", {
       cx: 459.581,
       cy: 570.359,
       r: 100,
       strokeWidth: 60,
       strokeLinejoin: "round"
-    })), /* @__PURE__ */ React144.createElement("path", {
+    })), /* @__PURE__ */ React145.createElement("path", {
       strokeWidth: 60,
       strokeLinejoin: "round",
       d: "M379.547 600.378l161.717 52.417-52.416 161.717-161.718-52.416z"
-    }), /* @__PURE__ */ React144.createElement("path", {
+    }), /* @__PURE__ */ React145.createElement("path", {
       d: "M460.043 716.168l276.27 89.546",
       fill: "#000",
       stroke: "#000",
       strokeWidth: 100
-    }), /* @__PURE__ */ React144.createElement("path", {
+    }), /* @__PURE__ */ React145.createElement("path", {
       strokeWidth: 60,
       strokeLinejoin: "round",
       d: "M737.394 714.35l161.718 52.416-52.417 161.718-161.717-52.417z"
@@ -27476,52 +27525,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var Virtual_default = SvgVirtual;
 
   // build/lib-react-tsx/tga/Assignment.tsx
-  var React145 = __toModule(require_react());
-  function SvgAssignment7({
-    title,
-    titleId,
-    ...props
-  }) {
-    return /* @__PURE__ */ React145.createElement("svg", {
-      stroke: "currentColor",
-      fill: "currentColor",
-      xmlns: "http://www.w3.org/2000/svg",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props
-    }, title ? /* @__PURE__ */ React145.createElement("title", {
-      id: titleId
-    }, title) : null, /* @__PURE__ */ React145.createElement("path", {
-      d: "M111.034 811.033c0 12.99 8.7 23.41 19.543 23.41 10.724 0 19.423-10.42 19.423-23.41zm0 0V162.016H150v649.017zM150 162.016c0-12.849-8.699-23.265-19.423-23.265-10.844 0-19.543 10.416-19.543 23.265z",
-      stroke: "none"
-    }), /* @__PURE__ */ React145.createElement("path", {
-      d: "M130.577 131.362l49.928 65.896M80.648 197.258l49.929-65.896",
-      fill: "none",
-      strokeWidth: 38.845421449999996,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React145.createElement("path", {
-      d: "M150 811.033c-14.708 0-26.506 8.7-26.506 19.423C123.494 841.3 135.292 850 150 850zm0 0h734.906V850H150zM884.906 850c14.545 0 26.345-8.7 26.345-19.544 0-10.723-11.8-19.423-26.345-19.423z",
-      stroke: "none"
-    }), /* @__PURE__ */ React145.createElement("path", {
-      d: "M918.637 830.456l-65.897 50.048M852.74 780.53l65.897 49.926",
-      fill: "none",
-      strokeWidth: 38.845421449999996,
-      strokeLinecap: "round",
-      strokeLinejoin: "round"
-    }), /* @__PURE__ */ React145.createElement("path", {
-      d: "M188.048 294.563c83.576 2.321 143.937 23.215 150.902 134.651 6.965 111.436 44.11 132.33 155.546 134.651 111.435 2.322 171.796 58.04 188.047 102.15 16.251 44.11 67.326 53.396 113.757 58.039 46.432 4.643 44.11 4.643 44.11 4.643",
-      fill: "none",
-      strokeWidth: 29.9991052
-    }));
-  }
-  var Assignment_default7 = SvgAssignment7;
-
-  // build/lib-react-tsx/xray/Request.tsx
   var React146 = __toModule(require_react());
-  function SvgRequest4({
+  function SvgAssignment7({
     title,
     titleId,
     ...props
@@ -27538,12 +27543,56 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, title ? /* @__PURE__ */ React146.createElement("title", {
       id: titleId
     }, title) : null, /* @__PURE__ */ React146.createElement("path", {
+      d: "M111.034 811.033c0 12.99 8.7 23.41 19.543 23.41 10.724 0 19.423-10.42 19.423-23.41zm0 0V162.016H150v649.017zM150 162.016c0-12.849-8.699-23.265-19.423-23.265-10.844 0-19.543 10.416-19.543 23.265z",
+      stroke: "none"
+    }), /* @__PURE__ */ React146.createElement("path", {
+      d: "M130.577 131.362l49.928 65.896M80.648 197.258l49.929-65.896",
+      fill: "none",
+      strokeWidth: 38.845421449999996,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React146.createElement("path", {
+      d: "M150 811.033c-14.708 0-26.506 8.7-26.506 19.423C123.494 841.3 135.292 850 150 850zm0 0h734.906V850H150zM884.906 850c14.545 0 26.345-8.7 26.345-19.544 0-10.723-11.8-19.423-26.345-19.423z",
+      stroke: "none"
+    }), /* @__PURE__ */ React146.createElement("path", {
+      d: "M918.637 830.456l-65.897 50.048M852.74 780.53l65.897 49.926",
+      fill: "none",
+      strokeWidth: 38.845421449999996,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React146.createElement("path", {
+      d: "M188.048 294.563c83.576 2.321 143.937 23.215 150.902 134.651 6.965 111.436 44.11 132.33 155.546 134.651 111.435 2.322 171.796 58.04 188.047 102.15 16.251 44.11 67.326 53.396 113.757 58.039 46.432 4.643 44.11 4.643 44.11 4.643",
+      fill: "none",
+      strokeWidth: 29.9991052
+    }));
+  }
+  var Assignment_default7 = SvgAssignment7;
+
+  // build/lib-react-tsx/xray/Request.tsx
+  var React147 = __toModule(require_react());
+  function SvgRequest4({
+    title,
+    titleId,
+    ...props
+  }) {
+    return /* @__PURE__ */ React147.createElement("svg", {
+      stroke: "currentColor",
+      fill: "currentColor",
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props
+    }, title ? /* @__PURE__ */ React147.createElement("title", {
+      id: titleId
+    }, title) : null, /* @__PURE__ */ React147.createElement("path", {
       d: "M973.852 153.252V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235l-217.03 251.696-37.674-32.266 217.03-251.899zM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008l53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89l-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38V153.654l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307zM608.631 427.327c11.694-7.59 15.182-23.388 7.59-35.287-7.59-11.694-23.387-14.976-35.286-7.18zm0 0l-119.402 77.96-27.696-42.467 119.402-77.96zM461.533 462.82c-11.694 7.59-15.182 23.387-7.59 35.287 7.59 11.694 23.387 14.976 35.286 7.18zM315.872 296.437c18.258 0 34.876-7.591 46.98-19.49l35.698 35.697c-21.337 21.337-50.88 34.672-83.089 34.672zm46.775-19.696c12.105-12.104 19.695-28.516 19.695-46.775l50.88-.411c0 32.415-13.336 61.752-34.672 83.089zm19.695-46.775c0-18.465-7.59-35.287-19.695-47.392l36.108-36.108c21.131 21.337 34.466 50.674 34.466 83.09zm-19.695-47.392c-12.104-12.104-28.927-19.695-47.186-19.695l.41-50.879c32.21 0 61.547 13.335 82.884 34.467zm-47.186-19.695c-18.464 0-35.082 7.59-47.186 19.49l-35.698-35.697C253.914 125.335 283.457 112 315.872 112zm-47.186 19.49c-11.9 12.104-19.49 28.722-19.49 47.186l-50.88.411c0-32.415 13.336-61.958 34.672-83.294zm-19.49 47.186c0 18.26 7.59 35.082 19.695 47.186l-36.108 36.108c-21.131-21.336-34.466-50.674-34.466-82.883zm19.695 47.186c12.104 12.105 28.927 19.696 47.392 19.696l-.411 50.879c-32.415 0-61.753-13.335-83.09-34.467z",
       stroke: "none"
-    }), /* @__PURE__ */ React146.createElement("path", {
+    }), /* @__PURE__ */ React147.createElement("path", {
       d: "M692.746 433.277c18.259 0 34.876-7.591 46.981-19.695l35.905 35.902c-21.339 21.337-50.676 34.672-83.296 34.672zm46.981-19.49c12.104-12.104 19.49-28.722 19.49-46.981l50.878-.411c0 32.21-13.13 61.753-34.463 83.089zm19.49-46.981c0-18.464-7.386-35.288-19.49-47.392l36.106-36.107c21.133 21.336 34.262 50.674 34.262 83.088zm-19.695-47.186c-12.104-12.31-28.927-19.696-47.186-19.696l.41-51.084c32.416 0 61.959 13.335 83.088 34.467zm-47.186-19.696c-18.26 0-34.877 7.386-46.982 19.285l-35.697-35.697c21.336-21.337 50.674-34.672 83.089-34.672zm-46.982 19.285c-12.104 12.105-19.49 28.722-19.49 47.186l-50.879.411c0-32.415 13.336-61.957 34.672-83.294zm-19.49 47.186c0 18.26 7.591 35.082 19.696 47.187l-36.108 36.107c-21.337-21.336-34.467-50.673-34.467-82.883zm19.696 47.187c12.104 12.104 28.927 19.695 47.186 19.695l-.411 50.88c-32.21 0-61.753-13.336-82.884-34.468zM386.856 580.17c18.259 0 34.877-7.386 46.98-19.49l35.699 35.902c-21.337 21.337-50.675 34.467-83.09 34.467zm46.98-19.49c11.9-12.105 19.49-28.722 19.49-46.982l50.88-.41c0 32.62-13.335 61.957-34.466 83.293zm19.49-46.982c0-18.259-7.59-34.876-19.694-47.185l36.312-36.108c21.132 21.131 34.262 50.469 34.262 82.884zm-19.694-47.185c-12.31-12.105-28.928-19.696-47.187-19.696l.411-50.879c32.415 0 61.753 13.13 83.089 34.467zm-47.187-19.696c-18.464 0-35.081 7.591-46.98 19.49l-35.903-35.697c21.336-21.336 50.879-34.672 83.294-34.672zm-46.98 19.696c-12.105 11.899-19.49 28.516-19.49 46.776l-50.88.41c0-32.414 13.13-61.957 34.467-83.088zm-19.49 46.776c0 18.464 7.385 35.081 19.694 47.39l-36.312 36.109c-21.131-21.337-34.261-50.674-34.261-83.09zm19.694 47.39c12.105 12.105 28.723 19.49 47.187 19.49l-.411 50.88c-32.415 0-61.752-13.13-83.089-34.261z",
       stroke: "none"
-    }), /* @__PURE__ */ React146.createElement("path", {
+    }), /* @__PURE__ */ React147.createElement("path", {
       d: "M580.935 358.805c12.72 5.744 27.696.205 33.646-12.72 5.95-12.72.409-27.902-12.31-33.646zm0 0l-178.692-81.038 21.336-46.365 178.692 81.037zM423.58 231.402c-12.72-5.745-27.696 0-33.646 12.72-5.95 12.925-.41 27.9 12.31 33.645z",
       stroke: "none"
     }));
