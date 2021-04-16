@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/cheminfo/font/compare/v1.3.0...v1.4.0) (2021-04-16)
+
+
+### Features
+
+* create add-filter icon ([dd1a92e](https://www.github.com/cheminfo/font/commit/dd1a92e9399d7f1e32d3f929c2269a706441aa76))
+
 ## [1.3.0](https://www.github.com/cheminfo/font/compare/v1.2.0...v1.3.0) (2021-03-16)
 
 
