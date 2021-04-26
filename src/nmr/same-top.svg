@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+<svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
     <g id="sameTop" transform="translate(249.743 155.05)">
       <g id="Group_1" data-name="Group 1" transform="translate(-249.743 -155.05)">
         <path id="Path_1" data-name="Path 1" d="M1042.939,426.95H112.71s-37.05,2.979-36.987,44.3S112.71,516.6,112.71,516.6h930.229s32.783-7,32.783-45.352S1042.939,426.95,1042.939,426.95Z" transform="translate(-75.723 -426.95)"/>
