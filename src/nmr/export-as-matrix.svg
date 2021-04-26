@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg stroke="currentColor" fill="currentColor" version="1.1" id="svg4152" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+	<g id="matrix-group" data-name="matrix-group">
+		<g id="Group_1" data-name="Group 1" transform="matrix(0.966, 0.259, -0.259, 0.966, 226.996, 32.31)">
+			<path id="Path_9" data-name="Path 9" d="M296.848,186.989,175.731,125.622,143.141,0C117.7,78.218,56.067,179.384,0,253.151" transform="matrix(-0.866, -0.5, 0.5, -0.866, 736.456, 519.138)"  stroke-width="1" />
+			<path id="Path_11" data-name="Path 11" d="M197.214,592.578C214.4,583.938,359.757,469.172,366.98,459.136c39.663-55.11-12.426-180.8-17.105-210.18-.867-5.445,39.786,24.314,39.786,24.314l435,315.281L488.5,135.6l95.435-95.435" transform="matrix(-0.866, -0.5, 0.5, -0.866, 542.291, 934.351)" fill="rgba(0,0,0,0)"  stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="60" />
+		</g>
+		<path id="Path_17" data-name="Path 17" d="M609.32,631.639V928.488H491.027" transform="translate(13.973 9)" fill="none"  stroke-linecap="round" stroke-width="60" />
+		<path id="Path_18" data-name="Path 18" d="M604.856,350.415V62.494H486.563" transform="translate(18.437 11)" fill="none"  stroke-linecap="round" stroke-width="60" />
+		<path id="Path_19" data-name="Path 19" d="M141.092,73.494H22.319V937.488H141.092" transform="translate(38)" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="60" />
+	</g>
+</svg>
