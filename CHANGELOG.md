@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://www.github.com/cheminfo/font/compare/v1.4.0...v1.5.0) (2021-04-26)
+
+
+### Features
+
+* create export spectra as a matrix icon ([b04ad99](https://www.github.com/cheminfo/font/commit/b04ad99a660ccd2b9ae7223d5b765b21cb424c24))
+
+
+### Bug Fixes
+
+* icon colors ([10dd663](https://www.github.com/cheminfo/font/commit/10dd663bdb406f4a2e653084a95996735fb00aa4))
+
 ## [1.4.0](https://www.github.com/cheminfo/font/compare/v1.3.0...v1.4.0) (2021-04-16)
 
 
