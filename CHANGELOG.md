@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://www.github.com/cheminfo/font/compare/v1.5.0...v1.6.0) (2021-05-01)
+
+
+### Features
+
+* add nmrium and zakodium ([30dae0f](https://www.github.com/cheminfo/font/commit/30dae0f2e68b7ad91d04e9ab12e9095d83e19e68))
+* add xps logo ([#29](https://www.github.com/cheminfo/font/issues/29)) ([95f9369](https://www.github.com/cheminfo/font/commit/95f936930ebe61537c1c7f740c96cc274abd09c8))
+
 ## [1.5.0](https://www.github.com/cheminfo/font/compare/v1.4.0...v1.5.0) (2021-04-26)
 
 
