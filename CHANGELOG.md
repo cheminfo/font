@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.8.1](https://www.github.com/cheminfo/font/compare/v1.8.0...v1.8.1) (2021-08-03)
+
+
+### Bug Fixes
+
+* remove inkscape font-style ([1146a94](https://www.github.com/cheminfo/font/commit/1146a943bc63fdc708892ac8e7a011dba4933d0a))
+
 ## [1.8.0](https://www.github.com/cheminfo/font/compare/v1.7.0...v1.8.0) (2021-08-03)
 
 
