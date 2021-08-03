@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0](https://www.github.com/cheminfo/font/compare/v1.6.0...v1.7.0) (2021-08-03)
+
+
+### Features
+
+* add CV ([cdc639a](https://www.github.com/cheminfo/font/commit/cdc639a5e015e09a4814fdc1d079c213f8314a5a))
+* add wikipedia ([dc60de1](https://www.github.com/cheminfo/font/commit/dc60de1bceffbd8dfc492109c5f612be43dc3b24))
+
 ## [1.6.0](https://www.github.com/cheminfo/font/compare/v1.5.0...v1.6.0) (2021-05-01)
 
 
