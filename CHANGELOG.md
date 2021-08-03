@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://www.github.com/cheminfo/font/compare/v1.7.0...v1.8.0) (2021-08-03)
+
+
+### Features
+
+* add sdf icons ([67ffd2e](https://www.github.com/cheminfo/font/commit/67ffd2e3200fd43307c003f10f924a1b25ab775f))
+
 ## [1.7.0](https://www.github.com/cheminfo/font/compare/v1.6.0...v1.7.0) (2021-08-03)
 
 
