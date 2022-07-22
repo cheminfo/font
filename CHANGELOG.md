@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://www.github.com/cheminfo/font/compare/v1.8.1...v1.9.0) (2022-07-22)
+
+
+### Features
+
+* add apodization icon ([d6bb8ca](https://www.github.com/cheminfo/font/commit/d6bb8caa4591fd46a8da3845d1056acb548d6ddf))
+
 ### [1.8.1](https://www.github.com/cheminfo/font/compare/v1.8.0...v1.8.1) (2021-08-03)
 
 

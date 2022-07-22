@@ -1,6 +1,6 @@
 {
   "name": "cheminfo-font",
-  "version": "1.8.1",
+  "version": "1.9.0",
   "description": "Cheminfo font and CSS to include it in web pages",
   "main": "lib-react-cjs/react.index.js",
   "module": "lib-react-esm/react.index.js",
