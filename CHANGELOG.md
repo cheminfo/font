@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://www.github.com/cheminfo/font/compare/v1.9.0...v1.10.0) (2023-05-24)
+
+
+### Features
+
+* add misc/octochemdb ([0c31a44](https://www.github.com/cheminfo/font/commit/0c31a44b366ea3ac9734de939a4d9d58f7f560c1))
+
 ## [1.9.0](https://www.github.com/cheminfo/font/compare/v1.8.1...v1.9.0) (2022-07-22)
 
 
