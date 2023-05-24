@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg stroke="currentColor" fill="currentColor" width="1000" height="1000" id="svg4152" version="1.1" inkscape:version="1.2.2 (b0a84865, 2022-12-01)" viewBox="0 0 1000 1000" sodipodi:docname="octochemdb.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs id="defs5498">
+    <marker inkscape:isstock="true" style="overflow:visible" id="marker4233" refX="0.0" refY="0.0" orient="auto" inkscape:stockid="TriangleOutL">
+      <path transform="scale(0.8)" style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1" d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z " id="path4235" />
+    </marker>
+    <marker inkscape:isstock="true" style="overflow:visible" id="marker4755" refX="0.0" refY="0.0" orient="auto" inkscape:stockid="TriangleOutL">
+      <path transform="scale(0.8)" style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1" d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z " id="path4757" />
+    </marker>
+    <marker inkscape:stockid="Arrow1Lend" orient="auto" refY="0.0" refX="0.0" id="Arrow1Lend" style="overflow:visible;" inkscape:isstock="true">
+      <path id="path4164" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z " style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1" transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker inkscape:stockid="Arrow2Lend" orient="auto" refY="0.0" refX="0.0" id="Arrow2Lend" style="overflow:visible;" inkscape:isstock="true">
+      <path id="path4182" style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1" d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z " transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <pattern y="0" x="0" height="6" width="6" patternUnits="userSpaceOnUse" id="EMFhbasepattern" />
+  </defs>
+  <sodipodi:namedview inkscape:window-height="1027" inkscape:window-width="1390" inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" showgrid="true" showguides="true" inkscape:guide-bbox="true" inkscape:zoom="0.5" inkscape:cx="358" inkscape:cy="461" inkscape:window-x="0" inkscape:window-y="25" inkscape:current-layer="svg4152" inkscape:window-maximized="0" objecttolerance="20" inkscape:showpageshadow="2" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1">
+    <sodipodi:guide orientation="horizontal" position="200" id="guide5596" inkscape:locked="false" />
+    <inkscape:grid type="xygrid" id="grid3430" empspacing="50" />
+    <sodipodi:guide position="550,1000" orientation="0,1" id="guide4169" inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata id="metadata5594">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path fill="#000000" d="m 288.36073,27.615988 c -228.960004,-1.148 -279.9440039,369.900002 41.126,424.248002 -59,1.068 -110.764,16.22 -183.5,51.94 -196.526004,96.498 -156.796004,409.804 43.622,375.872 68.96,-11.676 102.42,-100.65 1.75,-130.75 33.03,59.22 -55.936,94.2 -83.812,3.876 -22.524004,-72.98 42.29,-149.828 104.936,-170 61,-19.64 110.488,-21.72 164.94,-11.688 -73.17,68.494 -113.094,160.93 -84.752,247.248 89.044,271.19011 384.29204,165.04008 325.68804,-13.44 -20.692,-63.012 -82.81604,-93.01 -136.00004,-20.31 70.32804,-17.708 100.90004,77.5 36.376,98.684 -52.71,17.31 -120.424,-27.054 -132.064,-82.686 -15.64,-74.78 39.54,-154.39 109.56,-190.5 44.35204,70.74 77.62404,97.36 166.44004,144.372 171.686,90.872 425.91403,-73.08 287.812,-221.06 -45.252,-48.488 -109.148,-60.04 -135,26.248 60.376,-40.18 121.496,53.6 67.75,95.126 -43.9,33.92 -123.006,38.27 -172.874,11 -61.594,-33.684 -107.58,-75.596 -140.376,-133.064 114.14,27.38 239.168,-2.13 286,-90.684 91.44,-172.9 -14.092,-304.934 -118.25,-306.75 -40.756,-0.712 -81.308,18.474 -109.75,63 -35.7,55.892 -19.63,123.066 70.314,118.248 -58.22,-43.256 -3.8,-127.246 53.434,-90.686 46.756,29.864 44.988,103.76 19.5,154.56 -30.33,60.46 -121.146,101.476 -190.124,49.314 -6.016,-11.42 -11.126,-23.366 -15.56,-35.686 17.98,-12.98 29.748,-34.056 29.748,-57.75 0,-35.544 -26.504,-65.28 -60.69004,-70.436 -19.526,-94.268 -46.68,-185.296002 -169.688,-225.188002 -27.28,-8.848 -52.874,-12.944 -76.56,-13.06 z m 235.688,274.810002 c 18.92604,0 33.87404,14.948 33.87404,33.876 0,18.926 -14.946,33.874 -33.87204,33.874 -18.926,0 -33.812,-14.948 -33.812,-33.876 0,-18.926 14.886,-33.874 33.812,-33.874 z m -130.812,21 c 18.926,0 33.874,14.948 33.874,33.876 0,18.926 -14.948,33.874 -33.876,33.874 -18.926,0 -33.874,-14.948 -33.874,-33.876 0,-18.926 14.948,-33.874 33.876,-33.874 z" id="path148" style="stroke-width:2" />
+</svg>
