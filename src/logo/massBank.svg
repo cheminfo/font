@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   stroke="currentColor"
+   fill="currentColor"
+   width="1000"
+   height="1000"
+   id="svg4152"
+   version="1.1"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   viewBox="0 0 1000 1000"
+   sodipodi:docname="massBank.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5498">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4233"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path4235" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4755"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path4757" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4164"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4182"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+    <linearGradient
+       id="A"
+       x1="59.709999"
+       y1="67.750999"
+       x2="66.819"
+       y2="27.311001"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#0254a9"
+         id="stop394" />
+      <stop
+         offset="1"
+         stop-color="#62c1ed"
+         id="stop396" />
+    </linearGradient>
+    <linearGradient
+       id="B"
+       x1="45.026001"
+       y1="64.421997"
+       x2="49.636002"
+       y2="38.646999"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#93a742"
+         id="stop399" />
+      <stop
+         offset="1"
+         stop-color="#b9d389"
+         id="stop401" />
+    </linearGradient>
+    <linearGradient
+       id="C"
+       x1="34.391998"
+       y1="61.653999"
+       x2="37.139"
+       y2="45.916"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#b7512e"
+         id="stop404" />
+      <stop
+         offset="1"
+         stop-color="#ec896c"
+         id="stop406" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="1027"
+     inkscape:window-width="1390"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.5"
+     inkscape:cx="346"
+     inkscape:cy="461"
+     inkscape:window-x="258"
+     inkscape:window-y="58"
+     inkscape:current-layer="svg4152"
+     inkscape:window-maximized="0"
+     objecttolerance="20"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <sodipodi:guide
+       orientation="horizontal"
+       position="200"
+       id="guide5596"
+       inkscape:locked="false" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3430"
+       empspacing="50" />
+    <sodipodi:guide
+       position="550,1000"
+       orientation="0,1"
+       id="guide4169"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5594">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     stroke-width="0.5"
+     stroke-linejoin="round"
+     transform="matrix(25.510538,0,2.5239969,24.456432,-779.95323,-661.79104)"
+     stroke="#fffffa"
+     paint-order="fill markers stroke"
+     id="g417">
+    <path
+       d="m 51.63,27.31 -6.54,37.16 a 34.96,34.96 0 0 0 11.67,3.17 c 0.99,0.07 1.98,0.07 2.96,0.04 l 7.1,-40.37 z"
+       fill="url(#A)"
+       id="path411"
+       style="fill:url(#A)" />
+    <path
+       d="m 38.46,38.65 -4.05,23.06 c 1.82,0.06 3.64,0.33 5.4,0.76 1.8,0.45 3.54,1.23 5.28,2 l 4.54,-25.82 z"
+       fill="url(#B)"
+       id="path413"
+       style="fill:url(#B)" />
+    <path
+       d="m 27.68,45.91 -3.2,18.22 a 17.38,17.38 0 0 1 9.88,-2.42 l 2.77,-15.8 z"
+       fill="url(#C)"
+       id="path415"
+       style="fill:url(#C)" />
+  </g>
+</svg>
