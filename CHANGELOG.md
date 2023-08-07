@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://www.github.com/cheminfo/font/compare/v1.10.0...v1.11.0) (2023-08-07)
+
+
+### Features
+
+* add peaks-top-labels ([ebdd609](https://www.github.com/cheminfo/font/commit/ebdd60993d56af283ca9c051070c8c8d140f0eac))
+
 ## [1.10.0](https://www.github.com/cheminfo/font/compare/v1.9.0...v1.10.0) (2023-05-24)
 
 
