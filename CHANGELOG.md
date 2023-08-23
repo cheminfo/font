@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://www.github.com/cheminfo/font/compare/v1.11.0...v1.12.0) (2023-08-23)
+
+
+### Features
+
+* add isomers ([0cd84bb](https://www.github.com/cheminfo/font/commit/0cd84bb57565a13a7ceb102d1f350926b8e82416))
+
 ## [1.11.0](https://www.github.com/cheminfo/font/compare/v1.10.0...v1.11.0) (2023-08-07)
 
 
