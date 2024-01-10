@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.13.0](https://www.github.com/cheminfo/font/compare/v1.12.0...v1.13.0) (2024-01-10)
+
+
+### Features
+
+* add XPS requests ([0b677ea](https://www.github.com/cheminfo/font/commit/0b677eab0e03b31bc7a5de5298fd20026c65a431))
+
+
+### Bug Fixes
+
+* xps build ([8c8ae60](https://www.github.com/cheminfo/font/commit/8c8ae604417050636bd0fc28af47a24026c55b6f))
+
 ## [1.12.0](https://www.github.com/cheminfo/font/compare/v1.11.0...v1.12.0) (2023-08-23)
 
 
