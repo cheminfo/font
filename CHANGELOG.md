@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.1](https://github.com/cheminfo/font/compare/v1.13.0...v1.13.1) (2024-10-16)
+
+
+### Bug Fixes
+
+* improve typings and ESM build ([62d7cec](https://github.com/cheminfo/font/commit/62d7cec2d72b47cd5bba61bee147207b1e60c542))
+
 ## [1.13.0](https://www.github.com/cheminfo/font/compare/v1.12.0...v1.13.0) (2024-01-10)
 
 
