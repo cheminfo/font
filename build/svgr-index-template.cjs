@@ -2,8 +2,8 @@
 
 const path = require('path');
 
-function indexTemplate(filePaths) {
-  const exportEntries = filePaths.map((filePath) => {
+module.exports = function indexTemplate(filePaths) {
+  const exportEntries = filePaths.map(({ path: filePath }) => {
     const basename = path.basename(filePath, path.extname(filePath));
     const dirname = path.dirname(filePath);
     const dirs = path
@@ -12,9 +12,7 @@ function indexTemplate(filePaths) {
       .map((elem) => `${elem[0].toUpperCase()}${elem.slice(1)}`)
       .join('');
     const exportName = `Svg${dirs}${basename}`;
-    return `export { default as ${exportName} } from './${basename}'`;
+    return `export { default as ${exportName} } from './${basename}.js'`;
   });
   return exportEntries.join('\n');
-}
-
-module.exports = indexTemplate;
+};

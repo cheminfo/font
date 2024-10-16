@@ -8,19 +8,15 @@ const destination = __dirname + '/../dist/';
 const destination_html = __dirname + '/../docs/';
 const destination_react = __dirname + '/react.index.ts';
 
-const SVGO = require('svgo');
-const svgo = new SVGO({
-  plugins: [{ removeDimensions: true }],
-});
-const btoa = require('btoa');
+const svgo = require('svgo');
 
 const {
   appendHeaderHtml,
   appendFooterHtml,
   appendEntryHtml,
-} = require('./util/html.js');
+} = require('./util/html.cjs');
 
-const { appendHeaderCss, appendEntryCss } = require('./util/css.js');
+const { appendHeaderCss, appendEntryCss } = require('./util/css.cjs');
 
 var resultsCss = [];
 var resultsHtml = [];
@@ -53,17 +49,33 @@ async function appendFolder(folder, allFolders) {
       allFolders.push(fullname.replace(source + '/', ''));
       await appendFolder(fullname, allFolders);
     } else if (file.match(/svg$/)) {
-      var icon = fullname
+      const icon = fullname
         .replace(source + '/', '')
         .replace(/\//g, '-')
         .replace(/\..[^\.]*$/g, '');
-      var svg = fs.readFileSync(fullname, 'utf-8');
+      const svg = fs.readFileSync(fullname, 'utf-8');
 
-      let smallSVG = await svgo.optimize(svg);
-      let newName = fullname.replace(source, svgFolder);
+      const smallSVG = svgo.optimize(svg, {
+        multipass: true,
+        plugins: [
+          {
+            name: 'preset-default',
+            params: {
+              overrides: {
+                removeViewBox: false,
+              },
+            },
+          },
+          'convertStyleToAttrs',
+          'removeDimensions',
+        ],
+      });
+      const newName = fullname.replace(source, svgFolder);
       fs.outputFileSync(newName, smallSVG.data, 'utf8');
 
-      var dataUrl = 'data:image/svg+xml;base64,' + btoa(smallSVG.data);
+      const dataUrl =
+        'data:image/svg+xml;base64,' +
+        Buffer.from(smallSVG.data).toString('base64');
 
       appendEntryCss(resultsCss, dataUrl, prefix, icon);
       appendEntryHtml(resultsHtml, prefix, icon);
@@ -73,6 +85,6 @@ async function appendFolder(folder, allFolders) {
 
 function buildReactExports(folders) {
   return folders
-    .map((folder) => `export * from './lib-react-tsx/${folder}/index';`)
+    .map((folder) => `export * from './lib-react-tsx/${folder}/index.js';`)
     .join('\n');
 }

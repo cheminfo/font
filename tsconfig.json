@@ -1,11 +1,21 @@
 {
-  "include": ["build/lib-react-tsx", "build/react.index.ts"],
   "compilerOptions": {
-    "declaration": false,
-    "jsx": "react-jsx",
+    "lib": ["ES2022"],
+    "types": [],
+    "target": "ES2022",
     "outDir": "lib-react-esm",
-    "target": "ES2019",
-    "moduleResolution": "node",
-    "esModuleInterop": true
-  }
+    "jsx": "react-jsx",
+    "module": "NodeNext",
+    "strict": true,
+    "skipLibCheck": false,
+    "resolveJsonModule": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false
+  },
+  "include": ["build/lib-react-tsx", "build/react.index.ts"]
 }

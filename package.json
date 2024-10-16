@@ -2,8 +2,14 @@
   "name": "cheminfo-font",
   "version": "1.13.0",
   "description": "Cheminfo font and CSS to include it in web pages",
-  "main": "lib-react-cjs/react.index.js",
-  "module": "lib-react-esm/react.index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./lib-react-esm/react.index.d.ts",
+      "require": "./lib-react-cjs/react.index.js",
+      "default": "./lib-react-esm/react.index.js"
+    }
+  },
   "files": [
     "dist",
     "svg",
@@ -11,15 +17,16 @@
     "lib-react-esm"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build",
     "build": "npm run clean && npm run build-svg && npm run build-react",
     "build-react": "npm run build-react-tsx && npm run build-react-esm && npm run build-react-cjs && npm run build-react-docs",
-    "build-react-tsx": "svgr --icon --typescript --title-prop --index-template build/svgr-index-template.js --no-svgo --out-dir build/lib-react-tsx svg",
-    "build-react-esm": "tsc -p tsconfig.json",
+    "build-react-tsx": "svgr --icon --typescript --title-prop --index-template build/svgr-index-template.cjs --no-svgo --out-dir build/lib-react-tsx -- svg",
+    "build-react-esm": "tsc",
     "build-react-cjs": "tsc -p tsconfig.cjs.json",
-    "build-react-docs": "node build/build-react-docs.js",
-    "build-svg": "node build/build-svg.js",
-    "clean": "rimraf dist lib-react-cjs lib-react-esm build/lib-react-tsx svg",
+    "postbuild-react-cjs": "echo '{\"type\":\"commonjs\"}' > lib-react-cjs/package.json",
+    "build-react-docs": "node build/build-react-docs.cjs",
+    "build-svg": "node build/build-svg.cjs",
+    "clean": "rimraf dist lib-react-cjs lib-react-esm build/lib-react-tsx build/react.index.ts svg",
+    "prepack": "npm run build",
     "test": "echo 1"
   },
   "repository": {
@@ -33,16 +40,15 @@
   },
   "homepage": "https://github.com/cheminfo/font#readme",
   "devDependencies": {
-    "@svgr/cli": "^5.5.0",
-    "@types/react": "^17.0.15",
-    "@types/react-dom": "^17.0.9",
-    "btoa": "^1.2.1",
-    "esbuild": "^0.12.17",
-    "fs-extra": "^10.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "rimraf": "^3.0.2",
-    "svgo": "^1.3.2",
-    "typescript": "^4.3.5"
+    "@svgr/cli": "^8.1.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "esbuild": "^0.24.0",
+    "fs-extra": "^11.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "svgo": "^3.3.2",
+    "typescript": "^5.6.3"
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from 'react-dom';
-import * as Icons from '../build/react.index';
+import { createRoot } from 'react-dom/client';
+import * as Icons from '../build/react.index.js';
 
-render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root') as HTMLElement).render(<App />);
 
 export default function App() {
   return (
