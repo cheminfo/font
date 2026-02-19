@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
+  <!-- Left curly brace -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="42"
+    d="M350 80 Q250 80 250 200 L250 400 Q250 500 150 500 Q250 500 250 600 L250 800 Q250 920 350 920"/>
+  <!-- Right curly brace -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="42"
+    d="M650 80 Q750 80 750 200 L750 400 Q750 500 850 500 Q750 500 750 600 L750 800 Q750 920 650 920"/>
+  <!-- Content lines (key-value pairs) -->
+  <path stroke="none"
+    d="M380 280 h200 v35 h-200 z
+       M380 430 h280 v35 h-280 z
+       M380 580 h160 v35 h-160 z
+       M380 730 h240 v35 h-240 z"/>
+</svg>
