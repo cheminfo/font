@@ -6,6 +6,8 @@ You need to create new icons and take care they match current design. When recei
 
 When you create a new icon you need to render it as an image to evaluate the quality and then improve the SVG. Use `rsvg-convert` to render to PNG.
 
+For each icon that is requested create a new PR. Only commit the SVG and in the pr provide a rendered image of the icon.
+
 ## Project structure
 
 - Source SVGs go in `src/<category>/` (e.g. `src/nmr/prediction.svg`)
@@ -17,6 +19,7 @@ When you create a new icon you need to render it as an image to evaluate the qua
 - Common SVG attributes: `stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926"`
 - Keep stroke widths consistent within an icon. Prefer thin lines (stroke-width 20-28) for a clean look
 - Ensure all elements stay within the 0-1000 viewBox (account for stroke width)
+- Labels and graphic elements must never overlap. Distribute elements evenly within the available space so that spacing between all elements (and between elements and the icon boundary) is visually balanced
 
 ### Molecule representation
 

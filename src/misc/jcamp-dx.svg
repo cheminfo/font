@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
+  <!-- Document outline with folded corner -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="36"
+    d="M150 50 L700 50 L850 200 L850 950 L150 950 Z"/>
+  <!-- Folded corner -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="36"
+    d="M700 50 L700 200 L850 200"/>
+  <!-- ".jdx" label -->
+  <text x="500" y="510" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="250" stroke="none">.jdx</text>
+  <!-- Simplified spectrum inside document -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="28"
+    d="M250 840 h60 l30-90 40-60 40 150 h40 l30-200 30 200 h50 l25-70 25 70 h80"/>
+</svg>
