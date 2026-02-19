@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
+  <!-- Benzene ring -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="24"
+    d="M500 75 L604 135 L604 255 L500 315 L396 255 L396 135 Z"/>
+  <!-- Aromatic circle -->
+  <circle cx="500" cy="195" r="50" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  <!-- Substituent off the top vertex -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="20"
+    d="M500 75 L500 15"/>
+
+  <!-- Downward arrow -->
+  <path stroke="none" d="M480 348 v68 h-45 l65 70 65-70 h-45 V348 Z"/>
+
+  <!-- Spectrum 1 (1H-like): peaks on a baseline with multiplet features -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="28"
+    d="M70 580 h80 l25-110 25 110 h50 l20-70 20 70 h60 l25-150 25 150 h90 l15-50 15 22 15-34 15 62 h130 l20-80 20 80 h210"/>
+
+  <!-- Spectrum 2 (13C-like): vertical lines on a baseline, same thickness -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="28"
+    d="M70 890 h860"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="28"
+    d="M200 890 v-130 M320 890 v-95 M470 890 v-160 M540 890 v-110 M680 890 v-140 M780 890 v-70"/>
+</svg>
