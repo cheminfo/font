@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.0](https://github.com/cheminfo/font/compare/v1.13.1...v1.14.0) (2026-02-19)
+
+
+### Features
+
+* add new netcdf regexp, jcamp-dx, json, regexp ([#47](https://github.com/cheminfo/font/issues/47)) ([b7cf0a2](https://github.com/cheminfo/font/commit/b7cf0a20b4b59b151ec57d060429f10553aec899))
+* add search inventory icon ([#43](https://github.com/cheminfo/font/issues/43)) ([90e2055](https://github.com/cheminfo/font/commit/90e20558040e58794f3f0f4c939a9ebd7bc27b28))
+
 ## [1.13.1](https://github.com/cheminfo/font/compare/v1.13.0...v1.13.1) (2024-10-16)
 
 
