@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926">
+    <!-- Magnifier outer lens -->
+    <path stroke-width="46.91"
+      d="M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"/>
+    <!-- Magnifier handle -->
+    <path stroke-width="46.908"
+      d="m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054"/>
+    <path stroke-width="46.908"
+      d="M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"/>
+    <!-- Magnifier inner ring -->
+    <path stroke-width="21.586"
+      d="M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"/>
+    <!-- Simplified IR spectrum inside (transmittance dips) -->
+    <path stroke-width="30"
+      d="M220 210 L270 210 L300 380 L330 430 L365 210 L400 210 L415 490 L430 210 L465 210 L482 320 L499 210 L525 210 L540 350 L555 210 L582 210 L597 280 L615 210"/>
+  </g>
+</svg>
