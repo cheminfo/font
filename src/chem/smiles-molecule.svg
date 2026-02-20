@@ -16,7 +16,7 @@
   <path
      d="M 475,300 L 475,570 L 380,570 L 500,700 L 620,570 L 525,570 L 525,300 Z"
      stroke="none" />
-  <!-- Butane zigzag molecule with terminal stubs (bond length ~120, matching benzene ring) -->
+  <!-- Butane zigzag molecule (3 equal bonds, length ~150, 120° angles) -->
   <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="24"
-    d="M 292,790 L 344,820 L 448,880 L 552,820 L 656,880 L 708,910"/>
+    d="M 305,812 L 435,887 L 565,812 L 695,887"/>
 </svg>

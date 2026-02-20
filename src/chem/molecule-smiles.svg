@@ -4,9 +4,9 @@
    width="1000"
    height="1000"
    viewBox="0 0 1000 1000">
-  <!-- Butane zigzag molecule with terminal stubs at the top (bond length ~120, matching benzene ring) -->
+  <!-- Butane zigzag molecule (3 equal bonds, length ~150, 120° angles) -->
   <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="24"
-    d="M 292,110 L 344,140 L 448,200 L 552,140 L 656,200 L 708,230"/>
+    d="M 305,132 L 435,207 L 565,132 L 695,207"/>
   <!-- Downward arrow -->
   <path
      d="M 475,300 L 475,580 L 380,580 L 500,710 L 620,580 L 525,580 L 525,300 Z"

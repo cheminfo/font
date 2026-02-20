@@ -4,9 +4,7 @@ The icons are 1000x1000 by default (viewBox="0 0 1000 1000").
 
 You need to create new icons and take care they match current design. When receiving a request check that it is not a mistake and that a similar icon already exists !
 
-When you create a new icon you need to render it as an image to evaluate the quality and then improve the SVG. Use `rsvg-convert` to render to PNG.
-
-For each icon that is requested create a new PR. Only commit the SVG and in the pr provide a rendered image of the icon.
+For each icon that is requested create a new PR. Only commit the SVG.
 
 ## Project structure
 
