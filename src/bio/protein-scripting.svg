@@ -4,34 +4,32 @@
    width="1000"
    height="1000"
    viewBox="0 0 1000 1000">
-  <!-- Zinc finger at ~75% scale, positioned upper-left -->
-  <g transform="translate(-20,-20) scale(0.65)">
-    <!-- Beta hairpin -->
-    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="50"
-      d="M 80,950 L 80,300 C 80,160 320,160 320,300 L 320,620"/>
-    <!-- Connecting loop -->
-    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="50"
-      d="M 320,620 C 340,800 580,810 620,660"/>
-    <!-- Alpha helix -->
-    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="50"
-      d="M 620,660
-         C 820,560 820,500 650,420
-         C 520,360 520,300 700,220
-         C 880,140 860,80 720,50"/>
-    <!-- Zinc atom -->
-    <circle cx="400" cy="420" r="80" fill="none" stroke-width="39"/>
-    <text x="400" y="450"
-       text-anchor="middle"
-       font-family="sans-serif"
-       font-weight="bold"
-       font-size="88"
-       stroke="none">Zn</text>
+  <!-- Zinc finger protein (same design as protein.svg, scaled 0.7) -->
+  <g transform="translate(10,10) scale(0.7)">
+    <!-- Beta strand 1 (ribbon arrow pointing up) -->
+    <polygon points="215,430 215,145 160,145 250,60 340,145 285,145 285,430" stroke="none"/>
+    <!-- Hairpin turn -->
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="52"
+      d="M 250,60 C 350,0 470,0 570,65"/>
+    <!-- Beta strand 2 (ribbon arrow pointing down) -->
+    <polygon points="535,65 535,380 480,380 570,470 660,380 605,380 605,65" stroke="none"/>
+    <!-- Loop + Alpha helix as single continuous path for smooth transition -->
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="52"
+      d="M 570,470
+         C 620,580 920,640 900,740
+         C 880,840 760,840 740,740
+         C 720,640 600,640 580,740
+         C 560,840 440,840 420,740
+         C 400,640 280,640 260,740
+         C 240,840 120,840 100,740"/>
+    <!-- Zinc ball -->
+    <circle cx="400" cy="500" r="72" stroke="none"/>
   </g>
   <!-- Terminal/scripting box -->
-  <rect x="550" y="630" width="400" height="320" rx="25" ry="25"
+  <rect x="590" y="650" width="370" height="300" rx="25" ry="25"
      fill="none" stroke-width="25" />
-  <text x="750" y="845"
+  <text x="775" y="855"
      text-anchor="middle"
-     font-family="monospace" font-weight="bold" font-size="200"
+     font-family="monospace" font-weight="bold" font-size="190"
      stroke="none">&gt;_</text>
 </svg>
