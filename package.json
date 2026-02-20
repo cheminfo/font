@@ -1,6 +1,6 @@
 {
   "name": "cheminfo-font",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "description": "Cheminfo font and CSS to include it in web pages",
   "type": "module",
   "exports": {

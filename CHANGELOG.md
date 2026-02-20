@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.0](https://github.com/cheminfo/font/compare/v1.14.0...v1.15.0) (2026-02-20)
+
+
+### Features
+
+* add smiles-molecule and molecule-smiles icons ([#48](https://github.com/cheminfo/font/issues/48)) ([b5ae068](https://github.com/cheminfo/font/commit/b5ae068bf091df169f09652e100a6ae0cf073e8e))
+* replace protein icons with zinc finger cartoon ([#50](https://github.com/cheminfo/font/issues/50)) ([fc7dd0d](https://github.com/cheminfo/font/commit/fc7dd0d781465f759ec5dac29fe3b1cd61cf80b3))
+
 ## [1.14.0](https://github.com/cheminfo/font/compare/v1.13.1...v1.14.0) (2026-02-19)
 
 
