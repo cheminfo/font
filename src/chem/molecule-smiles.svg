@@ -4,9 +4,9 @@
    width="1000"
    height="1000"
    viewBox="0 0 1000 1000">
-  <!-- Butane zigzag molecule (3 equal bonds, length ~200, 120° angles) -->
-  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="24"
-    d="M 241,120 L 414,220 L 587,120 L 760,220"/>
+  <!-- Butane zigzag molecule (3 equal bonds, length ~250, 120° angles) -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="36"
+    d="M 175,108 L 392,233 L 609,108 L 826,233"/>
   <!-- Downward arrow -->
   <path
      d="M 475,300 L 475,580 L 380,580 L 500,710 L 620,580 L 525,580 L 525,300 Z"
