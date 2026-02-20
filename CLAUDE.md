@@ -25,6 +25,7 @@ For each icon that is requested create a new PR. Only commit the SVG.
 - Prefer an aromatic circle inside the hexagon over Kekulé double bonds
 - The aromatic circle should have the same stroke-width as the hexagon
 - Add substituent bonds extending from vertices to make it look more molecular
+- Standard bond length for carbon chains is ~200 units with 120° angles between consecutive bonds
 
 ### NMR spectra
 
