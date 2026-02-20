@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Document outline with folded corner (from jcamp-dx.svg) -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="36"
+    d="M150 50 L700 50 L850 200 L850 950 L150 950 Z"/>
+  <!-- Folded corner -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="36"
+    d="M700 50 L700 200 L850 200"/>
+  <!-- Zinc finger protein (from protein.svg, scaled to fit inside document) -->
+  <g transform="translate(200,323) scale(0.6)">
+    <!-- Beta strand 1 (ribbon arrow pointing up) -->
+    <polygon points="215,430 215,145 160,145 250,60 340,145 285,145 285,430" stroke="none"/>
+    <!-- Hairpin turn -->
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="52"
+      d="M 250,60 C 350,0 470,0 570,65"/>
+    <!-- Beta strand 2 (ribbon arrow pointing down) -->
+    <polygon points="535,65 535,380 480,380 570,470 660,380 605,380 605,65" stroke="none"/>
+    <!-- Loop + Alpha helix -->
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="52"
+      d="M 570,470
+         C 620,580 920,640 900,740
+         C 880,840 760,840 740,740
+         C 720,640 600,640 580,740
+         C 560,840 440,840 420,740
+         C 400,640 280,640 260,740
+         C 240,840 120,840 100,740"/>
+    <!-- Zinc ball -->
+    <circle cx="400" cy="500" r="72" stroke="none"/>
+  </g>
+</svg>
