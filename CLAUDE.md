@@ -4,9 +4,7 @@ The icons are 1000x1000 by default (viewBox="0 0 1000 1000").
 
 You need to create new icons and take care they match current design. When receiving a request check that it is not a mistake and that a similar icon already exists !
 
-When you create a new icon you need to render it as an image to evaluate the quality and then improve the SVG. Use `rsvg-convert` to render to PNG.
-
-For each icon that is requested create a new PR. Only commit the SVG and in the pr provide a rendered image of the icon.
+For each icon that is requested create a new PR. Only commit the SVG.
 
 ## Project structure
 
@@ -27,6 +25,7 @@ For each icon that is requested create a new PR. Only commit the SVG and in the 
 - Prefer an aromatic circle inside the hexagon over Kekulé double bonds
 - The aromatic circle should have the same stroke-width as the hexagon
 - Add substituent bonds extending from vertices to make it look more molecular
+- Standard bond length for carbon chains is ~250 units with 120° angles between consecutive bonds and stroke-width 36
 
 ### NMR spectra
 
