@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- "CCCC" SMILES text at the top -->
+  <text
+     x="500" y="170"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="200"
+     stroke="none">CCCC</text>
+  <!-- Downward arrow -->
+  <path
+     d="M 475,220 L 475,400 L 390,400 L 500,520 L 610,400 L 525,400 L 525,220 Z"
+     stroke="none" />
+  <!-- Calculator body (rounded rectangle) -->
+  <rect x="250" y="570" width="500" height="410" rx="40" ry="40"
+     fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Calculator display -->
+  <rect x="310" y="610" width="380" height="80" rx="14" ry="14"
+     fill="none" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Calculator buttons: 3 rows x 4 columns -->
+  <!-- Row 1 -->
+  <rect x="320" y="720" width="60" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="410" y="720" width="60" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="500" y="720" width="60" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="590" y="720" width="100" height="50" rx="8" ry="8" stroke="none" />
+  <!-- Row 2 -->
+  <rect x="320" y="790" width="60" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="410" y="790" width="60" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="500" y="790" width="60" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="590" y="790" width="100" height="50" rx="8" ry="8" stroke="none" />
+  <!-- Row 3 (bottom: wide "0" key, two smaller keys, tall right key spans rows 2-3) -->
+  <rect x="320" y="860" width="150" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="500" y="860" width="60" height="50" rx="8" ry="8" stroke="none" />
+  <rect x="590" y="860" width="100" height="50" rx="8" ry="8" stroke="none" />
+</svg>
