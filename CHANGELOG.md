@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.16.0](https://github.com/cheminfo/font/compare/v1.15.0...v1.16.0) (2026-02-21)
+
+
+### Features
+
+* add pdb-viewer icon ([#56](https://github.com/cheminfo/font/issues/56)) ([a82e781](https://github.com/cheminfo/font/commit/a82e78189a62436e4e328ab4a6c96f25ff217889))
+* add select-pdb icon ([#55](https://github.com/cheminfo/font/issues/55)) ([0179b51](https://github.com/cheminfo/font/commit/0179b51b56678eb6989d93ab1754b1706502b659))
+* add smiles-property icon ([#52](https://github.com/cheminfo/font/issues/52)) ([4e3453a](https://github.com/cheminfo/font/commit/4e3453a893de54e9d1679c978ff96ce7c3cbe625))
+* improve drugbank icon to match pill logo ([#58](https://github.com/cheminfo/font/issues/58)) ([82c612b](https://github.com/cheminfo/font/commit/82c612b6c47b5f9a89948fd9f50869dc771c5610))
+
 ## [1.15.0](https://github.com/cheminfo/font/compare/v1.14.0...v1.15.0) (2026-02-20)
 
 
