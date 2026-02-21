@@ -4,21 +4,26 @@
    width="1000"
    height="1000"
    viewBox="0 0 1000 1000">
-  <!-- Mass spectrum baseline -->
-  <line x1="60" y1="750" x2="880" y2="750"
-    fill="none" stroke-linecap="round" stroke-width="28"/>
-  <!-- Arrow head -->
-  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"
-    points="880,710 950,750 880,790"/>
+  <!-- Baseline (exact from impurities) -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 42.643,722.441 L 932.372,722.441"/>
+  <!-- Arrow: upper stroke -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 894.811,683.405 L 946.433,722.441"/>
+  <!-- Arrow: lower stroke -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 946.433,722.441 L 894.811,761.664"/>
+  <!-- m/z label -->
+  <text x="716" y="953" text-anchor="middle" font-family="sans-serif" font-size="180" stroke="none">m/z</text>
   <!-- Isotope envelope: 5 peaks at regular spacing -->
   <!-- M: 55% height -->
-  <line x1="200" y1="750" x2="200" y2="390" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="200" y1="722" x2="200" y2="380" fill="none" stroke-linecap="round" stroke-width="36"/>
   <!-- M+1: 100% height (tallest) -->
-  <line x1="330" y1="750" x2="330" y2="100" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="330" y1="722" x2="330" y2="100" fill="none" stroke-linecap="round" stroke-width="36"/>
   <!-- M+2: 80% height -->
-  <line x1="460" y1="750" x2="460" y2="230" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="460" y1="722" x2="460" y2="225" fill="none" stroke-linecap="round" stroke-width="36"/>
   <!-- M+3: 45% height -->
-  <line x1="590" y1="750" x2="590" y2="460" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="590" y1="722" x2="590" y2="440" fill="none" stroke-linecap="round" stroke-width="36"/>
   <!-- M+4: 18% height -->
-  <line x1="720" y1="750" x2="720" y2="630" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="720" y1="722" x2="720" y2="610" fill="none" stroke-linecap="round" stroke-width="36"/>
 </svg>

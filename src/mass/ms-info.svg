@@ -4,22 +4,27 @@
    width="1000"
    height="1000"
    viewBox="0 0 1000 1000">
-  <!-- Mass spectrum baseline -->
-  <line x1="60" y1="750" x2="680" y2="750"
-    fill="none" stroke-linecap="round" stroke-width="28"/>
-  <!-- Arrow head -->
-  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"
-    points="680,710 750,750 680,790"/>
+  <!-- Baseline (exact from impurities) -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 42.643,722.441 L 932.372,722.441"/>
+  <!-- Arrow: upper stroke -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 894.811,683.405 L 946.433,722.441"/>
+  <!-- Arrow: lower stroke -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 946.433,722.441 L 894.811,761.664"/>
+  <!-- m/z label -->
+  <text x="716" y="953" text-anchor="middle" font-family="sans-serif" font-size="180" stroke="none">m/z</text>
   <!-- Peaks -->
-  <line x1="140" y1="750" x2="140" y2="500" fill="none" stroke-linecap="round" stroke-width="30"/>
-  <line x1="240" y1="750" x2="240" y2="320" fill="none" stroke-linecap="round" stroke-width="30"/>
-  <line x1="340" y1="750" x2="340" y2="440" fill="none" stroke-linecap="round" stroke-width="30"/>
-  <line x1="440" y1="750" x2="440" y2="560" fill="none" stroke-linecap="round" stroke-width="30"/>
-  <line x1="540" y1="750" x2="540" y2="620" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="140" y1="722" x2="140" y2="480" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="250" y1="722" x2="250" y2="300" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="360" y1="722" x2="360" y2="420" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="470" y1="722" x2="470" y2="540" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="580" y1="722" x2="580" y2="600" fill="none" stroke-linecap="round" stroke-width="30"/>
   <!-- Info badge circle -->
-  <circle cx="860" cy="340" r="120" fill="none" stroke-width="28"/>
+  <circle cx="830" cy="300" r="120" fill="none" stroke-width="28"/>
   <!-- Info "i" dot -->
-  <circle cx="860" cy="272" r="22" stroke="none"/>
+  <circle cx="830" cy="232" r="22" stroke="none"/>
   <!-- Info "i" bar -->
-  <line x1="860" y1="315" x2="860" y2="415" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="830" y1="275" x2="830" y2="375" fill="none" stroke-linecap="round" stroke-width="30"/>
 </svg>
