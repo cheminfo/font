@@ -11,12 +11,17 @@ For each icon that is requested create a new PR. Only commit the SVG.
 - Source SVGs go in `src/<category>/` (e.g. `src/nmr/prediction.svg`)
 - Run `npm run build` to generate optimized SVGs in `svg/` and React components
 
+## SVG coordinate system
+
+SVG uses (0,0) at the **top-left** with y increasing **downward**. This is the opposite of standard math coordinates where y increases upward. When translating from a reference image or math diagram to SVG, vertical directions are flipped: "up" means decreasing y, "down" means increasing y. Arc sweep directions are also affected: sweep-flag=1 is visually clockwise in SVG but corresponds to counter-clockwise in standard math.
+
 ## Design guidelines
 
 - Use `fill="currentColor" stroke="currentColor"` so icons adapt to context
 - Common SVG attributes: `stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926"`
 - Keep stroke widths consistent within an icon. Prefer thin lines (stroke-width 20-28) for a clean look
 - Ensure all elements stay within the 0-1000 viewBox (account for stroke width)
+- **Fill the canvas**: icons should use as much of the 1000×1000 space as possible. Scale elements up so the content spans most of the viewBox, leaving only a small margin (~30-50 units) around the edges
 - Labels and graphic elements must never overlap. Distribute elements evenly within the available space so that spacing between all elements (and between elements and the icon boundary) is visually balanced
 
 ### Molecule representation
