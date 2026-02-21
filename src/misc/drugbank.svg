@@ -1,13 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
-  <!-- Capsule outline -->
-  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="38"
-    d="M300 200 L700 200 A200 200 0 0 1 700 600 L300 600 A200 200 0 0 1 300 200 Z"/>
-  <!-- Capsule dividing line -->
-  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="28"
-    d="M500 200 L500 600"/>
-  <!-- Left half fill -->
-  <path stroke="none"
-    d="M300 219 L500 219 L500 581 L300 581 A181 181 0 0 1 300 219 Z"/>
-  <!-- "DB" text below -->
-  <text x="500" y="850" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="280" stroke="none">DB</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Tilted capsule pill (DrugBank logo style) -->
+  <g transform="translate(500,500) rotate(-50)">
+    <!-- Full capsule outline -->
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"
+      d="M -260,-175 L 260,-175 A 175,175 0 0 1 260,175 L -260,175 A 175,175 0 0 1 -260,-175 Z"/>
+    <!-- Filled left half (becomes lower-left after rotation) -->
+    <path stroke="none"
+      d="M 0,-175 L -260,-175 A 175,175 0 0 0 -260,175 L 0,175 Z"/>
+    <!-- Dividing line -->
+    <line fill="none" stroke-width="28" stroke-linecap="round"
+      x1="0" y1="-175" x2="0" y2="175"/>
+    <!-- 3D shadow: filled crescent on the outlined half -->
+    <path stroke="none"
+      d="M 0,-175 L 0,175 C 100,100 100,-100 0,-175 Z"/>
+  </g>
 </svg>
