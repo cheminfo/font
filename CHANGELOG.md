@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/cheminfo/font/compare/v1.16.0...v1.17.0) (2026-02-21)
+
+
+### Features
+
+* add mass spectrometry exercise icons ([#59](https://github.com/cheminfo/font/issues/59)) ([ddec6d4](https://github.com/cheminfo/font/commit/ddec6d44da001e78d4e582be30ffcdc71f9f0397))
+
 ## [1.16.0](https://github.com/cheminfo/font/compare/v1.15.0...v1.16.0) (2026-02-21)
 
 
