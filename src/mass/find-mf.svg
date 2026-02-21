@@ -25,10 +25,11 @@
   <path fill="none"
      stroke-width="46.908" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926"
      d="M 890.037,943.57 c 29.463,-22.07 29.463,-23.07 7.728,-53.342" />
-  <!-- "MF" text inside the magnifier lens -->
+  <!-- "MF" text inside the magnifier lens, centered at lens center (419, 349) -->
   <text
-     x="419" y="410"
+     x="419" y="349"
      text-anchor="middle"
+     dominant-baseline="central"
      font-family="sans-serif"
      font-weight="bold"
      font-size="220"
