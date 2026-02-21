@@ -5,20 +5,20 @@
    height="1000"
    viewBox="0 0 1000 1000">
   <!-- Left fragment: benzylic radical cation (Ph-CH2) -->
-  <!-- Benzene hexagon (center 270,520, R=side=140, flat-side orientation) -->
+  <!-- Benzene hexagon (center 205,500, R=side=190, flat-side orientation) -->
   <!-- Chain exits from 30° vertex along RADIAL direction (120° with both edges) -->
   <polygon fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"
-    points="391,450 270,380 149,450 149,590 270,660 391,590"/>
+    points="369,405 205,310 41,405 41,595 205,690 369,595"/>
   <!-- Aromatic circle (same stroke-width as hexagon) -->
-  <circle cx="270" cy="520" r="70" fill="none" stroke-width="28"/>
+  <circle cx="205" cy="500" r="95" fill="none" stroke-width="28"/>
   <!-- Alpha bond from 30° vertex along radial (up-right, 30° above horizontal) -->
-  <line x1="391" y1="450" x2="512" y2="380" fill="none" stroke-linecap="round" stroke-width="28"/>
+  <line x1="369" y1="405" x2="533" y2="310" fill="none" stroke-linecap="round" stroke-width="28"/>
   <!-- Radical cation label near broken bond -->
-  <text x="520" y="325" text-anchor="end" font-family="sans-serif" font-size="90" stroke="none">&#x2022;+</text>
-  <!-- Jagged break line (thin, centered in gap x=512..580, center=546) -->
+  <text x="540" y="250" text-anchor="end" font-family="sans-serif" font-size="110" stroke="none">&#x2022;+</text>
+  <!-- Jagged break line (thin, centered in gap x=533..610, center≈571) -->
   <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
-    points="536,200 566,350 526,500 566,650 536,790"/>
-  <!-- Right fragment: ethyl radical, 120° C-C-C angles, bond length=140 -->
-  <line x1="580" y1="450" x2="701" y2="380" fill="none" stroke-linecap="round" stroke-width="28"/>
-  <line x1="701" y1="380" x2="822" y2="450" fill="none" stroke-linecap="round" stroke-width="28"/>
+    points="561,130 591,310 551,500 591,690 561,860"/>
+  <!-- Right fragment: ethyl radical, 120° C-C-C angles, bond length=190 -->
+  <line x1="610" y1="405" x2="774" y2="310" fill="none" stroke-linecap="round" stroke-width="28"/>
+  <line x1="774" y1="310" x2="938" y2="405" fill="none" stroke-linecap="round" stroke-width="28"/>
 </svg>

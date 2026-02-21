@@ -28764,27 +28764,27 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeWidth: 28,
-            d: "m391 450-121-70-121 70v140l121 70 121-70z"
+            d: "m369 405-164-95-164 95v190l164 95 164-95z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("circle", { cx: 270, cy: 520, r: 70, fill: "none", strokeWidth: 28 }),
+        /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("circle", { cx: 205, cy: 500, r: 95, fill: "none", strokeWidth: 28 }),
         /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
           "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeWidth: 28,
-            d: "m391 450 121-70"
+            d: "m369 405 164-95"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
           "text",
           {
-            x: 520,
-            y: 325,
+            x: 540,
+            y: 250,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 90,
+            fontSize: 110,
             textAnchor: "end",
             children: "\u2022+"
           }
@@ -28796,7 +28796,7 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeWidth: 16,
-            d: "m536 200 30 150-40 150 40 150-30 140"
+            d: "m561 130 30 180-40 190 40 190-30 170"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
@@ -28805,7 +28805,7 @@
             fill: "none",
             strokeLinecap: "round",
             strokeWidth: 28,
-            d: "m580 450 121-70m0 0 121 70"
+            d: "m610 405 164-95m0 0 164 95"
           }
         )
       ]
@@ -28993,11 +28993,11 @@
           {
             fill: "none",
             strokeLinecap: "round",
-            strokeWidth: 28,
-            d: "M150 360c0 220 170 120 280 100"
+            strokeWidth: 30,
+            d: "M150 360a240 240 0 0 0 240 240"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("path", { stroke: "none", d: "m470 460-40-22v44z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("path", { stroke: "none", d: "m460 600-80-55v110z" }),
         /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
           "path",
           {
