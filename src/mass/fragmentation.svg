@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Left fragment: benzylic radical cation (Ph-CH2) -->
+  <!-- Benzene hexagon (center 205,500, R=side=190, flat-side orientation) -->
+  <!-- Chain exits from 30° vertex along RADIAL direction (120° with both edges) -->
+  <polygon fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"
+    points="369,405 205,310 41,405 41,595 205,690 369,595"/>
+  <!-- Aromatic circle (same stroke-width as hexagon) -->
+  <circle cx="205" cy="500" r="95" fill="none" stroke-width="28"/>
+  <!-- Alpha bond from 30° vertex along radial (up-right, 30° above horizontal) -->
+  <line x1="369" y1="405" x2="533" y2="310" fill="none" stroke-linecap="round" stroke-width="28"/>
+  <!-- Radical cation label near broken bond -->
+  <text x="540" y="250" text-anchor="end" font-family="sans-serif" font-size="110" stroke="none">&#x2022;+</text>
+  <!-- Jagged break line (thin, centered in gap x=533..610, center≈571) -->
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+    points="561,130 591,310 551,500 591,690 561,860"/>
+  <!-- Right fragment: ethyl radical, 120° C-C-C angles, bond length=190 -->
+  <line x1="610" y1="405" x2="774" y2="310" fill="none" stroke-linecap="round" stroke-width="28"/>
+  <line x1="774" y1="310" x2="938" y2="405" fill="none" stroke-linecap="round" stroke-width="28"/>
+</svg>
