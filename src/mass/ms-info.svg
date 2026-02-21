@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Mass spectrum baseline -->
+  <line x1="60" y1="750" x2="680" y2="750"
+    fill="none" stroke-linecap="round" stroke-width="28"/>
+  <!-- Arrow head -->
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"
+    points="680,710 750,750 680,790"/>
+  <!-- Peaks -->
+  <line x1="140" y1="750" x2="140" y2="500" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="240" y1="750" x2="240" y2="320" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="340" y1="750" x2="340" y2="440" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="440" y1="750" x2="440" y2="560" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <line x1="540" y1="750" x2="540" y2="620" fill="none" stroke-linecap="round" stroke-width="30"/>
+  <!-- Info badge circle -->
+  <circle cx="860" cy="340" r="120" fill="none" stroke-width="28"/>
+  <!-- Info "i" dot -->
+  <circle cx="860" cy="272" r="22" stroke="none"/>
+  <!-- Info "i" bar -->
+  <line x1="860" y1="315" x2="860" y2="415" fill="none" stroke-linecap="round" stroke-width="30"/>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Left molecular fragment: zigzag bond chain -->
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"
+    points="40,500 165,300 290,500 415,300"/>
+  <!-- Right molecular fragment: zigzag bond chain, separated by gap -->
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"
+    points="585,500 710,300 835,500 960,300"/>
+  <!-- Jagged break line in the gap -->
+  <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+    points="475,130 515,270 465,400 515,530 475,660"/>
+  <!-- Left separation arrow -->
+  <line x1="340" y1="750" x2="140" y2="750"
+    fill="none" stroke-linecap="round" stroke-width="24"/>
+  <polygon points="140,730 80,750 140,770" stroke="none"/>
+  <!-- Right separation arrow -->
+  <line x1="660" y1="750" x2="860" y2="750"
+    fill="none" stroke-linecap="round" stroke-width="24"/>
+  <polygon points="860,730 920,750 860,770" stroke="none"/>
+</svg>
