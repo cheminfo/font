@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.18.0](https://github.com/cheminfo/font/compare/v1.17.0...v1.18.0) (2026-02-25)
+
+
+### Features
+
+* add dls ([#62](https://github.com/cheminfo/font/issues/62)) ([61fbe1e](https://github.com/cheminfo/font/commit/61fbe1e7986b8cf2efa1e2b917e832203080b94b))
+* resize icons to take 90% space ([#61](https://github.com/cheminfo/font/issues/61)) ([1bcbc21](https://github.com/cheminfo/font/commit/1bcbc21854990b150ac402f6e6bfe4ae5311aadd))
+
 ## [1.17.0](https://github.com/cheminfo/font/compare/v1.16.0...v1.17.0) (2026-02-21)
 
 
