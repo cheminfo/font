@@ -2388,9 +2388,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React185 = require_react();
+          var React188 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React185.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React188.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -3997,7 +3997,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React185.Children.forEach(props.children, function(child) {
+                  React188.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -23593,7 +23593,7 @@
       if (true) {
         (function() {
           "use strict";
-          var React185 = require_react();
+          var React188 = require_react();
           var REACT_ELEMENT_TYPE = Symbol.for("react.element");
           var REACT_PORTAL_TYPE = Symbol.for("react.portal");
           var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
@@ -23619,7 +23619,7 @@
             }
             return null;
           }
-          var ReactSharedInternals = React185.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React188.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function error(format) {
             {
               {
@@ -24469,11 +24469,11 @@
               return jsxWithValidation(type, props, key, false);
             }
           }
-          var jsx185 = jsxWithValidationDynamic;
-          var jsxs185 = jsxWithValidationStatic;
+          var jsx188 = jsxWithValidationDynamic;
+          var jsxs188 = jsxWithValidationStatic;
           exports.Fragment = REACT_FRAGMENT_TYPE;
-          exports.jsx = jsx185;
-          exports.jsxs = jsxs185;
+          exports.jsx = jsx188;
+          exports.jsxs = jsxs188;
         })();
       }
     }
@@ -24519,9 +24519,11 @@
     SvgChartScatter: () => Scatter_default,
     SvgChartScatterLine: () => ScatterLine_default,
     SvgChemConcentration: () => Concentration_default,
+    SvgChemConverter: () => Converter_default,
     SvgChemIsomers: () => Isomers_default,
     SvgChemIupacNameStructure: () => IupacNameStructure_default,
     SvgChemIupacStructureName: () => IupacStructureName_default,
+    SvgChemIupacToStructure: () => IupacToStructure_default,
     SvgChemMineralFormulaName: () => MineralFormulaName_default,
     SvgChemMineralNameFormula: () => MineralNameFormula_default,
     SvgChemMoleculeSmiles: () => MoleculeSmiles_default,
@@ -24532,6 +24534,7 @@
     SvgChemSmilesMolfile: () => SmilesMolfile_default,
     SvgChemSmilesProperty: () => SmilesProperty_default,
     SvgChemSmilesSdf: () => SmilesSdf_default,
+    SvgChemStructureToMolfile: () => StructureToMolfile_default,
     SvgCheminfoSdfTable: () => SdfTable_default,
     SvgCheminfoSearchSdf: () => SearchSdf_default,
     SvgCvAssignment: () => Assignment_default,
@@ -26250,10 +26253,10 @@
   );
   var Concentration_default = SvgConcentration;
 
-  // build/lib-react-tsx/chem/Isomers.tsx
+  // build/lib-react-tsx/chem/Converter.tsx
   var React22 = __toESM(require_react(), 1);
   var import_jsx_runtime22 = __toESM(require_jsx_runtime(), 1);
-  var SvgIsomers = ({
+  var SvgConverter = ({
     title,
     titleId,
     ...props
@@ -26270,8 +26273,66 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("path", { d: "M510.482 36.393a27.5 27.5 0 0 0-13.181 3.439l-372.125 205.88a27.53 27.53 0 0 0-14.2 24.015l-1.101 436.533a27.53 27.53 0 0 0 13.002 23.45l370.475 230.102a27.53 27.53 0 0 0 27.873.688l372.127-206.432a27.53 27.53 0 0 0 14.171-23.998l1.102-435.982a27.53 27.53 0 0 0-13.002-23.451L525.148 40.535a27.53 27.53 0 0 0-14.666-4.142zm-.66 59.423L853.54 309.3l-1.021 404.47L508.66 904.52l-343.7-213.472 1.022-405z" }),
         /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(
+          "text",
+          {
+            x: 500,
+            y: 220,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 220,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: ".mol"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M350 310v210h-70l90 140 90-140h-70V310Zm260 350V450h-70l90-140 90 140h-70v210Z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(
+          "text",
+          {
+            x: 500,
+            y: 910,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 220,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: ".smi"
+          }
+        )
+      ]
+    }
+  );
+  var Converter_default = SvgConverter;
+
+  // build/lib-react-tsx/chem/Isomers.tsx
+  var React23 = __toESM(require_react(), 1);
+  var import_jsx_runtime23 = __toESM(require_jsx_runtime(), 1);
+  var SvgIsomers = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime23.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("path", { d: "M510.482 36.393a27.5 27.5 0 0 0-13.181 3.439l-372.125 205.88a27.53 27.53 0 0 0-14.2 24.015l-1.101 436.533a27.53 27.53 0 0 0 13.002 23.45l370.475 230.102a27.53 27.53 0 0 0 27.873.688l372.127-206.432a27.53 27.53 0 0 0 14.171-23.998l1.102-435.982a27.53 27.53 0 0 0-13.002-23.451L525.148 40.535a27.53 27.53 0 0 0-14.666-4.142zm-.66 59.423L853.54 309.3l-1.021 404.47L508.66 904.52l-343.7-213.472 1.022-405z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
           "text",
           {
             x: 237.157,
@@ -26292,13 +26353,13 @@
   var Isomers_default = SvgIsomers;
 
   // build/lib-react-tsx/chem/IupacNameStructure.tsx
-  var React23 = __toESM(require_react(), 1);
-  var import_jsx_runtime23 = __toESM(require_jsx_runtime(), 1);
+  var React24 = __toESM(require_react(), 1);
+  var import_jsx_runtime24 = __toESM(require_jsx_runtime(), 1);
   var SvgIupacNameStructure = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime23.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime24.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26310,22 +26371,22 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(
           "path",
           {
             stroke: "none",
             d: "M602.475 401.935c6.064 3.5 13.834 1.451 17.418-4.61 3.586-6.149 1.538-13.918-4.526-17.42zm0 0L394.31 281.715l12.893-22.029 208.164 120.22zM407.203 259.686c-6.062-3.5-13.832-1.366-17.418 4.696s-1.536 13.832 4.525 17.333z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(
           "path",
           {
             stroke: "none",
             d: "M88.382 436.771c-6.062 3.586-8.197 11.356-4.696 17.418 3.5 6.063 11.27 8.112 17.333 4.611zm0 0 306.014-177 12.637 21.944L101.02 458.8zm318.651-155.056c6.148-3.586 8.195-11.356 4.781-17.418-3.5-6.062-11.27-8.112-17.418-4.525z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(
           "path",
           {
             fill: "none",
@@ -26335,7 +26396,7 @@
             d: "M779.987 458.032c0 12.55-1.45 23.907-4.44 33.982-2.988 10.075-7.428 18.614-13.234 25.701-5.892 7.087-13.32 12.465-22.199 16.307-8.881 3.758-19.212 5.722-30.993 5.722-11.699 0-21.774-1.794-30.314-5.295-8.537-3.5-15.54-8.453-21.088-15.112-5.55-6.661-9.65-14.942-12.38-24.761-2.734-9.82-4.1-21.09-4.1-33.897 0-12.21 1.452-23.31 4.44-33.3 2.988-10.075 7.343-18.528 13.321-25.53 5.89-7 13.318-12.38 22.199-16.222 8.795-3.757 19.21-5.636 30.994-5.636 11.442 0 21.431 1.708 29.885 5.123 8.451 3.501 15.54 8.453 21.174 15.113 5.637 6.575 9.82 14.686 12.55 24.42 2.734 9.733 4.185 20.833 4.185 33.385m-21.771 1.451c0-8.794-.77-16.991-2.307-24.505-1.535-7.599-4.1-14.088-7.77-19.723-3.671-5.55-8.538-9.905-14.6-12.979s-13.576-4.696-22.54-4.696c-8.968 0-16.48 1.708-22.544 5.038-6.062 3.415-11.014 7.855-14.77 13.49-3.842 5.55-6.575 12.125-8.198 19.553-1.622 7.514-2.475 15.37-2.475 23.566 0 9.136.853 17.504 2.306 25.188 1.536 7.685 4.097 14.26 7.683 19.81 3.586 5.634 8.454 9.904 14.431 12.976q9.092 4.612 22.797 4.612c8.964 0 16.565-1.709 22.712-5.037 6.148-3.33 11.1-7.856 14.943-13.576 3.67-5.722 6.403-12.381 7.94-19.81 1.622-7.599 2.392-15.54 2.392-23.907M924.37 534.28a3.03 3.03 0 0 1-.516 1.706c-.254.514-.853.855-1.622 1.11-.854.343-1.879.512-3.245.77q-1.921.255-4.867.256c-2.047 0-3.67-.086-5.037-.256-1.194-.258-2.305-.427-3.072-.77-.77-.255-1.367-.597-1.708-1.11-.339-.512-.424-1.109-.424-1.706v-68.82H833.27v68.82a3.03 3.03 0 0 1-.516 1.706c-.34.514-.854.855-1.709 1.11-.77.343-1.792.512-3.159.77-1.28.17-2.989.256-4.95.256-1.965 0-3.587-.086-4.953-.256-1.28-.258-2.392-.427-3.159-.77-.856-.255-1.452-.597-1.708-1.11a3.1 3.1 0 0 1-.517-1.706V385.37c0-.597.17-1.195.517-1.707.254-.427.852-.854 1.708-1.11.77-.257 1.878-.512 3.159-.683 1.366-.171 2.988-.342 4.953-.342 1.961 0 3.67.171 4.95.342 1.367.17 2.392.426 3.16.683.854.255 1.366.683 1.708 1.11a3.1 3.1 0 0 1 .516 1.708v62.158h70.611v-62.158c0-.598.085-1.196.424-1.708.338-.427.939-.854 1.708-1.11.77-.257 1.878-.512 3.072-.683 1.367-.171 2.99-.342 5.037-.342 1.964 0 3.586.171 4.867.342a19 19 0 0 1 3.245.683c.77.255 1.366.683 1.622 1.11.339.512.516 1.11.516 1.708z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(
           "path",
           {
             stroke: "none",
@@ -26348,13 +26409,13 @@
   var IupacNameStructure_default = SvgIupacNameStructure;
 
   // build/lib-react-tsx/chem/IupacStructureName.tsx
-  var React24 = __toESM(require_react(), 1);
-  var import_jsx_runtime24 = __toESM(require_jsx_runtime(), 1);
+  var React25 = __toESM(require_react(), 1);
+  var import_jsx_runtime25 = __toESM(require_jsx_runtime(), 1);
   var SvgIupacStructureName = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime24.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime25.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26366,8 +26427,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime25.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(
           "path",
           {
             stroke: "none",
@@ -26379,14 +26440,68 @@
   );
   var IupacStructureName_default = SvgIupacStructureName;
 
+  // build/lib-react-tsx/chem/IupacToStructure.tsx
+  var React26 = __toESM(require_react(), 1);
+  var import_jsx_runtime26 = __toESM(require_jsx_runtime(), 1);
+  var SvgIupacToStructure = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime26.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(
+          "text",
+          {
+            x: 500,
+            y: 190,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 200,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: "IUPAC"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("path", { stroke: "none", d: "M475 280v170h-95l120 130 120-130h-95V280Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime26.jsxs)(
+          "g",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 26,
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("path", { d: "m500 660 121 70v140l-121 70-121-70V730z" }),
+              /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("circle", { cx: 500, cy: 800, r: 67 }),
+              /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("path", { d: "m621 730 121-70M379 870l-121 70" })
+            ]
+          }
+        )
+      ]
+    }
+  );
+  var IupacToStructure_default = SvgIupacToStructure;
+
   // build/lib-react-tsx/chem/MineralFormulaName.tsx
-  var React25 = __toESM(require_react(), 1);
-  var import_jsx_runtime25 = __toESM(require_jsx_runtime(), 1);
+  var React27 = __toESM(require_react(), 1);
+  var import_jsx_runtime27 = __toESM(require_jsx_runtime(), 1);
   var SvgMineralFormulaName = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime25.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26398,8 +26513,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime25.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
           "path",
           {
             stroke: "none",
@@ -26420,13 +26535,13 @@
   var MineralFormulaName_default = SvgMineralFormulaName;
 
   // build/lib-react-tsx/chem/MineralNameFormula.tsx
-  var React26 = __toESM(require_react(), 1);
-  var import_jsx_runtime26 = __toESM(require_jsx_runtime(), 1);
+  var React28 = __toESM(require_react(), 1);
+  var import_jsx_runtime28 = __toESM(require_jsx_runtime(), 1);
   var SvgMineralNameFormula = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime26.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26438,8 +26553,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime28.jsx)(
           "path",
           {
             stroke: "none",
@@ -26460,13 +26575,13 @@
   var MineralNameFormula_default = SvgMineralNameFormula;
 
   // build/lib-react-tsx/chem/MoleculeSmiles.tsx
-  var React27 = __toESM(require_react(), 1);
-  var import_jsx_runtime27 = __toESM(require_jsx_runtime(), 1);
+  var React29 = __toESM(require_react(), 1);
+  var import_jsx_runtime29 = __toESM(require_jsx_runtime(), 1);
   var SvgMoleculeSmiles = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime29.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26478,8 +26593,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime29.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime29.jsx)(
           "path",
           {
             fill: "none",
@@ -26490,8 +26605,8 @@
             d: "m175 108 217 125 217-125 217 125"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("path", { stroke: "none", d: "M475 300v280h-95l120 130 120-130h-95V300Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime29.jsx)("path", { stroke: "none", d: "M475 300v280h-95l120 130 120-130h-95V300Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime29.jsx)(
           "text",
           {
             x: 500,
@@ -26510,13 +26625,13 @@
   var MoleculeSmiles_default = SvgMoleculeSmiles;
 
   // build/lib-react-tsx/chem/MolfileSmiles.tsx
-  var React28 = __toESM(require_react(), 1);
-  var import_jsx_runtime28 = __toESM(require_jsx_runtime(), 1);
+  var React30 = __toESM(require_react(), 1);
+  var import_jsx_runtime30 = __toESM(require_jsx_runtime(), 1);
   var SvgMolfileSmiles = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime30.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26528,8 +26643,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime28.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(
           "text",
           {
             x: 500,
@@ -26542,8 +26657,8 @@
             children: ".mol"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("path", { stroke: "none", d: "M475 290v280h-95l120 150 120-150h-95V290Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime28.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("path", { stroke: "none", d: "M475 290v280h-95l120 150 120-150h-95V290Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(
           "text",
           {
             x: 500,
@@ -26562,13 +26677,13 @@
   var MolfileSmiles_default = SvgMolfileSmiles;
 
   // build/lib-react-tsx/chem/Ph.tsx
-  var React29 = __toESM(require_react(), 1);
-  var import_jsx_runtime29 = __toESM(require_jsx_runtime(), 1);
+  var React31 = __toESM(require_react(), 1);
+  var import_jsx_runtime31 = __toESM(require_jsx_runtime(), 1);
   var SvgPh = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime29.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime31.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26580,8 +26695,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime29.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime29.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime31.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(
           "path",
           {
             stroke: "none",
@@ -26602,13 +26717,13 @@
   var Ph_default = SvgPh;
 
   // build/lib-react-tsx/chem/Precipitation.tsx
-  var React30 = __toESM(require_react(), 1);
-  var import_jsx_runtime30 = __toESM(require_jsx_runtime(), 1);
+  var React32 = __toESM(require_react(), 1);
+  var import_jsx_runtime32 = __toESM(require_jsx_runtime(), 1);
   var SvgPrecipitation = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime30.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26620,8 +26735,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -26635,7 +26750,7 @@
             transform: "matrix(-48.73938 58.7678 57.8907 48.01196 838.661 32.817)"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -26650,7 +26765,7 @@
             transform: "matrix(-48.73938 58.7678 57.8907 48.01196 838.661 32.817)"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
           "path",
           {
             fill: "none",
@@ -26665,13 +26780,13 @@
   var Precipitation_default = SvgPrecipitation;
 
   // build/lib-react-tsx/chem/SmilesMolecule.tsx
-  var React31 = __toESM(require_react(), 1);
-  var import_jsx_runtime31 = __toESM(require_jsx_runtime(), 1);
+  var React33 = __toESM(require_react(), 1);
+  var import_jsx_runtime33 = __toESM(require_jsx_runtime(), 1);
   var SvgSmilesMolecule = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime31.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26683,8 +26798,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime31.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
           "text",
           {
             x: 500,
@@ -26697,8 +26812,8 @@
             children: "CCCC"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime31.jsx)("path", { stroke: "none", d: "M475 300v270h-95l120 130 120-130h-95V300Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("path", { stroke: "none", d: "M475 300v270h-95l120 130 120-130h-95V300Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
           "path",
           {
             fill: "none",
@@ -26715,141 +26830,9 @@
   var SmilesMolecule_default = SvgSmilesMolecule;
 
   // build/lib-react-tsx/chem/SmilesMolfile.tsx
-  var React32 = __toESM(require_react(), 1);
-  var import_jsx_runtime32 = __toESM(require_jsx_runtime(), 1);
-  var SvgSmilesMolfile = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
-          "text",
-          {
-            x: 500,
-            y: 260,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 280,
-            fontWeight: "bold",
-            textAnchor: "middle",
-            children: "CCC"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("path", { stroke: "none", d: "M475 340v260h-95l120 150 120-150h-95V340Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
-          "text",
-          {
-            x: 500,
-            y: 940,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 220,
-            fontWeight: "bold",
-            textAnchor: "middle",
-            children: ".mol"
-          }
-        )
-      ]
-    }
-  );
-  var SmilesMolfile_default = SvgSmilesMolfile;
-
-  // build/lib-react-tsx/chem/SmilesProperty.tsx
-  var React33 = __toESM(require_react(), 1);
-  var import_jsx_runtime33 = __toESM(require_jsx_runtime(), 1);
-  var SvgSmilesProperty = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-          "text",
-          {
-            x: 500,
-            y: 170,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 200,
-            fontWeight: "bold",
-            textAnchor: "middle",
-            children: "CCCC"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("path", { stroke: "none", d: "M475 220v180h-85l110 120 110-120h-85V220Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-          "rect",
-          {
-            width: 500,
-            height: 410,
-            x: 250,
-            y: 570,
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 28,
-            rx: 40,
-            ry: 40
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-          "rect",
-          {
-            width: 380,
-            height: 80,
-            x: 310,
-            y: 610,
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 22,
-            rx: 14,
-            ry: 14
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 60, height: 50, x: 320, y: 720, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 60, height: 50, x: 410, y: 720, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 60, height: 50, x: 500, y: 720, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 100, height: 50, x: 590, y: 720, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 60, height: 50, x: 320, y: 790, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 60, height: 50, x: 410, y: 790, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 60, height: 50, x: 500, y: 790, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 100, height: 50, x: 590, y: 790, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 150, height: 50, x: 320, y: 860, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 60, height: 50, x: 500, y: 860, stroke: "none", rx: 8, ry: 8 }),
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("rect", { width: 100, height: 50, x: 590, y: 860, stroke: "none", rx: 8, ry: 8 })
-      ]
-    }
-  );
-  var SmilesProperty_default = SvgSmilesProperty;
-
-  // build/lib-react-tsx/chem/SmilesSdf.tsx
   var React34 = __toESM(require_react(), 1);
   var import_jsx_runtime34 = __toESM(require_jsx_runtime(), 1);
-  var SvgSmilesSdf = ({
+  var SvgSmilesMolfile = ({
     title,
     titleId,
     ...props
@@ -26884,6 +26867,138 @@
           "text",
           {
             x: 500,
+            y: 940,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 220,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: ".mol"
+          }
+        )
+      ]
+    }
+  );
+  var SmilesMolfile_default = SvgSmilesMolfile;
+
+  // build/lib-react-tsx/chem/SmilesProperty.tsx
+  var React35 = __toESM(require_react(), 1);
+  var import_jsx_runtime35 = __toESM(require_jsx_runtime(), 1);
+  var SvgSmilesProperty = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(
+          "text",
+          {
+            x: 500,
+            y: 170,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 200,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: "CCCC"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("path", { stroke: "none", d: "M475 220v180h-85l110 120 110-120h-85V220Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(
+          "rect",
+          {
+            width: 500,
+            height: 410,
+            x: 250,
+            y: 570,
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 28,
+            rx: 40,
+            ry: 40
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(
+          "rect",
+          {
+            width: 380,
+            height: 80,
+            x: 310,
+            y: 610,
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 22,
+            rx: 14,
+            ry: 14
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 60, height: 50, x: 320, y: 720, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 60, height: 50, x: 410, y: 720, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 60, height: 50, x: 500, y: 720, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 100, height: 50, x: 590, y: 720, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 60, height: 50, x: 320, y: 790, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 60, height: 50, x: 410, y: 790, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 60, height: 50, x: 500, y: 790, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 100, height: 50, x: 590, y: 790, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 150, height: 50, x: 320, y: 860, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 60, height: 50, x: 500, y: 860, stroke: "none", rx: 8, ry: 8 }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("rect", { width: 100, height: 50, x: 590, y: 860, stroke: "none", rx: 8, ry: 8 })
+      ]
+    }
+  );
+  var SmilesProperty_default = SvgSmilesProperty;
+
+  // build/lib-react-tsx/chem/SmilesSdf.tsx
+  var React36 = __toESM(require_react(), 1);
+  var import_jsx_runtime36 = __toESM(require_jsx_runtime(), 1);
+  var SvgSmilesSdf = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime36.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime36.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
+          "text",
+          {
+            x: 500,
+            y: 260,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 280,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: "CCC"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)("path", { stroke: "none", d: "M475 340v260h-95l120 150 120-150h-95V340Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
+          "text",
+          {
+            x: 500,
             y: 950,
             stroke: "none",
             fontFamily: "sans-serif",
@@ -26898,14 +27013,68 @@
   );
   var SmilesSdf_default = SvgSmilesSdf;
 
+  // build/lib-react-tsx/chem/StructureToMolfile.tsx
+  var React37 = __toESM(require_react(), 1);
+  var import_jsx_runtime37 = __toESM(require_jsx_runtime(), 1);
+  var SvgStructureToMolfile = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime37.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime37.jsxs)(
+          "g",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 26,
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { d: "m500 50 130 75v150l-130 75-130-75V125z" }),
+              /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("circle", { cx: 500, cy: 200, r: 71 }),
+              /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { d: "m630 125 130-75M370 275l-130 75" })
+            ]
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { stroke: "none", d: "M475 430v170h-95l120 110 120-110h-95V430Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(
+          "text",
+          {
+            x: 500,
+            y: 920,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 220,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: ".mol"
+          }
+        )
+      ]
+    }
+  );
+  var StructureToMolfile_default = SvgStructureToMolfile;
+
   // build/lib-react-tsx/cheminfo/SdfTable.tsx
-  var React35 = __toESM(require_react(), 1);
-  var import_jsx_runtime35 = __toESM(require_jsx_runtime(), 1);
+  var React38 = __toESM(require_react(), 1);
+  var import_jsx_runtime38 = __toESM(require_jsx_runtime(), 1);
   var SvgSdfTable = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -26918,8 +27087,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
           "path",
           {
             fill: "none",
@@ -26928,7 +27097,7 @@
             d: "M247.934 446.281h684.77m-684.77 156.631h684.77m-684.77 156.631h684.77m-684.77 156.632h684.77M280.992 451.004v472.255M639.906 425.03v472.255m258.559-446.281v472.255"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
           "path",
           {
             fill: "#000",
@@ -26947,187 +27116,9 @@
   var SdfTable_default = SvgSdfTable;
 
   // build/lib-react-tsx/cheminfo/SearchSdf.tsx
-  var React36 = __toESM(require_react(), 1);
-  var import_jsx_runtime36 = __toESM(require_jsx_runtime(), 1);
-  var SvgSearchSdf = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime36.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime36.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 46.91,
-            d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 21.586,
-            d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011 0 144.306-117.693 262.009-262.009 262.009"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 46.908,
-            d: "m897.764 890.229-235.87-315.79-82.568 61.672 235.871 315.791m0 0c21.303 26.598 23.303 26.598 53.354 7.72m.001.002 21.485-16.054m0 0c29.463-22.07 29.463-23.07 7.728-53.342"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
-          "text",
-          {
-            x: 419,
-            y: 349,
-            stroke: "none",
-            dominantBaseline: "central",
-            fontFamily: "sans-serif",
-            fontSize: 200,
-            fontWeight: "bold",
-            textAnchor: "middle",
-            children: "SDF"
-          }
-        )
-      ]
-    }
-  );
-  var SearchSdf_default = SvgSearchSdf;
-
-  // build/lib-react-tsx/cv/Assignment.tsx
-  var React37 = __toESM(require_react(), 1);
-  var import_jsx_runtime37 = __toESM(require_jsx_runtime(), 1);
-  var SvgAssignment = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime37.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { d: "M250 710.809a19.66 19.66 0 0 0-19.662 19.662A19.66 19.66 0 0 0 250 750.133h683.604a19.66 19.66 0 0 0 19.66-19.662 19.66 19.66 0 0 0-19.66-19.662z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { d: "M947.408 710.81a19.66 19.66 0 0 0-11.734 4.004l-51.27 38.956a19.66 19.66 0 0 0-3.761 27.55 19.66 19.66 0 0 0 27.55 3.76l51.27-38.955a19.66 19.66 0 0 0 3.76-27.549 19.66 19.66 0 0 0-15.815-7.765z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { d: "M896.352 672.04a19.66 19.66 0 0 0-15.737 7.802 19.66 19.66 0 0 0 3.824 27.54l51.27 38.77a19.66 19.66 0 0 0 27.541-3.822 19.66 19.66 0 0 0-3.822-27.54l-51.272-38.772a19.66 19.66 0 0 0-11.804-3.979zM199.373 261.646h-37.218l-9.657-28.219h-51.75l-9.656 28.22H54.811l51.562-139.595h41.438zm-55.593-53.812-17.157-50.063-17.156 50.063zm720.299 608.504-50.907 139.594H772.86l-50.906-139.594h37.78l33.75 98.063 33.75-98.063zM230.34 733.603A19.66 19.66 0 0 0 250 753.265a19.66 19.66 0 0 0 19.662-19.662V50a19.66 19.66 0 0 0-19.663-19.66A19.66 19.66 0 0 0 230.34 50z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { d: "M230.34 36.195a19.66 19.66 0 0 0 4.005 11.734L273.3 99.2a19.66 19.66 0 0 0 27.55 3.761 19.66 19.66 0 0 0 3.76-27.55l-38.954-51.27a19.66 19.66 0 0 0-27.551-3.76 19.66 19.66 0 0 0-7.766 15.815z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("path", { d: "M191.568 87.252a19.66 19.66 0 0 0 7.803 15.736 19.66 19.66 0 0 0 27.54-3.824l38.772-51.27a19.66 19.66 0 0 0-3.824-27.54 19.66 19.66 0 0 0-27.541 3.821l-38.77 51.272a19.66 19.66 0 0 0-3.98 11.805z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(
-          "path",
-          {
-            fill: "none",
-            stroke: "#000",
-            strokeWidth: 50,
-            d: "M350 650s107.143-254.286 157.143-254.286c100 0 130 1.429 180 1.429s138.571-244.286 188.571-244.286C875.714 152.857 820 530 770 530H528.571C416.768 530 350 650 350 650"
-          }
-        )
-      ]
-    }
-  );
-  var Assignment_default = SvgAssignment;
-
-  // build/lib-react-tsx/dsc/Assignment.tsx
-  var React38 = __toESM(require_react(), 1);
-  var import_jsx_runtime38 = __toESM(require_jsx_runtime(), 1);
-  var SvgAssignment2 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "34.1 40.1 931.7 931.7",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M111.035 811.032c0 12.99 8.7 23.41 19.543 23.41 10.725 0 19.421-10.42 19.421-23.408zm0 0V162.018H150v649.018zM150 162.016c0-12.848-8.696-23.266-19.421-23.266-10.844 0-19.545 10.418-19.545 23.266z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 38.845,
-            d: "m130.575 131.361 49.93 65.898m-99.856 0 49.929-65.898"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M150.002 811.032c-14.71 0-26.508 8.701-26.508 19.426 0 10.841 11.798 19.543 26.505 19.543zm0 0h734.904V850H150zM884.906 850c14.546 0 26.344-8.702 26.344-19.545 0-10.723-11.798-19.422-26.344-19.422z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 38.845,
-            d: "m918.636 830.458-65.895 50.045m0-99.974 65.895 49.927"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeWidth: 29.999,
-            d: "M211.263 544.97c83.576 2.323 58.809-201.228 124.404-198.3 55.382 2.475 47.376 220.412 158.83 219.196 163.145-1.783 118.444 102.361 188.046 102.147 39.232-.213 41.712-104.403 88.313-102.016 66.088 3.389 122.267 4.987 148.35 3.002"
-          }
-        )
-      ]
-    }
-  );
-  var Assignment_default2 = SvgAssignment2;
-
-  // build/lib-react-tsx/ea/Request.tsx
   var React39 = __toESM(require_react(), 1);
   var import_jsx_runtime39 = __toESM(require_jsx_runtime(), 1);
-  var SvgRequest = ({
+  var SvgSearchSdf = ({
     title,
     titleId,
     ...props
@@ -27147,6 +27138,184 @@
         /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
           "path",
           {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 46.91,
+            d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 21.586,
+            d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011 0 144.306-117.693 262.009-262.009 262.009"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 46.908,
+            d: "m897.764 890.229-235.87-315.79-82.568 61.672 235.871 315.791m0 0c21.303 26.598 23.303 26.598 53.354 7.72m.001.002 21.485-16.054m0 0c29.463-22.07 29.463-23.07 7.728-53.342"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
+          "text",
+          {
+            x: 419,
+            y: 349,
+            stroke: "none",
+            dominantBaseline: "central",
+            fontFamily: "sans-serif",
+            fontSize: 200,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: "SDF"
+          }
+        )
+      ]
+    }
+  );
+  var SearchSdf_default = SvgSearchSdf;
+
+  // build/lib-react-tsx/cv/Assignment.tsx
+  var React40 = __toESM(require_react(), 1);
+  var import_jsx_runtime40 = __toESM(require_jsx_runtime(), 1);
+  var SvgAssignment = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("path", { d: "M250 710.809a19.66 19.66 0 0 0-19.662 19.662A19.66 19.66 0 0 0 250 750.133h683.604a19.66 19.66 0 0 0 19.66-19.662 19.66 19.66 0 0 0-19.66-19.662z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("path", { d: "M947.408 710.81a19.66 19.66 0 0 0-11.734 4.004l-51.27 38.956a19.66 19.66 0 0 0-3.761 27.55 19.66 19.66 0 0 0 27.55 3.76l51.27-38.955a19.66 19.66 0 0 0 3.76-27.549 19.66 19.66 0 0 0-15.815-7.765z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("path", { d: "M896.352 672.04a19.66 19.66 0 0 0-15.737 7.802 19.66 19.66 0 0 0 3.824 27.54l51.27 38.77a19.66 19.66 0 0 0 27.541-3.822 19.66 19.66 0 0 0-3.822-27.54l-51.272-38.772a19.66 19.66 0 0 0-11.804-3.979zM199.373 261.646h-37.218l-9.657-28.219h-51.75l-9.656 28.22H54.811l51.562-139.595h41.438zm-55.593-53.812-17.157-50.063-17.156 50.063zm720.299 608.504-50.907 139.594H772.86l-50.906-139.594h37.78l33.75 98.063 33.75-98.063zM230.34 733.603A19.66 19.66 0 0 0 250 753.265a19.66 19.66 0 0 0 19.662-19.662V50a19.66 19.66 0 0 0-19.663-19.66A19.66 19.66 0 0 0 230.34 50z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("path", { d: "M230.34 36.195a19.66 19.66 0 0 0 4.005 11.734L273.3 99.2a19.66 19.66 0 0 0 27.55 3.761 19.66 19.66 0 0 0 3.76-27.55l-38.954-51.27a19.66 19.66 0 0 0-27.551-3.76 19.66 19.66 0 0 0-7.766 15.815z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("path", { d: "M191.568 87.252a19.66 19.66 0 0 0 7.803 15.736 19.66 19.66 0 0 0 27.54-3.824l38.772-51.27a19.66 19.66 0 0 0-3.824-27.54 19.66 19.66 0 0 0-27.541 3.821l-38.77 51.272a19.66 19.66 0 0 0-3.98 11.805z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+          "path",
+          {
+            fill: "none",
+            stroke: "#000",
+            strokeWidth: 50,
+            d: "M350 650s107.143-254.286 157.143-254.286c100 0 130 1.429 180 1.429s138.571-244.286 188.571-244.286C875.714 152.857 820 530 770 530H528.571C416.768 530 350 650 350 650"
+          }
+        )
+      ]
+    }
+  );
+  var Assignment_default = SvgAssignment;
+
+  // build/lib-react-tsx/dsc/Assignment.tsx
+  var React41 = __toESM(require_react(), 1);
+  var import_jsx_runtime41 = __toESM(require_jsx_runtime(), 1);
+  var SvgAssignment2 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "34.1 40.1 931.7 931.7",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M111.035 811.032c0 12.99 8.7 23.41 19.543 23.41 10.725 0 19.421-10.42 19.421-23.408zm0 0V162.018H150v649.018zM150 162.016c0-12.848-8.696-23.266-19.421-23.266-10.844 0-19.545 10.418-19.545 23.266z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 38.845,
+            d: "m130.575 131.361 49.93 65.898m-99.856 0 49.929-65.898"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M150.002 811.032c-14.71 0-26.508 8.701-26.508 19.426 0 10.841 11.798 19.543 26.505 19.543zm0 0h734.904V850H150zM884.906 850c14.546 0 26.344-8.702 26.344-19.545 0-10.723-11.798-19.422-26.344-19.422z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 38.845,
+            d: "m918.636 830.458-65.895 50.045m0-99.974 65.895 49.927"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeWidth: 29.999,
+            d: "M211.263 544.97c83.576 2.323 58.809-201.228 124.404-198.3 55.382 2.475 47.376 220.412 158.83 219.196 163.145-1.783 118.444 102.361 188.046 102.147 39.232-.213 41.712-104.403 88.313-102.016 66.088 3.389 122.267 4.987 148.35 3.002"
+          }
+        )
+      ]
+    }
+  );
+  var Assignment_default2 = SvgAssignment2;
+
+  // build/lib-react-tsx/ea/Request.tsx
+  var React42 = __toESM(require_react(), 1);
+  var import_jsx_runtime42 = __toESM(require_jsx_runtime(), 1);
+  var SvgRequest = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime42.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime42.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(
+          "path",
+          {
             stroke: "none",
             d: "M973.852 153.252V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307zM336.331 208.886c-9.922 11.001-14.883 25.67-14.883 40.554l-53.711.43c.216-27.825 9.922-55.436 29.336-76.791zm-14.883 40.554c-.216 14.883 4.961 29.551 14.883 40.768l-39.905 36.023c-19.198-21.14-28.69-48.965-28.69-76.36Zm14.883 40.768q1.942 2.265 3.883 3.883l-36.239 39.69c-2.588-2.373-5.177-4.746-7.55-7.55zm3.883 3.883c8.628 7.765 19.198 11.864 29.552 11.864l-.648 53.495c-23.296 0-46.377-8.628-65.143-25.669zm29.552 11.864c10.354 0 20.708-3.883 29.337-11.649l35.591 39.475c-18.982 17.257-42.278 25.67-65.575 25.67zm29.337-11.649a29.4 29.4 0 0 0 3.667-3.667l39.474 35.808c-2.373 2.588-4.962 5.177-7.55 7.334zm3.667-3.667c10.138-11 15.099-25.67 15.099-40.552l53.495-.432c0 27.61-9.706 55.436-29.12 76.792zm15.099-40.552c0-14.884-4.961-29.768-15.1-40.985l39.906-36.023c19.198 21.355 28.69 48.966 28.69 76.576zm-15.1-40.985-3.666-3.667 36.023-39.906c2.803 2.373 5.176 4.961 7.55 7.55zm-3.666-3.667c-8.845-7.981-19.198-11.864-29.768-11.864l.864-53.495c23.08 0 46.161 8.412 64.927 25.453zm-29.768-11.864c-10.139 0-20.493 3.667-29.12 11.433l-35.808-39.475c18.982-17.04 42.279-25.67 65.79-25.453zm-29.12 11.433-3.884 3.882-39.258-35.807c2.372-2.804 4.745-5.177 7.334-7.55zm47.886 384.821c-5.824 13.59.648 29.337 14.237 34.946 13.805 5.608 29.336-1.078 35.16-14.669zm0 0 180.98-433.14 49.396 20.061-180.979 433.356Zm230.376-413.079c5.824-13.59-.648-29.336-14.237-34.73-13.59-5.607-29.336.863-35.16 14.67zm-14.668 299.402c-9.923 11-14.884 25.67-15.1 40.553l-53.495.216c.216-27.61 9.922-55.22 29.336-76.576zm-15.1 40.553c0 14.883 5.177 29.552 15.1 40.768l-39.906 36.023c-19.198-21.139-28.69-48.965-28.69-76.575zm15.1 40.768c1.294 1.51 2.588 2.59 3.883 3.883l-36.24 39.69a125 125 0 0 1-7.55-7.55zm3.883 3.883c8.628 7.766 19.197 11.864 29.551 11.864l-.648 53.496c-23.296 0-46.377-8.629-65.143-25.67zm29.551 11.864c10.355 0 20.708-3.883 29.337-11.648l35.591 39.475c-18.982 17.256-42.278 25.669-65.575 25.669zm29.337-11.648a29.4 29.4 0 0 0 3.667-3.667l39.474 35.808c-2.373 2.588-4.961 5.176-7.55 7.334zm3.667-3.667c9.922-11 15.099-25.67 15.099-40.553l53.496-.432c0 27.61-9.707 55.437-29.12 76.792zm15.099-40.553c0-14.884-4.961-29.768-15.1-40.985l39.907-36.023c19.198 21.355 28.689 48.966 28.689 76.577zm-15.1-40.985-3.666-3.667 36.023-39.905c2.804 2.372 5.177 4.96 7.55 7.55zm-3.666-3.667c-8.845-7.98-19.198-11.863-29.768-11.863l.862-53.712c23.08.216 46.162 8.628 64.928 25.67zm-29.768-11.863c-10.138-.216-20.492 3.667-29.12 11.432l-35.808-39.474c18.982-17.042 42.279-25.67 65.79-25.67zm-29.12 11.432-3.883 3.883-39.26-35.808c2.374-2.804 4.746-5.177 7.335-7.55z"
           }
@@ -27157,13 +27326,13 @@
   var Request_default = SvgRequest;
 
   // build/lib-react-tsx/glassware/Beaker2.tsx
-  var React40 = __toESM(require_react(), 1);
-  var import_jsx_runtime40 = __toESM(require_jsx_runtime(), 1);
+  var React43 = __toESM(require_react(), 1);
+  var import_jsx_runtime43 = __toESM(require_jsx_runtime(), 1);
   var SvgBeaker2 = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime43.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27176,9 +27345,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("path", { d: "M305.834 420.256H666.58v208.723H305.834z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("path", { d: "M305.834 420.256H666.58v208.723H305.834z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
           "path",
           {
             fill: "none",
@@ -27188,7 +27357,7 @@
             d: "M708.795 174.282h-402.96v454.697H666.58V231.243z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
           "path",
           {
             fill: "none",
@@ -27198,7 +27367,7 @@
             d: "M305.834 250.75h69.98m-69.98 57.45h69.98m-69.98 57.452h69.98"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
           "path",
           {
             fill: "#FEFEFE",
@@ -27211,13 +27380,13 @@
   var Beaker2_default = SvgBeaker2;
 
   // build/lib-react-tsx/glassware/Beaker.tsx
-  var React41 = __toESM(require_react(), 1);
-  var import_jsx_runtime41 = __toESM(require_jsx_runtime(), 1);
+  var React44 = __toESM(require_react(), 1);
+  var import_jsx_runtime44 = __toESM(require_jsx_runtime(), 1);
   var SvgBeaker = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime44.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27229,8 +27398,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime44.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -27238,7 +27407,7 @@
             d: "M305.834 420.256H666.58v208.722H305.834z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
           "path",
           {
             fill: "none",
@@ -27248,7 +27417,7 @@
             d: "M708.796 174.281H305.834v454.697H666.58V231.242z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
           "path",
           {
             fill: "#fefefe",
@@ -27257,7 +27426,7 @@
             d: "M612.096 482.021c-10.267-2.842-20.918 3.432-23.674 14.018-2.76 10.689 3.421 21.569 13.692 24.414 10.267 2.842 20.823-3.432 23.58-14.118 2.758-10.59-3.33-21.472-13.597-24.314m-32.613 52.939c-14.264-4.02-28.906 4.707-32.71 19.412-3.803 14.707 4.658 29.804 18.922 33.724 14.169 3.923 28.81-4.803 32.709-19.41 3.802-14.706-4.66-29.803-18.92-33.726"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
           "path",
           {
             fill: "none",
@@ -27273,13 +27442,13 @@
   var Beaker_default = SvgBeaker;
 
   // build/lib-react-tsx/glassware/Erlen.tsx
-  var React42 = __toESM(require_react(), 1);
-  var import_jsx_runtime42 = __toESM(require_jsx_runtime(), 1);
+  var React45 = __toESM(require_react(), 1);
+  var import_jsx_runtime45 = __toESM(require_jsx_runtime(), 1);
   var SvgErlen = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime42.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime45.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27291,8 +27460,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime42.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime45.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
           "path",
           {
             fill: "none",
@@ -27302,7 +27471,7 @@
             d: "M557.846 307.003V97.791H442.793v209.212h-.285l-135.114 288.23c-.284.686-.473 1.275-.758 2.057-8.083 24.51-8.272 53.137-.38 76.861 7.604 22.845 21.487 36.669 37.175 36.669h313.68c15.691 0 29.572-13.63 37.275-36.57 7.796-23.626 7.604-52.352-.38-76.762-.192-.687-.476-1.276-.666-1.863L557.941 307.003Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -27310,7 +27479,7 @@
             d: "m351.323 501.606-43.929 93.627c-.284.686-.473 1.275-.758 2.057-8.083 24.51-8.272 53.137-.38 76.861 7.604 22.845 21.487 36.669 37.175 36.669h313.68c15.691 0 29.572-13.63 37.275-36.57 7.796-23.626 7.604-52.352-.38-76.762-.192-.687-.476-1.276-.666-1.863l-44.12-94.019z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
           "path",
           {
             fill: "#fefefe",
@@ -27319,7 +27488,7 @@
             d: "M626.686 563.764c-10.27-2.846-20.825 3.527-23.582 14.117-2.756 10.586 3.329 21.47 13.597 24.311 10.27 2.845 20.825-3.432 23.582-14.018 2.756-10.587-3.329-21.569-13.597-24.41m-32.615 52.938c-14.261-3.92-28.903 4.804-32.708 19.511-3.802 14.606 4.659 29.705 18.923 33.725 14.262 3.92 28.903-4.804 32.708-19.511 3.802-14.705-4.659-29.802-18.923-33.725"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
           "path",
           {
             fill: "none",
@@ -27335,13 +27504,13 @@
   var Erlen_default = SvgErlen;
 
   // build/lib-react-tsx/glassware/RoundFlask.tsx
-  var React43 = __toESM(require_react(), 1);
-  var import_jsx_runtime43 = __toESM(require_jsx_runtime(), 1);
+  var React46 = __toESM(require_react(), 1);
+  var import_jsx_runtime46 = __toESM(require_jsx_runtime(), 1);
   var SvgRoundFlask = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime43.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime46.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27353,8 +27522,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime46.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
           "path",
           {
             fill: "none",
@@ -27364,7 +27533,7 @@
             d: "M448.326 388.312c-81.754 23.07-141.578 98.158-141.578 187.282 0 69.648 36.666 130.788 91.754 165.173h205.7c55.09-34.385 91.754-95.525 91.754-165.173 0-89.124-59.824-164.211-141.49-187.282V192.349h-106.14z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -27372,7 +27541,7 @@
             d: "M308.064 553.313a187 187 0 0 0-1.316 22.28c0 69.649 36.666 130.789 91.754 165.174h205.7c55.09-34.385 91.754-95.525 91.754-165.173 0-7.546-.437-15-1.227-22.281z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
           "path",
           {
             fill: "#fefefe",
@@ -27381,7 +27550,7 @@
             d: "M621.833 590.68c-9.472-2.543-19.21 3.07-21.753 12.631-2.545 9.475 3.071 19.21 12.544 21.756 9.475 2.543 19.298-3.07 21.841-12.546 2.546-9.56-3.157-19.296-12.632-21.841m-30.086 47.37c-13.157-3.51-26.667 4.21-30.175 17.366-3.51 13.16 4.298 26.667 17.455 30.175 13.16 3.51 26.667-4.21 30.175-17.367 3.51-13.159-4.298-26.667-17.455-30.174"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -27395,13 +27564,13 @@
   var RoundFlask_default = SvgRoundFlask;
 
   // build/lib-react-tsx/glassware/Titration.tsx
-  var React44 = __toESM(require_react(), 1);
-  var import_jsx_runtime44 = __toESM(require_jsx_runtime(), 1);
+  var React47 = __toESM(require_react(), 1);
+  var import_jsx_runtime47 = __toESM(require_jsx_runtime(), 1);
   var SvgTitration = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime44.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime47.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27413,9 +27582,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime44.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)("path", { fill: "none", d: "M469.9 100h150v50h-150z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("path", { fill: "none", d: "M469.9 100h150v50h-150z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
           "path",
           {
             fill: "none",
@@ -27425,7 +27594,7 @@
             d: "M610.371 722.195V581.683h29.402v140.512Zm-211.169-53.562h201.255v-33.388H399.202Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
           "path",
           {
             fill: "#fff",
@@ -27435,7 +27604,7 @@
             d: "M403.418 122.078h192.708v388.605l-47.864 56.981v182.454l-48.433 68.716-48.548-68.716V567.664l-47.863-56.98z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
           "path",
           {
             fill: "none",
@@ -27445,7 +27614,7 @@
             d: "M520 205.953H403.418M520 277.977H403.418M520 350H403.418M520 422.024H403.418"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
           "path",
           {
             fill: "#fff",
@@ -27462,13 +27631,13 @@
   var Titration_default = SvgTitration;
 
   // build/lib-react-tsx/icp/Request.tsx
-  var React45 = __toESM(require_react(), 1);
-  var import_jsx_runtime45 = __toESM(require_jsx_runtime(), 1);
+  var React48 = __toESM(require_react(), 1);
+  var import_jsx_runtime48 = __toESM(require_jsx_runtime(), 1);
   var SvgRequest2 = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime45.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27480,8 +27649,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime45.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
           "path",
           {
             stroke: "none",
@@ -27494,13 +27663,13 @@
   var Request_default2 = SvgRequest2;
 
   // build/lib-react-tsx/inventory/Add.tsx
-  var React46 = __toESM(require_react(), 1);
-  var import_jsx_runtime46 = __toESM(require_jsx_runtime(), 1);
+  var React49 = __toESM(require_react(), 1);
+  var import_jsx_runtime49 = __toESM(require_jsx_runtime(), 1);
   var SvgAdd = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime46.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime49.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27512,8 +27681,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime46.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
           "path",
           {
             fill: "none",
@@ -27523,14 +27692,14 @@
             d: "M424.176 303.053V170.42h153.493v132.633c71.764 14.321 122.046 48.258 122.046 87.799 0 19.614.934 39.54.934 59.31v226.816c0 30.354-24.907 55.106-55.108 55.106H356.46c-30.357 0-55.108-24.752-55.108-55.106V450.163c0-3.425.312-53.551.934-56.82-2.958-54.174 80.95-82.04 121.89-90.29M391.33 170.42h219.34"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
           "path",
           {
             stroke: "none",
             d: "M539.53 402.527c.155-21.327-17.125-38.606-38.452-38.45s-38.606 17.59-38.762 38.917zm0 0v217.32l-77.215.62V402.994zm-77.215 217.939c0 21.328 17.28 38.452 38.607 38.3 21.328-.158 38.607-17.595 38.607-38.919zm147.11-70.361c21.328-.158 38.763-17.438 38.919-38.761.156-21.328-17.124-38.609-38.451-38.453zm0 0H391.953l.624-77.214h217.317zm-216.85-77.214c-21.327 0-38.763 17.282-38.918 38.605-.156 21.328 16.968 38.609 38.295 38.609z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -27544,13 +27713,13 @@
   var Add_default = SvgAdd;
 
   // build/lib-react-tsx/inventory/Empty.tsx
-  var React47 = __toESM(require_react(), 1);
-  var import_jsx_runtime47 = __toESM(require_jsx_runtime(), 1);
+  var React50 = __toESM(require_react(), 1);
+  var import_jsx_runtime50 = __toESM(require_jsx_runtime(), 1);
   var SvgEmpty = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime47.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -27562,8 +27731,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
           "path",
           {
             fill: "none",
@@ -27573,7 +27742,7 @@
             d: "M426.176 299.053V166.42h153.493v132.633c71.764 14.321 122.046 48.258 122.046 87.799 0 19.614.934 39.54.934 59.31v226.816c0 30.354-24.907 55.106-55.108 55.106H358.46c-30.356 0-55.108-24.752-55.108-55.106V446.163c0-3.425.311-53.551.934-56.82-2.958-54.174 80.95-82.04 121.89-90.29"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -27581,7 +27750,7 @@
             d: "M694.65 652.426v20.552c0 30.198-24.908 55.106-55.109 55.106H350.46c-30.2 0-55.108-24.752-55.108-55.106v-20.552c141.194-24.281 259.66 19.616 399.298 0"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
           "path",
           {
             fill: "none",
@@ -27591,7 +27760,7 @@
             d: "M385.33 166.42h219.34"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -27605,290 +27774,9 @@
   var Empty_default = SvgEmpty;
 
   // build/lib-react-tsx/inventory/Full.tsx
-  var React48 = __toESM(require_react(), 1);
-  var import_jsx_runtime48 = __toESM(require_jsx_runtime(), 1);
-  var SvgFull = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "124.4 14.5 753.3 753.3",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 46.702,
-            d: "M424.176 301.053V168.42h153.493v132.633c71.764 14.321 122.046 48.258 122.046 87.799 0 19.614.934 39.54.934 59.31v226.816c0 30.354-24.907 55.106-55.108 55.106H356.46c-30.357 0-55.108-24.752-55.108-55.106V448.163c0-3.425.312-53.551.934-56.82-2.958-54.174 80.95-82.04 121.89-90.29"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M700.65 358.651v316.327c0 30.354-24.908 55.106-55.108 55.106H356.459c-30.356 0-55.108-24.752-55.108-55.106V358.651c141.194-24.285 259.66 19.615 399.298 0"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 46.702,
-            d: "M391.33 168.42h219.34"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M418.105 52.133h165.79c14.01 0 28.956 11.987 25.375 25.53l-12.765 50.283c-3.425 13.699-11.52 25.53-25.53 25.53H430.87c-14.01 0-21.95-11.831-25.375-25.53l-12.92-50.282c-3.425-13.544 11.52-25.53 25.53-25.53"
-          }
-        )
-      ]
-    }
-  );
-  var Full_default = SvgFull;
-
-  // build/lib-react-tsx/inventory/Search.tsx
-  var React49 = __toESM(require_react(), 1);
-  var import_jsx_runtime49 = __toESM(require_jsx_runtime(), 1);
-  var SvgSearch = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime49.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 46.91,
-            d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 46.909,
-            d: "m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054m0 0c16.795-12.541 20.277-36.542 7.728-53.342"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 32.691,
-            d: "M346.923 260.737v-92.843h107.445v92.843c50.235 10.025 85.432 33.78 85.432 61.46 0 13.73.654 27.677.654 41.516v158.772c0 21.247-17.435 38.574-38.575 38.574H299.522c-21.25 0-38.576-17.327-38.576-38.574v-158.77c0-2.398.219-37.487.654-39.775-2.07-37.922 56.665-57.428 85.323-63.203m-22.992-92.843h153.538"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M342.674 86.493h116.053c9.807 0 20.269 8.391 17.762 17.871l-8.935 35.198c-2.398 9.59-8.064 17.871-17.871 17.871h-98.074c-9.807 0-15.365-8.281-17.762-17.87l-9.044-35.198c-2.398-9.481 8.064-17.871 17.87-17.871z"
-          }
-        )
-      ]
-    }
-  );
-  var Search_default = SvgSearch;
-
-  // build/lib-react-tsx/inventory/Status.tsx
-  var React50 = __toESM(require_react(), 1);
-  var import_jsx_runtime50 = __toESM(require_jsx_runtime(), 1);
-  var SvgStatus = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "150.2 27.6 758.5 758.5",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 34.798,
-            d: "M344.382 172.769h311.365c39.067 0 70.982 31.916 70.982 70.983V640.51c0 38.961-31.915 70.985-70.982 70.985H344.382c-38.96 0-70.983-32.024-70.983-70.985V243.752c0-39.067 31.916-70.983 70.983-70.983"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "#fff",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 34.798,
-            d: "M500.118 65.493c33.944 0 62.23 24.124 68.85 56.04H636v90.837H364.129v-90.837h67.034c6.618-31.916 35.011-56.04 68.955-56.04"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M508.23 100.932c-16.758-4.484-33.943 5.444-38.427 22.202-4.483 16.652 5.444 33.837 22.203 38.32 16.651 4.483 33.837-5.444 38.32-22.095 4.483-16.759-5.444-33.944-22.096-38.427"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "#fefefe",
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M503.427 118.65c-6.938-1.92-14.09 2.242-15.904 9.18-1.922 6.939 2.241 14.09 9.18 15.905 6.938 1.921 14.09-2.241 16.01-9.18 1.815-6.938-2.348-14.09-9.286-15.904"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 35.011,
-            d: "M646.034 331.814H419.528"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M356.87 313.347a18.98 18.98 0 0 0-23.376 13.557c-2.775 10.14 3.31 20.708 13.45 23.375 10.247 2.775 20.708-3.306 23.483-13.448 2.669-10.247-3.309-20.708-13.556-23.484"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 35.011,
-            d: "M646.034 418.809H419.528"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M356.87 400.34c-10.246-2.774-20.707 3.31-23.376 13.558-2.775 10.14 3.31 20.709 13.45 23.376 10.247 2.775 20.708-3.31 23.483-13.45 2.669-10.245-3.309-20.706-13.556-23.484"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 35.011,
-            d: "M646.034 505.804H419.528"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M356.87 487.335c-10.246-2.774-20.707 3.31-23.376 13.558-2.775 10.141 3.31 20.706 13.45 23.376 10.247 2.775 20.708-3.31 23.483-13.558 2.669-10.137-3.309-20.6-13.556-23.376"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 35.011,
-            d: "M646.034 592.796H419.528"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M356.87 574.33c-10.246-2.774-20.707 3.31-23.376 13.558-2.775 10.138 3.31 20.706 13.45 23.376 10.247 2.775 20.708-3.31 23.483-13.557 2.669-10.141-3.309-20.602-13.556-23.376"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "none",
-            stroke: "#fefefe",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 74.719,
-            d: "m561.067 685.476 62.657 62.658 161.714-168.226"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 35.011,
-            d: "m561.067 685.476 62.657 62.658 161.714-168.226"
-          }
-        )
-      ]
-    }
-  );
-  var Status_default = SvgStatus;
-
-  // build/lib-react-tsx/inventory/Toxic.tsx
   var React51 = __toESM(require_react(), 1);
   var import_jsx_runtime51 = __toESM(require_jsx_runtime(), 1);
-  var SvgToxic = ({
+  var SvgFull = ({
     title,
     titleId,
     ...props
@@ -27898,7 +27786,7 @@
       xmlns: "http://www.w3.org/2000/svg",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "124.4 16.5 753.3 753.3",
+      viewBox: "124.4 14.5 753.3 753.3",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -27912,7 +27800,7 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeWidth: 46.702,
-            d: "M424.176 303.053V170.42h153.493v132.633c71.764 14.321 122.046 48.258 122.046 87.799 0 19.614.934 39.54.934 59.31v226.816c0 30.354-24.907 55.106-55.108 55.106H356.46c-30.357 0-55.108-24.752-55.108-55.106V450.163c0-3.425.312-53.551.934-56.82-2.958-54.174 80.95-82.04 121.89-90.29M391.33 170.42h219.34"
+            d: "M424.176 301.053V168.42h153.493v132.633c71.764 14.321 122.046 48.258 122.046 87.799 0 19.614.934 39.54.934 59.31v226.816c0 30.354-24.907 55.106-55.108 55.106H356.46c-30.357 0-55.108-24.752-55.108-55.106V448.163c0-3.425.312-53.551.934-56.82-2.958-54.174 80.95-82.04 121.89-90.29"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
@@ -27920,18 +27808,36 @@
           {
             fillRule: "evenodd",
             stroke: "none",
-            d: "M418.105 54.133h165.79c14.01 0 28.956 11.987 25.375 25.53l-12.765 50.283c-3.425 13.699-11.52 25.53-25.53 25.53H430.87c-14.01 0-21.95-11.831-25.375-25.53l-12.92-50.282c-3.425-13.544 11.52-25.53 25.53-25.53m146.02 589.219c-.466 1.399-.934 2.801-1.09 4.204L529.41 632.92l37.984-16.501.156.313c3.58 8.094 12.92 11.675 21.016 8.25 8.095-3.58 11.83-12.92 8.25-21.018-1.867-4.356-5.292-7.314-9.34-8.716a18.21 18.21 0 0 0 2.18-18.057c-3.892-8.873-14.322-13.077-23.352-9.187-8.873 3.895-13.076 14.323-9.184 23.354a15.3 15.3 0 0 0 2.335 3.737L502.324 620l-1.402.624-1.401-.624-56.976-24.904c.934-1.093 1.556-2.34 2.18-3.737 3.891-9.03-.157-19.46-9.185-23.354-8.874-3.89-19.304.313-23.351 9.187-2.647 6.225-1.557 13.077 2.335 18.057-4.048 1.403-7.628 4.36-9.496 8.716-3.425 8.098.311 17.438 8.406 21.019 8.095 3.424 17.435-.158 21.016-8.25v-.314l38.14 16.501-33.625 14.637c-.156-1.403-.624-2.806-1.246-4.204-3.892-9.03-14.322-13.077-23.351-9.187-8.873 3.894-13.076 14.323-9.184 23.354 2.801 6.068 8.561 9.962 14.788 10.585-1.712 3.89-2.024 8.56-.156 12.764 3.581 8.093 12.921 11.83 21.172 8.407 8.095-3.58 11.675-13.077 8.25-21.171l-.155-.157 51.838-22.574 51.995 22.574-.156.157c-3.58 8.094.156 17.59 8.25 21.171 8.096 3.424 17.592-.313 21.017-8.407 1.867-4.204 1.712-8.874 0-12.764 6.226-.624 11.986-4.517 14.632-10.585 3.892-9.03-.156-19.46-9.184-23.354-8.873-3.89-19.303.157-23.351 9.187zM551.983 484.1c-20.549 0-37.05-16.658-37.05-37.05 0-20.55 16.501-37.206 37.05-37.206s37.205 16.657 37.205 37.206c0 20.392-16.656 37.05-37.205 37.05m-65.071 4.514 16.501-19.46 17.124 19.46zm-32.536-4.515c-20.548 0-37.205-16.657-37.205-37.05 0-20.548 16.657-37.205 37.205-37.205 20.55 0 37.206 16.657 37.206 37.206 0 20.392-16.657 37.05-37.206 37.05M563.97 360.34H438.03c-22.883 0-41.563 18.68-41.563 41.564v89.358c0 22.883 18.68 41.562 41.564 41.562h4.67v20.239c0 6.072 4.982 10.895 11.053 10.895h.934c6.071 0 10.897-4.823 10.897-10.895v-20.239h8.406v20.239c0 6.072 4.826 10.895 10.897 10.895h1.09c5.916 0 10.897-4.823 10.897-10.895v-20.239h8.25v20.239c0 6.072 4.982 10.895 10.898 10.895h1.09c5.915 0 10.896-4.823 10.896-10.895v-20.239h8.25v20.239c0 6.072 4.983 10.895 10.898 10.895h1.09c6.07 0 10.896-4.823 10.896-10.895v-20.239h4.826c22.884 0 41.565-18.68 41.565-41.562v-89.358c0-22.883-18.68-41.564-41.565-41.564z"
+            d: "M700.65 358.651v316.327c0 30.354-24.908 55.106-55.108 55.106H356.459c-30.356 0-55.108-24.752-55.108-55.106V358.651c141.194-24.285 259.66 19.615 399.298 0"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 46.702,
+            d: "M391.33 168.42h219.34"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M418.105 52.133h165.79c14.01 0 28.956 11.987 25.375 25.53l-12.765 50.283c-3.425 13.699-11.52 25.53-25.53 25.53H430.87c-14.01 0-21.95-11.831-25.375-25.53l-12.92-50.282c-3.425-13.544 11.52-25.53 25.53-25.53"
           }
         )
       ]
     }
   );
-  var Toxic_default = SvgToxic;
+  var Full_default = SvgFull;
 
-  // build/lib-react-tsx/ir/Assignment.tsx
+  // build/lib-react-tsx/inventory/Search.tsx
   var React52 = __toESM(require_react(), 1);
   var import_jsx_runtime52 = __toESM(require_jsx_runtime(), 1);
-  var SvgAssignment3 = ({
+  var SvgSearch = ({
     title,
     titleId,
     ...props
@@ -27954,8 +27860,9 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 39.323,
-            d: "M49.941 730.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 46.91,
+            d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
@@ -27964,26 +27871,38 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 31.973,
-            d: "M97.35 114.927c87.832-20.764 119.621 79.197 124.583 157.475 11.576 179.157 25.725 256.15 86.179 252.84 158.21 1.105 12.679-436.775 212.233-419.503 95.92 8.27 85.445 76.992 90.222 155.822 4.962 83.974 6.062 143.326 16.171 209.66 37.85-109.516-11.394-356.845 162.804-360.337 35.649-.734 64.68.919 96.653 2.573"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 46.909,
+            d: "m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054m0 0c16.795-12.541 20.277-36.542 7.728-53.342"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
           "path",
           {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 32.691,
+            d: "M346.923 260.737v-92.843h107.445v92.843c50.235 10.025 85.432 33.78 85.432 61.46 0 13.73.654 27.677.654 41.516v158.772c0 21.247-17.435 38.574-38.575 38.574H299.522c-21.25 0-38.576-17.327-38.576-38.574v-158.77c0-2.398.219-37.487.654-39.775-2.07-37.922 56.665-57.428 85.323-63.203m-22.992-92.843h153.538"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
             stroke: "none",
-            d: "M326.284 588.229c0-7.485-6.092-13.576-13.402-13.576-7.485 0-13.576 6.091-13.576 13.576zm0 0v90.333h-26.978V588.23zm-26.978 90.333c0 7.31 6.091 13.402 13.576 13.402 7.31 0 13.402-6.092 13.402-13.402zm344.868-144.986c0-7.484-6.092-13.576-13.576-13.576-7.31 0-13.402 6.092-13.402 13.576zm0 0v90.334h-26.978v-90.334zm-26.978 90.334c0 7.31 6.091 13.402 13.402 13.402 7.484 0 13.576-6.092 13.576-13.402zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083s-5.145 3.307-8.453 3.307q-3.308 0-5.512-1.651c-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183q-7.166 9.1-7.166 24.81c0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898m110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524m184.856-10.294v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189M641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694ZM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189Z"
+            d: "M342.674 86.493h116.053c9.807 0 20.269 8.391 17.762 17.871l-8.935 35.198c-2.398 9.59-8.064 17.871-17.871 17.871h-98.074c-9.807 0-15.365-8.281-17.762-17.87l-9.044-35.198c-2.398-9.481 8.064-17.871 17.87-17.871z"
           }
         )
       ]
     }
   );
-  var Assignment_default3 = SvgAssignment3;
+  var Search_default = SvgSearch;
 
-  // build/lib-react-tsx/ir/Overlay.tsx
+  // build/lib-react-tsx/inventory/Status.tsx
   var React53 = __toESM(require_react(), 1);
   var import_jsx_runtime53 = __toESM(require_jsx_runtime(), 1);
-  var SvgOverlay = ({
+  var SvgStatus = ({
     title,
     titleId,
     ...props
@@ -27993,7 +27912,7 @@
       xmlns: "http://www.w3.org/2000/svg",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "150.2 27.6 758.5 758.5",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -28006,18 +27925,268 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
+            strokeWidth: 34.798,
+            d: "M344.382 172.769h311.365c39.067 0 70.982 31.916 70.982 70.983V640.51c0 38.961-31.915 70.985-70.982 70.985H344.382c-38.96 0-70.983-32.024-70.983-70.985V243.752c0-39.067 31.916-70.983 70.983-70.983"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "#fff",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 34.798,
+            d: "M500.118 65.493c33.944 0 62.23 24.124 68.85 56.04H636v90.837H364.129v-90.837h67.034c6.618-31.916 35.011-56.04 68.955-56.04"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M508.23 100.932c-16.758-4.484-33.943 5.444-38.427 22.202-4.483 16.652 5.444 33.837 22.203 38.32 16.651 4.483 33.837-5.444 38.32-22.095 4.483-16.759-5.444-33.944-22.096-38.427"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "#fefefe",
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M503.427 118.65c-6.938-1.92-14.09 2.242-15.904 9.18-1.922 6.939 2.241 14.09 9.18 15.905 6.938 1.921 14.09-2.241 16.01-9.18 1.815-6.938-2.348-14.09-9.286-15.904"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 35.011,
+            d: "M646.034 331.814H419.528"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M356.87 313.347a18.98 18.98 0 0 0-23.376 13.557c-2.775 10.14 3.31 20.708 13.45 23.375 10.247 2.775 20.708-3.306 23.483-13.448 2.669-10.247-3.309-20.708-13.556-23.484"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 35.011,
+            d: "M646.034 418.809H419.528"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M356.87 400.34c-10.246-2.774-20.707 3.31-23.376 13.558-2.775 10.14 3.31 20.709 13.45 23.376 10.247 2.775 20.708-3.31 23.483-13.45 2.669-10.245-3.309-20.706-13.556-23.484"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 35.011,
+            d: "M646.034 505.804H419.528"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M356.87 487.335c-10.246-2.774-20.707 3.31-23.376 13.558-2.775 10.141 3.31 20.706 13.45 23.376 10.247 2.775 20.708-3.31 23.483-13.558 2.669-10.137-3.309-20.6-13.556-23.376"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 35.011,
+            d: "M646.034 592.796H419.528"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M356.87 574.33c-10.246-2.774-20.707 3.31-23.376 13.558-2.775 10.138 3.31 20.706 13.45 23.376 10.247 2.775 20.708-3.31 23.483-13.557 2.669-10.141-3.309-20.602-13.556-23.376"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "none",
+            stroke: "#fefefe",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 74.719,
+            d: "m561.067 685.476 62.657 62.658 161.714-168.226"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 35.011,
+            d: "m561.067 685.476 62.657 62.658 161.714-168.226"
+          }
+        )
+      ]
+    }
+  );
+  var Status_default = SvgStatus;
+
+  // build/lib-react-tsx/inventory/Toxic.tsx
+  var React54 = __toESM(require_react(), 1);
+  var import_jsx_runtime54 = __toESM(require_jsx_runtime(), 1);
+  var SvgToxic = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "124.4 16.5 753.3 753.3",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 46.702,
+            d: "M424.176 303.053V170.42h153.493v132.633c71.764 14.321 122.046 48.258 122.046 87.799 0 19.614.934 39.54.934 59.31v226.816c0 30.354-24.907 55.106-55.108 55.106H356.46c-30.357 0-55.108-24.752-55.108-55.106V450.163c0-3.425.312-53.551.934-56.82-2.958-54.174 80.95-82.04 121.89-90.29M391.33 170.42h219.34"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M418.105 54.133h165.79c14.01 0 28.956 11.987 25.375 25.53l-12.765 50.283c-3.425 13.699-11.52 25.53-25.53 25.53H430.87c-14.01 0-21.95-11.831-25.375-25.53l-12.92-50.282c-3.425-13.544 11.52-25.53 25.53-25.53m146.02 589.219c-.466 1.399-.934 2.801-1.09 4.204L529.41 632.92l37.984-16.501.156.313c3.58 8.094 12.92 11.675 21.016 8.25 8.095-3.58 11.83-12.92 8.25-21.018-1.867-4.356-5.292-7.314-9.34-8.716a18.21 18.21 0 0 0 2.18-18.057c-3.892-8.873-14.322-13.077-23.352-9.187-8.873 3.895-13.076 14.323-9.184 23.354a15.3 15.3 0 0 0 2.335 3.737L502.324 620l-1.402.624-1.401-.624-56.976-24.904c.934-1.093 1.556-2.34 2.18-3.737 3.891-9.03-.157-19.46-9.185-23.354-8.874-3.89-19.304.313-23.351 9.187-2.647 6.225-1.557 13.077 2.335 18.057-4.048 1.403-7.628 4.36-9.496 8.716-3.425 8.098.311 17.438 8.406 21.019 8.095 3.424 17.435-.158 21.016-8.25v-.314l38.14 16.501-33.625 14.637c-.156-1.403-.624-2.806-1.246-4.204-3.892-9.03-14.322-13.077-23.351-9.187-8.873 3.894-13.076 14.323-9.184 23.354 2.801 6.068 8.561 9.962 14.788 10.585-1.712 3.89-2.024 8.56-.156 12.764 3.581 8.093 12.921 11.83 21.172 8.407 8.095-3.58 11.675-13.077 8.25-21.171l-.155-.157 51.838-22.574 51.995 22.574-.156.157c-3.58 8.094.156 17.59 8.25 21.171 8.096 3.424 17.592-.313 21.017-8.407 1.867-4.204 1.712-8.874 0-12.764 6.226-.624 11.986-4.517 14.632-10.585 3.892-9.03-.156-19.46-9.184-23.354-8.873-3.89-19.303.157-23.351 9.187zM551.983 484.1c-20.549 0-37.05-16.658-37.05-37.05 0-20.55 16.501-37.206 37.05-37.206s37.205 16.657 37.205 37.206c0 20.392-16.656 37.05-37.205 37.05m-65.071 4.514 16.501-19.46 17.124 19.46zm-32.536-4.515c-20.548 0-37.205-16.657-37.205-37.05 0-20.548 16.657-37.205 37.205-37.205 20.55 0 37.206 16.657 37.206 37.206 0 20.392-16.657 37.05-37.206 37.05M563.97 360.34H438.03c-22.883 0-41.563 18.68-41.563 41.564v89.358c0 22.883 18.68 41.562 41.564 41.562h4.67v20.239c0 6.072 4.982 10.895 11.053 10.895h.934c6.071 0 10.897-4.823 10.897-10.895v-20.239h8.406v20.239c0 6.072 4.826 10.895 10.897 10.895h1.09c5.916 0 10.897-4.823 10.897-10.895v-20.239h8.25v20.239c0 6.072 4.982 10.895 10.898 10.895h1.09c5.915 0 10.896-4.823 10.896-10.895v-20.239h8.25v20.239c0 6.072 4.983 10.895 10.898 10.895h1.09c6.07 0 10.896-4.823 10.896-10.895v-20.239h4.826c22.884 0 41.565-18.68 41.565-41.562v-89.358c0-22.883-18.68-41.564-41.565-41.564z"
+          }
+        )
+      ]
+    }
+  );
+  var Toxic_default = SvgToxic;
+
+  // build/lib-react-tsx/ir/Assignment.tsx
+  var React55 = __toESM(require_react(), 1);
+  var import_jsx_runtime55 = __toESM(require_jsx_runtime(), 1);
+  var SvgAssignment3 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
             strokeWidth: 39.323,
             d: "M49.941 730.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 31.973,
+            d: "M97.35 114.927c87.832-20.764 119.621 79.197 124.583 157.475 11.576 179.157 25.725 256.15 86.179 252.84 158.21 1.105 12.679-436.775 212.233-419.503 95.92 8.27 85.445 76.992 90.222 155.822 4.962 83.974 6.062 143.326 16.171 209.66 37.85-109.516-11.394-356.845 162.804-360.337 35.649-.734 64.68.919 96.653 2.573"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M326.284 588.229c0-7.485-6.092-13.576-13.402-13.576-7.485 0-13.576 6.091-13.576 13.576zm0 0v90.333h-26.978V588.23zm-26.978 90.333c0 7.31 6.091 13.402 13.576 13.402 7.31 0 13.402-6.092 13.402-13.402zm344.868-144.986c0-7.484-6.092-13.576-13.576-13.576-7.31 0-13.402 6.092-13.402 13.576zm0 0v90.334h-26.978v-90.334zm-26.978 90.334c0 7.31 6.091 13.402 13.402 13.402 7.484 0 13.576-6.092 13.576-13.402zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083s-5.145 3.307-8.453 3.307q-3.308 0-5.512-1.651c-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183q-7.166 9.1-7.166 24.81c0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898m110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524m184.856-10.294v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189M641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694ZM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189Z"
+          }
+        )
+      ]
+    }
+  );
+  var Assignment_default3 = SvgAssignment3;
+
+  // build/lib-react-tsx/ir/Overlay.tsx
+  var React56 = __toESM(require_react(), 1);
+  var import_jsx_runtime56 = __toESM(require_jsx_runtime(), 1);
+  var SvgOverlay = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.323,
+            d: "M49.941 730.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083s-5.146 3.306-8.453 3.306q-3.308 0-5.512-1.65c-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183q-7.166 9.1-7.166 24.81c0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898m110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042s-7.166-1.287-9.739-4.042c-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525m184.856-10.295v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19m-101.277-23.759c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             fill: "none",
@@ -28027,196 +28196,196 @@
             d: "M97.35 220.927c87.832-20.764 119.621 79.197 124.583 157.475 11.576 179.157 25.725 256.15 86.179 252.84 158.21 1.105 12.679-436.775 212.233-419.503 95.92 8.27 85.445 76.992 90.222 155.822 4.962 83.974 6.062 143.326 16.171 209.66 37.85-109.516-11.394-356.845 162.804-360.337 35.649-.734 64.68.919 96.653 2.573"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m94.042 91.75-.736.184-.735.183-.734.369-.55.184-.736.368-.55.368-.552.368-.55.368-.737.368-.368.55-.552.369-.552.552-.368.552-.55.552-.368.552-.368.552-.368.552-.184.734-.368.552-.184.552-.368.734-.184.735-.184.552v.734l-.184.734v.734l-.184.552v.735l.184.734v.734l.184.734.184.735.184.734.184.734.184.552.368.734.184.552.368.735.368.552.368.552.552.552.368.552.55.552.552.368.368.552.552.368.55.368.553.552.736.184.552.368.55.368.734.184.552.184.734.368h.735l.552.184.736.184h3.673l.552-.184.736-.184-6.431-27.93z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m126.75 89.36-1.838-.183h-2.389l-2.389-.184h-4.778l-2.204.184h-2.389l-2.389.184-2.389.368-2.388.184-2.39.368-2.388.552-2.388.368-2.39.552 6.432 27.93 1.837-.368 1.655-.368 1.837-.184 1.655-.368 1.654-.184 1.838-.184 1.654-.184h1.838l1.654-.184h3.492l1.654.184h1.838l1.837.184z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M124.912 118.026h2.206l.552-.184h.734l.736-.184.735-.183.552-.184.734-.369.552-.183.734-.369.552-.368.55-.368.55-.368.553-.368.55-.368.552-.552.552-.552.368-.368.368-.552.55-.55.368-.735.369-.552.184-.552.368-.734.368-.552.184-.734.184-.552.184-.734.184-.735v-.734l.184-.734v-1.469l-.184-.734v-.734l-.184-.734v-.552l-.184-.735-.368-.734-.184-.552-.184-.734-.368-.552-.368-.552-.369-.735-.368-.552-.368-.552-.552-.55-.368-.368-.552-.552-.55-.368-.552-.552-.552-.368-.55-.369-.552-.367-.55-.369-.737-.367-.55-.184-.734-.184-.736-.184-.734-.184-.55-.184-.737-.184h-.734l-1.838 28.666zm61.924-7.35-.55-.552-.735-.184-.55-.368-.736-.184-.552-.368-.734-.184-.734-.184h-.735l-.552-.184h-3.491l-.734.184-.736.184-.55.184-.734.184-.55.184-.737.183-.552.369-.55.367-.734.369-.552.368-.552.368-.55.552-.55.368-.369.552-.552.552-.55.552-.368.552-.368.552-.368.735-.368.552-.368.734-.184.734-.184.552-.184.734-.184.735-.184.552-.184.734v2.755l.184.734v.734l.184.552.184.735.184.734.184.552.368.734.184.55.368.552.368.735.368.552.368.552.55.552.368.552.552.368.55.552.55.368.553.552.736.368 15.067-24.256z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m211.643 129.051-1.47-1.286-1.839-1.654-2.02-1.47-1.838-1.655-1.838-1.47-2.021-1.47-1.837-1.471-2.022-1.47-2.02-1.287-2.022-1.47-2.021-1.286-1.838-1.286-2.021-1.103-15.068 24.256 1.47.918 1.655 1.102 1.654 1.102 1.838 1.287 1.654 1.102 1.655 1.286 1.654 1.286 1.654 1.103 1.655 1.47 1.654 1.286 1.47 1.287 1.655 1.286 1.47 1.286z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m192.9 150.734.55.552.736.366.55.369.552.367.735.369.55.366.736.184.552.366.734.184h.736l.552.184.735.184h3.49l.55-.184.737-.184.734-.184.55-.184.736-.184.55-.184.735-.366.552-.368.55-.368.736-.368.55-.368.55-.552.55-.368.553-.552.368-.553.55-.552.368-.55.368-.736.368-.552.368-.552.368-.734.184-.736.184-.55.184-.735.184-.552.184-.734.184-.734v-2.757l-.184-.734v-.552l-.184-.736-.184-.734-.184-.552-.184-.737-.368-.55-.184-.734-.368-.552-.368-.552-.368-.734-.368-.552-.55-.552-.368-.553-.552-.368-.55-.55-18.743 21.683zm58.984 23.704-.368-.552-.368-.552-.55-.552-.553-.552-.552-.369-.55-.55-.55-.368-.55-.368-.552-.366-.735-.368-.552-.184-.734-.368-.552-.184-.734-.184-.55-.184-.735-.184h-.736l-.55-.183h-2.205l-.552.183h-.736l-.734.184-.736.184-.55.184-.734.184-.736.368-.55.184-.735.368-.552.366-.552.368-.736.552-.55.368-.55.552-.369.552-.55.552-.368.552-.552.552-.368.553-.368.552-.184.552-.368.734-.184.55-.368.736-.184.552-.184.734v.737l-.184.734v1.286l-.184.736.184.552v1.47l.184.735.184.55.184.736.184.734.368.552.368.736.184.552.368.735.55.552 23.336-16.538z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m267.87 200.347-.918-1.654-1.102-2.205-1.286-2.021-1.287-2.205-1.102-2.022-1.286-2.205-1.286-2.02-1.47-2.022-1.287-2.206-1.286-2.02-1.47-2.022-1.287-2.02-.918-1.287-23.336 16.537.552.919 1.286 1.837 1.286 1.838 1.103 1.837 1.286 1.838 1.102 1.837 1.102 2.022 1.103 1.837 1.286 1.837 1.102 1.838.919 2.021 1.102 1.838.918 1.654z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m242.697 214.128.368.55.368.735.368.552.55.552.368.552.552.368.55.552.55.369.553.552.55.368.552.366.734.368.55.184.552.368.735.184.55.184.734.184.736.184.55.183h3.493l.734-.183h.736l.735-.184.55-.184.736-.184.734-.368.55-.184.736-.368.55-.368.735-.552.552-.368.55-.368.55-.552.553-.552.368-.368.552-.552.368-.552.368-.552.368-.735.368-.552.184-.55.368-.736.184-.552.184-.734.184-.735.184-.552.184-.734v-3.493l-.184-.734v-.552l-.184-.736-.184-.734-.184-.552-.368-.736-.184-.734-.368-.553-25.174 13.782zm47.04 43.365-.184-.734-.184-.736-.184-.734-.368-.55-.369-.735-.184-.552-.368-.552-.552-.734-.368-.552-.368-.552-.552-.368-.368-.552-.552-.369-.552-.552-.55-.368-.55-.368-.735-.368-.55-.368-.55-.184-.736-.368-.55-.183-.735-.184-.55-.184-.736-.184-.734-.184h-3.491l-.736.184-.734.184-.734.184-.737.184-.734.183-.55.368-.736.184-.55.368-.55.368-.735.368-.552.552-.368.368-.55.552-.552.368-.368.552-.55.552-.368.55-.368.552-.368.552-.368.737-.184.55-.369.552-.184.734-.184.736-.184.552-.184.734-.184.736v3.491l.184.735.184.736 27.93-6.248z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m293.044 280.095-.184-2.021-.184-2.206-.184-2.02-.184-2.022-.368-2.205-.184-2.021-.368-2.205-.368-2.021-.552-2.205-.368-2.022-.368-1.654-27.93 6.248.184 1.286.368 1.838.368 1.654.368 1.655.184 1.837.368 1.655.184 1.654.184 1.654.184 1.655.184 1.654v1.654z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m293.596 288.18-28.666 1.837-.55-8.085 28.665-1.837z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M264.93 290.017v.735l.185.736.183.552.185.734.184.736.184.734.184.55.368.737.368.552.368.55.368.552.368.552.368.552.552.552.55.552.368.368.55.552.55.368.553.369.734.368.55.368.552.368.736.184.55.184.735.368.736.184h.55l.734.184h.734l.736.184h1.471l.734-.184h.736l.734-.184.736-.184.55-.184.735-.184.55-.368.736-.368.552-.184.55-.368.735-.368.55-.552.552-.368.368-.366.55-.552.552-.553.368-.552.368-.552.368-.552.368-.552.368-.552.368-.734.184-.552.368-.736.184-.552.184-.734.184-.736v-.735l.184-.736v-2.022l-28.665 1.838zm31.055 55.861v-1.47l-.184-.735-.185-.552-.184-.736-.184-.734-.184-.552-.368-.736-.184-.552-.368-.734-.368-.553-.368-.552-.368-.55-.55-.552-.368-.552-.55-.366-.55-.552-.553-.368-.55-.369-.552-.368-.55-.368-.55-.368-.736-.368-.55-.184-.735-.184-.736-.368-.55-.184h-.734l-.736-.184h-3.675l-.734.184-.737.184-.55.184-.734.183-.736.184-.552.369-.734.183-.55.369-.55.368-.553.368-.55.368-.552.552-.552.368-.368.552-.552.55-.368.553-.55.55-.369.552-.368.552-.184.552-.368.736-.184.552-.368.734-.184.737-.184.552-.184.734v.736l-.184.734v1.47l28.665-.918z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m296.72 374.91-.185-5.329v-6.43l-.184-6.8-.184-6.798-.184-3.675-28.665.918.184 3.491.184 6.615v6.8l.184 6.43v5.146zm-28.85.368.185.735v1.47l.184.734.184.55.184.736.368.735.184.552.368.736.184.552.368.55.368.552.552.552.368.552.368.552.55.552.552.368.55.55.552.369.55.368.55.366.551.368.734.369.55.183.737.184.55.369.734.184h.736l.734.183h.736l.735.184h1.47l.734-.184h.55l.736-.183.735-.184.736-.184.55-.184.734-.366.55-.184.737-.368.55-.368.55-.369.552-.368.55-.552.55-.368.369-.55.55-.552.368-.552.55-.553.368-.552.368-.55.368-.552.184-.552.368-.734.184-.736.184-.552.184-.735.184-.736.184-.734v-1.286l.184-.734-28.849.368zm29.217 56.962v-1.469l-.184-.735v-.552l-.184-.736-.184-.734-.368-.552-.184-.736-.368-.552-.184-.734-.368-.55-.368-.553-.55-.552-.368-.55-.369-.552-.552-.552-.552-.368-.552-.552-.55-.368-.55-.368-.55-.368-.552-.366-.735-.368-.55-.184-.736-.366-.55-.184-.734-.184-.736-.184h-.735l-.55-.184h-2.941l-.736.184-.734.184h-.734l-.736.368-.55.184-.735.184-.55.368-.736.368-.55.368-.55.367-.55.368-.553.368-.55.552-.368.368-.55.552-.368.552-.55.552-.368.55-.368.552-.368.552-.184.735-.368.552-.184.734-.368.552-.185.734v.736l-.183.735-.185.736v1.47l28.666-.368z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m297.822 460.539-.184-3.675-.184-3.859v-4.042l-.184-4.227v-4.226l-.184-4.594v-3.675l-28.665.368v3.675l.184 4.594v4.594l.184 4.41v4.226l.184 4.043.184 3.49z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M269.156 461.64v.737l.184.734.184.736v.734l.184.737.368.552.185.734.368.552.184.736.368.552.368.552.368.552.55.55.368.552.55.552.368.552.55.369.55.367.55.553.553.368.734.184.552.366.55.368.736.184.55.183.735.368h.734l.736.184.735.184h2.758l.734-.184h.736l.734-.184.737-.184.552-.184.734-.368.734-.184.552-.368.55-.368.552-.368.552-.368.55-.368.55-.552.551-.368.552-.552.368-.552.368-.552.552-.552.368-.55.368-.552.184-.735.368-.552.184-.734.368-.552.184-.734.184-.736v-.55l.184-.735v-2.206l-28.665 1.102zm39.691 41.161-.55-.368-.736-.368-.55-.368-.735-.368-.55-.368-.736-.184-.55-.184-.734-.184-.737-.184-.55-.183h-.734l-.736-.184h-2.021l-.734.184h-.734l-.552.183-.734.184-.55.184-.735.184-.736.368-.552.184-.55.368-.736.368-.552.368-.55.552-.55.368-.55.55-.553.368-.368.552-.55.55-.368.734-.368.553-.368.552-.368.736-.368.552-.184.734-.184.736-.184.552-.184.734-.184.736-.184.552v2.757l.184.736v.734l.184.736.184.552.184.735.184.55.368.736.184.552.368.734.368.552.368.552.368.552.55.552.368.552.552.552.55.367.55.552 17.64-22.785z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m313.073 513.092 11.944-7.718-1.102.184h-4.226l-.918-.184h-1.836l-.736-.184-.735-.184h-.736l-.734-.184-.736-.184-.552-.183-.55-.184-.55-.184h-.55l-.369-.184-.55-.368-.368-.184-.368-.184-.368-.183-.368-.184-.368-.184.55.184-17.64 22.784.55.369 1.102.736 1.287.918 1.286.736 1.286.734 1.47.552 1.287.552 1.47.553 1.286.552 1.47.552 1.47.367 1.471.369 1.287.368 1.47.184 1.654.368 1.47.184 1.47.183 1.471.184h1.654l1.47.184h6.434l1.47-.184 12.128-7.717z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M326.487 534.04h.736l.734-.185h.736l.735-.184.734-.183.552-.369.734-.184.55-.368.736-.184.55-.368.55-.368.551-.366.55-.552.552-.366.552-.552.368-.552.55-.369.369-.552.368-.552.368-.736.368-.552.368-.552.184-.734.368-.552.184-.736.184-.55.184-.735.184-.736v-4.409l-.184-.736-.184-.552-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.368-.552-.368-.736-.368-.552-.552-.552-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.55-.369-.55-.368-.736-.368-.55-.184-.553-.368-.734-.184-.736-.184-.552-.184-.734-.183-.736-.184h-.734l-.737-.184h-1.47l1.47 28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m313.808 511.805-.368.552-.368.734 25.542 13.23.55-1.286.368-.552z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m339.533 524.484.185-.734.368-.552.184-.736.184-.735.184-.736.184-.55v-.734l.184-.736v-2.021l-.184-.736v-.734l-.184-.552-.184-.736-.184-.734-.368-.55-.184-.737-.369-.55-.183-.552-.369-.552-.368-.734-.55-.552-.368-.552-.55-.368-.368-.55-.55-.552-.55-.367-.553-.368-.736-.55-.55-.368-.734-.368-.55-.184-.736-.368-.735-.184-.55-.184-.736-.184-.734-.184h-.734l-.736-.184h-1.285l-.736.184h-.734l-.552.184h-.736l-.735.184-.552.184-.736.367-.55.184-.734.368-.55.368-.55.184-.553.552-.55.368-.55.368-.552.552-.55.368-.368.55-.55.553-.369.552-.368.734-.368.552-.368.734 25.725 12.679zM323.73 461.09v2.206l.185.734v.736l.184.552.184.735.184.734.184.552.368.734.184.552.368.552.368.736.368.552.368.552.55.553.368.55.552.368.55.55.369.368.55.368.736.552.55.369.552.184.734.368.552.368.735.184.552.184.734.184.736.184h.734l.736.184h2.941l.734-.184.55-.184.735-.184.736-.184.55-.184.734-.368.552-.184.736-.368.55-.369.55-.368.551-.368.55-.552.552-.369.368-.552.55-.367.369-.552.368-.55.55-.553.368-.734.184-.552.368-.552.368-.734.184-.736.184-.552.184-.735.184-.734.184-.736v-.734l-28.665-2.206z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M325.201 433.16v3.858l-.184 3.86-.184 3.674-.184 3.675-.184 3.675-.368 3.676-.184 3.49-.184 2.022 28.665 2.205.184-2.205.184-3.675.366-3.859.184-3.859.184-3.858.184-3.86.184-3.858v-4.042zm28.665.919v-2.207l-.184-.734v-.736l-.184-.734-.368-.552-.184-.736-.184-.552-.368-.735-.368-.552-.368-.552-.368-.552-.368-.736-.368-.368-.552-.552-.366-.552-.552-.366-.55-.552-.553-.369-.552-.367-.55-.369-.734-.366-.552-.368-.55-.184-.737-.367-.734-.184-.55-.184-.736-.184h-.734l-.736-.184h-2.205l-.734.184h-.736l-.734.184-.55.184-.737.184-.734.184-.55.368-.736.184-.55.368-.553.368-.55.366-.552.368-.55.55-.55.368-.55.552-.369.552-.55.369-.368.552-.368.552-.368.734-.368.552-.368.552-.184.734-.184.55-.368.737-.184.734v.734l-.184.736v.734l-.184.736 28.665.919zm-27.379-58.249v1.47l.184.734v.734l.184.736.184.735.184.552.368.736.184.552.368.734.368.552.368.552.368.552.368.552.368.552.55.552.55.552.369.368.55.552.55.366.55.368.736.368.55.369.553.184.734.367.736.184.552.184.734.184.736.184h.735l.736.184h2.204l.734-.184h.553l.736-.184.734-.184.736-.184.552-.368.734-.184.55-.368.552-.368.737-.366.552-.369.55-.368.55-.368.368-.552.55-.368.55-.552.369-.552.368-.552.368-.552.368-.734.368-.55.368-.553.184-.736.184-.55.184-.734.184-.734.184-.736.184-.735v-1.47l-28.665-.55zm.735-28.85v.184l-.184 9.004-.368 9.004-.184 9.003v1.654l28.665.553v-1.47l.368-9.005.184-8.82.368-9.004zm28.849 1.103v-.919l-.184-.552v-.736l-.184-.734v-.736l-.184-.734-.184-.552-.368-.736-.184-.735-.368-.552-.184-.552-.368-.736-.368-.552-.55-.55-.368-.552-.368-.368-.552-.553-.55-.552-.553-.367-.552-.369-.55-.552-.55-.184-.55-.366-.735-.368-.55-.368-.736-.184-.55-.184-.734-.184-.737-.183-.734-.184h-3.675l-.736.184-.55.183-.734.184-.736.184-.55.184-.735.184-.552.366-.736.368-.552.368-.552.369-.55.368-.55.368-.552.552-.368.368-.552.552-.368.552-.55.552-.369.55-.368.552-.368.735-.184.552-.368.734-.184.552-.184.734-.184.736-.184.552-.184.735v.736l-.184.734 28.849 1.102zm-24.991-59.168-.183.734v.736l.184.735v1.288l.184.734.184.734.184.736.184.552.368.735.184.552.368.552.368.734.368.552.368.552.368.552.55.552.368.368.55.552.55.368.551.55.552.369.552.366.55.368.735.368.55.184.736.368.55.184.734.184.736.184h.735l.734.184h2.94l.737-.184h.552l.734-.184.736-.184.55-.184.734-.368.55-.184.737-.368.552-.368.55-.366.55-.369.55-.367.55-.55.553-.369.368-.55.55-.552.368-.552.368-.552.368-.552.368-.735.368-.552.184-.552.368-.734.184-.734.184-.552.184-.734.184-.735v-.736l-28.482-2.756zm3.676-29.216-.55 4.042-.735 4.594-.55 4.594-.55 4.594-.552 4.777-.55 4.594-.185 2.021 28.482 2.756.184-1.837.55-4.41.552-4.41.552-4.41.55-4.41.55-4.227.553-4.042z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m363.054 263.925.184-.735v-2.938l-.184-.736v-.552l-.184-.735-.184-.734-.368-.552-.184-.734-.184-.552-.368-.736-.369-.552-.368-.552-.368-.55-.368-.553-.552-.552-.55-.552-.368-.368-.552-.552-.552-.368-.55-.368-.55-.368-.737-.369-.55-.367-.734-.369-.55-.184-.736-.184-.735-.183-.736-.184-.55-.184h-.734l-.734-.184h-1.471l-.736.184h-.734l-.736.184-.55.184-.734.183-.737.184-.552.184-.734.369-.55.367-.552.369-.552.368-.55.368-.55.368-.553.368-.55.552-.55.552-.368.552-.368.552-.55.55-.368.553-.184.552-.368.736-.368.552-.185.734-.183.552-.369.734v.735l-.184.736 28.299 4.226zm-14.517-62.475-.184.734-.184.736-.184.552-.184.734v3.493l.184.734.184.734v.734l.368.552.184.737.184.552.368.734.368.552.184.552.55.552.368.552.368.55.55.552.369.552.552.369.55.552.55.367.552.369.55.368.735.368.55.368.736.184.734.366.734.184.736.184.553.184h.734l.736.184h2.204l.55-.184h.737l.734-.184.55-.184.736-.184.734-.184.55-.368.553-.184.736-.368.552-.368.55-.368.55-.368.55-.552.55-.368.553-.552.368-.368.55-.552.368-.552.368-.735.368-.55.368-.552.368-.736.184-.734.368-.552zm11.393-28.115-.736 1.655-.918 1.838-.919 2.02-.918 2.022-.918 2.021-.918 2.021-.735 2.022-.918 2.205-.734 2.021-.736 2.021-.918 2.022-.735 2.204-.736 2.022-.552 2.021 27.196 9.188.55-1.838.734-1.837.55-1.838.737-1.838.734-1.837.734-1.838.552-1.837.734-1.654.919-1.837.734-1.838.736-1.654.734-1.838.919-1.654.734-1.655z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m385.839 185.647.368-.736.184-.55.184-.735.184-.734.184-.736.184-.552v-.734l.184-.737v-1.47l-.184-.552v-.734l-.184-.736-.184-.734-.184-.552-.184-.737-.184-.552-.368-.734-.184-.552-.368-.552-.368-.552-.368-.736-.368-.552-.55-.368-.55-.552-.369-.552-.55-.367-.552-.552-.55-.366-.735-.368-.552-.368-.734-.368-.552-.368-.736-.184-.734-.184-.735-.184-.55-.184-.736-.183h-.734l-.736-.184h-1.286l-.736.184h-.735l-.736.183-.55.184-.734.184-.552.184-.736.184-.55.368-.735.184-.552.367-.55.367-.55.367-.55.369-.553.552-.55.367-.55.553-.368.552-.55.552-.368.55-.368.734-.368.552-.368.734 25.908 12.312zm11.025-62.659-.552.368-.55.552-.368.552-.552.552-.368.734-.368.552-.368.552-.184.735-.368.552-.185.734-.184.552-.184.734-.184.734-.184.552v3.491l.184.734v.735l.184.552.184.734.184.552.369.736.184.734.368.552.368.552.368.735.55.552.368.552.55.552.55.552.368.368.55.552.737.368.55.552.552.184.552.368.734.366.55.184.737.368.734.184.55.184h.736l.734.184h.552l.736.184h1.471l.552-.184h.734l.736-.184.552-.184.734-.184.736-.184.552-.184.735-.367.55-.369.552-.366.736-.368.55-.368.55-.552.55-.368-19.477-20.948z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m422.405 104.245-1.654.918-2.021 1.102-1.838 1.287-2.021 1.286-1.838 1.102-1.837 1.287-1.838 1.47-1.837 1.286-1.654 1.286-1.838 1.47-1.654 1.287-1.654 1.47-1.655 1.47-1.654 1.471-.55.552 19.477 20.947.184-.366 1.47-1.102 1.287-1.102 1.286-1.103 1.47-1.102 1.287-1.102 1.47-1.102 1.47-1.103 1.47-1.102 1.471-.918 1.47-1.103 1.47-.918 1.655-.918 1.47-.918 1.838-1.103zm14.701 24.622.552-.367.552-.369.55-.552.55-.367.55-.552.552-.552.368-.369.552-.734.368-.552.368-.552.368-.552.184-.552.368-.734.184-.552.184-.735.184-.734.184-.552.184-.734v-.734l.183-.553v-2.202l-.183-.552v-.735l-.184-.734-.184-.734-.184-.55-.368-.735-.184-.734-.368-.552-.368-.734-.368-.552-.368-.552-.552-.552-.368-.552-.552-.552-.55-.552-.55-.369-.55-.552-.552-.368-.55-.368-.553-.368-.734-.368-.55-.184-.736-.184-.552-.368-.735-.184h-.55l-.736-.184-.734-.184h-2.755l-.736.184h-.55l-.734.184-.736.184-.55.184-.735.183-.736.368-.55.368-.734.368 14.7 24.623zM481.757 84.4l-.736.184-.734.184-.736.183-.55.184-.735.369-.552.183-.736.368-.552.369-.55.367-.55.369-.552.552-.55.368-.553.552-.367.368-.552.552-.368.552-.369.552-.367.552-.369.735-.368.552-.184.552-.368.734-.184.734-.184.55-.184.735-.184.734v1.286l-.183.734.183.735v1.468l.184.734.184.735.184.734.184.734.368.552.184.734.368.552.369.553.367.734.369.552.552.552.368.368.552.552.368.552.55.369.553.368.55.552.55.368.736.184.55.368.553.368.734.184.736.184.55.184.734.184.736.184h.735l.55.183h1.47l.736-.183h.734l-4.226-28.482z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M512.26 82.195h-3.49l-2.94.184h-2.94l-2.94.183-2.757.184-2.756.184-2.757.368-2.756.184-2.756.368-2.756.368-1.655.184 4.226 28.481 1.287-.184 2.388-.368 2.39-.183 2.388-.369 2.389-.184 2.389-.183 2.572-.184 2.572-.184h2.39l2.755-.184h3.123z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M512.627 110.86h.736l.734-.184h.735l.736-.184.734-.184.55-.184.736-.184.735-.367.55-.184.55-.369.736-.368.55-.368.55-.368.553-.552.367-.368.552-.552.55-.368.368-.552.369-.552.552-.552.184-.734.367-.55.369-.553.367-.734.184-.552.184-.734.184-.734.184-.552v-.735l.184-.734v-2.937l-.184-.734-.184-.734-.184-.735-.184-.552-.184-.734-.183-.552-.369-.734-.367-.552-.369-.552-.368-.735-.368-.552-.368-.552-.55-.367-.368-.552-.552-.553-.55-.368-.552-.368-.55-.368-.55-.368-.735-.368-.55-.368-.55-.184-.737-.368-.734-.184-.552-.184-.736-.184h-.734l-.736-.184h-1.471l.369 28.665zm57.514-27.747h-1.472l-.736.184-.736.184h-.736l-.55.184-.736.184-.737.368-.55.184-.55.368-.736.368-.55.368-.556.368-.55.369-.55.367-.55.552-.37.552-.55.368-.365.552-.37.552-.55.735-.364.552-.186.552-.37.734-.182.552-.37.734-.186.552-.182.734-.186.735v1.468l-.186.734v.735l.186.734v.734l.186.734v.552l.182.735.37.734.186.55.182.736.37.55.364.552.37.735.364.552.37.552.55.552.364.368.556.552.55.552.55.367.55.369.55.368.557.368.55.368.736.368.55.184.736.184.55.367h.736l.736.184.737.184h1.472l.55-28.665zm28.666.552-.55 28.665-28.666-.552.55-28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M598.257 112.33h2.202l.737-.184.736-.184.556-.184.736-.184.73-.183.556-.368.55-.184.736-.368.55-.369.55-.367.551-.552.556-.369.55-.368.365-.552.555-.552.364-.552.365-.552.37-.552.364-.552.37-.735.364-.55.186-.552.37-.734.182-.734.186-.735v-.552l.186-.734v-.734l.186-.734v-.735l-.186-.734v-.734l-.186-.734-.186-.735v-.734l-.364-.552-.186-.734-.186-.552-.364-.734-.37-.552-.364-.552-.37-.553-.365-.552-.55-.552-.37-.552-.55-.552-.55-.367-.55-.369-.55-.552-.556-.368-.55-.368-.55-.184-.737-.368-.55-.368-.736-.184-.736-.184-.55-.183-.736-.184h-.737l-.736-.184h-.736l-.55 28.665zm57.878-27.563h-1.467l-.736.184h-.736l-.556.184-.73.184-.737.184-.555.368-.736.184-.55.368-.55.368-.737.368-.55.368-.55.368-.556.368-.364.552-.55.552-.55.369-.37.552-.365.552-.37.734-.364.552-.37.552-.364.734-.186.552-.186.734-.182.553-.186.734-.186.734-.186.734v3.671l.186.735.186.552.186.734.182.736.186.55.364.735.186.552.37.552.364.734.37.552.55.552.364.552.37.368.55.552.55.552.55.368.556.368.55.368.55.368.737.368.55.368.55.184.737.184.736.184.736.184.55.183.736.184h1.472l.55-28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m684.8 85.318-.55 28.666-28.666-.552.55-28.665zm-.55 28.666h2.209l.736-.184.736-.184.736-.184.55-.184.736-.184.55-.368.737-.184.55-.368.55-.368.556-.368.55-.552.55-.368.55-.368.55-.552.37-.552.55-.552.37-.553.365-.552.37-.552.364-.734.186-.552.364-.552.186-.734.186-.734.182-.735.186-.55v-.734l.186-.734v-2.203l-.186-.734v-.735l-.186-.734-.182-.734-.186-.552-.364-.734-.186-.552-.37-.735-.364-.552-.37-.552-.365-.552-.37-.552-.364-.552-.55-.552-.55-.552-.37-.368-.55-.368-.55-.552-.556-.368-.736-.369-.55-.183-.55-.369-.737-.368-.736-.184-.55-.184-.736-.184-.736-.184h-.736l-.736-.183h-.737l-.55 28.665zm58.068-27.563h-1.472l-.736.184h-.736l-.736.184-.736.184-.55.184-.736.367-.55.184-.737.369-.555.368-.55.368-.55.368-.55.368-.551.368-.556.552-.55.552-.365.368-.55.552-.37.552-.364.735-.37.552-.364.552-.186.734-.37.552-.182.734-.186.552-.186.734-.186.735v.734l-.183.734v2.203l.183.734v.736l.186.55.186.735.186.734.364.552.186.734.364.552.37.552.364.735.37.552.364.552.37.552.55.368.365.552.555.55.55.369.551.367.55.369.736.367.55.369.556.367.736.184.55.184.737.184.736.184.736.184.736.184h1.466l.556-28.665zm28.662.551-.55 28.665-28.667-.552.556-28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "M770.43 115.637h2.207l.55-.183.737-.184.736-.184.736-.184.55-.184.736-.368.55-.184.556-.367.736-.369.55-.367.55-.552.55-.369.37-.368.55-.552.366-.55.555-.552.365-.552.37-.552.364-.552.364-.734.37-.552.186-.552.182-.735.186-.734.186-.734.186-.552.182-.734v-3.672l-.182-.734-.186-.734-.186-.734-.186-.552-.182-.735-.37-.552-.186-.734-.364-.552-.364-.55-.37-.552-.55-.552-.37-.552-.55-.552-.365-.552-.555-.368-.55-.368-.55-.553-.551-.367-.55-.369-.736-.183-.556-.369-.73-.368-.556-.183-.736-.184-.736-.184-.55-.184h-.737l-.736-.184h-.736l-.55 28.665zm57.882-27.562h-1.472l-.736.184h-.736l-.737.183-.55.184-.736.184-.736.184-.55.368-.55.369-.736.184-.55.368-.556.552-.55.368-.55.368-.551.552-.37.368-.55.552-.365.552-.37.552-.55.55-.364.552-.186.734-.37.552-.182.735-.37.552-.186.734-.182.734-.186.734v1.287l-.186.734v.734l.186.736v.735l.186.734v.734l.182.734.37.552.186.735.182.552.37.734.364.552.37.552.364.552.37.552.55.55.364.552.556.552.55.368.55.552.55.368.551.368.556.369.55.367.736.184.55.368.736.184.55.184.737.184.736.183h.736l.736.184h.736l.55-28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
             d: "m857.163 88.81-5.697-.184-5.882-.184-6.063-.184-5.882-.184h-5.327l-.55 28.666 5.327.183h5.882l5.877.184 5.698.184 5.697.184z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "path",
           {
             stroke: "none",
@@ -28229,13 +28398,13 @@
   var Overlay_default = SvgOverlay;
 
   // build/lib-react-tsx/ir/Search.tsx
-  var React54 = __toESM(require_react(), 1);
-  var import_jsx_runtime54 = __toESM(require_jsx_runtime(), 1);
+  var React57 = __toESM(require_react(), 1);
+  var import_jsx_runtime57 = __toESM(require_jsx_runtime(), 1);
   var SvgSearch2 = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -28248,8 +28417,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
           "g",
           {
             fill: "none",
@@ -28257,35 +28426,35 @@
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
                 "path",
                 {
                   strokeWidth: 46.91,
                   d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
                 "path",
                 {
                   strokeWidth: 46.908,
                   d: "m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054"
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
                 "path",
                 {
                   strokeWidth: 46.908,
                   d: "M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
                 "path",
                 {
                   strokeWidth: 21.586,
                   d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
                 "path",
                 {
                   strokeWidth: 30,
@@ -28301,13 +28470,13 @@
   var Search_default2 = SvgSearch2;
 
   // build/lib-react-tsx/isotherm/Assignment.tsx
-  var React55 = __toESM(require_react(), 1);
-  var import_jsx_runtime55 = __toESM(require_jsx_runtime(), 1);
+  var React58 = __toESM(require_react(), 1);
+  var import_jsx_runtime58 = __toESM(require_jsx_runtime(), 1);
   var SvgAssignment4 = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -28319,15 +28488,15 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
           "path",
           {
             stroke: "none",
             d: "M111.035 811.032c0 12.99 8.7 23.41 19.543 23.41 10.725 0 19.421-10.42 19.421-23.408zm0 0V162.018H150v649.018zM150 162.016c0-12.848-8.696-23.266-19.421-23.266-10.844 0-19.545 10.418-19.545 23.266z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
           "path",
           {
             fill: "none",
@@ -28337,14 +28506,14 @@
             d: "m130.575 131.361 49.93 65.898m-99.856 0 49.929-65.898"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
           "path",
           {
             stroke: "none",
             d: "M150.002 811.032c-14.71 0-26.508 8.701-26.508 19.426 0 10.841 11.798 19.543 26.505 19.543zm0 0h734.904V850H150zM884.906 850c14.546 0 26.344-8.702 26.344-19.545 0-10.723-11.798-19.422-26.344-19.422z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
           "path",
           {
             fill: "none",
@@ -28354,7 +28523,7 @@
             d: "m918.636 830.458-65.895 50.045m0-99.974 65.895 49.927"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
           "path",
           {
             fill: "none",
@@ -28362,7 +28531,7 @@
             d: "M219.63 767.864c76.235-2.828 156.833-70.087 163.185-205.926s-23.838-275.492 76.879-289.503c104.441-16.444 364.288-20.985 382.09-23.471"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
           "path",
           {
             stroke: "none",
@@ -28382,13 +28551,13 @@
   var Assignment_default4 = SvgAssignment4;
 
   // build/lib-react-tsx/iv/Assignment.tsx
-  var React56 = __toESM(require_react(), 1);
-  var import_jsx_runtime56 = __toESM(require_jsx_runtime(), 1);
+  var React59 = __toESM(require_react(), 1);
+  var import_jsx_runtime59 = __toESM(require_jsx_runtime(), 1);
   var SvgAssignment5 = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -28400,13 +28569,13 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { d: "M250 710.809a19.66 19.66 0 0 0-19.662 19.662A19.66 19.66 0 0 0 250 750.133h683.604a19.66 19.66 0 0 0 19.66-19.662 19.66 19.66 0 0 0-19.66-19.662z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { d: "M947.408 710.81a19.66 19.66 0 0 0-11.734 4.004l-51.27 38.956a19.66 19.66 0 0 0-3.761 27.55 19.66 19.66 0 0 0 27.55 3.76l51.27-38.955a19.66 19.66 0 0 0 3.76-27.549 19.66 19.66 0 0 0-15.815-7.765z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { d: "M896.352 672.04a19.66 19.66 0 0 0-15.737 7.802 19.66 19.66 0 0 0 3.824 27.54l51.27 38.77a19.66 19.66 0 0 0 27.541-3.822 19.66 19.66 0 0 0-3.822-27.54l-51.272-38.772a19.66 19.66 0 0 0-11.804-3.979zM199.373 261.646h-37.218l-9.657-28.219h-51.75l-9.656 28.22H54.811l51.562-139.595h41.438zm-55.593-53.812-17.157-50.063-17.156 50.063zm720.299 608.504-50.907 139.594H772.86l-50.906-139.594h37.78l33.75 98.063 33.75-98.063zM230.34 733.603A19.66 19.66 0 0 0 250 753.265a19.66 19.66 0 0 0 19.662-19.662V50a19.66 19.66 0 0 0-19.663-19.66A19.66 19.66 0 0 0 230.34 50z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { d: "M230.34 36.195a19.66 19.66 0 0 0 4.005 11.734L273.3 99.2a19.66 19.66 0 0 0 27.55 3.761 19.66 19.66 0 0 0 3.76-27.55l-38.954-51.27a19.66 19.66 0 0 0-27.551-3.76 19.66 19.66 0 0 0-7.766 15.815z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { d: "M191.568 87.252a19.66 19.66 0 0 0 7.803 15.736 19.66 19.66 0 0 0 27.54-3.824l38.772-51.27a19.66 19.66 0 0 0-3.824-27.54 19.66 19.66 0 0 0-27.541 3.821l-38.77 51.272a19.66 19.66 0 0 0-3.98 11.805z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { d: "M250 710.809a19.66 19.66 0 0 0-19.662 19.662A19.66 19.66 0 0 0 250 750.133h683.604a19.66 19.66 0 0 0 19.66-19.662 19.66 19.66 0 0 0-19.66-19.662z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { d: "M947.408 710.81a19.66 19.66 0 0 0-11.734 4.004l-51.27 38.956a19.66 19.66 0 0 0-3.761 27.55 19.66 19.66 0 0 0 27.55 3.76l51.27-38.955a19.66 19.66 0 0 0 3.76-27.549 19.66 19.66 0 0 0-15.815-7.765z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { d: "M896.352 672.04a19.66 19.66 0 0 0-15.737 7.802 19.66 19.66 0 0 0 3.824 27.54l51.27 38.77a19.66 19.66 0 0 0 27.541-3.822 19.66 19.66 0 0 0-3.822-27.54l-51.272-38.772a19.66 19.66 0 0 0-11.804-3.979zM199.373 261.646h-37.218l-9.657-28.219h-51.75l-9.656 28.22H54.811l51.562-139.595h41.438zm-55.593-53.812-17.157-50.063-17.156 50.063zm720.299 608.504-50.907 139.594H772.86l-50.906-139.594h37.78l33.75 98.063 33.75-98.063zM230.34 733.603A19.66 19.66 0 0 0 250 753.265a19.66 19.66 0 0 0 19.662-19.662V50a19.66 19.66 0 0 0-19.663-19.66A19.66 19.66 0 0 0 230.34 50z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { d: "M230.34 36.195a19.66 19.66 0 0 0 4.005 11.734L273.3 99.2a19.66 19.66 0 0 0 27.55 3.761 19.66 19.66 0 0 0 3.76-27.55l-38.954-51.27a19.66 19.66 0 0 0-27.551-3.76 19.66 19.66 0 0 0-7.766 15.815z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { d: "M191.568 87.252a19.66 19.66 0 0 0 7.803 15.736 19.66 19.66 0 0 0 27.54-3.824l38.772-51.27a19.66 19.66 0 0 0-3.824-27.54 19.66 19.66 0 0 0-27.541 3.821l-38.77 51.272a19.66 19.66 0 0 0-3.98 11.805z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
           "path",
           {
             fill: "none",
@@ -28421,13 +28590,13 @@
   var Assignment_default5 = SvgAssignment5;
 
   // build/lib-react-tsx/logo/Nmrium.tsx
-  var React57 = __toESM(require_react(), 1);
-  var import_jsx_runtime57 = __toESM(require_jsx_runtime(), 1);
+  var React60 = __toESM(require_react(), 1);
+  var import_jsx_runtime60 = __toESM(require_jsx_runtime(), 1);
   var SvgNmrium = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -28438,8 +28607,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
           "path",
           {
             fill: "#ea580c",
@@ -28453,13 +28622,13 @@
   var Nmrium_default = SvgNmrium;
 
   // build/lib-react-tsx/logo/Wikipedia.tsx
-  var React58 = __toESM(require_react(), 1);
-  var import_jsx_runtime58 = __toESM(require_jsx_runtime(), 1);
+  var React61 = __toESM(require_react(), 1);
+  var import_jsx_runtime61 = __toESM(require_jsx_runtime(), 1);
   var SvgWikipedia = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -28472,21 +28641,21 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { d: "M959.383 225.814c0 3.326-1.054 6.327-3.082 9.085-2.109 2.677-4.299 4.055-6.813 4.055-20.197 1.947-36.825 8.436-49.64 19.548-12.897 11.031-26.118 32.201-39.826 63.348L650.756 793.43c-1.38 4.38-5.192 6.57-11.518 6.57-4.948 0-8.76-2.19-11.518-6.57L510.352 547.988 375.383 793.43c-2.757 4.38-6.57 6.57-11.517 6.57q-9.004 0-11.924-6.57L146.326 321.85q-19.224-43.922-40.637-61.32c-14.195-11.599-34.067-18.818-59.455-21.576-2.19 0-4.298-1.135-6.164-3.487-1.947-2.271-2.92-4.948-2.92-7.95 0-7.705 2.19-11.517 6.57-11.517 18.331 0 37.473.811 57.508 2.433 18.574 1.704 36.094 2.515 52.479 2.515 16.709 0 36.419-.811 59.13-2.515 23.765-1.622 44.854-2.433 63.185-2.433 4.38 0 6.57 3.812 6.57 11.518 0 7.624-1.379 11.436-4.055 11.436-18.331 1.38-32.77 6.084-43.314 13.952-10.544 7.948-15.816 18.33-15.816 31.227q0 9.855 6.57 24.577l169.927 383.737 96.442-182.176-89.872-188.421c-16.14-33.58-29.443-55.318-39.825-65.051-10.382-9.652-26.118-15.655-47.207-17.845-1.946 0-3.73-1.135-5.515-3.487-1.785-2.271-2.677-4.948-2.677-7.95 0-7.705 1.866-11.517 5.759-11.517 18.331 0 35.121.811 50.451 2.433 14.762 1.704 30.498 2.515 47.207 2.515 16.384 0 33.742-.811 52.073-2.515 18.899-1.622 37.473-2.433 55.804-2.433 4.38 0 6.57 3.812 6.57 11.518 0 7.624-1.297 11.436-4.055 11.436-36.662 2.515-54.993 12.897-54.993 31.228 0 8.192 4.217 20.927 12.734 38.122l59.454 120.694 59.13-110.392c8.193-15.574 12.33-28.714 12.33-39.42 0-25.145-18.332-38.528-54.994-40.232-3.326 0-4.948-3.812-4.948-11.436q0-4.137 2.434-7.787c1.703-2.514 3.325-3.731 4.947-3.731q19.71 0 48.424 2.433c18.33 1.704 33.417 2.515 45.179 2.515 8.435 0 20.926-.73 37.31-2.11 20.765-1.865 38.204-2.838 52.155-2.838 3.245 0 4.867 3.244 4.867 9.814q0 13.14-9.004 13.14c-21.332 2.19-38.527 8.112-51.505 17.683s-29.2 31.309-48.586 65.213l-78.84 145.757 106.743 217.459 157.598-366.46c5.435-13.384 8.193-25.713 8.193-36.906 0-26.848-18.331-41.042-54.994-42.746-3.325 0-4.947-3.812-4.947-11.436 0-7.706 2.433-11.518 7.38-11.518 13.384 0 29.282.811 47.613 2.433 16.952 1.704 31.228 2.515 42.664 2.515 12.086 0 26.037-.811 41.854-2.515 16.465-1.622 31.227-2.433 44.367-2.433 3.813 0 5.76 3.244 5.76 9.814" })
+        title ? /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("path", { d: "M959.383 225.814c0 3.326-1.054 6.327-3.082 9.085-2.109 2.677-4.299 4.055-6.813 4.055-20.197 1.947-36.825 8.436-49.64 19.548-12.897 11.031-26.118 32.201-39.826 63.348L650.756 793.43c-1.38 4.38-5.192 6.57-11.518 6.57-4.948 0-8.76-2.19-11.518-6.57L510.352 547.988 375.383 793.43c-2.757 4.38-6.57 6.57-11.517 6.57q-9.004 0-11.924-6.57L146.326 321.85q-19.224-43.922-40.637-61.32c-14.195-11.599-34.067-18.818-59.455-21.576-2.19 0-4.298-1.135-6.164-3.487-1.947-2.271-2.92-4.948-2.92-7.95 0-7.705 2.19-11.517 6.57-11.517 18.331 0 37.473.811 57.508 2.433 18.574 1.704 36.094 2.515 52.479 2.515 16.709 0 36.419-.811 59.13-2.515 23.765-1.622 44.854-2.433 63.185-2.433 4.38 0 6.57 3.812 6.57 11.518 0 7.624-1.379 11.436-4.055 11.436-18.331 1.38-32.77 6.084-43.314 13.952-10.544 7.948-15.816 18.33-15.816 31.227q0 9.855 6.57 24.577l169.927 383.737 96.442-182.176-89.872-188.421c-16.14-33.58-29.443-55.318-39.825-65.051-10.382-9.652-26.118-15.655-47.207-17.845-1.946 0-3.73-1.135-5.515-3.487-1.785-2.271-2.677-4.948-2.677-7.95 0-7.705 1.866-11.517 5.759-11.517 18.331 0 35.121.811 50.451 2.433 14.762 1.704 30.498 2.515 47.207 2.515 16.384 0 33.742-.811 52.073-2.515 18.899-1.622 37.473-2.433 55.804-2.433 4.38 0 6.57 3.812 6.57 11.518 0 7.624-1.297 11.436-4.055 11.436-36.662 2.515-54.993 12.897-54.993 31.228 0 8.192 4.217 20.927 12.734 38.122l59.454 120.694 59.13-110.392c8.193-15.574 12.33-28.714 12.33-39.42 0-25.145-18.332-38.528-54.994-40.232-3.326 0-4.948-3.812-4.948-11.436q0-4.137 2.434-7.787c1.703-2.514 3.325-3.731 4.947-3.731q19.71 0 48.424 2.433c18.33 1.704 33.417 2.515 45.179 2.515 8.435 0 20.926-.73 37.31-2.11 20.765-1.865 38.204-2.838 52.155-2.838 3.245 0 4.867 3.244 4.867 9.814q0 13.14-9.004 13.14c-21.332 2.19-38.527 8.112-51.505 17.683s-29.2 31.309-48.586 65.213l-78.84 145.757 106.743 217.459 157.598-366.46c5.435-13.384 8.193-25.713 8.193-36.906 0-26.848-18.331-41.042-54.994-42.746-3.325 0-4.947-3.812-4.947-11.436 0-7.706 2.433-11.518 7.38-11.518 13.384 0 29.282.811 47.613 2.433 16.952 1.704 31.228 2.515 42.664 2.515 12.086 0 26.037-.811 41.854-2.515 16.465-1.622 31.227-2.433 44.367-2.433 3.813 0 5.76 3.244 5.76 9.814" })
       ]
     }
   );
   var Wikipedia_default = SvgWikipedia;
 
   // build/lib-react-tsx/logo/Zakodium.tsx
-  var React59 = __toESM(require_react(), 1);
-  var import_jsx_runtime59 = __toESM(require_jsx_runtime(), 1);
+  var React62 = __toESM(require_react(), 1);
+  var import_jsx_runtime62 = __toESM(require_jsx_runtime(), 1);
   var SvgZakodium = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -28498,10 +28667,10 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("defs", { children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("style", { children: ".cls-1{fill:#2b143e}" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("circle", { cx: 93.23, cy: 398.47, r: 56.95, className: "cls-1" }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("defs", { children: /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("style", { children: ".cls-1{fill:#2b143e}" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("circle", { cx: 93.23, cy: 398.47, r: 56.95, className: "cls-1" }),
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
           "path",
           {
             d: "M528.16 397.39V455H279l-.46.46h-72.77l.47-.46 44.21-57.57 79.21-102.71 36.39-47 44.21-57.11H205.31V133h321.47l-44.67 57.6L402 294.68l-36.38 47-43.3 55.73Z",
@@ -28514,231 +28683,9 @@
   var Zakodium_default = SvgZakodium;
 
   // build/lib-react-tsx/mass/Charge.tsx
-  var React60 = __toESM(require_react(), 1);
-  var import_jsx_runtime60 = __toESM(require_jsx_runtime(), 1);
-  var SvgCharge = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 45.698,
-            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
-          "text",
-          {
-            x: 716,
-            y: 953,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 180,
-            textAnchor: "middle",
-            children: "m/z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeWidth: 30,
-            d: "M200 722V400m230 322V260m290 462V80"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
-          "text",
-          {
-            x: 200,
-            y: 370,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 110,
-            textAnchor: "middle",
-            children: "3+"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
-          "text",
-          {
-            x: 430,
-            y: 230,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 110,
-            textAnchor: "middle",
-            children: "2+"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
-          "text",
-          {
-            x: 720,
-            y: 55,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 110,
-            textAnchor: "middle",
-            children: "+"
-          }
-        )
-      ]
-    }
-  );
-  var Charge_default = SvgCharge;
-
-  // build/lib-react-tsx/mass/ExactMass.tsx
-  var React61 = __toESM(require_react(), 1);
-  var import_jsx_runtime61 = __toESM(require_jsx_runtime(), 1);
-  var SvgExactMass = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 45.698,
-            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
-          "text",
-          {
-            x: 716,
-            y: 953,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 180,
-            textAnchor: "middle",
-            children: "m/z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeWidth: 36,
-            d: "M200 722V380m130 342V100m130 622V225m130 497V440m130 282V610"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("circle", { cx: 200, cy: 380, r: 70, fill: "none", strokeWidth: 16 }),
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("path", { fill: "none", strokeWidth: 16, d: "M100 380h200M200 280v200" })
-      ]
-    }
-  );
-  var ExactMass_default = SvgExactMass;
-
-  // build/lib-react-tsx/mass/FindMf.tsx
-  var React62 = __toESM(require_react(), 1);
-  var import_jsx_runtime62 = __toESM(require_jsx_runtime(), 1);
-  var SvgFindMf = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 46.91,
-            d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 21.586,
-            d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011 0 144.306-117.693 262.009-262.009 262.009"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 46.908,
-            d: "m897.764 890.229-235.87-315.79-82.568 61.672 235.871 315.791m0 0c21.303 26.598 23.303 26.598 53.354 7.72m.001.002 21.485-16.054m0 0c29.463-22.07 29.463-23.07 7.728-53.342"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
-          "text",
-          {
-            x: 419,
-            y: 349,
-            stroke: "none",
-            dominantBaseline: "central",
-            fontFamily: "sans-serif",
-            fontSize: 220,
-            fontWeight: "bold",
-            textAnchor: "middle",
-            children: "MF"
-          }
-        )
-      ]
-    }
-  );
-  var FindMf_default = SvgFindMf;
-
-  // build/lib-react-tsx/mass/Fragmentation.tsx
   var React63 = __toESM(require_react(), 1);
   var import_jsx_runtime63 = __toESM(require_jsx_runtime(), 1);
-  var SvgFragmentation = ({
+  var SvgCharge = ({
     title,
     titleId,
     ...props
@@ -28761,60 +28708,76 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 28,
-            d: "m369 405-164-95-164 95v190l164 95 164-95z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("circle", { cx: 205, cy: 500, r: 95, fill: "none", strokeWidth: 28 }),
-        /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeWidth: 28,
-            d: "m369 405 164-95"
+            strokeWidth: 45.698,
+            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
           "text",
           {
-            x: 540,
-            y: 250,
+            x: 716,
+            y: 953,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 180,
+            textAnchor: "middle",
+            children: "m/z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeWidth: 30,
+            d: "M200 722V400m230 322V260m290 462V80"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+          "text",
+          {
+            x: 200,
+            y: 370,
             stroke: "none",
             fontFamily: "sans-serif",
             fontSize: 110,
-            textAnchor: "end",
-            children: "\u2022+"
+            textAnchor: "middle",
+            children: "3+"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
-          "path",
+          "text",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 16,
-            d: "m561 130 30 180-40 190 40 190-30 170"
+            x: 430,
+            y: 230,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 110,
+            textAnchor: "middle",
+            children: "2+"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
-          "path",
+          "text",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeWidth: 28,
-            d: "m610 405 164-95m0 0 164 95"
+            x: 720,
+            y: 55,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 110,
+            textAnchor: "middle",
+            children: "+"
           }
         )
       ]
     }
   );
-  var Fragmentation_default = SvgFragmentation;
+  var Charge_default = SvgCharge;
 
-  // build/lib-react-tsx/mass/Impurities.tsx
+  // build/lib-react-tsx/mass/ExactMass.tsx
   var React64 = __toESM(require_react(), 1);
   var import_jsx_runtime64 = __toESM(require_jsx_runtime(), 1);
-  var SvgImpurities = ({
+  var SvgExactMass = ({
     title,
     titleId,
     ...props
@@ -28838,47 +28801,41 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeWidth: 45.698,
-            d: "M42.643 722.441h889.73m14.06 0-51.622 39.223m0-78.259 51.622 39.036"
+            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(
-          "path",
+          "text",
           {
+            x: 716,
+            y: 953,
             stroke: "none",
-            d: "M285.195 53.989c0-8.88-7.216-16.096-16.096-16.096-8.696 0-15.912 7.215-15.912 16.096zm0 0v658.279h-32.008V53.989zm-32.008 658.279c0 8.879 7.216 16.096 15.912 16.096 8.88 0 16.096-7.217 16.096-16.096zM674.83 421.24c0-8.88-7.03-16.096-15.909-16.096s-15.91 7.215-15.91 16.096zm0 0v291.028h-31.819V421.24zm-31.819 291.028c0 8.879 7.031 16.096 15.91 16.096s15.91-7.217 15.91-16.096z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M605.225 953.334h-26.807v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.932-5.362-5.097 0-8.525 2.11-3.34 2.11-5.362 6.24-2.021 4.13-2.9 10.195t-.879 13.887v46.23H520.85v-98.261h20.478l3.604 12.568h1.494q2.11-3.78 5.01-6.504 2.988-2.724 6.503-4.482t7.471-2.55q3.955-.878 7.998-.878 10.108 0 17.139 3.516 7.119 3.427 10.898 10.898h2.197q2.11-3.78 5.098-6.504t6.592-4.482q3.603-1.758 7.559-2.55 4.043-.878 8.085-.878 15.82 0 23.819 8.613 8.086 8.526 8.086 27.422v64.072h-26.895v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.931-5.362-9.58 0-13.623 7.647-4.043 7.558-4.043 21.709zm144.492-128.496-47.9 128.496H677.47l47.9-128.496Zm78.134 128.496h-72.246v-15.82l40.166-61.963H758.33v-20.478h67.852v17.402l-38.848 60.38h40.517z",
             fontFamily: "sans-serif",
             fontSize: 180,
-            fontWeight: 400,
-            letterSpacing: 0,
-            style: {
-              lineHeight: "125%"
-            },
-            wordSpacing: 0
+            textAnchor: "middle",
+            children: "m/z"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(
           "path",
           {
-            stroke: "none",
-            d: "M834.83 640c0-2.266-7.03-4.107-15.909-4.107s-15.91 1.841-15.91 4.107zm0 0v74.257h-31.819V640Zm-31.819 74.257c0 2.265 7.031 4.107 15.91 4.107s15.91-1.842 15.91-4.107zM764.83 632c0-2.266-7.03-4.107-15.909-4.107s-15.91 1.841-15.91 4.107zm0 0v74.257h-31.819V632Zm-31.819 74.257c0 2.265 7.031 4.107 15.91 4.107s15.91-1.842 15.91-4.107zM581.82 650c0-2.266-7.032-4.107-15.91-4.107-8.88 0-15.91 1.841-15.91 4.107Zm0 0v74.257H550V650ZM550 724.257c0 2.265 7.03 4.107 15.91 4.107 8.878 0 15.91-1.842 15.91-4.107zM441.82 650c0-2.266-7.031-4.107-15.91-4.107S410 647.734 410 650Zm0 0v74.257H410V650ZM410 724.257c0 2.265 7.03 4.107 15.91 4.107 8.878 0 15.91-1.842 15.91-4.107zM161.82 650c0-2.266-7.031-4.107-15.91-4.107S130 647.734 130 650Zm0 0v74.257H130V650ZM130 724.257c0 2.265 7.03 4.107 15.91 4.107s15.91-1.842 15.91-4.107z"
+            fill: "none",
+            strokeLinecap: "round",
+            strokeWidth: 36,
+            d: "M200 722V380m130 342V100m130 622V225m130 497V440m130 282V610"
           }
-        )
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("circle", { cx: 200, cy: 380, r: 70, fill: "none", strokeWidth: 16 }),
+        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("path", { fill: "none", strokeWidth: 16, d: "M100 380h200M200 280v200" })
       ]
     }
   );
-  var Impurities_default = SvgImpurities;
+  var ExactMass_default = SvgExactMass;
 
-  // build/lib-react-tsx/mass/IsotopeDistribution.tsx
+  // build/lib-react-tsx/mass/FindMf.tsx
   var React65 = __toESM(require_react(), 1);
   var import_jsx_runtime65 = __toESM(require_jsx_runtime(), 1);
-  var SvgIsotopeDistribution = ({
+  var SvgFindMf = ({
     title,
     titleId,
     ...props
@@ -28901,20 +28858,9 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 45.698,
-            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)(
-          "text",
-          {
-            x: 716,
-            y: 953,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 180,
-            textAnchor: "middle",
-            children: "m/z"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 46.91,
+            d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime65.jsx)(
@@ -28922,19 +28868,46 @@
           {
             fill: "none",
             strokeLinecap: "round",
-            strokeWidth: 36,
-            d: "M200 722V380m130 342V100m130 622V225m130 497V440m130 282V610"
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 21.586,
+            d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011 0 144.306-117.693 262.009-262.009 262.009"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 46.908,
+            d: "m897.764 890.229-235.87-315.79-82.568 61.672 235.871 315.791m0 0c21.303 26.598 23.303 26.598 53.354 7.72m.001.002 21.485-16.054m0 0c29.463-22.07 29.463-23.07 7.728-53.342"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)(
+          "text",
+          {
+            x: 419,
+            y: 349,
+            stroke: "none",
+            dominantBaseline: "central",
+            fontFamily: "sans-serif",
+            fontSize: 220,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: "MF"
           }
         )
       ]
     }
   );
-  var IsotopeDistribution_default = SvgIsotopeDistribution;
+  var FindMf_default = SvgFindMf;
 
-  // build/lib-react-tsx/mass/MfInfo.tsx
+  // build/lib-react-tsx/mass/Fragmentation.tsx
   var React66 = __toESM(require_react(), 1);
   var import_jsx_runtime66 = __toESM(require_jsx_runtime(), 1);
-  var SvgMfInfo = ({
+  var SvgFragmentation = ({
     title,
     titleId,
     ...props
@@ -28957,33 +28930,30 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 45.698,
-            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
+            strokeWidth: 28,
+            d: "m369 405-164-95-164 95v190l164 95 164-95z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("circle", { cx: 205, cy: 500, r: 95, fill: "none", strokeWidth: 28 }),
+        /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeWidth: 28,
+            d: "m369 405 164-95"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
           "text",
           {
-            x: 716,
-            y: 953,
+            x: 540,
+            y: 250,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 180,
-            textAnchor: "middle",
-            children: "m/z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
-          "text",
-          {
-            x: 150,
-            y: 300,
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontSize: 200,
-            fontWeight: "bold",
-            textAnchor: "middle",
-            children: "MF"
+            fontSize: 110,
+            textAnchor: "end",
+            children: "\u2022+"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
@@ -28991,29 +28961,29 @@
           {
             fill: "none",
             strokeLinecap: "round",
-            strokeWidth: 30,
-            d: "M150 360a240 240 0 0 0 240 240"
+            strokeLinejoin: "round",
+            strokeWidth: 16,
+            d: "m561 130 30 180-40 190 40 190-30 170"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("path", { stroke: "none", d: "m460 600-80-55v110z" }),
         /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
           "path",
           {
             fill: "none",
             strokeLinecap: "round",
-            strokeWidth: 30,
-            d: "M490 722V430m95 292V270m95 452V340m95 382V500m95 222V610"
+            strokeWidth: 28,
+            d: "m610 405 164-95m0 0 164 95"
           }
         )
       ]
     }
   );
-  var MfInfo_default = SvgMfInfo;
+  var Fragmentation_default = SvgFragmentation;
 
-  // build/lib-react-tsx/mass/Monoisotopic.tsx
+  // build/lib-react-tsx/mass/Impurities.tsx
   var React67 = __toESM(require_react(), 1);
   var import_jsx_runtime67 = __toESM(require_jsx_runtime(), 1);
-  var SvgMonoisotopic = ({
+  var SvgImpurities = ({
     title,
     titleId,
     ...props
@@ -29033,18 +29003,25 @@
         /* @__PURE__ */ (0, import_jsx_runtime67.jsx)(
           "path",
           {
-            fillRule: "evenodd",
-            strokeWidth: 1.176,
-            d: "M49.263 749.728v49.904h762.035v49.905l138.552-71.668-138.552-78.045v49.904z"
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 45.698,
+            d: "M42.643 722.441h889.73m14.06 0-51.622 39.223m0-78.259 51.622 39.036"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("path", { d: "M100 585v30h600v-30z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("path", { d: "M298.738 243.77v350h30v-350zM700 585v30h150v-30z" }),
         /* @__PURE__ */ (0, import_jsx_runtime67.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M115.334 112.207q0 6.68-2.197 12.04-2.11 5.274-5.889 9.317-3.691 3.955-8.79 6.68-5.009 2.637-10.898 4.043v.527q15.557 1.934 23.555 9.492 7.998 7.471 7.998 20.215 0 8.438-3.076 15.645-2.988 7.119-9.316 12.392-6.24 5.274-15.82 8.262-9.493 2.9-22.413 2.9-10.37 0-19.511-1.757-9.141-1.67-17.051-5.186v-23.115q3.955 2.11 8.35 3.691 4.394 1.582 8.788 2.725 4.395 1.054 8.614 1.582 4.306.527 8.086.527 7.558 0 12.568-1.406t7.998-3.955 4.219-6.065q1.318-3.603 1.318-7.822 0-3.955-1.67-7.119-1.582-3.252-5.273-5.45-3.604-2.284-9.492-3.515-5.89-1.23-14.502-1.23h-9.141v-19.073h8.965q8.086 0 13.447-1.406 5.361-1.494 8.526-3.955 3.251-2.549 4.57-5.889 1.318-3.34 1.318-7.119 0-6.855-4.306-10.722-4.22-3.868-13.448-3.868-4.218 0-7.91.88-3.603.79-6.767 2.109-3.077 1.23-5.713 2.812-2.55 1.494-4.659 2.988l-13.71-18.105q3.69-2.725 7.998-5.01 4.394-2.285 9.492-3.955 5.097-1.758 10.986-2.724t12.568-.967q9.493 0 17.227 2.11 7.822 2.02 13.36 5.976 5.536 3.867 8.525 9.58 3.076 5.625 3.076 12.92m104.326 35.508q0 15.556-2.46 27.773-2.374 12.217-7.735 20.742-5.274 8.526-13.711 13.008-8.35 4.482-20.215 4.482-11.162 0-19.424-4.482t-13.71-13.008-8.175-20.742q-2.636-12.217-2.636-27.773 0-15.557 2.373-27.862 2.46-12.305 7.734-20.83t13.623-13.008q8.35-4.57 20.215-4.57 11.074 0 19.336 4.482t13.799 13.008 8.261 20.83 2.725 27.95m-60.996 0q0 21.972 3.78 33.046 3.779 11.075 13.095 11.075 9.14 0 13.096-10.987 4.043-10.986 4.043-33.134 0-22.061-4.043-33.135-3.955-11.162-13.096-11.162-4.658 0-7.91 2.812-3.164 2.813-5.186 8.35t-2.9 13.886q-.879 8.262-.879 19.249m160.136 0q0 15.556-2.46 27.773-2.373 12.217-7.735 20.742-5.273 8.526-13.71 13.008-8.35 4.482-20.215 4.482-11.162 0-19.424-4.482t-13.711-13.008-8.174-20.742q-2.637-12.217-2.637-27.773 0-15.557 2.373-27.862 2.461-12.305 7.735-20.83 5.273-8.525 13.623-13.008 8.35-4.57 20.215-4.57 11.074 0 19.336 4.482t13.798 13.008 8.262 20.83 2.725 27.95m-60.995 0q0 21.972 3.779 33.046 3.78 11.075 13.096 11.075 9.14 0 13.095-10.987 4.043-10.986 4.043-33.134 0-22.061-4.043-33.135-3.955-11.162-13.095-11.162-4.659 0-7.91 2.812-3.165 2.813-5.186 8.35t-2.9 13.886q-.88 8.262-.88 19.249m76.816 51.679q0-4.13 1.143-6.943 1.23-2.9 3.34-4.658t4.921-2.55 6.065-.79q3.076 0 5.8.79 2.813.792 4.922 2.55 2.11 1.757 3.34 4.658 1.23 2.812 1.23 6.943 0 3.955-1.23 6.768t-3.34 4.658-4.921 2.637q-2.725.879-5.801.879-3.252 0-6.065-.88-2.812-.79-4.922-2.636t-3.34-4.658q-1.142-2.813-1.142-6.768m112.852 12.569h-27.159v-79.806q.088-3.251.176-6.679.176-3.515.264-7.031.176-3.516.264-6.416-.44.527-1.495 1.582l-2.373 2.373q-1.318 1.23-2.724 2.549t-2.725 2.373l-14.766 11.865-13.183-16.348 41.396-32.959h22.325zm120.761 0h-86.22v-18.897l30.234-32.607q5.713-6.153 10.371-11.338 4.658-5.186 7.998-10.108t5.186-10.02q1.845-5.097 1.845-10.986 0-6.503-3.955-10.107-3.867-3.603-10.459-3.603-6.943 0-13.36 3.427-6.415 3.428-13.446 9.756l-14.766-17.49q3.955-3.604 8.262-6.856 4.306-3.34 9.492-5.888 5.186-2.55 11.426-4.043 6.24-1.582 13.974-1.582 9.229 0 16.524 2.549 7.383 2.548 12.568 7.295 5.186 4.658 7.91 11.337 2.813 6.68 2.813 15.03 0 7.558-2.637 14.502-2.637 6.855-7.207 13.535-4.57 6.592-10.635 13.183-5.976 6.504-12.832 13.272l-15.469 15.557v1.23h52.383zm94.131-99.756q0 6.68-2.197 12.04-2.11 5.274-5.889 9.317-3.691 3.955-8.789 6.68-5.01 2.637-10.898 4.043v.527q15.556 1.934 23.554 9.492 7.998 7.471 7.998 20.215 0 8.438-3.076 15.645-2.988 7.119-9.316 12.392-6.24 5.274-15.82 8.262-9.493 2.9-22.413 2.9-10.37 0-19.511-1.757-9.14-1.67-17.051-5.186v-23.115q3.955 2.11 8.35 3.691 4.394 1.582 8.789 2.725 4.394 1.054 8.613 1.582 4.307.527 8.086.527 7.558 0 12.568-1.406t7.998-3.955 4.219-6.065q1.318-3.603 1.318-7.822 0-3.955-1.67-7.119-1.582-3.252-5.273-5.45-3.604-2.284-9.492-3.515-5.889-1.23-14.502-1.23h-9.14v-19.073h8.964q8.086 0 13.447-1.406 5.362-1.494 8.526-3.955 3.252-2.549 4.57-5.889t1.318-7.119q0-6.855-4.306-10.722-4.219-3.868-13.447-3.868-4.22 0-7.91.88-3.604.79-6.768 2.109-3.076 1.23-5.713 2.812-2.549 1.494-4.658 2.988l-13.711-18.105q3.691-2.725 7.998-5.01 4.394-2.285 9.492-3.955 5.098-1.758 10.986-2.724t12.569-.967q9.492 0 17.226 2.11 7.822 2.02 13.36 5.976 5.537 3.867 8.525 9.58 3.076 5.625 3.076 12.92m-107.14 841.127h-26.807v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.932-5.362-5.097 0-8.525 2.11-3.34 2.11-5.362 6.24-2.021 4.13-2.9 10.195t-.879 13.887v46.23H470.85v-98.261h20.478l3.604 12.568h1.494q2.11-3.78 5.01-6.504 2.988-2.724 6.503-4.482t7.471-2.55q3.955-.878 7.998-.878 10.108 0 17.139 3.516 7.119 3.427 10.898 10.898h2.197q2.11-3.78 5.098-6.504t6.592-4.482q3.603-1.758 7.559-2.55 4.043-.878 8.085-.878 15.82 0 23.819 8.613 8.086 8.526 8.086 27.422v64.072h-26.895v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.931-5.362-9.58 0-13.624 7.647-4.042 7.558-4.042 21.709zm144.492-128.496-47.9 128.496H627.47l47.9-128.496zm78.134 128.496h-72.246v-15.82l40.166-61.963H708.33v-20.478h67.852v17.402l-38.848 60.38h40.517z",
+            d: "M285.195 53.989c0-8.88-7.216-16.096-16.096-16.096-8.696 0-15.912 7.215-15.912 16.096zm0 0v658.279h-32.008V53.989zm-32.008 658.279c0 8.879 7.216 16.096 15.912 16.096 8.88 0 16.096-7.217 16.096-16.096zM674.83 421.24c0-8.88-7.03-16.096-15.909-16.096s-15.91 7.215-15.91 16.096zm0 0v291.028h-31.819V421.24zm-31.819 291.028c0 8.879 7.031 16.096 15.91 16.096s15.91-7.217 15.91-16.096z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime67.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M605.225 953.334h-26.807v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.932-5.362-5.097 0-8.525 2.11-3.34 2.11-5.362 6.24-2.021 4.13-2.9 10.195t-.879 13.887v46.23H520.85v-98.261h20.478l3.604 12.568h1.494q2.11-3.78 5.01-6.504 2.988-2.724 6.503-4.482t7.471-2.55q3.955-.878 7.998-.878 10.108 0 17.139 3.516 7.119 3.427 10.898 10.898h2.197q2.11-3.78 5.098-6.504t6.592-4.482q3.603-1.758 7.559-2.55 4.043-.878 8.085-.878 15.82 0 23.819 8.613 8.086 8.526 8.086 27.422v64.072h-26.895v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.931-5.362-9.58 0-13.623 7.647-4.043 7.558-4.043 21.709zm144.492-128.496-47.9 128.496H677.47l47.9-128.496Zm78.134 128.496h-72.246v-15.82l40.166-61.963H758.33v-20.478h67.852v17.402l-38.848 60.38h40.517z",
             fontFamily: "sans-serif",
             fontSize: 180,
             fontWeight: 400,
@@ -29055,16 +29032,22 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("path", { d: "M734.84 433.785v177.117h30V433.785z" })
+        /* @__PURE__ */ (0, import_jsx_runtime67.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M834.83 640c0-2.266-7.03-4.107-15.909-4.107s-15.91 1.841-15.91 4.107zm0 0v74.257h-31.819V640Zm-31.819 74.257c0 2.265 7.031 4.107 15.91 4.107s15.91-1.842 15.91-4.107zM764.83 632c0-2.266-7.03-4.107-15.909-4.107s-15.91 1.841-15.91 4.107zm0 0v74.257h-31.819V632Zm-31.819 74.257c0 2.265 7.031 4.107 15.91 4.107s15.91-1.842 15.91-4.107zM581.82 650c0-2.266-7.032-4.107-15.91-4.107-8.88 0-15.91 1.841-15.91 4.107Zm0 0v74.257H550V650ZM550 724.257c0 2.265 7.03 4.107 15.91 4.107 8.878 0 15.91-1.842 15.91-4.107zM441.82 650c0-2.266-7.031-4.107-15.91-4.107S410 647.734 410 650Zm0 0v74.257H410V650ZM410 724.257c0 2.265 7.03 4.107 15.91 4.107 8.878 0 15.91-1.842 15.91-4.107zM161.82 650c0-2.266-7.031-4.107-15.91-4.107S130 647.734 130 650Zm0 0v74.257H130V650ZM130 724.257c0 2.265 7.03 4.107 15.91 4.107s15.91-1.842 15.91-4.107z"
+          }
+        )
       ]
     }
   );
-  var Monoisotopic_default = SvgMonoisotopic;
+  var Impurities_default = SvgImpurities;
 
-  // build/lib-react-tsx/mass/Overlay.tsx
+  // build/lib-react-tsx/mass/IsotopeDistribution.tsx
   var React68 = __toESM(require_react(), 1);
   var import_jsx_runtime68 = __toESM(require_jsx_runtime(), 1);
-  var SvgOverlay2 = ({
+  var SvgIsotopeDistribution = ({
     title,
     titleId,
     ...props
@@ -29084,11 +29067,197 @@
         /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
           "path",
           {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 45.698,
+            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+          "text",
+          {
+            x: 716,
+            y: 953,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 180,
+            textAnchor: "middle",
+            children: "m/z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeWidth: 36,
+            d: "M200 722V380m130 342V100m130 622V225m130 497V440m130 282V610"
+          }
+        )
+      ]
+    }
+  );
+  var IsotopeDistribution_default = SvgIsotopeDistribution;
+
+  // build/lib-react-tsx/mass/MfInfo.tsx
+  var React69 = __toESM(require_react(), 1);
+  var import_jsx_runtime69 = __toESM(require_jsx_runtime(), 1);
+  var SvgMfInfo = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 45.698,
+            d: "M42.643 722.441h889.729m-37.561-39.036 51.622 39.036m0 0-51.622 39.223"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+          "text",
+          {
+            x: 716,
+            y: 953,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 180,
+            textAnchor: "middle",
+            children: "m/z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+          "text",
+          {
+            x: 150,
+            y: 300,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 200,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: "MF"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeWidth: 30,
+            d: "M150 360a240 240 0 0 0 240 240"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("path", { stroke: "none", d: "m460 600-80-55v110z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeWidth: 30,
+            d: "M490 722V430m95 292V270m95 452V340m95 382V500m95 222V610"
+          }
+        )
+      ]
+    }
+  );
+  var MfInfo_default = SvgMfInfo;
+
+  // build/lib-react-tsx/mass/Monoisotopic.tsx
+  var React70 = __toESM(require_react(), 1);
+  var import_jsx_runtime70 = __toESM(require_jsx_runtime(), 1);
+  var SvgMonoisotopic = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            strokeWidth: 1.176,
+            d: "M49.263 749.728v49.904h762.035v49.905l138.552-71.668-138.552-78.045v49.904z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("path", { d: "M100 585v30h600v-30z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("path", { d: "M298.738 243.77v350h30v-350zM700 585v30h150v-30z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M115.334 112.207q0 6.68-2.197 12.04-2.11 5.274-5.889 9.317-3.691 3.955-8.79 6.68-5.009 2.637-10.898 4.043v.527q15.557 1.934 23.555 9.492 7.998 7.471 7.998 20.215 0 8.438-3.076 15.645-2.988 7.119-9.316 12.392-6.24 5.274-15.82 8.262-9.493 2.9-22.413 2.9-10.37 0-19.511-1.757-9.141-1.67-17.051-5.186v-23.115q3.955 2.11 8.35 3.691 4.394 1.582 8.788 2.725 4.395 1.054 8.614 1.582 4.306.527 8.086.527 7.558 0 12.568-1.406t7.998-3.955 4.219-6.065q1.318-3.603 1.318-7.822 0-3.955-1.67-7.119-1.582-3.252-5.273-5.45-3.604-2.284-9.492-3.515-5.89-1.23-14.502-1.23h-9.141v-19.073h8.965q8.086 0 13.447-1.406 5.361-1.494 8.526-3.955 3.251-2.549 4.57-5.889 1.318-3.34 1.318-7.119 0-6.855-4.306-10.722-4.22-3.868-13.448-3.868-4.218 0-7.91.88-3.603.79-6.767 2.109-3.077 1.23-5.713 2.812-2.55 1.494-4.659 2.988l-13.71-18.105q3.69-2.725 7.998-5.01 4.394-2.285 9.492-3.955 5.097-1.758 10.986-2.724t12.568-.967q9.493 0 17.227 2.11 7.822 2.02 13.36 5.976 5.536 3.867 8.525 9.58 3.076 5.625 3.076 12.92m104.326 35.508q0 15.556-2.46 27.773-2.374 12.217-7.735 20.742-5.274 8.526-13.711 13.008-8.35 4.482-20.215 4.482-11.162 0-19.424-4.482t-13.71-13.008-8.175-20.742q-2.636-12.217-2.636-27.773 0-15.557 2.373-27.862 2.46-12.305 7.734-20.83t13.623-13.008q8.35-4.57 20.215-4.57 11.074 0 19.336 4.482t13.799 13.008 8.261 20.83 2.725 27.95m-60.996 0q0 21.972 3.78 33.046 3.779 11.075 13.095 11.075 9.14 0 13.096-10.987 4.043-10.986 4.043-33.134 0-22.061-4.043-33.135-3.955-11.162-13.096-11.162-4.658 0-7.91 2.812-3.164 2.813-5.186 8.35t-2.9 13.886q-.879 8.262-.879 19.249m160.136 0q0 15.556-2.46 27.773-2.373 12.217-7.735 20.742-5.273 8.526-13.71 13.008-8.35 4.482-20.215 4.482-11.162 0-19.424-4.482t-13.711-13.008-8.174-20.742q-2.637-12.217-2.637-27.773 0-15.557 2.373-27.862 2.461-12.305 7.735-20.83 5.273-8.525 13.623-13.008 8.35-4.57 20.215-4.57 11.074 0 19.336 4.482t13.798 13.008 8.262 20.83 2.725 27.95m-60.995 0q0 21.972 3.779 33.046 3.78 11.075 13.096 11.075 9.14 0 13.095-10.987 4.043-10.986 4.043-33.134 0-22.061-4.043-33.135-3.955-11.162-13.095-11.162-4.659 0-7.91 2.812-3.165 2.813-5.186 8.35t-2.9 13.886q-.88 8.262-.88 19.249m76.816 51.679q0-4.13 1.143-6.943 1.23-2.9 3.34-4.658t4.921-2.55 6.065-.79q3.076 0 5.8.79 2.813.792 4.922 2.55 2.11 1.757 3.34 4.658 1.23 2.812 1.23 6.943 0 3.955-1.23 6.768t-3.34 4.658-4.921 2.637q-2.725.879-5.801.879-3.252 0-6.065-.88-2.812-.79-4.922-2.636t-3.34-4.658q-1.142-2.813-1.142-6.768m112.852 12.569h-27.159v-79.806q.088-3.251.176-6.679.176-3.515.264-7.031.176-3.516.264-6.416-.44.527-1.495 1.582l-2.373 2.373q-1.318 1.23-2.724 2.549t-2.725 2.373l-14.766 11.865-13.183-16.348 41.396-32.959h22.325zm120.761 0h-86.22v-18.897l30.234-32.607q5.713-6.153 10.371-11.338 4.658-5.186 7.998-10.108t5.186-10.02q1.845-5.097 1.845-10.986 0-6.503-3.955-10.107-3.867-3.603-10.459-3.603-6.943 0-13.36 3.427-6.415 3.428-13.446 9.756l-14.766-17.49q3.955-3.604 8.262-6.856 4.306-3.34 9.492-5.888 5.186-2.55 11.426-4.043 6.24-1.582 13.974-1.582 9.229 0 16.524 2.549 7.383 2.548 12.568 7.295 5.186 4.658 7.91 11.337 2.813 6.68 2.813 15.03 0 7.558-2.637 14.502-2.637 6.855-7.207 13.535-4.57 6.592-10.635 13.183-5.976 6.504-12.832 13.272l-15.469 15.557v1.23h52.383zm94.131-99.756q0 6.68-2.197 12.04-2.11 5.274-5.889 9.317-3.691 3.955-8.789 6.68-5.01 2.637-10.898 4.043v.527q15.556 1.934 23.554 9.492 7.998 7.471 7.998 20.215 0 8.438-3.076 15.645-2.988 7.119-9.316 12.392-6.24 5.274-15.82 8.262-9.493 2.9-22.413 2.9-10.37 0-19.511-1.757-9.14-1.67-17.051-5.186v-23.115q3.955 2.11 8.35 3.691 4.394 1.582 8.789 2.725 4.394 1.054 8.613 1.582 4.307.527 8.086.527 7.558 0 12.568-1.406t7.998-3.955 4.219-6.065q1.318-3.603 1.318-7.822 0-3.955-1.67-7.119-1.582-3.252-5.273-5.45-3.604-2.284-9.492-3.515-5.889-1.23-14.502-1.23h-9.14v-19.073h8.964q8.086 0 13.447-1.406 5.362-1.494 8.526-3.955 3.252-2.549 4.57-5.889t1.318-7.119q0-6.855-4.306-10.722-4.219-3.868-13.447-3.868-4.22 0-7.91.88-3.604.79-6.768 2.109-3.076 1.23-5.713 2.812-2.549 1.494-4.658 2.988l-13.711-18.105q3.691-2.725 7.998-5.01 4.394-2.285 9.492-3.955 5.098-1.758 10.986-2.724t12.569-.967q9.492 0 17.226 2.11 7.822 2.02 13.36 5.976 5.537 3.867 8.525 9.58 3.076 5.625 3.076 12.92m-107.14 841.127h-26.807v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.932-5.362-5.097 0-8.525 2.11-3.34 2.11-5.362 6.24-2.021 4.13-2.9 10.195t-.879 13.887v46.23H470.85v-98.261h20.478l3.604 12.568h1.494q2.11-3.78 5.01-6.504 2.988-2.724 6.503-4.482t7.471-2.55q3.955-.878 7.998-.878 10.108 0 17.139 3.516 7.119 3.427 10.898 10.898h2.197q2.11-3.78 5.098-6.504t6.592-4.482q3.603-1.758 7.559-2.55 4.043-.878 8.085-.878 15.82 0 23.819 8.613 8.086 8.526 8.086 27.422v64.072h-26.895v-57.392q0-10.635-3.164-15.908-3.164-5.362-9.931-5.362-9.58 0-13.624 7.647-4.042 7.558-4.042 21.709zm144.492-128.496-47.9 128.496H627.47l47.9-128.496zm78.134 128.496h-72.246v-15.82l40.166-61.963H708.33v-20.478h67.852v17.402l-38.848 60.38h40.517z",
+            fontFamily: "sans-serif",
+            fontSize: 180,
+            fontWeight: 400,
+            letterSpacing: 0,
+            style: {
+              lineHeight: "125%"
+            },
+            wordSpacing: 0
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("path", { d: "M734.84 433.785v177.117h30V433.785z" })
+      ]
+    }
+  );
+  var Monoisotopic_default = SvgMonoisotopic;
+
+  // build/lib-react-tsx/mass/Overlay.tsx
+  var React71 = __toESM(require_react(), 1);
+  var import_jsx_runtime71 = __toESM(require_jsx_runtime(), 1);
+  var SvgOverlay2 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
+          "path",
+          {
             stroke: "none",
             d: "M354.945 655.836c0-8.88-6.846-16.096-15.171-16.096-8.51 0-15.357 7.217-15.357 16.096zm0 0v56.432h-30.528v-56.432zm-30.528 56.432c0 8.879 6.846 16.096 15.357 16.096 8.325 0 15.171-7.217 15.171-16.096zm30.528-153.562c0-8.882-6.846-16.097-15.171-16.097-8.51 0-15.357 7.215-15.357 16.097zm0 0v56.426h-30.528v-56.426zm-30.528 56.426c0 8.885 6.846 16.096 15.357 16.096 8.325 0 15.171-7.211 15.171-16.096zm30.528-153.559c0-8.88-6.846-16.096-15.171-16.096-8.51 0-15.357 7.215-15.357 16.096zm0 0v56.429h-30.528v-56.429zm-30.528 56.429c0 8.88 6.846 16.096 15.357 16.096 8.325 0 15.171-7.216 15.171-16.096zm30.528-153.562c0-8.88-6.846-16.095-15.171-16.095-8.51 0-15.357 7.216-15.357 16.096zm0 0v56.43h-30.528v-56.43zm-30.528 56.43c0 8.88 6.846 16.096 15.357 16.096 8.325 0 15.171-7.215 15.171-16.096zm30.528-153.561c0-8.88-6.846-16.096-15.171-16.096-8.51 0-15.357 7.215-15.357 16.096zm0 0v56.614h-30.528v-56.614zm-30.528 56.614c0 8.696 6.846 15.911 15.357 15.911 8.325 0 15.171-7.215 15.171-15.911zm516.556 331.913c0-8.88-6.844-16.096-15.17-16.096-8.51 0-15.168 7.217-15.168 16.096zm0 0v56.432h-30.338v-56.432zm-30.338 56.432c0 8.879 6.658 16.096 15.169 16.096 8.325 0 15.17-7.217 15.17-16.096zm30.338-153.562c0-8.882-6.844-16.097-15.17-16.097-8.51 0-15.168 7.215-15.168 16.097zm0 0v56.426h-30.338v-56.426zm-30.338 56.426c0 8.885 6.658 16.096 15.169 16.096 8.325 0 15.17-7.211 15.17-16.096zm30.338-153.559c0-8.88-6.844-16.096-15.17-16.096-8.51 0-15.168 7.215-15.168 16.096zm0 0v56.429h-30.338v-56.429zm-30.338 56.429c0 8.88 6.658 16.096 15.169 16.096 8.325 0 15.17-7.216 15.17-16.096z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
           "path",
           {
             fill: "none",
@@ -29098,14 +29267,14 @@
             d: "M42.643 722.441h889.73m14.06 0-51.622 39.223m0-78.259 51.622 39.036"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
           "path",
           {
             stroke: "none",
             d: "M285.195 53.989c0-8.88-7.216-16.096-16.096-16.096-8.696 0-15.912 7.215-15.912 16.096zm0 0v658.279h-32.008V53.989zm-32.008 658.279c0 8.879 7.216 16.096 15.912 16.096 8.88 0 16.096-7.217 16.096-16.096zM674.83 421.24c0-8.88-7.03-16.096-15.909-16.096s-15.91 7.215-15.91 16.096zm0 0v291.028h-31.819V421.24zm-31.819 291.028c0 8.879 7.031 16.096 15.91 16.096s15.91-7.217 15.91-16.096z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
           "path",
           {
             stroke: "none",
@@ -29126,225 +29295,9 @@
   var Overlay_default2 = SvgOverlay2;
 
   // build/lib-react-tsx/mass/RequestProtein.tsx
-  var React69 = __toESM(require_react(), 1);
-  var import_jsx_runtime69 = __toESM(require_jsx_runtime(), 1);
-  var SvgRequestProtein = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M973.852 153.252V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("g", { transform: "matrix(.69 0 0 .69 155 85)", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("path", { stroke: "none", d: "M215 430V145h-55l90-85 90 85h-55v285z" }),
-          /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
-            "path",
-            {
-              fill: "none",
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              strokeWidth: 52,
-              d: "M250 60C350 0 470 0 570 65"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("path", { stroke: "none", d: "M535 65v315h-55l90 90 90-90h-55V65z" }),
-          /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
-            "path",
-            {
-              fill: "none",
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              strokeWidth: 52,
-              d: "M570 470c50 110 350 170 330 270s-140 100-160 0-140-100-160 0-140 100-160 0-140-100-160 0-140 100-160 0"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("circle", { cx: 400, cy: 500, r: 72, stroke: "none" })
-        ] })
-      ]
-    }
-  );
-  var RequestProtein_default = SvgRequestProtein;
-
-  // build/lib-react-tsx/mass/Request.tsx
-  var React70 = __toESM(require_react(), 1);
-  var import_jsx_runtime70 = __toESM(require_jsx_runtime(), 1);
-  var SvgRequest3 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M160.44 546.832c-13.627.2-24.85 11.222-25.05 25.049 0 13.627 11.022 24.849 24.649 24.647zm0 0h679.747l-.202 49.696H160.039zm679.545 49.696c13.627 0 24.848-11.02 25.05-24.848 0-13.626-11.02-24.848-24.848-24.848z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M469.05 568.274c0 13.627 11.022 24.648 24.65 24.648 13.827-.203 25.05-11.422 25.05-25.05zm0 0v-438.87l49.7-.4v438.868zm49.7-439.27c0-13.827-11.023-24.85-24.85-24.649-13.627 0-24.85 11.223-24.85 25.05zm144.687 439.27c0 13.627 11.02 24.648 24.848 24.648 13.627-.203 24.848-11.422 24.848-25.05zm0 0v-181.36l49.696-.4v181.358zm49.696-181.76c0-13.828-11.02-24.85-24.848-24.649-13.627 0-24.848 11.222-24.848 25.05zm260.719-233.262V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307z"
-          }
-        )
-      ]
-    }
-  );
-  var Request_default3 = SvgRequest3;
-
-  // build/lib-react-tsx/mass/Sum.tsx
-  var React71 = __toESM(require_react(), 1);
-  var import_jsx_runtime71 = __toESM(require_jsx_runtime(), 1);
-  var SvgSum = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "19.7 -30.2 953.6 953.6",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          "path",
-          {
-            fill: "#c8c8c8",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 28.395,
-            d: "M97.296 689.637H883.16",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          "path",
-          {
-            fill: "#80afaf",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 28.395,
-            d: "m895.679 689.637-45.668 34.59",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          "path",
-          {
-            fill: "#c8c8c8",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 28.395,
-            d: "m850.011 655.048 45.668 34.59",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M313.532 413.34h-25.408l.022-.655.044-.654.087-.633.11-.632.152-.61.174-.612.197-.588.218-.567.261-.567.284-.568.305-.523.327-.523.35-.502.37-.48.414-.436.415-.458.436-.436.458-.393.48-.37.501-.371.524-.327.523-.306.545-.283.567-.262.59-.218.588-.218.589-.153.61-.152.655-.11.61-.065.655-.065h1.308l.655.065.632.066.61.109.611.152.611.175.589.196.589.218.545.262.545.283.545.306.502.327.502.37.48.371.457.393.437.436.436.436.392.458.393.48.349.502.327.523.305.523.284.568.261.567.219.567.196.588.174.611.131.61.131.633.065.654.044.633zm-25.408 84.77v-84.77h25.408v84.77zm0 0h25.408v.655l-.066.654-.065.633-.109.632-.153.61-.174.611-.196.59-.219.566-.261.567-.284.546-.305.545-.327.523-.35.48-.392.502-.392.436-.436.458-.437.436-.436.393-.501.37-.48.35-.524.348-.523.305-.567.284-.545.24-.59.218-.588.218-.61.175-.611.13-.611.131-.654.066-.654.043-.633.022h-.654l-.654-.065-.633-.066-.61-.13-.633-.131-.589-.175-.589-.218-.589-.218-.567-.24-.545-.284-.523-.305-.524-.349-.48-.349-.501-.37-.436-.415-.436-.414-.437-.436-.392-.458-.393-.502-.349-.48-.327-.523-.305-.545-.284-.546-.261-.567-.218-.567-.219-.589-.152-.61-.153-.61-.109-.655-.087-.61-.044-.655zm351.369 332.06v30.925q0 7.33-3.317 10.996c-2.24 2.444-5.148 3.666-8.786 3.666-3.548 0-6.4-1.222-8.582-3.666-2.181-2.444-3.288-6.11-3.288-10.996V824.03c0-5.875-.202-10.414-.61-13.643-.378-3.23-1.455-5.906-3.228-7.972-1.747-2.066-4.539-3.113-8.35-3.113-7.622 0-12.626 2.618-15.041 7.856-2.414 5.206-3.637 12.713-3.637 22.487v31.45c0 4.829-1.104 8.494-3.288 10.967-2.181 2.473-5.061 3.695-8.64 3.695-3.52 0-6.4-1.222-8.64-3.695s-3.375-6.138-3.375-10.968v-66.562c0-4.365 1.018-7.71 3.027-9.979 2.006-2.27 4.683-3.404 7.97-3.404 3.172 0 5.82 1.077 7.972 3.2 2.123 2.124 3.2 5.063 3.2 8.815v2.211c4.015-4.83 8.349-8.379 12.946-10.647q6.894-3.404 15.36-3.404 8.772 0 15.1 3.49 6.282 3.492 10.385 10.561c3.927-4.77 8.117-8.29 12.626-10.59 4.48-2.298 9.454-3.461 14.894-3.461 6.372 0 11.84 1.25 16.438 3.752q6.895 3.754 10.299 10.735c2.007 4.189 2.995 10.822 2.995 19.87v45.414q.001 7.33-3.316 10.996c-2.21 2.444-5.15 3.666-8.785 3.666-3.52 0-6.4-1.222-8.64-3.695s-3.375-6.138-3.375-10.967v-39.13c0-5.003-.205-8.99-.64-12.014-.437-2.997-1.571-5.529-3.433-7.595-1.89-2.036-4.713-3.054-8.524-3.054-3.084 0-5.993.902-8.728 2.736-2.764 1.802-4.887 4.247-6.43 7.33-1.715 3.899-2.559 10.85-2.559 20.802m110.026-66.302-23.855 98.245c-.816 3.257-1.514 5.788-2.096 7.679-.61 1.861-1.513 3.345-2.734 4.393q-1.833 1.571-5.324 1.572c-5.79 0-8.7-2.502-8.7-7.506 0-1.31.583-4.568 1.719-9.804l23.766-98.244q1.878-7.854 3.58-10.736c1.163-1.95 3.374-2.909 6.662-2.909 2.85 0 5.032.669 6.516 2.037 1.513 1.368 2.27 3.258 2.27 5.644 0 1.746-.611 4.975-1.804 9.63zm79.275 43.958-42.62 47.653h45.588c3.695 0 6.488.873 8.35 2.589 1.89 1.745 2.822 3.986 2.822 6.692 0 2.618-.932 4.741-2.764 6.4-1.861 1.659-4.654 2.473-8.408 2.473h-63.07c-4.423 0-7.74-.96-9.922-2.91-2.182-1.92-3.286-4.567-3.286-7.912 0-1.98.756-3.986 2.297-6.023 1.542-2.006 4.714-5.701 9.543-11.112 5.12-5.675 9.774-10.822 13.935-15.42 4.189-4.597 8.059-8.901 11.636-12.917 3.579-4.015 6.547-7.388 8.903-10.181q3.536-4.19 5.673-7.158h-34.59c-4.771 0-8.38-.436-10.823-1.28q-3.665-1.264-3.665-6.72c0-2.676.902-4.8 2.763-6.4 1.832-1.6 4.48-2.385 7.884-2.385h53.443c4.945 0 8.727.727 11.374 2.181 2.648 1.425 3.957 4.044 3.957 7.797 0 1.25-.262 2.532-.757 3.869-.523 1.338-1.077 2.415-1.716 3.288-.61.843-1.483 1.89-2.56 3.113a219 219 0 0 1-3.986 4.363z",
-            className: "fil1",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          "path",
-          {
-            fill: "#c8c8c8",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 28.395,
-            d: "M97.296 498.11H883.16M97.296 306.584H883.16M97.296 115.036H883.16",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M600.778 413.34h-25.43v-.655l.066-.654.066-.633.13-.632.131-.61.175-.612.196-.588.218-.567.262-.567.283-.568.306-.523.327-.523.349-.502.392-.48.393-.436.436-.458.436-.436.436-.393.502-.37.48-.371.523-.327.524-.306.567-.283.545-.262.589-.218.589-.218.61-.153.61-.152.612-.11.654-.065.654-.065h1.309l.632.065.633.066.61.109.633.152.588.175.59.196.588.218.567.262.545.283.524.306.523.327.502.37.48.371.436.393.436.436.436.436.415.458.37.48.35.502.326.523.306.523.283.568.262.567.218.567.218.588.153.611.152.61.11.633.065.654.065.633zm-25.408 84.77v-84.77h25.408v84.77zm0 0h25.408l-.022.655-.043.654-.088.633-.109.632-.152.61-.153.611-.218.59-.218.566-.262.567-.262.546-.327.545-.327.523-.349.48-.37.502-.415.436-.414.458-.437.436-.458.393-.48.37-.501.35-.523.348-.524.305-.545.284-.567.24-.567.218-.589.218-.61.175-.611.13-.633.131-.654.066-.632.043-.655.022h-.654l-.654-.065-.61-.066-.633-.13-.611-.131-.61-.175-.59-.218-.567-.218-.567-.24-.545-.284-.545-.305-.502-.349-.501-.349-.48-.37-.458-.415-.436-.414-.436-.436-.393-.458-.37-.502-.371-.48-.328-.523-.305-.545-.283-.546-.24-.567-.218-.567-.218-.589-.175-.61-.13-.61-.11-.655-.087-.61-.044-.655zm25.408-276.297h-25.43v-.655l.066-.654.066-.654.13-.61.131-.611.175-.611.196-.589.218-.589.262-.567.283-.545.306-.523.327-.524.349-.501.392-.48.393-.458.436-.436.436-.437.436-.392.502-.393.48-.349.523-.327.524-.305.567-.284.545-.261.589-.218.589-.219.61-.152.61-.153.612-.109.654-.087.654-.044h1.309l.632.044.633.087.61.11.633.152.588.174.59.197.588.218.567.261.545.284.524.305.523.327.502.35.48.392.436.392.436.437.436.436.415.458.37.48.35.501.326.524.306.523.283.545.262.567.218.59.218.588.153.61.152.611.11.633.065.632.065.654zm-25.408 84.771v-84.771h25.408v84.771zm0 0h25.408l-.022.654-.043.655-.088.632-.109.61-.152.633-.153.59-.218.588-.218.589-.262.567-.262.545-.327.545-.327.502-.349.502-.37.48-.415.457-.414.437-.437.436-.458.414-.48.37-.501.35-.523.327-.524.305-.545.284-.567.261-.567.219-.589.218-.61.174-.611.131-.633.109-.654.087-.632.044h-1.309l-.654-.044-.61-.087-.633-.109-.611-.13-.61-.175-.59-.218-.567-.219-.567-.261-.545-.284-.545-.305-.502-.327-.501-.35-.48-.37-.458-.414-.436-.436-.436-.437-.393-.436-.37-.501-.371-.502-.328-.502-.305-.545-.283-.545-.24-.567-.218-.589-.218-.589-.175-.589-.13-.632-.11-.61-.087-.655-.044-.654zM313.532 30.264h-25.408l.022-.654.044-.654.087-.633.11-.61.152-.633.174-.589.197-.588.218-.59.261-.566.284-.545.305-.546.327-.501.35-.502.37-.48.414-.458.415-.436.436-.436.458-.414.48-.371.501-.35.524-.326.523-.306.545-.283.567-.262.59-.218.588-.218.589-.174.61-.131.655-.11.61-.087.655-.043.654-.022h.654l.655.065.632.088.61.109.611.13.611.175.589.218.589.218.545.262.545.283.545.306.502.327.502.349.48.37.457.415.437.436.436.436.392.437.393.501.349.502.327.501.305.546.284.545.261.567.219.589.196.588.174.59.131.632.131.61.065.655.044.654zm-25.408 84.772V30.264h25.408v84.772zm0 0h25.408v.654l-.066.654-.065.655-.109.61-.153.611-.174.61-.196.59-.219.588-.261.567-.284.546-.305.523-.327.523-.35.502-.392.48-.392.458-.436.436-.437.436-.436.393-.501.392-.48.35-.524.326-.523.306-.567.283-.545.262-.59.218-.588.218-.61.153-.611.152-.611.11-.654.087-.654.043h-1.287l-.654-.043-.633-.087-.61-.11-.633-.152-.589-.175-.589-.196-.589-.218-.567-.262-.545-.283-.523-.306-.524-.327-.48-.349-.501-.392-.436-.393-.436-.436-.437-.436-.392-.458-.393-.48-.349-.502-.327-.523-.305-.523-.284-.546-.261-.567-.218-.588-.219-.59-.152-.61-.153-.61-.109-.633-.087-.633-.044-.654zm171.005 53.104H433.72l.022-.653.044-.655.087-.632.109-.61.153-.633.174-.59.196-.61.218-.567.262-.567.284-.545.305-.545.327-.502.349-.502.37-.48.415-.48.414-.435.437-.436.458-.393.48-.37.501-.35.523-.349.524-.305.545-.284.567-.24.567-.218.61-.218.59-.174.61-.13.633-.11.654-.087.633-.044.654-.022h.654l.654.066.611.087.654.11.59.13.61.174.589.218.567.219.567.24.545.283.545.305.502.35.501.348.48.371.458.414.436.437.436.436.393.436.37.501.372.502.327.502.305.545.284.545.24.567.218.567.218.61.174.59.13.632.11.61.087.655.044.654zm-25.408 84.772v-84.771h25.408v84.771zm0 0h25.408v.655l-.066.654-.065.654-.11.61-.152.611-.174.611-.197.589-.218.589-.261.545-.284.567-.305.523-.327.524-.35.501-.392.48-.393.458-.436.436-.436.437-.436.392-.502.37-.48.372-.523.327-.523.305-.567.284-.546.261-.588.218-.59.219-.61.152-.61.153-.611.109-.654.087-.655.044h-1.286l-.655-.044-.632-.087-.61-.11-.633-.152-.59-.174-.588-.197-.589-.218-.567-.261-.545-.284-.524-.305-.523-.327-.48-.371-.501-.37-.437-.393-.436-.437-.436-.436-.392-.458-.393-.48-.349-.501-.327-.524-.305-.523-.284-.567-.262-.545-.218-.59-.218-.588-.152-.61-.153-.611-.11-.633-.065-.654-.065-.632z",
-            className: "fil1",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M488.81 223.23v-25.407l.655.022.654.043.654.088.611.109.61.152.611.175.59.196.588.218.567.262.545.283.524.306.523.327.502.349.48.37.458.415.436.414.436.436.392.458.393.48.349.502.327.523.305.524.284.545.262.567.218.589.218.589.153.588.152.611.11.654.086.61.044.655v1.309l-.044.654-.087.61-.109.655-.152.589-.175.61-.196.59-.218.566-.262.567-.284.546-.305.545-.327.501-.349.502-.393.48-.392.458-.436.436-.436.436-.458.393-.48.392-.502.35-.523.326-.524.306-.545.283-.567.24-.589.218-.589.218-.61.175-.61.13-.633.131-.633.066-.654.065zm-84.75-25.407h84.75v25.407h-84.75zm0 0v25.407h-.653l-.655-.065-.654-.087-.61-.11-.633-.13-.589-.175-.589-.218-.588-.218-.568-.24-.545-.283-.545-.306-.502-.327-.501-.349-.48-.392-.458-.393-.436-.436-.436-.436-.393-.436-.392-.502-.35-.502-.327-.501-.305-.545-.283-.546-.262-.567-.218-.567-.218-.589-.175-.61-.13-.61-.11-.633-.087-.633-.043-.654v-1.309l.043-.632.087-.633.11-.632.13-.61.175-.59.218-.588.218-.59.262-.566.283-.545.305-.524.328-.523.349-.502.37-.48.415-.436.436-.458.436-.436.436-.393.502-.37.501-.35.502-.326.545-.306.545-.283.568-.262.588-.218.59-.218.588-.153.632-.152.633-.11.632-.087.655-.043zm84.75 197.829v-25.407h.655l.654.065.654.087.611.11.61.13.611.175.59.218.588.218.567.262.545.261.524.306.523.349.502.348.48.371.458.393.436.436.436.436.392.458.393.48.349.502.327.523.305.523.284.546.262.567.218.567.218.589.153.61.152.61.11.633.086.633.044.654v1.309l-.044.654-.087.61-.109.633-.152.61-.175.611-.196.59-.218.566-.262.567-.284.545-.305.524-.327.523-.349.502-.393.48-.392.458-.436.436-.436.436-.458.393-.48.37-.502.35-.523.348-.524.305-.545.262-.567.262-.589.218-.589.218-.61.175-.61.13-.633.11-.633.087-.654.043zm-84.75-25.407h84.75v25.407h-84.75zm0 0v25.407h-.653l-.655-.065-.654-.088-.61-.109-.633-.13-.589-.175-.589-.218-.588-.218-.568-.24-.545-.284-.545-.305-.502-.327-.501-.349-.48-.392-.458-.393-.436-.436-.436-.436-.393-.437-.392-.501-.35-.502-.327-.501-.305-.546-.283-.545-.262-.567-.218-.567-.218-.589-.175-.61-.13-.611-.11-.633-.087-.632-.043-.654v-1.309l.043-.632.087-.633.11-.632.13-.61.175-.59.218-.589.218-.588.262-.567.283-.546.305-.523.328-.523.349-.502.37-.48.415-.436.436-.458.436-.436.436-.393.502-.37.501-.35.502-.327.545-.305.545-.283.568-.262.588-.218.59-.218.588-.153.632-.153.633-.109.632-.087.655-.044zm84.75 67.76v-25.407l.655.021.654.044.654.087.611.11.61.152.611.175.59.196.588.218.567.262.545.283.524.305.523.328.502.349.48.37.458.415.436.414.436.436.392.458.393.48.349.502.327.523.305.523.284.546.262.567.218.567.218.61.153.59.152.61.11.632.086.655.044.632v1.309l-.044.654-.087.61-.109.655-.152.589-.175.61-.196.59-.218.566-.262.567-.284.545-.305.546-.327.501-.349.502-.393.48-.392.458-.436.436-.436.436-.458.393-.48.37-.502.371-.523.327-.524.306-.545.283-.567.24-.589.218-.589.218-.61.175-.61.13-.633.11-.633.087-.654.043zm-84.75-25.407h84.75v25.407h-84.75zm0 0v25.407h-.653l-.655-.065-.654-.066-.61-.109-.633-.152-.589-.175-.589-.196-.588-.218-.568-.262-.545-.283-.545-.306-.502-.327-.501-.349-.48-.392-.458-.393-.436-.436-.436-.436-.393-.437-.392-.501-.35-.48-.327-.523-.305-.524-.283-.567-.262-.545-.218-.589-.218-.589-.175-.61-.13-.611-.11-.61-.087-.655-.043-.654v-1.287l.043-.654.087-.633.11-.61.13-.633.175-.589.218-.588.218-.59.262-.566.283-.546.305-.523.328-.523.349-.48.37-.48.415-.48.436-.436.436-.436.436-.37.502-.393.501-.35.502-.327.545-.305.545-.283.568-.262.588-.218.59-.218.588-.153.632-.153.633-.109.632-.065.655-.066z",
-            className: "fil1",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        )
-      ]
-    }
-  );
-  var Sum_default = SvgSum;
-
-  // build/lib-react-tsx/mass/Upload.tsx
   var React72 = __toESM(require_react(), 1);
   var import_jsx_runtime72 = __toESM(require_jsx_runtime(), 1);
-  var SvgUpload = ({
+  var SvgRequestProtein = ({
     title,
     titleId,
     ...props
@@ -29364,58 +29317,44 @@
         /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
           "path",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 45.698,
-            d: "M60.271 750h889.73m14.061 0-51.622 39.223m0-78.259L964.062 750"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-          "path",
-          {
             stroke: "none",
-            d: "M302.823 289.827c0-6.138-7.215-11.125-16.096-11.125-8.696 0-15.911 4.987-15.911 11.125zm0 0v454.971h-32.007V289.827Zm-32.007 454.971c0 6.137 7.215 11.125 15.911 11.125 8.88 0 16.096-4.988 16.096-11.125zm421.643-604.971c0-17.815-7.03-32.289-15.91-32.289s-15.91 14.474-15.91 32.289zm0 0v583.807h-31.82V139.827Zm-31.82 583.807c0 17.811 7.031 32.289 15.91 32.289s15.91-14.478 15.91-32.289z"
+            d: "M973.852 153.252V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-          "path",
-          {
-            fill: "#fff",
-            strokeWidth: 0.794,
-            d: "M965.061 524.058a274 282 0 0 1-274 282 274 282 0 0 1-274-282 274 282 0 0 1 274-282 274 282 0 0 1 274 282Z",
-            transform: "rotate(.457)skewX(.026)"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-          "path",
-          {
-            strokeWidth: 7.895,
-            d: "M687.088 306.072c-123.42 0-223.488 100.084-223.488 223.488 0 123.436 100.067 223.48 223.488 223.48 123.42 0 223.495-100.044 223.495-223.488-.008-123.396-100.075-223.48-223.495-223.48zM800 550a24.2 24.2 0 0 1-17.456 7.39c-6.102 0-12.197-2.282-16.887-6.861l-53.985-52.382v138.152c0 13.421-10.918 24.308-24.316 24.308-13.413 0-24.285-10.887-24.285-24.308V498.147l-53.985 52.382c-9.623 9.324-24.995 9.11-34.358-.521-9.332-9.624-9.11-25.003.521-34.35l95.204-92.339c9.419-9.15 24.38-9.15 33.83 0l95.172 92.338c9.664 9.356 9.892 24.72.545 34.343Z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            strokeWidth: 91.745,
-            d: "M656.432 877.294v33.598q0 7.962-3.604 11.947c-2.432 2.654-5.593 3.982-9.545 3.982-3.855 0-6.953-1.328-9.323-3.982-2.37-2.656-3.572-6.639-3.572-11.947v-40.269c0-6.383-.22-11.313-.663-14.822-.412-3.508-1.582-6.417-3.508-8.66-1.898-2.245-4.93-3.383-9.071-3.383-8.281 0-13.718 2.844-16.342 8.535-2.622 5.657-3.95 13.811-3.95 24.43v34.169c0 5.246-1.2 9.229-3.573 11.915-2.37 2.686-5.499 4.014-9.387 4.014-3.824 0-6.953-1.328-9.387-4.014-2.432-2.686-3.666-6.669-3.666-11.915v-72.317c0-4.742 1.106-8.377 3.288-10.84 2.18-2.467 5.088-3.7 8.659-3.7 3.446 0 6.322 1.17 8.66 3.477 2.307 2.308 3.477 5.5 3.477 9.577v2.402c4.363-5.246 9.071-9.103 14.066-11.567q7.489-3.699 16.688-3.698 9.53 0 16.404 3.792 6.826 3.793 11.283 11.473c4.266-5.182 8.819-9.007 13.717-11.505 4.867-2.496 10.272-3.76 16.182-3.76 6.923 0 12.864 1.358 17.858 4.076q7.491 4.078 11.19 11.663c2.18 4.551 3.254 11.758 3.254 21.587v49.34q0 7.962-3.602 11.947c-2.403 2.654-5.595 3.982-9.546 3.982-3.824 0-6.952-1.328-9.387-4.014-2.434-2.686-3.666-6.669-3.666-11.915V868.38c0-5.437-.222-9.767-.696-13.054-.475-3.256-1.707-6.006-3.729-8.25-2.054-2.213-5.12-3.319-9.261-3.319-3.35 0-6.51.98-9.483 2.972-3.002 1.959-5.309 4.615-6.985 7.963-1.864 4.237-2.78 11.79-2.78 22.6zm119.536-72.032-25.917 106.736c-.886 3.539-1.644 6.289-2.276 8.343-.664 2.022-1.644 3.635-2.97 4.773q-1.992 1.707-5.785 1.708c-6.29 0-9.45-2.719-9.45-8.155 0-1.422.631-4.963 1.865-10.651l25.821-106.737q2.04-8.534 3.889-11.663c1.264-2.119 3.666-3.16 7.238-3.16 3.097 0 5.467.726 7.08 2.212 1.643 1.486 2.465 3.54 2.465 6.132 0 1.896-.664 5.405-1.96 10.461zm86.128 47.757-46.303 51.772h49.527c4.015 0 7.05.948 9.071 2.812 2.055 1.897 3.067 4.33 3.067 7.271 0 2.844-1.012 5.15-3.003 6.953-2.022 1.802-5.056 2.686-9.135 2.686h-68.522c-4.804 0-8.408-1.042-10.779-3.16-2.37-2.086-3.57-4.963-3.57-8.597 0-2.15.822-4.33 2.496-6.543 1.675-2.18 5.12-6.195 10.367-12.073 5.563-6.165 10.62-11.758 15.14-16.752a1706 1706 0 0 0 12.642-14.034c3.888-4.362 7.112-8.027 9.672-11.061q3.84-4.552 6.163-7.777h-37.58c-5.183 0-9.103-.474-11.757-1.39q-3.983-1.375-3.983-7.301c0-2.908.98-5.215 3.002-6.953 1.99-1.738 4.867-2.592 8.565-2.592h58.063c5.373 0 9.481.79 12.357 2.37 2.877 1.548 4.299 4.393 4.299 8.471 0 1.358-.284 2.75-.822 4.203-.568 1.454-1.17 2.624-1.864 3.572-.665.917-1.612 2.054-2.783 3.382a239 239 0 0 1-4.33 4.741z",
-            className: "fil1",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        )
+        /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("g", { transform: "matrix(.69 0 0 .69 155 85)", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("path", { stroke: "none", d: "M215 430V145h-55l90-85 90 85h-55v285z" }),
+          /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
+            "path",
+            {
+              fill: "none",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              strokeWidth: 52,
+              d: "M250 60C350 0 470 0 570 65"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("path", { stroke: "none", d: "M535 65v315h-55l90 90 90-90h-55V65z" }),
+          /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
+            "path",
+            {
+              fill: "none",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              strokeWidth: 52,
+              d: "M570 470c50 110 350 170 330 270s-140 100-160 0-140-100-160 0-140 100-160 0-140-100-160 0-140 100-160 0"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("circle", { cx: 400, cy: 500, r: 72, stroke: "none" })
+        ] })
       ]
     }
   );
-  var Upload_default = SvgUpload;
+  var RequestProtein_default = SvgRequestProtein;
 
-  // build/lib-react-tsx/misc/Chromatography.tsx
+  // build/lib-react-tsx/mass/Request.tsx
   var React73 = __toESM(require_react(), 1);
   var import_jsx_runtime73 = __toESM(require_jsx_runtime(), 1);
-  var SvgChromatography = ({
+  var SvgRequest3 = ({
     title,
     titleId,
     ...props
@@ -29435,32 +29374,26 @@
         /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
           "path",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 39.323,
-            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+            stroke: "none",
+            d: "M160.44 546.832c-13.627.2-24.85 11.222-25.05 25.049 0 13.627 11.022 24.849 24.649 24.647zm0 0h679.747l-.202 49.696H160.039zm679.545 49.696c13.627 0 24.848-11.02 25.05-24.848 0-13.626-11.02-24.848-24.848-24.848z"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
           "path",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 33.181,
-            d: "M48.778 730.872c10.983 2.796 44.153 4.518 55.796-25.61 14.843-38.405 7.204-118.945 9.394-210.846 2.852-119.688-3.897-252.065 23.641-273.178C173.235 229.121 150 639.35 180.1 694.107c27.336 49.632 62.365 34.56 106.272 24.677C400 693.205 400.605 521.04 400 477.784c-1.019-79.373 13.328-371.297 11.429-370.944 0 0 5.496 245.006 11.95 360.616C430.392 593.107 450 756.182 520.344 750c79.132-.038 90.787-82.775 90.222-167.836-.753-93.527-5.052-203.405 24.743-207.362 37.396-1.067 33.21 90.955 45.112 195.07 10.722 93.797-4.404 184.937 109.12 174.586 35.53-3.218 113.251 2.089 145.224.307"
+            stroke: "none",
+            d: "M469.05 568.274c0 13.627 11.022 24.648 24.65 24.648 13.827-.203 25.05-11.422 25.05-25.05zm0 0v-438.87l49.7-.4v438.868zm49.7-439.27c0-13.827-11.023-24.85-24.85-24.649-13.627 0-24.85 11.223-24.85 25.05zm144.687 439.27c0 13.627 11.02 24.648 24.848 24.648 13.627-.203 24.848-11.422 24.848-25.05zm0 0v-181.36l49.696-.4v181.358zm49.696-181.76c0-13.828-11.02-24.85-24.848-24.649-13.627 0-24.848 11.222-24.848 25.05zm260.719-233.262V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307z"
           }
         )
       ]
     }
   );
-  var Chromatography_default = SvgChromatography;
+  var Request_default3 = SvgRequest3;
 
-  // build/lib-react-tsx/misc/Cristal.tsx
+  // build/lib-react-tsx/mass/Sum.tsx
   var React74 = __toESM(require_react(), 1);
   var import_jsx_runtime74 = __toESM(require_jsx_runtime(), 1);
-  var SvgCristal = ({
+  var SvgSum = ({
     title,
     titleId,
     ...props
@@ -29470,7 +29403,7 @@
       xmlns: "http://www.w3.org/2000/svg",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "19.7 -30.2 953.6 953.6",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -29480,33 +29413,107 @@
         /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
           "path",
           {
-            stroke: "none",
-            d: "M984.712 452.914 830.281 808.322l-43.442-18.375L941.51 434.296ZM808.56 799.25l21.72 9.311c-5.25 11.936-19.336 17.667-31.265 12.41-11.936-5.01-17.426-19.096-12.176-31.025zm7.4 22.202-359.946 121.49-14.798-44.631 359.943-121.496Zm-367.345 99.054 7.4 22.676c-12.412 4.061-26.018-2.625-30.075-15.035-4.058-12.417 2.864-25.782 15.276-30.077zm-4.296 23.391L69.098 879.931l8.354-46.782 375.22 64.208ZM73.155 856.54l-4.296 23.39c-12.89-2.15-21.482-14.32-19.095-27.451 2.387-12.885 14.798-21.48 27.688-19.33Zm-23.391 3.58-31.03-214.105 47.022-7.161 30.791 214.105zm-7.4-217.686-23.63 3.58c-1.91-12.888 7.16-25.062 20.05-27.21 13.128-1.91 25.063 6.922 26.972 20.05zm-23.391-4.774L94.16 275.568l46.306 9.308L65.517 646.97zm98.34-357.319-23.153-4.773c2.626-12.89 15.276-21.244 27.927-18.618 12.889 2.625 21.243 15.037 18.618 27.926zM98.218 266.26l142.26-191.91 37.951 27.927-142.02 191.907ZM259.573 88.434l-19.096-14.083c7.877-10.502 22.676-12.889 33.178-5.251 10.503 7.877 12.65 22.676 4.774 33.178zm4.773-23.392 430.84 85.69-9.79 46.545-430.836-85.69zM690.17 174.124l5.017-23.392c12.65 2.626 21 15.037 18.374 27.927-2.865 12.889-15.275 21.244-28.164 18.618zm16.712-16.947 273.056 269.481-33.65 33.894-272.825-269.72zm256.11 286.428 16.946-16.947c9.31 9.07 9.31 24.108 0 33.656-9.305 9.309-24.346 9.547-33.65.239z"
+            fill: "#c8c8c8",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 28.395,
+            d: "M97.296 689.637H883.16",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
           "path",
           {
-            stroke: "none",
-            d: "M282.248 94.64c-.954-12.89-12.412-22.437-25.54-21.244s-22.676 12.651-21.72 25.779zm0 0 22.198 265.185-47.26 4.296-22.199-264.946zm-1.432 267.334 23.63-2.15c.956 12.89-8.593 24.586-21.72 25.78-13.128 1.192-24.585-8.355-25.54-21.483zm-9.07-21.722L684.68 165.77l17.9 43.442-412.932 174.483zm430.834-131.04c12.176-5.013 17.907-18.857 12.89-31.03-4.775-11.935-18.614-17.664-30.79-12.413zM55.254 841.264c-8.593 9.785-7.639 24.82 2.386 33.417 9.787 8.355 24.824 7.16 33.417-2.625zm0 0 110.513-128.177 35.804 30.793L91.057 872.056Zm128.415-112.663-17.902-15.514c8.593-10.025 23.63-11.219 33.417-2.626 9.786 8.354 10.98 23.394 2.387 33.42zm14.083-19.334 260.411 190-28.166 38.185-260.41-189.758Zm232.245 228.185c10.503 7.882 25.301 5.49 33.178-5.25 7.877-10.5 5.49-25.3-5.012-32.935z"
+            fill: "#80afaf",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 28.395,
+            d: "m895.679 689.637-45.668 34.59",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
           "path",
           {
+            fill: "#c8c8c8",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 28.395,
+            d: "m850.011 655.048 45.668 34.59",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
             stroke: "none",
-            d: "M160.277 727.647c-3.342 12.653 4.297 25.537 16.948 28.643 12.412 3.34 25.539-4.295 28.88-16.945zm0 0 98.34-373.55 45.83 11.695-98.341 373.553zm144.17-361.855c3.34-12.65-4.059-25.54-16.71-28.881-12.65-3.104-25.778 4.535-29.12 17.185z"
+            d: "M313.532 413.34h-25.408l.022-.655.044-.654.087-.633.11-.632.152-.61.174-.612.197-.588.218-.567.261-.567.284-.568.305-.523.327-.523.35-.502.37-.48.414-.436.415-.458.436-.436.458-.393.48-.37.501-.371.524-.327.523-.306.545-.283.567-.262.59-.218.588-.218.589-.153.61-.152.655-.11.61-.065.655-.065h1.308l.655.065.632.066.61.109.611.152.611.175.589.196.589.218.545.262.545.283.545.306.502.327.502.37.48.371.457.393.437.436.436.436.392.458.393.48.349.502.327.523.305.523.284.568.261.567.219.567.196.588.174.611.131.61.131.633.065.654.044.633zm-25.408 84.77v-84.77h25.408v84.77zm0 0h25.408v.655l-.066.654-.065.633-.109.632-.153.61-.174.611-.196.59-.219.566-.261.567-.284.546-.305.545-.327.523-.35.48-.392.502-.392.436-.436.458-.437.436-.436.393-.501.37-.48.35-.524.348-.523.305-.567.284-.545.24-.59.218-.588.218-.61.175-.611.13-.611.131-.654.066-.654.043-.633.022h-.654l-.654-.065-.633-.066-.61-.13-.633-.131-.589-.175-.589-.218-.589-.218-.567-.24-.545-.284-.523-.305-.524-.349-.48-.349-.501-.37-.436-.415-.436-.414-.437-.436-.392-.458-.393-.502-.349-.48-.327-.523-.305-.545-.284-.546-.261-.567-.218-.567-.219-.589-.152-.61-.153-.61-.109-.655-.087-.61-.044-.655zm351.369 332.06v30.925q0 7.33-3.317 10.996c-2.24 2.444-5.148 3.666-8.786 3.666-3.548 0-6.4-1.222-8.582-3.666-2.181-2.444-3.288-6.11-3.288-10.996V824.03c0-5.875-.202-10.414-.61-13.643-.378-3.23-1.455-5.906-3.228-7.972-1.747-2.066-4.539-3.113-8.35-3.113-7.622 0-12.626 2.618-15.041 7.856-2.414 5.206-3.637 12.713-3.637 22.487v31.45c0 4.829-1.104 8.494-3.288 10.967-2.181 2.473-5.061 3.695-8.64 3.695-3.52 0-6.4-1.222-8.64-3.695s-3.375-6.138-3.375-10.968v-66.562c0-4.365 1.018-7.71 3.027-9.979 2.006-2.27 4.683-3.404 7.97-3.404 3.172 0 5.82 1.077 7.972 3.2 2.123 2.124 3.2 5.063 3.2 8.815v2.211c4.015-4.83 8.349-8.379 12.946-10.647q6.894-3.404 15.36-3.404 8.772 0 15.1 3.49 6.282 3.492 10.385 10.561c3.927-4.77 8.117-8.29 12.626-10.59 4.48-2.298 9.454-3.461 14.894-3.461 6.372 0 11.84 1.25 16.438 3.752q6.895 3.754 10.299 10.735c2.007 4.189 2.995 10.822 2.995 19.87v45.414q.001 7.33-3.316 10.996c-2.21 2.444-5.15 3.666-8.785 3.666-3.52 0-6.4-1.222-8.64-3.695s-3.375-6.138-3.375-10.967v-39.13c0-5.003-.205-8.99-.64-12.014-.437-2.997-1.571-5.529-3.433-7.595-1.89-2.036-4.713-3.054-8.524-3.054-3.084 0-5.993.902-8.728 2.736-2.764 1.802-4.887 4.247-6.43 7.33-1.715 3.899-2.559 10.85-2.559 20.802m110.026-66.302-23.855 98.245c-.816 3.257-1.514 5.788-2.096 7.679-.61 1.861-1.513 3.345-2.734 4.393q-1.833 1.571-5.324 1.572c-5.79 0-8.7-2.502-8.7-7.506 0-1.31.583-4.568 1.719-9.804l23.766-98.244q1.878-7.854 3.58-10.736c1.163-1.95 3.374-2.909 6.662-2.909 2.85 0 5.032.669 6.516 2.037 1.513 1.368 2.27 3.258 2.27 5.644 0 1.746-.611 4.975-1.804 9.63zm79.275 43.958-42.62 47.653h45.588c3.695 0 6.488.873 8.35 2.589 1.89 1.745 2.822 3.986 2.822 6.692 0 2.618-.932 4.741-2.764 6.4-1.861 1.659-4.654 2.473-8.408 2.473h-63.07c-4.423 0-7.74-.96-9.922-2.91-2.182-1.92-3.286-4.567-3.286-7.912 0-1.98.756-3.986 2.297-6.023 1.542-2.006 4.714-5.701 9.543-11.112 5.12-5.675 9.774-10.822 13.935-15.42 4.189-4.597 8.059-8.901 11.636-12.917 3.579-4.015 6.547-7.388 8.903-10.181q3.536-4.19 5.673-7.158h-34.59c-4.771 0-8.38-.436-10.823-1.28q-3.665-1.264-3.665-6.72c0-2.676.902-4.8 2.763-6.4 1.832-1.6 4.48-2.385 7.884-2.385h53.443c4.945 0 8.727.727 11.374 2.181 2.648 1.425 3.957 4.044 3.957 7.797 0 1.25-.262 2.532-.757 3.869-.523 1.338-1.077 2.415-1.716 3.288-.61.843-1.483 1.89-2.56 3.113a219 219 0 0 1-3.986 4.363z",
+            className: "fil1",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
+          "path",
+          {
+            fill: "#c8c8c8",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 28.395,
+            d: "M97.296 498.11H883.16M97.296 306.584H883.16M97.296 115.036H883.16",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M600.778 413.34h-25.43v-.655l.066-.654.066-.633.13-.632.131-.61.175-.612.196-.588.218-.567.262-.567.283-.568.306-.523.327-.523.349-.502.392-.48.393-.436.436-.458.436-.436.436-.393.502-.37.48-.371.523-.327.524-.306.567-.283.545-.262.589-.218.589-.218.61-.153.61-.152.612-.11.654-.065.654-.065h1.309l.632.065.633.066.61.109.633.152.588.175.59.196.588.218.567.262.545.283.524.306.523.327.502.37.48.371.436.393.436.436.436.436.415.458.37.48.35.502.326.523.306.523.283.568.262.567.218.567.218.588.153.611.152.61.11.633.065.654.065.633zm-25.408 84.77v-84.77h25.408v84.77zm0 0h25.408l-.022.655-.043.654-.088.633-.109.632-.152.61-.153.611-.218.59-.218.566-.262.567-.262.546-.327.545-.327.523-.349.48-.37.502-.415.436-.414.458-.437.436-.458.393-.48.37-.501.35-.523.348-.524.305-.545.284-.567.24-.567.218-.589.218-.61.175-.611.13-.633.131-.654.066-.632.043-.655.022h-.654l-.654-.065-.61-.066-.633-.13-.611-.131-.61-.175-.59-.218-.567-.218-.567-.24-.545-.284-.545-.305-.502-.349-.501-.349-.48-.37-.458-.415-.436-.414-.436-.436-.393-.458-.37-.502-.371-.48-.328-.523-.305-.545-.283-.546-.24-.567-.218-.567-.218-.589-.175-.61-.13-.61-.11-.655-.087-.61-.044-.655zm25.408-276.297h-25.43v-.655l.066-.654.066-.654.13-.61.131-.611.175-.611.196-.589.218-.589.262-.567.283-.545.306-.523.327-.524.349-.501.392-.48.393-.458.436-.436.436-.437.436-.392.502-.393.48-.349.523-.327.524-.305.567-.284.545-.261.589-.218.589-.219.61-.152.61-.153.612-.109.654-.087.654-.044h1.309l.632.044.633.087.61.11.633.152.588.174.59.197.588.218.567.261.545.284.524.305.523.327.502.35.48.392.436.392.436.437.436.436.415.458.37.48.35.501.326.524.306.523.283.545.262.567.218.59.218.588.153.61.152.611.11.633.065.632.065.654zm-25.408 84.771v-84.771h25.408v84.771zm0 0h25.408l-.022.654-.043.655-.088.632-.109.61-.152.633-.153.59-.218.588-.218.589-.262.567-.262.545-.327.545-.327.502-.349.502-.37.48-.415.457-.414.437-.437.436-.458.414-.48.37-.501.35-.523.327-.524.305-.545.284-.567.261-.567.219-.589.218-.61.174-.611.131-.633.109-.654.087-.632.044h-1.309l-.654-.044-.61-.087-.633-.109-.611-.13-.61-.175-.59-.218-.567-.219-.567-.261-.545-.284-.545-.305-.502-.327-.501-.35-.48-.37-.458-.414-.436-.436-.436-.437-.393-.436-.37-.501-.371-.502-.328-.502-.305-.545-.283-.545-.24-.567-.218-.589-.218-.589-.175-.589-.13-.632-.11-.61-.087-.655-.044-.654zM313.532 30.264h-25.408l.022-.654.044-.654.087-.633.11-.61.152-.633.174-.589.197-.588.218-.59.261-.566.284-.545.305-.546.327-.501.35-.502.37-.48.414-.458.415-.436.436-.436.458-.414.48-.371.501-.35.524-.326.523-.306.545-.283.567-.262.59-.218.588-.218.589-.174.61-.131.655-.11.61-.087.655-.043.654-.022h.654l.655.065.632.088.61.109.611.13.611.175.589.218.589.218.545.262.545.283.545.306.502.327.502.349.48.37.457.415.437.436.436.436.392.437.393.501.349.502.327.501.305.546.284.545.261.567.219.589.196.588.174.59.131.632.131.61.065.655.044.654zm-25.408 84.772V30.264h25.408v84.772zm0 0h25.408v.654l-.066.654-.065.655-.109.61-.153.611-.174.61-.196.59-.219.588-.261.567-.284.546-.305.523-.327.523-.35.502-.392.48-.392.458-.436.436-.437.436-.436.393-.501.392-.48.35-.524.326-.523.306-.567.283-.545.262-.59.218-.588.218-.61.153-.611.152-.611.11-.654.087-.654.043h-1.287l-.654-.043-.633-.087-.61-.11-.633-.152-.589-.175-.589-.196-.589-.218-.567-.262-.545-.283-.523-.306-.524-.327-.48-.349-.501-.392-.436-.393-.436-.436-.437-.436-.392-.458-.393-.48-.349-.502-.327-.523-.305-.523-.284-.546-.261-.567-.218-.588-.219-.59-.152-.61-.153-.61-.109-.633-.087-.633-.044-.654zm171.005 53.104H433.72l.022-.653.044-.655.087-.632.109-.61.153-.633.174-.59.196-.61.218-.567.262-.567.284-.545.305-.545.327-.502.349-.502.37-.48.415-.48.414-.435.437-.436.458-.393.48-.37.501-.35.523-.349.524-.305.545-.284.567-.24.567-.218.61-.218.59-.174.61-.13.633-.11.654-.087.633-.044.654-.022h.654l.654.066.611.087.654.11.59.13.61.174.589.218.567.219.567.24.545.283.545.305.502.35.501.348.48.371.458.414.436.437.436.436.393.436.37.501.372.502.327.502.305.545.284.545.24.567.218.567.218.61.174.59.13.632.11.61.087.655.044.654zm-25.408 84.772v-84.771h25.408v84.771zm0 0h25.408v.655l-.066.654-.065.654-.11.61-.152.611-.174.611-.197.589-.218.589-.261.545-.284.567-.305.523-.327.524-.35.501-.392.48-.393.458-.436.436-.436.437-.436.392-.502.37-.48.372-.523.327-.523.305-.567.284-.546.261-.588.218-.59.219-.61.152-.61.153-.611.109-.654.087-.655.044h-1.286l-.655-.044-.632-.087-.61-.11-.633-.152-.59-.174-.588-.197-.589-.218-.567-.261-.545-.284-.524-.305-.523-.327-.48-.371-.501-.37-.437-.393-.436-.437-.436-.436-.392-.458-.393-.48-.349-.501-.327-.524-.305-.523-.284-.567-.262-.545-.218-.59-.218-.588-.152-.61-.153-.611-.11-.633-.065-.654-.065-.632z",
+            className: "fil1",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M488.81 223.23v-25.407l.655.022.654.043.654.088.611.109.61.152.611.175.59.196.588.218.567.262.545.283.524.306.523.327.502.349.48.37.458.415.436.414.436.436.392.458.393.48.349.502.327.523.305.524.284.545.262.567.218.589.218.589.153.588.152.611.11.654.086.61.044.655v1.309l-.044.654-.087.61-.109.655-.152.589-.175.61-.196.59-.218.566-.262.567-.284.546-.305.545-.327.501-.349.502-.393.48-.392.458-.436.436-.436.436-.458.393-.48.392-.502.35-.523.326-.524.306-.545.283-.567.24-.589.218-.589.218-.61.175-.61.13-.633.131-.633.066-.654.065zm-84.75-25.407h84.75v25.407h-84.75zm0 0v25.407h-.653l-.655-.065-.654-.087-.61-.11-.633-.13-.589-.175-.589-.218-.588-.218-.568-.24-.545-.283-.545-.306-.502-.327-.501-.349-.48-.392-.458-.393-.436-.436-.436-.436-.393-.436-.392-.502-.35-.502-.327-.501-.305-.545-.283-.546-.262-.567-.218-.567-.218-.589-.175-.61-.13-.61-.11-.633-.087-.633-.043-.654v-1.309l.043-.632.087-.633.11-.632.13-.61.175-.59.218-.588.218-.59.262-.566.283-.545.305-.524.328-.523.349-.502.37-.48.415-.436.436-.458.436-.436.436-.393.502-.37.501-.35.502-.326.545-.306.545-.283.568-.262.588-.218.59-.218.588-.153.632-.152.633-.11.632-.087.655-.043zm84.75 197.829v-25.407h.655l.654.065.654.087.611.11.61.13.611.175.59.218.588.218.567.262.545.261.524.306.523.349.502.348.48.371.458.393.436.436.436.436.392.458.393.48.349.502.327.523.305.523.284.546.262.567.218.567.218.589.153.61.152.61.11.633.086.633.044.654v1.309l-.044.654-.087.61-.109.633-.152.61-.175.611-.196.59-.218.566-.262.567-.284.545-.305.524-.327.523-.349.502-.393.48-.392.458-.436.436-.436.436-.458.393-.48.37-.502.35-.523.348-.524.305-.545.262-.567.262-.589.218-.589.218-.61.175-.61.13-.633.11-.633.087-.654.043zm-84.75-25.407h84.75v25.407h-84.75zm0 0v25.407h-.653l-.655-.065-.654-.088-.61-.109-.633-.13-.589-.175-.589-.218-.588-.218-.568-.24-.545-.284-.545-.305-.502-.327-.501-.349-.48-.392-.458-.393-.436-.436-.436-.436-.393-.437-.392-.501-.35-.502-.327-.501-.305-.546-.283-.545-.262-.567-.218-.567-.218-.589-.175-.61-.13-.611-.11-.633-.087-.632-.043-.654v-1.309l.043-.632.087-.633.11-.632.13-.61.175-.59.218-.589.218-.588.262-.567.283-.546.305-.523.328-.523.349-.502.37-.48.415-.436.436-.458.436-.436.436-.393.502-.37.501-.35.502-.327.545-.305.545-.283.568-.262.588-.218.59-.218.588-.153.632-.153.633-.109.632-.087.655-.044zm84.75 67.76v-25.407l.655.021.654.044.654.087.611.11.61.152.611.175.59.196.588.218.567.262.545.283.524.305.523.328.502.349.48.37.458.415.436.414.436.436.392.458.393.48.349.502.327.523.305.523.284.546.262.567.218.567.218.61.153.59.152.61.11.632.086.655.044.632v1.309l-.044.654-.087.61-.109.655-.152.589-.175.61-.196.59-.218.566-.262.567-.284.545-.305.546-.327.501-.349.502-.393.48-.392.458-.436.436-.436.436-.458.393-.48.37-.502.371-.523.327-.524.306-.545.283-.567.24-.589.218-.589.218-.61.175-.61.13-.633.11-.633.087-.654.043zm-84.75-25.407h84.75v25.407h-84.75zm0 0v25.407h-.653l-.655-.065-.654-.066-.61-.109-.633-.152-.589-.175-.589-.196-.588-.218-.568-.262-.545-.283-.545-.306-.502-.327-.501-.349-.48-.392-.458-.393-.436-.436-.436-.436-.393-.437-.392-.501-.35-.48-.327-.523-.305-.524-.283-.567-.262-.545-.218-.589-.218-.589-.175-.61-.13-.611-.11-.61-.087-.655-.043-.654v-1.287l.043-.654.087-.633.11-.61.13-.633.175-.589.218-.588.218-.59.262-.566.283-.546.305-.523.328-.523.349-.48.37-.48.415-.48.436-.436.436-.436.436-.37.502-.393.501-.35.502-.327.545-.305.545-.283.568-.262.588-.218.59-.218.588-.153.632-.153.633-.109.632-.065.655-.066z",
+            className: "fil1",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
           }
         )
       ]
     }
   );
-  var Cristal_default = SvgCristal;
+  var Sum_default = SvgSum;
 
-  // build/lib-react-tsx/misc/Cristal2.tsx
+  // build/lib-react-tsx/mass/Upload.tsx
   var React75 = __toESM(require_react(), 1);
   var import_jsx_runtime75 = __toESM(require_jsx_runtime(), 1);
-  var SvgCristal2 = ({
+  var SvgUpload = ({
     title,
     titleId,
     ...props
@@ -29526,88 +29533,58 @@
         /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
           "path",
           {
-            stroke: "none",
-            d: "M284.74 723.59c-6.913 2.359-10.453 9.775-8.093 16.522 2.192 6.912 9.779 10.45 16.523 8.261zm0 0 181.074-61.54 8.43 24.783-181.074 61.54zm189.504-36.757c6.913-2.36 10.453-9.776 8.093-16.522-2.36-6.912-9.779-10.455-16.523-8.261zM616.54 537.96c-1.348 6.916 3.204 13.828 10.286 15.177 7.081 1.515 13.823-3.038 15.342-10.12zm0 0 39.287-200.967 25.457 5.057-39.116 200.967zm64.744-195.91c1.35-6.912-3.203-13.825-10.285-15.174-7.081-1.517-13.828 3.036-15.172 10.117z"
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 45.698,
+            d: "M60.271 750h889.73m14.061 0-51.622 39.223m0-78.259L964.062 750"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M634.752 74.317c34.393-29.168 82.44-35.069 132.176-21.075l-7.077 25.29c-41.475-11.802-80.93-7.419-108.242 15.679Zm132.176-21.075c48.222 13.656 98.128 46.027 138.758 93.909l-19.895 16.86c-37.257-43.836-82.61-73.34-125.94-85.48Zm138.758 93.909-19.895 16.86zm-9.945 8.43 9.27-9.273c5.058 5.058 5.058 13.488 0 18.546s-13.488 5.058-18.545 0zm9.945-8.43c40.635 47.882 64.404 102.508 69.801 152.075l-25.967 2.866c-5.058-44.678-26.637-94.246-63.73-138.081zm69.801 152.075c5.733 51.591-7.926 97.956-42.32 127.123l-16.856-20.063c27.312-23.098 37.932-61.2 33.21-104.194zm-42.32 127.123c-34.223 29.168-82.274 35.07-132.18 20.907l7.081-25.29c41.475 11.802 80.926 7.587 108.243-15.68zm-132.18 20.906c-48.052-13.656-98.123-45.858-138.758-93.74l20.065-17.028c37.092 43.835 82.445 73.34 125.774 85.48zm-138.758-93.74c-40.46-47.882-64.234-102.676-69.797-152.244l26.133-2.866c4.887 44.679 26.637 94.246 63.73 138.082zm-69.797-152.244c-5.732-51.422 7.922-97.787 42.32-126.954l16.857 19.894c-27.142 23.098-37.932 61.201-33.044 104.194z"
+            d: "M302.823 289.827c0-6.138-7.215-11.125-16.096-11.125-8.696 0-15.911 4.987-15.911 11.125zm0 0v454.971h-32.007V289.827Zm-32.007 454.971c0 6.137 7.215 11.125 15.911 11.125 8.88 0 16.096-4.988 16.096-11.125zm421.643-604.971c0-17.815-7.03-32.289-15.91-32.289s-15.91 14.474-15.91 32.289zm0 0v583.807h-31.82V139.827Zm-31.82 583.807c0 17.811 7.031 32.289 15.91 32.289s15.91-14.478 15.91-32.289z"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
           "path",
           {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M874.496 134q6.071 3.54 10.62 9.105c28.326 33.382 1.184 102.845-60.526 155.11-61.705 52.265-134.54 67.608-162.866 34.225-3.034-3.54-5.562-7.586-7.247-11.97 33.214 20.569 97.278 3.203 152.242-43.33 54.963-46.701 82.445-107.06 67.777-143.14"
+            fill: "#fff",
+            strokeWidth: 0.794,
+            d: "M965.061 524.058a274 282 0 0 1-274 282 274 282 0 0 1-274-282 274 282 0 0 1 274-282 274 282 0 0 1 274 282Z",
+            transform: "rotate(.457)skewX(.026)"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
           "path",
           {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M608.11 118.995c2.364-5.058 5.567-9.442 9.61-12.982 37.432-32.877 132.181 14.837 211.593 106.554 79.407 91.718 113.465 192.708 76.038 225.584a39 39 0 0 1-14.163 7.924c19.895-41.643-14.838-130.832-85.648-212.602-70.811-81.939-153.761-128.64-197.43-114.478"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M451.99 485.022c26.469-19.558 61.536-21.58 96.943-8.936l-8.765 24.615c-27.317-9.61-53.616-8.598-72.668 5.564zm96.943-8.936c33.55 11.802 67.608 37.26 94.245 73.173l-21.075 15.508c-23.434-31.525-52.94-53.781-81.935-64.066zm83.625 80.93 10.62-7.757c4.383 5.732 3.038 13.993-2.694 18.376-5.902 4.213-13.998 3.034-18.38-2.868zm8.43-10.12-16.691 20.234zm-8.26 10.12 9.27-9.276c5.058 5.227 5.058 13.488 0 18.546-5.227 5.227-13.488 5.227-18.546 0zm10.45-7.757c26.642 35.908 40.97 76.038 42.49 111.611l-26.133 1.01c-1.35-30.685-13.993-65.414-37.432-97.113zm42.49 111.611c1.684 37.427-10.456 70.306-36.923 90.032l-15.682-21.075c19.05-14.163 27.651-38.946 26.472-67.947zm-44.68 79.407 7.757 10.625c-5.732 4.213-13.993 3.033-18.38-2.869-4.214-5.732-3.034-13.993 2.698-18.206zm7.757 10.625-15.682-21.075zm0 0c-26.472 19.555-61.54 21.58-96.948 9.105l8.77-24.788c27.143 9.61 53.615 8.601 72.496-5.392zm-96.948 9.105c-33.549-11.974-67.774-37.431-94.244-73.344l21.075-15.508c23.433 31.525 52.939 53.784 81.94 64.064zm-94.244-73.344c-26.639-35.908-40.97-75.868-42.487-111.441l26.133-1.18c1.349 30.685 13.994 65.413 37.429 97.112zm-42.487-111.441c-1.686-37.597 10.453-70.474 36.923-90.032l15.511 20.906c-18.883 14.162-27.65 38.945-26.301 67.946zm44.679-79.578-7.756-10.622c5.732-4.215 13.994-3.035 18.377 2.866 4.215 5.732 3.035 13.994-2.866 18.377z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M606.93 524.98c3.204 2.695 6.238 5.733 8.766 9.271 23.774 32.035 6.242 85.48-39.111 119.033-45.523 33.719-101.666 34.898-125.439 2.699-2.529-3.374-4.72-7.082-6.238-10.96 26.976 22.084 76.039 17.871 116.5-12.14 40.635-30.01 58.841-75.703 45.522-107.902"
+            strokeWidth: 7.895,
+            d: "M687.088 306.072c-123.42 0-223.488 100.084-223.488 223.488 0 123.436 100.067 223.48 223.488 223.48 123.42 0 223.495-100.044 223.495-223.488-.008-123.396-100.075-223.48-223.495-223.48zM800 550a24.2 24.2 0 0 1-17.456 7.39c-6.102 0-12.197-2.282-16.887-6.861l-53.985-52.382v138.152c0 13.421-10.918 24.308-24.316 24.308-13.413 0-24.285-10.887-24.285-24.308V498.147l-53.985 52.382c-9.623 9.324-24.995 9.11-34.358-.521-9.332-9.624-9.11-25.003.521-34.35l95.204-92.339c9.419-9.15 24.38-9.15 33.83 0l95.172 92.338c9.664 9.356 9.892 24.72.545 34.343Z"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
           "path",
           {
             fillRule: "evenodd",
-            stroke: "none",
-            d: "M433.612 518.234a36.3 36.3 0 0 1 8.261-9.271c30.516-23.267 96.775 12.645 148.03 80.252 51.251 67.607 68.113 141.287 37.597 164.55-3.203 2.53-6.911 4.383-11.129 5.568 18.211-30.01-.167-95.09-45.858-155.45-45.688-60.191-103.35-95.258-136.9-85.649"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M141.431 563.082c38.272-4.552 75.026 13.824 103.857 47.208l-19.895 17.196c-23.098-26.807-51.928-41.644-80.758-38.271zm103.857 47.208c27.481 32.034 47.713 78.062 53.952 130.497l-26.133 3.203c-5.564-47.207-23.436-88.347-47.714-116.504zm53.952 130.497c6.237 52.6-2.53 102.17-21.75 139.767l-23.266-12.139c16.86-33.044 24.615-77.218 18.883-124.425zm-21.75 139.767c-20.063 39.111-51.591 65.584-89.694 70.136l-3.204-26.132c29-3.373 53.446-24.618 69.632-56.143zm-89.694 70.136c-38.272 4.553-75.195-13.823-103.857-47.037l19.895-17.197c23.098 26.807 51.76 41.64 80.758 38.102zM83.939 903.653c-27.481-32.035-47.713-78.062-53.951-130.667l25.964-3.033c5.732 47.207 23.604 88.347 47.882 116.503zM29.988 772.986c-6.238-52.6 2.529-102 21.75-139.597l23.266 11.969c-17.029 33.214-24.616 77.218-19.052 124.595Zm21.75-139.597c20.062-39.117 51.59-65.754 89.693-70.307l3.204 26.133c-29 3.543-53.446 24.618-69.631 56.143z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M280.02 706.393c1.685 4.213 2.865 8.596 3.371 12.98 5.058 41.644-45.353 81.77-112.624 89.696-67.102 8.09-125.605-19.051-130.495-60.696-.504-4.383-.504-8.936.17-13.319 14.33 34.054 67.27 54.964 127.29 47.712 59.853-7.081 106.386-39.79 112.287-76.373z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M102.485 584.157c4.384-2.359 9.105-4.048 13.994-4.722 45.521-6.067 93.066 70.306 106.216 170.962 13.152 100.651-12.981 187.14-58.503 193.382-4.89.675-9.779.334-14.668-.845 36.586-20.4 56.143-98.797 44.341-188.659-11.633-89.696-50.748-160.172-91.38-170.117z"
+            strokeWidth: 91.745,
+            d: "M656.432 877.294v33.598q0 7.962-3.604 11.947c-2.432 2.654-5.593 3.982-9.545 3.982-3.855 0-6.953-1.328-9.323-3.982-2.37-2.656-3.572-6.639-3.572-11.947v-40.269c0-6.383-.22-11.313-.663-14.822-.412-3.508-1.582-6.417-3.508-8.66-1.898-2.245-4.93-3.383-9.071-3.383-8.281 0-13.718 2.844-16.342 8.535-2.622 5.657-3.95 13.811-3.95 24.43v34.169c0 5.246-1.2 9.229-3.573 11.915-2.37 2.686-5.499 4.014-9.387 4.014-3.824 0-6.953-1.328-9.387-4.014-2.432-2.686-3.666-6.669-3.666-11.915v-72.317c0-4.742 1.106-8.377 3.288-10.84 2.18-2.467 5.088-3.7 8.659-3.7 3.446 0 6.322 1.17 8.66 3.477 2.307 2.308 3.477 5.5 3.477 9.577v2.402c4.363-5.246 9.071-9.103 14.066-11.567q7.489-3.699 16.688-3.698 9.53 0 16.404 3.792 6.826 3.793 11.283 11.473c4.266-5.182 8.819-9.007 13.717-11.505 4.867-2.496 10.272-3.76 16.182-3.76 6.923 0 12.864 1.358 17.858 4.076q7.491 4.078 11.19 11.663c2.18 4.551 3.254 11.758 3.254 21.587v49.34q0 7.962-3.602 11.947c-2.403 2.654-5.595 3.982-9.546 3.982-3.824 0-6.952-1.328-9.387-4.014-2.434-2.686-3.666-6.669-3.666-11.915V868.38c0-5.437-.222-9.767-.696-13.054-.475-3.256-1.707-6.006-3.729-8.25-2.054-2.213-5.12-3.319-9.261-3.319-3.35 0-6.51.98-9.483 2.972-3.002 1.959-5.309 4.615-6.985 7.963-1.864 4.237-2.78 11.79-2.78 22.6zm119.536-72.032-25.917 106.736c-.886 3.539-1.644 6.289-2.276 8.343-.664 2.022-1.644 3.635-2.97 4.773q-1.992 1.707-5.785 1.708c-6.29 0-9.45-2.719-9.45-8.155 0-1.422.631-4.963 1.865-10.651l25.821-106.737q2.04-8.534 3.889-11.663c1.264-2.119 3.666-3.16 7.238-3.16 3.097 0 5.467.726 7.08 2.212 1.643 1.486 2.465 3.54 2.465 6.132 0 1.896-.664 5.405-1.96 10.461zm86.128 47.757-46.303 51.772h49.527c4.015 0 7.05.948 9.071 2.812 2.055 1.897 3.067 4.33 3.067 7.271 0 2.844-1.012 5.15-3.003 6.953-2.022 1.802-5.056 2.686-9.135 2.686h-68.522c-4.804 0-8.408-1.042-10.779-3.16-2.37-2.086-3.57-4.963-3.57-8.597 0-2.15.822-4.33 2.496-6.543 1.675-2.18 5.12-6.195 10.367-12.073 5.563-6.165 10.62-11.758 15.14-16.752a1706 1706 0 0 0 12.642-14.034c3.888-4.362 7.112-8.027 9.672-11.061q3.84-4.552 6.163-7.777h-37.58c-5.183 0-9.103-.474-11.757-1.39q-3.983-1.375-3.983-7.301c0-2.908.98-5.215 3.002-6.953 1.99-1.738 4.867-2.592 8.565-2.592h58.063c5.373 0 9.481.79 12.357 2.37 2.877 1.548 4.299 4.393 4.299 8.471 0 1.358-.284 2.75-.822 4.203-.568 1.454-1.17 2.624-1.864 3.572-.665.917-1.612 2.054-2.783 3.382a239 239 0 0 1-4.33 4.741z",
+            className: "fil1",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
           }
         )
       ]
     }
   );
-  var Cristal2_default = SvgCristal2;
+  var Upload_default = SvgUpload;
 
-  // build/lib-react-tsx/misc/CyclicVoltammetry.tsx
+  // build/lib-react-tsx/misc/Chromatography.tsx
   var React76 = __toESM(require_react(), 1);
   var import_jsx_runtime76 = __toESM(require_jsx_runtime(), 1);
-  var SvgCyclicVoltammetry = ({
+  var SvgChromatography = ({
     title,
     titleId,
     ...props
@@ -29628,19 +29605,31 @@
           "path",
           {
             fill: "none",
-            strokeWidth: 46.832,
-            d: "M50 474.653c421.86 20.506 370.03-347.871 472.43-355.986 76.377 1.839-34.996 293.312 402.439 293.312 54.679 0 0 62.674-218.717 62.674-109.359 0-164.038 376.041-273.397 376.041S378.075 550 50 550"
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.323,
+            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 33.181,
+            d: "M48.778 730.872c10.983 2.796 44.153 4.518 55.796-25.61 14.843-38.405 7.204-118.945 9.394-210.846 2.852-119.688-3.897-252.065 23.641-273.178C173.235 229.121 150 639.35 180.1 694.107c27.336 49.632 62.365 34.56 106.272 24.677C400 693.205 400.605 521.04 400 477.784c-1.019-79.373 13.328-371.297 11.429-370.944 0 0 5.496 245.006 11.95 360.616C430.392 593.107 450 756.182 520.344 750c79.132-.038 90.787-82.775 90.222-167.836-.753-93.527-5.052-203.405 24.743-207.362 37.396-1.067 33.21 90.955 45.112 195.07 10.722 93.797-4.404 184.937 109.12 174.586 35.53-3.218 113.251 2.089 145.224.307"
           }
         )
       ]
     }
   );
-  var CyclicVoltammetry_default = SvgCyclicVoltammetry;
+  var Chromatography_default = SvgChromatography;
 
-  // build/lib-react-tsx/misc/Drugbank.tsx
+  // build/lib-react-tsx/misc/Cristal.tsx
   var React77 = __toESM(require_react(), 1);
   var import_jsx_runtime77 = __toESM(require_jsx_runtime(), 1);
-  var SvgDrugbank = ({
+  var SvgCristal = ({
     title,
     titleId,
     ...props
@@ -29660,45 +29649,33 @@
         /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
           "path",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 28,
-            d: "m198.817 586.684 334.25-398.343a175 175 0 0 1 268.116 224.975L466.933 811.66a175 175 0 0 1-268.116-224.975"
+            stroke: "none",
+            d: "M984.712 452.914 830.281 808.322l-43.442-18.375L941.51 434.296ZM808.56 799.25l21.72 9.311c-5.25 11.936-19.336 17.667-31.265 12.41-11.936-5.01-17.426-19.096-12.176-31.025zm7.4 22.202-359.946 121.49-14.798-44.631 359.943-121.496Zm-367.345 99.054 7.4 22.676c-12.412 4.061-26.018-2.625-30.075-15.035-4.058-12.417 2.864-25.782 15.276-30.077zm-4.296 23.391L69.098 879.931l8.354-46.782 375.22 64.208ZM73.155 856.54l-4.296 23.39c-12.89-2.15-21.482-14.32-19.095-27.451 2.387-12.885 14.798-21.48 27.688-19.33Zm-23.391 3.58-31.03-214.105 47.022-7.161 30.791 214.105zm-7.4-217.686-23.63 3.58c-1.91-12.888 7.16-25.062 20.05-27.21 13.128-1.91 25.063 6.922 26.972 20.05zm-23.391-4.774L94.16 275.568l46.306 9.308L65.517 646.97zm98.34-357.319-23.153-4.773c2.626-12.89 15.276-21.244 27.927-18.618 12.889 2.625 21.243 15.037 18.618 27.926zM98.218 266.26l142.26-191.91 37.951 27.927-142.02 191.907ZM259.573 88.434l-19.096-14.083c7.877-10.502 22.676-12.889 33.178-5.251 10.503 7.877 12.65 22.676 4.774 33.178zm4.773-23.392 430.84 85.69-9.79 46.545-430.836-85.69zM690.17 174.124l5.017-23.392c12.65 2.626 21 15.037 18.374 27.927-2.865 12.889-15.275 21.244-28.164 18.618zm16.712-16.947 273.056 269.481-33.65 33.894-272.825-269.72zm256.11 286.428 16.946-16.947c9.31 9.07 9.31 24.108 0 33.656-9.305 9.309-24.346 9.547-33.65.239z"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M365.942 387.512 198.817 586.684a175 175 0 0 0 268.116 224.975l167.125-199.171Z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeWidth: 28,
-            d: "m365.942 387.512 268.116 224.976"
+            d: "M282.248 94.64c-.954-12.89-12.412-22.437-25.54-21.244s-22.676 12.651-21.72 25.779zm0 0 22.198 265.185-47.26 4.296-22.199-264.946zm-1.432 267.334 23.63-2.15c.956 12.89-8.593 24.586-21.72 25.78-13.128 1.192-24.585-8.355-25.54-21.483zm-9.07-21.722L684.68 165.77l17.9 43.442-412.932 174.483zm430.834-131.04c12.176-5.013 17.907-18.857 12.89-31.03-4.775-11.935-18.614-17.664-30.79-12.413zM55.254 841.264c-8.593 9.785-7.639 24.82 2.386 33.417 9.787 8.355 24.824 7.16 33.417-2.625zm0 0 110.513-128.177 35.804 30.793L91.057 872.056Zm128.415-112.663-17.902-15.514c8.593-10.025 23.63-11.219 33.417-2.626 9.786 8.354 10.98 23.394 2.387 33.42zm14.083-19.334 260.411 190-28.166 38.185-260.41-189.758Zm232.245 228.185c10.503 7.882 25.301 5.49 33.178-5.25 7.877-10.5 5.49-25.3-5.012-32.935z"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m365.942 387.512 268.116 224.976c6.825-124.814-146.384-253.371-268.116-224.976"
+            d: "M160.277 727.647c-3.342 12.653 4.297 25.537 16.948 28.643 12.412 3.34 25.539-4.295 28.88-16.945zm0 0 98.34-373.55 45.83 11.695-98.341 373.553zm144.17-361.855c3.34-12.65-4.059-25.54-16.71-28.881-12.65-3.104-25.778 4.535-29.12 17.185z"
           }
         )
       ]
     }
   );
-  var Drugbank_default = SvgDrugbank;
+  var Cristal_default = SvgCristal;
 
-  // build/lib-react-tsx/misc/Edit.tsx
+  // build/lib-react-tsx/misc/Cristal2.tsx
   var React78 = __toESM(require_react(), 1);
   var import_jsx_runtime78 = __toESM(require_jsx_runtime(), 1);
-  var SvgEdit = ({
+  var SvgCristal2 = ({
     title,
     titleId,
     ...props
@@ -29708,85 +29685,98 @@
       xmlns: "http://www.w3.org/2000/svg",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "99 45.5 713.2 713.2",
+      viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)(
-          "g",
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
           {
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision",
-            transform: "translate(162 62)scale(3.32556)",
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
-                "path",
-                {
-                  fill: "none",
-                  strokeLinecap: "round",
-                  strokeLinejoin: "round",
-                  strokeWidth: 11.55,
-                  d: "M49.627 5.775h103.35c12.963 0 23.57 10.608 23.57 23.57v145.87c0 12.961-10.609 23.57-23.57 23.57H49.626c-12.962 0-23.57-10.606-23.57-23.57V29.344c0-12.964 10.605-23.57 23.57-23.57",
-                  className: "fil0 str0"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
-                "path",
-                {
-                  d: "m151.591 33.47.187.007.183.023.181.037.179.05.175.066.171.078.168.091.165.104.16.116.156.128.152.14.147.151.141.162.137.172.132.183.125.192.12.201.114.211.107.22.101.227.094.236.087.243.08.25.073.257.065.264.057.27.048.275.04.28.032.286.023.29.014.296.005.298-.005.3-.014.294-.023.29-.031.286-.04.281-.05.275-.056.27-.065.264-.073.257-.08.25-.087.243-.094.236-.1.227-.108.22-.114.21-.12.202-.125.192-.132.182-.137.173-.141.162-.147.15-.152.14-.156.128-.16.117-.165.104-.168.09-.171.08-.175.064-.179.051-.18.037-.184.023-.187.007zM51.011 45.08V33.47h100.58v11.61zm0 0-.186-.008-.184-.023-.18-.036-.179-.051-.175-.065-.172-.079-.168-.09-.164-.105-.16-.116-.157-.128-.151-.14-.147-.15-.142-.163-.136-.172-.132-.183-.126-.192-.12-.201-.113-.211-.108-.22-.1-.227-.094-.235-.088-.244-.08-.25-.072-.257-.065-.264-.057-.27-.048-.275-.04-.28-.033-.286-.023-.29-.014-.295-.004-.3.004-.298.014-.295.023-.29.032-.286.04-.28.05-.276.056-.27.065-.263.072-.258.08-.25.088-.243.093-.235.101-.228.108-.22.113-.21.12-.202.126-.192.132-.182.136-.172.142-.162.147-.151.151-.14.156-.128.16-.117.165-.104.168-.09.172-.079.175-.065.178-.05.181-.038.184-.022.186-.008zm100.58 14.64.187.008.183.022.181.037.179.051.175.065.171.078.168.091.165.104.16.117.156.128.152.14.147.15.141.162.137.173.132.182.125.192.12.202.114.21.107.22.101.227.094.236.087.243.08.25.073.257.065.264.057.27.048.275.04.281.032.286.023.29.014.295.005.299-.005.298-.014.295-.023.29-.031.286-.04.281-.05.276-.056.27-.065.263-.073.257-.08.25-.087.243-.094.236-.1.227-.108.22-.114.21-.12.202-.125.192-.132.183-.137.172-.141.162-.147.15-.152.14-.156.129-.16.116-.165.104-.168.091-.171.078-.175.065-.179.051-.18.037-.184.023-.187.007zM51.011 71.33V59.72h100.58v11.61zm0 0-.186-.008-.184-.022-.18-.037-.179-.051-.175-.065-.172-.078-.168-.091-.164-.104-.16-.117-.157-.128-.151-.14-.147-.15-.142-.163-.136-.172-.132-.182-.126-.192-.12-.202-.113-.21-.108-.22-.1-.228-.094-.235-.088-.243-.08-.25-.072-.258-.065-.263-.057-.27-.048-.275-.04-.281-.033-.286-.023-.29-.014-.295-.004-.299.004-.299.014-.294.023-.291.032-.286.04-.28.05-.276.056-.27.065-.263.072-.257.08-.25.088-.244.093-.235.101-.228.108-.22.113-.21.12-.201.126-.193.132-.182.136-.172.142-.162.147-.151.151-.14.156-.128.16-.117.165-.103.168-.091.172-.079.175-.065.178-.05.181-.037.184-.023.186-.007zm100.58 14.64.187.008.183.022.181.037.179.051.175.065.171.078.168.091.165.104.16.117.156.128.152.14.147.15.141.163.137.172.132.182.125.192.12.202.114.21.107.22.101.228.094.235.087.243.08.25.073.258.065.263.057.27.048.275.04.281.032.286.023.29.014.295.005.299-.005.299-.014.294-.023.29-.031.287-.04.28-.05.276-.056.27-.065.263-.073.257-.08.25-.087.244-.094.235-.1.228-.108.219-.114.21-.12.202-.125.192-.132.183-.137.172-.141.162-.147.151-.152.14-.156.128-.16.116-.165.104-.168.091-.171.079-.175.065-.179.05-.18.037-.184.023-.187.007zM51.011 97.58V85.97h100.58v11.61zm0 0-.186-.008-.184-.022-.18-.037-.179-.051-.175-.065-.172-.078-.168-.091-.164-.104-.16-.117-.157-.128-.151-.14-.147-.15-.142-.162-.136-.173-.132-.182-.126-.192-.12-.202-.113-.21-.108-.22-.1-.227-.094-.236-.088-.243-.08-.25-.072-.257-.065-.264-.057-.27-.048-.275-.04-.281-.033-.286-.023-.29-.014-.295-.004-.299.004-.298.014-.295.023-.29.032-.286.04-.281.05-.276.056-.27.065-.263.072-.257.08-.25.088-.243.093-.236.101-.227.108-.22.113-.21.12-.202.126-.192.132-.183.136-.172.142-.162.147-.15.151-.14.156-.129.16-.116.165-.104.168-.091.172-.078.175-.065.178-.051.181-.037.184-.023.186-.007z",
-                  className: "fil1"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
-                "rect",
-                {
-                  width: 44.549,
-                  height: 90.161,
-                  x: -55.056,
-                  y: 79.964,
-                  fill: "#fefefe",
-                  fillRule: "evenodd",
-                  className: "fil2",
-                  rx: 6.733,
-                  ry: 13.627,
-                  transform: "rotate(-36.303)"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
-                "path",
-                {
-                  fill: "none",
-                  strokeLinecap: "round",
-                  strokeLinejoin: "round",
-                  strokeWidth: 11.55,
-                  d: "m89.143 176.707.493-33.873m-32.965 24.217 32.472 9.656",
-                  className: "fil0 str0"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
-                "path",
-                {
-                  d: "M36.644 79.409 11.988 97.523l-6.782-9.23 24.657-18.115zm11.017-6.543-9.308 6.839-.042-.054-.042-.049-.044-.046-.046-.044-.045-.038-.045-.036-.051-.035-.053-.033-.052-.029-.056-.028-.056-.024-.055-.022-.06-.02-.064-.017-.06-.014-.06-.01-.062-.008-.064-.005-.061-.003-.056.001-.063.004-.06.007-.05.008-.058.012-.055.014-.051.017-.051.019-.05.021-.048.024-.05.027-.049.03-.05.036-6.781-9.232.537-.374.552-.343.565-.314.577-.282.586-.252.593-.22.601-.19.604-.158.606-.128.617-.099.61-.067.61-.039.615-.009.61.02.606.05.603.077.6.107.593.135.583.16.58.192.573.22.56.246.55.274.54.302.524.33.51.356.498.385.48.411.46.437.44.462.42.488.395.512zm35.811 68.254L38.353 79.705l9.308-6.839 45.12 61.415zm6.553 10.95-6.781-9.232.048-.037.043-.037.041-.04.038-.039.034-.04.034-.044.032-.046.03-.046.025-.047.026-.05.024-.056.022-.058.018-.056.016-.057.014-.062.01-.06.009-.062.005-.064.002-.06-.001-.064-.004-.063-.007-.06-.01-.062-.011-.058-.016-.057-.019-.06-.02-.057-.024-.055-.026-.053-.031-.055-.035-.057-.04-.056 9.31-6.839.37.532.338.544.31.559.28.572.25.58.218.587.187.593.158.601.127.605.097.608.068.61.038.609.01.607-.021.611-.05.605-.076.603-.107.6-.134.592-.164.59-.192.582-.218.57-.248.563-.275.554-.307.546-.332.53-.36.515-.387.5-.415.484-.442.466-.467.445-.495.425zm-31.438 8.883 24.656-18.115 6.782 9.231-24.656 18.115zm-11.017 6.543 9.308-6.839.042.054.042.049.044.046.046.043.045.039.046.035.05.035.053.033.052.03.056.028.056.024.056.022.059.019.064.018.061.013.06.011.062.008.06.005.062.002h.061l.06-.005.057-.006.057-.009.054-.011.055-.014.052-.016.048-.018.052-.023.048-.023.05-.027.049-.031.05-.035 6.782 9.231-.538.374-.551.344-.566.313-.576.283-.584.25-.596.222-.6.19-.604.158-.61.128-.61.098-.614.068-.612.038-.61.01-.61-.02-.608-.05-.604-.077-.6-.107-.593-.135-.583-.16-.579-.192-.573-.22-.561-.246-.55-.274-.54-.302-.524-.33-.51-.356-.498-.385-.48-.412-.459-.436-.44-.462-.42-.488zM11.76 99.242l45.119 61.415-9.309 6.839L2.45 106.08zm-6.554-10.95 6.782 9.231-.049.038-.044.038-.04.038-.037.04-.036.041-.033.043-.031.044-.028.046-.029.05-.026.053-.023.052-.021.056-.019.057-.016.057-.013.06-.011.063-.009.062-.004.064-.003.063.002.061.003.063.007.06.01.061.012.059.015.057.019.06.02.057.024.055.026.053.031.055.035.057.04.056-9.31 6.839-.37-.532-.338-.544-.31-.559-.28-.572-.25-.58-.217-.587-.188-.593-.158-.601-.127-.606-.097-.606-.068-.61-.038-.61-.009-.61.02-.608.05-.605.077-.603.106-.597.134-.595.164-.59.192-.581.22-.573.247-.565.276-.553.304-.541.333-.531.36-.517.388-.5.414-.483.443-.466.468-.446.493-.424.518-.4z",
-                  className: "fil1"
-                }
-              )
-            ]
+            stroke: "none",
+            d: "M284.74 723.59c-6.913 2.359-10.453 9.775-8.093 16.522 2.192 6.912 9.779 10.45 16.523 8.261zm0 0 181.074-61.54 8.43 24.783-181.074 61.54zm189.504-36.757c6.913-2.36 10.453-9.776 8.093-16.522-2.36-6.912-9.779-10.455-16.523-8.261zM616.54 537.96c-1.348 6.916 3.204 13.828 10.286 15.177 7.081 1.515 13.823-3.038 15.342-10.12zm0 0 39.287-200.967 25.457 5.057-39.116 200.967zm64.744-195.91c1.35-6.912-3.203-13.825-10.285-15.174-7.081-1.517-13.828 3.036-15.172 10.117z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M634.752 74.317c34.393-29.168 82.44-35.069 132.176-21.075l-7.077 25.29c-41.475-11.802-80.93-7.419-108.242 15.679Zm132.176-21.075c48.222 13.656 98.128 46.027 138.758 93.909l-19.895 16.86c-37.257-43.836-82.61-73.34-125.94-85.48Zm138.758 93.909-19.895 16.86zm-9.945 8.43 9.27-9.273c5.058 5.058 5.058 13.488 0 18.546s-13.488 5.058-18.545 0zm9.945-8.43c40.635 47.882 64.404 102.508 69.801 152.075l-25.967 2.866c-5.058-44.678-26.637-94.246-63.73-138.081zm69.801 152.075c5.733 51.591-7.926 97.956-42.32 127.123l-16.856-20.063c27.312-23.098 37.932-61.2 33.21-104.194zm-42.32 127.123c-34.223 29.168-82.274 35.07-132.18 20.907l7.081-25.29c41.475 11.802 80.926 7.587 108.243-15.68zm-132.18 20.906c-48.052-13.656-98.123-45.858-138.758-93.74l20.065-17.028c37.092 43.835 82.445 73.34 125.774 85.48zm-138.758-93.74c-40.46-47.882-64.234-102.676-69.797-152.244l26.133-2.866c4.887 44.679 26.637 94.246 63.73 138.082zm-69.797-152.244c-5.732-51.422 7.922-97.787 42.32-126.954l16.857 19.894c-27.142 23.098-37.932 61.201-33.044 104.194z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M874.496 134q6.071 3.54 10.62 9.105c28.326 33.382 1.184 102.845-60.526 155.11-61.705 52.265-134.54 67.608-162.866 34.225-3.034-3.54-5.562-7.586-7.247-11.97 33.214 20.569 97.278 3.203 152.242-43.33 54.963-46.701 82.445-107.06 67.777-143.14"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M608.11 118.995c2.364-5.058 5.567-9.442 9.61-12.982 37.432-32.877 132.181 14.837 211.593 106.554 79.407 91.718 113.465 192.708 76.038 225.584a39 39 0 0 1-14.163 7.924c19.895-41.643-14.838-130.832-85.648-212.602-70.811-81.939-153.761-128.64-197.43-114.478"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M451.99 485.022c26.469-19.558 61.536-21.58 96.943-8.936l-8.765 24.615c-27.317-9.61-53.616-8.598-72.668 5.564zm96.943-8.936c33.55 11.802 67.608 37.26 94.245 73.173l-21.075 15.508c-23.434-31.525-52.94-53.781-81.935-64.066zm83.625 80.93 10.62-7.757c4.383 5.732 3.038 13.993-2.694 18.376-5.902 4.213-13.998 3.034-18.38-2.868zm8.43-10.12-16.691 20.234zm-8.26 10.12 9.27-9.276c5.058 5.227 5.058 13.488 0 18.546-5.227 5.227-13.488 5.227-18.546 0zm10.45-7.757c26.642 35.908 40.97 76.038 42.49 111.611l-26.133 1.01c-1.35-30.685-13.993-65.414-37.432-97.113zm42.49 111.611c1.684 37.427-10.456 70.306-36.923 90.032l-15.682-21.075c19.05-14.163 27.651-38.946 26.472-67.947zm-44.68 79.407 7.757 10.625c-5.732 4.213-13.993 3.033-18.38-2.869-4.214-5.732-3.034-13.993 2.698-18.206zm7.757 10.625-15.682-21.075zm0 0c-26.472 19.555-61.54 21.58-96.948 9.105l8.77-24.788c27.143 9.61 53.615 8.601 72.496-5.392zm-96.948 9.105c-33.549-11.974-67.774-37.431-94.244-73.344l21.075-15.508c23.433 31.525 52.939 53.784 81.94 64.064zm-94.244-73.344c-26.639-35.908-40.97-75.868-42.487-111.441l26.133-1.18c1.349 30.685 13.994 65.413 37.429 97.112zm-42.487-111.441c-1.686-37.597 10.453-70.474 36.923-90.032l15.511 20.906c-18.883 14.162-27.65 38.945-26.301 67.946zm44.679-79.578-7.756-10.622c5.732-4.215 13.994-3.035 18.377 2.866 4.215 5.732 3.035 13.994-2.866 18.377z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M606.93 524.98c3.204 2.695 6.238 5.733 8.766 9.271 23.774 32.035 6.242 85.48-39.111 119.033-45.523 33.719-101.666 34.898-125.439 2.699-2.529-3.374-4.72-7.082-6.238-10.96 26.976 22.084 76.039 17.871 116.5-12.14 40.635-30.01 58.841-75.703 45.522-107.902"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M433.612 518.234a36.3 36.3 0 0 1 8.261-9.271c30.516-23.267 96.775 12.645 148.03 80.252 51.251 67.607 68.113 141.287 37.597 164.55-3.203 2.53-6.911 4.383-11.129 5.568 18.211-30.01-.167-95.09-45.858-155.45-45.688-60.191-103.35-95.258-136.9-85.649"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M141.431 563.082c38.272-4.552 75.026 13.824 103.857 47.208l-19.895 17.196c-23.098-26.807-51.928-41.644-80.758-38.271zm103.857 47.208c27.481 32.034 47.713 78.062 53.952 130.497l-26.133 3.203c-5.564-47.207-23.436-88.347-47.714-116.504zm53.952 130.497c6.237 52.6-2.53 102.17-21.75 139.767l-23.266-12.139c16.86-33.044 24.615-77.218 18.883-124.425zm-21.75 139.767c-20.063 39.111-51.591 65.584-89.694 70.136l-3.204-26.132c29-3.373 53.446-24.618 69.632-56.143zm-89.694 70.136c-38.272 4.553-75.195-13.823-103.857-47.037l19.895-17.197c23.098 26.807 51.76 41.64 80.758 38.102zM83.939 903.653c-27.481-32.035-47.713-78.062-53.951-130.667l25.964-3.033c5.732 47.207 23.604 88.347 47.882 116.503zM29.988 772.986c-6.238-52.6 2.529-102 21.75-139.597l23.266 11.969c-17.029 33.214-24.616 77.218-19.052 124.595Zm21.75-139.597c20.062-39.117 51.59-65.754 89.693-70.307l3.204 26.133c-29 3.543-53.446 24.618-69.631 56.143z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M280.02 706.393c1.685 4.213 2.865 8.596 3.371 12.98 5.058 41.644-45.353 81.77-112.624 89.696-67.102 8.09-125.605-19.051-130.495-60.696-.504-4.383-.504-8.936.17-13.319 14.33 34.054 67.27 54.964 127.29 47.712 59.853-7.081 106.386-39.79 112.287-76.373z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M102.485 584.157c4.384-2.359 9.105-4.048 13.994-4.722 45.521-6.067 93.066 70.306 106.216 170.962 13.152 100.651-12.981 187.14-58.503 193.382-4.89.675-9.779.334-14.668-.845 36.586-20.4 56.143-98.797 44.341-188.659-11.633-89.696-50.748-160.172-91.38-170.117z"
           }
         )
       ]
     }
   );
-  var Edit_default = SvgEdit;
+  var Cristal2_default = SvgCristal2;
 
-  // build/lib-react-tsx/misc/ElectronMicroscopy.tsx
+  // build/lib-react-tsx/misc/CyclicVoltammetry.tsx
   var React79 = __toESM(require_react(), 1);
   var import_jsx_runtime79 = __toESM(require_jsx_runtime(), 1);
-  var SvgElectronMicroscopy = ({
+  var SvgCyclicVoltammetry = ({
     title,
     titleId,
     ...props
@@ -29806,43 +29796,20 @@
         /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
           "path",
           {
-            stroke: "none",
-            d: "M957.549 841.063c-66.235 43.629-139.481 78.247-217.722 101.458l-13.81-47.425c73.644-22.013 142.281-54.234 204.518-95.455ZM739.827 942.521c-75.643 22.612-155.892 34.82-238.94 34.82l.4-49.626c78.246 0 153.887-11.407 224.73-32.619zm-238.94 34.82c-83.048 0-163.495-12.208-239.138-34.82l14.808-47.425c71.041 21.212 146.485 32.62 224.73 32.62zm-239.138-34.82c-78.045-23.211-151.288-57.83-217.526-101.458l27.816-41.422c62.036 41.025 130.876 73.442 204.518 95.455ZM58.03 820.451l-13.808 20.814c-11.407-7.605-14.408-23.016-6.804-34.618 7.604-11.407 23.214-14.61 34.62-7.006zm-13.408-20.81c66.238-43.628 139.481-78.247 217.726-101.458l13.808 47.425c-73.642 22.013-142.282 54.43-204.518 95.455ZM262.35 698.183c75.644-22.612 155.89-34.82 238.938-34.82l-.4 49.626c-78.246 0-153.89 11.407-224.73 32.62zm238.938-34.82c83.048 0 163.496 12.208 239.139 34.82l-14.812 47.425c-71.04-21.212-146.482-32.619-224.727-32.619Zm239.139 34.82c78.045 23.211 151.285 57.83 217.526 101.458l-27.815 41.422c-62.04-41.024-130.88-73.442-204.523-95.455ZM943.94 820.45l14.01-20.809c11.408 7.403 14.41 22.814 6.805 34.417-7.605 11.407-23.212 14.61-34.619 7.207zM511.493 62.814C511.493 49.006 500.487 38 486.68 38c-13.608.2-24.815 11.407-24.815 25.014Zm0 0v500.09l-49.629.399V63.012zm-49.629 500.49c0 13.608 11.007 24.614 24.815 24.614 13.607-.2 24.814-11.407 24.814-25.014z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M467.068 589.52c-8.405 11.007-6.404 26.413 4.602 34.616 10.806 8.21 26.415 6.009 34.82-5zm0 0 72.041-95.456 39.423 29.817-72.042 95.255zm111.464-65.639c8.405-11.007 6.403-26.416-4.603-34.82-10.806-8.205-26.415-5.803-34.82 5.003z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M434.249 493.864c-8.205-10.807-23.814-12.808-34.62-4.403-11.007 8.205-13.208 23.814-4.803 34.82zm0 0 72.241 95.255-39.623 30.42-72.041-95.258zm32.618 125.675c8.405 10.802 23.814 12.807 34.82 4.401 11.007-8.405 13.008-23.816 4.803-34.821zm269.157-416.643h-104.66c.202 12.207 2.598 23.013 7.402 32.218 4.805 9.405 11.205 16.21 19.012 21.012 7.806 4.603 16.609 7.004 26.212 7.004 6.407 0 12.208-.801 17.41-2.201 5.404-1.601 10.41-3.802 15.411-7.004 5.006-3.202 9.604-6.604 13.81-10.406 4.2-3.602 9.603-8.605 16.205-14.809 2.806-2.4 6.608-3.602 11.81-3.602 5.404 0 10.008 1.601 13.407 4.603 3.203 3.002 5.006 7.204 5.006 12.607 0 4.803-2.005 10.606-5.606 17.01-3.802 6.404-9.603 12.608-17.208 18.61-7.605 6.004-17.214 10.807-28.817 14.81-11.608 4.002-24.818 5.803-39.826 5.803-34.417 0-61.234-9.806-80.246-29.217-19.01-19.611-28.615-46.227-28.615-79.846 0-15.81 2.401-30.618 7.004-44.026 4.803-13.608 11.604-25.014 20.615-34.82 9.004-9.605 20.21-17.01 33.414-22.213q19.815-7.804 43.83-7.804c21.01 0 38.818 4.402 53.831 13.207 15.008 9.005 26.012 20.212 33.616 34.22 7.403 14.008 11.205 28.217 11.205 42.825 0 13.407-3.998 22.013-11.602 26.215-7.807 3.802-18.614 5.804-32.62 5.804m-104.66-30.218h97.056c-1.205-18.411-6.205-32.019-14.812-41.024-8.601-9.205-19.812-13.808-33.817-13.808-13.406 0-24.214 4.803-32.821 13.808-8.601 9.205-13.81 23.013-15.607 41.024"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
-          "path",
-          {
             fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 55.632,
-            d: "M789.856 66.216h100.058"
+            strokeWidth: 46.832,
+            d: "M50 474.653c421.86 20.506 370.03-347.871 472.43-355.986 76.377 1.839-34.996 293.312 402.439 293.312 54.679 0 0 62.674-218.717 62.674-109.359 0-164.038 376.041-273.397 376.041S378.075 550 50 550"
           }
         )
       ]
     }
   );
-  var ElectronMicroscopy_default = SvgElectronMicroscopy;
+  var CyclicVoltammetry_default = SvgCyclicVoltammetry;
 
-  // build/lib-react-tsx/misc/JcampDx.tsx
+  // build/lib-react-tsx/misc/Drugbank.tsx
   var React80 = __toESM(require_react(), 1);
   var import_jsx_runtime80 = __toESM(require_jsx_runtime(), 1);
-  var SvgJcampDx = ({
+  var SvgDrugbank = ({
     title,
     titleId,
     ...props
@@ -29850,7 +29817,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -29866,12 +29832,215 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
+            strokeWidth: 28,
+            d: "m198.817 586.684 334.25-398.343a175 175 0 0 1 268.116 224.975L466.933 811.66a175 175 0 0 1-268.116-224.975"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M365.942 387.512 198.817 586.684a175 175 0 0 0 268.116 224.975l167.125-199.171Z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeWidth: 28,
+            d: "m365.942 387.512 268.116 224.976"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m365.942 387.512 268.116 224.976c6.825-124.814-146.384-253.371-268.116-224.976"
+          }
+        )
+      ]
+    }
+  );
+  var Drugbank_default = SvgDrugbank;
+
+  // build/lib-react-tsx/misc/Edit.tsx
+  var React81 = __toESM(require_react(), 1);
+  var import_jsx_runtime81 = __toESM(require_jsx_runtime(), 1);
+  var SvgEdit = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "99 45.5 713.2 713.2",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)(
+          "g",
+          {
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision",
+            transform: "translate(162 62)scale(3.32556)",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+                "path",
+                {
+                  fill: "none",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round",
+                  strokeWidth: 11.55,
+                  d: "M49.627 5.775h103.35c12.963 0 23.57 10.608 23.57 23.57v145.87c0 12.961-10.609 23.57-23.57 23.57H49.626c-12.962 0-23.57-10.606-23.57-23.57V29.344c0-12.964 10.605-23.57 23.57-23.57",
+                  className: "fil0 str0"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+                "path",
+                {
+                  d: "m151.591 33.47.187.007.183.023.181.037.179.05.175.066.171.078.168.091.165.104.16.116.156.128.152.14.147.151.141.162.137.172.132.183.125.192.12.201.114.211.107.22.101.227.094.236.087.243.08.25.073.257.065.264.057.27.048.275.04.28.032.286.023.29.014.296.005.298-.005.3-.014.294-.023.29-.031.286-.04.281-.05.275-.056.27-.065.264-.073.257-.08.25-.087.243-.094.236-.1.227-.108.22-.114.21-.12.202-.125.192-.132.182-.137.173-.141.162-.147.15-.152.14-.156.128-.16.117-.165.104-.168.09-.171.08-.175.064-.179.051-.18.037-.184.023-.187.007zM51.011 45.08V33.47h100.58v11.61zm0 0-.186-.008-.184-.023-.18-.036-.179-.051-.175-.065-.172-.079-.168-.09-.164-.105-.16-.116-.157-.128-.151-.14-.147-.15-.142-.163-.136-.172-.132-.183-.126-.192-.12-.201-.113-.211-.108-.22-.1-.227-.094-.235-.088-.244-.08-.25-.072-.257-.065-.264-.057-.27-.048-.275-.04-.28-.033-.286-.023-.29-.014-.295-.004-.3.004-.298.014-.295.023-.29.032-.286.04-.28.05-.276.056-.27.065-.263.072-.258.08-.25.088-.243.093-.235.101-.228.108-.22.113-.21.12-.202.126-.192.132-.182.136-.172.142-.162.147-.151.151-.14.156-.128.16-.117.165-.104.168-.09.172-.079.175-.065.178-.05.181-.038.184-.022.186-.008zm100.58 14.64.187.008.183.022.181.037.179.051.175.065.171.078.168.091.165.104.16.117.156.128.152.14.147.15.141.162.137.173.132.182.125.192.12.202.114.21.107.22.101.227.094.236.087.243.08.25.073.257.065.264.057.27.048.275.04.281.032.286.023.29.014.295.005.299-.005.298-.014.295-.023.29-.031.286-.04.281-.05.276-.056.27-.065.263-.073.257-.08.25-.087.243-.094.236-.1.227-.108.22-.114.21-.12.202-.125.192-.132.183-.137.172-.141.162-.147.15-.152.14-.156.129-.16.116-.165.104-.168.091-.171.078-.175.065-.179.051-.18.037-.184.023-.187.007zM51.011 71.33V59.72h100.58v11.61zm0 0-.186-.008-.184-.022-.18-.037-.179-.051-.175-.065-.172-.078-.168-.091-.164-.104-.16-.117-.157-.128-.151-.14-.147-.15-.142-.163-.136-.172-.132-.182-.126-.192-.12-.202-.113-.21-.108-.22-.1-.228-.094-.235-.088-.243-.08-.25-.072-.258-.065-.263-.057-.27-.048-.275-.04-.281-.033-.286-.023-.29-.014-.295-.004-.299.004-.299.014-.294.023-.291.032-.286.04-.28.05-.276.056-.27.065-.263.072-.257.08-.25.088-.244.093-.235.101-.228.108-.22.113-.21.12-.201.126-.193.132-.182.136-.172.142-.162.147-.151.151-.14.156-.128.16-.117.165-.103.168-.091.172-.079.175-.065.178-.05.181-.037.184-.023.186-.007zm100.58 14.64.187.008.183.022.181.037.179.051.175.065.171.078.168.091.165.104.16.117.156.128.152.14.147.15.141.163.137.172.132.182.125.192.12.202.114.21.107.22.101.228.094.235.087.243.08.25.073.258.065.263.057.27.048.275.04.281.032.286.023.29.014.295.005.299-.005.299-.014.294-.023.29-.031.287-.04.28-.05.276-.056.27-.065.263-.073.257-.08.25-.087.244-.094.235-.1.228-.108.219-.114.21-.12.202-.125.192-.132.183-.137.172-.141.162-.147.151-.152.14-.156.128-.16.116-.165.104-.168.091-.171.079-.175.065-.179.05-.18.037-.184.023-.187.007zM51.011 97.58V85.97h100.58v11.61zm0 0-.186-.008-.184-.022-.18-.037-.179-.051-.175-.065-.172-.078-.168-.091-.164-.104-.16-.117-.157-.128-.151-.14-.147-.15-.142-.162-.136-.173-.132-.182-.126-.192-.12-.202-.113-.21-.108-.22-.1-.227-.094-.236-.088-.243-.08-.25-.072-.257-.065-.264-.057-.27-.048-.275-.04-.281-.033-.286-.023-.29-.014-.295-.004-.299.004-.298.014-.295.023-.29.032-.286.04-.281.05-.276.056-.27.065-.263.072-.257.08-.25.088-.243.093-.236.101-.227.108-.22.113-.21.12-.202.126-.192.132-.183.136-.172.142-.162.147-.15.151-.14.156-.129.16-.116.165-.104.168-.091.172-.078.175-.065.178-.051.181-.037.184-.023.186-.007z",
+                  className: "fil1"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+                "rect",
+                {
+                  width: 44.549,
+                  height: 90.161,
+                  x: -55.056,
+                  y: 79.964,
+                  fill: "#fefefe",
+                  fillRule: "evenodd",
+                  className: "fil2",
+                  rx: 6.733,
+                  ry: 13.627,
+                  transform: "rotate(-36.303)"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+                "path",
+                {
+                  fill: "none",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round",
+                  strokeWidth: 11.55,
+                  d: "m89.143 176.707.493-33.873m-32.965 24.217 32.472 9.656",
+                  className: "fil0 str0"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+                "path",
+                {
+                  d: "M36.644 79.409 11.988 97.523l-6.782-9.23 24.657-18.115zm11.017-6.543-9.308 6.839-.042-.054-.042-.049-.044-.046-.046-.044-.045-.038-.045-.036-.051-.035-.053-.033-.052-.029-.056-.028-.056-.024-.055-.022-.06-.02-.064-.017-.06-.014-.06-.01-.062-.008-.064-.005-.061-.003-.056.001-.063.004-.06.007-.05.008-.058.012-.055.014-.051.017-.051.019-.05.021-.048.024-.05.027-.049.03-.05.036-6.781-9.232.537-.374.552-.343.565-.314.577-.282.586-.252.593-.22.601-.19.604-.158.606-.128.617-.099.61-.067.61-.039.615-.009.61.02.606.05.603.077.6.107.593.135.583.16.58.192.573.22.56.246.55.274.54.302.524.33.51.356.498.385.48.411.46.437.44.462.42.488.395.512zm35.811 68.254L38.353 79.705l9.308-6.839 45.12 61.415zm6.553 10.95-6.781-9.232.048-.037.043-.037.041-.04.038-.039.034-.04.034-.044.032-.046.03-.046.025-.047.026-.05.024-.056.022-.058.018-.056.016-.057.014-.062.01-.06.009-.062.005-.064.002-.06-.001-.064-.004-.063-.007-.06-.01-.062-.011-.058-.016-.057-.019-.06-.02-.057-.024-.055-.026-.053-.031-.055-.035-.057-.04-.056 9.31-6.839.37.532.338.544.31.559.28.572.25.58.218.587.187.593.158.601.127.605.097.608.068.61.038.609.01.607-.021.611-.05.605-.076.603-.107.6-.134.592-.164.59-.192.582-.218.57-.248.563-.275.554-.307.546-.332.53-.36.515-.387.5-.415.484-.442.466-.467.445-.495.425zm-31.438 8.883 24.656-18.115 6.782 9.231-24.656 18.115zm-11.017 6.543 9.308-6.839.042.054.042.049.044.046.046.043.045.039.046.035.05.035.053.033.052.03.056.028.056.024.056.022.059.019.064.018.061.013.06.011.062.008.06.005.062.002h.061l.06-.005.057-.006.057-.009.054-.011.055-.014.052-.016.048-.018.052-.023.048-.023.05-.027.049-.031.05-.035 6.782 9.231-.538.374-.551.344-.566.313-.576.283-.584.25-.596.222-.6.19-.604.158-.61.128-.61.098-.614.068-.612.038-.61.01-.61-.02-.608-.05-.604-.077-.6-.107-.593-.135-.583-.16-.579-.192-.573-.22-.561-.246-.55-.274-.54-.302-.524-.33-.51-.356-.498-.385-.48-.412-.459-.436-.44-.462-.42-.488zM11.76 99.242l45.119 61.415-9.309 6.839L2.45 106.08zm-6.554-10.95 6.782 9.231-.049.038-.044.038-.04.038-.037.04-.036.041-.033.043-.031.044-.028.046-.029.05-.026.053-.023.052-.021.056-.019.057-.016.057-.013.06-.011.063-.009.062-.004.064-.003.063.002.061.003.063.007.06.01.061.012.059.015.057.019.06.02.057.024.055.026.053.031.055.035.057.04.056-9.31 6.839-.37-.532-.338-.544-.31-.559-.28-.572-.25-.58-.217-.587-.188-.593-.158-.601-.127-.606-.097-.606-.068-.61-.038-.61-.009-.61.02-.608.05-.605.077-.603.106-.597.134-.595.164-.59.192-.581.22-.573.247-.565.276-.553.304-.541.333-.531.36-.517.388-.5.414-.483.443-.466.468-.446.493-.424.518-.4z",
+                  className: "fil1"
+                }
+              )
+            ]
+          }
+        )
+      ]
+    }
+  );
+  var Edit_default = SvgEdit;
+
+  // build/lib-react-tsx/misc/ElectronMicroscopy.tsx
+  var React82 = __toESM(require_react(), 1);
+  var import_jsx_runtime82 = __toESM(require_jsx_runtime(), 1);
+  var SvgElectronMicroscopy = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime82.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M957.549 841.063c-66.235 43.629-139.481 78.247-217.722 101.458l-13.81-47.425c73.644-22.013 142.281-54.234 204.518-95.455ZM739.827 942.521c-75.643 22.612-155.892 34.82-238.94 34.82l.4-49.626c78.246 0 153.887-11.407 224.73-32.619zm-238.94 34.82c-83.048 0-163.495-12.208-239.138-34.82l14.808-47.425c71.041 21.212 146.485 32.62 224.73 32.62zm-239.138-34.82c-78.045-23.211-151.288-57.83-217.526-101.458l27.816-41.422c62.036 41.025 130.876 73.442 204.518 95.455ZM58.03 820.451l-13.808 20.814c-11.407-7.605-14.408-23.016-6.804-34.618 7.604-11.407 23.214-14.61 34.62-7.006zm-13.408-20.81c66.238-43.628 139.481-78.247 217.726-101.458l13.808 47.425c-73.642 22.013-142.282 54.43-204.518 95.455ZM262.35 698.183c75.644-22.612 155.89-34.82 238.938-34.82l-.4 49.626c-78.246 0-153.89 11.407-224.73 32.62zm238.938-34.82c83.048 0 163.496 12.208 239.139 34.82l-14.812 47.425c-71.04-21.212-146.482-32.619-224.727-32.619Zm239.139 34.82c78.045 23.211 151.285 57.83 217.526 101.458l-27.815 41.422c-62.04-41.024-130.88-73.442-204.523-95.455ZM943.94 820.45l14.01-20.809c11.408 7.403 14.41 22.814 6.805 34.417-7.605 11.407-23.212 14.61-34.619 7.207zM511.493 62.814C511.493 49.006 500.487 38 486.68 38c-13.608.2-24.815 11.407-24.815 25.014Zm0 0v500.09l-49.629.399V63.012zm-49.629 500.49c0 13.608 11.007 24.614 24.815 24.614 13.607-.2 24.814-11.407 24.814-25.014z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M467.068 589.52c-8.405 11.007-6.404 26.413 4.602 34.616 10.806 8.21 26.415 6.009 34.82-5zm0 0 72.041-95.456 39.423 29.817-72.042 95.255zm111.464-65.639c8.405-11.007 6.403-26.416-4.603-34.82-10.806-8.205-26.415-5.803-34.82 5.003z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M434.249 493.864c-8.205-10.807-23.814-12.808-34.62-4.403-11.007 8.205-13.208 23.814-4.803 34.82zm0 0 72.241 95.255-39.623 30.42-72.041-95.258zm32.618 125.675c8.405 10.802 23.814 12.807 34.82 4.401 11.007-8.405 13.008-23.816 4.803-34.821zm269.157-416.643h-104.66c.202 12.207 2.598 23.013 7.402 32.218 4.805 9.405 11.205 16.21 19.012 21.012 7.806 4.603 16.609 7.004 26.212 7.004 6.407 0 12.208-.801 17.41-2.201 5.404-1.601 10.41-3.802 15.411-7.004 5.006-3.202 9.604-6.604 13.81-10.406 4.2-3.602 9.603-8.605 16.205-14.809 2.806-2.4 6.608-3.602 11.81-3.602 5.404 0 10.008 1.601 13.407 4.603 3.203 3.002 5.006 7.204 5.006 12.607 0 4.803-2.005 10.606-5.606 17.01-3.802 6.404-9.603 12.608-17.208 18.61-7.605 6.004-17.214 10.807-28.817 14.81-11.608 4.002-24.818 5.803-39.826 5.803-34.417 0-61.234-9.806-80.246-29.217-19.01-19.611-28.615-46.227-28.615-79.846 0-15.81 2.401-30.618 7.004-44.026 4.803-13.608 11.604-25.014 20.615-34.82 9.004-9.605 20.21-17.01 33.414-22.213q19.815-7.804 43.83-7.804c21.01 0 38.818 4.402 53.831 13.207 15.008 9.005 26.012 20.212 33.616 34.22 7.403 14.008 11.205 28.217 11.205 42.825 0 13.407-3.998 22.013-11.602 26.215-7.807 3.802-18.614 5.804-32.62 5.804m-104.66-30.218h97.056c-1.205-18.411-6.205-32.019-14.812-41.024-8.601-9.205-19.812-13.808-33.817-13.808-13.406 0-24.214 4.803-32.821 13.808-8.601 9.205-13.81 23.013-15.607 41.024"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 55.632,
+            d: "M789.856 66.216h100.058"
+          }
+        )
+      ]
+    }
+  );
+  var ElectronMicroscopy_default = SvgElectronMicroscopy;
+
+  // build/lib-react-tsx/misc/JcampDx.tsx
+  var React83 = __toESM(require_react(), 1);
+  var import_jsx_runtime83 = __toESM(require_jsx_runtime(), 1);
+  var SvgJcampDx = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime83.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 36,
             d: "M150 50h550l150 150v750H150Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
           "path",
           {
             fill: "none",
@@ -29882,7 +30051,7 @@
             d: "M700 50v150h150"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
           "text",
           {
             x: 500,
@@ -29895,7 +30064,7 @@
             children: ".jdx"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
           "path",
           {
             fill: "none",
@@ -29912,13 +30081,13 @@
   var JcampDx_default = SvgJcampDx;
 
   // build/lib-react-tsx/misc/Json.tsx
-  var React81 = __toESM(require_react(), 1);
-  var import_jsx_runtime81 = __toESM(require_jsx_runtime(), 1);
+  var React84 = __toESM(require_react(), 1);
+  var import_jsx_runtime84 = __toESM(require_jsx_runtime(), 1);
   var SvgJson = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -29931,8 +30100,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
           "path",
           {
             fill: "none",
@@ -29942,7 +30111,7 @@
             d: "M350 80q-100 0-100 120v200q0 100-100 100 100 0 100 100v200q0 120 100 120M650 80q100 0 100 120v200q0 100 100 100-100 0-100 100v200q0 120-100 120"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
           "path",
           {
             stroke: "none",
@@ -29955,13 +30124,13 @@
   var Json_default = SvgJson;
 
   // build/lib-react-tsx/misc/Netcdf.tsx
-  var React82 = __toESM(require_react(), 1);
-  var import_jsx_runtime82 = __toESM(require_jsx_runtime(), 1);
+  var React85 = __toESM(require_react(), 1);
+  var import_jsx_runtime85 = __toESM(require_jsx_runtime(), 1);
   var SvgNetcdf = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -29974,8 +30143,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime82.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
           "path",
           {
             fill: "none",
@@ -29986,7 +30155,7 @@
             d: "M150 50h550l150 150v750H150Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
           "path",
           {
             fill: "none",
@@ -29997,7 +30166,7 @@
             d: "M700 50v150h150"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
           "text",
           {
             x: 500,
@@ -30010,7 +30179,7 @@
             children: ".cdf"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
           "path",
           {
             fill: "none",
@@ -30027,114 +30196,9 @@
   var Netcdf_default = SvgNetcdf;
 
   // build/lib-react-tsx/misc/Octochemdb.tsx
-  var React83 = __toESM(require_react(), 1);
-  var import_jsx_runtime83 = __toESM(require_jsx_runtime(), 1);
-  var SvgOctochemdb = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime83.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
-          "path",
-          {
-            fill: "#000",
-            strokeWidth: 2,
-            d: "M288.36 27.616C59.4 26.468 8.418 397.516 329.488 451.864c-59 1.068-110.764 16.22-183.5 51.94C-50.54 600.302-10.81 913.608 189.609 879.676c68.96-11.676 102.42-100.65 1.75-130.75 33.03 59.22-55.936 94.2-83.812 3.876-22.524-72.98 42.29-149.828 104.936-170 61-19.64 110.488-21.72 164.94-11.688-73.17 68.494-113.094 160.93-84.752 247.248 89.044 271.19 384.292 165.04 325.688-13.44-20.692-63.012-82.816-93.01-136-20.31 70.328-17.708 100.9 77.5 36.376 98.684-52.71 17.31-120.424-27.054-132.064-82.686-15.64-74.78 39.54-154.39 109.56-190.5 44.352 70.74 77.624 97.36 166.44 144.372 171.686 90.872 425.914-73.08 287.812-221.06-45.252-48.488-109.148-60.04-135 26.248 60.376-40.18 121.496 53.6 67.75 95.126-43.9 33.92-123.006 38.27-172.874 11-61.594-33.684-107.58-75.596-140.376-133.064 114.14 27.38 239.168-2.13 286-90.684 91.44-172.9-14.092-304.934-118.25-306.75-40.756-.712-81.308 18.474-109.75 63-35.7 55.892-19.63 123.066 70.314 118.248-58.22-43.256-3.8-127.246 53.434-90.686 46.756 29.864 44.988 103.76 19.5 154.56-30.33 60.46-121.146 101.476-190.124 49.314-6.016-11.42-11.126-23.366-15.56-35.686 17.98-12.98 29.748-34.056 29.748-57.75 0-35.544-26.504-65.28-60.69-70.436-19.526-94.268-46.68-185.296-169.688-225.188-27.28-8.848-52.874-12.944-76.56-13.06zm235.689 274.81c18.926 0 33.874 14.948 33.874 33.876 0 18.926-14.946 33.874-33.872 33.874s-33.812-14.948-33.812-33.876c0-18.926 14.886-33.874 33.812-33.874zm-130.812 21c18.926 0 33.874 14.948 33.874 33.876 0 18.926-14.948 33.874-33.876 33.874-18.926 0-33.874-14.948-33.874-33.876 0-18.926 14.948-33.874 33.876-33.874z"
-          }
-        )
-      ]
-    }
-  );
-  var Octochemdb_default = SvgOctochemdb;
-
-  // build/lib-react-tsx/misc/Peptide.tsx
-  var React84 = __toESM(require_react(), 1);
-  var import_jsx_runtime84 = __toESM(require_jsx_runtime(), 1);
-  var SvgPeptide = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 50.719,
-            d: "M122.51 335.96c42.683 0 77.33-34.825 77.33-77.329s-34.647-77.15-77.33-77.15c-42.504 0-77.15 34.646-77.15 77.15s34.646 77.33 77.15 77.33m377.896 421.47-169.124-71.434m80.186-484.157c42.505 0 77.15-34.825 77.15-77.33s-34.645-77.15-77.15-77.15c-42.504 0-77.15 34.646-77.15 77.15s34.646 77.33 77.15 77.33m113.05 290.386c42.503 0 77.146-34.646 77.146-77.15s-34.643-77.33-77.146-77.33c-42.507 0-77.332 34.825-77.332 77.33s34.825 77.15 77.332 77.15m-257.35 213.416c42.504 0 77.329-34.827 77.329-77.33s-34.825-77.152-77.329-77.152c-42.505 0-77.15 34.648-77.15 77.151 0 42.504 34.645 77.331 77.15 77.331M580.235 849.05c42.503 0 77.33-34.648 77.33-77.151 0-42.504-34.827-77.151-77.33-77.151s-77.15 34.647-77.15 77.15 34.646 77.152 77.15 77.152M507.37 337.746l-60.899-145.014m18.395 276.813-123.584 111.26m.358-423.077-144.122 64.47m675.784 463.439c42.683 0 77.326-34.647 77.326-77.15s-34.643-77.327-77.326-77.327c-42.504 0-77.151 34.823-77.151 77.326 0 42.504 34.647 77.151 77.15 77.151m-83.582-316.995c42.508 0 77.151-34.646 77.151-77.15 0-42.683-34.643-77.33-77.151-77.33-42.684 0-77.326 34.647-77.326 77.33 0 42.504 34.642 77.15 77.326 77.15m9.465 281.098L658.28 727.427M853.657 530.8l-43.933-165.015"
-          }
-        )
-      ]
-    }
-  );
-  var Peptide_default = SvgPeptide;
-
-  // build/lib-react-tsx/misc/Percent.tsx
-  var React85 = __toESM(require_react(), 1);
-  var import_jsx_runtime85 = __toESM(require_jsx_runtime(), 1);
-  var SvgPercent = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "21.1 24.3 947.3 947.3",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 100.803,
-            d: "M127.434 119.309c-57.771 63.662-57.973 167.047-.439 230.936 57.526 63.88 150.991 64.055 208.761.393 57.765-63.669 57.961-167.055.434-230.934-57.534-63.875-150.986-64.056-208.756-.395M316.6 924.229 672.977 71.633M653.829 645.28c-57.765 63.654-57.968 167.04-.439 230.925 57.517 63.881 150.985 64.061 208.754.394 57.762-63.664 57.96-167.044.43-230.925-57.534-63.887-150.984-64.055-208.745-.394"
-          }
-        )
-      ]
-    }
-  );
-  var Percent_default = SvgPercent;
-
-  // build/lib-react-tsx/misc/Polymer.tsx
   var React86 = __toESM(require_react(), 1);
   var import_jsx_runtime86 = __toESM(require_jsx_runtime(), 1);
-  var SvgPolymer = ({
+  var SvgOctochemdb = ({
     title,
     titleId,
     ...props
@@ -30154,32 +30218,20 @@
         /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
           "path",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 50,
-            d: "M100 200c150-50 300-100 421.429-68.571C704.945 178.927 894.769 164.709 950 150M50 450c182.696-142.115 350-88.4 450-38.4C589.443 456.32 850 450 950 550M50 800c150 100 250 100 350 50s150-50 227.143-92.857C724.877 702.846 900 750 950 700"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 50,
-            d: "M344.286 138.571c150 50 55.326 255.413 144.285 267.143m-232.857-32.857C300 450 340.797 708.987 150 850m667.143-677.143C750 250 650 400 700 450m-153.571-19.286C600 500 550 700 567.857 772.143"
+            fill: "#000",
+            strokeWidth: 2,
+            d: "M288.36 27.616C59.4 26.468 8.418 397.516 329.488 451.864c-59 1.068-110.764 16.22-183.5 51.94C-50.54 600.302-10.81 913.608 189.609 879.676c68.96-11.676 102.42-100.65 1.75-130.75 33.03 59.22-55.936 94.2-83.812 3.876-22.524-72.98 42.29-149.828 104.936-170 61-19.64 110.488-21.72 164.94-11.688-73.17 68.494-113.094 160.93-84.752 247.248 89.044 271.19 384.292 165.04 325.688-13.44-20.692-63.012-82.816-93.01-136-20.31 70.328-17.708 100.9 77.5 36.376 98.684-52.71 17.31-120.424-27.054-132.064-82.686-15.64-74.78 39.54-154.39 109.56-190.5 44.352 70.74 77.624 97.36 166.44 144.372 171.686 90.872 425.914-73.08 287.812-221.06-45.252-48.488-109.148-60.04-135 26.248 60.376-40.18 121.496 53.6 67.75 95.126-43.9 33.92-123.006 38.27-172.874 11-61.594-33.684-107.58-75.596-140.376-133.064 114.14 27.38 239.168-2.13 286-90.684 91.44-172.9-14.092-304.934-118.25-306.75-40.756-.712-81.308 18.474-109.75 63-35.7 55.892-19.63 123.066 70.314 118.248-58.22-43.256-3.8-127.246 53.434-90.686 46.756 29.864 44.988 103.76 19.5 154.56-30.33 60.46-121.146 101.476-190.124 49.314-6.016-11.42-11.126-23.366-15.56-35.686 17.98-12.98 29.748-34.056 29.748-57.75 0-35.544-26.504-65.28-60.69-70.436-19.526-94.268-46.68-185.296-169.688-225.188-27.28-8.848-52.874-12.944-76.56-13.06zm235.689 274.81c18.926 0 33.874 14.948 33.874 33.876 0 18.926-14.946 33.874-33.872 33.874s-33.812-14.948-33.812-33.876c0-18.926 14.886-33.874 33.812-33.874zm-130.812 21c18.926 0 33.874 14.948 33.874 33.876 0 18.926-14.948 33.874-33.876 33.874-18.926 0-33.874-14.948-33.874-33.876 0-18.926 14.948-33.874 33.876-33.874z"
           }
         )
       ]
     }
   );
-  var Polymer_default = SvgPolymer;
+  var Octochemdb_default = SvgOctochemdb;
 
-  // build/lib-react-tsx/misc/Pubchem.tsx
+  // build/lib-react-tsx/misc/Peptide.tsx
   var React87 = __toESM(require_react(), 1);
   var import_jsx_runtime87 = __toESM(require_jsx_runtime(), 1);
-  var SvgPubchem = ({
+  var SvgPeptide = ({
     title,
     titleId,
     ...props
@@ -30196,17 +30248,25 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime87.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime87.jsx)("path", { d: "M510.482 36.393a27.5 27.5 0 0 0-13.181 3.439l-372.125 205.88a27.53 27.53 0 0 0-14.2 24.015l-1.101 436.533a27.53 27.53 0 0 0 13.002 23.45l370.475 230.102a27.53 27.53 0 0 0 27.873.688l372.127-206.432a27.53 27.53 0 0 0 14.171-23.998l1.102-435.982a27.53 27.53 0 0 0-13.002-23.451L525.148 40.535a27.53 27.53 0 0 0-14.666-4.142zm-.66 59.423L853.54 309.3l-1.021 404.47L508.66 904.52l-343.7-213.472 1.022-405z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime87.jsx)("path", { d: "M632.283 416.225h106.793c-3.302-29.726-11.01-56.15-23.67-79.27s-28.625-42.387-48.443-58.35c-19.267-15.414-41.286-27.525-66.058-35.232-24.771-8.257-50.644-12.66-78.719-12.66-38.533 0-73.214 7.156-104.04 20.918-30.277 14.312-56.7 33.029-77.619 57.8-20.918 24.222-37.433 53.397-48.442 85.876-11.56 33.029-17.065 68.81-17.065 107.344 0 37.433 5.505 72.113 17.065 104.591 11.01 32.479 27.524 61.104 48.442 84.775 20.918 24.22 47.342 42.937 77.618 56.7 30.827 13.761 65.508 20.367 104.041 20.367 31.378 0 59.452-4.404 85.325-14.312 25.873-9.358 48.443-23.671 67.71-41.837q28.9-27.249 46.24-66.058c12.11-25.873 19.267-55.048 22.02-87.527H636.686c-4.404 34.68-15.964 62.755-35.231 83.674-18.717 21.469-45.14 31.928-79.27 31.928-24.771 0-45.69-4.955-63.305-14.863-17.616-9.909-31.378-23.12-42.387-39.085-10.46-16.514-18.717-35.23-23.671-55.598s-7.156-41.286-7.156-62.755c0-22.57 2.202-44.59 7.156-65.508 4.954-21.469 13.212-40.185 23.67-56.7 11.01-16.514 24.772-29.725 42.388-39.634 17.615-9.909 38.534-14.863 63.305-14.863 13.762 0 26.974 2.202 39.085 7.156 12.66 4.404 23.67 10.46 33.579 18.716 9.909 8.258 18.166 17.616 24.772 28.626s10.459 22.57 12.66 35.78z" })
+        /* @__PURE__ */ (0, import_jsx_runtime87.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 50.719,
+            d: "M122.51 335.96c42.683 0 77.33-34.825 77.33-77.329s-34.647-77.15-77.33-77.15c-42.504 0-77.15 34.646-77.15 77.15s34.646 77.33 77.15 77.33m377.896 421.47-169.124-71.434m80.186-484.157c42.505 0 77.15-34.825 77.15-77.33s-34.645-77.15-77.15-77.15c-42.504 0-77.15 34.646-77.15 77.15s34.646 77.33 77.15 77.33m113.05 290.386c42.503 0 77.146-34.646 77.146-77.15s-34.643-77.33-77.146-77.33c-42.507 0-77.332 34.825-77.332 77.33s34.825 77.15 77.332 77.15m-257.35 213.416c42.504 0 77.329-34.827 77.329-77.33s-34.825-77.152-77.329-77.152c-42.505 0-77.15 34.648-77.15 77.151 0 42.504 34.645 77.331 77.15 77.331M580.235 849.05c42.503 0 77.33-34.648 77.33-77.151 0-42.504-34.827-77.151-77.33-77.151s-77.15 34.647-77.15 77.15 34.646 77.152 77.15 77.152M507.37 337.746l-60.899-145.014m18.395 276.813-123.584 111.26m.358-423.077-144.122 64.47m675.784 463.439c42.683 0 77.326-34.647 77.326-77.15s-34.643-77.327-77.326-77.327c-42.504 0-77.151 34.823-77.151 77.326 0 42.504 34.647 77.151 77.15 77.151m-83.582-316.995c42.508 0 77.151-34.646 77.151-77.15 0-42.683-34.643-77.33-77.151-77.33-42.684 0-77.326 34.647-77.326 77.33 0 42.504 34.642 77.15 77.326 77.15m9.465 281.098L658.28 727.427M853.657 530.8l-43.933-165.015"
+          }
+        )
       ]
     }
   );
-  var Pubchem_default = SvgPubchem;
+  var Peptide_default = SvgPeptide;
 
-  // build/lib-react-tsx/misc/Regexp.tsx
+  // build/lib-react-tsx/misc/Percent.tsx
   var React88 = __toESM(require_react(), 1);
   var import_jsx_runtime88 = __toESM(require_jsx_runtime(), 1);
-  var SvgRegexp = ({
+  var SvgPercent = ({
     title,
     titleId,
     ...props
@@ -30217,74 +30277,33 @@
       xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "21.1 24.3 947.3 947.3",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
-          "g",
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+          "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.91,
-                  d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.908,
-                  d: "m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.908,
-                  d: "M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
-                "path",
-                {
-                  strokeWidth: 21.586,
-                  d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"
-                }
-              )
-            ]
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
-          "text",
-          {
-            x: 420,
-            y: 420,
-            stroke: "none",
-            fontFamily: "monospace",
-            fontSize: 280,
-            fontWeight: "bold",
-            textAnchor: "middle",
-            children: ".*"
+            strokeWidth: 100.803,
+            d: "M127.434 119.309c-57.771 63.662-57.973 167.047-.439 230.936 57.526 63.88 150.991 64.055 208.761.393 57.765-63.669 57.961-167.055.434-230.934-57.534-63.875-150.986-64.056-208.756-.395M316.6 924.229 672.977 71.633M653.829 645.28c-57.765 63.654-57.968 167.04-.439 230.925 57.517 63.881 150.985 64.061 208.754.394 57.762-63.664 57.96-167.044.43-230.925-57.534-63.887-150.984-64.055-208.745-.394"
           }
         )
       ]
     }
   );
-  var Regexp_default = SvgRegexp;
+  var Percent_default = SvgPercent;
 
-  // build/lib-react-tsx/misc/SearchRequest.tsx
+  // build/lib-react-tsx/misc/Polymer.tsx
   var React89 = __toESM(require_react(), 1);
   var import_jsx_runtime89 = __toESM(require_jsx_runtime(), 1);
-  var SvgSearchRequest = ({
+  var SvgPolymer = ({
     title,
     titleId,
     ...props
@@ -30307,6 +30326,156 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
+            strokeWidth: 50,
+            d: "M100 200c150-50 300-100 421.429-68.571C704.945 178.927 894.769 164.709 950 150M50 450c182.696-142.115 350-88.4 450-38.4C589.443 456.32 850 450 950 550M50 800c150 100 250 100 350 50s150-50 227.143-92.857C724.877 702.846 900 750 950 700"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 50,
+            d: "M344.286 138.571c150 50 55.326 255.413 144.285 267.143m-232.857-32.857C300 450 340.797 708.987 150 850m667.143-677.143C750 250 650 400 700 450m-153.571-19.286C600 500 550 700 567.857 772.143"
+          }
+        )
+      ]
+    }
+  );
+  var Polymer_default = SvgPolymer;
+
+  // build/lib-react-tsx/misc/Pubchem.tsx
+  var React90 = __toESM(require_react(), 1);
+  var import_jsx_runtime90 = __toESM(require_jsx_runtime(), 1);
+  var SvgPubchem = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("path", { d: "M510.482 36.393a27.5 27.5 0 0 0-13.181 3.439l-372.125 205.88a27.53 27.53 0 0 0-14.2 24.015l-1.101 436.533a27.53 27.53 0 0 0 13.002 23.45l370.475 230.102a27.53 27.53 0 0 0 27.873.688l372.127-206.432a27.53 27.53 0 0 0 14.171-23.998l1.102-435.982a27.53 27.53 0 0 0-13.002-23.451L525.148 40.535a27.53 27.53 0 0 0-14.666-4.142zm-.66 59.423L853.54 309.3l-1.021 404.47L508.66 904.52l-343.7-213.472 1.022-405z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("path", { d: "M632.283 416.225h106.793c-3.302-29.726-11.01-56.15-23.67-79.27s-28.625-42.387-48.443-58.35c-19.267-15.414-41.286-27.525-66.058-35.232-24.771-8.257-50.644-12.66-78.719-12.66-38.533 0-73.214 7.156-104.04 20.918-30.277 14.312-56.7 33.029-77.619 57.8-20.918 24.222-37.433 53.397-48.442 85.876-11.56 33.029-17.065 68.81-17.065 107.344 0 37.433 5.505 72.113 17.065 104.591 11.01 32.479 27.524 61.104 48.442 84.775 20.918 24.22 47.342 42.937 77.618 56.7 30.827 13.761 65.508 20.367 104.041 20.367 31.378 0 59.452-4.404 85.325-14.312 25.873-9.358 48.443-23.671 67.71-41.837q28.9-27.249 46.24-66.058c12.11-25.873 19.267-55.048 22.02-87.527H636.686c-4.404 34.68-15.964 62.755-35.231 83.674-18.717 21.469-45.14 31.928-79.27 31.928-24.771 0-45.69-4.955-63.305-14.863-17.616-9.909-31.378-23.12-42.387-39.085-10.46-16.514-18.717-35.23-23.671-55.598s-7.156-41.286-7.156-62.755c0-22.57 2.202-44.59 7.156-65.508 4.954-21.469 13.212-40.185 23.67-56.7 11.01-16.514 24.772-29.725 42.388-39.634 17.615-9.909 38.534-14.863 63.305-14.863 13.762 0 26.974 2.202 39.085 7.156 12.66 4.404 23.67 10.46 33.579 18.716 9.909 8.258 18.166 17.616 24.772 28.626s10.459 22.57 12.66 35.78z" })
+      ]
+    }
+  );
+  var Pubchem_default = SvgPubchem;
+
+  // build/lib-react-tsx/misc/Regexp.tsx
+  var React91 = __toESM(require_react(), 1);
+  var import_jsx_runtime91 = __toESM(require_jsx_runtime(), 1);
+  var SvgRegexp = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)(
+          "g",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.91,
+                  d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.908,
+                  d: "m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.908,
+                  d: "M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+                "path",
+                {
+                  strokeWidth: 21.586,
+                  d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"
+                }
+              )
+            ]
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+          "text",
+          {
+            x: 420,
+            y: 420,
+            stroke: "none",
+            fontFamily: "monospace",
+            fontSize: 280,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: ".*"
+          }
+        )
+      ]
+    }
+  );
+  var Regexp_default = SvgRegexp;
+
+  // build/lib-react-tsx/misc/SearchRequest.tsx
+  var React92 = __toESM(require_react(), 1);
+  var import_jsx_runtime92 = __toESM(require_jsx_runtime(), 1);
+  var SvgSearchRequest = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime92.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
             strokeWidth: 52.85,
             d: "M423.177 667.09c-166.181 0-301.72-135.541-301.72-301.721 0-166.183 135.538-301.726 301.72-301.726 166.18 0 301.725 135.544 301.725 301.726 0 166.18-135.544 301.72-301.725 301.72",
             className: "fil0 str0",
@@ -30316,7 +30485,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
           "path",
           {
             fill: "none",
@@ -30331,7 +30500,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
           "path",
           {
             fill: "none",
@@ -30346,7 +30515,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
           "path",
           {
             fill: "none",
@@ -30361,7 +30530,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
           "path",
           {
             stroke: "none",
@@ -30374,13 +30543,13 @@
   var SearchRequest_default = SvgSearchRequest;
 
   // build/lib-react-tsx/misc/Weight.tsx
-  var React90 = __toESM(require_react(), 1);
-  var import_jsx_runtime90 = __toESM(require_jsx_runtime(), 1);
+  var React93 = __toESM(require_react(), 1);
+  var import_jsx_runtime93 = __toESM(require_jsx_runtime(), 1);
   var SvgWeight = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -30392,15 +30561,15 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
           "path",
           {
             stroke: "none",
             d: "M407.416 576.172H125.817l.484-47.956h281.438zm-281.438-23.978-.161 23.978c-13.356 0-23.976-10.785-23.815-23.978.16-13.356 10.942-24.136 24.298-24.136zm-22.045-9.335 140.8-330.193 44.09 18.505-140.8 330.195zm162.845-321.02-22.045-9.173c5.149-12.23 19.31-18.022 31.539-12.873 12.229 4.988 17.861 19.149 12.55 31.378zm22.045-9.495 140.8 330.196-44.091 19.15-140.8-330.197Zm118.754 339.85 22.045-9.654c5.31 12.23-.482 26.39-12.712 31.7-12.23 5.147-26.229-.324-31.378-12.55z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -30408,14 +30577,14 @@
             d: "M431.392 553.162v1.283c0 93.01-73.698 168.317-164.614 168.317s-164.615-75.306-164.615-168.317v-1.283z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
           "path",
           {
             stroke: "none",
             d: "M875.835 576.172h-281.6l.324-47.956h281.6zm-281.437-23.978-.163 23.978c-13.356 0-23.973-10.785-23.816-23.978.163-13.356 10.947-24.136 24.302-24.136zm-22.046-9.335 140.8-330.193 44.091 18.505-140.8 330.195zm162.845-321.02-22.046-9.173c5.152-12.23 19.313-18.022 31.538-12.873 12.23 4.988 17.863 19.149 12.554 31.378zm22.046-9.495 140.8 330.196-44.092 19.15-140.8-330.197Zm118.754 339.85 22.046-9.654c5.309 12.23-.482 26.39-12.711 31.7-12.23 5.147-26.23-.324-31.38-12.55z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -30423,14 +30592,14 @@
             d: "M899.813 553.162v1.283c0 93.01-73.698 168.317-164.616 168.317-90.917 0-164.615-75.306-164.615-168.317v-1.283z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
           "path",
           {
             stroke: "none",
             d: "M269.03 194.322c-13.195.161-23.976 10.781-24.137 24.137a23.76 23.76 0 0 0 23.815 23.815zm0 0h464.236l-.32 47.952H268.71zm463.916 47.952c13.193 0 24.135-10.78 24.135-23.976.163-13.195-10.46-23.976-23.815-23.976z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
           "path",
           {
             stroke: "none",
@@ -30443,13 +30612,13 @@
   var Weight_default = SvgWeight;
 
   // build/lib-react-tsx/misc/Xps.tsx
-  var React91 = __toESM(require_react(), 1);
-  var import_jsx_runtime91 = __toESM(require_jsx_runtime(), 1);
+  var React94 = __toESM(require_react(), 1);
+  var import_jsx_runtime94 = __toESM(require_jsx_runtime(), 1);
   var SvgXps = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -30464,9 +30633,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("style", { children: ".st0{fill:none;stroke:#000;stroke-width:38.8466;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:9.4994}" }),
-        /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("style", { children: ".st0{fill:none;stroke:#000;stroke-width:38.8466;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:9.4994}" }),
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
           "filter",
           {
             id: "filter907",
@@ -30475,29 +30644,29 @@
             x: -0.04,
             y: -0.124,
             colorInterpolationFilters: "sRGB",
-            children: /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("feGaussianBlur", { id: "feGaussianBlur909", stdDeviation: 1.527 })
+            children: /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("feGaussianBlur", { id: "feGaussianBlur909", stdDeviation: 1.527 })
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)("g", { id: "g6050", transform: "translate(1485.641 -1771.974)scale(2.37485)", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("g", { id: "g6050", transform: "translate(1485.641 -1771.974)scale(2.37485)", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
             "path",
             {
               id: "path5963",
               d: "M-578.8 1087.7c0 5.5 3.7 9.9 8.2 9.9s8.2-4.4 8.2-9.9zm0 0V814.4h16.4v273.3zm16.4-273.3c0-5.4-3.7-9.8-8.2-9.8-4.6 0-8.2 4.4-8.2 9.8z"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("path", { id: "path5965", d: "m-570.6 801.5 21 27.7", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("path", { id: "path5967", d: "m-591.6 829.2 21-27.7", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("path", { id: "path5965", d: "m-570.6 801.5 21 27.7", className: "st0" }),
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("path", { id: "path5967", d: "m-591.6 829.2 21-27.7", className: "st0" }),
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
             "path",
             {
               id: "path5969",
               d: "M-562.4 1087.7c-6.2 0-11.2 3.7-11.2 8.2 0 4.6 5 8.2 11.2 8.2zm0 0H-253v16.4h-309.5v-16.4zm309.4 16.4c6.1 0 11.1-3.7 11.1-8.2s-5-8.2-11.1-8.2z"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("path", { id: "path5971", d: "m-238.8 1095.8-27.7 21.1", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("path", { id: "path5973", d: "m-266.5 1074.8 27.7 21", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("path", { id: "path5971", d: "m-238.8 1095.8-27.7 21.1", className: "st0" }),
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("path", { id: "path5973", d: "m-266.5 1074.8 27.7 21", className: "st0" }),
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
             "path",
             {
               id: "path857",
@@ -30515,13 +30684,13 @@
   var Xps_default = SvgXps;
 
   // build/lib-react-tsx/misc/Zenodo.tsx
-  var React92 = __toESM(require_react(), 1);
-  var import_jsx_runtime92 = __toESM(require_jsx_runtime(), 1);
+  var React95 = __toESM(require_react(), 1);
+  var import_jsx_runtime95 = __toESM(require_jsx_runtime(), 1);
   var SvgZenodo = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -30533,8 +30702,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime92.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
           "path",
           {
             fill: "none",
@@ -30554,141 +30723,9 @@
   var Zenodo_default = SvgZenodo;
 
   // build/lib-react-tsx/nmr/13C.tsx
-  var React93 = __toESM(require_react(), 1);
-  var import_jsx_runtime93 = __toESM(require_jsx_runtime(), 1);
-  var Svg13C = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("path", { d: "M959.838 645.911c0 8.223-.169 15.101-.665 20.795a128 128 0 0 1-2.185 14.756c-.999 4.185-2.348 7.712-4.019 10.559-1.681 3.015-4.193 6.366-7.878 10.06-3.524 3.853-10.569 8.546-20.795 14.579-10.396 5.873-22.968 11.57-37.889 16.935-14.92 5.363-31.848 9.892-51.132 13.418-19.114 3.684-39.733 5.531-62.034 5.531-43.586 0-82.819-6.875-117.862-20.284-35.035-13.419-64.871-33.361-89.349-60.02-24.647-26.828-43.418-60.021-56.505-100.09-13.075-39.902-19.78-86.337-19.78-139.481 0-53.99 7.208-101.937 21.629-143.854 14.42-41.906 34.535-77.114 60.521-105.62 25.816-28.498 56.835-50.127 93.049-64.874 36.208-14.756 75.94-22.13 119.534-22.13 17.772 0 34.71 1.502 51.132 4.527 16.433 2.848 31.521 6.699 45.434 11.563 13.918 4.695 26.484 10.225 37.559 16.433 11.068 6.198 18.945 11.562 23.298 15.925 4.531 4.361 7.551 8.045 9.055 11.062 1.682 3.026 3.018 6.708 4.028 11.238 1.004 4.694 1.671 10.06 2.17 16.257.514 6.208.675 13.92.675 23.143 0 9.716-.329 18.104-.844 24.981-.666 6.865-1.833 12.395-3.514 16.759-1.679 4.194-3.519 7.377-5.868 9.225-2.348 2.013-4.861 3.014-7.886 3.014-4.86 0-11.059-2.848-18.606-8.546-7.544-5.698-17.269-12.24-29.342-19.283-11.895-7.043-26.149-13.419-42.581-19.115q-24.89-8.549-59.344-8.548c-25.15 0-47.616 5.196-67.4 15.423-19.951 10.39-36.72 25.147-50.629 44.263-13.92 19.107-24.478 42.242-31.689 69.402-7.208 27.328-10.894 57.838-10.894 91.877 0 37.387 3.86 69.745 11.561 97.063 7.72 27.329 18.781 49.795 33.037 67.564 14.242 17.604 31.344 30.855 51.465 39.569 20.114 8.556 42.918 12.907 68.063 12.907q34.448 0 59.354-8.046c16.768-5.363 31.177-11.405 43.083-17.937 11.905-6.544 21.798-12.407 29.508-17.771 7.714-5.197 13.576-7.711 17.939-7.711 3.186 0 5.863.502 7.71 1.846 2.012 1.337 3.683 4.019 5.032 7.879 1.336 4.016 2.179 9.381 2.846 16.424.674 7.046 1.008 16.428 1.008 28.333zM205.28 297.133c0 4.263-.234 7.83-.695 10.767-.463 2.946-1.082 5.343-1.935 7.042-.855 1.711-1.777 3.026-2.871 3.724-1 .778-2.236 1.159-3.634 1.159H34.219a5.5 5.5 0 0 1-3.41-1.159c-1.079-.698-2.015-2.013-2.867-3.724-.849-1.698-1.467-4.096-1.938-7.042-.457-2.938-.696-6.504-.696-10.767 0-4.411.239-8.057.618-10.992.392-2.947.934-5.343 1.791-7.122.853-1.858 1.777-3.184 2.867-4.026a5.85 5.85 0 0 1 3.634-1.241h54.667V82.709L41.654 108.81c-3.487 1.699-6.276 2.703-8.517 3.095-2.173.384-3.88-.077-5.195-1.396-1.306-1.237-2.164-3.486-2.634-6.658-.38-3.171-.619-7.674-.619-13.401 0-3.632.078-6.581.239-8.978.076-2.326.459-4.341 1.077-5.962.632-1.708 1.475-3.026 2.479-4.106 1.091-1.08 2.561-2.171 4.339-3.409L95.94 27.188c.694-.628 1.621-1.091 2.789-1.474 1.159-.392 2.626-.695 4.413-.93 1.855-.238 4.183-.384 7.197-.463 2.95-.078 6.739-.078 11.466-.078 5.728 0 10.372.078 13.937.305 3.557.238 6.19.63 8.054 1.168 1.779.463 3.017 1.24 3.638 2.095.537.923.852 2.082.852 3.397v242.546h47.86c1.397 0 2.634.465 3.794 1.241 1.081.844 2.093 2.169 2.945 4.026.844 1.78 1.384 4.174 1.778 7.122.384 2.935.617 6.581.617 10.99zm236.813-63.262c0 14.638-2.791 27.643-8.37 39.028-5.567 11.309-13.401 20.837-23.389 28.576-9.994 7.663-21.906 13.548-35.856 17.575-13.93 4.028-29.114 5.963-45.608 5.963-9.994 0-19.355-.699-28.106-2.094-8.754-1.462-16.494-3.25-23.233-5.343-6.739-2.161-12.32-4.331-16.728-6.582-4.342-2.316-7.202-4.018-8.599-5.265-1.394-1.16-2.404-2.554-3.016-4.026-.696-1.542-1.315-3.331-1.863-5.335-.541-2.094-.926-4.648-1.16-7.751-.225-3.096-.315-6.816-.315-11.228 0-7.281.632-12.31 1.79-15.099 1.238-2.79 3.094-4.185 5.497-4.185 1.466 0 4.097 1.011 7.82 3.103 3.713 2.006 8.44 4.175 14.167 6.582 5.736 2.318 12.477 4.49 20.214 6.582 7.665 2.016 16.494 3.018 26.327 3.018 8.292 0 15.64-1.002 21.996-2.937 6.346-1.946 11.77-4.725 16.177-8.292 4.498-3.567 7.829-7.818 10-12.927 2.163-5.039 3.332-10.687 3.332-16.885 0-6.819-1.394-12.928-4.036-18.351-2.626-5.5-6.583-10.146-11.771-14.018-5.186-3.803-11.769-6.816-19.746-8.908-7.895-2.171-17.27-3.173-28.027-3.173h-25.4c-1.939 0-3.646-.305-4.961-.855-1.399-.463-2.557-1.62-3.401-3.251-.935-1.701-1.553-3.95-1.947-6.887-.38-3.025-.536-6.817-.536-11.462 0-4.42.156-7.977.536-10.847.393-2.779 1.011-4.949 1.791-6.423.843-1.553 1.933-2.555 3.17-3.173 1.319-.618 2.872-.932 4.65-.932h25.625c8.833 0 16.571-1.004 23.393-3.017 6.816-2.092 12.544-4.959 17.111-8.753 4.646-3.793 8.133-8.36 10.607-13.702 2.396-5.424 3.569-11.308 3.569-17.821 0-5.03-.779-9.754-2.487-14.164-1.622-4.49-4.097-8.369-7.359-11.621-3.252-3.249-7.428-5.805-12.614-7.663-5.118-1.934-11.16-2.868-18.124-2.868-7.898 0-15.257 1.161-22.23 3.487-6.965 2.397-13.163 4.96-18.736 7.74-5.498 2.79-10.225 5.425-14.014 7.83-3.874 2.398-6.739 3.635-8.519 3.635-1.237 0-2.328-.306-3.184-.776-.921-.542-1.7-1.542-2.317-3.095-.542-1.472-1.012-3.71-1.316-6.583-.314-2.866-.463-6.581-.463-11.079 0-3.792.07-6.965.225-9.441.16-2.483.47-4.568.935-6.276.382-1.619 1.003-3.095 1.7-4.255.619-1.246 1.785-2.562 3.252-4.026 1.548-1.394 4.646-3.565 9.292-6.435 4.724-2.857 10.606-5.647 17.74-8.36 7.124-2.79 15.256-5.028 24.63-6.964 9.292-1.866 19.349-2.789 30.277-2.789 14.162 0 26.796 1.621 37.789 4.95q16.37 4.996 27.641 14.413c7.516 6.266 13.162 14.008 17.042 23.152 3.794 9.136 5.729 19.431 5.729 30.974 0 8.911-1.091 17.19-3.41 24.932-2.25 7.75-5.58 14.638-9.911 20.679-4.412 6.041-9.91 11.149-16.493 15.412-6.58 4.254-14.175 7.436-22.771 9.53v.687c10.227 1.169 19.517 3.803 27.642 7.83 8.214 4.017 15.109 9.056 20.758 15.099 5.651 6.041 10.07 12.846 13.084 20.521 3.032 7.577 4.508 15.789 4.508 24.619z" })
-      ]
-    }
-  );
-  var C_default = Svg13C;
-
-  // build/lib-react-tsx/nmr/1H.tsx
-  var React94 = __toESM(require_react(), 1);
-  var import_jsx_runtime94 = __toESM(require_jsx_runtime(), 1);
-  var Svg1H = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("path", { d: "M953.102 865.157c0 3.837-1.218 7.457-3.836 10.49-2.628 3.245-6.879 5.87-12.742 7.695-5.848 2.012-13.735 3.625-23.629 4.83-9.912 1.229-22.238 1.822-37.394 1.822-15.355 0-28.085-.594-38.183-1.822-9.91-1.204-17.991-2.818-23.649-4.83-5.662-1.825-9.896-4.45-12.321-7.695-2.633-3.032-3.839-6.653-3.839-10.49V555.371H510.967v309.787c0 3.838-1.209 7.457-3.632 10.49-2.43 3.244-6.464 5.87-12.53 7.695-5.861 2.014-13.748 3.625-23.641 4.831-9.902 1.229-22.43 1.822-37.799 1.822-14.956 0-27.476-.594-37.579-1.822-10.099-1.204-18.187-2.817-24.049-4.831-5.861-1.825-10.095-4.451-12.724-7.695-2.634-3.031-3.837-6.652-3.837-10.49V141.536c0-3.834 1.203-7.485 3.837-10.515 2.627-3.221 6.861-5.848 12.724-7.673 5.862-2.036 13.951-3.645 24.049-4.852 10.102-1.208 22.624-1.822 37.579-1.822 15.369 0 27.897.615 37.799 1.822 9.894 1.207 17.779 2.816 23.641 4.852 6.066 1.825 10.101 4.452 12.53 7.673 2.423 3.029 3.632 6.68 3.632 10.515V422.81h286.542V141.536c0-3.834 1.205-7.485 3.839-10.515 2.427-3.221 6.661-5.848 12.321-7.673 5.658-2.036 13.737-3.645 23.649-4.852 10.098-1.208 22.829-1.822 38.183-1.822 15.155 0 27.481.615 37.394 1.822 9.894 1.207 17.779 2.816 23.629 4.852 5.863 1.825 10.114 4.452 12.742 7.673 2.617 3.029 3.836 6.68 3.836 10.515zM259.367 349.994c0 5.14-.286 9.425-.849 12.978-.563 3.55-1.312 6.44-2.327 8.5-1.03 2.036-2.153 3.623-3.458 4.477-1.217.923-2.711 1.397-4.391 1.397H53.178a6.7 6.7 0 0 1-4.109-1.397c-1.312-.854-2.422-2.441-3.452-4.477-1.023-2.059-1.775-4.95-2.333-8.5-.557-3.553-.84-7.839-.84-12.978 0-5.327.283-9.709.744-13.26.476-3.553 1.124-6.44 2.146-8.572 1.025-2.252 2.149-3.838 3.455-4.853a7.06 7.06 0 0 1 4.389-1.494h65.893V91.547L62.13 122.995c-4.192 2.062-7.556 3.268-10.265 3.744-2.603.447-4.665-.098-6.25-1.682-1.588-1.492-2.616-4.214-3.173-8.029-.474-3.834-.747-9.234-.747-16.15 0-4.38.095-7.934.273-10.823.094-2.811.568-5.238 1.314-7.189.745-2.062 1.776-3.647 2.983-4.952 1.312-1.299 3.091-2.615 5.236-4.107l76.059-49.184c.842-.745 1.963-1.314 3.361-1.776 1.395-.475 3.175-.843 5.327-1.126 2.239-.284 5.033-.461 8.68-.553 3.544-.098 8.121-.098 13.807-.098 6.914 0 12.511.098 16.812.369 4.288.284 7.458.76 9.695 1.41 2.155.555 3.646 1.491 4.393 2.522.654 1.113 1.019 2.522 1.019 4.107v292.338h57.685c1.68 0 3.173.544 4.58 1.494 1.304 1.016 2.512 2.603 3.541 4.853 1.033 2.13 1.688 5.019 2.158 8.572.463 3.55.749 7.931.749 13.259z" })
-      ]
-    }
-  );
-  var H_default = Svg1H;
-
-  // build/lib-react-tsx/nmr/1H13C.tsx
-  var React95 = __toESM(require_react(), 1);
-  var import_jsx_runtime95 = __toESM(require_jsx_runtime(), 1);
-  var Svg1H13C = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 30.004,
-            d: "m363.105 35.888 53.128 70.154m-106.259 0 53.131-70.154"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 41.53,
-            d: "M363.114 640.841h576.354m-576.363 0V64.487"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 30.004,
-            d: "m968.07 640.841-70.158 53.127m0-106.255 70.158 53.128"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("path", { d: "M480.425 505.72c27.762 0 50.405-14.576 50.405-32.437 0-17.87-22.644-32.435-50.405-32.435-27.769 0-50.41 14.565-50.41 32.435 0 17.862 22.641 32.437 50.41 32.437zM284.782 291.987c0 2.158-.043 3.961-.175 5.458a34 34 0 0 1-.572 3.875q-.397 1.652-1.057 2.774c-.441.795-1.101 1.672-2.071 2.642-.921 1.012-2.772 2.244-5.459 3.83-2.729 1.542-6.03 3.035-9.947 4.446-3.917 1.406-8.361 2.598-13.423 3.521-5.018.969-10.433 1.454-16.289 1.454-11.442 0-21.743-1.804-30.944-5.327-9.201-3.52-17.036-8.759-23.462-15.756-6.468-7.045-11.398-15.76-14.835-26.281-3.433-10.476-5.192-22.667-5.192-36.624 0-14.171 1.896-26.761 5.677-37.764 3.785-11.005 9.069-20.25 15.89-27.729 6.782-7.485 14.925-13.161 24.433-17.036 9.507-3.874 19.939-5.812 31.38-5.812 4.668 0 9.113.396 13.429 1.188 4.314.75 8.275 1.764 11.931 3.039 3.65 1.231 6.953 2.687 9.855 4.315 2.908 1.629 4.979 3.035 6.122 4.179q1.781 1.716 2.376 2.909c.44.791.791 1.761 1.056 2.949.262 1.23.441 2.642.571 4.27.131 1.628.175 3.65.175 6.075 0 2.549-.087 4.749-.217 6.554-.175 1.808-.485 3.258-.926 4.406-.441 1.101-.925 1.935-1.542 2.418-.615.529-1.275.792-2.065.792q-1.92.001-4.886-2.245c-1.982-1.493-4.537-3.209-7.704-5.061-3.126-1.847-6.869-3.521-11.178-5.018-4.358-1.499-9.556-2.244-15.586-2.244-6.602 0-12.501 1.362-17.694 4.047-5.24 2.729-9.638 6.603-13.293 11.62q-5.482 7.525-8.318 18.227c-1.896 7.171-2.861 15.185-2.861 24.119q.002 14.725 3.036 25.486c2.025 7.18 4.93 13.074 8.672 17.742 3.742 4.621 8.231 8.096 13.511 10.384 5.284 2.25 11.271 3.393 17.873 3.393 6.031 0 11.223-.707 15.581-2.113 4.402-1.411 8.188-2.996 11.314-4.712 3.122-1.716 5.721-3.257 7.747-4.664 2.026-1.366 3.563-2.027 4.708-2.027.838 0 1.542.131 2.026.485.528.354.969 1.056 1.318 2.07.354 1.057.571 2.463.75 4.309.177 1.846.265 4.315.265 7.437z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
-          "path",
-          {
-            strokeMiterlimit: 22.926,
-            strokeWidth: 0.966,
-            d: "M75.202 200.414c0 1.117-.06 2.052-.183 2.825-.122.772-.283 1.403-.507 1.851-.227.446-.471.791-.755.975-.262.206-.59.307-.956.307H30.29c-.328 0-.633-.101-.896-.307-.284-.184-.529-.529-.75-.975-.223-.448-.388-1.079-.51-1.851-.122-.774-.181-1.708-.181-2.825 0-1.162.059-2.114.163-2.887.1-.774.245-1.406.467-1.875.222-.484.467-.834.75-1.057.267-.201.589-.324.956-.324h14.354v-50.162l-12.402 6.856c-.917.446-1.646.707-2.236.811-.572.1-1.017-.021-1.362-.367-.35-.328-.571-.913-.692-1.747-.103-.835-.163-2.013-.163-3.521 0-.956.021-1.729.06-2.358.023-.611.122-1.14.284-1.568.162-.445.388-.791.65-1.074.284-.284.672-.572 1.139-.896l16.569-10.717c.188-.162.428-.284.733-.384.305-.105.689-.183 1.162-.245.484-.06 1.096-.101 1.891-.122.77-.023 1.769-.023 3.009-.023 1.501 0 2.726.023 3.659.083.934.06 1.625.162 2.114.305.466.122.794.324.956.546.14.245.222.55.222.895v63.682h12.563c.367 0 .693.123.996.324.289.223.551.571.774 1.057.227.466.367 1.101.471 1.874.102.78.162 1.732.162 2.894zm62.175-16.612q-.002 5.763-2.196 10.249a21.35 21.35 0 0 1-6.141 7.498c-2.625 2.013-5.755 3.559-9.414 4.621-3.66 1.057-7.646 1.563-11.974 1.563-2.625 0-5.083-.184-7.385-.551q-3.445-.576-6.096-1.403c-1.768-.567-3.236-1.139-4.393-1.729-1.139-.612-1.891-1.057-2.258-1.38a2.8 2.8 0 0 1-.791-1.056 10 10 0 0 1-.489-1.405q-.215-.817-.305-2.03a41 41 0 0 1-.083-2.952c0-1.908.167-3.233.471-3.961.324-.733.812-1.101 1.441-1.101.388 0 1.078.267 2.052.812.979.533 2.218 1.1 3.721 1.729 1.505.612 3.275 1.18 5.31 1.729 2.013.529 4.329.791 6.909.791 2.179 0 4.109-.262 5.777-.773 1.669-.507 3.091-1.235 4.25-2.175 1.179-.934 2.053-2.053 2.625-3.393.567-1.324.873-2.809.873-4.433 0-1.791-.367-3.397-1.057-4.822-.689-1.441-1.729-2.663-3.092-3.676-1.362-1-3.091-1.791-5.183-2.341-2.075-.567-4.533-.834-7.363-.834h-6.668c-.507 0-.956-.079-1.302-.224-.362-.122-.672-.427-.896-.851-.245-.45-.407-1.041-.507-1.812-.105-.795-.145-1.791-.145-3.009 0-1.158.039-2.091.145-2.846.1-.729.262-1.302.467-1.687.222-.405.506-.672.834-.833q.517-.243 1.217-.244h6.73c2.317 0 4.354-.267 6.139-.795 1.791-.546 3.297-1.297 4.493-2.296a10 10 0 0 0 2.787-3.6c.633-1.424.935-2.964.935-4.678 0-1.318-.201-2.558-.65-3.72a8.15 8.15 0 0 0-1.93-3.047c-.855-.857-1.951-1.524-3.314-2.013-1.341-.507-2.926-.751-4.755-.751-2.075 0-4.008.305-5.834.913-1.833.633-3.458 1.302-4.92 2.036-1.446.733-2.687 1.423-3.683 2.053-1.018.632-1.768.956-2.237.956-.322 0-.61-.083-.834-.205-.243-.141-.445-.407-.611-.812-.139-.385-.262-.975-.346-1.729-.083-.75-.122-1.725-.122-2.904q.002-1.502.062-2.484.063-.97.244-1.646a4.2 4.2 0 0 1 .445-1.117c.167-.324.472-.668.856-1.057.406-.367 1.219-.934 2.441-1.686 1.24-.751 2.785-1.484 4.655-2.196 1.87-.733 4.004-1.322 6.463-1.83 2.441-.489 5.084-.734 7.952-.734 3.72 0 7.034.429 9.921 1.301q4.302 1.31 7.258 3.782c1.973 1.647 3.458 3.682 4.476 6.08.996 2.402 1.501 5.105 1.501 8.135 0 2.337-.283 4.51-.896 6.546-.59 2.035-1.463 3.843-2.603 5.429-1.158 1.585-2.602 2.93-4.331 4.048-1.725 1.117-3.721 1.951-5.973 2.498v.184c2.681.306 5.123.996 7.257 2.053 2.153 1.062 3.966 2.38 5.45 3.964 1.485 1.59 2.642 3.375 3.433 5.391.799 1.989 1.187 4.142 1.187 6.46z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("path", { d: "M849.393 917.236c0 .839-.262 1.634-.834 2.289-.572.706-1.497 1.275-2.774 1.676-1.279.438-2.996.786-5.153 1.058-2.156.262-4.843.392-8.139.392q-5.018 0-8.325-.392c-2.153-.271-3.916-.621-5.149-1.058-1.23-.4-2.157-.97-2.685-1.676-.571-.655-.834-1.45-.834-2.289V849.76h-62.42v67.477c0 .839-.264 1.634-.792 2.289-.527.706-1.409 1.275-2.728 1.676-1.277.438-2.997.786-5.154 1.058-2.157.262-4.887.392-8.231.392q-4.886 0-8.184-.392c-2.199-.271-3.961-.621-5.239-1.058-1.276-.4-2.201-.97-2.773-1.676-.571-.655-.835-1.45-.835-2.289V759.609c0-.838.264-1.633.835-2.287.57-.708 1.497-1.275 2.773-1.678 1.28-.437 3.04-.785 5.239-1.057q3.297-.392 8.184-.392c3.345 0 6.074.132 8.231.392q3.237.405 5.154 1.057c1.318.402 2.2.97 2.728 1.678.528.654.792 1.45.792 2.287v61.27h62.419v-61.27c0-.838.263-1.633.834-2.287.527-.708 1.454-1.275 2.685-1.678 1.231-.437 2.996-.785 5.149-1.057q3.307-.392 8.325-.392c3.296 0 5.982.132 8.139.392q3.235.405 5.153 1.057c1.277.402 2.2.97 2.774 1.678.572.654.834 1.45.834 2.287z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
-          "path",
-          {
-            strokeMiterlimit: 22.926,
-            strokeWidth: 0.966,
-            d: "M686.806 805.017c0 1.118-.062 2.053-.184 2.83-.121.769-.283 1.397-.506 1.843-.223.453-.468.796-.752.979-.266.208-.59.305-.955.305h-42.517c-.323 0-.629-.095-.896-.305-.284-.184-.528-.524-.751-.979-.221-.446-.388-1.074-.51-1.843-.118-.777-.179-1.711-.179-2.83 0-1.161.061-2.113.162-2.883.1-.776.243-1.406.466-1.879.223-.479.468-.829.752-1.055.267-.203.59-.325.957-.325h14.354v-50.158l-12.402 6.848c-.913.453-1.646.717-2.237.82-.566.096-1.017-.027-1.362-.367-.345-.33-.571-.916-.688-1.747-.104-.839-.167-2.017-.167-3.52 0-.961.022-1.729.061-2.357.021-.612.122-1.146.284-1.574.166-.444.388-.786.65-1.074.288-.288.672-.566 1.139-.89l16.573-10.717c.182-.165.429-.288.729-.385a6 6 0 0 1 1.161-.244 19 19 0 0 1 1.892-.122c.772-.026 1.767-.026 3.008-.026 1.503 0 2.726.026 3.659.087.935.062 1.63.158 2.115.306.468.114.795.325.956.542.144.246.223.551.223.901v63.676h12.566c.367 0 .69.121.997.324.283.226.55.575.773 1.055.223.472.366 1.103.467 1.879.1.771.162 1.723.162 2.885z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("path", { d: "M480.425 333.943c27.762 0 50.405-14.566 50.405-32.433 0-17.865-22.644-32.433-50.405-32.433-27.769 0-50.41 14.568-50.41 32.433s22.641 32.433 50.41 32.433zm309.513-3.239c27.766 0 50.406-14.566 50.406-32.433s-22.641-32.433-50.406-32.433c-27.769 0-50.411 14.568-50.411 32.433s22.642 32.433 50.411 32.433zm0-149.085c27.766 0 50.406-14.568 50.406-32.434 0-17.864-22.641-32.432-50.406-32.432-27.769 0-50.411 14.568-50.411 32.432-.001 17.866 22.642 32.434 50.411 32.434z" })
-      ]
-    }
-  );
-  var H13C_default = Svg1H13C;
-
-  // build/lib-react-tsx/nmr/1H1H.tsx
   var React96 = __toESM(require_react(), 1);
   var import_jsx_runtime96 = __toESM(require_jsx_runtime(), 1);
-  var Svg1H1H = ({
+  var Svg13C = ({
     title,
     titleId,
     ...props
@@ -30706,68 +30743,16 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { d: "M449.391 578.71c33.109 0 60.112-27.008 60.112-60.127 0-33.114-27.003-60.119-60.112-60.119-33.12 0-60.125 27.005-60.125 60.119-.001 33.119 27.005 60.127 60.125 60.127z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 31.354,
-            d: "m329.713 40.214 55.516 73.307m-111.039 0 55.523-73.307"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 43.399,
-            d: "M329.722 672.385h602.284m-602.293 0V70.096"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 31.354,
-            d: "m961.896 672.385-73.316 55.518m0-111.037 73.316 55.519"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { d: "M837.877 961.217c0 .878-.272 1.698-.871 2.393-.598.729-1.565 1.332-2.898 1.742-1.337.465-3.131.83-5.386 1.104-2.254.281-5.061.419-8.506.419q-5.243.001-8.698-.419c-2.251-.275-4.093-.641-5.382-1.104-1.286-.41-2.254-1.013-2.805-1.742a3.58 3.58 0 0 1-.873-2.393v-70.514h-65.227v70.514c0 .878-.275 1.698-.827 2.393-.553.729-1.474 1.332-2.852 1.742-1.333.465-3.132.83-5.387 1.104-2.253.281-5.105.419-8.602.419-3.401 0-6.257-.138-8.552-.419-2.3-.275-4.137-.641-5.474-1.104-1.334-.41-2.3-1.013-2.899-1.742-.597-.694-.871-1.515-.871-2.393V796.5c0-.877.274-1.708.871-2.4.598-.731 1.565-1.336 2.899-1.744 1.337-.457 3.174-.831 5.474-1.105q3.444-.409 8.552-.409c3.496 0 6.349.138 8.602.409 2.255.275 4.054.649 5.387 1.105 1.378.408 2.299 1.013 2.852 1.744.552.692.827 1.523.827 2.4v64.022h65.227V796.5c0-.877.276-1.708.873-2.4.551-.731 1.519-1.336 2.805-1.744 1.287-.457 3.131-.831 5.382-1.105q3.456-.409 8.698-.409c3.445 0 6.252.138 8.506.409 2.255.275 4.049.649 5.386 1.105 1.333.408 2.299 1.013 2.898 1.744.599.692.871 1.523.871 2.4z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-          "path",
-          {
-            strokeMiterlimit: 22.926,
-            strokeWidth: 1.009,
-            d: "M667.976 843.948c0 1.168-.064 2.145-.191 2.958-.129.803-.297 1.462-.529 1.925-.233.475-.488.831-.785 1.024a1.63 1.63 0 0 1-1 .318h-44.429c-.337 0-.657-.109-.936-.318-.297-.193-.553-.548-.783-1.024-.232-.465-.406-1.122-.534-1.925-.123-.813-.188-1.788-.188-2.958 0-1.215.064-2.21.169-3.022.104-.803.256-1.461.486-1.953.233-.51.489-.866.786-1.104.277-.209.615-.338.999-.338h14.999v-52.413l-12.957 7.153c-.956.468-1.721.748-2.338.849-.593.111-1.064-.019-1.423-.382-.36-.339-.598-.949-.722-1.826-.109-.867-.173-2.099-.173-3.669 0-1.005.022-1.807.063-2.475.024-.628.128-1.186.297-1.633.174-.465.405-.83.681-1.122.302-.302.702-.593 1.189-.941l17.317-11.187c.193-.175.449-.302.764-.412.318-.101.724-.19 1.214-.256a23 23 0 0 1 1.977-.128c.807-.019 1.849-.019 3.144-.019 1.57 0 2.848.019 3.825.083.975.063 1.702.174 2.208.319.489.128.831.338 1.001.575.15.256.232.574.232.939v66.543h13.131c.384 0 .721.129 1.042.338.296.237.574.594.806 1.104.233.492.384 1.15.489 1.953.104.816.169 1.81.169 3.024z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { d: "M247.864 344.398c0 .876-.274 1.698-.872 2.392-.597.73-1.564 1.333-2.899 1.744-1.336.466-3.13.83-5.385 1.104-2.253.281-5.061.42-8.505.42q-5.25 0-8.699-.42c-2.255-.274-4.093-.639-5.381-1.104-1.286-.41-2.253-1.014-2.806-1.744a3.58 3.58 0 0 1-.876-2.392v-70.523h-65.224v70.523c0 .876-.274 1.698-.827 2.392-.551.73-1.474 1.333-2.851 1.744-1.339.466-3.131.83-5.385 1.104-2.255.281-5.107.42-8.602.42q-5.108 0-8.552-.42c-2.3-.274-4.145-.639-5.476-1.104-1.333-.41-2.301-1.014-2.898-1.744a3.6 3.6 0 0 1-.877-2.392V179.679c0-.876.28-1.707.877-2.402.596-.729 1.565-1.332 2.898-1.743 1.333-.465 3.176-.831 5.476-1.104q3.443-.41 8.552-.41c3.494 0 6.346.136 8.602.41 2.254.274 4.046.639 5.385 1.104 1.377.411 2.299 1.014 2.851 1.743.552.693.827 1.525.827 2.402v64.023h65.224v-64.023c0-.876.278-1.707.876-2.402.553-.729 1.52-1.332 2.806-1.743 1.287-.465 3.126-.831 5.381-1.104q3.448-.41 8.699-.41c3.444 0 6.252.136 8.505.41 2.255.274 4.049.639 5.385 1.104 1.334.411 2.3 1.014 2.899 1.743.598.693.872 1.525.872 2.402z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-          "path",
-          {
-            strokeMiterlimit: 22.926,
-            strokeWidth: 1.009,
-            d: "M77.962 227.13c0 1.167-.064 2.144-.191 2.948-.129.812-.297 1.469-.53 1.935-.232.466-.488.831-.784 1.023a1.62 1.62 0 0 1-1.001.32H31.028q-.516-.002-.936-.32c-.295-.192-.552-.557-.784-1.023s-.406-1.123-.533-1.935c-.122-.804-.187-1.778-.187-2.948 0-1.214.065-2.209.168-3.021.105-.805.256-1.46.488-1.953.233-.512.488-.867.784-1.105a1.65 1.65 0 0 1 1-.338h15.001v-52.415l-12.96 7.156c-.96.466-1.721.749-2.337.847-.598.109-1.063-.019-1.424-.383-.359-.338-.597-.95-.72-1.825-.109-.867-.174-2.099-.174-3.679 0-.995.024-1.797.064-2.464.024-.63.129-1.188.296-1.633.174-.466.406-.831.68-1.123.3-.301.703-.602 1.191-.94l17.317-11.19c.191-.174.443-.301.762-.41.32-.1.725-.191 1.214-.256a23 23 0 0 1 1.977-.127c.807-.02 1.847-.02 3.144-.02 1.57 0 2.848.02 3.825.083.978.062 1.703.173 2.208.318.488.127.832.338 1 .575.151.257.232.576.232.94v66.543h13.131c.385 0 .722.127 1.041.338.296.238.571.593.809 1.105.232.493.377 1.15.486 1.953.107.814.171 1.81.171 3.024z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { d: "M610.655 427.34c33.108 0 60.111-27.005 60.111-60.117 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.007-60.127 60.126 0 33.112 27.006 60.117 60.127 60.117zm182.484 0c33.111 0 60.116-27.005 60.116-60.117 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.007-60.126 60.126 0 33.112 27.005 60.117 60.126 60.117zM610.655 260.415c33.108 0 60.111-27.007 60.111-60.118 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.005-60.127 60.126 0 33.111 27.006 60.118 60.127 60.118zm182.484 0c33.111 0 60.116-27.007 60.116-60.118 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.005-60.126 60.126 0 33.111 27.005 60.118 60.126 60.118z" })
+        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { d: "M959.838 645.911c0 8.223-.169 15.101-.665 20.795a128 128 0 0 1-2.185 14.756c-.999 4.185-2.348 7.712-4.019 10.559-1.681 3.015-4.193 6.366-7.878 10.06-3.524 3.853-10.569 8.546-20.795 14.579-10.396 5.873-22.968 11.57-37.889 16.935-14.92 5.363-31.848 9.892-51.132 13.418-19.114 3.684-39.733 5.531-62.034 5.531-43.586 0-82.819-6.875-117.862-20.284-35.035-13.419-64.871-33.361-89.349-60.02-24.647-26.828-43.418-60.021-56.505-100.09-13.075-39.902-19.78-86.337-19.78-139.481 0-53.99 7.208-101.937 21.629-143.854 14.42-41.906 34.535-77.114 60.521-105.62 25.816-28.498 56.835-50.127 93.049-64.874 36.208-14.756 75.94-22.13 119.534-22.13 17.772 0 34.71 1.502 51.132 4.527 16.433 2.848 31.521 6.699 45.434 11.563 13.918 4.695 26.484 10.225 37.559 16.433 11.068 6.198 18.945 11.562 23.298 15.925 4.531 4.361 7.551 8.045 9.055 11.062 1.682 3.026 3.018 6.708 4.028 11.238 1.004 4.694 1.671 10.06 2.17 16.257.514 6.208.675 13.92.675 23.143 0 9.716-.329 18.104-.844 24.981-.666 6.865-1.833 12.395-3.514 16.759-1.679 4.194-3.519 7.377-5.868 9.225-2.348 2.013-4.861 3.014-7.886 3.014-4.86 0-11.059-2.848-18.606-8.546-7.544-5.698-17.269-12.24-29.342-19.283-11.895-7.043-26.149-13.419-42.581-19.115q-24.89-8.549-59.344-8.548c-25.15 0-47.616 5.196-67.4 15.423-19.951 10.39-36.72 25.147-50.629 44.263-13.92 19.107-24.478 42.242-31.689 69.402-7.208 27.328-10.894 57.838-10.894 91.877 0 37.387 3.86 69.745 11.561 97.063 7.72 27.329 18.781 49.795 33.037 67.564 14.242 17.604 31.344 30.855 51.465 39.569 20.114 8.556 42.918 12.907 68.063 12.907q34.448 0 59.354-8.046c16.768-5.363 31.177-11.405 43.083-17.937 11.905-6.544 21.798-12.407 29.508-17.771 7.714-5.197 13.576-7.711 17.939-7.711 3.186 0 5.863.502 7.71 1.846 2.012 1.337 3.683 4.019 5.032 7.879 1.336 4.016 2.179 9.381 2.846 16.424.674 7.046 1.008 16.428 1.008 28.333zM205.28 297.133c0 4.263-.234 7.83-.695 10.767-.463 2.946-1.082 5.343-1.935 7.042-.855 1.711-1.777 3.026-2.871 3.724-1 .778-2.236 1.159-3.634 1.159H34.219a5.5 5.5 0 0 1-3.41-1.159c-1.079-.698-2.015-2.013-2.867-3.724-.849-1.698-1.467-4.096-1.938-7.042-.457-2.938-.696-6.504-.696-10.767 0-4.411.239-8.057.618-10.992.392-2.947.934-5.343 1.791-7.122.853-1.858 1.777-3.184 2.867-4.026a5.85 5.85 0 0 1 3.634-1.241h54.667V82.709L41.654 108.81c-3.487 1.699-6.276 2.703-8.517 3.095-2.173.384-3.88-.077-5.195-1.396-1.306-1.237-2.164-3.486-2.634-6.658-.38-3.171-.619-7.674-.619-13.401 0-3.632.078-6.581.239-8.978.076-2.326.459-4.341 1.077-5.962.632-1.708 1.475-3.026 2.479-4.106 1.091-1.08 2.561-2.171 4.339-3.409L95.94 27.188c.694-.628 1.621-1.091 2.789-1.474 1.159-.392 2.626-.695 4.413-.93 1.855-.238 4.183-.384 7.197-.463 2.95-.078 6.739-.078 11.466-.078 5.728 0 10.372.078 13.937.305 3.557.238 6.19.63 8.054 1.168 1.779.463 3.017 1.24 3.638 2.095.537.923.852 2.082.852 3.397v242.546h47.86c1.397 0 2.634.465 3.794 1.241 1.081.844 2.093 2.169 2.945 4.026.844 1.78 1.384 4.174 1.778 7.122.384 2.935.617 6.581.617 10.99zm236.813-63.262c0 14.638-2.791 27.643-8.37 39.028-5.567 11.309-13.401 20.837-23.389 28.576-9.994 7.663-21.906 13.548-35.856 17.575-13.93 4.028-29.114 5.963-45.608 5.963-9.994 0-19.355-.699-28.106-2.094-8.754-1.462-16.494-3.25-23.233-5.343-6.739-2.161-12.32-4.331-16.728-6.582-4.342-2.316-7.202-4.018-8.599-5.265-1.394-1.16-2.404-2.554-3.016-4.026-.696-1.542-1.315-3.331-1.863-5.335-.541-2.094-.926-4.648-1.16-7.751-.225-3.096-.315-6.816-.315-11.228 0-7.281.632-12.31 1.79-15.099 1.238-2.79 3.094-4.185 5.497-4.185 1.466 0 4.097 1.011 7.82 3.103 3.713 2.006 8.44 4.175 14.167 6.582 5.736 2.318 12.477 4.49 20.214 6.582 7.665 2.016 16.494 3.018 26.327 3.018 8.292 0 15.64-1.002 21.996-2.937 6.346-1.946 11.77-4.725 16.177-8.292 4.498-3.567 7.829-7.818 10-12.927 2.163-5.039 3.332-10.687 3.332-16.885 0-6.819-1.394-12.928-4.036-18.351-2.626-5.5-6.583-10.146-11.771-14.018-5.186-3.803-11.769-6.816-19.746-8.908-7.895-2.171-17.27-3.173-28.027-3.173h-25.4c-1.939 0-3.646-.305-4.961-.855-1.399-.463-2.557-1.62-3.401-3.251-.935-1.701-1.553-3.95-1.947-6.887-.38-3.025-.536-6.817-.536-11.462 0-4.42.156-7.977.536-10.847.393-2.779 1.011-4.949 1.791-6.423.843-1.553 1.933-2.555 3.17-3.173 1.319-.618 2.872-.932 4.65-.932h25.625c8.833 0 16.571-1.004 23.393-3.017 6.816-2.092 12.544-4.959 17.111-8.753 4.646-3.793 8.133-8.36 10.607-13.702 2.396-5.424 3.569-11.308 3.569-17.821 0-5.03-.779-9.754-2.487-14.164-1.622-4.49-4.097-8.369-7.359-11.621-3.252-3.249-7.428-5.805-12.614-7.663-5.118-1.934-11.16-2.868-18.124-2.868-7.898 0-15.257 1.161-22.23 3.487-6.965 2.397-13.163 4.96-18.736 7.74-5.498 2.79-10.225 5.425-14.014 7.83-3.874 2.398-6.739 3.635-8.519 3.635-1.237 0-2.328-.306-3.184-.776-.921-.542-1.7-1.542-2.317-3.095-.542-1.472-1.012-3.71-1.316-6.583-.314-2.866-.463-6.581-.463-11.079 0-3.792.07-6.965.225-9.441.16-2.483.47-4.568.935-6.276.382-1.619 1.003-3.095 1.7-4.255.619-1.246 1.785-2.562 3.252-4.026 1.548-1.394 4.646-3.565 9.292-6.435 4.724-2.857 10.606-5.647 17.74-8.36 7.124-2.79 15.256-5.028 24.63-6.964 9.292-1.866 19.349-2.789 30.277-2.789 14.162 0 26.796 1.621 37.789 4.95q16.37 4.996 27.641 14.413c7.516 6.266 13.162 14.008 17.042 23.152 3.794 9.136 5.729 19.431 5.729 30.974 0 8.911-1.091 17.19-3.41 24.932-2.25 7.75-5.58 14.638-9.911 20.679-4.412 6.041-9.91 11.149-16.493 15.412-6.58 4.254-14.175 7.436-22.771 9.53v.687c10.227 1.169 19.517 3.803 27.642 7.83 8.214 4.017 15.109 9.056 20.758 15.099 5.651 6.041 10.07 12.846 13.084 20.521 3.032 7.577 4.508 15.789 4.508 24.619z" })
       ]
     }
   );
-  var H1H_default = Svg1H1H;
+  var C_default = Svg13C;
 
-  // build/lib-react-tsx/nmr/2D.tsx
+  // build/lib-react-tsx/nmr/1H.tsx
   var React97 = __toESM(require_react(), 1);
   var import_jsx_runtime97 = __toESM(require_jsx_runtime(), 1);
-  var Svg2D = ({
+  var Svg1H = ({
     title,
     titleId,
     ...props
@@ -30778,68 +30763,23 @@
       xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "-2 24.6 970.5 970.5",
+      viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("path", { d: "M290.592 768.97c33.109 0 60.112-27.008 60.112-60.127 0-33.114-27.003-60.12-60.112-60.12-33.12 0-60.125 27.006-60.125 60.12-.001 33.119 27.005 60.127 60.125 60.127z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 31.354,
-            d: "m109.491 73.172 55.516 73.307m-111.039 0 55.523-73.307"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.573,
-            d: "M115.061 891.109h754.456"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.065,
-            d: "M109.491 884.987V115.169"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 31.354,
-            d: "m912.458 891.109-73.316 55.518m0-111.037 73.316 55.519"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("path", { d: "M510.655 527.34c33.108 0 60.111-27.005 60.111-60.117 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.007-60.127 60.126 0 33.112 27.006 60.117 60.127 60.117zm282.484 0c33.111 0 60.116-27.005 60.116-60.117 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.007-60.126 60.126 0 33.112 27.005 60.117 60.126 60.117zM510.655 260.415c33.108 0 60.111-27.007 60.111-60.118 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.005-60.127 60.126 0 33.111 27.006 60.118 60.127 60.118zm282.484 0c33.111 0 60.116-27.007 60.116-60.118 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.005-60.126 60.126 0 33.111 27.005 60.118 60.126 60.118z" })
+        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("path", { d: "M953.102 865.157c0 3.837-1.218 7.457-3.836 10.49-2.628 3.245-6.879 5.87-12.742 7.695-5.848 2.012-13.735 3.625-23.629 4.83-9.912 1.229-22.238 1.822-37.394 1.822-15.355 0-28.085-.594-38.183-1.822-9.91-1.204-17.991-2.818-23.649-4.83-5.662-1.825-9.896-4.45-12.321-7.695-2.633-3.032-3.839-6.653-3.839-10.49V555.371H510.967v309.787c0 3.838-1.209 7.457-3.632 10.49-2.43 3.244-6.464 5.87-12.53 7.695-5.861 2.014-13.748 3.625-23.641 4.831-9.902 1.229-22.43 1.822-37.799 1.822-14.956 0-27.476-.594-37.579-1.822-10.099-1.204-18.187-2.817-24.049-4.831-5.861-1.825-10.095-4.451-12.724-7.695-2.634-3.031-3.837-6.652-3.837-10.49V141.536c0-3.834 1.203-7.485 3.837-10.515 2.627-3.221 6.861-5.848 12.724-7.673 5.862-2.036 13.951-3.645 24.049-4.852 10.102-1.208 22.624-1.822 37.579-1.822 15.369 0 27.897.615 37.799 1.822 9.894 1.207 17.779 2.816 23.641 4.852 6.066 1.825 10.101 4.452 12.53 7.673 2.423 3.029 3.632 6.68 3.632 10.515V422.81h286.542V141.536c0-3.834 1.205-7.485 3.839-10.515 2.427-3.221 6.661-5.848 12.321-7.673 5.658-2.036 13.737-3.645 23.649-4.852 10.098-1.208 22.829-1.822 38.183-1.822 15.155 0 27.481.615 37.394 1.822 9.894 1.207 17.779 2.816 23.629 4.852 5.863 1.825 10.114 4.452 12.742 7.673 2.617 3.029 3.836 6.68 3.836 10.515zM259.367 349.994c0 5.14-.286 9.425-.849 12.978-.563 3.55-1.312 6.44-2.327 8.5-1.03 2.036-2.153 3.623-3.458 4.477-1.217.923-2.711 1.397-4.391 1.397H53.178a6.7 6.7 0 0 1-4.109-1.397c-1.312-.854-2.422-2.441-3.452-4.477-1.023-2.059-1.775-4.95-2.333-8.5-.557-3.553-.84-7.839-.84-12.978 0-5.327.283-9.709.744-13.26.476-3.553 1.124-6.44 2.146-8.572 1.025-2.252 2.149-3.838 3.455-4.853a7.06 7.06 0 0 1 4.389-1.494h65.893V91.547L62.13 122.995c-4.192 2.062-7.556 3.268-10.265 3.744-2.603.447-4.665-.098-6.25-1.682-1.588-1.492-2.616-4.214-3.173-8.029-.474-3.834-.747-9.234-.747-16.15 0-4.38.095-7.934.273-10.823.094-2.811.568-5.238 1.314-7.189.745-2.062 1.776-3.647 2.983-4.952 1.312-1.299 3.091-2.615 5.236-4.107l76.059-49.184c.842-.745 1.963-1.314 3.361-1.776 1.395-.475 3.175-.843 5.327-1.126 2.239-.284 5.033-.461 8.68-.553 3.544-.098 8.121-.098 13.807-.098 6.914 0 12.511.098 16.812.369 4.288.284 7.458.76 9.695 1.41 2.155.555 3.646 1.491 4.393 2.522.654 1.113 1.019 2.522 1.019 4.107v292.338h57.685c1.68 0 3.173.544 4.58 1.494 1.304 1.016 2.512 2.603 3.541 4.853 1.033 2.13 1.688 5.019 2.158 8.572.463 3.55.749 7.931.749 13.259z" })
       ]
     }
   );
-  var D_default = Svg2D;
+  var H_default = Svg1H;
 
-  // build/lib-react-tsx/nmr/AddFilter.tsx
+  // build/lib-react-tsx/nmr/1H13C.tsx
   var React98 = __toESM(require_react(), 1);
   var import_jsx_runtime98 = __toESM(require_jsx_runtime(), 1);
-  var SvgAddFilter = ({
+  var Svg1H13C = ({
     title,
     titleId,
     ...props
@@ -30847,6 +30787,7 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -30863,39 +30804,60 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 50.126,
-            d: "M38.416 887.681c558.451 0 148.174-1.283 633.454-1.283 10.578 0 47.87-38 57.844-55l44.9-345.78 44.857 347.78 26.927 54 113.692.283"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
-          "path",
-          {
-            d: "m687.492 282.78-51.858 100.095 24.17 110.116c-42.727-48.433-115.375-98.433-175.081-129.992",
-            "data-name": "Path 9"
+            strokeWidth: 30.004,
+            d: "m363.105 35.888 53.128 70.154m-106.259 0 53.131-70.154"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
           "path",
           {
             fill: "none",
+            strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M624.301 376.896c68.882 3.825 102.461 21.904 132.651 76.103",
-            "data-name": "Path 11"
+            strokeWidth: 41.53,
+            d: "M363.114 640.841h576.354m-576.363 0V64.487"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("path", { d: "M629.812 76.248c18.317 5.053 34.108 20.212 40.424 38.4 2.021 5.937 2.4 10.738 2.4 33.6 0 28.8-1.011 35.876-6.822 47.246a72 72 0 0 1-7.706 11.369c-4.169 4.8-75.8 61.521-79.585 62.91-1.642.632-20.844-23.876-20.844-26.528 0-.884 17.054-14.906 37.9-31.076 26.655-20.717 38.4-30.571 39.793-33.476 1.516-3.285 1.895-9.222 1.895-29.56 0-28.676-.884-32.592-7.832-36.382-4.042-2.148-14.654-2.274-244.819-2.274s-240.777.126-244.819 2.274c-6.948 3.79-7.832 7.706-7.832 36.255 0 18.7.505 26.4 1.769 29.56 1.39 3.411 19.581 17.054 101.313 75.922 54.825 39.414 100.934 72.89 102.324 74.406 2.653 2.527 3.032 7.706 11.117 120.767 4.674 64.931 8.716 119.63 9.1 121.4a13.9 13.9 0 0 0 3.79 6.316c3.158 2.905 3.916 3.032 23.244 3.032 19.454 0 20.086-.126 23.244-3.032a14.8 14.8 0 0 0 3.916-6.948c.253-2.148 2.021-24.886 3.916-50.657 1.769-25.644 3.411-46.867 3.663-47.246.758-.632 33.6 2.148 34.361 2.905 1.011 1.011-5.937 95.5-7.453 101.187-3.79 14.654-14.148 26.655-29.687 34.361l-9.727 4.8h-22.112c-21.6 0-22.486-.126-29.687-3.411-10.738-5.053-19.075-11.622-24.633-19.454-4.927-6.948-5.306-8.337-8.969-31.076-.632-4.421-4.421-52.93-8.211-107.756-3.916-54.952-7.327-100.934-7.58-102.45-.379-1.895-29.813-23.749-93.1-69.353-50.909-36.634-95.25-69.227-98.534-72.385-6.948-6.7-12.759-17.054-15.538-27.413-2.906-11.5-2.653-57.226.379-67.205 4.8-15.159 15.917-27.665 31.455-35.371l9.727-4.8 241.914-.253c193.021-.124 243.177.128 247.846 1.396Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("path", { fill: "none", d: "M.5.5h997.512l2.488 1000H.5Z" })
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 30.004,
+            d: "m968.07 640.841-70.158 53.127m0-106.255 70.158 53.128"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("path", { d: "M480.425 505.72c27.762 0 50.405-14.576 50.405-32.437 0-17.87-22.644-32.435-50.405-32.435-27.769 0-50.41 14.565-50.41 32.435 0 17.862 22.641 32.437 50.41 32.437zM284.782 291.987c0 2.158-.043 3.961-.175 5.458a34 34 0 0 1-.572 3.875q-.397 1.652-1.057 2.774c-.441.795-1.101 1.672-2.071 2.642-.921 1.012-2.772 2.244-5.459 3.83-2.729 1.542-6.03 3.035-9.947 4.446-3.917 1.406-8.361 2.598-13.423 3.521-5.018.969-10.433 1.454-16.289 1.454-11.442 0-21.743-1.804-30.944-5.327-9.201-3.52-17.036-8.759-23.462-15.756-6.468-7.045-11.398-15.76-14.835-26.281-3.433-10.476-5.192-22.667-5.192-36.624 0-14.171 1.896-26.761 5.677-37.764 3.785-11.005 9.069-20.25 15.89-27.729 6.782-7.485 14.925-13.161 24.433-17.036 9.507-3.874 19.939-5.812 31.38-5.812 4.668 0 9.113.396 13.429 1.188 4.314.75 8.275 1.764 11.931 3.039 3.65 1.231 6.953 2.687 9.855 4.315 2.908 1.629 4.979 3.035 6.122 4.179q1.781 1.716 2.376 2.909c.44.791.791 1.761 1.056 2.949.262 1.23.441 2.642.571 4.27.131 1.628.175 3.65.175 6.075 0 2.549-.087 4.749-.217 6.554-.175 1.808-.485 3.258-.926 4.406-.441 1.101-.925 1.935-1.542 2.418-.615.529-1.275.792-2.065.792q-1.92.001-4.886-2.245c-1.982-1.493-4.537-3.209-7.704-5.061-3.126-1.847-6.869-3.521-11.178-5.018-4.358-1.499-9.556-2.244-15.586-2.244-6.602 0-12.501 1.362-17.694 4.047-5.24 2.729-9.638 6.603-13.293 11.62q-5.482 7.525-8.318 18.227c-1.896 7.171-2.861 15.185-2.861 24.119q.002 14.725 3.036 25.486c2.025 7.18 4.93 13.074 8.672 17.742 3.742 4.621 8.231 8.096 13.511 10.384 5.284 2.25 11.271 3.393 17.873 3.393 6.031 0 11.223-.707 15.581-2.113 4.402-1.411 8.188-2.996 11.314-4.712 3.122-1.716 5.721-3.257 7.747-4.664 2.026-1.366 3.563-2.027 4.708-2.027.838 0 1.542.131 2.026.485.528.354.969 1.056 1.318 2.07.354 1.057.571 2.463.75 4.309.177 1.846.265 4.315.265 7.437z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+          "path",
+          {
+            strokeMiterlimit: 22.926,
+            strokeWidth: 0.966,
+            d: "M75.202 200.414c0 1.117-.06 2.052-.183 2.825-.122.772-.283 1.403-.507 1.851-.227.446-.471.791-.755.975-.262.206-.59.307-.956.307H30.29c-.328 0-.633-.101-.896-.307-.284-.184-.529-.529-.75-.975-.223-.448-.388-1.079-.51-1.851-.122-.774-.181-1.708-.181-2.825 0-1.162.059-2.114.163-2.887.1-.774.245-1.406.467-1.875.222-.484.467-.834.75-1.057.267-.201.589-.324.956-.324h14.354v-50.162l-12.402 6.856c-.917.446-1.646.707-2.236.811-.572.1-1.017-.021-1.362-.367-.35-.328-.571-.913-.692-1.747-.103-.835-.163-2.013-.163-3.521 0-.956.021-1.729.06-2.358.023-.611.122-1.14.284-1.568.162-.445.388-.791.65-1.074.284-.284.672-.572 1.139-.896l16.569-10.717c.188-.162.428-.284.733-.384.305-.105.689-.183 1.162-.245.484-.06 1.096-.101 1.891-.122.77-.023 1.769-.023 3.009-.023 1.501 0 2.726.023 3.659.083.934.06 1.625.162 2.114.305.466.122.794.324.956.546.14.245.222.55.222.895v63.682h12.563c.367 0 .693.123.996.324.289.223.551.571.774 1.057.227.466.367 1.101.471 1.874.102.78.162 1.732.162 2.894zm62.175-16.612q-.002 5.763-2.196 10.249a21.35 21.35 0 0 1-6.141 7.498c-2.625 2.013-5.755 3.559-9.414 4.621-3.66 1.057-7.646 1.563-11.974 1.563-2.625 0-5.083-.184-7.385-.551q-3.445-.576-6.096-1.403c-1.768-.567-3.236-1.139-4.393-1.729-1.139-.612-1.891-1.057-2.258-1.38a2.8 2.8 0 0 1-.791-1.056 10 10 0 0 1-.489-1.405q-.215-.817-.305-2.03a41 41 0 0 1-.083-2.952c0-1.908.167-3.233.471-3.961.324-.733.812-1.101 1.441-1.101.388 0 1.078.267 2.052.812.979.533 2.218 1.1 3.721 1.729 1.505.612 3.275 1.18 5.31 1.729 2.013.529 4.329.791 6.909.791 2.179 0 4.109-.262 5.777-.773 1.669-.507 3.091-1.235 4.25-2.175 1.179-.934 2.053-2.053 2.625-3.393.567-1.324.873-2.809.873-4.433 0-1.791-.367-3.397-1.057-4.822-.689-1.441-1.729-2.663-3.092-3.676-1.362-1-3.091-1.791-5.183-2.341-2.075-.567-4.533-.834-7.363-.834h-6.668c-.507 0-.956-.079-1.302-.224-.362-.122-.672-.427-.896-.851-.245-.45-.407-1.041-.507-1.812-.105-.795-.145-1.791-.145-3.009 0-1.158.039-2.091.145-2.846.1-.729.262-1.302.467-1.687.222-.405.506-.672.834-.833q.517-.243 1.217-.244h6.73c2.317 0 4.354-.267 6.139-.795 1.791-.546 3.297-1.297 4.493-2.296a10 10 0 0 0 2.787-3.6c.633-1.424.935-2.964.935-4.678 0-1.318-.201-2.558-.65-3.72a8.15 8.15 0 0 0-1.93-3.047c-.855-.857-1.951-1.524-3.314-2.013-1.341-.507-2.926-.751-4.755-.751-2.075 0-4.008.305-5.834.913-1.833.633-3.458 1.302-4.92 2.036-1.446.733-2.687 1.423-3.683 2.053-1.018.632-1.768.956-2.237.956-.322 0-.61-.083-.834-.205-.243-.141-.445-.407-.611-.812-.139-.385-.262-.975-.346-1.729-.083-.75-.122-1.725-.122-2.904q.002-1.502.062-2.484.063-.97.244-1.646a4.2 4.2 0 0 1 .445-1.117c.167-.324.472-.668.856-1.057.406-.367 1.219-.934 2.441-1.686 1.24-.751 2.785-1.484 4.655-2.196 1.87-.733 4.004-1.322 6.463-1.83 2.441-.489 5.084-.734 7.952-.734 3.72 0 7.034.429 9.921 1.301q4.302 1.31 7.258 3.782c1.973 1.647 3.458 3.682 4.476 6.08.996 2.402 1.501 5.105 1.501 8.135 0 2.337-.283 4.51-.896 6.546-.59 2.035-1.463 3.843-2.603 5.429-1.158 1.585-2.602 2.93-4.331 4.048-1.725 1.117-3.721 1.951-5.973 2.498v.184c2.681.306 5.123.996 7.257 2.053 2.153 1.062 3.966 2.38 5.45 3.964 1.485 1.59 2.642 3.375 3.433 5.391.799 1.989 1.187 4.142 1.187 6.46z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("path", { d: "M849.393 917.236c0 .839-.262 1.634-.834 2.289-.572.706-1.497 1.275-2.774 1.676-1.279.438-2.996.786-5.153 1.058-2.156.262-4.843.392-8.139.392q-5.018 0-8.325-.392c-2.153-.271-3.916-.621-5.149-1.058-1.23-.4-2.157-.97-2.685-1.676-.571-.655-.834-1.45-.834-2.289V849.76h-62.42v67.477c0 .839-.264 1.634-.792 2.289-.527.706-1.409 1.275-2.728 1.676-1.277.438-2.997.786-5.154 1.058-2.157.262-4.887.392-8.231.392q-4.886 0-8.184-.392c-2.199-.271-3.961-.621-5.239-1.058-1.276-.4-2.201-.97-2.773-1.676-.571-.655-.835-1.45-.835-2.289V759.609c0-.838.264-1.633.835-2.287.57-.708 1.497-1.275 2.773-1.678 1.28-.437 3.04-.785 5.239-1.057q3.297-.392 8.184-.392c3.345 0 6.074.132 8.231.392q3.237.405 5.154 1.057c1.318.402 2.2.97 2.728 1.678.528.654.792 1.45.792 2.287v61.27h62.419v-61.27c0-.838.263-1.633.834-2.287.527-.708 1.454-1.275 2.685-1.678 1.231-.437 2.996-.785 5.149-1.057q3.307-.392 8.325-.392c3.296 0 5.982.132 8.139.392q3.235.405 5.153 1.057c1.277.402 2.2.97 2.774 1.678.572.654.834 1.45.834 2.287z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+          "path",
+          {
+            strokeMiterlimit: 22.926,
+            strokeWidth: 0.966,
+            d: "M686.806 805.017c0 1.118-.062 2.053-.184 2.83-.121.769-.283 1.397-.506 1.843-.223.453-.468.796-.752.979-.266.208-.59.305-.955.305h-42.517c-.323 0-.629-.095-.896-.305-.284-.184-.528-.524-.751-.979-.221-.446-.388-1.074-.51-1.843-.118-.777-.179-1.711-.179-2.83 0-1.161.061-2.113.162-2.883.1-.776.243-1.406.466-1.879.223-.479.468-.829.752-1.055.267-.203.59-.325.957-.325h14.354v-50.158l-12.402 6.848c-.913.453-1.646.717-2.237.82-.566.096-1.017-.027-1.362-.367-.345-.33-.571-.916-.688-1.747-.104-.839-.167-2.017-.167-3.52 0-.961.022-1.729.061-2.357.021-.612.122-1.146.284-1.574.166-.444.388-.786.65-1.074.288-.288.672-.566 1.139-.89l16.573-10.717c.182-.165.429-.288.729-.385a6 6 0 0 1 1.161-.244 19 19 0 0 1 1.892-.122c.772-.026 1.767-.026 3.008-.026 1.503 0 2.726.026 3.659.087.935.062 1.63.158 2.115.306.468.114.795.325.956.542.144.246.223.551.223.901v63.676h12.566c.367 0 .69.121.997.324.283.226.55.575.773 1.055.223.472.366 1.103.467 1.879.1.771.162 1.723.162 2.885z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("path", { d: "M480.425 333.943c27.762 0 50.405-14.566 50.405-32.433 0-17.865-22.644-32.433-50.405-32.433-27.769 0-50.41 14.568-50.41 32.433s22.641 32.433 50.41 32.433zm309.513-3.239c27.766 0 50.406-14.566 50.406-32.433s-22.641-32.433-50.406-32.433c-27.769 0-50.411 14.568-50.411 32.433s22.642 32.433 50.411 32.433zm0-149.085c27.766 0 50.406-14.568 50.406-32.434 0-17.864-22.641-32.432-50.406-32.432-27.769 0-50.411 14.568-50.411 32.432-.001 17.866 22.642 32.434 50.411 32.434z" })
       ]
     }
   );
-  var AddFilter_default = SvgAddFilter;
+  var H13C_default = Svg1H13C;
 
-  // build/lib-react-tsx/nmr/AlignBottom.tsx
+  // build/lib-react-tsx/nmr/1H1H.tsx
   var React99 = __toESM(require_react(), 1);
   var import_jsx_runtime99 = __toESM(require_jsx_runtime(), 1);
-  var SvgAlignBottom = ({
+  var Svg1H1H = ({
     title,
     titleId,
     ...props
@@ -30903,66 +30865,78 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "27 7.1 946.1 946.1",
+      viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime99.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime99.jsxs)(
-          "g",
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)("path", { d: "M449.391 578.71c33.109 0 60.112-27.008 60.112-60.127 0-33.114-27.003-60.119-60.112-60.119-33.12 0-60.125 27.005-60.125 60.119-.001 33.119 27.005 60.127 60.125 60.127z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
+          "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            clipPath: "url(#clip-align-bottom)",
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
-                "path",
-                {
-                  strokeWidth: 39.653,
-                  d: "M74.308 889.139c44.876-.388 119.418-1.382 207.014-.9 81.54-1.168 55.647-252.189 61.657-307.029l.006-.055c9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
-                "path",
-                {
-                  strokeWidth: 35,
-                  d: "M640.001 338.057 499.86 478.198 359.719 338.057",
-                  "data-name": "Path 6"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
-                "path",
-                {
-                  strokeWidth: 20,
-                  d: "M612.142 295.383 499.76 407.765l3.764-338.977-3.764 338.977-112.382-112.382",
-                  "data-name": "Path 7"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
-                "path",
-                {
-                  strokeWidth: 35,
-                  d: "M640.001 338.057 499.86 478.198 359.719 338.057",
-                  "data-name": "Path 8"
-                }
-              )
-            ]
+            strokeMiterlimit: 22.926,
+            strokeWidth: 31.354,
+            d: "m329.713 40.214 55.516 73.307m-111.039 0 55.523-73.307"
           }
-        )
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 43.399,
+            d: "M329.722 672.385h602.284m-602.293 0V70.096"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 31.354,
+            d: "m961.896 672.385-73.316 55.518m0-111.037 73.316 55.519"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)("path", { d: "M837.877 961.217c0 .878-.272 1.698-.871 2.393-.598.729-1.565 1.332-2.898 1.742-1.337.465-3.131.83-5.386 1.104-2.254.281-5.061.419-8.506.419q-5.243.001-8.698-.419c-2.251-.275-4.093-.641-5.382-1.104-1.286-.41-2.254-1.013-2.805-1.742a3.58 3.58 0 0 1-.873-2.393v-70.514h-65.227v70.514c0 .878-.275 1.698-.827 2.393-.553.729-1.474 1.332-2.852 1.742-1.333.465-3.132.83-5.387 1.104-2.253.281-5.105.419-8.602.419-3.401 0-6.257-.138-8.552-.419-2.3-.275-4.137-.641-5.474-1.104-1.334-.41-2.3-1.013-2.899-1.742-.597-.694-.871-1.515-.871-2.393V796.5c0-.877.274-1.708.871-2.4.598-.731 1.565-1.336 2.899-1.744 1.337-.457 3.174-.831 5.474-1.105q3.444-.409 8.552-.409c3.496 0 6.349.138 8.602.409 2.255.275 4.054.649 5.387 1.105 1.378.408 2.299 1.013 2.852 1.744.552.692.827 1.523.827 2.4v64.022h65.227V796.5c0-.877.276-1.708.873-2.4.551-.731 1.519-1.336 2.805-1.744 1.287-.457 3.131-.831 5.382-1.105q3.456-.409 8.698-.409c3.445 0 6.252.138 8.506.409 2.255.275 4.049.649 5.386 1.105 1.333.408 2.299 1.013 2.898 1.744.599.692.871 1.523.871 2.4z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
+          "path",
+          {
+            strokeMiterlimit: 22.926,
+            strokeWidth: 1.009,
+            d: "M667.976 843.948c0 1.168-.064 2.145-.191 2.958-.129.803-.297 1.462-.529 1.925-.233.475-.488.831-.785 1.024a1.63 1.63 0 0 1-1 .318h-44.429c-.337 0-.657-.109-.936-.318-.297-.193-.553-.548-.783-1.024-.232-.465-.406-1.122-.534-1.925-.123-.813-.188-1.788-.188-2.958 0-1.215.064-2.21.169-3.022.104-.803.256-1.461.486-1.953.233-.51.489-.866.786-1.104.277-.209.615-.338.999-.338h14.999v-52.413l-12.957 7.153c-.956.468-1.721.748-2.338.849-.593.111-1.064-.019-1.423-.382-.36-.339-.598-.949-.722-1.826-.109-.867-.173-2.099-.173-3.669 0-1.005.022-1.807.063-2.475.024-.628.128-1.186.297-1.633.174-.465.405-.83.681-1.122.302-.302.702-.593 1.189-.941l17.317-11.187c.193-.175.449-.302.764-.412.318-.101.724-.19 1.214-.256a23 23 0 0 1 1.977-.128c.807-.019 1.849-.019 3.144-.019 1.57 0 2.848.019 3.825.083.975.063 1.702.174 2.208.319.489.128.831.338 1.001.575.15.256.232.574.232.939v66.543h13.131c.384 0 .721.129 1.042.338.296.237.574.594.806 1.104.233.492.384 1.15.489 1.953.104.816.169 1.81.169 3.024z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)("path", { d: "M247.864 344.398c0 .876-.274 1.698-.872 2.392-.597.73-1.564 1.333-2.899 1.744-1.336.466-3.13.83-5.385 1.104-2.253.281-5.061.42-8.505.42q-5.25 0-8.699-.42c-2.255-.274-4.093-.639-5.381-1.104-1.286-.41-2.253-1.014-2.806-1.744a3.58 3.58 0 0 1-.876-2.392v-70.523h-65.224v70.523c0 .876-.274 1.698-.827 2.392-.551.73-1.474 1.333-2.851 1.744-1.339.466-3.131.83-5.385 1.104-2.255.281-5.107.42-8.602.42q-5.108 0-8.552-.42c-2.3-.274-4.145-.639-5.476-1.104-1.333-.41-2.301-1.014-2.898-1.744a3.6 3.6 0 0 1-.877-2.392V179.679c0-.876.28-1.707.877-2.402.596-.729 1.565-1.332 2.898-1.743 1.333-.465 3.176-.831 5.476-1.104q3.443-.41 8.552-.41c3.494 0 6.346.136 8.602.41 2.254.274 4.046.639 5.385 1.104 1.377.411 2.299 1.014 2.851 1.743.552.693.827 1.525.827 2.402v64.023h65.224v-64.023c0-.876.278-1.707.876-2.402.553-.729 1.52-1.332 2.806-1.743 1.287-.465 3.126-.831 5.381-1.104q3.448-.41 8.699-.41c3.444 0 6.252.136 8.505.41 2.255.274 4.049.639 5.385 1.104 1.334.411 2.3 1.014 2.899 1.743.598.693.872 1.525.872 2.402z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
+          "path",
+          {
+            strokeMiterlimit: 22.926,
+            strokeWidth: 1.009,
+            d: "M77.962 227.13c0 1.167-.064 2.144-.191 2.948-.129.812-.297 1.469-.53 1.935-.232.466-.488.831-.784 1.023a1.62 1.62 0 0 1-1.001.32H31.028q-.516-.002-.936-.32c-.295-.192-.552-.557-.784-1.023s-.406-1.123-.533-1.935c-.122-.804-.187-1.778-.187-2.948 0-1.214.065-2.209.168-3.021.105-.805.256-1.46.488-1.953.233-.512.488-.867.784-1.105a1.65 1.65 0 0 1 1-.338h15.001v-52.415l-12.96 7.156c-.96.466-1.721.749-2.337.847-.598.109-1.063-.019-1.424-.383-.359-.338-.597-.95-.72-1.825-.109-.867-.174-2.099-.174-3.679 0-.995.024-1.797.064-2.464.024-.63.129-1.188.296-1.633.174-.466.406-.831.68-1.123.3-.301.703-.602 1.191-.94l17.317-11.19c.191-.174.443-.301.762-.41.32-.1.725-.191 1.214-.256a23 23 0 0 1 1.977-.127c.807-.02 1.847-.02 3.144-.02 1.57 0 2.848.02 3.825.083.978.062 1.703.173 2.208.318.488.127.832.338 1 .575.151.257.232.576.232.94v66.543h13.131c.385 0 .722.127 1.041.338.296.238.571.593.809 1.105.232.493.377 1.15.486 1.953.107.814.171 1.81.171 3.024z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime99.jsx)("path", { d: "M610.655 427.34c33.108 0 60.111-27.005 60.111-60.117 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.007-60.127 60.126 0 33.112 27.006 60.117 60.127 60.117zm182.484 0c33.111 0 60.116-27.005 60.116-60.117 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.007-60.126 60.126 0 33.112 27.005 60.117 60.126 60.117zM610.655 260.415c33.108 0 60.111-27.007 60.111-60.118 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.005-60.127 60.126 0 33.111 27.006 60.118 60.127 60.118zm182.484 0c33.111 0 60.116-27.007 60.116-60.118 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.005-60.126 60.126 0 33.111 27.005 60.118 60.126 60.118z" })
       ]
     }
   );
-  var AlignBottom_default = SvgAlignBottom;
+  var H1H_default = Svg1H1H;
 
-  // build/lib-react-tsx/nmr/AlignCenter.tsx
+  // build/lib-react-tsx/nmr/2D.tsx
   var React100 = __toESM(require_react(), 1);
   var import_jsx_runtime100 = __toESM(require_jsx_runtime(), 1);
-  var SvgAlignCenter = ({
+  var Svg2D = ({
     title,
     titleId,
     ...props
@@ -30970,74 +30944,71 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "27 30.7 946.1 946.1",
+      viewBox: "-2 24.6 970.5 970.5",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime100.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime100.jsxs)(
-          "g",
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)("path", { d: "M290.592 768.97c33.109 0 60.112-27.008 60.112-60.127 0-33.114-27.003-60.12-60.112-60.12-33.12 0-60.125 27.006-60.125 60.12-.001 33.119 27.005 60.127 60.125 60.127z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
+          "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            clipPath: "url(#clip-align-center)",
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
-                "path",
-                {
-                  strokeWidth: 39.653,
-                  d: "M74.308 610.139c44.876-.388 119.418-1.382 207.014-.9 81.7-1.17 55.543-253.2 61.663-307.085 9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
-                "path",
-                {
-                  strokeWidth: 35,
-                  d: "M640.002 862.524 499.861 722.383 359.72 862.524",
-                  "data-name": "Path 6"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
-                "path",
-                {
-                  strokeWidth: 20,
-                  d: "M612.142 905.199 499.76 792.817 387.378 905.199",
-                  "data-name": "Path 7"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
-                "path",
-                {
-                  strokeWidth: 35,
-                  d: "M640.001 145.057 499.86 285.198 359.719 145.057",
-                  "data-name": "Path 6"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
-                "path",
-                {
-                  strokeWidth: 20,
-                  d: "M612.142 102.383 499.76 214.765 387.378 102.383",
-                  "data-name": "Path 7"
-                }
-              )
-            ]
+            strokeMiterlimit: 22.926,
+            strokeWidth: 31.354,
+            d: "m109.491 73.172 55.516 73.307m-111.039 0 55.523-73.307"
           }
-        )
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.573,
+            d: "M115.061 891.109h754.456"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.065,
+            d: "M109.491 884.987V115.169"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 31.354,
+            d: "m912.458 891.109-73.316 55.518m0-111.037 73.316 55.519"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)("path", { d: "M510.655 527.34c33.108 0 60.111-27.005 60.111-60.117 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.007-60.127 60.126 0 33.112 27.006 60.117 60.127 60.117zm282.484 0c33.111 0 60.116-27.005 60.116-60.117 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.007-60.126 60.126 0 33.112 27.005 60.117 60.126 60.117zM510.655 260.415c33.108 0 60.111-27.007 60.111-60.118 0-33.121-27.003-60.126-60.111-60.126-33.121 0-60.127 27.005-60.127 60.126 0 33.111 27.006 60.118 60.127 60.118zm282.484 0c33.111 0 60.116-27.007 60.116-60.118 0-33.121-27.005-60.126-60.116-60.126-33.121 0-60.126 27.005-60.126 60.126 0 33.111 27.005 60.118 60.126 60.118z" })
       ]
     }
   );
-  var AlignCenter_default = SvgAlignCenter;
+  var D_default = Svg2D;
 
-  // build/lib-react-tsx/nmr/Apodization.tsx
+  // build/lib-react-tsx/nmr/AddFilter.tsx
   var React101 = __toESM(require_react(), 1);
   var import_jsx_runtime101 = __toESM(require_jsx_runtime(), 1);
-  var SvgApodization = ({
+  var SvgAddFilter = ({
     title,
     titleId,
     ...props
@@ -31045,7 +31016,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31062,31 +31032,39 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "m27.989 24.288 24.468 939.363 52.128-677.659 29.787 456.383 44.681-297.873 23.404 202.128 38.298-108.511 26.596 42.339h698.936"
+            strokeWidth: 50.126,
+            d: "M38.416 887.681c558.451 0 148.174-1.283 633.454-1.283 10.578 0 47.87-38 57.844-55l44.9-345.78 44.857 347.78 26.927 54 113.692.283"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
+          "path",
+          {
+            d: "m687.492 282.78-51.858 100.095 24.17 110.116c-42.727-48.433-115.375-98.433-175.081-129.992",
+            "data-name": "Path 9"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
           "path",
           {
             fill: "none",
-            strokeDasharray: "50,50",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 48.987,
-            d: "M293.947 55.51v886.864"
+            d: "M624.301 376.896c68.882 3.825 102.461 21.904 132.651 76.103",
+            "data-name": "Path 11"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime101.jsx)("path", { d: "M650.938 63.47h67.1l148.5 390.5h-78.1l-36.3-97.35h-136.4l-35.75 97.35h-78.1Zm87.45 239.8-53.9-153.45-56.1 153.45Z" })
+        /* @__PURE__ */ (0, import_jsx_runtime101.jsx)("path", { d: "M629.812 76.248c18.317 5.053 34.108 20.212 40.424 38.4 2.021 5.937 2.4 10.738 2.4 33.6 0 28.8-1.011 35.876-6.822 47.246a72 72 0 0 1-7.706 11.369c-4.169 4.8-75.8 61.521-79.585 62.91-1.642.632-20.844-23.876-20.844-26.528 0-.884 17.054-14.906 37.9-31.076 26.655-20.717 38.4-30.571 39.793-33.476 1.516-3.285 1.895-9.222 1.895-29.56 0-28.676-.884-32.592-7.832-36.382-4.042-2.148-14.654-2.274-244.819-2.274s-240.777.126-244.819 2.274c-6.948 3.79-7.832 7.706-7.832 36.255 0 18.7.505 26.4 1.769 29.56 1.39 3.411 19.581 17.054 101.313 75.922 54.825 39.414 100.934 72.89 102.324 74.406 2.653 2.527 3.032 7.706 11.117 120.767 4.674 64.931 8.716 119.63 9.1 121.4a13.9 13.9 0 0 0 3.79 6.316c3.158 2.905 3.916 3.032 23.244 3.032 19.454 0 20.086-.126 23.244-3.032a14.8 14.8 0 0 0 3.916-6.948c.253-2.148 2.021-24.886 3.916-50.657 1.769-25.644 3.411-46.867 3.663-47.246.758-.632 33.6 2.148 34.361 2.905 1.011 1.011-5.937 95.5-7.453 101.187-3.79 14.654-14.148 26.655-29.687 34.361l-9.727 4.8h-22.112c-21.6 0-22.486-.126-29.687-3.411-10.738-5.053-19.075-11.622-24.633-19.454-4.927-6.948-5.306-8.337-8.969-31.076-.632-4.421-4.421-52.93-8.211-107.756-3.916-54.952-7.327-100.934-7.58-102.45-.379-1.895-29.813-23.749-93.1-69.353-50.909-36.634-95.25-69.227-98.534-72.385-6.948-6.7-12.759-17.054-15.538-27.413-2.906-11.5-2.653-57.226.379-67.205 4.8-15.159 15.917-27.665 31.455-35.371l9.727-4.8 241.914-.253c193.021-.124 243.177.128 247.846 1.396Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime101.jsx)("path", { fill: "none", d: "M.5.5h997.512l2.488 1000H.5Z" })
       ]
     }
   );
-  var Apodization_default = SvgApodization;
+  var AddFilter_default = SvgAddFilter;
 
-  // build/lib-react-tsx/nmr/Assignment.tsx
+  // build/lib-react-tsx/nmr/AlignBottom.tsx
   var React102 = __toESM(require_react(), 1);
   var import_jsx_runtime102 = __toESM(require_jsx_runtime(), 1);
-  var SvgAssignment6 = ({
+  var SvgAlignBottom = ({
     title,
     titleId,
     ...props
@@ -31094,10 +31072,9 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "27 7.1 946.1 946.1",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -31110,28 +31087,37 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
+            clipPath: "url(#clip-align-bottom)",
             children: [
               /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
                 "path",
                 {
-                  strokeWidth: 50.126,
-                  d: "M45.332 634.783h614.323l66.347-389.362 59.074 389.362h99.105"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("path", { strokeWidth: 44.208, d: "M724.551 73.495v85.48" }),
-              /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
-                "path",
-                {
-                  strokeWidth: 61.89,
-                  d: "M45.332 809.969h882.592m27.267-.01-99.571 75.414m0-150.813 99.571 75.399"
+                  strokeWidth: 39.653,
+                  d: "M74.308 889.139c44.876-.388 119.418-1.382 207.014-.9 81.54-1.168 55.647-252.189 61.657-307.029l.006-.055c9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0"
                 }
               ),
               /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
                 "path",
                 {
-                  strokeWidth: 50.126,
-                  d: "m158.572 160.25 150.263-86.755 150.262 86.755v173.504l-150.262 86.752-150.263-86.752z"
+                  strokeWidth: 35,
+                  d: "M640.001 338.057 499.86 478.198 359.719 338.057",
+                  "data-name": "Path 6"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
+                "path",
+                {
+                  strokeWidth: 20,
+                  d: "M612.142 295.383 499.76 407.765l3.764-338.977-3.764 338.977-112.382-112.382",
+                  "data-name": "Path 7"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
+                "path",
+                {
+                  strokeWidth: 35,
+                  d: "M640.001 338.057 499.86 478.198 359.719 338.057",
+                  "data-name": "Path 8"
                 }
               )
             ]
@@ -31140,16 +31126,91 @@
       ]
     }
   );
-  var Assignment_default6 = SvgAssignment6;
+  var AlignBottom_default = SvgAlignBottom;
 
-  // build/lib-react-tsx/nmr/Assignment2.tsx
+  // build/lib-react-tsx/nmr/AlignCenter.tsx
   var React103 = __toESM(require_react(), 1);
   var import_jsx_runtime103 = __toESM(require_jsx_runtime(), 1);
-  var SvgAssignment22 = ({
+  var SvgAlignCenter = ({
     title,
     titleId,
     ...props
   }) => /* @__PURE__ */ (0, import_jsx_runtime103.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "27 30.7 946.1 946.1",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime103.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime103.jsxs)(
+          "g",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            clipPath: "url(#clip-align-center)",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+                "path",
+                {
+                  strokeWidth: 39.653,
+                  d: "M74.308 610.139c44.876-.388 119.418-1.382 207.014-.9 81.7-1.17 55.543-253.2 61.663-307.085 9.134 83.481-10.239 291.374 86.758 307.083 22.56 3.653 107.859 5.114 132.337 0 96.267-19.911 67.725-129.929 76.859-213.41 6.028 53.888-9.874 194.965 79.957 214.313 60.223.9 136.628.994 206.9 0"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+                "path",
+                {
+                  strokeWidth: 35,
+                  d: "M640.002 862.524 499.861 722.383 359.72 862.524",
+                  "data-name": "Path 6"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+                "path",
+                {
+                  strokeWidth: 20,
+                  d: "M612.142 905.199 499.76 792.817 387.378 905.199",
+                  "data-name": "Path 7"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+                "path",
+                {
+                  strokeWidth: 35,
+                  d: "M640.001 145.057 499.86 285.198 359.719 145.057",
+                  "data-name": "Path 6"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+                "path",
+                {
+                  strokeWidth: 20,
+                  d: "M612.142 102.383 499.76 214.765 387.378 102.383",
+                  "data-name": "Path 7"
+                }
+              )
+            ]
+          }
+        )
+      ]
+    }
+  );
+  var AlignCenter_default = SvgAlignCenter;
+
+  // build/lib-react-tsx/nmr/Apodization.tsx
+  var React104 = __toESM(require_react(), 1);
+  var import_jsx_runtime104 = __toESM(require_jsx_runtime(), 1);
+  var SvgApodization = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime104.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -31162,91 +31223,39 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime103.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime103.jsx)("path", { d: "m821.53 292.639-83.455 53.397-29.992 94.432c-11.238-55.639-44.56-125.618-76.135-175.875" }),
-        /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime104.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime104.jsx)(
           "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 50.126,
-            d: "M45.332 934.783c559.962 0 148.575-1.283 635.168-1.283 10.607 0 48-38 58-55l50-379 40 381 27 54 114 .283M58.363 250.85 328.835 94.691 599.306 250.85v312.307L328.835 719.311 58.363 563.157z"
+            strokeWidth: 48.987,
+            d: "m27.989 24.288 24.468 939.363 52.128-677.659 29.787 456.383 44.681-297.873 23.404 202.128 38.298-108.511 26.596 42.339h698.936"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime104.jsx)(
           "path",
           {
             fill: "none",
+            strokeDasharray: "50,50",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 48.987,
-            d: "M709.996 313.94C770.5 353.5 791.5 387.5 790.5 452.5"
+            d: "M293.947 55.51v886.864"
           }
-        )
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime104.jsx)("path", { d: "M650.938 63.47h67.1l148.5 390.5h-78.1l-36.3-97.35h-136.4l-35.75 97.35h-78.1Zm87.45 239.8-53.9-153.45-56.1 153.45Z" })
       ]
     }
   );
-  var Assignment2_default = SvgAssignment22;
+  var Apodization_default = SvgApodization;
 
-  // build/lib-react-tsx/nmr/BaselineCorrection.tsx
-  var React104 = __toESM(require_react(), 1);
-  var import_jsx_runtime104 = __toESM(require_jsx_runtime(), 1);
-  var SvgBaselineCorrection = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime104.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime104.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime104.jsxs)(
-          "g",
-          {
-            fill: "none",
-            strokeWidth: 45,
-            clipPath: "url(#clip-baseline_correction)",
-            "data-name": "baseline correction",
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime104.jsx)(
-                "path",
-                {
-                  strokeDasharray: "5 100",
-                  strokeLinecap: "square",
-                  strokeLinejoin: "bevel",
-                  d: "M27.265 648.5h961.746"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime104.jsx)(
-                "path",
-                {
-                  strokeLinecap: "round",
-                  strokeLinejoin: "round",
-                  d: "M33.737 698.735c14.928 4.584 51.09 39.489 112.8 39.489s76.691-53.427 127.581-62.8 98.841-30.237 108.461-30.181c76.9-1.17 58.063-490.423 63.823-544.308 8.6 83.481-21.07 528.6 70.224 544.306 21.234 3.653-15.192 5.114 7.847 0 90.607-19.911 79.3-392.121 79.3-392.121s-6.906 293.146 51.71 355.345 84.549-41.324 148.667-31.625 107.807 70.415 107.807 70.415 40.428 51.7 55.4 51.478"
-                }
-              )
-            ]
-          }
-        )
-      ]
-    }
-  );
-  var BaselineCorrection_default = SvgBaselineCorrection;
-
-  // build/lib-react-tsx/nmr/ExportAsMatrix.tsx
+  // build/lib-react-tsx/nmr/Assignment.tsx
   var React105 = __toESM(require_react(), 1);
   var import_jsx_runtime105 = __toESM(require_jsx_runtime(), 1);
-  var SvgExportAsMatrix = ({
+  var SvgAssignment6 = ({
     title,
     titleId,
     ...props
@@ -31264,68 +31273,48 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime105.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime105.jsxs)("g", { "data-name": "matrix-group", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime105.jsxs)("g", { "data-name": "Group 1", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
-              "path",
-              {
-                d: "m726.324 382.369 42.232 129.055-65.809 111.873c73.311-37.31 188.443-65.248 280.26-77.75",
-                "data-name": "Path 9"
-              }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
-              "path",
-              {
-                fill: "rgba(0,0,0,0)",
-                strokeLinejoin: "round",
-                strokeMiterlimit: 22.926,
-                strokeWidth: 60.006,
-                d: "M788.538 516.872c-18.263-6.046-202.212-27.71-214.417-25.723-67.023 10.912-119.093 136.624-136.565 160.707-3.238 4.463-10.934-45.332-10.934-45.332L342.05 75.93l-82.685 558.027-134.978-.023",
-                "data-name": "Path 11"
-              }
-            )
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
-            "path",
-            {
-              fill: "none",
-              strokeLinecap: "round",
-              strokeWidth: 60,
-              d: "M623.293 640.639v296.849H505",
-              "data-name": "Path 17"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
-            "path",
-            {
-              fill: "none",
-              strokeLinecap: "round",
-              strokeWidth: 60,
-              d: "M623.293 361.415V73.494H505",
-              "data-name": "Path 18"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
-            "path",
-            {
-              fill: "none",
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              strokeWidth: 60,
-              d: "M179.092 73.494H60.319v863.994h118.773",
-              "data-name": "Path 19"
-            }
-          )
-        ] })
+        /* @__PURE__ */ (0, import_jsx_runtime105.jsxs)(
+          "g",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+                "path",
+                {
+                  strokeWidth: 50.126,
+                  d: "M45.332 634.783h614.323l66.347-389.362 59.074 389.362h99.105"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime105.jsx)("path", { strokeWidth: 44.208, d: "M724.551 73.495v85.48" }),
+              /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+                "path",
+                {
+                  strokeWidth: 61.89,
+                  d: "M45.332 809.969h882.592m27.267-.01-99.571 75.414m0-150.813 99.571 75.399"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+                "path",
+                {
+                  strokeWidth: 50.126,
+                  d: "m158.572 160.25 150.263-86.755 150.262 86.755v173.504l-150.262 86.752-150.263-86.752z"
+                }
+              )
+            ]
+          }
+        )
       ]
     }
   );
-  var ExportAsMatrix_default = SvgExportAsMatrix;
+  var Assignment_default6 = SvgAssignment6;
 
-  // build/lib-react-tsx/nmr/Fid.tsx
+  // build/lib-react-tsx/nmr/Assignment2.tsx
   var React106 = __toESM(require_react(), 1);
   var import_jsx_runtime106 = __toESM(require_jsx_runtime(), 1);
-  var SvgFid = ({
+  var SvgAssignment22 = ({
     title,
     titleId,
     ...props
@@ -31343,6 +31332,7 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime106.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime106.jsx)("path", { d: "m821.53 292.639-83.455 53.397-29.992 94.432c-11.238-55.639-44.56-125.618-76.135-175.875" }),
         /* @__PURE__ */ (0, import_jsx_runtime106.jsx)(
           "path",
           {
@@ -31350,23 +31340,86 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
+            strokeWidth: 50.126,
+            d: "M45.332 934.783c559.962 0 148.575-1.283 635.168-1.283 10.607 0 48-38 58-55l50-379 40 381 27 54 114 .283M58.363 250.85 328.835 94.691 599.306 250.85v312.307L328.835 719.311 58.363 563.157z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime106.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
             strokeWidth: 48.987,
-            d: "M149.053 29.608 178.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
+            d: "M709.996 313.94C770.5 353.5 791.5 387.5 790.5 452.5"
           }
         )
       ]
     }
   );
-  var Fid_default = SvgFid;
+  var Assignment2_default = SvgAssignment22;
 
-  // build/lib-react-tsx/nmr/FourierTransform.tsx
+  // build/lib-react-tsx/nmr/BaselineCorrection.tsx
   var React107 = __toESM(require_react(), 1);
   var import_jsx_runtime107 = __toESM(require_jsx_runtime(), 1);
-  var SvgFourierTransform = ({
+  var SvgBaselineCorrection = ({
     title,
     titleId,
     ...props
   }) => /* @__PURE__ */ (0, import_jsx_runtime107.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime107.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime107.jsxs)(
+          "g",
+          {
+            fill: "none",
+            strokeWidth: 45,
+            clipPath: "url(#clip-baseline_correction)",
+            "data-name": "baseline correction",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
+                "path",
+                {
+                  strokeDasharray: "5 100",
+                  strokeLinecap: "square",
+                  strokeLinejoin: "bevel",
+                  d: "M27.265 648.5h961.746"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
+                "path",
+                {
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round",
+                  d: "M33.737 698.735c14.928 4.584 51.09 39.489 112.8 39.489s76.691-53.427 127.581-62.8 98.841-30.237 108.461-30.181c76.9-1.17 58.063-490.423 63.823-544.308 8.6 83.481-21.07 528.6 70.224 544.306 21.234 3.653-15.192 5.114 7.847 0 90.607-19.911 79.3-392.121 79.3-392.121s-6.906 293.146 51.71 355.345 84.549-41.324 148.667-31.625 107.807 70.415 107.807 70.415 40.428 51.7 55.4 51.478"
+                }
+              )
+            ]
+          }
+        )
+      ]
+    }
+  );
+  var BaselineCorrection_default = SvgBaselineCorrection;
+
+  // build/lib-react-tsx/nmr/ExportAsMatrix.tsx
+  var React108 = __toESM(require_react(), 1);
+  var import_jsx_runtime108 = __toESM(require_jsx_runtime(), 1);
+  var SvgExportAsMatrix = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime108.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -31379,98 +31432,69 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime107.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "m444.092 954.83 260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6m.9.001c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime107.jsx)("path", { d: "m494.573 832.361 84.332-51.996 31.562-93.917c10.312 55.815 42.461 126.343 73.191 177.118-56.408-18.446-132.387-33.795-189.085-31.205z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "m462.253 673.862 118.259 106.22"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 80,
-            d: "M536.969 53.506c51.065-19.271 334.979 22.168 390.4 0m-290 33.2c-8.012 84.916 1.6 315.199-71.2 404m71.394-217.481c.967-.04 86.205 16.681 149.405 10.281"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M29.053 29.608 58.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
-          }
-        )
-      ]
-    }
-  );
-  var FourierTransform_default = SvgFourierTransform;
-
-  // build/lib-react-tsx/nmr/Ft.tsx
-  var React108 = __toESM(require_react(), 1);
-  var import_jsx_runtime108 = __toESM(require_jsx_runtime(), 1);
-  var SvgFt = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime108.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "55.3 46.1 900.4 900.4",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime108.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "m444.092 954.83 260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6m.9.001c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898",
-            transform: "matrix(1.5417 0 0 1.40189 -584.35 -473.718)"
-          }
-        )
+        /* @__PURE__ */ (0, import_jsx_runtime108.jsxs)("g", { "data-name": "matrix-group", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime108.jsxs)("g", { "data-name": "Group 1", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
+              "path",
+              {
+                d: "m726.324 382.369 42.232 129.055-65.809 111.873c73.311-37.31 188.443-65.248 280.26-77.75",
+                "data-name": "Path 9"
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
+              "path",
+              {
+                fill: "rgba(0,0,0,0)",
+                strokeLinejoin: "round",
+                strokeMiterlimit: 22.926,
+                strokeWidth: 60.006,
+                d: "M788.538 516.872c-18.263-6.046-202.212-27.71-214.417-25.723-67.023 10.912-119.093 136.624-136.565 160.707-3.238 4.463-10.934-45.332-10.934-45.332L342.05 75.93l-82.685 558.027-134.978-.023",
+                "data-name": "Path 11"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
+            "path",
+            {
+              fill: "none",
+              strokeLinecap: "round",
+              strokeWidth: 60,
+              d: "M623.293 640.639v296.849H505",
+              "data-name": "Path 17"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
+            "path",
+            {
+              fill: "none",
+              strokeLinecap: "round",
+              strokeWidth: 60,
+              d: "M623.293 361.415V73.494H505",
+              "data-name": "Path 18"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
+            "path",
+            {
+              fill: "none",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              strokeWidth: 60,
+              d: "M179.092 73.494H60.319v863.994h118.773",
+              "data-name": "Path 19"
+            }
+          )
+        ] })
       ]
     }
   );
-  var Ft_default = SvgFt;
+  var ExportAsMatrix_default = SvgExportAsMatrix;
 
-  // build/lib-react-tsx/nmr/ImpuritiesStars.tsx
+  // build/lib-react-tsx/nmr/Fid.tsx
   var React109 = __toESM(require_react(), 1);
   var import_jsx_runtime109 = __toESM(require_jsx_runtime(), 1);
-  var SvgImpuritiesStars = ({
+  var SvgFid = ({
     title,
     titleId,
     ...props
@@ -31496,42 +31520,18 @@
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 48.987,
-            d: "M43.528 957.101H159.71l28.61-77.773 29.083 76.971 242.097.084 39-57.883 50.907-846.347L603.5 896.5l43 60.601h70.667l50.082-116.9 52.511 116.9h133.575"
+            d: "M149.053 29.608 178.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
           }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime109.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "square",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 39.19,
-            d: "M188.5 618.1v126.4"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime109.jsx)("path", { d: "M188.5 839.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958C233.2 739.356 205.01 794.589 188.5 839.106z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime109.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "square",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 39.19,
-            d: "M766.5 585.1v126.4"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime109.jsx)("path", { d: "M766.5 806.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958c-29.836 34.229-58.027 89.462-74.537 133.979zm-477.422-480.57-75.804 99.897v1.6l120.489-15.984v54.346L213.274 450.21v2.396l76.602 95.905-50.27 28.771-48.674-111.888h-1.597l-51.07 112.685-45.485-28.77 75.807-97.501v-2.398l-118.1 15.985v-54.346l117.301 15.185v-1.6l-75.012-98.302 48.678-27.971 49.474 111.889h1.596L241.2 297.562zm574.732-30.359-74.812 98.438v1.576l118.912-15.75v53.552L788.998 418.03v2.361l75.599 94.504-49.612 28.351-48.041-110.253h-1.57l-50.401 111.039-44.893-28.352 74.815-96.075v-2.363l-116.555 15.75V379.44l115.767 14.963v-1.576l-74.027-96.865 48.041-27.562 48.823 110.254h1.576l48.041-111.042z" })
+        )
       ]
     }
   );
-  var ImpuritiesStars_default = SvgImpuritiesStars;
+  var Fid_default = SvgFid;
 
-  // build/lib-react-tsx/nmr/Impurities.tsx
+  // build/lib-react-tsx/nmr/FourierTransform.tsx
   var React110 = __toESM(require_react(), 1);
   var import_jsx_runtime110 = __toESM(require_jsx_runtime(), 1);
-  var SvgImpurities2 = ({
+  var SvgFourierTransform = ({
     title,
     titleId,
     ...props
@@ -31556,19 +31556,52 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
+            strokeWidth: 49.312,
+            d: "m444.092 954.83 260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6m.9.001c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime110.jsx)("path", { d: "m494.573 832.361 84.332-51.996 31.562-93.917c10.312 55.815 42.461 126.343 73.191 177.118-56.408-18.446-132.387-33.795-189.085-31.205z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
             strokeWidth: 48.987,
-            d: "M43.528 787.101h93.182l51.61-99.773 51.083 98.971 255.948.113 54.056-734.259 57.363 734.948h87.397l63.082-96.9 64.511 96.9h131.575"
+            d: "m462.253 673.862 118.259 106.22"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 80,
+            d: "M536.969 53.506c51.065-19.271 334.979 22.168 390.4 0m-290 33.2c-8.012 84.916 1.6 315.199-71.2 404m71.394-217.481c.967-.04 86.205 16.681 149.405 10.281"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "M29.053 29.608 58.84 963.65l65.958-774.467 40.425 600 65.957-396.809 51.064 286.17 67.022-175.532 70.213 115.958 61.701-73.405 72.767 34.893h176.596"
           }
         )
       ]
     }
   );
-  var Impurities_default2 = SvgImpurities2;
+  var FourierTransform_default = SvgFourierTransform;
 
-  // build/lib-react-tsx/nmr/Integrate.tsx
+  // build/lib-react-tsx/nmr/Ft.tsx
   var React111 = __toESM(require_react(), 1);
   var import_jsx_runtime111 = __toESM(require_jsx_runtime(), 1);
-  var SvgIntegrate = ({
+  var SvgFt = ({
     title,
     titleId,
     ...props
@@ -31579,7 +31612,7 @@
       xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "55.3 46.1 900.4 900.4",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -31594,98 +31627,19 @@
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 49.312,
-            d: "M40.677 920.5H142.5l36-5 25-28 14-59 15-87 19-284s3.841 52.633 21 264c11 75 8 59 18 101 .268.921 18.728 51.077 19 52 7 14 12.703 18.312 25 29 14.993 13.033 36 17 36 17l590-1"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "M64.5 419.5c197 5 187-13.598 186-190.397-1-176.8-15-207.205 156-202.603"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(
-          "ellipse",
-          {
-            cx: 811.5,
-            cy: 117,
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60,
-            rx: 35,
-            ry: 28.5
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60,
-            d: "M807.5 87.5c-110-2-156 237-164 349"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60,
-            d: "M810.5 90.5c-110-2-105 234-113 346"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(
-          "ellipse",
-          {
-            cx: 529.5,
-            cy: 747.98,
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60,
-            rx: 35,
-            ry: 28.5
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60,
-            d: "M533.5 777.48c110 2 156-227 164-339"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60,
-            d: "M530.5 774.48c110 2 105-224 113-336"
+            d: "m444.092 954.83 260.101.898s18.906-3.57 32.399-15.299c11.067-9.619 16.2-13.5 22.5-26.1.244-.832 16.859-45.973 17.101-46.801 9-37.801 6.299-23.4 16.199-90.9 15.443-190.23 18.9-309.6 18.9-309.6m.9.001c0-137.7 3.456 119.369 18.899 309.6 9.899 67.5 7.2 53.1 16.2 90.9.24.828 16.854 45.969 17.1 46.801 6.301 12.6 11.434 16.48 22.5 26.1 13.494 11.729 32.4 15.299 32.4 15.299l50.4-.898",
+            transform: "matrix(1.5417 0 0 1.40189 -584.35 -473.718)"
           }
         )
       ]
     }
   );
-  var Integrate_default = SvgIntegrate;
+  var Ft_default = SvgFt;
 
-  // build/lib-react-tsx/nmr/Lineshapedeconvolution.tsx
+  // build/lib-react-tsx/nmr/ImpuritiesStars.tsx
   var React112 = __toESM(require_react(), 1);
   var import_jsx_runtime112 = __toESM(require_jsx_runtime(), 1);
-  var SvgLineshapedeconvolution = ({
+  var SvgImpuritiesStars = ({
     title,
     titleId,
     ...props
@@ -31710,85 +31664,43 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "M211.5 287.5s3.841 43.633 21 255c11 75 19 146 41 213 20 37 72 66 92 78 37 13 61 53 88 79 6 8 33 9 33 9l434-2m-885 0 56 1s21.007-3.967 36-17c12.297-10.688 18-15 25-29 .272-.923 18.732-51.079 19-52 10-42 7-26 18-101 17.159-211.367 21-587 21-434"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "M472.5 76.5s3.841 132.633 21 344c11 75 8 59 18 101 .268.921 18.728 51.077 19 52 7 14 12.703 18.312 25 29 14.993 13.033 36 17 36 17l289-1m-584 0 56 1s21.007-3.967 36-17c12.297-10.688 18-15 25-29 .272-.923 18.732-51.079 19-52 10-42 7-26 18-101 17.159-211.367 21-497 21-344"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)("path", { d: "m708.897 831.817-78.271-60.741-99.021 3.379c48.656-29.23 103.428-84.072 140.201-130.658 2.508 59.295 14.781 135.83 37.091 188.02z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
             strokeWidth: 48.987,
-            d: "m583.5 881.5 58-148"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)(
-          "circle",
-          {
-            cx: 762.5,
-            cy: 238.5,
-            r: 197,
-            fill: "none",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)(
-          "circle",
-          {
-            cx: 762.5,
-            cy: 131.5,
-            r: 18,
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)(
-          "circle",
-          {
-            cx: 762.5,
-            cy: 339.5,
-            r: 18,
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987
+            d: "M43.528 957.101H159.71l28.61-77.773 29.083 76.971 242.097.084 39-57.883 50.907-846.347L603.5 896.5l43 60.601h70.667l50.082-116.9 52.511 116.9h133.575"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime112.jsx)(
           "path",
           {
             fill: "none",
+            strokeLinecap: "square",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M667.5 235.5h190"
+            strokeWidth: 39.19,
+            d: "M188.5 618.1v126.4"
           }
-        )
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)("path", { d: "M188.5 839.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958C233.2 739.356 205.01 794.589 188.5 839.106z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "square",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 39.19,
+            d: "M766.5 585.1v126.4"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime112.jsx)("path", { d: "M766.5 806.106c-16.518-44.521-44.7-99.75-74.537-133.979l74.537 26.958 74.537-26.958c-29.836 34.229-58.027 89.462-74.537 133.979zm-477.422-480.57-75.804 99.897v1.6l120.489-15.984v54.346L213.274 450.21v2.396l76.602 95.905-50.27 28.771-48.674-111.888h-1.597l-51.07 112.685-45.485-28.77 75.807-97.501v-2.398l-118.1 15.985v-54.346l117.301 15.185v-1.6l-75.012-98.302 48.678-27.971 49.474 111.889h1.596L241.2 297.562zm574.732-30.359-74.812 98.438v1.576l118.912-15.75v53.552L788.998 418.03v2.361l75.599 94.504-49.612 28.351-48.041-110.253h-1.57l-50.401 111.039-44.893-28.352 74.815-96.075v-2.363l-116.555 15.75V379.44l115.767 14.963v-1.576l-74.027-96.865 48.041-27.562 48.823 110.254h1.576l48.041-111.042z" })
       ]
     }
   );
-  var Lineshapedeconvolution_default = SvgLineshapedeconvolution;
+  var ImpuritiesStars_default = SvgImpuritiesStars;
 
-  // build/lib-react-tsx/nmr/MultipleAnalysis.tsx
+  // build/lib-react-tsx/nmr/Impurities.tsx
   var React113 = __toESM(require_react(), 1);
   var import_jsx_runtime113 = __toESM(require_jsx_runtime(), 1);
-  var SvgMultipleAnalysis = ({
+  var SvgImpurities2 = ({
     title,
     titleId,
     ...props
@@ -31796,9 +31708,10 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 991.323 980.387",
+      viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -31809,56 +31722,22 @@
           "path",
           {
             fill: "none",
-            strokeDasharray: "1, 70",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 49.224,
-            d: "M24.612 594.712h305.673l61.025-399.9 61.127 399.9h338.338"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime113.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.224,
-            d: "M199.548 953.651h371.673l61.024-399.9 63.127 399.9h271.339"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime113.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "50, 30",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.224,
-            d: "M116.665 775.367c60.181 0 342.086.408 342.086.408l61.025-399.9 62.127 399.9h330.782"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime113.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 39.653,
-            d: "M213.446 229.43v-152h527v151",
-            "data-name": "Path 5"
+            strokeWidth: 48.987,
+            d: "M43.528 787.101h93.182l51.61-99.773 51.083 98.971 255.948.113 54.056-734.259 57.363 734.948h87.397l63.082-96.9 64.511 96.9h131.575"
           }
         )
       ]
     }
   );
-  var MultipleAnalysis_default = SvgMultipleAnalysis;
+  var Impurities_default2 = SvgImpurities2;
 
-  // build/lib-react-tsx/nmr/Multiplet.tsx
+  // build/lib-react-tsx/nmr/Integrate.tsx
   var React114 = __toESM(require_react(), 1);
   var import_jsx_runtime114 = __toESM(require_jsx_runtime(), 1);
-  var SvgMultiplet = ({
+  var SvgIntegrate = ({
     title,
     titleId,
     ...props
@@ -31876,7 +31755,6 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime114.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)("path", { d: "M235.272 294.355c0 1.324-.394 2.506-1.192 3.506-.792 1.045-2.045 1.907-3.883 2.635-1.786.722-4.225 1.245-7.325 1.639-3.101.405-7 .536-11.809.536-4.748 0-8.64-.131-11.739-.536-3.102-.393-5.61-.915-7.455-1.639-1.848-.727-3.171-1.59-3.891-2.635a6.3 6.3 0 0 1-1.057-3.506v-81.914c-4.611 4.276-9.104 7.968-13.526 11.14-4.345 3.168-8.769 5.743-13.123 7.717a62.4 62.4 0 0 1-13.519 4.355c-4.622.921-9.567 1.313-14.721 1.313-12.592 0-23.345-2.51-32.252-7.583-8.906-5.077-16.154-11.939-21.77-20.585-5.6-8.64-9.689-18.724-12.264-30.266-2.578-11.544-3.832-23.687-3.832-36.417 0-15.373 1.648-29.155 5.016-41.361 3.366-12.263 8.244-22.687 14.711-31.329 6.399-8.64 14.318-15.237 23.748-19.856 9.362-4.684 20.321-6.993 32.653-6.993 4.74 0 9.36.464 13.718 1.454 4.352.983 8.775 2.634 13.131 5.003 4.413 2.38 8.966 5.479 13.655 9.312 4.681 3.821 9.894 8.433 15.563 13.982V53.585c0-1.254.325-2.439 1.056-3.364.662-.979 1.846-1.771 3.427-2.441 1.649-.655 3.761-1.117 6.338-1.44 2.577-.328 5.935-.465 10.022-.465 3.891 0 7.128.137 9.766.465 2.637.323 4.749.785 6.271 1.44 1.58.67 2.635 1.461 3.297 2.441.654.926.987 2.111.987 3.364zm-48.354-183.571c-6.932-8.775-13.594-15.441-19.985-20.053-6.398-4.68-13.063-6.997-19.994-6.997-6.329 0-11.733 1.587-16.352 4.756-4.553 3.16-8.246 7.388-11.019 12.66-2.774 5.274-4.818 11.147-6.201 17.672a101 101 0 0 0-1.984 19.996c0 7.193.602 14.24 1.718 21.17 1.194 6.863 3.04 12.994 5.737 18.268 2.646 5.282 6.141 9.508 10.496 12.734 4.416 3.241 9.963 4.818 16.619 4.818 3.367 0 6.604-.458 9.765-1.448 3.17-.929 6.399-2.507 9.697-4.683 3.236-2.25 6.664-5.083 10.091-8.641 3.494-3.504 7.325-7.85 11.413-13.072v-57.18z" }),
         /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
           "path",
           {
@@ -31884,19 +31762,99 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 49.859,
-            d: "M34.5 703.843h96.845l51.151-146.426 56.134 146.426h87.82l59.601-530.531 58.111 530.531h108.67l58.109-530.531 59.603 530.531h87.825l56.134-146.426 51.154 146.426H962.5"
+            strokeWidth: 49.312,
+            d: "M40.677 920.5H142.5l36-5 25-28 14-59 15-87 19-284s3.841 52.633 21 264c11 75 8 59 18 101 .268.921 18.728 51.077 19 52 7 14 12.703 18.312 25 29 14.993 13.033 36 17 36 17l590-1"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.312,
+            d: "M64.5 419.5c197 5 187-13.598 186-190.397-1-176.8-15-207.205 156-202.603"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
+          "ellipse",
+          {
+            cx: 811.5,
+            cy: 117,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60,
+            rx: 35,
+            ry: 28.5
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60,
+            d: "M807.5 87.5c-110-2-156 237-164 349"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60,
+            d: "M810.5 90.5c-110-2-105 234-113 346"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
+          "ellipse",
+          {
+            cx: 529.5,
+            cy: 747.98,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60,
+            rx: 35,
+            ry: 28.5
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60,
+            d: "M533.5 777.48c110 2 156-227 164-339"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime114.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60,
+            d: "M530.5 774.48c110 2 105-224 113-336"
           }
         )
       ]
     }
   );
-  var Multiplet_default = SvgMultiplet;
+  var Integrate_default = SvgIntegrate;
 
-  // build/lib-react-tsx/nmr/Overlay.tsx
+  // build/lib-react-tsx/nmr/Lineshapedeconvolution.tsx
   var React115 = __toESM(require_react(), 1);
   var import_jsx_runtime115 = __toESM(require_jsx_runtime(), 1);
-  var SvgOverlay3 = ({
+  var SvgLineshapedeconvolution = ({
     title,
     titleId,
     ...props
@@ -31921,12 +31879,10 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 60.777,
-            d: "M53.64 725.878h866.719m26.777-.01-97.782 74.059m0-148.103 97.782 74.044"
+            strokeWidth: 49.312,
+            d: "M211.5 287.5s3.841 43.633 21 255c11 75 19 146 41 213 20 37 72 66 92 78 37 13 61 53 88 79 6 8 33 9 33 9l434-2m-885 0 56 1s21.007-3.967 36-17c12.297-10.688 18-15 25-29 .272-.923 18.732-51.079 19-52 10-42 7-26 18-101 17.159-211.367 21-587 21-434"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)("path", { d: "M69.844 454.67c13.192 0 23.943-10.758 23.943-23.942 0-13.198-10.753-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.76 23.942 23.945 23.942zm216.452 0c13.193 0 23.945-10.758 23.945-23.942 0-13.198-10.751-23.947-23.945-23.947s-23.944 10.749-23.944 23.947c.001 13.182 10.751 23.942 23.944 23.942zm-72.147 0c13.184 0 23.945-10.758 23.945-23.942 0-13.198-10.761-23.947-23.945-23.947-13.193 0-23.953 10.749-23.953 23.947 0 13.182 10.758 23.942 23.953 23.942zm-72.15 0c13.187 0 23.945-10.758 23.945-23.942 0-13.198-10.758-23.947-23.945-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zm268.218 0c13.188 0 23.947-10.758 23.947-23.942 0-13.198-10.759-23.947-23.947-23.947-13.185 0-23.943 10.749-23.943 23.947 0 13.182 10.758 23.942 23.943 23.942zm216.443 0c13.193 0 23.943-10.758 23.943-23.942 0-13.198-10.75-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.761 23.942 23.945 23.942zm-72.139 0c13.185 0 23.944-10.758 23.944-23.942 0-13.198-10.76-23.947-23.944-23.947-13.193 0-23.945 10.749-23.945 23.947-.001 13.182 10.751 23.942 23.945 23.942zm-72.152 0c13.189 0 23.939-10.758 23.939-23.942 0-13.198-10.75-23.947-23.939-23.947-13.193 0-23.946 10.749-23.946 23.947-.002 13.182 10.752 23.942 23.946 23.942zm360.746 0c13.193 0 23.941-10.758 23.941-23.942 0-13.198-10.748-23.947-23.941-23.947-13.195 0-23.948 10.749-23.948 23.947 0 13.182 10.753 23.942 23.948 23.942zm-72.151 0c13.189 0 23.944-10.758 23.944-23.942 0-13.198-10.757-23.947-23.944-23.947-13.185 0-23.944 10.749-23.944 23.947 0 13.182 10.76 23.942 23.944 23.942zm-72.147 0c13.185 0 23.942-10.758 23.942-23.942 0-13.198-10.76-23.947-23.942-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zM347.174 99.073c13.195 0 23.945-10.751 23.945-23.945 0-13.183-10.75-23.945-23.945-23.945-13.182 0-23.942 10.762-23.942 23.945 0 13.193 10.76 23.945 23.942 23.945zm-60.132 185.372c2.238-13.034 14.616-21.793 27.643-19.561 13.041 2.229 21.798 14.609 19.569 27.642-2.239 13.032-14.609 21.79-27.643 19.562-13.04-2.231-21.789-14.611-19.569-27.643zm-12.167 71.114c2.23-13.034 14.609-21.793 27.643-19.562 13.03 2.238 21.79 14.61 19.56 27.643-2.24 13.042-14.609 21.79-27.643 19.56-13.038-2.229-21.789-14.608-19.56-27.641zm36.518-213.343c2.239-13.041 14.611-21.792 27.643-19.569 13.042 2.237 21.791 14.616 19.562 27.641-2.231 13.04-14.609 21.8-27.643 19.569-13.03-2.239-21.789-14.62-19.562-27.641zm-12.172 71.114c2.238-13.033 14.606-21.801 27.642-19.561 13.039 2.231 21.79 14.601 19.569 27.643-2.238 13.03-14.617 21.787-27.649 19.56-13.035-2.231-21.795-14.61-19.562-27.642zm107.952 71.115c-2.238-13.034-14.618-21.793-27.639-19.561-13.042 2.229-21.801 14.609-19.572 27.642 2.239 13.032 14.609 21.79 27.643 19.562 13.041-2.231 21.791-14.611 19.568-27.643zm12.168 71.114c-2.23-13.034-14.609-21.793-27.642-19.562-13.031 2.238-21.792 14.61-19.561 27.643 2.238 13.042 14.609 21.79 27.642 19.56 13.041-2.229 21.794-14.608 19.561-27.641z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)("path", { d: "M382.821 142.216c-2.236-13.041-14.607-21.792-27.64-19.569-13.042 2.237-21.792 14.616-19.561 27.641 2.23 13.04 14.611 21.8 27.642 19.569 13.031-2.239 21.791-14.62 19.559-27.641zm12.178 71.114c-2.239-13.033-14.609-21.801-27.641-19.561-13.042 2.231-21.791 14.601-19.57 27.643 2.239 13.03 14.618 21.787 27.65 19.56 13.032-2.231 21.79-14.61 19.561-27.642z" }),
         /* @__PURE__ */ (0, import_jsx_runtime115.jsx)(
           "path",
           {
@@ -31934,19 +31890,74 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 49.224,
-            d: "M72.744 560.332h372.673l61.025-358.899 62.127 358.899h271.338"
+            strokeWidth: 49.312,
+            d: "M472.5 76.5s3.841 132.633 21 344c11 75 8 59 18 101 .268.921 18.728 51.077 19 52 7 14 12.703 18.312 25 29 14.993 13.033 36 17 36 17l289-1m-584 0 56 1s21.007-3.967 36-17c12.297-10.688 18-15 25-29 .272-.923 18.732-51.079 19-52 10-42 7-26 18-101 17.159-211.367 21-497 21-344"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)("path", { d: "m708.897 831.817-78.271-60.741-99.021 3.379c48.656-29.23 103.428-84.072 140.201-130.658 2.508 59.295 14.781 135.83 37.091 188.02z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "m583.5 881.5 58-148"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)(
+          "circle",
+          {
+            cx: 762.5,
+            cy: 238.5,
+            r: 197,
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)(
+          "circle",
+          {
+            cx: 762.5,
+            cy: 131.5,
+            r: 18,
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)(
+          "circle",
+          {
+            cx: 762.5,
+            cy: 339.5,
+            r: 18,
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime115.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "M667.5 235.5h190"
           }
         )
       ]
     }
   );
-  var Overlay_default3 = SvgOverlay3;
+  var Lineshapedeconvolution_default = SvgLineshapedeconvolution;
 
-  // build/lib-react-tsx/nmr/Overlay3Aligned.tsx
+  // build/lib-react-tsx/nmr/MultipleAnalysis.tsx
   var React116 = __toESM(require_react(), 1);
   var import_jsx_runtime116 = __toESM(require_jsx_runtime(), 1);
-  var SvgOverlay3Aligned = ({
+  var SvgMultipleAnalysis = ({
     title,
     titleId,
     ...props
@@ -31954,10 +31965,9 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "0 0 991.323 980.387",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -31968,12 +31978,12 @@
           "path",
           {
             fill: "none",
-            strokeDasharray: "1,70",
+            strokeDasharray: "1, 70",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 49.224,
-            d: "M29.127 687.461H334.8l61.025-399.9 61.127 399.9H795.29"
+            d: "M24.612 594.712h305.673l61.025-399.9 61.127 399.9h338.338"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime116.jsx)(
@@ -31984,29 +31994,40 @@
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 49.224,
-            d: "M204.063 686.396h371.673l61.024-399.898 63.127 399.898h271.339"
+            d: "M199.548 953.651h371.673l61.024-399.9 63.127 399.9h271.339"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime116.jsx)(
           "path",
           {
             fill: "none",
-            strokeDasharray: "50,30",
+            strokeDasharray: "50, 30",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             strokeWidth: 49.224,
-            d: "M121.18 688.116c60.181 0 342.086.408 342.086.408l61.025-399.899 62.127 399.899H917.2"
+            d: "M116.665 775.367c60.181 0 342.086.408 342.086.408l61.025-399.9 62.127 399.9h330.782"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime116.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.653,
+            d: "M213.446 229.43v-152h527v151",
+            "data-name": "Path 5"
           }
         )
       ]
     }
   );
-  var Overlay3Aligned_default = SvgOverlay3Aligned;
+  var MultipleAnalysis_default = SvgMultipleAnalysis;
 
-  // build/lib-react-tsx/nmr/Overlay3.tsx
+  // build/lib-react-tsx/nmr/Multiplet.tsx
   var React117 = __toESM(require_react(), 1);
   var import_jsx_runtime117 = __toESM(require_jsx_runtime(), 1);
-  var SvgOverlay32 = ({
+  var SvgMultiplet = ({
     title,
     titleId,
     ...props
@@ -32024,18 +32045,7 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime117.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime117.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "1,70",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.224,
-            d: "M29.127 465.651H334.8l61.025-399.899 61.127 399.899H795.29"
-          }
-        ),
+        /* @__PURE__ */ (0, import_jsx_runtime117.jsx)("path", { d: "M235.272 294.355c0 1.324-.394 2.506-1.192 3.506-.792 1.045-2.045 1.907-3.883 2.635-1.786.722-4.225 1.245-7.325 1.639-3.101.405-7 .536-11.809.536-4.748 0-8.64-.131-11.739-.536-3.102-.393-5.61-.915-7.455-1.639-1.848-.727-3.171-1.59-3.891-2.635a6.3 6.3 0 0 1-1.057-3.506v-81.914c-4.611 4.276-9.104 7.968-13.526 11.14-4.345 3.168-8.769 5.743-13.123 7.717a62.4 62.4 0 0 1-13.519 4.355c-4.622.921-9.567 1.313-14.721 1.313-12.592 0-23.345-2.51-32.252-7.583-8.906-5.077-16.154-11.939-21.77-20.585-5.6-8.64-9.689-18.724-12.264-30.266-2.578-11.544-3.832-23.687-3.832-36.417 0-15.373 1.648-29.155 5.016-41.361 3.366-12.263 8.244-22.687 14.711-31.329 6.399-8.64 14.318-15.237 23.748-19.856 9.362-4.684 20.321-6.993 32.653-6.993 4.74 0 9.36.464 13.718 1.454 4.352.983 8.775 2.634 13.131 5.003 4.413 2.38 8.966 5.479 13.655 9.312 4.681 3.821 9.894 8.433 15.563 13.982V53.585c0-1.254.325-2.439 1.056-3.364.662-.979 1.846-1.771 3.427-2.441 1.649-.655 3.761-1.117 6.338-1.44 2.577-.328 5.935-.465 10.022-.465 3.891 0 7.128.137 9.766.465 2.637.323 4.749.785 6.271 1.44 1.58.67 2.635 1.461 3.297 2.441.654.926.987 2.111.987 3.364zm-48.354-183.571c-6.932-8.775-13.594-15.441-19.985-20.053-6.398-4.68-13.063-6.997-19.994-6.997-6.329 0-11.733 1.587-16.352 4.756-4.553 3.16-8.246 7.388-11.019 12.66-2.774 5.274-4.818 11.147-6.201 17.672a101 101 0 0 0-1.984 19.996c0 7.193.602 14.24 1.718 21.17 1.194 6.863 3.04 12.994 5.737 18.268 2.646 5.282 6.141 9.508 10.496 12.734 4.416 3.241 9.963 4.818 16.619 4.818 3.367 0 6.604-.458 9.765-1.448 3.17-.929 6.399-2.507 9.697-4.683 3.236-2.25 6.664-5.083 10.091-8.641 3.494-3.504 7.325-7.85 11.413-13.072v-57.18z" }),
         /* @__PURE__ */ (0, import_jsx_runtime117.jsx)(
           "path",
           {
@@ -32043,30 +32053,19 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 49.224,
-            d: "M204.063 911.396h371.673l61.025-399.898 63.127 399.898h271.338"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime117.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "50,30",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.224,
-            d: "M121.18 688.116c60.181 0 342.087.408 342.087.408l61.025-399.899 62.127 399.899h330.782"
+            strokeWidth: 49.859,
+            d: "M34.5 703.843h96.845l51.151-146.426 56.134 146.426h87.82l59.601-530.531 58.111 530.531h108.67l58.109-530.531 59.603 530.531h87.825l56.134-146.426 51.154 146.426H962.5"
           }
         )
       ]
     }
   );
-  var Overlay3_default = SvgOverlay32;
+  var Multiplet_default = SvgMultiplet;
 
-  // build/lib-react-tsx/nmr/PeakPicking.tsx
+  // build/lib-react-tsx/nmr/Overlay.tsx
   var React118 = __toESM(require_react(), 1);
   var import_jsx_runtime118 = __toESM(require_jsx_runtime(), 1);
-  var SvgPeakPicking = ({
+  var SvgOverlay3 = ({
     title,
     titleId,
     ...props
@@ -32084,47 +32083,39 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime118.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime118.jsxs)(
-          "g",
+        /* @__PURE__ */ (0, import_jsx_runtime118.jsx)(
+          "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime118.jsx)(
-                "path",
-                {
-                  strokeWidth: 47.417,
-                  d: "M54.005 697.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 214.67l59.528 483.185h176.733"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime118.jsx)(
-                "path",
-                {
-                  strokeWidth: 41.819,
-                  d: "M337.901 171.258v80.862M715.664 47.484v80.86"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime118.jsx)(
-                "path",
-                {
-                  strokeWidth: 58.546,
-                  d: "M54.005 863.579h834.889m25.794-.007-94.193 71.336m0-142.664 94.193 71.328"
-                }
-              )
-            ]
+            strokeWidth: 60.777,
+            d: "M53.64 725.878h866.719m26.777-.01-97.782 74.059m0-148.103 97.782 74.044"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime118.jsx)("path", { d: "M69.844 454.67c13.192 0 23.943-10.758 23.943-23.942 0-13.198-10.753-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.76 23.942 23.945 23.942zm216.452 0c13.193 0 23.945-10.758 23.945-23.942 0-13.198-10.751-23.947-23.945-23.947s-23.944 10.749-23.944 23.947c.001 13.182 10.751 23.942 23.944 23.942zm-72.147 0c13.184 0 23.945-10.758 23.945-23.942 0-13.198-10.761-23.947-23.945-23.947-13.193 0-23.953 10.749-23.953 23.947 0 13.182 10.758 23.942 23.953 23.942zm-72.15 0c13.187 0 23.945-10.758 23.945-23.942 0-13.198-10.758-23.947-23.945-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zm268.218 0c13.188 0 23.947-10.758 23.947-23.942 0-13.198-10.759-23.947-23.947-23.947-13.185 0-23.943 10.749-23.943 23.947 0 13.182 10.758 23.942 23.943 23.942zm216.443 0c13.193 0 23.943-10.758 23.943-23.942 0-13.198-10.75-23.947-23.943-23.947-13.186 0-23.945 10.749-23.945 23.947 0 13.182 10.761 23.942 23.945 23.942zm-72.139 0c13.185 0 23.944-10.758 23.944-23.942 0-13.198-10.76-23.947-23.944-23.947-13.193 0-23.945 10.749-23.945 23.947-.001 13.182 10.751 23.942 23.945 23.942zm-72.152 0c13.189 0 23.939-10.758 23.939-23.942 0-13.198-10.75-23.947-23.939-23.947-13.193 0-23.946 10.749-23.946 23.947-.002 13.182 10.752 23.942 23.946 23.942zm360.746 0c13.193 0 23.941-10.758 23.941-23.942 0-13.198-10.748-23.947-23.941-23.947-13.195 0-23.948 10.749-23.948 23.947 0 13.182 10.753 23.942 23.948 23.942zm-72.151 0c13.189 0 23.944-10.758 23.944-23.942 0-13.198-10.757-23.947-23.944-23.947-13.185 0-23.944 10.749-23.944 23.947 0 13.182 10.76 23.942 23.944 23.942zm-72.147 0c13.185 0 23.942-10.758 23.942-23.942 0-13.198-10.76-23.947-23.942-23.947-13.193 0-23.943 10.749-23.943 23.947 0 13.182 10.75 23.942 23.943 23.942zM347.174 99.073c13.195 0 23.945-10.751 23.945-23.945 0-13.183-10.75-23.945-23.945-23.945-13.182 0-23.942 10.762-23.942 23.945 0 13.193 10.76 23.945 23.942 23.945zm-60.132 185.372c2.238-13.034 14.616-21.793 27.643-19.561 13.041 2.229 21.798 14.609 19.569 27.642-2.239 13.032-14.609 21.79-27.643 19.562-13.04-2.231-21.789-14.611-19.569-27.643zm-12.167 71.114c2.23-13.034 14.609-21.793 27.643-19.562 13.03 2.238 21.79 14.61 19.56 27.643-2.24 13.042-14.609 21.79-27.643 19.56-13.038-2.229-21.789-14.608-19.56-27.641zm36.518-213.343c2.239-13.041 14.611-21.792 27.643-19.569 13.042 2.237 21.791 14.616 19.562 27.641-2.231 13.04-14.609 21.8-27.643 19.569-13.03-2.239-21.789-14.62-19.562-27.641zm-12.172 71.114c2.238-13.033 14.606-21.801 27.642-19.561 13.039 2.231 21.79 14.601 19.569 27.643-2.238 13.03-14.617 21.787-27.649 19.56-13.035-2.231-21.795-14.61-19.562-27.642zm107.952 71.115c-2.238-13.034-14.618-21.793-27.639-19.561-13.042 2.229-21.801 14.609-19.572 27.642 2.239 13.032 14.609 21.79 27.643 19.562 13.041-2.231 21.791-14.611 19.568-27.643zm12.168 71.114c-2.23-13.034-14.609-21.793-27.642-19.562-13.031 2.238-21.792 14.61-19.561 27.643 2.238 13.042 14.609 21.79 27.642 19.56 13.041-2.229 21.794-14.608 19.561-27.641z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime118.jsx)("path", { d: "M382.821 142.216c-2.236-13.041-14.607-21.792-27.64-19.569-13.042 2.237-21.792 14.616-19.561 27.641 2.23 13.04 14.611 21.8 27.642 19.569 13.031-2.239 21.791-14.62 19.559-27.641zm12.178 71.114c-2.239-13.033-14.609-21.801-27.641-19.561-13.042 2.231-21.791 14.601-19.57 27.643 2.239 13.03 14.618 21.787 27.65 19.56 13.032-2.231 21.79-14.61 19.561-27.642z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime118.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.224,
+            d: "M72.744 560.332h372.673l61.025-358.899 62.127 358.899h271.338"
           }
         )
       ]
     }
   );
-  var PeakPicking_default = SvgPeakPicking;
+  var Overlay_default3 = SvgOverlay3;
 
-  // build/lib-react-tsx/nmr/PeakPicking2.tsx
+  // build/lib-react-tsx/nmr/Overlay3Aligned.tsx
   var React119 = __toESM(require_react(), 1);
   var import_jsx_runtime119 = __toESM(require_jsx_runtime(), 1);
-  var SvgPeakPicking2 = ({
+  var SvgOverlay3Aligned = ({
     title,
     titleId,
     ...props
@@ -32146,10 +32137,12 @@
           "path",
           {
             fill: "none",
+            strokeDasharray: "1,70",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 39.653,
-            d: "M43.556 943.061c64.942-.561 18.942-.561 145.707.133 118.237-1.694 85.253-402.71 94.11-480.694 13.218 120.809-19.692 457.958 120.678 480.692 32.647 5.286 156.088 7.401 191.512 0C734.876 914.378 696.282 608.309 709.5 487.5c8.724 77.984-17 429 113 457 87.151 1.308 27.312 0 129-1.439M244.5 106.5c79 59 397 144 425 190s26 82 26 82"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.224,
+            d: "M29.127 687.461H334.8l61.025-399.9 61.127 399.9H795.29"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime119.jsx)(
@@ -32158,19 +32151,31 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 39.653,
-            d: "M239.5 114.5c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.522 9.27 85.522 9.27"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.224,
+            d: "M204.063 686.396h371.673l61.024-399.898 63.127 399.898h271.339"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime119.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "50,30",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.224,
+            d: "M121.18 688.116c60.181 0 342.086.408 342.086.408l61.025-399.899 62.127 399.899H917.2"
           }
         )
       ]
     }
   );
-  var PeakPicking2_default = SvgPeakPicking2;
+  var Overlay3Aligned_default = SvgOverlay3Aligned;
 
-  // build/lib-react-tsx/nmr/PeaksTopLabels.tsx
+  // build/lib-react-tsx/nmr/Overlay3.tsx
   var React120 = __toESM(require_react(), 1);
   var import_jsx_runtime120 = __toESM(require_jsx_runtime(), 1);
-  var SvgPeaksTopLabels = ({
+  var SvgOverlay32 = ({
     title,
     titleId,
     ...props
@@ -32188,41 +32193,49 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime120.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime120.jsxs)(
-          "g",
+        /* @__PURE__ */ (0, import_jsx_runtime120.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "1,70",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.224,
+            d: "M29.127 465.651H334.8l61.025-399.899 61.127 399.899H795.29"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime120.jsx)(
+          "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime120.jsx)(
-                "path",
-                {
-                  strokeWidth: 47.417,
-                  d: "M54.005 697.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 214.67l59.528 483.185h176.733",
-                  transform: "matrix(1.00767 0 0 .72453 -3.864 335.688)"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime120.jsx)(
-                "path",
-                {
-                  strokeWidth: 48.577,
-                  d: "M337.901 235.705v109.111m387.813-113.657v109.11m84.291-195.988-77.153 77.152m-480-71.438 77.153 77.153"
-                }
-              )
-            ]
+            strokeWidth: 49.224,
+            d: "M204.063 911.396h371.673l61.025-399.898 63.127 399.898h271.338"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime120.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "50,30",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.224,
+            d: "M121.18 688.116c60.181 0 342.087.408 342.087.408l61.025-399.899 62.127 399.899h330.782"
           }
         )
       ]
     }
   );
-  var PeaksTopLabels_default = SvgPeaksTopLabels;
+  var Overlay3_default = SvgOverlay32;
 
-  // build/lib-react-tsx/nmr/Peaks.tsx
+  // build/lib-react-tsx/nmr/PeakPicking.tsx
   var React121 = __toESM(require_react(), 1);
   var import_jsx_runtime121 = __toESM(require_jsx_runtime(), 1);
-  var SvgPeaks = ({
+  var SvgPeakPicking = ({
     title,
     titleId,
     ...props
@@ -32252,14 +32265,21 @@
                 "path",
                 {
                   strokeWidth: 47.417,
-                  d: "M54.005 837.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 354.67l59.528 483.185h176.733"
+                  d: "M54.005 697.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 214.67l59.528 483.185h176.733"
                 }
               ),
               /* @__PURE__ */ (0, import_jsx_runtime121.jsx)(
                 "path",
                 {
                   strokeWidth: 41.819,
-                  d: "M337.901 251.258v80.862m377.763-204.636v80.86"
+                  d: "M337.901 171.258v80.862M715.664 47.484v80.86"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime121.jsx)(
+                "path",
+                {
+                  strokeWidth: 58.546,
+                  d: "M54.005 863.579h834.889m25.794-.007-94.193 71.336m0-142.664 94.193 71.328"
                 }
               )
             ]
@@ -32268,12 +32288,12 @@
       ]
     }
   );
-  var Peaks_default = SvgPeaks;
+  var PeakPicking_default = SvgPeakPicking;
 
-  // build/lib-react-tsx/nmr/PhaseCorr.tsx
+  // build/lib-react-tsx/nmr/PeakPicking2.tsx
   var React122 = __toESM(require_react(), 1);
   var import_jsx_runtime122 = __toESM(require_jsx_runtime(), 1);
-  var SvgPhaseCorr = ({
+  var SvgPeakPicking2 = ({
     title,
     titleId,
     ...props
@@ -32297,42 +32317,8 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M23.903 784.146 176.5 781.5l34-26 15-96 51-629 41 751 18 185 24-113 17-54 28-13 65-3 504 1.447"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime122.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "25,25",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M534.5 345.5c80 1 126 12 182 54"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime122.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M667.5 102.5c106.948-3.868 176.044 18.818 258 82"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime122.jsx)("path", { d: "m736.882 5.431-30.309 94.326 37.043 91.894c-44.108-35.725-114.376-68.437-170.73-87.059 54.862-22.636 122.583-60.345 163.996-99.161z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime122.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "25,25",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 50,
-            d: "M574.5 617.5 885 197"
+            strokeWidth: 39.653,
+            d: "M43.556 943.061c64.942-.561 18.942-.561 145.707.133 118.237-1.694 85.253-402.71 94.11-480.694 13.218 120.809-19.692 457.958 120.678 480.692 32.647 5.286 156.088 7.401 191.512 0C734.876 914.378 696.282 608.309 709.5 487.5c8.724 77.984-17 429 113 457 87.151 1.308 27.312 0 129-1.439M244.5 106.5c79 59 397 144 425 190s26 82 26 82"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime122.jsx)(
@@ -32341,20 +32327,19 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M549.5 654.5v-609"
+            strokeWidth: 39.653,
+            d: "M239.5 114.5c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.522 9.27 85.522 9.27"
           }
         )
       ]
     }
   );
-  var PhaseCorr_default = SvgPhaseCorr;
+  var PeakPicking2_default = SvgPeakPicking2;
 
-  // build/lib-react-tsx/nmr/PhaseCorrection.tsx
+  // build/lib-react-tsx/nmr/PeaksTopLabels.tsx
   var React123 = __toESM(require_react(), 1);
   var import_jsx_runtime123 = __toESM(require_jsx_runtime(), 1);
-  var SvgPhaseCorrection = ({
+  var SvgPeaksTopLabels = ({
     title,
     titleId,
     ...props
@@ -32372,61 +32357,41 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime123.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime123.jsx)(
-          "path",
+        /* @__PURE__ */ (0, import_jsx_runtime123.jsxs)(
+          "g",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "m23.903 784.146 153.596.09L225.5 712.5l52-683 37 737L339 970.348l63-186 134.26.599h223.575"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime123.jsx)(
-          "circle",
-          {
-            cx: 577.5,
-            cy: 464.5,
-            r: 194.5,
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime123.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 48.987,
-            d: "M824.5 193.5c64 62 84 158 82 265"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime123.jsx)("path", { d: "M904.291 576.736c-19.604-56.021-53.537-125.708-90.025-169.186l92.525 35.434 93.783-31.95c-38.088 42.082-74.609 110.452-96.283 165.702z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime123.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "25,25",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 50,
-            d: "M575.5 478.5 809 245"
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime123.jsx)(
+                "path",
+                {
+                  strokeWidth: 47.417,
+                  d: "M54.005 697.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 214.67l59.528 483.185h176.733",
+                  transform: "matrix(1.00767 0 0 .72453 -3.864 335.688)"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime123.jsx)(
+                "path",
+                {
+                  strokeWidth: 48.577,
+                  d: "M337.901 235.705v109.111m387.813-113.657v109.11m84.291-195.988-77.153 77.152m-480-71.438 77.153 77.153"
+                }
+              )
+            ]
           }
         )
       ]
     }
   );
-  var PhaseCorrection_default = SvgPhaseCorrection;
+  var PeaksTopLabels_default = SvgPeaksTopLabels;
 
-  // build/lib-react-tsx/nmr/Prediction.tsx
+  // build/lib-react-tsx/nmr/Peaks.tsx
   var React124 = __toESM(require_react(), 1);
   var import_jsx_runtime124 = __toESM(require_jsx_runtime(), 1);
-  var SvgPrediction = ({
+  var SvgPeaks = ({
     title,
     titleId,
     ...props
@@ -32437,68 +32402,47 @@
       xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "13.9 -33.6 972.2 972.2",
+      viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime124.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime124.jsx)(
-          "path",
+        /* @__PURE__ */ (0, import_jsx_runtime124.jsxs)(
+          "g",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 24,
-            d: "m500 75 104 60v120l-104 60-104-60V135Z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime124.jsx)(
-          "circle",
-          {
-            cx: 500,
-            cy: 195,
-            r: 50,
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 24
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime124.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 20,
-            d: "M500 75V15"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime124.jsx)("path", { stroke: "none", d: "M480 348v68h-45l65 70 65-70h-45v-68Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime124.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 28,
-            d: "M70 580h80l25-110 25 110h50l20-70 20 70h60l25-150 25 150h90l15-50 15 22 15-34 15 62h130l20-80 20 80h210M70 890h860m-730 0V760m120 130v-95m150 95V730m70 160V780m140 110V750m100 140v-70"
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime124.jsx)(
+                "path",
+                {
+                  strokeWidth: 47.417,
+                  d: "M54.005 837.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 354.67l59.528 483.185h176.733"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime124.jsx)(
+                "path",
+                {
+                  strokeWidth: 41.819,
+                  d: "M337.901 251.258v80.862m377.763-204.636v80.86"
+                }
+              )
+            ]
           }
         )
       ]
     }
   );
-  var Prediction_default = SvgPrediction;
+  var Peaks_default = SvgPeaks;
 
-  // build/lib-react-tsx/nmr/RangePicking.tsx
+  // build/lib-react-tsx/nmr/PhaseCorr.tsx
   var React125 = __toESM(require_react(), 1);
   var import_jsx_runtime125 = __toESM(require_jsx_runtime(), 1);
-  var SvgRangePicking = ({
+  var SvgPhaseCorr = ({
     title,
     titleId,
     ...props
@@ -32522,30 +32466,64 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 39.653,
-            d: "M43.556 943.061c64.939-.561 128.939-.561 255.707.136C417.5 941.5 384.515 640.484 393.373 562.5c13.218 120.809-19.69 357.958 120.678 380.692 23.449.308 21.449-.692 41.512 0C694.876 914.378 656.282 682.309 669.5 561.5c8.724 77.984-17 355 113 383 87.151 1.308 57.312 0 159-1.439M67.5 24.5c79 59 397 144 425 190s26 82 26 82m-456-264c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.521 9.27 85.521 9.27"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "M23.903 784.146 176.5 781.5l34-26 15-96 51-629 41 751 18 185 24-113 17-54 28-13 65-3 504 1.447"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime125.jsx)("path", { d: "m609.5 329.5 31-168c5.5-29 9-54.5 12-75.5H703l-5.5 42.5h1c22.5-32.5 53-48 85-48 38 0 55 24.5 57 50 22-33 52.5-49.5 86.5-50 33 0 59 21.5 59 65 0 10.5-2 28.5-4 41.5l-26.5 142.5H899l25-136c2-9.5 3.5-21 3.5-30.5 0-21-8.5-35-29.5-35-27 0-56.5 33.5-66 85l-21.5 116.5H754l26.5-138c1.5-10 3-19.5 3-28.5 0-18-5.5-35-29.5-35-27 0-58 37-67 86.5l-21 115z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime125.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "25,25",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "M534.5 345.5c80 1 126 12 182 54"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime125.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "M667.5 102.5c106.948-3.868 176.044 18.818 258 82"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime125.jsx)("path", { d: "m736.882 5.431-30.309 94.326 37.043 91.894c-44.108-35.725-114.376-68.437-170.73-87.059 54.862-22.636 122.583-60.345 163.996-99.161z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime125.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "25,25",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 50,
+            d: "M574.5 617.5 885 197"
+          }
+        ),
         /* @__PURE__ */ (0, import_jsx_runtime125.jsx)(
           "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 39.653,
-            d: "M267.5 635.5v-152h527v151"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "M549.5 654.5v-609"
           }
         )
       ]
     }
   );
-  var RangePicking_default = SvgRangePicking;
+  var PhaseCorr_default = SvgPhaseCorr;
 
-  // build/lib-react-tsx/nmr/RealImag.tsx
+  // build/lib-react-tsx/nmr/PhaseCorrection.tsx
   var React126 = __toESM(require_react(), 1);
   var import_jsx_runtime126 = __toESM(require_jsx_runtime(), 1);
-  var SvgRealImag = ({
+  var SvgPhaseCorrection = ({
     title,
     titleId,
     ...props
@@ -32569,41 +32547,55 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 39.653,
-            d: "M38.5 28.5v934h933"
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "m23.903 784.146 153.596.09L225.5 712.5l52-683 37 737L339 970.348l63-186 134.26.599h223.575"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime126.jsx)(
-          "text",
+          "circle",
           {
-            fontFamily: "'MyriadPro-Regular'",
-            fontSize: 500,
-            transform: "translate(467.5 896.5)",
-            children: "Re"
+            cx: 577.5,
+            cy: 464.5,
+            r: 194.5,
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime126.jsx)(
-          "text",
+          "path",
           {
-            fontFamily: "'MyriadPro-Regular'",
-            fontSize: 500,
-            transform: "translate(57.5 354.5)",
-            children: "Im"
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 48.987,
+            d: "M824.5 193.5c64 62 84 158 82 265"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime126.jsx)("path", { fill: "none", strokeWidth: 50, d: "M763.5 233.5c79 0 196 41 196 211" }),
-        /* @__PURE__ */ (0, import_jsx_runtime126.jsx)("path", { d: "M595.297 237.352c85.194-31.611 190.897-85.547 256.406-142.646l-51.592 142.646 51.592 142.646c-65.508-57.1-171.211-111.052-256.406-142.646z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime126.jsx)("path", { fill: "none", strokeWidth: 50, d: "M309.5 729.5c-79 0-196-41-196-211" }),
-        /* @__PURE__ */ (0, import_jsx_runtime126.jsx)("path", { d: "M475.703 728.647c-85.194 31.611-190.897 85.547-256.405 142.647l51.591-142.647-51.592-142.646c65.507 57.1 171.211 111.051 256.406 142.646z" })
+        /* @__PURE__ */ (0, import_jsx_runtime126.jsx)("path", { d: "M904.291 576.736c-19.604-56.021-53.537-125.708-90.025-169.186l92.525 35.434 93.783-31.95c-38.088 42.082-74.609 110.452-96.283 165.702z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime126.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "25,25",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 50,
+            d: "M575.5 478.5 809 245"
+          }
+        )
       ]
     }
   );
-  var RealImag_default = SvgRealImag;
+  var PhaseCorrection_default = SvgPhaseCorrection;
 
-  // build/lib-react-tsx/nmr/Reference.tsx
+  // build/lib-react-tsx/nmr/Prediction.tsx
   var React127 = __toESM(require_react(), 1);
   var import_jsx_runtime127 = __toESM(require_jsx_runtime(), 1);
-  var SvgReference = ({
+  var SvgPrediction = ({
     title,
     titleId,
     ...props
@@ -32614,7 +32606,7 @@
       xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "13.9 -33.6 972.2 972.2",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -32628,11 +32620,188 @@
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
+            strokeWidth: 24,
+            d: "m500 75 104 60v120l-104 60-104-60V135Z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime127.jsx)(
+          "circle",
+          {
+            cx: 500,
+            cy: 195,
+            r: 50,
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 24
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime127.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 20,
+            d: "M500 75V15"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime127.jsx)("path", { stroke: "none", d: "M480 348v68h-45l65 70 65-70h-45v-68Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime127.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 28,
+            d: "M70 580h80l25-110 25 110h50l20-70 20 70h60l25-150 25 150h90l15-50 15 22 15-34 15 62h130l20-80 20 80h210M70 890h860m-730 0V760m120 130v-95m150 95V730m70 160V780m140 110V750m100 140v-70"
+          }
+        )
+      ]
+    }
+  );
+  var Prediction_default = SvgPrediction;
+
+  // build/lib-react-tsx/nmr/RangePicking.tsx
+  var React128 = __toESM(require_react(), 1);
+  var import_jsx_runtime128 = __toESM(require_jsx_runtime(), 1);
+  var SvgRangePicking = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime128.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime128.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime128.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.653,
+            d: "M43.556 943.061c64.939-.561 128.939-.561 255.707.136C417.5 941.5 384.515 640.484 393.373 562.5c13.218 120.809-19.69 357.958 120.678 380.692 23.449.308 21.449-.692 41.512 0C694.876 914.378 656.282 682.309 669.5 561.5c8.724 77.984-17 355 113 383 87.151 1.308 57.312 0 159-1.439M67.5 24.5c79 59 397 144 425 190s26 82 26 82m-456-264c89 59 238.867 336.803 289.497 355.152 50.629 18.35 85.521 9.27 85.521 9.27"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime128.jsx)("path", { d: "m609.5 329.5 31-168c5.5-29 9-54.5 12-75.5H703l-5.5 42.5h1c22.5-32.5 53-48 85-48 38 0 55 24.5 57 50 22-33 52.5-49.5 86.5-50 33 0 59 21.5 59 65 0 10.5-2 28.5-4 41.5l-26.5 142.5H899l25-136c2-9.5 3.5-21 3.5-30.5 0-21-8.5-35-29.5-35-27 0-56.5 33.5-66 85l-21.5 116.5H754l26.5-138c1.5-10 3-19.5 3-28.5 0-18-5.5-35-29.5-35-27 0-58 37-67 86.5l-21 115z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime128.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.653,
+            d: "M267.5 635.5v-152h527v151"
+          }
+        )
+      ]
+    }
+  );
+  var RangePicking_default = SvgRangePicking;
+
+  // build/lib-react-tsx/nmr/RealImag.tsx
+  var React129 = __toESM(require_react(), 1);
+  var import_jsx_runtime129 = __toESM(require_jsx_runtime(), 1);
+  var SvgRealImag = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime129.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime129.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime129.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.653,
+            d: "M38.5 28.5v934h933"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime129.jsx)(
+          "text",
+          {
+            fontFamily: "'MyriadPro-Regular'",
+            fontSize: 500,
+            transform: "translate(467.5 896.5)",
+            children: "Re"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime129.jsx)(
+          "text",
+          {
+            fontFamily: "'MyriadPro-Regular'",
+            fontSize: 500,
+            transform: "translate(57.5 354.5)",
+            children: "Im"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime129.jsx)("path", { fill: "none", strokeWidth: 50, d: "M763.5 233.5c79 0 196 41 196 211" }),
+        /* @__PURE__ */ (0, import_jsx_runtime129.jsx)("path", { d: "M595.297 237.352c85.194-31.611 190.897-85.547 256.406-142.646l-51.592 142.646 51.592 142.646c-65.508-57.1-171.211-111.052-256.406-142.646z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime129.jsx)("path", { fill: "none", strokeWidth: 50, d: "M309.5 729.5c-79 0-196-41-196-211" }),
+        /* @__PURE__ */ (0, import_jsx_runtime129.jsx)("path", { d: "M475.703 728.647c-85.194 31.611-190.897 85.547-256.405 142.647l51.591-142.647-51.592-142.646c65.507 57.1 171.211 111.051 256.406 142.646z" })
+      ]
+    }
+  );
+  var RealImag_default = SvgRealImag;
+
+  // build/lib-react-tsx/nmr/Reference.tsx
+  var React130 = __toESM(require_react(), 1);
+  var import_jsx_runtime130 = __toESM(require_jsx_runtime(), 1);
+  var SvgReference = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime130.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime130.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
             strokeWidth: 47.417,
             d: "M54.005 897.855H280.66l59.528-364.132 57.24 364.132h249.553L717.95 414.67l59.528 483.185h176.733"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime127.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
           "path",
           {
             fill: "none",
@@ -32643,7 +32812,7 @@
             d: "M715.664 247.484v80.86"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime127.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
           "path",
           {
             stroke: "none",
@@ -32662,13 +32831,13 @@
   var Reference_default = SvgReference;
 
   // build/lib-react-tsx/nmr/ResetScale.tsx
-  var React128 = __toESM(require_react(), 1);
-  var import_jsx_runtime128 = __toESM(require_jsx_runtime(), 1);
+  var React131 = __toESM(require_react(), 1);
+  var import_jsx_runtime131 = __toESM(require_jsx_runtime(), 1);
   var SvgResetScale = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime128.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime131.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -32680,8 +32849,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime128.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime128.jsx)("g", { "data-name": "Group 1", children: /* @__PURE__ */ (0, import_jsx_runtime128.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime131.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime131.jsx)("g", { "data-name": "Group 1", children: /* @__PURE__ */ (0, import_jsx_runtime131.jsx)(
           "path",
           {
             d: "m448.722 988.7-285.93-242.377c-17.662-14.972-17.662-38.984 0-53.956 8.665-7.627 20-11.3 31.66-11.3a49.67 49.67 0 0 1 31.658 11.3l209.282 177.4v-338.53h-398.4S.068 527.554.005 489.846s36.987-40.427 36.987-40.427h398.4V130.227l-209.281 177.4c-17.329 14.689-45.989 14.689-63.319 0-17.662-14.972-17.662-38.984 0-53.956l285.93-242.377c8.331-7.345 19.662-11.3 31.659-11.3a49.9 49.9 0 0 1 31.659 11.3l285.93 242.382c17.662 14.972 17.662 38.984 0 53.956-8.665 7.627-20 11.3-31.659 11.3a49.67 49.67 0 0 1-31.659-11.3L525.37 130.227v319.191h441.847S1000 454.846 1000 489.845s-32.783 41.391-32.783 41.391H525.37v338.535l209.282-177.4c17.329-14.689 45.989-14.689 63.318 0 17.662 14.972 17.662 38.984 0 53.956L512.04 988.7c-8.331 7.344-19.662 11.3-31.659 11.3a49.9 49.9 0 0 1-31.659-11.3Z",
@@ -32694,182 +32863,9 @@
   var ResetScale_default = SvgResetScale;
 
   // build/lib-react-tsx/nmr/SameTop.tsx
-  var React129 = __toESM(require_react(), 1);
-  var import_jsx_runtime129 = __toESM(require_jsx_runtime(), 1);
-  var SvgSameTop = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime129.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime129.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime129.jsxs)("g", { "data-name": "Group 1", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime129.jsx)(
-            "path",
-            {
-              d: "M967.216 0H36.987S-.063 2.979 0 44.3s36.987 45.35 36.987 45.35h930.229s32.783-7 32.783-45.352S967.216 0 967.216 0Z",
-              "data-name": "Path 1"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime129.jsx)(
-            "path",
-            {
-              d: "m235.001 515.329 218.112-174.663v621.787c0 20.859 20.839 37.547 46.887 37.547s46.887-16.687 46.887-37.547V340.666l218.111 174.663c9.03 7.231 21.186 11.125 32.995 11.125 12.156 0 23.964-3.616 32.995-11.125 18.407-14.741 18.407-38.381 0-53.122L532.994 223.575c-8.683-6.953-20.839-11.125-32.995-11.125-12.5 0-24.312 3.894-32.995 11.125L169.012 462.207c-18.408 14.741-18.408 38.381 0 53.122 18.06 14.463 47.929 14.463 65.989 0Z",
-              "data-name": "Path 2"
-            }
-          )
-        ] })
-      ]
-    }
-  );
-  var SameTop_default = SvgSameTop;
-
-  // build/lib-react-tsx/nmr/Search.tsx
-  var React130 = __toESM(require_react(), 1);
-  var import_jsx_runtime130 = __toESM(require_jsx_runtime(), 1);
-  var SvgSearch3 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime130.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime130.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime130.jsxs)(
-          "g",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.91,
-                  d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.908,
-                  d: "m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.908,
-                  d: "M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
-                "path",
-                {
-                  strokeWidth: 21.586,
-                  d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime130.jsx)(
-                "path",
-                {
-                  strokeWidth: 40.745,
-                  d: "M228.175 400.361h228.784l43.774-204.311 47.223 204.311h50.245"
-                }
-              )
-            ]
-          }
-        )
-      ]
-    }
-  );
-  var Search_default3 = SvgSearch3;
-
-  // build/lib-react-tsx/nmr/Searchq.tsx
-  var React131 = __toESM(require_react(), 1);
-  var import_jsx_runtime131 = __toESM(require_jsx_runtime(), 1);
-  var SvgSearchq = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime131.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime131.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime131.jsxs)(
-          "g",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime131.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.91,
-                  d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime131.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.908,
-                  d: "m897.764 890.229-235.87-315.79-82.568 61.672 235.871 315.791m0 0c21.303 26.598 23.303 26.598 53.354 7.72m.001.002 21.485-16.054m0 0c29.463-22.07 29.463-23.07 7.728-53.342"
-                }
-              )
-            ]
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime131.jsx)(
-          "text",
-          {
-            fontFamily: "'Helvetica'",
-            fontSize: 550,
-            transform: "translate(258.5 538.5)",
-            children: "?"
-          }
-        )
-      ]
-    }
-  );
-  var Searchq_default = SvgSearchq;
-
-  // build/lib-react-tsx/nmr/Signals.tsx
   var React132 = __toESM(require_react(), 1);
   var import_jsx_runtime132 = __toESM(require_jsx_runtime(), 1);
-  var SvgSignals = ({
+  var SvgSameTop = ({
     title,
     titleId,
     ...props
@@ -32886,25 +32882,31 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime132.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime132.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 39.653,
-            d: "M43.556 773.06c99 12.954 89.087-59.214 105.609-151.341 21.809 85.65 13.614 146.848 80.099 151.474 112.614 7.798 85.254-471.209 94.11-549.193 13.217 120.81-19.695 526.458 120.676 549.193 32.648 5.287 66.089 7.402 101.512 0C684.876 744.378 653.153 344.809 666.37 224c8.724 77.984-18.637 556.991 93.977 549.193 66.617-4.626 58.29-65.824 80.1-151.474 16.521 92.127 6.608 164.295 105.74 151.342"
-          }
-        )
+        /* @__PURE__ */ (0, import_jsx_runtime132.jsxs)("g", { "data-name": "Group 1", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime132.jsx)(
+            "path",
+            {
+              d: "M967.216 0H36.987S-.063 2.979 0 44.3s36.987 45.35 36.987 45.35h930.229s32.783-7 32.783-45.352S967.216 0 967.216 0Z",
+              "data-name": "Path 1"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime132.jsx)(
+            "path",
+            {
+              d: "m235.001 515.329 218.112-174.663v621.787c0 20.859 20.839 37.547 46.887 37.547s46.887-16.687 46.887-37.547V340.666l218.111 174.663c9.03 7.231 21.186 11.125 32.995 11.125 12.156 0 23.964-3.616 32.995-11.125 18.407-14.741 18.407-38.381 0-53.122L532.994 223.575c-8.683-6.953-20.839-11.125-32.995-11.125-12.5 0-24.312 3.894-32.995 11.125L169.012 462.207c-18.408 14.741-18.408 38.381 0 53.122 18.06 14.463 47.929 14.463 65.989 0Z",
+              "data-name": "Path 2"
+            }
+          )
+        ] })
       ]
     }
   );
-  var Signals_default = SvgSignals;
+  var SameTop_default = SvgSameTop;
 
-  // build/lib-react-tsx/nmr/Simulator.tsx
+  // build/lib-react-tsx/nmr/Search.tsx
   var React133 = __toESM(require_react(), 1);
   var import_jsx_runtime133 = __toESM(require_jsx_runtime(), 1);
-  var SvgSimulator = ({
+  var SvgSearch3 = ({
     title,
     titleId,
     ...props
@@ -32922,27 +32924,61 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime133.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime133.jsx)("path", { d: "M493.451 251.114c1.298 3.96 2.149 7.125 2.488 9.442.28 2.317-.12 4.07-1.359 5.203-1.19 1.185-3.337 1.869-6.446 2.149-3.11.28-7.346.449-12.775.449-5.596 0-10.006-.107-13.174-.281-3.109-.168-5.538-.506-7.178-.957-1.639-.512-2.828-1.189-3.509-2.095-.621-.906-1.188-2.036-1.64-3.505l-14.416-43.026h-80.506l-13.574 41.898c-.449 1.524-1.02 2.821-1.749 3.898-.681 1.017-1.87 1.862-3.45 2.49-1.581.562-3.9 1.014-6.789 1.238-2.937.231-6.785.34-11.527.34-5.096 0-9.055-.169-11.934-.51-2.879-.334-4.866-1.125-5.938-2.426-1.131-1.242-1.53-3.059-1.19-5.371.34-2.317 1.19-5.428 2.498-9.272L367.37 60.643c.68-1.865 1.41-3.396 2.317-4.578.909-1.133 2.32-2.038 4.24-2.658 1.918-.564 4.585-.962 8.026-1.133 3.389-.168 7.975-.28 13.575-.28 6.496 0 11.696.11 15.604.28 3.84.169 6.838.567 8.987 1.133 2.148.62 3.738 1.526 4.64 2.773.958 1.184 1.749 2.825 2.43 4.972zM395.02 93.944h-.168l-30.309 91.078h60.774zm313.173 109.115c0 7.636-1.021 14.528-3.109 20.697-2.142 6.217-5.03 11.7-8.699 16.448a55.8 55.8 0 0 1-13.291 12.21c-5.089 3.45-10.814 6.294-16.962 8.484-6.15 2.19-12.775 3.843-19.783 4.86-7.011 1.073-14.84 1.583-23.471 1.583h-56.927c-3.646 0-6.728-1.073-9.218-3.223-2.489-2.146-3.729-5.651-3.729-10.513V66.748c0-4.862 1.257-8.385 3.729-10.515 2.47-2.133 5.547-3.221 9.218-3.221h53.816c13.117 0 24.279 1.141 33.365 3.33 9.091 2.193 16.786 5.544 23.004 10.012 6.276 4.462 11.026 10.12 14.363 16.959 3.279 6.842 4.979 14.925 4.979 24.201 0 5.196-.679 10.064-2.039 14.642-1.299 4.581-3.219 8.765-5.767 12.497-2.548 3.783-5.649 7.067-9.386 9.947-3.671 2.883-7.91 5.202-12.668 6.955 6.109 1.132 11.705 3.056 16.854 5.823 5.085 2.776 9.615 6.274 13.401 10.686 3.789 4.354 6.831 9.44 9.038 15.32 2.21 5.826 3.282 12.383 3.282 19.675zm-56.309-90.234c0-4.354-.68-8.194-1.977-11.59a20.6 20.6 0 0 0-5.999-8.537c-2.599-2.261-5.93-4.013-10.006-5.258-4.009-1.187-9.412-1.807-16.105-1.807h-22.049v55.63h24.357c6.278 0 11.313-.736 15.036-2.206 3.798-1.467 6.905-3.561 9.395-6.108 2.479-2.597 4.298-5.65 5.538-9.155 1.192-3.448 1.81-7.124 1.81-10.969zm11.087 91.758c0-4.975-.798-9.437-2.499-13.34-1.63-3.957-4.058-7.237-7.228-9.895-3.218-2.601-7.295-4.694-12.272-6.103-4.978-1.414-11.452-2.151-19.385-2.151h-25.836v60.948h31.486c6.056 0 11.135-.623 15.322-1.926 4.119-1.242 7.688-3.11 10.745-5.592 3.041-2.491 5.419-5.602 7.118-9.275 1.699-3.729 2.549-7.918 2.549-12.666z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime133.jsx)(
-          "path",
+        /* @__PURE__ */ (0, import_jsx_runtime133.jsxs)(
+          "g",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "M40.677 918.5h95.78l50.591-144.818L242.565 918.5h86.862l58.943-524.723L445.842 918.5h107.484l57.472-524.723 58.95 524.723h86.862l55.519-144.818L862.718 918.5H958.5"
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime133.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.91,
+                  d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime133.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.908,
+                  d: "m897.765 890.229-235.87-315.79-82.569 61.672 235.871 315.791m0 0c12.543 16.792 36.556 20.275 53.355 7.72m.001.002 21.484-16.054"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime133.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.908,
+                  d: "M890.037 943.57c16.795-12.541 20.277-36.542 7.728-53.342"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime133.jsx)(
+                "path",
+                {
+                  strokeWidth: 21.586,
+                  d: "M419.367 610.974c-144.301 0-262.007-117.703-262.007-262.009 0-144.317 117.706-262.011 262.007-262.011 144.314 0 262.009 117.694 262.009 262.011.001 144.306-117.693 262.009-262.009 262.009"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime133.jsx)(
+                "path",
+                {
+                  strokeWidth: 40.745,
+                  d: "M228.175 400.361h228.784l43.774-204.311 47.223 204.311h50.245"
+                }
+              )
+            ]
           }
         )
       ]
     }
   );
-  var Simulator_default = SvgSimulator;
+  var Search_default3 = SvgSearch3;
 
-  // build/lib-react-tsx/nmr/Simulatormicro.tsx
+  // build/lib-react-tsx/nmr/Searchq.tsx
   var React134 = __toESM(require_react(), 1);
   var import_jsx_runtime134 = __toESM(require_jsx_runtime(), 1);
-  var SvgSimulatormicro = ({
+  var SvgSearchq = ({
     title,
     titleId,
     ...props
@@ -32960,60 +32996,49 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime134.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime134.jsx)(
-          "path",
+        /* @__PURE__ */ (0, import_jsx_runtime134.jsxs)(
+          "g",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "M40.677 918.5h95.78l50.591-797.277L242.565 918.5h86.862l58.943-798 57.472 798h107.484l57.472-170 58.95 170h86.862l55.519-265 50.589 265H958.5"
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime134.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.91,
+                  d: "M419.367 668.216c-175.831 0-319.25-143.418-319.25-319.251 0-175.839 143.417-319.264 319.25-319.264 175.84 0 319.259 143.423 319.259 319.264 0 175.833-143.418 319.251-319.259 319.251"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime134.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.908,
+                  d: "m897.764 890.229-235.87-315.79-82.568 61.672 235.871 315.791m0 0c21.303 26.598 23.303 26.598 53.354 7.72m.001.002 21.485-16.054m0 0c29.463-22.07 29.463-23.07 7.728-53.342"
+                }
+              )
+            ]
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime134.jsx)(
-          "path",
+          "text",
           {
-            fill: "none",
-            strokeDasharray: "40,40",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 75,
-            d: "M558.5 126.5v288"
+            fontFamily: "'Helvetica'",
+            fontSize: 550,
+            transform: "translate(258.5 538.5)",
+            children: "?"
           }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime134.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 49.312,
-            d: "M583 105h325v325H583z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime134.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "40,40",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 75,
-            d: "M932.5 128.5v288m-327-334h288m-288 371h288"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime134.jsx)("path", { d: "M700.17 262.665q0 23.204 4.593 31.179c3.062 5.318 8.565 7.977 16.517 7.977q19.01 0 31.42-26.506 12.407-26.504 12.408-67.435v-43.022h30.453v108.281q0 14.828 3.062 21.753 3.06 6.93 9.506 6.929 6.928.001 10.555-6.848 3.625-6.847 3.625-20.223v-4.512h6.93q.158 1.29.241 2.82.08 1.53.081 4.431 0 18.37-7.815 28.44-7.817 10.07-21.995 10.07-16.597.002-24.975-14.1-8.382-14.098-8.541-42.619-7.574 29.33-20.222 43.022-12.651 13.7-31.986 13.698-14.503-.001-24.008-8.621-9.51-8.617-13.213-25.378-.324 3.062-.322 9.346 0 20.785 10.554 46.487 10.552 25.698 10.554 30.373 0 6.443-3.705 10.151-3.709 3.706-10.152 3.706-7.575 0-10.876-5.398-3.304-5.4-3.304-17.644 0-2.9.645-19.095c.429-10.795.645-20.6.645-29.406q0-11.921-.482-33.516-.484-21.591-.484-31.26v-80.889h30.293v97.809z" })
+        )
       ]
     }
   );
-  var Simulatormicro_default = SvgSimulatormicro;
+  var Searchq_default = SvgSearchq;
 
-  // build/lib-react-tsx/nmr/Sum.tsx
+  // build/lib-react-tsx/nmr/Signals.tsx
   var React135 = __toESM(require_react(), 1);
   var import_jsx_runtime135 = __toESM(require_jsx_runtime(), 1);
-  var SvgSum2 = ({
+  var SvgSignals = ({
     title,
     titleId,
     ...props
@@ -33033,19 +33058,22 @@
         /* @__PURE__ */ (0, import_jsx_runtime135.jsx)(
           "path",
           {
-            d: "m713.547 237.766 84.27-.682V77.631s-5.122-24.916-20.866-40.995-42.111-23.322-42.111-23.322H115.788s-38.483 9.884-54.3 33.69-8.969 61.533-8.969 61.533l274.61 388.2a7.3 7.3 0 0 1 1.321 3.719 8.6 8.6 0 0 1-1.321 3.945L60.85 873.556s-17.841 40.987-5.111 69.46 56.026 44.435 56.026 44.435h694.089s30-5.73 46.746-21.809 20.254-42.505 20.254-42.505v-234.49h-91.555l2 194.646s.146 1.94-.87 2.829-3.194.729-3.194.729l-606.513-3.5s-1.678-.251-2-1.062.7-2.183.7-2.183l242.047-340.2s12.2-18.089 12.2-38.858-12.2-44.218-12.2-44.218L164.056 106.218a2 2 0 0 1 .257-1.136 1.9 1.9 0 0 1 .943-.47l540.54-2s3.231.076 5.083 1.861 2.327 5.276 2.327 5.276Z",
-            "data-name": "Path 1"
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.653,
+            d: "M43.556 773.06c99 12.954 89.087-59.214 105.609-151.341 21.809 85.65 13.614 146.848 80.099 151.474 112.614 7.798 85.254-471.209 94.11-549.193 13.217 120.81-19.695 526.458 120.676 549.193 32.648 5.287 66.089 7.402 101.512 0C684.876 744.378 653.153 344.809 666.37 224c8.724 77.984-18.637 556.991 93.977 549.193 66.617-4.626 58.29-65.824 80.1-151.474 16.521 92.127 6.608 164.295 105.74 151.342"
           }
         )
       ]
     }
   );
-  var Sum_default2 = SvgSum2;
+  var Signals_default = SvgSignals;
 
-  // build/lib-react-tsx/nmr/Tools.tsx
+  // build/lib-react-tsx/nmr/Simulator.tsx
   var React136 = __toESM(require_react(), 1);
   var import_jsx_runtime136 = __toESM(require_jsx_runtime(), 1);
-  var SvgTools = ({
+  var SvgSimulator = ({
     title,
     titleId,
     ...props
@@ -33063,7 +33091,148 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime136.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime136.jsx)("path", { d: "M493.451 251.114c1.298 3.96 2.149 7.125 2.488 9.442.28 2.317-.12 4.07-1.359 5.203-1.19 1.185-3.337 1.869-6.446 2.149-3.11.28-7.346.449-12.775.449-5.596 0-10.006-.107-13.174-.281-3.109-.168-5.538-.506-7.178-.957-1.639-.512-2.828-1.189-3.509-2.095-.621-.906-1.188-2.036-1.64-3.505l-14.416-43.026h-80.506l-13.574 41.898c-.449 1.524-1.02 2.821-1.749 3.898-.681 1.017-1.87 1.862-3.45 2.49-1.581.562-3.9 1.014-6.789 1.238-2.937.231-6.785.34-11.527.34-5.096 0-9.055-.169-11.934-.51-2.879-.334-4.866-1.125-5.938-2.426-1.131-1.242-1.53-3.059-1.19-5.371.34-2.317 1.19-5.428 2.498-9.272L367.37 60.643c.68-1.865 1.41-3.396 2.317-4.578.909-1.133 2.32-2.038 4.24-2.658 1.918-.564 4.585-.962 8.026-1.133 3.389-.168 7.975-.28 13.575-.28 6.496 0 11.696.11 15.604.28 3.84.169 6.838.567 8.987 1.133 2.148.62 3.738 1.526 4.64 2.773.958 1.184 1.749 2.825 2.43 4.972zM395.02 93.944h-.168l-30.309 91.078h60.774zm313.173 109.115c0 7.636-1.021 14.528-3.109 20.697-2.142 6.217-5.03 11.7-8.699 16.448a55.8 55.8 0 0 1-13.291 12.21c-5.089 3.45-10.814 6.294-16.962 8.484-6.15 2.19-12.775 3.843-19.783 4.86-7.011 1.073-14.84 1.583-23.471 1.583h-56.927c-3.646 0-6.728-1.073-9.218-3.223-2.489-2.146-3.729-5.651-3.729-10.513V66.748c0-4.862 1.257-8.385 3.729-10.515 2.47-2.133 5.547-3.221 9.218-3.221h53.816c13.117 0 24.279 1.141 33.365 3.33 9.091 2.193 16.786 5.544 23.004 10.012 6.276 4.462 11.026 10.12 14.363 16.959 3.279 6.842 4.979 14.925 4.979 24.201 0 5.196-.679 10.064-2.039 14.642-1.299 4.581-3.219 8.765-5.767 12.497-2.548 3.783-5.649 7.067-9.386 9.947-3.671 2.883-7.91 5.202-12.668 6.955 6.109 1.132 11.705 3.056 16.854 5.823 5.085 2.776 9.615 6.274 13.401 10.686 3.789 4.354 6.831 9.44 9.038 15.32 2.21 5.826 3.282 12.383 3.282 19.675zm-56.309-90.234c0-4.354-.68-8.194-1.977-11.59a20.6 20.6 0 0 0-5.999-8.537c-2.599-2.261-5.93-4.013-10.006-5.258-4.009-1.187-9.412-1.807-16.105-1.807h-22.049v55.63h24.357c6.278 0 11.313-.736 15.036-2.206 3.798-1.467 6.905-3.561 9.395-6.108 2.479-2.597 4.298-5.65 5.538-9.155 1.192-3.448 1.81-7.124 1.81-10.969zm11.087 91.758c0-4.975-.798-9.437-2.499-13.34-1.63-3.957-4.058-7.237-7.228-9.895-3.218-2.601-7.295-4.694-12.272-6.103-4.978-1.414-11.452-2.151-19.385-2.151h-25.836v60.948h31.486c6.056 0 11.135-.623 15.322-1.926 4.119-1.242 7.688-3.11 10.745-5.592 3.041-2.491 5.419-5.602 7.118-9.275 1.699-3.729 2.549-7.918 2.549-12.666z" }),
         /* @__PURE__ */ (0, import_jsx_runtime136.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.312,
+            d: "M40.677 918.5h95.78l50.591-144.818L242.565 918.5h86.862l58.943-524.723L445.842 918.5h107.484l57.472-524.723 58.95 524.723h86.862l55.519-144.818L862.718 918.5H958.5"
+          }
+        )
+      ]
+    }
+  );
+  var Simulator_default = SvgSimulator;
+
+  // build/lib-react-tsx/nmr/Simulatormicro.tsx
+  var React137 = __toESM(require_react(), 1);
+  var import_jsx_runtime137 = __toESM(require_jsx_runtime(), 1);
+  var SvgSimulatormicro = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime137.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime137.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime137.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.312,
+            d: "M40.677 918.5h95.78l50.591-797.277L242.565 918.5h86.862l58.943-798 57.472 798h107.484l57.472-170 58.95 170h86.862l55.519-265 50.589 265H958.5"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime137.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "40,40",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 75,
+            d: "M558.5 126.5v288"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime137.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 49.312,
+            d: "M583 105h325v325H583z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime137.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "40,40",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 75,
+            d: "M932.5 128.5v288m-327-334h288m-288 371h288"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime137.jsx)("path", { d: "M700.17 262.665q0 23.204 4.593 31.179c3.062 5.318 8.565 7.977 16.517 7.977q19.01 0 31.42-26.506 12.407-26.504 12.408-67.435v-43.022h30.453v108.281q0 14.828 3.062 21.753 3.06 6.93 9.506 6.929 6.928.001 10.555-6.848 3.625-6.847 3.625-20.223v-4.512h6.93q.158 1.29.241 2.82.08 1.53.081 4.431 0 18.37-7.815 28.44-7.817 10.07-21.995 10.07-16.597.002-24.975-14.1-8.382-14.098-8.541-42.619-7.574 29.33-20.222 43.022-12.651 13.7-31.986 13.698-14.503-.001-24.008-8.621-9.51-8.617-13.213-25.378-.324 3.062-.322 9.346 0 20.785 10.554 46.487 10.552 25.698 10.554 30.373 0 6.443-3.705 10.151-3.709 3.706-10.152 3.706-7.575 0-10.876-5.398-3.304-5.4-3.304-17.644 0-2.9.645-19.095c.429-10.795.645-20.6.645-29.406q0-11.921-.482-33.516-.484-21.591-.484-31.26v-80.889h30.293v97.809z" })
+      ]
+    }
+  );
+  var Simulatormicro_default = SvgSimulatormicro;
+
+  // build/lib-react-tsx/nmr/Sum.tsx
+  var React138 = __toESM(require_react(), 1);
+  var import_jsx_runtime138 = __toESM(require_jsx_runtime(), 1);
+  var SvgSum2 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime138.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime138.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime138.jsx)(
+          "path",
+          {
+            d: "m713.547 237.766 84.27-.682V77.631s-5.122-24.916-20.866-40.995-42.111-23.322-42.111-23.322H115.788s-38.483 9.884-54.3 33.69-8.969 61.533-8.969 61.533l274.61 388.2a7.3 7.3 0 0 1 1.321 3.719 8.6 8.6 0 0 1-1.321 3.945L60.85 873.556s-17.841 40.987-5.111 69.46 56.026 44.435 56.026 44.435h694.089s30-5.73 46.746-21.809 20.254-42.505 20.254-42.505v-234.49h-91.555l2 194.646s.146 1.94-.87 2.829-3.194.729-3.194.729l-606.513-3.5s-1.678-.251-2-1.062.7-2.183.7-2.183l242.047-340.2s12.2-18.089 12.2-38.858-12.2-44.218-12.2-44.218L164.056 106.218a2 2 0 0 1 .257-1.136 1.9 1.9 0 0 1 .943-.47l540.54-2s3.231.076 5.083 1.861 2.327 5.276 2.327 5.276Z",
+            "data-name": "Path 1"
+          }
+        )
+      ]
+    }
+  );
+  var Sum_default2 = SvgSum2;
+
+  // build/lib-react-tsx/nmr/Tools.tsx
+  var React139 = __toESM(require_react(), 1);
+  var import_jsx_runtime139 = __toESM(require_jsx_runtime(), 1);
+  var SvgTools = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime139.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime139.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
           "path",
           {
             fill: "#FFF",
@@ -33071,8 +33240,8 @@
             d: "M188.491 960.059c-11.069 11.069-29.019 11.069-40.087 0L38.586 850.24c-11.07-11.071-11.072-29.019 0-40.087l297.208-287.211c11.07-11.07 29.019-11.071 40.089.001l109.818 109.819c11.07 11.07 11.07 29.017 0 40.087z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime136.jsx)("path", { fill: "#FFF", strokeWidth: 80, d: "M930 71.47 94.203 907.271" }),
-        /* @__PURE__ */ (0, import_jsx_runtime136.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)("path", { fill: "#FFF", strokeWidth: 80, d: "M930 71.47 94.203 907.271" }),
+        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
           "path",
           {
             strokeLinecap: "square",
@@ -33080,7 +33249,7 @@
             d: "m815.25 131.774 58.031 58.032 57.136-53.741 36.77-62.791-37.336-37.334-59.396 32.243-57.135 61.66"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime136.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
           "path",
           {
             fill: "none",
@@ -33089,7 +33258,7 @@
             d: "M280.166 28.167c93.974 0 170.155 76.181 170.155 170.155S374.14 368.477 280.166 368.477s-170.155-76.181-170.155-170.155"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime136.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
           "path",
           {
             fill: "none",
@@ -33098,7 +33267,7 @@
             d: "m268.979 42.067 123.497 123.496-30.17 112.597-112.597 30.17-123.884-123.884"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime136.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
           "path",
           {
             fill: "none",
@@ -33107,7 +33276,7 @@
             d: "m142.569 239.02 87.597 92.248 39.535 2.326 96.124-25.582 29.457-31.008 24.031-98.449-9.302-38.76-77.52-74.419"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime136.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
           "path",
           {
             fill: "#FFF",
@@ -33122,13 +33291,13 @@
   var Tools_default = SvgTools;
 
   // build/lib-react-tsx/nmr/Tree.tsx
-  var React137 = __toESM(require_react(), 1);
-  var import_jsx_runtime137 = __toESM(require_jsx_runtime(), 1);
+  var React140 = __toESM(require_react(), 1);
+  var import_jsx_runtime140 = __toESM(require_jsx_runtime(), 1);
   var SvgTree = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime137.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime140.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -33140,21 +33309,21 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime137.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime137.jsx)("path", { d: "M499.307 43.814a21.397 21.397 0 0 0-21.075 21.698V290.25l-193.664 84.127A21.4 21.4 0 0 0 271.698 394v216.098l-145.464 85.23a21.4 21.4 0 0 0-10.578 18.46V944a21.397 21.397 0 1 0 42.79 0V726.049l134.718-78.936 134.719 78.936V944a21.397 21.397 0 1 0 42.79 0V713.787a21.4 21.4 0 0 0-10.58-18.459l-145.605-85.314v-201.98l185.14-80.425 185.14 80.424v202.059l-145.598 85.23a21.4 21.4 0 0 0-10.586 18.465V944a21.397 21.397 0 1 0 42.789 0V726.055l134.785-78.903 134.653 78.897V944a21.397 21.397 0 1 0 42.79 0V713.787a21.4 21.4 0 0 0-10.58-18.459L727.56 610.096V394a21.4 21.4 0 0 0-12.871-19.623L521.023 290.25V65.512a21.397 21.397 0 0 0-21.716-21.698z" })
+        title ? /* @__PURE__ */ (0, import_jsx_runtime140.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime140.jsx)("path", { d: "M499.307 43.814a21.397 21.397 0 0 0-21.075 21.698V290.25l-193.664 84.127A21.4 21.4 0 0 0 271.698 394v216.098l-145.464 85.23a21.4 21.4 0 0 0-10.578 18.46V944a21.397 21.397 0 1 0 42.79 0V726.049l134.718-78.936 134.719 78.936V944a21.397 21.397 0 1 0 42.79 0V713.787a21.4 21.4 0 0 0-10.58-18.459l-145.605-85.314v-201.98l185.14-80.425 185.14 80.424v202.059l-145.598 85.23a21.4 21.4 0 0 0-10.586 18.465V944a21.397 21.397 0 1 0 42.789 0V726.055l134.785-78.903 134.653 78.897V944a21.397 21.397 0 1 0 42.79 0V713.787a21.4 21.4 0 0 0-10.58-18.459L727.56 610.096V394a21.4 21.4 0 0 0-12.871-19.623L521.023 290.25V65.512a21.397 21.397 0 0 0-21.716-21.698z" })
       ]
     }
   );
   var Tree_default = SvgTree;
 
   // build/lib-react-tsx/nmr/ZeroFilling.tsx
-  var React138 = __toESM(require_react(), 1);
-  var import_jsx_runtime138 = __toESM(require_jsx_runtime(), 1);
+  var React141 = __toESM(require_react(), 1);
+  var import_jsx_runtime141 = __toESM(require_jsx_runtime(), 1);
   var SvgZeroFilling = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime138.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime141.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -33167,8 +33336,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime138.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime138.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime141.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)(
           "path",
           {
             fill: "none",
@@ -33179,7 +33348,7 @@
             d: "m27.989 24.288 24.468 939.363 52.128-677.659 29.787 456.383 44.681-297.873 23.404 202.128 38.298-108.511 26.596 42.339h698.936"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime138.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)(
           "path",
           {
             fill: "none",
@@ -33190,21 +33359,21 @@
             d: "M293.947 55.51v886.864"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime138.jsx)("path", { d: "M786.083 122.546c22.189 42.847 30.287 92.068 30.287 147.656 0 43.728-3.812 84.928-17.435 123.597-25.708 72.732-70.201 109.094-133.482 109.094-43.292 0-78.888-19.661-106.787-58.996-29.886-41.965-40.824-98.985-40.824-171.058 0-56.689 5.995-105.469 25.991-146.338 27.026-55.588 68.555-83.386 124.585-83.386 50.536 0 89.757 26.48 117.665 79.431zm-50.098 308.539c12.079-35.35 18.126-86.502 18.126-153.472 0-53.353-3.624-95.941-10.875-127.778-13.629-59.279-39.114-82.172-76.465-82.172-37.359 0-62.953 23.769-76.796 84.803q-10.876 48.745-10.875 128.443c0 49.84 3.732 89.689 11.206 119.549 14.057 55.767 40.424 76.898 79.102 76.898 32.3 0 54.489-10.924 66.577-46.271z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime138.jsx)("path", { strokeWidth: 50, d: "m763.095 123.225-180.85 307.447" })
+        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)("path", { d: "M786.083 122.546c22.189 42.847 30.287 92.068 30.287 147.656 0 43.728-3.812 84.928-17.435 123.597-25.708 72.732-70.201 109.094-133.482 109.094-43.292 0-78.888-19.661-106.787-58.996-29.886-41.965-40.824-98.985-40.824-171.058 0-56.689 5.995-105.469 25.991-146.338 27.026-55.588 68.555-83.386 124.585-83.386 50.536 0 89.757 26.48 117.665 79.431zm-50.098 308.539c12.079-35.35 18.126-86.502 18.126-153.472 0-53.353-3.624-95.941-10.875-127.778-13.629-59.279-39.114-82.172-76.465-82.172-37.359 0-62.953 23.769-76.796 84.803q-10.876 48.745-10.875 128.443c0 49.84 3.732 89.689 11.206 119.549 14.057 55.767 40.424 76.898 79.102 76.898 32.3 0 54.489-10.924 66.577-46.271z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)("path", { strokeWidth: 50, d: "m763.095 123.225-180.85 307.447" })
       ]
     }
   );
   var ZeroFilling_default = SvgZeroFilling;
 
   // build/lib-react-tsx/periodic/Carbon.tsx
-  var React139 = __toESM(require_react(), 1);
-  var import_jsx_runtime139 = __toESM(require_jsx_runtime(), 1);
+  var React142 = __toESM(require_react(), 1);
+  var import_jsx_runtime142 = __toESM(require_jsx_runtime(), 1);
   var SvgCarbon = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime139.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime142.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -33216,9 +33385,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime139.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)("path", { fill: "none", d: "M500 100h150v50H500Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime142.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime142.jsx)("path", { fill: "none", d: "M500 100h150v50H500Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
           "path",
           {
             fill: "none",
@@ -33226,7 +33395,7 @@
             d: "M105.938 31.182h788.88v935.636h-788.88Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
           "path",
           {
             stroke: "none",
@@ -33242,7 +33411,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime139.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
           "path",
           {
             stroke: "none",
@@ -33262,13 +33431,13 @@
   var Carbon_default = SvgCarbon;
 
   // build/lib-react-tsx/periodic/Electronegativity.tsx
-  var React140 = __toESM(require_react(), 1);
-  var import_jsx_runtime140 = __toESM(require_jsx_runtime(), 1);
+  var React143 = __toESM(require_react(), 1);
+  var import_jsx_runtime143 = __toESM(require_jsx_runtime(), 1);
   var SvgElectronegativity = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime140.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime143.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -33280,9 +33449,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime140.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime140.jsx)("path", { fill: "none", d: "M499.9 100h150v50h-150z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime140.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime143.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)("path", { fill: "none", d: "M499.9 100h150v50h-150z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)(
           "path",
           {
             fill: "none",
@@ -33290,7 +33459,7 @@
             d: "M103.838 31.182h788.88v935.636h-788.88Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime140.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)(
           "path",
           {
             stroke: "none",
@@ -33306,7 +33475,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime140.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)(
           "path",
           {
             stroke: "none",
@@ -33326,13 +33495,13 @@
   var Electronegativity_default = SvgElectronegativity;
 
   // build/lib-react-tsx/periodic/ElectronicBoron.tsx
-  var React141 = __toESM(require_react(), 1);
-  var import_jsx_runtime141 = __toESM(require_jsx_runtime(), 1);
+  var React144 = __toESM(require_react(), 1);
+  var import_jsx_runtime144 = __toESM(require_jsx_runtime(), 1);
   var SvgElectronicBoron = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime141.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime144.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -33344,10 +33513,10 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime141.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)("path", { fill: "none", strokeWidth: 40, d: "M105.12 32.364H894V968H105.12Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime144.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)("path", { fill: "none", strokeWidth: 40, d: "M105.12 32.364H894V968H105.12Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)(
           "path",
           {
             stroke: "none",
@@ -33363,7 +33532,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime141.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)(
           "path",
           {
             stroke: "none",
@@ -33384,237 +33553,9 @@
   var ElectronicBoron_default = SvgElectronicBoron;
 
   // build/lib-react-tsx/periodic/ElectronicLithium.tsx
-  var React142 = __toESM(require_react(), 1);
-  var import_jsx_runtime142 = __toESM(require_jsx_runtime(), 1);
-  var SvgElectronicLithium = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime142.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime142.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime142.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeWidth: 40,
-            d: "M115.938 31.182h788.88v935.636h-788.88z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
-          "g",
-          {
-            style: {
-              lineHeight: ".01%"
-            },
-            wordSpacing: 0,
-            children: /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
-              "path",
-              {
-                stroke: "none",
-                d: "M-161.563 788.76q0 10.157-1.015 17.266-.677 6.77-2.37 11.51-1.693 4.401-4.401 6.433-2.37 2.031-5.755 2.031H-375.86q-11.172 0-18.959-6.432-7.448-6.771-7.448-21.667V400.115q0-3.386 2.032-6.094 2.37-2.709 7.448-4.401 5.078-1.693 13.541-2.709 8.802-1.015 21.667-1.015 13.203 0 21.667 1.015 8.463 1.016 13.541 2.709 5.078 1.692 7.11 4.4 2.37 2.71 2.37 6.095v352.421h137.786q3.385 0 5.755 2.032 2.708 1.692 4.401 6.093 1.693 4.063 2.37 11.172 1.015 6.771 1.015 16.927m133.387 25.73q0 3.385-2.031 6.093-2.032 2.37-7.11 4.063-4.74 1.693-12.864 2.37-8.125 1.015-20.651 1.015t-20.651-1.015q-8.125-.677-13.204-2.37-4.74-1.693-6.77-4.063-2.032-2.708-2.032-6.093V513.187q0-3.385 2.032-5.755 2.03-2.708 6.77-4.4 5.079-2.032 13.204-3.048 8.125-1.015 20.65-1.015 12.527 0 20.652 1.015 8.125 1.016 12.864 3.047 5.078 1.693 7.11 4.401 2.03 2.37 2.03 5.755zm6.432-404.22q0 25.73-10.495 35.548-10.494 9.817-38.932 9.817-28.776 0-38.932-9.479-9.818-9.479-9.818-34.192 0-25.73 10.156-35.547 10.495-10.157 39.271-10.157 28.438 0 38.594 9.818 10.156 9.48 10.156 34.193",
-                fontFamily: "sans-serif",
-                fontSize: 693.333,
-                fontWeight: 700,
-                letterSpacing: 0,
-                style: {
-                  lineHeight: 1.25
-                },
-                transform: "translate(725.077 -169.385)"
-              }
-            )
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime142.jsxs)(
-          "g",
-          {
-            stroke: "none",
-            fontFamily: "sans-serif",
-            fontWeight: 400,
-            letterSpacing: 0,
-            style: {
-              lineHeight: ".01%"
-            },
-            wordSpacing: 0,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
-                "path",
-                {
-                  d: "M-295.52 459.932q0 3.1-.333 5.313-.332 2.103-.996 3.43-.553 1.218-1.328 1.772-.775.553-1.77.553h-79.024q-.886 0-1.66-.553-.775-.554-1.44-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.222-5.312.332-2.214.885-3.542.664-1.328 1.439-1.881.775-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.545-.664-.886-.996-1.218-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.112-1.77.554-2.988t1.218-1.992q.774-.775 2.103-1.66l30.768-19.922q.553-.443 1.328-.665.885-.332 2.213-.442 1.329-.222 3.431-.222 2.214-.11 5.645-.11 4.206 0 6.751.221 2.657.11 3.985.553 1.328.333 1.77.997.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.664 1.328.885 3.542.332 2.103.332 5.312m94.076-20.586q0 8.412-3.21 14.831-3.099 6.42-8.854 10.736t-13.613 6.419q-7.858 2.214-17.045 2.214-5.534 0-10.625-.886-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.656t-3.874-2.435q-1.217-1.218-1.881-3.653-.664-2.545-.664-7.415 0-3.21.22-5.091.222-1.992.665-3.099.443-1.217 1.107-1.55.664-.442 1.66-.442 1.217 0 3.542 1.439 2.435 1.328 5.976 2.988t8.19 3.099q4.76 1.439 10.736 1.439 3.763 0 6.64-.775 2.989-.775 5.092-2.214 2.213-1.438 3.32-3.652t1.107-5.091q0-3.32-2.103-5.645-1.992-2.435-5.423-4.205-3.32-1.771-7.637-3.32-4.206-1.55-8.743-3.432-4.428-1.881-8.744-4.316-4.206-2.435-7.637-5.977-3.32-3.541-5.423-8.522-1.992-4.98-1.992-11.953 0-7.083 2.767-12.95 2.767-5.976 7.969-10.181 5.201-4.206 12.617-6.53 7.526-2.325 16.823-2.325 4.648 0 8.965.664 4.427.665 7.968 1.66 3.542.997 5.977 2.214 2.435 1.107 3.43 1.992 1.108.775 1.55 1.66.443.775.664 1.993.222 1.106.332 2.877.222 1.66.222 4.206 0 2.988-.222 4.87-.11 1.881-.553 2.988-.332 1.107-.996 1.55-.664.332-1.55.332-.996 0-3.098-1.107-2.103-1.218-5.313-2.546-3.099-1.328-7.305-2.435-4.095-1.217-9.407-1.217-3.763 0-6.53.775-2.767.774-4.538 2.213-1.77 1.439-2.656 3.431-.886 1.882-.886 4.095 0 3.431 2.103 5.755 2.103 2.325 5.534 4.096t7.748 3.32q4.427 1.55 8.854 3.43 4.537 1.772 8.854 4.207 4.427 2.434 7.858 5.976t5.534 8.522q2.103 4.87 2.103 11.621",
-                  fontSize: 226.667,
-                  fontWeight: 700,
-                  style: {
-                    lineHeight: 1.25
-                  },
-                  transform: "translate(622.462 431.23)"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
-                "path",
-                {
-                  d: "M496.653 803.866q0 2.086-.215 3.597-.144 1.439-.504 2.374t-.935 1.367q-.576.36-1.295.36H440.18q-1.582 0-2.733-.288t-1.87-1.08q-.72-.863-1.08-2.445-.288-1.583-.288-4.101 0-2.374.216-4.029.216-1.726.792-3.021.575-1.367 1.438-2.59.936-1.295 2.374-2.806l16.115-17.265q4.82-5.036 7.77-9.137 2.949-4.172 4.604-7.553 1.654-3.454 2.23-6.331.647-2.878.647-5.468 0-2.374-.791-4.46-.72-2.158-2.23-3.74-1.439-1.583-3.67-2.447-2.23-.935-5.25-.935-4.245 0-7.554 1.08-3.238 1.078-5.756 2.445-2.446 1.295-4.1 2.446-1.655 1.08-2.59 1.08-.648 0-1.151-.432-.432-.432-.72-1.44-.287-1.006-.503-2.661-.144-1.727-.144-4.173 0-1.654.072-2.733.144-1.151.36-1.943.215-.863.575-1.439.36-.647 1.223-1.51.935-.864 3.31-2.158 2.445-1.367 5.97-2.59 3.525-1.295 7.77-2.159t8.849-.863q7.265 0 12.661 1.87 5.467 1.8 9.064 5.108 3.597 3.238 5.324 7.77 1.798 4.46 1.798 9.64 0 4.532-.863 8.92-.863 4.389-3.597 9.497-2.734 5.035-7.697 11.222-4.964 6.115-13.165 14.244l-10.863 11.151h36.69q.718 0 1.294.432.647.431 1.08 1.367.43.863.647 2.374.215 1.438.215 3.453",
-                  baselineShift: "super",
-                  fontSize: "65%"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
-                "path",
-                {
-                  d: "M-13.958 459.158q0 3.21-.332 5.533-.222 2.214-.775 3.653t-1.439 2.103q-.885.553-1.992.553h-82.344q-2.435 0-4.206-.443-1.77-.442-2.877-1.66-1.107-1.328-1.66-3.763-.443-2.435-.443-6.308 0-3.653.332-6.198.332-2.657 1.217-4.649.886-2.103 2.214-3.984 1.439-1.992 3.652-4.317l24.792-26.562q7.415-7.748 11.953-14.056 4.538-6.42 7.083-11.621 2.546-5.313 3.431-9.74.997-4.427.997-8.411 0-3.653-1.218-6.862-1.107-3.32-3.43-5.755-2.214-2.435-5.645-3.763-3.431-1.44-8.08-1.44-6.53 0-11.621 1.66-4.98 1.661-8.854 3.764-3.763 1.992-6.309 3.763-2.545 1.66-3.984 1.66-.996 0-1.77-.664-.665-.664-1.108-2.214-.442-1.549-.774-4.095-.222-2.656-.222-6.419 0-2.545.11-4.206.222-1.77.554-2.988.332-1.328.886-2.213.553-.996 1.881-2.325 1.439-1.328 5.091-3.32 3.763-2.103 9.187-3.984 5.423-1.992 11.953-3.32 6.53-1.329 13.613-1.329 11.178 0 19.48 2.878 8.41 2.767 13.944 7.858 5.534 4.98 8.19 11.953 2.767 6.862 2.767 14.83 0 6.973-1.328 13.725t-5.534 14.61q-4.205 7.747-11.842 17.265-7.637 9.407-20.254 21.914l-16.712 17.155h56.445q1.107 0 1.992.664.996.664 1.66 2.103.665 1.328.997 3.652.332 2.214.332 5.313m92.748-19.812q0 8.412-3.21 14.831-3.1 6.42-8.855 10.736t-13.613 6.419q-7.858 2.214-17.044 2.214-5.534 0-10.625-.886-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.656-2.657-1.328-3.874-2.435-1.218-1.218-1.882-3.653-.664-2.545-.664-7.415 0-3.21.221-5.091.222-1.992.664-3.099.443-1.217 1.107-1.55.664-.442 1.66-.442 1.218 0 3.542 1.439 2.435 1.328 5.977 2.988 3.541 1.66 8.19 3.099 4.759 1.439 10.735 1.439 3.763 0 6.641-.775 2.988-.775 5.091-2.214 2.214-1.438 3.32-3.652 1.107-2.214 1.107-5.091 0-3.32-2.103-5.645-1.992-2.435-5.423-4.205-3.32-1.771-7.637-3.32-4.205-1.55-8.743-3.432-4.427-1.881-8.744-4.316-4.205-2.435-7.636-5.977-3.32-3.541-5.423-8.522-1.993-4.98-1.993-11.953 0-7.083 2.767-12.95 2.767-5.976 7.97-10.181 5.2-4.206 12.616-6.53 7.526-2.325 16.823-2.325 4.649 0 8.965.664 4.427.665 7.969 1.66 3.541.997 5.976 2.214 2.435 1.107 3.431 1.992 1.107.775 1.55 1.66.442.775.664 1.993.221 1.106.332 2.877.221 1.66.221 4.206 0 2.988-.221 4.87-.11 1.881-.554 2.988-.332 1.107-.996 1.55-.664.332-1.55.332-.995 0-3.098-1.107-2.103-1.218-5.313-2.546-3.098-1.328-7.304-2.435-4.095-1.217-9.408-1.217-3.763 0-6.53.775-2.767.774-4.537 2.213t-2.657 3.431q-.885 1.882-.885 4.095 0 3.431 2.103 5.755 2.103 2.325 5.534 4.096t7.747 3.32q4.427 1.55 8.854 3.43 4.538 1.772 8.854 4.207 4.427 2.434 7.858 5.976t5.534 8.522q2.103 4.87 2.103 11.621",
-                  fontSize: 226.667,
-                  fontWeight: 700,
-                  style: {
-                    lineHeight: 1.25
-                  },
-                  transform: "translate(622.462 431.23)"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime142.jsx)(
-                "path",
-                {
-                  d: "M776.025 804.37q0 2.014-.216 3.452-.216 1.367-.648 2.23-.36.792-.863 1.152-.504.36-1.151.36h-51.365q-.576 0-1.08-.36-.503-.36-.935-1.151-.36-.864-.575-2.23-.216-1.44-.216-3.454 0-2.086.144-3.453.216-1.439.575-2.302.432-.863.936-1.223.503-.432 1.15-.432h17.338v-60.573l-14.963 8.273q-1.655.791-2.734 1.007-1.007.144-1.655-.431-.575-.648-.791-2.159t-.216-4.244q0-1.727.072-2.806.072-1.15.36-1.942t.791-1.295q.504-.504 1.367-1.08l20-12.948q.36-.288.863-.432.575-.216 1.438-.288.864-.144 2.23-.144 1.44-.072 3.67-.072 2.733 0 4.388.144 1.726.072 2.59.36.863.216 1.15.647.289.432.289 1.08v76.904h15.179q.647 0 1.151.431.575.36.935 1.223.432.863.576 2.302.216 1.367.216 3.453",
-                  baselineShift: "super",
-                  fontSize: "65%"
-                }
-              )
-            ]
-          }
-        )
-      ]
-    }
-  );
-  var ElectronicLithium_default = SvgElectronicLithium;
-
-  // build/lib-react-tsx/periodic/IsotopeCarbon.tsx
-  var React143 = __toESM(require_react(), 1);
-  var import_jsx_runtime143 = __toESM(require_jsx_runtime(), 1);
-  var SvgIsotopeCarbon = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime143.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime143.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeWidth: 40,
-            d: "M115.938 31.182h788.88v935.636h-788.88z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M-99.27 759.646q0 8.463-.678 14.557-.338 5.755-1.354 10.156-1.016 4.063-2.708 7.11t-5.417 7.11q-3.724 3.723-14.557 9.817-10.495 6.094-26.068 11.849-15.234 5.416-35.208 9.14-19.636 3.724-42.657 3.724-45.026 0-81.25-13.88t-61.614-41.302q-25.39-27.76-38.933-69.062-13.541-41.303-13.541-96.146 0-55.86 14.896-99.193 14.895-43.333 41.64-72.786t63.985-44.688q37.578-15.234 82.604-15.234 18.281 0 35.208 3.047 16.927 3.046 31.146 8.125 14.557 4.74 26.068 11.171 11.51 6.433 15.911 11.172 4.74 4.401 6.432 7.448t2.709 7.787q1.015 4.74 1.354 11.172.677 6.432.677 15.911 0 10.156-.677 17.266t-2.37 11.51-4.062 6.432-5.417 2.032q-5.078 0-12.865-5.756-7.786-6.093-20.312-13.203-12.188-7.448-29.453-13.203-16.927-6.094-40.625-6.094-26.068 0-46.719 10.834-20.313 10.495-34.87 30.468-14.219 19.636-21.666 47.735t-7.448 63.307q0 38.594 7.786 67.031 8.125 28.1 22.682 46.38 14.896 18.282 35.547 27.422 20.99 8.803 47.058 8.803 23.697 0 40.963-5.417 17.266-5.755 29.453-12.526 12.526-6.771 20.313-12.188 8.125-5.416 12.526-5.416 3.385 0 5.416 1.354t3.386 5.417 2.031 11.51q.677 7.11.677 19.297",
-            fontFamily: "sans-serif",
-            fontSize: 693.333,
-            fontWeight: 400,
-            letterSpacing: 0,
-            style: {
-              lineHeight: ".01%"
-            },
-            transform: "translate(768.308 -98.308)",
-            wordSpacing: 0
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime143.jsx)("path", { d: "M270.787 292.24q0 3.099-.332 5.312-.332 2.103-.996 3.431-.554 1.218-1.328 1.771-.775.554-1.771.554h-79.024q-.885 0-1.66-.554-.775-.553-1.439-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.221-5.313.332-2.213.886-3.541.664-1.328 1.439-1.882.774-.664 1.77-.664h26.674v-93.19l-23.021 12.728q-2.546 1.217-4.206 1.55-1.55.22-2.546-.665-.885-.996-1.217-3.32t-.332-6.53q0-2.656.11-4.316.111-1.771.554-2.989t1.217-1.992 2.103-1.66l30.769-19.922q.553-.442 1.328-.664.885-.332 2.213-.443 1.328-.22 3.431-.22 2.214-.112 5.645-.112 4.205 0 6.751.222 2.656.11 3.984.553 1.329.332 1.771.996.443.664.443 1.66V280.84h23.353q.996 0 1.77.664.886.554 1.44 1.882.663 1.328.885 3.541.332 2.103.332 5.313zm115.768-30.879q0 10.736-4.095 19.037t-11.4 13.945-17.487 8.633q-10.182 2.877-22.246 2.877-7.304 0-13.724-1.106-6.419-.997-11.4-2.546-4.87-1.55-8.079-3.21t-4.206-2.545-1.55-1.992q-.442-1.107-.885-2.546-.332-1.55-.553-3.763-.11-2.324-.11-5.534 0-5.312.885-7.305.885-2.102 2.656-2.102 1.107 0 3.763 1.549 2.767 1.439 6.973 3.21 4.206 1.66 9.85 3.21 5.645 1.438 12.839 1.438 6.087 0 10.735-1.439 4.649-1.439 7.858-3.984 3.32-2.656 4.87-6.309 1.66-3.763 1.66-8.3 0-4.98-1.992-8.965-1.881-3.985-5.755-6.752-3.763-2.877-9.629-4.427-5.755-1.55-13.613-1.55h-12.396q-1.439 0-2.435-.331-.996-.443-1.66-1.66-.664-1.218-.996-3.32-.222-2.214-.222-5.645 0-3.21.222-5.202.332-2.103.885-3.21.664-1.106 1.55-1.55.996-.442 2.324-.442h12.506q6.42 0 11.4-1.439 4.98-1.55 8.3-4.316 3.432-2.767 5.203-6.64 1.77-3.985 1.77-8.744 0-3.653-1.217-6.862-1.217-3.32-3.652-5.645-2.324-2.435-6.088-3.763-3.763-1.439-8.854-1.439-5.755 0-10.846 1.771-5.091 1.66-9.186 3.763-3.985 1.993-6.862 3.763-2.767 1.771-4.095 1.771-.886 0-1.55-.332-.664-.443-1.107-1.55t-.664-3.209q-.22-2.103-.22-5.423 0-2.767.11-4.538.11-1.881.442-3.099.332-1.217.775-2.103.554-.885 1.66-1.881 1.107-1.107 4.538-3.21t8.633-4.095 11.953-3.32q6.862-1.439 14.83-1.439 10.404 0 18.373 2.435 8.08 2.435 13.503 7.083 5.534 4.538 8.3 11.29 2.878 6.64 2.878 15.051 0 6.53-1.66 12.175-1.66 5.644-4.87 10.071-3.21 4.428-8.08 7.526-4.758 3.1-11.067 4.649v.332q7.526.885 13.503 3.874 5.976 2.877 10.071 7.304 4.206 4.427 6.42 10.072 2.213 5.534 2.213 11.953z" })
-      ]
-    }
-  );
-  var IsotopeCarbon_default = SvgIsotopeCarbon;
-
-  // build/lib-react-tsx/periodic/IsotopeFluor.tsx
-  var React144 = __toESM(require_react(), 1);
-  var import_jsx_runtime144 = __toESM(require_jsx_runtime(), 1);
-  var SvgIsotopeFluor = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime144.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime144.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeWidth: 40,
-            d: "M115.938 31.182h788.88v935.636h-788.88z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M-156.484 424.49q0 10.156-1.016 17.265-.677 6.771-2.708 10.834-1.693 4.062-4.063 6.093-2.37 2.032-5.417 2.032H-312.89v117.812h134.401q3.047 0 5.417 1.693 2.37 1.692 4.063 5.755 2.03 4.062 2.708 10.833 1.016 6.771 1.016 16.927 0 10.157-1.016 16.927-.677 6.771-2.708 11.172-1.693 4.401-4.063 6.433-2.37 1.692-5.417 1.692h-134.4v163.177q0 3.724-2.032 6.433t-7.448 4.74q-5.078 1.692-13.541 2.708-8.464 1.015-21.667 1.015-12.865 0-21.667-1.015-8.463-1.016-13.541-2.709-5.079-2.031-7.448-4.74-2.032-2.708-2.032-6.432V416.026q0-14.896 7.448-21.328 7.787-6.77 18.959-6.77h206.171q3.047 0 5.417 2.03 2.37 1.693 4.063 6.094 2.03 4.063 2.708 11.172 1.016 7.11 1.016 17.266",
-            fontFamily: "sans-serif",
-            fontSize: 693.333,
-            fontWeight: 400,
-            letterSpacing: 0,
-            style: {
-              lineHeight: ".01%"
-            },
-            transform: "translate(817.077 -13.385)",
-            wordSpacing: 0
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime144.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M302.787 327.932q0 3.1-.332 5.313-.332 2.103-.996 3.43-.554 1.218-1.328 1.772-.775.553-1.771.553h-79.024q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.439-1.881.774-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988t1.217-1.992q.775-.775 2.103-1.66l30.769-19.922q.553-.443 1.328-.664.885-.333 2.213-.443 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.751.221 2.656.11 3.984.554 1.329.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312m116.764-67.07q0 8.743-.885 18.151-.886 9.297-3.431 18.262-2.435 8.965-6.862 17.044-4.317 8.08-11.29 14.167-6.861 5.976-16.822 9.518-9.85 3.542-23.353 3.542-4.76 0-9.518-.664-4.649-.665-8.522-1.66-3.874-.997-6.641-2.104-2.656-1.106-3.874-2.213-1.217-1.217-1.77-3.431-.554-2.214-.554-6.198 0-3.652.11-5.866.222-2.213.665-3.43.553-1.218 1.217-1.55.775-.443 1.771-.443 1.328 0 3.763.775 2.435.774 5.866 1.77 3.542.997 7.969 1.771 4.427.775 9.85.775 9.297 0 15.716-3.32 6.42-3.32 10.404-8.965t5.866-13.06q1.881-7.415 2.103-15.605-5.092 3.21-12.286 5.644-7.194 2.324-16.49 2.324-11.4 0-19.369-2.988t-12.95-8.633-7.304-13.724q-2.213-8.08-2.213-18.261 0-10.736 3.21-19.7 3.209-9.076 9.517-15.606 6.309-6.641 15.717-10.293 9.407-3.653 21.803-3.653 9.96 0 17.376 2.325 7.526 2.324 12.839 6.64 5.423 4.317 8.965 10.514 3.652 6.088 5.644 13.614 2.103 7.526 2.878 16.27.885 8.743.885 18.261m-28.887-3.984q0-11.843-1.328-19.812-1.328-7.968-3.984-12.727t-6.64-6.752-9.298-1.992q-5.201 0-8.964 1.882-3.763 1.77-6.309 5.09-2.435 3.321-3.652 7.859t-1.218 9.96q0 5.867.996 10.404 1.107 4.427 3.32 7.416 2.325 2.877 5.977 4.316t8.854 1.439q6.42 0 12.064-1.882 5.755-1.992 10.182-5.201",
-            fontFamily: "sans-serif",
-            fontWeight: 400,
-            letterSpacing: 0,
-            style: {
-              lineHeight: ".01%"
-            },
-            wordSpacing: 0
-          }
-        )
-      ]
-    }
-  );
-  var IsotopeFluor_default = SvgIsotopeFluor;
-
-  // build/lib-react-tsx/periodic/IsotopeHydrogen.tsx
   var React145 = __toESM(require_react(), 1);
   var import_jsx_runtime145 = __toESM(require_jsx_runtime(), 1);
-  var SvgIsotopeHydrogen = ({
+  var SvgElectronicLithium = ({
     title,
     titleId,
     ...props
@@ -33641,6 +33582,234 @@
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime145.jsx)(
+          "g",
+          {
+            style: {
+              lineHeight: ".01%"
+            },
+            wordSpacing: 0,
+            children: /* @__PURE__ */ (0, import_jsx_runtime145.jsx)(
+              "path",
+              {
+                stroke: "none",
+                d: "M-161.563 788.76q0 10.157-1.015 17.266-.677 6.77-2.37 11.51-1.693 4.401-4.401 6.433-2.37 2.031-5.755 2.031H-375.86q-11.172 0-18.959-6.432-7.448-6.771-7.448-21.667V400.115q0-3.386 2.032-6.094 2.37-2.709 7.448-4.401 5.078-1.693 13.541-2.709 8.802-1.015 21.667-1.015 13.203 0 21.667 1.015 8.463 1.016 13.541 2.709 5.078 1.692 7.11 4.4 2.37 2.71 2.37 6.095v352.421h137.786q3.385 0 5.755 2.032 2.708 1.692 4.401 6.093 1.693 4.063 2.37 11.172 1.015 6.771 1.015 16.927m133.387 25.73q0 3.385-2.031 6.093-2.032 2.37-7.11 4.063-4.74 1.693-12.864 2.37-8.125 1.015-20.651 1.015t-20.651-1.015q-8.125-.677-13.204-2.37-4.74-1.693-6.77-4.063-2.032-2.708-2.032-6.093V513.187q0-3.385 2.032-5.755 2.03-2.708 6.77-4.4 5.079-2.032 13.204-3.048 8.125-1.015 20.65-1.015 12.527 0 20.652 1.015 8.125 1.016 12.864 3.047 5.078 1.693 7.11 4.401 2.03 2.37 2.03 5.755zm6.432-404.22q0 25.73-10.495 35.548-10.494 9.817-38.932 9.817-28.776 0-38.932-9.479-9.818-9.479-9.818-34.192 0-25.73 10.156-35.547 10.495-10.157 39.271-10.157 28.438 0 38.594 9.818 10.156 9.48 10.156 34.193",
+                fontFamily: "sans-serif",
+                fontSize: 693.333,
+                fontWeight: 700,
+                letterSpacing: 0,
+                style: {
+                  lineHeight: 1.25
+                },
+                transform: "translate(725.077 -169.385)"
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime145.jsxs)(
+          "g",
+          {
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontWeight: 400,
+            letterSpacing: 0,
+            style: {
+              lineHeight: ".01%"
+            },
+            wordSpacing: 0,
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime145.jsx)(
+                "path",
+                {
+                  d: "M-295.52 459.932q0 3.1-.333 5.313-.332 2.103-.996 3.43-.553 1.218-1.328 1.772-.775.553-1.77.553h-79.024q-.886 0-1.66-.553-.775-.554-1.44-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.222-5.312.332-2.214.885-3.542.664-1.328 1.439-1.881.775-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.545-.664-.886-.996-1.218-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.112-1.77.554-2.988t1.218-1.992q.774-.775 2.103-1.66l30.768-19.922q.553-.443 1.328-.665.885-.332 2.213-.442 1.329-.222 3.431-.222 2.214-.11 5.645-.11 4.206 0 6.751.221 2.657.11 3.985.553 1.328.333 1.77.997.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.664 1.328.885 3.542.332 2.103.332 5.312m94.076-20.586q0 8.412-3.21 14.831-3.099 6.42-8.854 10.736t-13.613 6.419q-7.858 2.214-17.045 2.214-5.534 0-10.625-.886-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.656t-3.874-2.435q-1.217-1.218-1.881-3.653-.664-2.545-.664-7.415 0-3.21.22-5.091.222-1.992.665-3.099.443-1.217 1.107-1.55.664-.442 1.66-.442 1.217 0 3.542 1.439 2.435 1.328 5.976 2.988t8.19 3.099q4.76 1.439 10.736 1.439 3.763 0 6.64-.775 2.989-.775 5.092-2.214 2.213-1.438 3.32-3.652t1.107-5.091q0-3.32-2.103-5.645-1.992-2.435-5.423-4.205-3.32-1.771-7.637-3.32-4.206-1.55-8.743-3.432-4.428-1.881-8.744-4.316-4.206-2.435-7.637-5.977-3.32-3.541-5.423-8.522-1.992-4.98-1.992-11.953 0-7.083 2.767-12.95 2.767-5.976 7.969-10.181 5.201-4.206 12.617-6.53 7.526-2.325 16.823-2.325 4.648 0 8.965.664 4.427.665 7.968 1.66 3.542.997 5.977 2.214 2.435 1.107 3.43 1.992 1.108.775 1.55 1.66.443.775.664 1.993.222 1.106.332 2.877.222 1.66.222 4.206 0 2.988-.222 4.87-.11 1.881-.553 2.988-.332 1.107-.996 1.55-.664.332-1.55.332-.996 0-3.098-1.107-2.103-1.218-5.313-2.546-3.099-1.328-7.305-2.435-4.095-1.217-9.407-1.217-3.763 0-6.53.775-2.767.774-4.538 2.213-1.77 1.439-2.656 3.431-.886 1.882-.886 4.095 0 3.431 2.103 5.755 2.103 2.325 5.534 4.096t7.748 3.32q4.427 1.55 8.854 3.43 4.537 1.772 8.854 4.207 4.427 2.434 7.858 5.976t5.534 8.522q2.103 4.87 2.103 11.621",
+                  fontSize: 226.667,
+                  fontWeight: 700,
+                  style: {
+                    lineHeight: 1.25
+                  },
+                  transform: "translate(622.462 431.23)"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime145.jsx)(
+                "path",
+                {
+                  d: "M496.653 803.866q0 2.086-.215 3.597-.144 1.439-.504 2.374t-.935 1.367q-.576.36-1.295.36H440.18q-1.582 0-2.733-.288t-1.87-1.08q-.72-.863-1.08-2.445-.288-1.583-.288-4.101 0-2.374.216-4.029.216-1.726.792-3.021.575-1.367 1.438-2.59.936-1.295 2.374-2.806l16.115-17.265q4.82-5.036 7.77-9.137 2.949-4.172 4.604-7.553 1.654-3.454 2.23-6.331.647-2.878.647-5.468 0-2.374-.791-4.46-.72-2.158-2.23-3.74-1.439-1.583-3.67-2.447-2.23-.935-5.25-.935-4.245 0-7.554 1.08-3.238 1.078-5.756 2.445-2.446 1.295-4.1 2.446-1.655 1.08-2.59 1.08-.648 0-1.151-.432-.432-.432-.72-1.44-.287-1.006-.503-2.661-.144-1.727-.144-4.173 0-1.654.072-2.733.144-1.151.36-1.943.215-.863.575-1.439.36-.647 1.223-1.51.935-.864 3.31-2.158 2.445-1.367 5.97-2.59 3.525-1.295 7.77-2.159t8.849-.863q7.265 0 12.661 1.87 5.467 1.8 9.064 5.108 3.597 3.238 5.324 7.77 1.798 4.46 1.798 9.64 0 4.532-.863 8.92-.863 4.389-3.597 9.497-2.734 5.035-7.697 11.222-4.964 6.115-13.165 14.244l-10.863 11.151h36.69q.718 0 1.294.432.647.431 1.08 1.367.43.863.647 2.374.215 1.438.215 3.453",
+                  baselineShift: "super",
+                  fontSize: "65%"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime145.jsx)(
+                "path",
+                {
+                  d: "M-13.958 459.158q0 3.21-.332 5.533-.222 2.214-.775 3.653t-1.439 2.103q-.885.553-1.992.553h-82.344q-2.435 0-4.206-.443-1.77-.442-2.877-1.66-1.107-1.328-1.66-3.763-.443-2.435-.443-6.308 0-3.653.332-6.198.332-2.657 1.217-4.649.886-2.103 2.214-3.984 1.439-1.992 3.652-4.317l24.792-26.562q7.415-7.748 11.953-14.056 4.538-6.42 7.083-11.621 2.546-5.313 3.431-9.74.997-4.427.997-8.411 0-3.653-1.218-6.862-1.107-3.32-3.43-5.755-2.214-2.435-5.645-3.763-3.431-1.44-8.08-1.44-6.53 0-11.621 1.66-4.98 1.661-8.854 3.764-3.763 1.992-6.309 3.763-2.545 1.66-3.984 1.66-.996 0-1.77-.664-.665-.664-1.108-2.214-.442-1.549-.774-4.095-.222-2.656-.222-6.419 0-2.545.11-4.206.222-1.77.554-2.988.332-1.328.886-2.213.553-.996 1.881-2.325 1.439-1.328 5.091-3.32 3.763-2.103 9.187-3.984 5.423-1.992 11.953-3.32 6.53-1.329 13.613-1.329 11.178 0 19.48 2.878 8.41 2.767 13.944 7.858 5.534 4.98 8.19 11.953 2.767 6.862 2.767 14.83 0 6.973-1.328 13.725t-5.534 14.61q-4.205 7.747-11.842 17.265-7.637 9.407-20.254 21.914l-16.712 17.155h56.445q1.107 0 1.992.664.996.664 1.66 2.103.665 1.328.997 3.652.332 2.214.332 5.313m92.748-19.812q0 8.412-3.21 14.831-3.1 6.42-8.855 10.736t-13.613 6.419q-7.858 2.214-17.044 2.214-5.534 0-10.625-.886-4.98-.775-8.965-1.992-3.984-1.328-6.64-2.656-2.657-1.328-3.874-2.435-1.218-1.218-1.882-3.653-.664-2.545-.664-7.415 0-3.21.221-5.091.222-1.992.664-3.099.443-1.217 1.107-1.55.664-.442 1.66-.442 1.218 0 3.542 1.439 2.435 1.328 5.977 2.988 3.541 1.66 8.19 3.099 4.759 1.439 10.735 1.439 3.763 0 6.641-.775 2.988-.775 5.091-2.214 2.214-1.438 3.32-3.652 1.107-2.214 1.107-5.091 0-3.32-2.103-5.645-1.992-2.435-5.423-4.205-3.32-1.771-7.637-3.32-4.205-1.55-8.743-3.432-4.427-1.881-8.744-4.316-4.205-2.435-7.636-5.977-3.32-3.541-5.423-8.522-1.993-4.98-1.993-11.953 0-7.083 2.767-12.95 2.767-5.976 7.97-10.181 5.2-4.206 12.616-6.53 7.526-2.325 16.823-2.325 4.649 0 8.965.664 4.427.665 7.969 1.66 3.541.997 5.976 2.214 2.435 1.107 3.431 1.992 1.107.775 1.55 1.66.442.775.664 1.993.221 1.106.332 2.877.221 1.66.221 4.206 0 2.988-.221 4.87-.11 1.881-.554 2.988-.332 1.107-.996 1.55-.664.332-1.55.332-.995 0-3.098-1.107-2.103-1.218-5.313-2.546-3.098-1.328-7.304-2.435-4.095-1.217-9.408-1.217-3.763 0-6.53.775-2.767.774-4.537 2.213t-2.657 3.431q-.885 1.882-.885 4.095 0 3.431 2.103 5.755 2.103 2.325 5.534 4.096t7.747 3.32q4.427 1.55 8.854 3.43 4.538 1.772 8.854 4.207 4.427 2.434 7.858 5.976t5.534 8.522q2.103 4.87 2.103 11.621",
+                  fontSize: 226.667,
+                  fontWeight: 700,
+                  style: {
+                    lineHeight: 1.25
+                  },
+                  transform: "translate(622.462 431.23)"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime145.jsx)(
+                "path",
+                {
+                  d: "M776.025 804.37q0 2.014-.216 3.452-.216 1.367-.648 2.23-.36.792-.863 1.152-.504.36-1.151.36h-51.365q-.576 0-1.08-.36-.503-.36-.935-1.151-.36-.864-.575-2.23-.216-1.44-.216-3.454 0-2.086.144-3.453.216-1.439.575-2.302.432-.863.936-1.223.503-.432 1.15-.432h17.338v-60.573l-14.963 8.273q-1.655.791-2.734 1.007-1.007.144-1.655-.431-.575-.648-.791-2.159t-.216-4.244q0-1.727.072-2.806.072-1.15.36-1.942t.791-1.295q.504-.504 1.367-1.08l20-12.948q.36-.288.863-.432.575-.216 1.438-.288.864-.144 2.23-.144 1.44-.072 3.67-.072 2.733 0 4.388.144 1.726.072 2.59.36.863.216 1.15.647.289.432.289 1.08v76.904h15.179q.647 0 1.151.431.575.36.935 1.223.432.863.576 2.302.216 1.367.216 3.453",
+                  baselineShift: "super",
+                  fontSize: "65%"
+                }
+              )
+            ]
+          }
+        )
+      ]
+    }
+  );
+  var ElectronicLithium_default = SvgElectronicLithium;
+
+  // build/lib-react-tsx/periodic/IsotopeCarbon.tsx
+  var React146 = __toESM(require_react(), 1);
+  var import_jsx_runtime146 = __toESM(require_jsx_runtime(), 1);
+  var SvgIsotopeCarbon = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime146.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime146.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeWidth: 40,
+            d: "M115.938 31.182h788.88v935.636h-788.88z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M-99.27 759.646q0 8.463-.678 14.557-.338 5.755-1.354 10.156-1.016 4.063-2.708 7.11t-5.417 7.11q-3.724 3.723-14.557 9.817-10.495 6.094-26.068 11.849-15.234 5.416-35.208 9.14-19.636 3.724-42.657 3.724-45.026 0-81.25-13.88t-61.614-41.302q-25.39-27.76-38.933-69.062-13.541-41.303-13.541-96.146 0-55.86 14.896-99.193 14.895-43.333 41.64-72.786t63.985-44.688q37.578-15.234 82.604-15.234 18.281 0 35.208 3.047 16.927 3.046 31.146 8.125 14.557 4.74 26.068 11.171 11.51 6.433 15.911 11.172 4.74 4.401 6.432 7.448t2.709 7.787q1.015 4.74 1.354 11.172.677 6.432.677 15.911 0 10.156-.677 17.266t-2.37 11.51-4.062 6.432-5.417 2.032q-5.078 0-12.865-5.756-7.786-6.093-20.312-13.203-12.188-7.448-29.453-13.203-16.927-6.094-40.625-6.094-26.068 0-46.719 10.834-20.313 10.495-34.87 30.468-14.219 19.636-21.666 47.735t-7.448 63.307q0 38.594 7.786 67.031 8.125 28.1 22.682 46.38 14.896 18.282 35.547 27.422 20.99 8.803 47.058 8.803 23.697 0 40.963-5.417 17.266-5.755 29.453-12.526 12.526-6.771 20.313-12.188 8.125-5.416 12.526-5.416 3.385 0 5.416 1.354t3.386 5.417 2.031 11.51q.677 7.11.677 19.297",
+            fontFamily: "sans-serif",
+            fontSize: 693.333,
+            fontWeight: 400,
+            letterSpacing: 0,
+            style: {
+              lineHeight: ".01%"
+            },
+            transform: "translate(768.308 -98.308)",
+            wordSpacing: 0
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)("path", { d: "M270.787 292.24q0 3.099-.332 5.312-.332 2.103-.996 3.431-.554 1.218-1.328 1.771-.775.554-1.771.554h-79.024q-.885 0-1.66-.554-.775-.553-1.439-1.77-.553-1.329-.885-3.432-.332-2.213-.332-5.312 0-3.21.221-5.313.332-2.213.886-3.541.664-1.328 1.439-1.882.774-.664 1.77-.664h26.674v-93.19l-23.021 12.728q-2.546 1.217-4.206 1.55-1.55.22-2.546-.665-.885-.996-1.217-3.32t-.332-6.53q0-2.656.11-4.316.111-1.771.554-2.989t1.217-1.992 2.103-1.66l30.769-19.922q.553-.442 1.328-.664.885-.332 2.213-.443 1.328-.22 3.431-.22 2.214-.112 5.645-.112 4.205 0 6.751.222 2.656.11 3.984.553 1.329.332 1.771.996.443.664.443 1.66V280.84h23.353q.996 0 1.77.664.886.554 1.44 1.882.663 1.328.885 3.541.332 2.103.332 5.313zm115.768-30.879q0 10.736-4.095 19.037t-11.4 13.945-17.487 8.633q-10.182 2.877-22.246 2.877-7.304 0-13.724-1.106-6.419-.997-11.4-2.546-4.87-1.55-8.079-3.21t-4.206-2.545-1.55-1.992q-.442-1.107-.885-2.546-.332-1.55-.553-3.763-.11-2.324-.11-5.534 0-5.312.885-7.305.885-2.102 2.656-2.102 1.107 0 3.763 1.549 2.767 1.439 6.973 3.21 4.206 1.66 9.85 3.21 5.645 1.438 12.839 1.438 6.087 0 10.735-1.439 4.649-1.439 7.858-3.984 3.32-2.656 4.87-6.309 1.66-3.763 1.66-8.3 0-4.98-1.992-8.965-1.881-3.985-5.755-6.752-3.763-2.877-9.629-4.427-5.755-1.55-13.613-1.55h-12.396q-1.439 0-2.435-.331-.996-.443-1.66-1.66-.664-1.218-.996-3.32-.222-2.214-.222-5.645 0-3.21.222-5.202.332-2.103.885-3.21.664-1.106 1.55-1.55.996-.442 2.324-.442h12.506q6.42 0 11.4-1.439 4.98-1.55 8.3-4.316 3.432-2.767 5.203-6.64 1.77-3.985 1.77-8.744 0-3.653-1.217-6.862-1.217-3.32-3.652-5.645-2.324-2.435-6.088-3.763-3.763-1.439-8.854-1.439-5.755 0-10.846 1.771-5.091 1.66-9.186 3.763-3.985 1.993-6.862 3.763-2.767 1.771-4.095 1.771-.886 0-1.55-.332-.664-.443-1.107-1.55t-.664-3.209q-.22-2.103-.22-5.423 0-2.767.11-4.538.11-1.881.442-3.099.332-1.217.775-2.103.554-.885 1.66-1.881 1.107-1.107 4.538-3.21t8.633-4.095 11.953-3.32q6.862-1.439 14.83-1.439 10.404 0 18.373 2.435 8.08 2.435 13.503 7.083 5.534 4.538 8.3 11.29 2.878 6.64 2.878 15.051 0 6.53-1.66 12.175-1.66 5.644-4.87 10.071-3.21 4.428-8.08 7.526-4.758 3.1-11.067 4.649v.332q7.526.885 13.503 3.874 5.976 2.877 10.071 7.304 4.206 4.427 6.42 10.072 2.213 5.534 2.213 11.953z" })
+      ]
+    }
+  );
+  var IsotopeCarbon_default = SvgIsotopeCarbon;
+
+  // build/lib-react-tsx/periodic/IsotopeFluor.tsx
+  var React147 = __toESM(require_react(), 1);
+  var import_jsx_runtime147 = __toESM(require_jsx_runtime(), 1);
+  var SvgIsotopeFluor = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime147.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime147.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeWidth: 40,
+            d: "M115.938 31.182h788.88v935.636h-788.88z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M-156.484 424.49q0 10.156-1.016 17.265-.677 6.771-2.708 10.834-1.693 4.062-4.063 6.093-2.37 2.032-5.417 2.032H-312.89v117.812h134.401q3.047 0 5.417 1.693 2.37 1.692 4.063 5.755 2.03 4.062 2.708 10.833 1.016 6.771 1.016 16.927 0 10.157-1.016 16.927-.677 6.771-2.708 11.172-1.693 4.401-4.063 6.433-2.37 1.692-5.417 1.692h-134.4v163.177q0 3.724-2.032 6.433t-7.448 4.74q-5.078 1.692-13.541 2.708-8.464 1.015-21.667 1.015-12.865 0-21.667-1.015-8.463-1.016-13.541-2.709-5.079-2.031-7.448-4.74-2.032-2.708-2.032-6.432V416.026q0-14.896 7.448-21.328 7.787-6.77 18.959-6.77h206.171q3.047 0 5.417 2.03 2.37 1.693 4.063 6.094 2.03 4.063 2.708 11.172 1.016 7.11 1.016 17.266",
+            fontFamily: "sans-serif",
+            fontSize: 693.333,
+            fontWeight: 400,
+            letterSpacing: 0,
+            style: {
+              lineHeight: ".01%"
+            },
+            transform: "translate(817.077 -13.385)",
+            wordSpacing: 0
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M302.787 327.932q0 3.1-.332 5.313-.332 2.103-.996 3.43-.554 1.218-1.328 1.772-.775.553-1.771.553h-79.024q-.885 0-1.66-.553-.775-.554-1.439-1.771-.553-1.328-.885-3.431-.332-2.214-.332-5.313 0-3.21.221-5.312.332-2.214.886-3.542.664-1.328 1.439-1.881.774-.664 1.77-.664h26.674v-93.19l-23.021 12.727q-2.546 1.218-4.206 1.55-1.55.221-2.546-.664-.885-.996-1.217-3.32-.332-2.325-.332-6.53 0-2.657.11-4.317.111-1.77.554-2.988t1.217-1.992q.775-.775 2.103-1.66l30.769-19.922q.553-.443 1.328-.664.885-.333 2.213-.443 1.328-.222 3.431-.222 2.214-.11 5.645-.11 4.205 0 6.751.221 2.656.11 3.984.554 1.329.332 1.771.996.443.664.443 1.66v118.314h23.353q.996 0 1.77.664.886.553 1.44 1.881.663 1.328.885 3.542.332 2.103.332 5.312m116.764-67.07q0 8.743-.885 18.151-.886 9.297-3.431 18.262-2.435 8.965-6.862 17.044-4.317 8.08-11.29 14.167-6.861 5.976-16.822 9.518-9.85 3.542-23.353 3.542-4.76 0-9.518-.664-4.649-.665-8.522-1.66-3.874-.997-6.641-2.104-2.656-1.106-3.874-2.213-1.217-1.217-1.77-3.431-.554-2.214-.554-6.198 0-3.652.11-5.866.222-2.213.665-3.43.553-1.218 1.217-1.55.775-.443 1.771-.443 1.328 0 3.763.775 2.435.774 5.866 1.77 3.542.997 7.969 1.771 4.427.775 9.85.775 9.297 0 15.716-3.32 6.42-3.32 10.404-8.965t5.866-13.06q1.881-7.415 2.103-15.605-5.092 3.21-12.286 5.644-7.194 2.324-16.49 2.324-11.4 0-19.369-2.988t-12.95-8.633-7.304-13.724q-2.213-8.08-2.213-18.261 0-10.736 3.21-19.7 3.209-9.076 9.517-15.606 6.309-6.641 15.717-10.293 9.407-3.653 21.803-3.653 9.96 0 17.376 2.325 7.526 2.324 12.839 6.64 5.423 4.317 8.965 10.514 3.652 6.088 5.644 13.614 2.103 7.526 2.878 16.27.885 8.743.885 18.261m-28.887-3.984q0-11.843-1.328-19.812-1.328-7.968-3.984-12.727t-6.64-6.752-9.298-1.992q-5.201 0-8.964 1.882-3.763 1.77-6.309 5.09-2.435 3.321-3.652 7.859t-1.218 9.96q0 5.867.996 10.404 1.107 4.427 3.32 7.416 2.325 2.877 5.977 4.316t8.854 1.439q6.42 0 12.064-1.882 5.755-1.992 10.182-5.201",
+            fontFamily: "sans-serif",
+            fontWeight: 400,
+            letterSpacing: 0,
+            style: {
+              lineHeight: ".01%"
+            },
+            wordSpacing: 0
+          }
+        )
+      ]
+    }
+  );
+  var IsotopeFluor_default = SvgIsotopeFluor;
+
+  // build/lib-react-tsx/periodic/IsotopeHydrogen.tsx
+  var React148 = __toESM(require_react(), 1);
+  var import_jsx_runtime148 = __toESM(require_jsx_runtime(), 1);
+  var SvgIsotopeHydrogen = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime148.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime148.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime148.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime148.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeWidth: 40,
+            d: "M115.938 31.182h788.88v935.636h-788.88z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime148.jsx)(
           "path",
           {
             stroke: "none",
@@ -33656,7 +33825,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime145.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime148.jsx)(
           "path",
           {
             stroke: "none",
@@ -33677,13 +33846,13 @@
   var IsotopeHydrogen_default = SvgIsotopeHydrogen;
 
   // build/lib-react-tsx/periodic/Mass.tsx
-  var React146 = __toESM(require_react(), 1);
-  var import_jsx_runtime146 = __toESM(require_jsx_runtime(), 1);
+  var React149 = __toESM(require_react(), 1);
+  var import_jsx_runtime149 = __toESM(require_jsx_runtime(), 1);
   var SvgMass = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime146.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime149.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -33695,10 +33864,10 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime146.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)("path", { fill: "none", strokeWidth: 50.639, d: "M129.833 50H870v850H129.833z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime149.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)("path", { fill: "none", strokeWidth: 50.639, d: "M129.833 50H870v850H129.833z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
           "path",
           {
             stroke: "none",
@@ -33714,7 +33883,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime146.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
           "path",
           {
             stroke: "none",
@@ -33735,13 +33904,13 @@
   var Mass_default = SvgMass;
 
   // build/lib-react-tsx/periodic/OxidationState.tsx
-  var React147 = __toESM(require_react(), 1);
-  var import_jsx_runtime147 = __toESM(require_jsx_runtime(), 1);
+  var React150 = __toESM(require_react(), 1);
+  var import_jsx_runtime150 = __toESM(require_jsx_runtime(), 1);
   var SvgOxidationState = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime147.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime150.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -33753,10 +33922,10 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime147.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)("path", { d: "M499.5 99.5v51h151v-51zm1 1h149v49h-149z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)("path", { d: "M95.938 11.182v975.636h828.88V11.182Zm40 40h748.88v895.636h-748.88Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime150.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)("path", { d: "M499.5 99.5v51h151v-51zm1 1h149v49h-149z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)("path", { d: "M95.938 11.182v975.636h828.88V11.182Zm40 40h748.88v895.636h-748.88Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
           "path",
           {
             stroke: "none",
@@ -33772,7 +33941,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
           "path",
           {
             stroke: "none",
@@ -33786,7 +33955,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime147.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
           "path",
           {
             stroke: "none",
@@ -33807,418 +33976,9 @@
   var OxidationState_default = SvgOxidationState;
 
   // build/lib-react-tsx/raman/Assignment.tsx
-  var React148 = __toESM(require_react(), 1);
-  var import_jsx_runtime148 = __toESM(require_jsx_runtime(), 1);
-  var SvgAssignment7 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime148.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime148.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime148.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 39.323,
-            d: "M49.941 730.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime148.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 31.973,
-            d: "M101.35 640.31c87.832-7.236 153.621-89.197 158.583-167.475 11.576-179.157 13.743-241.208 48.179-248.84 74.856.224-33.321 414.775 212.233 419.503 96.256 1.886 87.445-72.992 92.222-151.822 4.962-83.974 4.062-147.326 14.171-213.66 37.85 109.516-11.394 356.845 162.804 360.337 35.649.734 34.68 3.081 66.653 1.427"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime148.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M326.284 161.008c0 7.485-6.092 13.576-13.402 13.576-7.485 0-13.576-6.091-13.576-13.576zm0 0V70.675h-26.978v90.332zm-26.978-90.333c0-7.31 6.091-13.402 13.576-13.402 7.31 0 13.402 6.092 13.402 13.402zm344.868 144.986c0 7.484-6.092 13.576-13.576 13.576-7.31 0-13.402-6.092-13.402-13.576zm0 0v-90.334h-26.978v90.334zm-26.978-90.334c0-7.31 6.091-13.402 13.402-13.402 7.484 0 13.576 6.092 13.576 13.402zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083s-5.145 3.307-8.453 3.307q-3.308 0-5.512-1.651c-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183q-7.166 9.1-7.166 24.81c0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898m110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524m184.856-10.294v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189M641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694ZM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189Z"
-          }
-        )
-      ]
-    }
-  );
-  var Assignment_default7 = SvgAssignment7;
-
-  // build/lib-react-tsx/raman/Overlay.tsx
-  var React149 = __toESM(require_react(), 1);
-  var import_jsx_runtime149 = __toESM(require_jsx_runtime(), 1);
-  var SvgOverlay4 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime149.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime149.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 39.323,
-            d: "M49.941 730.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083s-5.146 3.306-8.453 3.306q-3.308 0-5.512-1.65c-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183q-7.166 9.1-7.166 24.81c0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898m110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042s-7.166-1.287-9.739-4.042c-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525m184.856-10.295v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19m-101.277-23.759c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 31.973,
-            d: "M100 500c87.832 20.764 145.038-71.722 150-150 11.575-179.157.308-263.626 60.762-260.315C399.999 100 331.793 510.236 522.995 509.188 609.72 499.132 599.999 150 629.388 143.706 649.999 150 639.801 504.509 749.999 500c35.627-1.438 106.873 3.124 138.846 1.47"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m96.692 629.177-.736-.184-.735-.183-.734-.369-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.734l-.184-.552v-.735l.184-.734v-.734l.184-.734.184-.735.184-.734.184-.734.184-.552.368-.734.184-.552.368-.735.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.431 27.93z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m129.4 631.567-1.838.183h-2.389l-2.389.184h-4.778l-2.204-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.838l1.654.184h3.492l1.654-.184h1.838l1.837-.184z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M127.562 602.901h2.206l.552.184h.734l.736.184.735.183.552.184.734.369.552.183.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.735.369.552.184.552.368.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734v1.469l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.184.552-.184.734-.368.552-.368.552-.369.735-.368.552-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zm61.924 7.35-.55.552-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184h-3.491l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.183-.552-.369-.55-.367-.734-.369-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.552-.368-.735-.368-.552-.368-.734-.184-.734-.184-.552-.184-.734-.184-.735-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.256z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m214.293 591.876-1.47 1.286-1.839 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.471-2.022 1.47-2.02 1.287-2.022 1.47-2.021 1.286-1.838 1.286-2.021 1.103-15.068-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.286 1.654-1.103 1.655-1.47 1.654-1.286 1.47-1.287 1.655-1.286 1.47-1.286z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m195.55 570.193.55-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.553.55.552.368.55.368.736.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.737-.368.55-.184.734-.368.552-.368.552-.368.734-.368.552-.55.552-.368.553-.552.368-.55.55-18.743-21.683zm58.984-23.704-.368.552-.368.552-.55.552-.553.552-.552.369-.55.55-.55.368-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.184h-.736l-.55.183h-2.205l-.552-.183h-.736l-.734-.184-.736-.184-.55-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.552-.552-.552-.368-.553-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.734v-.737l-.184-.734v-1.286l-.184-.736.184-.552v-1.47l.184-.735.184-.55.184-.736.184-.734.368-.552.368-.736.184-.552.368-.735.55-.552 23.336 16.538z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m270.52 520.58-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.205-1.286 2.02-1.47 2.022-1.287 2.206-1.286 2.02-1.47 2.022-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.919-2.021 1.102-1.838.918-1.654z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m245.347 506.799.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.183h3.493l.734.183h.736l.735.184.55.184.736.184.734.368.55.184.736.368.55.368.735.552.552.368.55.368.55.552.553.552.368.368.552.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.735.184.552.184.734v3.493l-.184.734v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.553-25.174-13.782zm47.04-43.365-.184.734-.184.736-.184.734-.368.55-.369.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.368-.55.183-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.734-.184-.737-.184-.734-.183-.55-.368-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.368-.737-.184-.55-.369-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736v-3.491l.184-.735.184-.736 27.93 6.248z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m295.694 440.832-.184 2.021-.184 2.206-.184 2.02-.184 2.022-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.022-.368 1.654-27.93-6.248.184-1.286.368-1.838.368-1.654.368-1.655.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m296.246 432.747-28.666-1.837-.55 8.085 28.665 1.837z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M267.58 430.91v-.735l.185-.736.183-.552.185-.734.184-.736.184-.734.184-.55.368-.737.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.368.55-.552.55-.368.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.553.368.552.368.552.368.552.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736v2.022l-28.665-1.838zm31.055-55.861v1.47l-.184.735-.185.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.553-.368.552-.368.55-.55.552-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.734-.184-.737-.184-.55-.184-.734-.183-.736-.184-.552-.369-.734-.183-.55-.369-.55-.368-.553-.368-.55-.368-.552-.552-.552-.368-.368-.552-.552-.55-.368-.553-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.734-.184-.737-.184-.552-.184-.734v-.736l-.184-.734v-1.47l28.665.918z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m299.37 346.017-.185 5.329v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.615v-6.8l.184-6.43v-5.146zm-28.85-.368.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.183.737-.184.55-.369.734-.184h.736l.734-.183h.736l.735-.184h1.47l.734.184h.55l.736.183.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.369.552.368.55.552.55.368.369.55.55.552.368.552.55.553.368.552.368.55.368.552.184.552.368.734.184.736.184.552.184.735.184.736.184.734v1.286l.184.734-28.849-.368zm29.217-56.962v1.469l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.368.55-.369.552-.552.552-.552.368-.552.552-.55.368-.55.368-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.736.184h-.735l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.368-.55-.367-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.184-.735-.368-.552-.184-.734-.368-.552-.185-.734v-.736l-.183-.735-.185-.736v-1.47l28.666.368z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m300.472 260.388-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M271.806 259.287v-.737l.184-.734.184-.736v-.734l.184-.737.368-.552.185-.734.368-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.552.368-.552.55-.369.55-.367.55-.553.553-.368.734-.184.552-.366.55-.368.736-.184.55-.183.735-.368h.734l.736-.184.735-.184h2.758l.734.184h.736l.734.184.737.184.552.184.734.368.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zm39.691-41.161-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.184-.55.183h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.183-.734-.184-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.55-.55-.553-.368-.368-.552-.55-.55-.368-.734-.368-.553-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736-.184-.552v-2.757l.184-.736v-.734l.184-.736.184-.552.184-.735.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.552.552-.552.55-.367.55-.552 17.64 22.785z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m315.723 207.835 11.944 7.718-1.102-.184h-4.226l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.184-.552.183-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.184-.368.183-.368.184-.368.184.55-.184-17.64-22.784.55-.369 1.102-.736 1.287-.918 1.286-.736 1.286-.734 1.47-.552 1.287-.552 1.47-.553 1.286-.552 1.47-.552 1.47-.367 1.471-.369 1.287-.368 1.47-.184 1.654-.368 1.47-.184 1.47-.183 1.471-.184h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M329.137 186.887h.736l.734.185h.736l.735.184.734.183.552.369.734.184.55.368.736.184.55.368.55.368.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736v4.409l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.184-.734.183-.736.184h-.734l-.737.184h-1.47l1.47-28.665z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m316.458 209.122-.368-.552-.368-.734 25.542-13.23.55 1.286.368.552z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m342.183 196.443.185.734.368.552.184.736.184.735.184.736.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.184.737-.369.55-.183.552-.369.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184h-1.285l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.367-.55-.184-.734-.368-.55-.368-.55-.184-.553-.552-.55-.368-.55-.368-.552-.552-.55-.368-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.679zm-15.803 63.394v-2.206l.185-.734v-.736l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.552.368-.552.55-.553.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.551.368.55.552.552.369.368.552.55.367.369.552.368.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.735.184.734.184.736v.734l-28.665 2.206z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M327.851 287.767v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zm28.665-.919v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.184-.737.367-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.734-.184-.55-.184-.737-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zm-27.379 58.249v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184h2.204l.734.184h.553l.736.184.734.184.736.184.552.368.734.184.55.368.552.368.737.366.552.369.55.368.55.368.368.552.55.368.55.552.369.552.368.552.368.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55zm.735 28.85v-.184l-.184-9.004-.368-9.004-.184-9.003v-1.654l28.665-.553v1.47l.368 9.005.184 8.82.368 9.004zm28.849-1.103v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.552.553-.55.552-.553.367-.552.369-.55.552-.55.184-.55.366-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.734.184h-3.675l-.736-.184-.55-.183-.734-.184-.736-.184-.55-.184-.735-.184-.552-.366-.736-.368-.552-.368-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.552-.552-.368-.552-.55-.552-.369-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zm-24.991 59.168-.183-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.551-.55.552-.369.552-.366.55-.368.735-.368.55-.184.736-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.737.184h.552l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.735.368.552.184.552.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zm3.676 29.216-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m365.704 457.002.184.735v2.938l-.184.736v.552l-.184.735-.184.734-.368.552-.184.734-.184.552-.368.736-.369.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.368-.552.552-.552.368-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.184-.735.183-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.183-.737-.184-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.368-.553-.368-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.368-.552-.185-.734-.183-.552-.369-.734v-.735l-.184-.736 28.299-4.226zm-14.517 62.475-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.734l.368-.552.184-.737.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.367.552-.369.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.553-.184h.734l.736-.184h2.204l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.735.368.55.368.552.368.736.184.734.368.552zm11.393 28.115-.736-1.655-.918-1.838-.919-2.02-.918-2.022-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.918-2.022-.735-2.204-.736-2.022-.552-2.021 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.838.552 1.837.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.919 1.654.734 1.655z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m388.489 535.28.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.737v1.47l-.184.552v.734l-.184.736-.184.734-.184.552-.184.737-.184.552-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.184-.736.183h-.734l-.736.184h-1.286l-.736-.184h-.735l-.736-.183-.55-.184-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.367-.55-.553-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zm11.025 62.659-.552-.368-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.368-.552-.184-.735-.368-.552-.185-.734-.184-.552-.184-.734-.184-.734-.184-.552v-3.491l.184-.734v-.735l.184-.552.184-.734.184-.552.369-.736.184-.734.368-.552.368-.552.368-.735.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.737-.368.734-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m425.055 616.682-1.654-.918-2.021-1.102-1.838-1.287-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.654-1.286-1.838-1.47-1.654-1.287-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.947.184.366 1.47 1.102 1.287 1.102 1.286 1.103 1.47 1.102 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.103 1.47.918 1.655.918 1.47.918 1.838 1.103zm14.701-24.622.552.367.552.369.55.552.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.553v2.202l-.183.552v.735l-.184.734-.184.734-.184.55-.368.735-.184.734-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.183-.736-.368-.55-.368-.734-.368 14.7-24.623zm44.651 44.467-.736-.184-.734-.184-.736-.183-.55-.184-.735-.369-.552-.183-.736-.368-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.552-.552-.368-.552-.369-.552-.367-.552-.369-.735-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.183-.734.183-.735v-1.468l.184-.734.184-.735.184-.734.184-.734.368-.552.184-.734.368-.552.369-.553.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.553-.368.734-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.183h1.47l.736.183h.734l-4.226 28.482z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M514.91 638.732h-3.49l-2.94-.184h-2.94l-2.94-.183-2.757-.184-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.368 2.39.183 2.388.369 2.389.184 2.389.183 2.572.184 2.572.184h2.39l2.755.184h3.123z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M515.277 610.067h.736l.734.184h.735l.736.184.734.184.55.184.736.184.735.367.55.184.55.369.736.368.55.368.55.368.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.367.552-.369.552-.368.735-.368.552-.368.552-.55.367-.368.552-.552.553-.55.368-.552.368-.55.368-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zm57.514 27.747h-1.472l-.736-.184-.736-.184h-.736l-.55-.184-.736-.184-.737-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.552-.55-.368-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.734-.186-.735v-1.468l-.186-.734v-.735l.186-.734v-.734l.186-.734v-.552l.182-.735.37-.734.186-.55.182-.736.37-.55.364-.552.37-.735.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.367.55-.369.55-.368.557-.368.55-.368.736-.368.55-.184.736-.184.55-.367h.736l.736-.184.737-.184h1.472l.55 28.665zm28.666-.552-.55-28.665-28.666.552.55 28.665z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M600.907 608.597h2.202l.737.184.736.184.556.184.736.184.73.183.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.365.552.555.552.364.552.365.552.37.552.364.552.37.735.364.55.186.552.37.734.182.734.186.735v.552l.186.734v.734l.186.734v.735l-.186.734v.734l-.186.734-.186.735v.734l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.553-.365.552-.55.552-.37.552-.55.552-.55.367-.55.369-.55.552-.556.368-.55.368-.55.184-.737.368-.55.368-.736.184-.736.184-.55.183-.736.184h-.737l-.736.184h-.736l-.55-28.665zm57.878 27.563h-1.467l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.734-.182-.553-.186-.734-.186-.734-.186-.734v-3.671l.186-.735.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.737-.184.736-.184.736-.184.55-.183.736-.184h1.472l.55 28.665z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m687.45 635.609-.55-28.666-28.666.552.55 28.665zm-.55-28.666h2.209l.736.184.736.184.736.184.55.184.736.184.55.368.737.184.55.368.55.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.553.365.552.37.552.364.734.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.735l-.186.734-.182.734-.186.552-.364.734-.186.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.369-.55.183-.55.369-.737.368-.736.184-.55.184-.736.184-.736.184h-.736l-.736.183h-.737l-.55-28.665zm58.068 27.563h-1.472l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.55-.368-.551-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.182-.734-.186-.552-.186-.734-.186-.735v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.186-.735.186-.734.364-.552.186-.734.364-.552.37-.552.364-.735.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.551-.367.55-.369.736-.367.55-.369.556-.367.736-.184.55-.184.737-.184.736-.184.736-.184.736-.184h1.466l.556 28.665zm28.662-.551-.55-28.665-28.667.552.556 28.665z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M773.08 605.29h2.207l.55.183.737.184.736.184.736.184.55.184.736.368.55.184.556.367.736.369.55.367.55.552.55.369.37.368.55.552.366.55.555.552.365.552.37.552.364.552.364.734.37.552.186.552.182.735.186.734.186.734.186.552.182.734v3.672l-.182.734-.186.734-.186.734-.186.552-.182.735-.37.552-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.553-.551.367-.55.369-.736.183-.556.369-.73.368-.556.183-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zm57.882 27.562h-1.472l-.736-.184h-.736l-.737-.183-.55-.184-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.734-.37-.552-.182-.735-.37-.552-.186-.734-.182-.734-.186-.734v-1.287l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.368.551-.368.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.183h.736l.736-.184h.736l.55 28.665z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "m859.813 632.117-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.183h5.882l5.877-.184 5.698-.184 5.697-.184z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M858.893 603.452h1.472l.736.184h.736l.736.184.736.184.55.184.736.183.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.553.364.552.37.552.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.735l-.186.552-.182.734-.37.552-.186.734-.365.552-.37.734-.364.553-.37.55-.364.552-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.73.184-.737.184-.556.184-.736.184h-1.466l-.92-28.666z"
-          }
-        )
-      ]
-    }
-  );
-  var Overlay_default4 = SvgOverlay4;
-
-  // build/lib-react-tsx/reaction/Equilibrium.tsx
-  var React150 = __toESM(require_react(), 1);
-  var import_jsx_runtime150 = __toESM(require_jsx_runtime(), 1);
-  var SvgEquilibrium = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime150.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "56.5 -42 887.5 887.5",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime150.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M126.155 256.41v60.838h-1.321l-1.174-.177-1.247-.176-1.248-.265-1.247-.354-1.174-.353-1.174-.53-1.174-.53-1.101-.617-1.1-.707-1.028-.706-1.027-.795-1.028-.883-.953-.883-.881-.883-1.027-1.06-.88-1.059-.735-1.06-.733-1.147-.734-1.236-.734-1.237-.514-1.236-.587-1.324-.513-1.325-.44-1.413-.44-1.412-.294-1.413-.294-1.501-.22-1.501-.147-1.501-.073-1.59v-3.002l.147-1.59.147-1.5.22-1.501.293-1.501.294-1.413.44-1.413.44-1.413.514-1.324.587-1.324.587-1.237.66-1.236.734-1.236.734-1.148.734-1.06.88-1.059.88-.971.881-.972.954-.882 1.027-.883 1.028-.883 1.027-.619 1.1-.706 1.101-.618 1.174-.53 1.174-.441 1.174-.442 1.248-.353 1.247-.265 1.248-.176 1.247-.177zm701.635 60.838H126.155V256.41H827.79zm0 0V256.41h1.247l1.321.176 1.247.177 1.248.265 1.247.353 1.174.441 1.174.442 1.174.53 1.101.618 1.1.706 1.028.707 1.027.794 1.028.883.953.883.881.883.88 1.06.808 1.06.807 1.059.734 1.148.733 1.236.66 1.236.588 1.236.587 1.325.513 1.324.44 1.413.368 1.413.367 1.412.293 1.502.22 1.5.147 1.502.073 1.589v3.09l-.073 1.59-.147 1.5-.22 1.502-.293 1.501-.367 1.413-.367 1.412-.44 1.413-.514 1.325-.587 1.324-.587 1.236-.66 1.237-.734 1.236-.734 1.148-.734 1.06-.88 1.059-.881 1.06-.88.882-.954.883-1.028.883-1.027.883-1.027.618-1.1.707-1.102.618-1.174.53-1.174.53-1.174.352-1.247.354-1.248.265-1.247.176-1.32.177z",
-            className: "fil0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            strokeLinecap: "round",
-            strokeWidth: 62.964,
-            d: "M867.823 286.865 753.387 373.46",
-            className: "fil1 str0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 62.964,
-            d: "m753.387 200.2 114.436 86.665",
-            className: "fil1 str0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M874.386 486.188v60.837h1.321l1.174-.177 1.247-.176 1.248-.265 1.247-.354 1.174-.353 1.174-.53 1.174-.53 1.101-.617 1.1-.707 1.028-.706 1.027-.795 1.028-.883.953-.883.881-.883 1.027-1.06.88-1.059.735-1.06.733-1.147.734-1.236.734-1.237.514-1.236.587-1.324.513-1.325.44-1.413.44-1.412.294-1.413.294-1.501.22-1.501.147-1.501.073-1.59v-3.002l-.147-1.59-.147-1.5-.22-1.501-.293-1.501-.294-1.413-.44-1.413-.44-1.413-.514-1.324-.587-1.324-.587-1.237-.66-1.236-.734-1.236-.734-1.148-.734-1.06-.88-1.059-.88-.971-.881-.972-.954-.882-1.027-.883-1.028-.883-1.027-.619-1.1-.706-1.101-.618-1.174-.53-1.174-.441-1.174-.442-1.248-.353-1.247-.265-1.248-.176-1.247-.177zm-701.635 60.837h701.635v-60.837H172.751zm0 0v-60.837h-1.247l-1.321.176-1.247.177-1.248.265-1.247.353-1.174.441-1.174.442-1.174.53-1.101.618-1.1.706-1.028.707-1.027.794-1.028.883-.953.883-.881.883-.88 1.06-.808 1.06-.807 1.059-.734 1.148-.733 1.236-.66 1.236-.588 1.236-.587 1.325-.513 1.324-.44 1.413-.368 1.413-.367 1.412-.293 1.502-.22 1.5-.147 1.502-.073 1.589v3.09l.073 1.59.147 1.5.22 1.502.293 1.501.367 1.413.367 1.412.44 1.413.514 1.325.587 1.324.587 1.236.66 1.237.734 1.236.734 1.148.734 1.06.88 1.059.881 1.06.88.882.954.883 1.028.883 1.027.883 1.027.618 1.1.707 1.102.618 1.174.53 1.174.53 1.174.352 1.247.354 1.248.265 1.247.176 1.32.177z",
-            className: "fil0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            strokeLinecap: "round",
-            strokeWidth: 62.964,
-            d: "m132.72 516.643 114.435 86.594",
-            className: "fil1 str0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime150.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 62.964,
-            d: "m247.155 429.978-114.436 86.665",
-            className: "fil1 str0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        )
-      ]
-    }
-  );
-  var Equilibrium_default = SvgEquilibrium;
-
-  // build/lib-react-tsx/reaction/Search.tsx
   var React151 = __toESM(require_react(), 1);
   var import_jsx_runtime151 = __toESM(require_jsx_runtime(), 1);
-  var SvgSearch4 = ({
+  var SvgAssignment7 = ({
     title,
     titleId,
     ...props
@@ -34241,13 +34001,8 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 52.85,
-            d: "M423.177 667.09c-166.181 0-301.72-135.541-301.72-301.721 0-166.183 135.538-301.726 301.72-301.726 166.18 0 301.725 135.544 301.725 301.726 0 166.18-135.544 301.72-301.725 301.72",
-            className: "fil0 str0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
+            strokeWidth: 39.323,
+            d: "M49.941 730.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime151.jsx)(
@@ -34256,138 +34011,30 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 52.868,
-            d: "M875.32 876.926 652.38 578.482l-78.036 58.23 222.94 298.444",
-            className: "fil0 str1",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
+            strokeWidth: 31.973,
+            d: "M101.35 640.31c87.832-7.236 153.621-89.197 158.583-167.475 11.576-179.157 13.743-241.208 48.179-248.84 74.856.224-33.321 414.775 212.233 419.503 96.256 1.886 87.445-72.992 92.222-151.822 4.962-83.974 4.062-147.326 14.171-213.66 37.85 109.516-11.394 356.845 162.804 360.337 35.649.734 34.68 3.081 66.653 1.427"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime151.jsx)(
           "path",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 52.849,
-            d: "M797.267 935.193c11.855 15.876 34.551 19.165 50.425 7.306m.002-.001L868 927.33m0 0c15.874-11.858 19.162-34.545 7.304-50.418",
-            className: "fil0 str1",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime151.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 24.319,
-            d: "M423.177 612.992c-136.382 0-247.623-111.241-247.623-247.623 0-136.389 111.241-247.623 247.623-247.623 136.387 0 247.623 111.234 247.623 247.623 0 136.382-111.236 247.623-247.623 247.623",
-            className: "fil0 str2",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime151.jsxs)(
-          "g",
-          {
-            fillRule: "evenodd",
-            strokeWidth: 35.156,
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision",
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime151.jsx)(
-                "path",
-                {
-                  d: "M264.615 327.049h244.013c8.157 0 14.83 6.673 14.83 14.83v51.23c0 8.156-6.674 14.83-14.83 14.83H264.615c-8.156 0-14.83-6.674-14.83-14.83v-51.23c0-8.157 6.674-14.83 14.83-14.83z",
-                  className: "fil1"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime151.jsx)(
-                "path",
-                {
-                  fillRule: "nonzero",
-                  d: "M474.557 499.986V234.981l132.502 132.538zm66.233-66.234",
-                  className: "fil2"
-                }
-              )
-            ]
+            stroke: "none",
+            d: "M326.284 161.008c0 7.485-6.092 13.576-13.402 13.576-7.485 0-13.576-6.091-13.576-13.576zm0 0V70.675h-26.978v90.332zm-26.978-90.333c0-7.31 6.091-13.402 13.576-13.402 7.31 0 13.402 6.092 13.402 13.402zm344.868 144.986c0 7.484-6.092 13.576-13.576 13.576-7.31 0-13.402-6.092-13.402-13.576zm0 0v-90.334h-26.978v90.334zm-26.978-90.334c0-7.31 6.091-13.402 13.402-13.402 7.484 0 13.576 6.092 13.576 13.402zM447.477 902.976c0 3.312-1.102 6.803-2.94 10.474-2.021 3.677-4.962 7.353-9.004 10.66-4.043 3.306-9.004 6.062-15.252 8.083-6.063 2.205-12.862 3.126-20.58 3.126-16.17 0-28.848-4.777-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.655 2.021-20.213 6.248-28.482 4.042-8.268 10.106-14.7 18.008-19.292 7.9-4.412 17.456-6.798 28.48-6.798 6.8 0 13.047 1.1 18.744 3.121 5.512 1.841 10.473 4.412 14.332 7.533 4.043 3.312 6.983 6.618 9.004 10.11 2.205 3.676 3.124 6.982 3.124 9.923 0 3.306-1.102 5.878-3.491 8.083s-5.145 3.307-8.453 3.307q-3.308 0-5.512-1.651c-1.47-1.106-2.94-2.941-4.778-5.512-3.308-4.962-6.615-8.454-10.106-11.03-3.491-2.385-7.902-3.671-13.414-3.671-7.718 0-13.965 3.121-18.743 9.183q-7.166 9.1-7.166 24.81c0 4.962.734 9.554 1.837 13.78 1.287 4.042 3.124 7.533 5.33 10.475 2.388 2.941 5.144 5.147 8.452 6.612 3.307 1.656 6.798 2.391 10.84 2.391 5.146 0 9.74-1.286 13.415-3.676 3.859-2.571 7.166-6.248 9.923-11.21 1.654-2.936 3.49-5.327 5.328-6.982 1.838-1.651 4.043-2.386 6.8-2.386 3.123 0 5.88 1.1 7.9 3.491 2.205 2.571 3.308 5.142 3.308 7.898m110.25-18.922v34.908c0 5.518-1.102 9.74-3.674 12.5-2.573 2.757-5.88 4.042-9.923 4.042-4.042 0-7.166-1.286-9.739-4.042-2.388-2.76-3.675-6.982-3.675-12.5v-41.89c0-6.618-.184-11.76-.734-15.437-.368-3.676-1.655-6.617-3.675-9.003-1.838-2.391-5.145-3.492-9.372-3.492-8.636 0-14.332 2.942-16.905 8.819-2.756 5.882-4.226 14.335-4.226 25.54v35.463c0 5.518-1.286 9.56-3.675 12.315-2.389 2.942-5.696 4.227-9.739 4.227-4.042 0-7.35-1.286-9.739-4.227-2.572-2.756-3.859-6.797-3.859-12.315v-75.149c0-4.962 1.103-8.823 3.492-11.394 2.205-2.571 5.145-3.862 9.004-3.862 3.491 0 6.43 1.29 9.003 3.677 2.39 2.39 3.492 5.697 3.492 9.924v2.57c4.593-5.512 9.555-9.553 14.7-12.124 5.145-2.576 11.025-3.862 17.273-3.862 6.615 0 12.311 1.47 17.088 4.042 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.513 9.188-9.37 14.333-11.945 4.961-2.571 10.658-4.042 16.722-4.042 7.166 0 13.414 1.47 18.556 4.227 5.332 2.941 9.188 6.983 11.764 12.31 2.201 4.597 3.307 12.13 3.307 22.419v51.264c0 5.518-1.287 9.74-3.677 12.5-2.57 2.757-5.877 4.042-9.924 4.042-4.041 0-7.347-1.286-9.739-4.227-2.57-2.756-3.856-6.797-3.856-12.315V874.68c0-5.512-.186-10.104-.736-13.595-.55-3.311-1.838-6.247-3.859-8.453-2.205-2.391-5.329-3.492-9.739-3.492-3.491 0-6.799 1.1-9.739 3.122-3.123 2.02-5.512 4.776-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.524m184.856-10.294v-67.802c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.57-1.656-1.657-2.39-3.492-2.39-5.698 0-2.571.735-4.412 2.39-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.941 10.845-5.882 14.521-9.004 3.491-3.126 6.798-6.617 9.554-10.474 2.756-3.861 4.592-6.247 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.777 1.106 6.247 3.126 1.656 2.021 2.391 4.962 2.391 8.449v85.628c0 9.924-3.311 14.886-10.109 14.886-3.121 0-5.512-.92-7.348-2.941-1.84-2.021-2.756-5.142-2.756-9.189M641.306 850c-4.412 0-7.903-4.042-7.903-9.189 0-4.961 3.491-9.183 7.903-9.183zm0 0H690v-18.372h-48.694ZM690 831.628c4.412 0 7.903 4.222 7.903 9.183 0 5.147-3.491 9.189-7.903 9.189Z"
           }
         )
       ]
     }
   );
-  var Search_default4 = SvgSearch4;
+  var Assignment_default7 = SvgAssignment7;
 
-  // build/lib-react-tsx/safety/Toxic.tsx
+  // build/lib-react-tsx/raman/Overlay.tsx
   var React152 = __toESM(require_react(), 1);
   var import_jsx_runtime152 = __toESM(require_jsx_runtime(), 1);
-  var SvgToxic2 = ({
+  var SvgOverlay4 = ({
     title,
     titleId,
     ...props
   }) => /* @__PURE__ */ (0, import_jsx_runtime152.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "124.4 43.1 760 760",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime152.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M336.034 221.151h103.78v-97.184h129.385v97.184h103.585c32.007 0 58.195 26.188 58.195 58.194v427.338c0 32.2-26.188 58.391-58.195 58.391h-336.75c-32.007 0-58.194-26.19-58.194-58.39v-427.34c0-32.006 26.187-58.194 58.194-58.194"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 58.194,
-            d: "M420.027 156.943h168.958V81.097H420.027z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
-          "path",
-          {
-            fill: "#fefefe",
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M420.027 156.943h168.958V81.097H420.027zM649.7 393.406c0-60.328-64.983-109.211-145.29-109.211-80.115 0-145.099 48.883-145.099 109.211 0 32.201 18.622 61.104 48.108 81.084a43 43 0 0 0-.581 7.177c0 20.95 13.772 38.796 32.588 45.198.581 13.578 11.833 24.441 25.606 24.441h78.95c13.772 0 24.83-10.863 25.411-24.441 19.01-6.402 32.59-24.248 32.59-45.198 0-2.521-.195-4.85-.584-7.177 29.68-19.98 48.302-48.883 48.302-81.084M596.357 652.95c-.777 2.139-1.358 4.076-1.746 6.21l-48.884-21.339 55.479-24.052v.385c5.237 11.833 18.816 17.267 30.649 12.029 11.832-5.043 17.264-18.814 12.027-30.458a23.75 23.75 0 0 0-13.58-12.8c5.432-7.178 7.178-17.07 3.299-25.994-5.82-13.19-20.95-19.204-33.947-13.385-13.19 5.626-19.204 20.756-13.385 33.947.777 1.94 1.94 3.686 3.298 5.432l-83.024 36.082-2.134.965-1.94-.965-83.023-36.082c1.358-1.747 2.328-3.492 3.297-5.432 5.626-13.19-.388-28.321-13.384-33.947-12.997-5.82-28.322.195-33.947 13.385a25.52 25.52 0 0 0 3.298 25.994c-6.013 2.133-11.057 6.596-13.773 12.8-5.043 11.644.388 25.415 12.027 30.458 11.833 5.238 25.605-.196 30.649-12.03l.194-.384 55.284 24.052-48.883 21.339c-.194-2.134-.777-4.071-1.746-6.21-5.625-12.995-20.756-19.01-33.947-13.38-12.997 5.818-19.01 20.947-13.384 33.942 3.88 9.12 12.415 14.743 21.532 15.519-2.716 5.629-2.91 12.414-.195 18.624 5.238 11.833 18.817 17.262 30.65 12.029 11.833-5.048 17.07-18.82 12.026-30.653l-.194-.192 75.458-32.982 75.653 32.982-.194.192c-5.237 11.833.194 25.605 12.027 30.653 11.638 5.233 25.411-.196 30.455-12.029 2.715-6.21 2.522-12.995 0-18.624 9.117-.777 17.458-6.4 21.337-15.52 5.82-12.994-.194-28.123-13.384-33.942-12.997-5.629-28.127.385-33.947 13.38zM441.172 437.246c-24.248 0-43.84-19.786-43.84-44.034s19.592-43.84 43.84-43.84c24.247 0 43.84 19.593 43.84 43.84s-19.593 44.034-43.84 44.034m126.669 0c-24.248 0-44.034-19.786-44.034-44.034s19.786-43.84 44.034-43.84 43.84 19.593 43.84 43.84-19.593 44.034-43.84 44.034"
-          }
-        )
-      ]
-    }
-  );
-  var Toxic_default2 = SvgToxic2;
-
-  // build/lib-react-tsx/spectra/Analyse.tsx
-  var React153 = __toESM(require_react(), 1);
-  var import_jsx_runtime153 = __toESM(require_jsx_runtime(), 1);
-  var SvgAnalyse = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime153.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -34399,250 +34046,348 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime153.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime152.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeWidth: 39.323,
-            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+            d: "M49.941 730.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M448.044 905.942c0 3.311-1.102 6.802-2.94 10.474-2.021 3.676-4.962 7.353-9.004 10.66-4.043 3.305-9.004 6.061-15.252 8.082-6.063 2.206-12.862 3.126-20.58 3.126-16.17 0-28.849-4.776-38.036-14.15-9.004-9.554-13.598-22.234-13.598-38.22 0-10.654 2.021-20.213 6.248-28.481 4.042-8.268 10.106-14.7 18.008-19.293 7.9-4.411 17.456-6.797 28.48-6.797 6.8 0 13.047 1.1 18.744 3.12 5.512 1.842 10.473 4.413 14.332 7.534 4.043 3.311 6.983 6.618 9.004 10.109 2.205 3.676 3.124 6.983 3.124 9.924 0 3.306-1.102 5.877-3.491 8.083s-5.146 3.306-8.453 3.306q-3.308 0-5.512-1.65c-1.47-1.106-2.94-2.942-4.778-5.513-3.308-4.962-6.615-8.453-10.106-11.03-3.492-2.385-7.902-3.67-13.414-3.67-7.718 0-13.965 3.12-18.743 9.183q-7.166 9.1-7.166 24.81c0 4.962.734 9.553 1.837 13.78 1.286 4.042 3.124 7.533 5.33 10.474 2.388 2.941 5.144 5.147 8.451 6.613 3.308 1.656 6.8 2.39 10.842 2.39 5.145 0 9.739-1.285 13.414-3.676 3.858-2.57 7.166-6.247 9.922-11.21 1.655-2.935 3.492-5.326 5.329-6.982 1.838-1.65 4.043-2.386 6.8-2.386 3.123 0 5.879 1.1 7.9 3.492 2.205 2.57 3.308 5.142 3.308 7.898m110.25-18.922v34.908c0 5.517-1.102 9.739-3.675 12.5-2.572 2.756-5.88 4.042-9.922 4.042s-7.166-1.287-9.739-4.042c-2.389-2.761-3.675-6.983-3.675-12.5v-41.891c0-6.618-.184-11.76-.734-15.436-.369-3.677-1.655-6.618-3.675-9.004-1.838-2.39-5.145-3.491-9.372-3.491-8.636 0-14.333 2.941-16.905 8.818-2.756 5.883-4.226 14.336-4.226 25.54v35.464c0 5.517-1.286 9.559-3.675 12.315-2.389 2.941-5.696 4.227-9.739 4.227-4.042 0-7.35-1.287-9.739-4.227-2.572-2.756-3.859-6.798-3.859-12.315v-75.15c0-4.961 1.103-8.823 3.492-11.394 2.205-2.57 5.145-3.861 9.004-3.861 3.491 0 6.43 1.29 9.003 3.676 2.39 2.391 3.492 5.697 3.492 9.924v2.571c4.593-5.512 9.555-9.554 14.7-12.125 5.145-2.576 11.025-3.861 17.273-3.861 6.615 0 12.31 1.47 17.088 4.041 4.778 2.576 8.637 6.618 11.76 11.945 4.41-5.512 9.188-9.369 14.333-11.945 4.961-2.57 10.658-4.041 16.721-4.041 7.167 0 13.415 1.47 18.557 4.227 5.332 2.94 9.188 6.982 11.764 12.31 2.201 4.596 3.307 12.13 3.307 22.418v51.265c0 5.517-1.287 9.739-3.677 12.5-2.57 2.756-5.877 4.042-9.924 4.042-4.041 0-7.347-1.287-9.739-4.227-2.57-2.756-3.856-6.798-3.856-12.315v-44.282c0-5.512-.186-10.104-.736-13.595-.55-3.312-1.838-6.248-3.86-8.454-2.204-2.39-5.328-3.491-9.738-3.491-3.491 0-6.799 1.1-9.739 3.121-3.123 2.02-5.512 4.777-7.35 8.268-1.837 4.412-2.94 12.315-2.94 23.525m184.856-10.295v-67.801c-12.68 9.554-21.318 14.516-25.545 14.516-2.2 0-4.041-.92-5.692-2.571-1.656-1.656-2.391-3.492-2.391-5.698 0-2.57.736-4.411 2.391-5.697 1.65-1.1 4.407-2.756 8.448-4.592 6.068-2.94 10.844-5.882 14.521-9.003 3.491-3.126 6.798-6.618 9.554-10.474 2.756-3.862 4.592-6.248 5.512-7.168.736-.92 2.386-1.47 4.777-1.47 2.57 0 4.776 1.106 6.247 3.126 1.656 2.02 2.391 4.962 2.391 8.448v85.629c0 9.923-3.311 14.885-10.109 14.885-3.121 0-5.512-.92-7.348-2.94-1.84-2.022-2.756-5.143-2.756-9.19m-101.277-23.759c-4.412 0-7.903-4.042-7.903-9.19 0-4.961 3.491-9.183 7.903-9.183zm0 0h48.694v-18.373h-48.694zm48.694-18.373c4.412 0 7.903 4.222 7.903 9.184 0 5.147-3.491 9.189-7.903 9.189z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
             strokeWidth: 31.973,
-            d: "M97.35 628.573c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.15 86.179-252.84 158.21-1.105 12.679 436.775 212.233 419.503 95.92-8.27 107.445-74.992 112.222-153.822 4.962-83.974 7.324-167.606 17.433-233.94 37.85 109.516-34.656 379.125 139.542 382.617 35.649.734 64.68-.919 96.653-2.573"
+            d: "M100 500c87.832 20.764 145.038-71.722 150-150 11.575-179.157.308-263.626 60.762-260.315C399.999 100 331.793 510.236 522.995 509.188 609.72 499.132 599.999 150 629.388 143.706 649.999 150 639.801 504.509 749.999 500c35.627-1.438 106.873 3.124 138.846 1.47"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m94.042 757.75-.736-.184-.735-.183-.734-.369-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.734l-.184-.552v-.735l.184-.734v-.734l.184-.734.184-.735.184-.734.184-.734.184-.552.368-.734.184-.552.368-.735.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.431 27.93z"
+            d: "m96.692 629.177-.736-.184-.735-.183-.734-.369-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.734l-.184-.552v-.735l.184-.734v-.734l.184-.734.184-.735.184-.734.184-.734.184-.552.368-.734.184-.552.368-.735.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.431 27.93z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m126.75 760.14-1.838.183h-2.389l-2.389.184h-4.778l-2.204-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.838l1.654.184h3.492l1.654-.184h1.838l1.837-.184z"
+            d: "m129.4 631.567-1.838.183h-2.389l-2.389.184h-4.778l-2.204-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.838l1.654.184h3.492l1.654-.184h1.838l1.837-.184z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M124.912 731.474h2.206l.552.184h.734l.736.184.735.183.552.184.734.369.552.183.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.735.369.552.184.552.368.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734v1.469l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.184.552-.184.734-.368.552-.368.552-.369.735-.368.552-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zm61.924 7.35-.55.552-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184h-3.491l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.183-.552-.369-.55-.367-.734-.369-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.552-.368-.735-.368-.552-.368-.734-.184-.734-.184-.552-.184-.734-.184-.735-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.256z"
+            d: "M127.562 602.901h2.206l.552.184h.734l.736.184.735.183.552.184.734.369.552.183.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.735.369.552.184.552.368.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734v1.469l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.184.552-.184.734-.368.552-.368.552-.369.735-.368.552-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zm61.924 7.35-.55.552-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184h-3.491l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.183-.552-.369-.55-.367-.734-.369-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.552-.368-.735-.368-.552-.368-.734-.184-.734-.184-.552-.184-.734-.184-.735-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.256z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m211.643 720.449-1.47 1.286-1.839 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.471-2.022 1.47-2.02 1.287-2.022 1.47-2.021 1.286-1.838 1.286-2.021 1.103-15.068-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.286 1.654-1.103 1.655-1.47 1.654-1.286 1.47-1.287 1.655-1.286 1.47-1.286z"
+            d: "m214.293 591.876-1.47 1.286-1.839 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.471-2.022 1.47-2.02 1.287-2.022 1.47-2.021 1.286-1.838 1.286-2.021 1.103-15.068-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.286 1.654-1.103 1.655-1.47 1.654-1.286 1.47-1.287 1.655-1.286 1.47-1.286z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m192.9 698.766.55-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.553.55.552.368.55.368.736.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.737-.368.55-.184.734-.368.552-.368.552-.368.734-.368.552-.55.552-.368.553-.552.368-.55.55-18.743-21.683zm58.984-23.704-.368.552-.368.552-.55.552-.553.552-.552.369-.55.55-.55.368-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.184h-.736l-.55.183h-2.205l-.552-.183h-.736l-.734-.184-.736-.184-.55-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.552-.552-.552-.368-.553-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.734v-.737l-.184-.734v-1.286l-.184-.736.184-.552v-1.47l.184-.735.184-.55.184-.736.184-.734.368-.552.368-.736.184-.552.368-.735.55-.552 23.336 16.538z"
+            d: "m195.55 570.193.55-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.553.55.552.368.55.368.736.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.737-.368.55-.184.734-.368.552-.368.552-.368.734-.368.552-.55.552-.368.553-.552.368-.55.55-18.743-21.683zm58.984-23.704-.368.552-.368.552-.55.552-.553.552-.552.369-.55.55-.55.368-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.184h-.736l-.55.183h-2.205l-.552-.183h-.736l-.734-.184-.736-.184-.55-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.552-.552-.552-.368-.553-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.734v-.737l-.184-.734v-1.286l-.184-.736.184-.552v-1.47l.184-.735.184-.55.184-.736.184-.734.368-.552.368-.736.184-.552.368-.735.55-.552 23.336 16.538z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m267.87 649.153-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.205-1.286 2.02-1.47 2.022-1.287 2.206-1.286 2.02-1.47 2.022-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.919-2.021 1.102-1.838.918-1.654z"
+            d: "m270.52 520.58-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.205-1.286 2.02-1.47 2.022-1.287 2.206-1.286 2.02-1.47 2.022-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.919-2.021 1.102-1.838.918-1.654z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m242.697 635.372.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.183h3.493l.734.183h.736l.735.184.55.184.736.184.734.368.55.184.736.368.55.368.735.552.552.368.55.368.55.552.553.552.368.368.552.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.735.184.552.184.734v3.493l-.184.734v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.553-25.174-13.782zm47.04-43.365-.184.734-.184.736-.184.734-.368.55-.369.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.368-.55.183-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.734-.184-.737-.184-.734-.183-.55-.368-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.368-.737-.184-.55-.369-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736v-3.491l.184-.735.184-.736 27.93 6.248z"
+            d: "m245.347 506.799.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.183h3.493l.734.183h.736l.735.184.55.184.736.184.734.368.55.184.736.368.55.368.735.552.552.368.55.368.55.552.553.552.368.368.552.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.735.184.552.184.734v3.493l-.184.734v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.553-25.174-13.782zm47.04-43.365-.184.734-.184.736-.184.734-.368.55-.369.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.368-.55.183-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.734-.184-.737-.184-.734-.183-.55-.368-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.368-.737-.184-.55-.369-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736v-3.491l.184-.735.184-.736 27.93 6.248z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m293.044 569.405-.184 2.021-.184 2.206-.184 2.02-.184 2.022-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.022-.368 1.654-27.93-6.248.184-1.286.368-1.838.368-1.654.368-1.655.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z"
+            d: "m295.694 440.832-.184 2.021-.184 2.206-.184 2.02-.184 2.022-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.022-.368 1.654-27.93-6.248.184-1.286.368-1.838.368-1.654.368-1.655.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m293.596 561.32-28.666-1.837-.55 8.085 28.665 1.837z"
+            d: "m296.246 432.747-28.666-1.837-.55 8.085 28.665 1.837z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M264.93 559.483v-.735l.185-.736.183-.552.185-.734.184-.736.184-.734.184-.55.368-.737.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.368.55-.552.55-.368.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.553.368.552.368.552.368.552.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736v2.022l-28.665-1.838zm31.055-55.861v1.47l-.184.735-.185.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.553-.368.552-.368.55-.55.552-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.734-.184-.737-.184-.55-.184-.734-.183-.736-.184-.552-.369-.734-.183-.55-.369-.55-.368-.553-.368-.55-.368-.552-.552-.552-.368-.368-.552-.552-.55-.368-.553-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.734-.184-.737-.184-.552-.184-.734v-.736l-.184-.734v-1.47l28.665.918z"
+            d: "M267.58 430.91v-.735l.185-.736.183-.552.185-.734.184-.736.184-.734.184-.55.368-.737.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.368.55-.552.55-.368.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.553.368.552.368.552.368.552.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736v2.022l-28.665-1.838zm31.055-55.861v1.47l-.184.735-.185.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.553-.368.552-.368.55-.55.552-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.734-.184-.737-.184-.55-.184-.734-.183-.736-.184-.552-.369-.734-.183-.55-.369-.55-.368-.553-.368-.55-.368-.552-.552-.552-.368-.368-.552-.552-.55-.368-.553-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.734-.184-.737-.184-.552-.184-.734v-.736l-.184-.734v-1.47l28.665.918z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m296.72 474.59-.185 5.329v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.615v-6.8l.184-6.43v-5.146zm-28.85-.368.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.183.737-.184.55-.369.734-.184h.736l.734-.183h.736l.735-.184h1.47l.734.184h.55l.736.183.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.369.552.368.55.552.55.368.369.55.55.552.368.552.55.553.368.552.368.55.368.552.184.552.368.734.184.736.184.552.184.735.184.736.184.734v1.286l.184.734-28.849-.368zm29.217-56.962v1.469l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.368.55-.369.552-.552.552-.552.368-.552.552-.55.368-.55.368-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.736.184h-.735l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.368-.55-.367-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.184-.735-.368-.552-.184-.734-.368-.552-.185-.734v-.736l-.183-.735-.185-.736v-1.47l28.666.368z"
+            d: "m299.37 346.017-.185 5.329v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.615v-6.8l.184-6.43v-5.146zm-28.85-.368.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.183.737-.184.55-.369.734-.184h.736l.734-.183h.736l.735-.184h1.47l.734.184h.55l.736.183.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.369.552.368.55.552.55.368.369.55.55.552.368.552.55.553.368.552.368.55.368.552.184.552.368.734.184.736.184.552.184.735.184.736.184.734v1.286l.184.734-28.849-.368zm29.217-56.962v1.469l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.368.55-.369.552-.552.552-.552.368-.552.552-.55.368-.55.368-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.736.184h-.735l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.368-.55-.367-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.184-.735-.368-.552-.184-.734-.368-.552-.185-.734v-.736l-.183-.735-.185-.736v-1.47l28.666.368z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m297.822 388.961-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z"
+            d: "m300.472 260.388-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M269.156 387.86v-.737l.184-.734.184-.736v-.734l.184-.737.368-.552.185-.734.368-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.552.368-.552.55-.369.55-.367.55-.553.553-.368.734-.184.552-.366.55-.368.736-.184.55-.183.735-.368h.734l.736-.184.735-.184h2.758l.734.184h.736l.734.184.737.184.552.184.734.368.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zm39.691-41.161-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.184-.55.183h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.183-.734-.184-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.55-.55-.553-.368-.368-.552-.55-.55-.368-.734-.368-.553-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736-.184-.552v-2.757l.184-.736v-.734l.184-.736.184-.552.184-.735.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.552.552-.552.55-.367.55-.552 17.64 22.785z"
+            d: "M271.806 259.287v-.737l.184-.734.184-.736v-.734l.184-.737.368-.552.185-.734.368-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.552.368-.552.55-.369.55-.367.55-.553.553-.368.734-.184.552-.366.55-.368.736-.184.55-.183.735-.368h.734l.736-.184.735-.184h2.758l.734.184h.736l.734.184.737.184.552.184.734.368.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zm39.691-41.161-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.184-.55.183h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.183-.734-.184-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.55-.55-.553-.368-.368-.552-.55-.55-.368-.734-.368-.553-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736-.184-.552v-2.757l.184-.736v-.734l.184-.736.184-.552.184-.735.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.552.552-.552.55-.367.55-.552 17.64 22.785z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m313.073 336.408 11.944 7.718-1.102-.184h-4.226l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.184-.552.183-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.184-.368.183-.368.184-.368.184.55-.184-17.64-22.784.55-.369 1.102-.736 1.287-.918 1.286-.736 1.286-.734 1.47-.552 1.287-.552 1.47-.553 1.286-.552 1.47-.552 1.47-.367 1.471-.369 1.287-.368 1.47-.184 1.654-.368 1.47-.184 1.47-.183 1.471-.184h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z"
+            d: "m315.723 207.835 11.944 7.718-1.102-.184h-4.226l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.184-.552.183-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.184-.368.183-.368.184-.368.184.55-.184-17.64-22.784.55-.369 1.102-.736 1.287-.918 1.286-.736 1.286-.734 1.47-.552 1.287-.552 1.47-.553 1.286-.552 1.47-.552 1.47-.367 1.471-.369 1.287-.368 1.47-.184 1.654-.368 1.47-.184 1.47-.183 1.471-.184h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M326.487 315.46h.736l.734.185h.736l.735.184.734.183.552.369.734.184.55.368.736.184.55.368.55.368.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736v4.409l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.184-.734.183-.736.184h-.734l-.737.184h-1.47l1.47-28.665z"
+            d: "M329.137 186.887h.736l.734.185h.736l.735.184.734.183.552.369.734.184.55.368.736.184.55.368.55.368.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736v4.409l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.184-.734.183-.736.184h-.734l-.737.184h-1.47l1.47-28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m313.808 337.695-.368-.552-.368-.734 25.542-13.23.55 1.286.368.552z"
+            d: "m316.458 209.122-.368-.552-.368-.734 25.542-13.23.55 1.286.368.552z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m339.533 325.016.185.734.368.552.184.736.184.735.184.736.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.184.737-.369.55-.183.552-.369.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184h-1.285l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.367-.55-.184-.734-.368-.55-.368-.55-.184-.553-.552-.55-.368-.55-.368-.552-.552-.55-.368-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.679zM323.73 388.41v-2.206l.185-.734v-.736l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.552.368-.552.55-.553.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.551.368.55.552.552.369.368.552.55.367.369.552.368.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.735.184.734.184.736v.734l-28.665 2.206z"
+            d: "m342.183 196.443.185.734.368.552.184.736.184.735.184.736.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.184.737-.369.55-.183.552-.369.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184h-1.285l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.367-.55-.184-.734-.368-.55-.368-.55-.184-.553-.552-.55-.368-.55-.368-.552-.552-.55-.368-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.679zm-15.803 63.394v-2.206l.185-.734v-.736l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.552.368-.552.55-.553.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.551.368.55.552.552.369.368.552.55.367.369.552.368.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.735.184.734.184.736v.734l-28.665 2.206z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M325.201 416.34v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zm28.665-.919v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.184-.737.367-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.734-.184-.55-.184-.737-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zm-27.379 58.249v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184h2.204l.734.184h.553l.736.184.734.184.736.184.552.368.734.184.55.368.552.368.737.366.552.369.55.368.55.368.368.552.55.368.55.552.369.552.368.552.368.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55zm.735 28.85v-.184l-.184-9.004-.368-9.004-.184-9.003v-1.654l28.665-.553v1.47l.368 9.005.184 8.82.368 9.004zm28.849-1.103v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.552.553-.55.552-.553.367-.552.369-.55.552-.55.184-.55.366-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.734.184h-3.675l-.736-.184-.55-.183-.734-.184-.736-.184-.55-.184-.735-.184-.552-.366-.736-.368-.552-.368-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.552-.552-.368-.552-.55-.552-.369-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zm-24.991 59.168-.183-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.551-.55.552-.369.552-.366.55-.368.735-.368.55-.184.736-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.737.184h.552l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.735.368.552.184.552.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zm3.676 29.216-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z"
+            d: "M327.851 287.767v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zm28.665-.919v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.184-.737.367-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.734-.184-.55-.184-.737-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zm-27.379 58.249v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184h2.204l.734.184h.553l.736.184.734.184.736.184.552.368.734.184.55.368.552.368.737.366.552.369.55.368.55.368.368.552.55.368.55.552.369.552.368.552.368.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55zm.735 28.85v-.184l-.184-9.004-.368-9.004-.184-9.003v-1.654l28.665-.553v1.47l.368 9.005.184 8.82.368 9.004zm28.849-1.103v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.552.553-.55.552-.553.367-.552.369-.55.552-.55.184-.55.366-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.734.184h-3.675l-.736-.184-.55-.183-.734-.184-.736-.184-.55-.184-.735-.184-.552-.366-.736-.368-.552-.368-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.552-.552-.368-.552-.55-.552-.369-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zm-24.991 59.168-.183-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.551-.55.552-.369.552-.366.55-.368.735-.368.55-.184.736-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.737.184h.552l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.735.368.552.184.552.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zm3.676 29.216-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m363.054 585.575.184.735v2.938l-.184.736v.552l-.184.735-.184.734-.368.552-.184.734-.184.552-.368.736-.369.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.368-.552.552-.552.368-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.184-.735.183-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.183-.737-.184-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.368-.553-.368-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.368-.552-.185-.734-.183-.552-.369-.734v-.735l-.184-.736 28.299-4.226zm-14.517 62.475-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.734l.368-.552.184-.737.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.367.552-.369.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.553-.184h.734l.736-.184h2.204l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.735.368.55.368.552.368.736.184.734.368.552zm11.393 28.115-.736-1.655-.918-1.838-.919-2.02-.918-2.022-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.918-2.022-.735-2.204-.736-2.022-.552-2.021 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.838.552 1.837.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.919 1.654.734 1.655z"
+            d: "m365.704 457.002.184.735v2.938l-.184.736v.552l-.184.735-.184.734-.368.552-.184.734-.184.552-.368.736-.369.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.368-.552.552-.552.368-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.184-.735.183-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.183-.737-.184-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.368-.553-.368-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.368-.552-.185-.734-.183-.552-.369-.734v-.735l-.184-.736 28.299-4.226zm-14.517 62.475-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.734l.368-.552.184-.737.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.367.552-.369.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.553-.184h.734l.736-.184h2.204l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.735.368.55.368.552.368.736.184.734.368.552zm11.393 28.115-.736-1.655-.918-1.838-.919-2.02-.918-2.022-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.918-2.022-.735-2.204-.736-2.022-.552-2.021 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.838.552 1.837.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.919 1.654.734 1.655z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m385.839 663.853.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.737v1.47l-.184.552v.734l-.184.736-.184.734-.184.552-.184.737-.184.552-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.184-.736.183h-.734l-.736.184h-1.286l-.736-.184h-.735l-.736-.183-.55-.184-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.367-.55-.553-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zm11.025 62.659-.552-.368-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.368-.552-.184-.735-.368-.552-.185-.734-.184-.552-.184-.734-.184-.734-.184-.552v-3.491l.184-.734v-.735l.184-.552.184-.734.184-.552.369-.736.184-.734.368-.552.368-.552.368-.735.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.737-.368.734-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z"
+            d: "m388.489 535.28.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.737v1.47l-.184.552v.734l-.184.736-.184.734-.184.552-.184.737-.184.552-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.184-.736.183h-.734l-.736.184h-1.286l-.736-.184h-.735l-.736-.183-.55-.184-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.367-.55-.553-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zm11.025 62.659-.552-.368-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.368-.552-.184-.735-.368-.552-.185-.734-.184-.552-.184-.734-.184-.734-.184-.552v-3.491l.184-.734v-.735l.184-.552.184-.734.184-.552.369-.736.184-.734.368-.552.368-.552.368-.735.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.737-.368.734-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m422.405 745.255-1.654-.918-2.021-1.102-1.838-1.287-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.654-1.286-1.838-1.47-1.654-1.287-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.947.184.366 1.47 1.102 1.287 1.102 1.286 1.103 1.47 1.102 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.103 1.47.918 1.655.918 1.47.918 1.838 1.103zm14.701-24.622.552.367.552.369.55.552.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.553v2.202l-.183.552v.735l-.184.734-.184.734-.184.55-.368.735-.184.734-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.183-.736-.368-.55-.368-.734-.368 14.7-24.623zm44.651 44.467-.736-.184-.734-.184-.736-.183-.55-.184-.735-.369-.552-.183-.736-.368-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.552-.552-.368-.552-.369-.552-.367-.552-.369-.735-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.183-.734.183-.735v-1.468l.184-.734.184-.735.184-.734.184-.734.368-.552.184-.734.368-.552.369-.553.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.553-.368.734-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.183h1.47l.736.183h.734l-4.226 28.482z"
+            d: "m425.055 616.682-1.654-.918-2.021-1.102-1.838-1.287-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.654-1.286-1.838-1.47-1.654-1.287-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.947.184.366 1.47 1.102 1.287 1.102 1.286 1.103 1.47 1.102 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.103 1.47.918 1.655.918 1.47.918 1.838 1.103zm14.701-24.622.552.367.552.369.55.552.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.553v2.202l-.183.552v.735l-.184.734-.184.734-.184.55-.368.735-.184.734-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.183-.736-.368-.55-.368-.734-.368 14.7-24.623zm44.651 44.467-.736-.184-.734-.184-.736-.183-.55-.184-.735-.369-.552-.183-.736-.368-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.552-.552-.368-.552-.369-.552-.367-.552-.369-.735-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.183-.734.183-.735v-1.468l.184-.734.184-.735.184-.734.184-.734.368-.552.184-.734.368-.552.369-.553.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.553-.368.734-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.183h1.47l.736.183h.734l-4.226 28.482z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M512.26 767.305h-3.49l-2.94-.184h-2.94l-2.94-.183-2.757-.184-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.368 2.39.183 2.388.369 2.389.184 2.389.183 2.572.184 2.572.184h2.39l2.755.184h3.123z"
+            d: "M514.91 638.732h-3.49l-2.94-.184h-2.94l-2.94-.183-2.757-.184-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.368 2.39.183 2.388.369 2.389.184 2.389.183 2.572.184 2.572.184h2.39l2.755.184h3.123z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M512.627 738.64h.736l.734.184h.735l.736.184.734.184.55.184.736.184.735.367.55.184.55.369.736.368.55.368.55.368.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.367.552-.369.552-.368.735-.368.552-.368.552-.55.367-.368.552-.552.553-.55.368-.552.368-.55.368-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zm57.514 27.747h-1.472l-.736-.184-.736-.184h-.736l-.55-.184-.736-.184-.737-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.552-.55-.368-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.734-.186-.735v-1.468l-.186-.734v-.735l.186-.734v-.734l.186-.734v-.552l.182-.735.37-.734.186-.55.182-.736.37-.55.364-.552.37-.735.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.367.55-.369.55-.368.557-.368.55-.368.736-.368.55-.184.736-.184.55-.367h.736l.736-.184.737-.184h1.472l.55 28.665zm28.666-.552-.55-28.665-28.666.552.55 28.665z"
+            d: "M515.277 610.067h.736l.734.184h.735l.736.184.734.184.55.184.736.184.735.367.55.184.55.369.736.368.55.368.55.368.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.367.552-.369.552-.368.735-.368.552-.368.552-.55.367-.368.552-.552.553-.55.368-.552.368-.55.368-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zm57.514 27.747h-1.472l-.736-.184-.736-.184h-.736l-.55-.184-.736-.184-.737-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.552-.55-.368-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.734-.186-.735v-1.468l-.186-.734v-.735l.186-.734v-.734l.186-.734v-.552l.182-.735.37-.734.186-.55.182-.736.37-.55.364-.552.37-.735.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.367.55-.369.55-.368.557-.368.55-.368.736-.368.55-.184.736-.184.55-.367h.736l.736-.184.737-.184h1.472l.55 28.665zm28.666-.552-.55-28.665-28.666.552.55 28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M598.257 737.17h2.202l.737.184.736.184.556.184.736.184.73.183.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.365.552.555.552.364.552.365.552.37.552.364.552.37.735.364.55.186.552.37.734.182.734.186.735v.552l.186.734v.734l.186.734v.735l-.186.734v.734l-.186.734-.186.735v.734l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.553-.365.552-.55.552-.37.552-.55.552-.55.367-.55.369-.55.552-.556.368-.55.368-.55.184-.737.368-.55.368-.736.184-.736.184-.55.183-.736.184h-.737l-.736.184h-.736l-.55-28.665zm57.878 27.563h-1.467l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.734-.182-.553-.186-.734-.186-.734-.186-.734v-3.671l.186-.735.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.737-.184.736-.184.736-.184.55-.183.736-.184h1.472l.55 28.665z"
+            d: "M600.907 608.597h2.202l.737.184.736.184.556.184.736.184.73.183.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.365.552.555.552.364.552.365.552.37.552.364.552.37.735.364.55.186.552.37.734.182.734.186.735v.552l.186.734v.734l.186.734v.735l-.186.734v.734l-.186.734-.186.735v.734l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.553-.365.552-.55.552-.37.552-.55.552-.55.367-.55.369-.55.552-.556.368-.55.368-.55.184-.737.368-.55.368-.736.184-.736.184-.55.183-.736.184h-.737l-.736.184h-.736l-.55-28.665zm57.878 27.563h-1.467l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.734-.182-.553-.186-.734-.186-.734-.186-.734v-3.671l.186-.735.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.737-.184.736-.184.736-.184.55-.183.736-.184h1.472l.55 28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m684.8 764.182-.55-28.666-28.666.552.55 28.665zm-.55-28.666h2.209l.736.184.736.184.736.184.55.184.736.184.55.368.737.184.55.368.55.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.553.365.552.37.552.364.734.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.735l-.186.734-.182.734-.186.552-.364.734-.186.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.369-.55.183-.55.369-.737.368-.736.184-.55.184-.736.184-.736.184h-.736l-.736.183h-.737l-.55-28.665zm58.068 27.563h-1.472l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.55-.368-.551-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.182-.734-.186-.552-.186-.734-.186-.735v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.186-.735.186-.734.364-.552.186-.734.364-.552.37-.552.364-.735.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.551-.367.55-.369.736-.367.55-.369.556-.367.736-.184.55-.184.737-.184.736-.184.736-.184.736-.184h1.466l.556 28.665zm28.662-.551-.55-28.665-28.667.552.556 28.665z"
+            d: "m687.45 635.609-.55-28.666-28.666.552.55 28.665zm-.55-28.666h2.209l.736.184.736.184.736.184.55.184.736.184.55.368.737.184.55.368.55.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.553.365.552.37.552.364.734.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.735l-.186.734-.182.734-.186.552-.364.734-.186.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.369-.55.183-.55.369-.737.368-.736.184-.55.184-.736.184-.736.184h-.736l-.736.183h-.737l-.55-28.665zm58.068 27.563h-1.472l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.55-.368-.551-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.182-.734-.186-.552-.186-.734-.186-.735v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.186-.735.186-.734.364-.552.186-.734.364-.552.37-.552.364-.735.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.551-.367.55-.369.736-.367.55-.369.556-.367.736-.184.55-.184.737-.184.736-.184.736-.184.736-.184h1.466l.556 28.665zm28.662-.551-.55-28.665-28.667.552.556 28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M770.43 733.863h2.207l.55.183.737.184.736.184.736.184.55.184.736.368.55.184.556.367.736.369.55.367.55.552.55.369.37.368.55.552.366.55.555.552.365.552.37.552.364.552.364.734.37.552.186.552.182.735.186.734.186.734.186.552.182.734v3.672l-.182.734-.186.734-.186.734-.186.552-.182.735-.37.552-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.553-.551.367-.55.369-.736.183-.556.369-.73.368-.556.183-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zm57.882 27.562h-1.472l-.736-.184h-.736l-.737-.183-.55-.184-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.734-.37-.552-.182-.735-.37-.552-.186-.734-.182-.734-.186-.734v-1.287l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.368.551-.368.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.183h.736l.736-.184h.736l.55 28.665z"
+            d: "M773.08 605.29h2.207l.55.183.737.184.736.184.736.184.55.184.736.368.55.184.556.367.736.369.55.367.55.552.55.369.37.368.55.552.366.55.555.552.365.552.37.552.364.552.364.734.37.552.186.552.182.735.186.734.186.734.186.552.182.734v3.672l-.182.734-.186.734-.186.734-.186.552-.182.735-.37.552-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.553-.551.367-.55.369-.736.183-.556.369-.73.368-.556.183-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zm57.882 27.562h-1.472l-.736-.184h-.736l-.737-.183-.55-.184-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.734-.37-.552-.182-.735-.37-.552-.186-.734-.182-.734-.186-.734v-1.287l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.368.551-.368.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.183h.736l.736-.184h.736l.55 28.665z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "m857.163 760.69-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.183h5.882l5.877-.184 5.698-.184 5.697-.184z"
+            d: "m859.813 632.117-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.183h5.882l5.877-.184 5.698-.184 5.697-.184z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime152.jsx)(
           "path",
           {
             stroke: "none",
-            d: "M856.243 732.025h1.472l.736.184h.736l.736.184.736.184.55.184.736.183.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.553.364.552.37.552.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.735l-.186.552-.182.734-.37.552-.186.734-.365.552-.37.734-.364.553-.37.55-.364.552-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.73.184-.737.184-.556.184-.736.184h-1.466l-.92-28.666z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "31.05295017,31.05295017",
-            strokeWidth: 31.053,
-            d: "M750 850V100"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeDasharray: "31.0529,31.0529",
-            strokeWidth: 31.053,
-            d: "M530 850V100"
+            d: "M858.893 603.452h1.472l.736.184h.736l.736.184.736.184.55.184.736.183.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.553.364.552.37.552.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.735l-.186.552-.182.734-.37.552-.186.734-.365.552-.37.734-.364.553-.37.55-.364.552-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.73.184-.737.184-.556.184-.736.184h-1.466l-.92-28.666z"
           }
         )
       ]
     }
   );
-  var Analyse_default = SvgAnalyse;
+  var Overlay_default4 = SvgOverlay4;
 
-  // build/lib-react-tsx/spectra/Compare.tsx
+  // build/lib-react-tsx/reaction/Equilibrium.tsx
+  var React153 = __toESM(require_react(), 1);
+  var import_jsx_runtime153 = __toESM(require_jsx_runtime(), 1);
+  var SvgEquilibrium = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime153.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "56.5 -42 887.5 887.5",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime153.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M126.155 256.41v60.838h-1.321l-1.174-.177-1.247-.176-1.248-.265-1.247-.354-1.174-.353-1.174-.53-1.174-.53-1.101-.617-1.1-.707-1.028-.706-1.027-.795-1.028-.883-.953-.883-.881-.883-1.027-1.06-.88-1.059-.735-1.06-.733-1.147-.734-1.236-.734-1.237-.514-1.236-.587-1.324-.513-1.325-.44-1.413-.44-1.412-.294-1.413-.294-1.501-.22-1.501-.147-1.501-.073-1.59v-3.002l.147-1.59.147-1.5.22-1.501.293-1.501.294-1.413.44-1.413.44-1.413.514-1.324.587-1.324.587-1.237.66-1.236.734-1.236.734-1.148.734-1.06.88-1.059.88-.971.881-.972.954-.882 1.027-.883 1.028-.883 1.027-.619 1.1-.706 1.101-.618 1.174-.53 1.174-.441 1.174-.442 1.248-.353 1.247-.265 1.248-.176 1.247-.177zm701.635 60.838H126.155V256.41H827.79zm0 0V256.41h1.247l1.321.176 1.247.177 1.248.265 1.247.353 1.174.441 1.174.442 1.174.53 1.101.618 1.1.706 1.028.707 1.027.794 1.028.883.953.883.881.883.88 1.06.808 1.06.807 1.059.734 1.148.733 1.236.66 1.236.588 1.236.587 1.325.513 1.324.44 1.413.368 1.413.367 1.412.293 1.502.22 1.5.147 1.502.073 1.589v3.09l-.073 1.59-.147 1.5-.22 1.502-.293 1.501-.367 1.413-.367 1.412-.44 1.413-.514 1.325-.587 1.324-.587 1.236-.66 1.237-.734 1.236-.734 1.148-.734 1.06-.88 1.059-.881 1.06-.88.882-.954.883-1.028.883-1.027.883-1.027.618-1.1.707-1.102.618-1.174.53-1.174.53-1.174.352-1.247.354-1.248.265-1.247.176-1.32.177z",
+            className: "fil0",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            strokeLinecap: "round",
+            strokeWidth: 62.964,
+            d: "M867.823 286.865 753.387 373.46",
+            className: "fil1 str0",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 62.964,
+            d: "m753.387 200.2 114.436 86.665",
+            className: "fil1 str0",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M874.386 486.188v60.837h1.321l1.174-.177 1.247-.176 1.248-.265 1.247-.354 1.174-.353 1.174-.53 1.174-.53 1.101-.617 1.1-.707 1.028-.706 1.027-.795 1.028-.883.953-.883.881-.883 1.027-1.06.88-1.059.735-1.06.733-1.147.734-1.236.734-1.237.514-1.236.587-1.324.513-1.325.44-1.413.44-1.412.294-1.413.294-1.501.22-1.501.147-1.501.073-1.59v-3.002l-.147-1.59-.147-1.5-.22-1.501-.293-1.501-.294-1.413-.44-1.413-.44-1.413-.514-1.324-.587-1.324-.587-1.237-.66-1.236-.734-1.236-.734-1.148-.734-1.06-.88-1.059-.88-.971-.881-.972-.954-.882-1.027-.883-1.028-.883-1.027-.619-1.1-.706-1.101-.618-1.174-.53-1.174-.441-1.174-.442-1.248-.353-1.247-.265-1.248-.176-1.247-.177zm-701.635 60.837h701.635v-60.837H172.751zm0 0v-60.837h-1.247l-1.321.176-1.247.177-1.248.265-1.247.353-1.174.441-1.174.442-1.174.53-1.101.618-1.1.706-1.028.707-1.027.794-1.028.883-.953.883-.881.883-.88 1.06-.808 1.06-.807 1.059-.734 1.148-.733 1.236-.66 1.236-.588 1.236-.587 1.325-.513 1.324-.44 1.413-.368 1.413-.367 1.412-.293 1.502-.22 1.5-.147 1.502-.073 1.589v3.09l.073 1.59.147 1.5.22 1.502.293 1.501.367 1.413.367 1.412.44 1.413.514 1.325.587 1.324.587 1.236.66 1.237.734 1.236.734 1.148.734 1.06.88 1.059.881 1.06.88.882.954.883 1.028.883 1.027.883 1.027.618 1.1.707 1.102.618 1.174.53 1.174.53 1.174.352 1.247.354 1.248.265 1.247.176 1.32.177z",
+            className: "fil0",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            strokeLinecap: "round",
+            strokeWidth: 62.964,
+            d: "m132.72 516.643 114.435 86.594",
+            className: "fil1 str0",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime153.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 62.964,
+            d: "m247.155 429.978-114.436 86.665",
+            className: "fil1 str0",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        )
+      ]
+    }
+  );
+  var Equilibrium_default = SvgEquilibrium;
+
+  // build/lib-react-tsx/reaction/Search.tsx
   var React154 = __toESM(require_react(), 1);
   var import_jsx_runtime154 = __toESM(require_jsx_runtime(), 1);
-  var SvgCompare = ({
+  var SvgSearch4 = ({
     title,
     titleId,
     ...props
@@ -34665,8 +34410,13 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 39.323,
-            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+            strokeWidth: 52.85,
+            d: "M423.177 667.09c-166.181 0-301.72-135.541-301.72-301.721 0-166.183 135.538-301.726 301.72-301.726 166.18 0 301.725 135.544 301.725 301.726 0 166.18-135.544 301.72-301.725 301.72",
+            className: "fil0 str0",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime154.jsx)(
@@ -34675,8 +34425,13 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 31.973,
-            d: "M97.35 628.573c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.15 86.179-252.84 158.21-1.105 12.679 436.775 212.233 419.503 95.92-8.27 107.445-74.992 112.222-153.822 4.962-83.974 7.324-167.606 17.433-233.94 37.85 109.516-34.656 379.125 139.542 382.617 35.649.734 64.68-.919 96.653-2.573"
+            strokeWidth: 52.868,
+            d: "M875.32 876.926 652.38 578.482l-78.036 58.23 222.94 298.444",
+            className: "fil0 str1",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime154.jsx)(
@@ -34685,19 +34440,67 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 31.973,
-            d: "M100 750c87.833 20.763 150-50 150-100 0 0 0-50 50-50 100 0 23.442 176.46 222.995 159.187C600 749.999 643.223 756.829 648 677.999c0-50 2 22 2-78 0 100-32.005 150.551 142.193 154.043 35.649.734 64.68-.919 96.652-2.573"
+            strokeWidth: 52.849,
+            d: "M797.267 935.193c11.855 15.876 34.551 19.165 50.425 7.306m.002-.001L868 927.33m0 0c15.874-11.858 19.162-34.545 7.304-50.418",
+            className: "fil0 str1",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime154.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 24.319,
+            d: "M423.177 612.992c-136.382 0-247.623-111.241-247.623-247.623 0-136.389 111.241-247.623 247.623-247.623 136.387 0 247.623 111.234 247.623 247.623 0 136.382-111.236 247.623-247.623 247.623",
+            className: "fil0 str2",
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime154.jsxs)(
+          "g",
+          {
+            fillRule: "evenodd",
+            strokeWidth: 35.156,
+            clipRule: "evenodd",
+            imageRendering: "optimizeQuality",
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime154.jsx)(
+                "path",
+                {
+                  d: "M264.615 327.049h244.013c8.157 0 14.83 6.673 14.83 14.83v51.23c0 8.156-6.674 14.83-14.83 14.83H264.615c-8.156 0-14.83-6.674-14.83-14.83v-51.23c0-8.157 6.674-14.83 14.83-14.83z",
+                  className: "fil1"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime154.jsx)(
+                "path",
+                {
+                  fillRule: "nonzero",
+                  d: "M474.557 499.986V234.981l132.502 132.538zm66.233-66.234",
+                  className: "fil2"
+                }
+              )
+            ]
           }
         )
       ]
     }
   );
-  var Compare_default = SvgCompare;
+  var Search_default4 = SvgSearch4;
 
-  // build/lib-react-tsx/spectra/Deconvolution.tsx
+  // build/lib-react-tsx/safety/Toxic.tsx
   var React155 = __toESM(require_react(), 1);
   var import_jsx_runtime155 = __toESM(require_jsx_runtime(), 1);
-  var SvgDeconvolution = ({
+  var SvgToxic2 = ({
     title,
     titleId,
     ...props
@@ -34707,7 +34510,7 @@
       xmlns: "http://www.w3.org/2000/svg",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
+      viewBox: "124.4 43.1 760 760",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -34717,11 +34520,9 @@
         /* @__PURE__ */ (0, import_jsx_runtime155.jsx)(
           "path",
           {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 39.323,
-            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M336.034 221.151h103.78v-97.184h129.385v97.184h103.585c32.007 0 58.195 26.188 58.195 58.194v427.338c0 32.2-26.188 58.391-58.195 58.391h-336.75c-32.007 0-58.194-26.19-58.194-58.39v-427.34c0-32.006 26.187-58.194 58.194-58.194"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime155.jsx)(
@@ -34730,21 +34531,28 @@
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 31.973,
-            d: "M94.492 348.573C285.488 350.806 182.212 58.297 300 58.571c126.782-1.064 52.857 285.714 220.345 287.761C628.763 344.997 600 208.571 650 208.571s-8.942 134.839 139.542 132.616c35.653-.514 56.109 1.939 88.081.285M94.492 728.573C300 750 200 600 300 600s52.857 124.286 220.345 126.333C628.763 724.997 600 499.999 650 499.999s-8.942 223.41 139.542 221.188c35.653-.514 56.109 1.939 88.081.285"
+            strokeWidth: 58.194,
+            d: "M420.027 156.943h168.958V81.097H420.027z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime155.jsx)("path", { fillRule: "evenodd", d: "M330 491.999h250v50H330z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime155.jsx)("path", { d: "M430 392h50v250h-50z" })
+        /* @__PURE__ */ (0, import_jsx_runtime155.jsx)(
+          "path",
+          {
+            fill: "#fefefe",
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M420.027 156.943h168.958V81.097H420.027zM649.7 393.406c0-60.328-64.983-109.211-145.29-109.211-80.115 0-145.099 48.883-145.099 109.211 0 32.201 18.622 61.104 48.108 81.084a43 43 0 0 0-.581 7.177c0 20.95 13.772 38.796 32.588 45.198.581 13.578 11.833 24.441 25.606 24.441h78.95c13.772 0 24.83-10.863 25.411-24.441 19.01-6.402 32.59-24.248 32.59-45.198 0-2.521-.195-4.85-.584-7.177 29.68-19.98 48.302-48.883 48.302-81.084M596.357 652.95c-.777 2.139-1.358 4.076-1.746 6.21l-48.884-21.339 55.479-24.052v.385c5.237 11.833 18.816 17.267 30.649 12.029 11.832-5.043 17.264-18.814 12.027-30.458a23.75 23.75 0 0 0-13.58-12.8c5.432-7.178 7.178-17.07 3.299-25.994-5.82-13.19-20.95-19.204-33.947-13.385-13.19 5.626-19.204 20.756-13.385 33.947.777 1.94 1.94 3.686 3.298 5.432l-83.024 36.082-2.134.965-1.94-.965-83.023-36.082c1.358-1.747 2.328-3.492 3.297-5.432 5.626-13.19-.388-28.321-13.384-33.947-12.997-5.82-28.322.195-33.947 13.385a25.52 25.52 0 0 0 3.298 25.994c-6.013 2.133-11.057 6.596-13.773 12.8-5.043 11.644.388 25.415 12.027 30.458 11.833 5.238 25.605-.196 30.649-12.03l.194-.384 55.284 24.052-48.883 21.339c-.194-2.134-.777-4.071-1.746-6.21-5.625-12.995-20.756-19.01-33.947-13.38-12.997 5.818-19.01 20.947-13.384 33.942 3.88 9.12 12.415 14.743 21.532 15.519-2.716 5.629-2.91 12.414-.195 18.624 5.238 11.833 18.817 17.262 30.65 12.029 11.833-5.048 17.07-18.82 12.026-30.653l-.194-.192 75.458-32.982 75.653 32.982-.194.192c-5.237 11.833.194 25.605 12.027 30.653 11.638 5.233 25.411-.196 30.455-12.029 2.715-6.21 2.522-12.995 0-18.624 9.117-.777 17.458-6.4 21.337-15.52 5.82-12.994-.194-28.123-13.384-33.942-12.997-5.629-28.127.385-33.947 13.38zM441.172 437.246c-24.248 0-43.84-19.786-43.84-44.034s19.592-43.84 43.84-43.84c24.247 0 43.84 19.593 43.84 43.84s-19.593 44.034-43.84 44.034m126.669 0c-24.248 0-44.034-19.786-44.034-44.034s19.786-43.84 44.034-43.84 43.84 19.593 43.84 43.84-19.593 44.034-43.84 44.034"
+          }
+        )
       ]
     }
   );
-  var Deconvolution_default = SvgDeconvolution;
+  var Toxic_default2 = SvgToxic2;
 
-  // build/lib-react-tsx/spectra/Pca.tsx
+  // build/lib-react-tsx/spectra/Analyse.tsx
   var React156 = __toESM(require_react(), 1);
   var import_jsx_runtime156 = __toESM(require_jsx_runtime(), 1);
-  var SvgPca = ({
+  var SvgAnalyse = ({
     title,
     titleId,
     ...props
@@ -34761,27 +34569,249 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("ellipse", { cx: 75, cy: 425, fill: "none", stroke: "none", rx: 325, ry: 125 }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 225, cy: 225, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 225, cy: 225, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 114.91, cy: 408.333, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 333.018, cy: 375.991, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 255.18, cy: 550.405, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 683.198, cy: 238.333, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 875.901, cy: 313.378, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 822.838, cy: 128.784, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 781.306, cy: 870.135, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 620.676, cy: 785.901, r: 75, stroke: "none" }),
-        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)("circle", { cx: 874.279, cy: 712.387, r: 75, stroke: "none" })
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.323,
+            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 31.973,
+            d: "M97.35 628.573c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.15 86.179-252.84 158.21-1.105 12.679 436.775 212.233 419.503 95.92-8.27 107.445-74.992 112.222-153.822 4.962-83.974 7.324-167.606 17.433-233.94 37.85 109.516-34.656 379.125 139.542 382.617 35.649.734 64.68-.919 96.653-2.573"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m94.042 757.75-.736-.184-.735-.183-.734-.369-.55-.184-.736-.368-.55-.368-.552-.368-.55-.368-.737-.368-.368-.55-.552-.369-.552-.552-.368-.552-.55-.552-.368-.552-.368-.552-.368-.552-.184-.734-.368-.552-.184-.552-.368-.734-.184-.735-.184-.552v-.734l-.184-.734v-.734l-.184-.552v-.735l.184-.734v-.734l.184-.734.184-.735.184-.734.184-.734.184-.552.368-.734.184-.552.368-.735.368-.552.368-.552.552-.552.368-.552.55-.552.552-.368.368-.552.552-.368.55-.368.553-.552.736-.184.552-.368.55-.368.734-.184.552-.184.734-.368h.735l.552-.184.736-.184h3.673l.552.184.736.184-6.431 27.93z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m126.75 760.14-1.838.183h-2.389l-2.389.184h-4.778l-2.204-.184h-2.389l-2.389-.184-2.389-.368-2.388-.184-2.39-.368-2.388-.552-2.388-.368-2.39-.552 6.432-27.93 1.837.368 1.655.368 1.837.184 1.655.368 1.654.184 1.838.184 1.654.184h1.838l1.654.184h3.492l1.654-.184h1.838l1.837-.184z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M124.912 731.474h2.206l.552.184h.734l.736.184.735.183.552.184.734.369.552.183.734.369.552.368.55.368.55.368.553.368.55.368.552.552.552.552.368.368.368.552.55.55.368.735.369.552.184.552.368.734.368.552.184.734.184.552.184.734.184.735v.734l.184.734v1.469l-.184.734v.734l-.184.734v.552l-.184.735-.368.734-.184.552-.184.734-.368.552-.368.552-.369.735-.368.552-.368.552-.552.55-.368.368-.552.552-.55.368-.552.552-.552.368-.55.369-.552.367-.55.369-.737.367-.55.184-.734.184-.736.184-.734.184-.55.184-.737.184h-.734l-1.838-28.666zm61.924 7.35-.55.552-.735.184-.55.368-.736.184-.552.368-.734.184-.734.184h-.735l-.552.184h-3.491l-.734-.184-.736-.184-.55-.184-.734-.184-.55-.184-.737-.183-.552-.369-.55-.367-.734-.369-.552-.368-.552-.368-.55-.552-.55-.368-.369-.552-.552-.552-.55-.552-.368-.552-.368-.552-.368-.735-.368-.552-.368-.734-.184-.734-.184-.552-.184-.734-.184-.735-.184-.552-.184-.734v-2.755l.184-.734v-.734l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.55.368-.552.368-.735.368-.552.368-.552.55-.552.368-.552.552-.368.55-.552.55-.368.553-.552.736-.368 15.067 24.256z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m211.643 720.449-1.47 1.286-1.839 1.654-2.02 1.47-1.838 1.655-1.838 1.47-2.021 1.47-1.837 1.471-2.022 1.47-2.02 1.287-2.022 1.47-2.021 1.286-1.838 1.286-2.021 1.103-15.068-24.256 1.47-.918 1.655-1.102 1.654-1.102 1.838-1.287 1.654-1.102 1.655-1.286 1.654-1.286 1.654-1.103 1.655-1.47 1.654-1.286 1.47-1.287 1.655-1.286 1.47-1.286z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m192.9 698.766.55-.552.736-.366.55-.369.552-.367.735-.369.55-.366.736-.184.552-.366.734-.184h.736l.552-.184.735-.184h3.49l.55.184.737.184.734.184.55.184.736.184.55.184.735.366.552.368.55.368.736.368.55.368.55.552.55.368.553.552.368.553.55.552.368.55.368.736.368.552.368.552.368.734.184.736.184.55.184.735.184.552.184.734.184.734v2.757l-.184.734v.552l-.184.736-.184.734-.184.552-.184.737-.368.55-.184.734-.368.552-.368.552-.368.734-.368.552-.55.552-.368.553-.552.368-.55.55-18.743-21.683zm58.984-23.704-.368.552-.368.552-.55.552-.553.552-.552.369-.55.55-.55.368-.55.368-.552.366-.735.368-.552.184-.734.368-.552.184-.734.184-.55.184-.735.184h-.736l-.55.183h-2.205l-.552-.183h-.736l-.734-.184-.736-.184-.55-.184-.734-.184-.736-.368-.55-.184-.735-.368-.552-.366-.552-.368-.736-.552-.55-.368-.55-.552-.369-.552-.55-.552-.368-.552-.552-.552-.368-.553-.368-.552-.184-.552-.368-.734-.184-.55-.368-.736-.184-.552-.184-.734v-.737l-.184-.734v-1.286l-.184-.736.184-.552v-1.47l.184-.735.184-.55.184-.736.184-.734.368-.552.368-.736.184-.552.368-.735.55-.552 23.336 16.538z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m267.87 649.153-.918 1.654-1.102 2.205-1.286 2.021-1.287 2.205-1.102 2.022-1.286 2.205-1.286 2.02-1.47 2.022-1.287 2.206-1.286 2.02-1.47 2.022-1.287 2.02-.918 1.287-23.336-16.537.552-.919 1.286-1.837 1.286-1.838 1.103-1.837 1.286-1.838 1.102-1.837 1.102-2.022 1.103-1.837 1.286-1.837 1.102-1.838.919-2.021 1.102-1.838.918-1.654z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m242.697 635.372.368-.55.368-.735.368-.552.55-.552.368-.552.552-.368.55-.552.55-.369.553-.552.55-.368.552-.366.734-.368.55-.184.552-.368.735-.184.55-.184.734-.184.736-.184.55-.183h3.493l.734.183h.736l.735.184.55.184.736.184.734.368.55.184.736.368.55.368.735.552.552.368.55.368.55.552.553.552.368.368.552.552.368.552.368.552.368.735.368.552.184.55.368.736.184.552.184.734.184.735.184.552.184.734v3.493l-.184.734v.552l-.184.736-.184.734-.184.552-.368.736-.184.734-.368.553-25.174-13.782zm47.04-43.365-.184.734-.184.736-.184.734-.368.55-.369.735-.184.552-.368.552-.552.734-.368.552-.368.552-.552.368-.368.552-.552.369-.552.552-.55.368-.55.368-.735.368-.55.368-.55.184-.736.368-.55.183-.735.184-.55.184-.736.184-.734.184h-3.491l-.736-.184-.734-.184-.734-.184-.737-.184-.734-.183-.55-.368-.736-.184-.55-.368-.55-.368-.735-.368-.552-.552-.368-.368-.55-.552-.552-.368-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.368-.737-.184-.55-.369-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736v-3.491l.184-.735.184-.736 27.93 6.248z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m293.044 569.405-.184 2.021-.184 2.206-.184 2.02-.184 2.022-.368 2.205-.184 2.021-.368 2.205-.368 2.021-.552 2.205-.368 2.022-.368 1.654-27.93-6.248.184-1.286.368-1.838.368-1.654.368-1.655.184-1.837.368-1.655.184-1.654.184-1.654.184-1.655.184-1.654v-1.654z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m293.596 561.32-28.666-1.837-.55 8.085 28.665 1.837z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M264.93 559.483v-.735l.185-.736.183-.552.185-.734.184-.736.184-.734.184-.55.368-.737.368-.552.368-.55.368-.552.368-.552.368-.552.552-.552.55-.552.368-.368.55-.552.55-.368.553-.369.734-.368.55-.368.552-.368.736-.184.55-.184.735-.368.736-.184h.55l.734-.184h.734l.736-.184h1.471l.734.184h.736l.734.184.736.184.55.184.735.184.55.368.736.368.552.184.55.368.735.368.55.552.552.368.368.366.55.552.552.553.368.552.368.552.368.552.368.552.368.552.368.734.184.552.368.736.184.552.184.734.184.736v.735l.184.736v2.022l-28.665-1.838zm31.055-55.861v1.47l-.184.735-.185.552-.184.736-.184.734-.184.552-.368.736-.184.552-.368.734-.368.553-.368.552-.368.55-.55.552-.368.552-.55.366-.55.552-.553.368-.55.369-.552.368-.55.368-.55.368-.736.368-.55.184-.735.184-.736.368-.55.184h-.734l-.736.184h-3.675l-.734-.184-.737-.184-.55-.184-.734-.183-.736-.184-.552-.369-.734-.183-.55-.369-.55-.368-.553-.368-.55-.368-.552-.552-.552-.368-.368-.552-.552-.55-.368-.553-.55-.55-.369-.552-.368-.552-.184-.552-.368-.736-.184-.552-.368-.734-.184-.737-.184-.552-.184-.734v-.736l-.184-.734v-1.47l28.665.918z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m296.72 474.59-.185 5.329v6.43l-.184 6.8-.184 6.798-.184 3.675-28.665-.918.184-3.491.184-6.615v-6.8l.184-6.43v-5.146zm-28.85-.368.185-.735v-1.47l.184-.734.184-.55.184-.736.368-.735.184-.552.368-.736.184-.552.368-.55.368-.552.552-.552.368-.552.368-.552.55-.552.552-.368.55-.55.552-.369.55-.368.55-.366.551-.368.734-.369.55-.183.737-.184.55-.369.734-.184h.736l.734-.183h.736l.735-.184h1.47l.734.184h.55l.736.183.735.184.736.184.55.184.734.366.55.184.737.368.55.368.55.369.552.368.55.552.55.368.369.55.55.552.368.552.55.553.368.552.368.55.368.552.184.552.368.734.184.736.184.552.184.735.184.736.184.734v1.286l.184.734-28.849-.368zm29.217-56.962v1.469l-.184.735v.552l-.184.736-.184.734-.368.552-.184.736-.368.552-.184.734-.368.55-.368.553-.55.552-.368.55-.369.552-.552.552-.552.368-.552.552-.55.368-.55.368-.55.368-.552.366-.735.368-.55.184-.736.366-.55.184-.734.184-.736.184h-.735l-.55.184h-2.941l-.736-.184-.734-.184h-.734l-.736-.368-.55-.184-.735-.184-.55-.368-.736-.368-.55-.368-.55-.367-.55-.368-.553-.368-.55-.552-.368-.368-.55-.552-.368-.552-.55-.552-.368-.55-.368-.552-.368-.552-.184-.735-.368-.552-.184-.734-.368-.552-.185-.734v-.736l-.183-.735-.185-.736v-1.47l28.666.368z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m297.822 388.961-.184 3.675-.184 3.859v4.042l-.184 4.227v4.226l-.184 4.594v3.675l-28.665-.368v-3.675l.184-4.594v-4.594l.184-4.41v-4.226l.184-4.043.184-3.49z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M269.156 387.86v-.737l.184-.734.184-.736v-.734l.184-.737.368-.552.185-.734.368-.552.184-.736.368-.552.368-.552.368-.552.55-.55.368-.552.55-.552.368-.552.55-.369.55-.367.55-.553.553-.368.734-.184.552-.366.55-.368.736-.184.55-.183.735-.368h.734l.736-.184.735-.184h2.758l.734.184h.736l.734.184.737.184.552.184.734.368.734.184.552.368.55.368.552.368.552.368.55.368.55.552.551.368.552.552.368.552.368.552.552.552.368.55.368.552.184.735.368.552.184.734.368.552.184.734.184.736v.55l.184.735v2.206l-28.665-1.102zm39.691-41.161-.55.368-.736.368-.55.368-.735.368-.55.368-.736.184-.55.184-.734.184-.737.184-.55.183h-.734l-.736.184h-2.021l-.734-.184h-.734l-.552-.183-.734-.184-.55-.184-.735-.184-.736-.368-.552-.184-.55-.368-.736-.368-.552-.368-.55-.552-.55-.368-.55-.55-.553-.368-.368-.552-.55-.55-.368-.734-.368-.553-.368-.552-.368-.736-.368-.552-.184-.734-.184-.736-.184-.552-.184-.734-.184-.736-.184-.552v-2.757l.184-.736v-.734l.184-.736.184-.552.184-.735.184-.55.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.552.552-.552.55-.367.55-.552 17.64 22.785z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m313.073 336.408 11.944 7.718-1.102-.184h-4.226l-.918.184h-1.836l-.736.184-.735.184h-.736l-.734.184-.736.184-.552.183-.55.184-.55.184h-.55l-.369.184-.55.368-.368.184-.368.184-.368.183-.368.184-.368.184.55-.184-17.64-22.784.55-.369 1.102-.736 1.287-.918 1.286-.736 1.286-.734 1.47-.552 1.287-.552 1.47-.553 1.286-.552 1.47-.552 1.47-.367 1.471-.369 1.287-.368 1.47-.184 1.654-.368 1.47-.184 1.47-.183 1.471-.184h1.654l1.47-.184h6.434l1.47.184 12.128 7.717z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M326.487 315.46h.736l.734.185h.736l.735.184.734.183.552.369.734.184.55.368.736.184.55.368.55.368.551.366.55.552.552.366.552.552.368.552.55.369.369.552.368.552.368.736.368.552.368.552.184.734.368.552.184.736.184.55.184.735.184.736v4.409l-.184.736-.184.552-.184.734-.184.736-.368.55-.184.735-.368.552-.368.552-.368.736-.368.552-.552.552-.368.368-.55.552-.369.552-.552.368-.552.55-.55.369-.55.368-.736.368-.55.184-.553.368-.734.184-.736.184-.552.184-.734.183-.736.184h-.734l-.737.184h-1.47l1.47-28.665z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m313.808 337.695-.368-.552-.368-.734 25.542-13.23.55 1.286.368.552z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m339.533 325.016.185.734.368.552.184.736.184.735.184.736.184.55v.734l.184.736v2.021l-.184.736v.734l-.184.552-.184.736-.184.734-.368.55-.184.737-.369.55-.183.552-.369.552-.368.734-.55.552-.368.552-.55.368-.368.55-.55.552-.55.367-.553.368-.736.55-.55.368-.734.368-.55.184-.736.368-.735.184-.55.184-.736.184-.734.184h-.734l-.736.184h-1.285l-.736-.184h-.734l-.552-.184h-.736l-.735-.184-.552-.184-.736-.367-.55-.184-.734-.368-.55-.368-.55-.184-.553-.552-.55-.368-.55-.368-.552-.552-.55-.368-.368-.55-.55-.553-.369-.552-.368-.734-.368-.552-.368-.734 25.725-12.679zM323.73 388.41v-2.206l.185-.734v-.736l.184-.552.184-.735.184-.734.184-.552.368-.734.184-.552.368-.552.368-.736.368-.552.368-.552.55-.553.368-.55.552-.368.55-.55.369-.368.55-.368.736-.552.55-.369.552-.184.734-.368.552-.368.735-.184.552-.184.734-.184.736-.184h.734l.736-.184h2.941l.734.184.55.184.735.184.736.184.55.184.734.368.552.184.736.368.55.369.55.368.551.368.55.552.552.369.368.552.55.367.369.552.368.55.55.553.368.734.184.552.368.552.368.734.184.736.184.552.184.735.184.734.184.736v.734l-28.665 2.206z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M325.201 416.34v-3.858l-.184-3.86-.184-3.674-.184-3.675-.184-3.675-.368-3.676-.184-3.49-.184-2.022 28.665-2.205.184 2.205.184 3.675.366 3.859.184 3.859.184 3.858.184 3.86.184 3.858v4.042zm28.665-.919v2.207l-.184.734v.736l-.184.734-.368.552-.184.736-.184.552-.368.735-.368.552-.368.552-.368.552-.368.736-.368.368-.552.552-.366.552-.552.366-.55.552-.553.369-.552.367-.55.369-.734.366-.552.368-.55.184-.737.367-.734.184-.55.184-.736.184h-.734l-.736.184h-2.205l-.734-.184h-.736l-.734-.184-.55-.184-.737-.184-.734-.184-.55-.368-.736-.184-.55-.368-.553-.368-.55-.366-.552-.368-.55-.55-.55-.368-.55-.552-.369-.552-.55-.369-.368-.552-.368-.552-.368-.734-.368-.552-.368-.552-.184-.734-.184-.55-.368-.737-.184-.734v-.734l-.184-.736v-.734l-.184-.736 28.665-.919zm-27.379 58.249v-1.47l.184-.734v-.734l.184-.736.184-.735.184-.552.368-.736.184-.552.368-.734.368-.552.368-.552.368-.552.368-.552.368-.552.55-.552.55-.552.369-.368.55-.552.55-.366.55-.368.736-.368.55-.369.553-.184.734-.367.736-.184.552-.184.734-.184.736-.184h.735l.736-.184h2.204l.734.184h.553l.736.184.734.184.736.184.552.368.734.184.55.368.552.368.737.366.552.369.55.368.55.368.368.552.55.368.55.552.369.552.368.552.368.552.368.734.368.55.368.553.184.736.184.55.184.734.184.734.184.736.184.735v1.47l-28.665.55zm.735 28.85v-.184l-.184-9.004-.368-9.004-.184-9.003v-1.654l28.665-.553v1.47l.368 9.005.184 8.82.368 9.004zm28.849-1.103v.919l-.184.552v.736l-.184.734v.736l-.184.734-.184.552-.368.736-.184.735-.368.552-.184.552-.368.736-.368.552-.55.55-.368.552-.368.368-.552.553-.55.552-.553.367-.552.369-.55.552-.55.184-.55.366-.735.368-.55.368-.736.184-.55.184-.734.184-.737.183-.734.184h-3.675l-.736-.184-.55-.183-.734-.184-.736-.184-.55-.184-.735-.184-.552-.366-.736-.368-.552-.368-.552-.369-.55-.368-.55-.368-.552-.552-.368-.368-.552-.552-.368-.552-.55-.552-.369-.55-.368-.552-.368-.735-.184-.552-.368-.734-.184-.552-.184-.734-.184-.736-.184-.552-.184-.735v-.736l-.184-.734 28.849-1.102zm-24.991 59.168-.183-.734v-.736l.184-.735v-1.288l.184-.734.184-.734.184-.736.184-.552.368-.735.184-.552.368-.552.368-.734.368-.552.368-.552.368-.552.55-.552.368-.368.55-.552.55-.368.551-.55.552-.369.552-.366.55-.368.735-.368.55-.184.736-.368.55-.184.734-.184.736-.184h.735l.734-.184h2.94l.737.184h.552l.734.184.736.184.55.184.734.368.55.184.737.368.552.368.55.366.55.369.55.367.55.55.553.369.368.55.55.552.368.552.368.552.368.552.368.735.368.552.184.552.368.734.184.734.184.552.184.734.184.735v.736l-28.482 2.756zm3.676 29.216-.55-4.042-.735-4.594-.55-4.594-.55-4.594-.552-4.777-.55-4.594-.185-2.021 28.482-2.756.184 1.837.55 4.41.552 4.41.552 4.41.55 4.41.55 4.227.553 4.042z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m363.054 585.575.184.735v2.938l-.184.736v.552l-.184.735-.184.734-.368.552-.184.734-.184.552-.368.736-.369.552-.368.552-.368.55-.368.553-.552.552-.55.552-.368.368-.552.552-.552.368-.55.368-.55.368-.737.369-.55.367-.734.369-.55.184-.736.184-.735.183-.736.184-.55.184h-.734l-.734.184h-1.471l-.736-.184h-.734l-.736-.184-.55-.184-.734-.183-.737-.184-.552-.184-.734-.369-.55-.367-.552-.369-.552-.368-.55-.368-.55-.368-.553-.368-.55-.552-.55-.552-.368-.552-.368-.552-.55-.55-.368-.553-.184-.552-.368-.736-.368-.552-.185-.734-.183-.552-.369-.734v-.735l-.184-.736 28.299-4.226zm-14.517 62.475-.184-.734-.184-.736-.184-.552-.184-.734v-3.493l.184-.734.184-.734v-.734l.368-.552.184-.737.184-.552.368-.734.368-.552.184-.552.55-.552.368-.552.368-.55.55-.552.369-.552.552-.369.55-.552.55-.367.552-.369.55-.368.735-.368.55-.368.736-.184.734-.366.734-.184.736-.184.553-.184h.734l.736-.184h2.204l.55.184h.737l.734.184.55.184.736.184.734.184.55.368.553.184.736.368.552.368.55.368.55.368.55.552.55.368.553.552.368.368.55.552.368.552.368.735.368.55.368.552.368.736.184.734.368.552zm11.393 28.115-.736-1.655-.918-1.838-.919-2.02-.918-2.022-.918-2.021-.918-2.021-.735-2.022-.918-2.205-.734-2.021-.736-2.021-.918-2.022-.735-2.204-.736-2.022-.552-2.021 27.196-9.188.55 1.838.734 1.837.55 1.838.737 1.838.734 1.837.734 1.838.552 1.837.734 1.654.919 1.837.734 1.838.736 1.654.734 1.838.919 1.654.734 1.655z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m385.839 663.853.368.736.184.55.184.735.184.734.184.736.184.552v.734l.184.737v1.47l-.184.552v.734l-.184.736-.184.734-.184.552-.184.737-.184.552-.368.734-.184.552-.368.552-.368.552-.368.736-.368.552-.55.368-.55.552-.369.552-.55.367-.552.552-.55.366-.735.368-.552.368-.734.368-.552.368-.736.184-.734.184-.735.184-.55.184-.736.183h-.734l-.736.184h-1.286l-.736-.184h-.735l-.736-.183-.55-.184-.734-.184-.552-.184-.736-.184-.55-.368-.735-.184-.552-.367-.55-.367-.55-.367-.55-.369-.553-.552-.55-.367-.55-.553-.368-.552-.55-.552-.368-.55-.368-.734-.368-.552-.368-.734 25.908-12.312zm11.025 62.659-.552-.368-.55-.552-.368-.552-.552-.552-.368-.734-.368-.552-.368-.552-.184-.735-.368-.552-.185-.734-.184-.552-.184-.734-.184-.734-.184-.552v-3.491l.184-.734v-.735l.184-.552.184-.734.184-.552.369-.736.184-.734.368-.552.368-.552.368-.735.55-.552.368-.552.55-.552.55-.552.368-.368.55-.552.737-.368.55-.552.552-.184.552-.368.734-.366.55-.184.737-.368.734-.184.55-.184h.736l.734-.184h.552l.736-.184h1.471l.552.184h.734l.736.184.552.184.734.184.736.184.552.184.735.367.55.369.552.366.736.368.55.368.55.552.55.368-19.477 20.948z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m422.405 745.255-1.654-.918-2.021-1.102-1.838-1.287-2.021-1.286-1.838-1.102-1.837-1.287-1.838-1.47-1.837-1.286-1.654-1.286-1.838-1.47-1.654-1.287-1.654-1.47-1.655-1.47-1.654-1.471-.55-.552 19.477-20.947.184.366 1.47 1.102 1.287 1.102 1.286 1.103 1.47 1.102 1.287 1.102 1.47 1.102 1.47 1.103 1.47 1.102 1.471.918 1.47 1.103 1.47.918 1.655.918 1.47.918 1.838 1.103zm14.701-24.622.552.367.552.369.55.552.55.367.55.552.552.552.368.369.552.734.368.552.368.552.368.552.184.552.368.734.184.552.184.735.184.734.184.552.184.734v.734l.183.553v2.202l-.183.552v.735l-.184.734-.184.734-.184.55-.368.735-.184.734-.368.552-.368.734-.368.552-.368.552-.552.552-.368.552-.552.552-.55.552-.55.369-.55.552-.552.368-.55.368-.553.368-.734.368-.55.184-.736.184-.552.368-.735.184h-.55l-.736.184-.734.184h-2.755l-.736-.184h-.55l-.734-.184-.736-.184-.55-.184-.735-.183-.736-.368-.55-.368-.734-.368 14.7-24.623zm44.651 44.467-.736-.184-.734-.184-.736-.183-.55-.184-.735-.369-.552-.183-.736-.368-.552-.369-.55-.367-.55-.369-.552-.552-.55-.368-.553-.552-.367-.368-.552-.552-.368-.552-.369-.552-.367-.552-.369-.735-.368-.552-.184-.552-.368-.734-.184-.734-.184-.55-.184-.735-.184-.734v-1.286l-.183-.734.183-.735v-1.468l.184-.734.184-.735.184-.734.184-.734.368-.552.184-.734.368-.552.369-.553.367-.734.369-.552.552-.552.368-.368.552-.552.368-.552.55-.369.553-.368.55-.552.55-.368.736-.184.55-.368.553-.368.734-.184.736-.184.55-.184.734-.184.736-.184h.735l.55-.183h1.47l.736.183h.734l-4.226 28.482z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M512.26 767.305h-3.49l-2.94-.184h-2.94l-2.94-.183-2.757-.184-2.756-.184-2.757-.368-2.756-.184-2.756-.368-2.756-.368-1.655-.184 4.226-28.481 1.287.184 2.388.368 2.39.183 2.388.369 2.389.184 2.389.183 2.572.184 2.572.184h2.39l2.755.184h3.123z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M512.627 738.64h.736l.734.184h.735l.736.184.734.184.55.184.736.184.735.367.55.184.55.369.736.368.55.368.55.368.553.552.367.368.552.552.55.368.368.552.369.552.552.552.184.734.367.55.369.553.367.734.184.552.184.734.184.734.184.552v.735l.184.734v2.937l-.184.734-.184.734-.184.735-.184.552-.184.734-.183.552-.369.734-.367.552-.369.552-.368.735-.368.552-.368.552-.55.367-.368.552-.552.553-.55.368-.552.368-.55.368-.55.368-.735.368-.55.368-.55.184-.737.368-.734.184-.552.184-.736.184h-.734l-.736.184h-1.471l.369-28.665zm57.514 27.747h-1.472l-.736-.184-.736-.184h-.736l-.55-.184-.736-.184-.737-.368-.55-.184-.55-.368-.736-.368-.55-.368-.556-.368-.55-.369-.55-.367-.55-.552-.37-.552-.55-.368-.365-.552-.37-.552-.55-.735-.364-.552-.186-.552-.37-.734-.182-.552-.37-.734-.186-.552-.182-.734-.186-.735v-1.468l-.186-.734v-.735l.186-.734v-.734l.186-.734v-.552l.182-.735.37-.734.186-.55.182-.736.37-.55.364-.552.37-.735.364-.552.37-.552.55-.552.364-.368.556-.552.55-.552.55-.367.55-.369.55-.368.557-.368.55-.368.736-.368.55-.184.736-.184.55-.367h.736l.736-.184.737-.184h1.472l.55 28.665zm28.666-.552-.55-28.665-28.666.552.55 28.665z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M598.257 737.17h2.202l.737.184.736.184.556.184.736.184.73.183.556.368.55.184.736.368.55.369.55.367.551.552.556.369.55.368.365.552.555.552.364.552.365.552.37.552.364.552.37.735.364.55.186.552.37.734.182.734.186.735v.552l.186.734v.734l.186.734v.735l-.186.734v.734l-.186.734-.186.735v.734l-.364.552-.186.734-.186.552-.364.734-.37.552-.364.552-.37.553-.365.552-.55.552-.37.552-.55.552-.55.367-.55.369-.55.552-.556.368-.55.368-.55.184-.737.368-.55.368-.736.184-.736.184-.55.183-.736.184h-.737l-.736.184h-.736l-.55-28.665zm57.878 27.563h-1.467l-.736-.184h-.736l-.556-.184-.73-.184-.737-.184-.555-.368-.736-.184-.55-.368-.55-.368-.737-.368-.55-.368-.55-.368-.556-.368-.364-.552-.55-.552-.55-.369-.37-.552-.365-.552-.37-.734-.364-.552-.37-.552-.364-.734-.186-.552-.186-.734-.182-.553-.186-.734-.186-.734-.186-.734v-3.671l.186-.735.186-.552.186-.734.182-.736.186-.55.364-.735.186-.552.37-.552.364-.734.37-.552.55-.552.364-.552.37-.368.55-.552.55-.552.55-.368.556-.368.55-.368.55-.368.737-.368.55-.368.55-.184.737-.184.736-.184.736-.184.55-.183.736-.184h1.472l.55 28.665z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m684.8 764.182-.55-28.666-28.666.552.55 28.665zm-.55-28.666h2.209l.736.184.736.184.736.184.55.184.736.184.55.368.737.184.55.368.55.368.556.368.55.552.55.368.55.368.55.552.37.552.55.552.37.553.365.552.37.552.364.734.186.552.364.552.186.734.186.734.182.735.186.55v.734l.186.734v2.203l-.186.734v.735l-.186.734-.182.734-.186.552-.364.734-.186.552-.37.735-.364.552-.37.552-.365.552-.37.552-.364.552-.55.552-.55.552-.37.368-.55.368-.55.552-.556.368-.736.369-.55.183-.55.369-.737.368-.736.184-.55.184-.736.184-.736.184h-.736l-.736.183h-.737l-.55-28.665zm58.068 27.563h-1.472l-.736-.184h-.736l-.736-.184-.736-.184-.55-.184-.736-.367-.55-.184-.737-.369-.555-.368-.55-.368-.55-.368-.55-.368-.551-.368-.556-.552-.55-.552-.365-.368-.55-.552-.37-.552-.364-.735-.37-.552-.364-.552-.186-.734-.37-.552-.182-.734-.186-.552-.186-.734-.186-.735v-.734l-.183-.734v-2.203l.183-.734v-.736l.186-.55.186-.735.186-.734.364-.552.186-.734.364-.552.37-.552.364-.735.37-.552.364-.552.37-.552.55-.368.365-.552.555-.55.55-.369.551-.367.55-.369.736-.367.55-.369.556-.367.736-.184.55-.184.737-.184.736-.184.736-.184.736-.184h1.466l.556 28.665zm28.662-.551-.55-28.665-28.667.552.556 28.665z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M770.43 733.863h2.207l.55.183.737.184.736.184.736.184.55.184.736.368.55.184.556.367.736.369.55.367.55.552.55.369.37.368.55.552.366.55.555.552.365.552.37.552.364.552.364.734.37.552.186.552.182.735.186.734.186.734.186.552.182.734v3.672l-.182.734-.186.734-.186.734-.186.552-.182.735-.37.552-.186.734-.364.552-.364.55-.37.552-.55.552-.37.552-.55.552-.365.552-.555.368-.55.368-.55.553-.551.367-.55.369-.736.183-.556.369-.73.368-.556.183-.736.184-.736.184-.55.184h-.737l-.736.184h-.736l-.55-28.665zm57.882 27.562h-1.472l-.736-.184h-.736l-.737-.183-.55-.184-.736-.184-.736-.184-.55-.368-.55-.369-.736-.184-.55-.368-.556-.552-.55-.368-.55-.368-.551-.552-.37-.368-.55-.552-.365-.552-.37-.552-.55-.55-.364-.552-.186-.734-.37-.552-.182-.735-.37-.552-.186-.734-.182-.734-.186-.734v-1.287l-.186-.734v-.734l.186-.736v-.735l.186-.734v-.734l.182-.734.37-.552.186-.735.182-.552.37-.734.364-.552.37-.552.364-.552.37-.552.55-.55.364-.552.556-.552.55-.368.55-.552.55-.368.551-.368.556-.369.55-.367.736-.184.55-.368.736-.184.55-.184.737-.184.736-.183h.736l.736-.184h.736l.55 28.665z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "m857.163 760.69-5.697.184-5.882.184-6.063.184-5.882.184h-5.327l-.55-28.666 5.327-.183h5.882l5.877-.184 5.698-.184 5.697-.184z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M856.243 732.025h1.472l.736.184h.736l.736.184.736.184.55.184.736.183.55.369.737.184.55.368.55.368.55.368.556.552.55.368.55.368.55.552.37.552.55.55.365.552.37.553.364.552.37.552.364.734.186.552.186.734.365.734.186.552v.735l.186.734v.734l.182.734v.735l-.182.734v.734l-.186.734v.735l-.186.552-.182.734-.37.552-.186.734-.365.552-.37.734-.364.553-.37.55-.364.552-.364.552-.556.552-.365.368-.55.552-.556.368-.55.552-.55.368-.55.368-.736.368-.55.184-.737.368-.555.184-.73.184-.737.184-.556.184-.736.184h-1.466l-.92-28.666z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "31.05295017,31.05295017",
+            strokeWidth: 31.053,
+            d: "M750 850V100"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime156.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeDasharray: "31.0529,31.0529",
+            strokeWidth: 31.053,
+            d: "M530 850V100"
+          }
+        )
       ]
     }
   );
-  var Pca_default = SvgPca;
+  var Analyse_default = SvgAnalyse;
 
-  // build/lib-react-tsx/spectra/Phylogram.tsx
+  // build/lib-react-tsx/spectra/Compare.tsx
   var React157 = __toESM(require_react(), 1);
   var import_jsx_runtime157 = __toESM(require_jsx_runtime(), 1);
-  var SvgPhylogram = ({
+  var SvgCompare = ({
     title,
     titleId,
     ...props
@@ -34802,19 +34832,41 @@
           "path",
           {
             fill: "none",
-            strokeWidth: 50,
-            d: "M50 550h350m250-150h300M850 700h100m-100 0h100M850 850h100M750 100h200M750 200h200m-300-50h100m100 550v150M650 150v250m0-275v300M400 275v500m0-475h250m200 375v200M750 75v150M375 775h475"
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.323,
+            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime157.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 31.973,
+            d: "M97.35 628.573c87.832 20.764 119.621-79.197 124.583-157.475 11.576-179.157 25.725-256.15 86.179-252.84 158.21-1.105 12.679 436.775 212.233 419.503 95.92-8.27 107.445-74.992 112.222-153.822 4.962-83.974 7.324-167.606 17.433-233.94 37.85 109.516-34.656 379.125 139.542 382.617 35.649.734 64.68-.919 96.653-2.573"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime157.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 31.973,
+            d: "M100 750c87.833 20.763 150-50 150-100 0 0 0-50 50-50 100 0 23.442 176.46 222.995 159.187C600 749.999 643.223 756.829 648 677.999c0-50 2 22 2-78 0 100-32.005 150.551 142.193 154.043 35.649.734 64.68-.919 96.652-2.573"
           }
         )
       ]
     }
   );
-  var Phylogram_default = SvgPhylogram;
+  var Compare_default = SvgCompare;
 
-  // build/lib-react-tsx/structure/3DModelText.tsx
+  // build/lib-react-tsx/spectra/Deconvolution.tsx
   var React158 = __toESM(require_react(), 1);
   var import_jsx_runtime158 = __toESM(require_jsx_runtime(), 1);
-  var Svg3DModelText = ({
+  var SvgDeconvolution = ({
     title,
     titleId,
     ...props
@@ -34822,7 +34874,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -34832,16 +34883,37 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime158.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime158.jsx)("path", { d: "M404.514 595.703c0 27.632-5.257 52.182-15.784 73.675-10.526 21.339-25.287 39.323-44.146 53.94-18.859 14.465-41.364 25.574-67.674 33.175-26.316 7.602-54.964 11.264-86.104 11.264-18.853 0-36.54-1.32-53.062-3.95-16.521-2.781-31.139-6.137-43.854-10.084-12.716-4.093-23.242-8.184-31.568-12.43-8.189-4.378-13.596-7.602-16.225-9.943-2.64-2.19-4.537-4.818-5.709-7.602-1.314-2.914-2.486-6.28-3.509-10.087-1.023-3.938-1.749-8.767-2.188-14.618-.44-5.841-.583-12.857-.583-21.194 0-13.74 1.166-23.243 3.36-28.5 2.338-5.27 5.847-7.887 10.378-7.887 2.777 0 7.749 1.89 14.761 5.84 7.018 3.795 15.938 7.898 26.75 12.43 10.823 4.376 23.538 8.48 38.157 12.418 14.47 3.805 31.134 5.698 49.696 5.698 15.641 0 29.533-1.894 41.517-5.545 11.984-3.663 22.213-8.921 30.551-15.652 8.48-6.721 14.761-14.761 18.853-24.407 4.097-9.504 6.291-20.173 6.291-31.867 0-12.858-2.634-24.407-7.6-34.637-4.972-10.383-12.429-19.15-22.219-26.464-9.801-7.162-22.225-12.86-37.277-16.808-14.916-4.092-32.603-5.996-52.918-5.996h-47.947c-3.651 0-6.869-.583-9.35-1.605-2.64-.88-4.829-3.068-6.434-6.137-1.755-3.223-2.926-7.458-3.658-13.013-.731-5.698-1.023-12.87-1.023-21.636 0-8.326.292-15.058 1.023-20.46.731-5.267 1.903-9.36 3.36-12.143 1.612-2.915 3.657-4.818 5.995-5.984q3.73-1.762 8.772-1.76h48.381c16.664 0 31.282-1.902 44.151-5.697 12.858-3.95 23.682-9.361 32.305-16.521 8.767-7.16 15.345-15.785 20.024-25.868 4.527-10.234 6.726-21.35 6.726-33.626 0-9.502-1.462-18.418-4.68-26.75-3.069-8.475-7.75-15.79-13.887-21.922-6.138-6.138-14.036-10.966-23.825-14.48-9.646-3.652-21.053-5.406-34.208-5.406-14.91 0-28.797 2.194-41.952 6.583-13.155 4.532-24.847 9.354-35.374 14.618-10.384 5.264-19.293 10.229-26.459 14.76-7.309 4.539-12.721 6.865-16.076 6.865-2.343 0-4.389-.583-5.995-1.457-1.759-1.028-3.217-2.92-4.388-5.846-1.023-2.783-1.903-7.018-2.486-12.43-.583-5.406-.88-12.418-.88-20.898 0-7.155.154-13.155.44-17.83.297-4.681.88-8.635 1.76-11.847.726-3.063 1.897-5.846 3.212-8.034 1.171-2.338 3.366-4.818 6.138-7.601 2.926-2.628 8.778-6.726 17.544-12.132 8.921-5.417 20.03-10.675 33.472-15.79 13.452-5.263 28.802-9.503 46.483-13.155 17.543-3.503 36.551-5.27 57.158-5.27 26.756 0 50.581 3.069 71.337 9.367 20.612 6.28 38.003 15.344 52.181 27.185 14.178 11.835 24.854 26.454 32.163 43.707 7.16 17.247 10.812 36.694 10.812 58.467 0 16.812-2.046 32.448-6.43 47.066-4.24 14.622-10.521 27.633-18.71 39.04-8.332 11.397-18.709 21.043-31.133 29.083-12.43 8.04-26.75 14.036-42.975 17.984v1.309c19.293 2.2 36.837 7.16 52.181 14.772 15.498 7.6 28.505 17.093 39.175 28.5 10.675 11.396 19.001 24.266 24.704 38.74 5.708 14.32 8.479 29.82 8.479 46.483zm558.54-122.94c0 50.73-6.721 94.287-20.019 130.398-13.305 36.1-32.306 65.633-57.158 88.435-24.854 22.802-54.959 39.609-90.482 50.278-35.665 10.682-77.914 16.08-127.026 16.08h-132.29c-9.504 0-17.396-2.781-23.825-8.325q-9.652-8.332-9.651-27.19V239.325c0-12.578 3.217-21.636 9.651-27.191 6.429-5.555 14.321-8.332 23.825-8.332h142.079c49.409 0 91.362 5.846 125.713 17.395 34.351 11.544 63.444 28.654 86.978 51.307 23.533 22.659 41.512 50.719 53.793 84.196 12.276 33.333 18.412 72.065 18.412 116.063zm-116.494 3.805c0-26.311-3.075-50.575-9.213-73.233-6.143-22.52-16.081-42.103-29.676-58.613-13.448-16.526-30.838-29.54-52.188-38.746-21.19-9.35-49.112-14.034-83.755-14.034h-56.861v376.997h58.615c30.843 0 56.867-4.093 77.91-11.99 21.194-8.041 38.739-20.172 52.917-36.254s24.705-36.244 31.723-60.222c7.019-23.98 10.528-51.895 10.528-83.905z" })
+        /* @__PURE__ */ (0, import_jsx_runtime158.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 39.323,
+            d: "M49.941 850.47h883.662m13.965 0-51.27 38.956m0-77.726 51.27 38.77"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime158.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 31.973,
+            d: "M94.492 348.573C285.488 350.806 182.212 58.297 300 58.571c126.782-1.064 52.857 285.714 220.345 287.761C628.763 344.997 600 208.571 650 208.571s-8.942 134.839 139.542 132.616c35.653-.514 56.109 1.939 88.081.285M94.492 728.573C300 750 200 600 300 600s52.857 124.286 220.345 126.333C628.763 724.997 600 499.999 650 499.999s-8.942 223.41 139.542 221.188c35.653-.514 56.109 1.939 88.081.285"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime158.jsx)("path", { fillRule: "evenodd", d: "M330 491.999h250v50H330z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime158.jsx)("path", { d: "M430 392h50v250h-50z" })
       ]
     }
   );
-  var DModelText_default = Svg3DModelText;
+  var Deconvolution_default = SvgDeconvolution;
 
-  // build/lib-react-tsx/structure/3DModel.tsx
+  // build/lib-react-tsx/spectra/Pca.tsx
   var React159 = __toESM(require_react(), 1);
   var import_jsx_runtime159 = __toESM(require_jsx_runtime(), 1);
-  var Svg3DModel = ({
+  var SvgPca = ({
     title,
     titleId,
     ...props
@@ -34849,7 +34921,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -34859,37 +34930,27 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("path", { d: "M502.616 698.225c111.244 0 201.965-90.735 201.965-201.985s-90.72-201.999-201.965-201.999c-111.248 0-201.983 90.749-201.983 201.999 0 111.249 90.737 201.985 201.983 201.985z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60.471,
-            d: "m449.349 384.629-100.541-138.86m421.97 527.157L601.53 598.317m178.829-380.158L609.042 390.712M416.17 508.564 244.836 681.133"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            strokeWidth: 60.471,
-            d: "M852.9 245.769c56.541 0 102.665-46.109 102.665-102.664 0-56.542-46.124-102.652-102.665-102.652-56.545 0-102.682 46.11-102.682 102.652.001 56.555 46.14 102.664 102.682 102.664zm-556.502 5.653c56.541 0 102.68-46.124 102.68-102.666 0-56.54-46.139-102.652-102.68-102.652-56.54 0-102.665 46.112-102.665 102.652.001 56.542 46.125 102.666 102.665 102.666zM149.512 850.318c56.54 0 102.65-46.125 102.65-102.667 0-56.556-46.11-102.664-102.65-102.664-56.557 0-102.681 46.108-102.681 102.664.001 56.542 46.125 102.667 102.681 102.667zm697.732 104.527c56.544 0 102.668-46.124 102.668-102.665 0-56.558-46.124-102.668-102.668-102.668-56.54 0-102.648 46.11-102.648 102.668.001 56.541 46.11 102.665 102.648 102.665z"
-          }
-        )
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("ellipse", { cx: 75, cy: 425, fill: "none", stroke: "none", rx: 325, ry: 125 }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 225, cy: 225, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 225, cy: 225, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 114.91, cy: 408.333, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 333.018, cy: 375.991, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 255.18, cy: 550.405, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 683.198, cy: 238.333, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 875.901, cy: 313.378, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 822.838, cy: 128.784, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 781.306, cy: 870.135, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 620.676, cy: 785.901, r: 75, stroke: "none" }),
+        /* @__PURE__ */ (0, import_jsx_runtime159.jsx)("circle", { cx: 874.279, cy: 712.387, r: 75, stroke: "none" })
       ]
     }
   );
-  var DModel_default = Svg3DModel;
+  var Pca_default = SvgPca;
 
-  // build/lib-react-tsx/structure/Abundance.tsx
+  // build/lib-react-tsx/spectra/Phylogram.tsx
   var React160 = __toESM(require_react(), 1);
   var import_jsx_runtime160 = __toESM(require_jsx_runtime(), 1);
-  var SvgAbundance = ({
+  var SvgPhylogram = ({
     title,
     titleId,
     ...props
@@ -34906,7 +34967,115 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime160.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime160.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime160.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeWidth: 50,
+            d: "M50 550h350m250-150h300M850 700h100m-100 0h100M850 850h100M750 100h200M750 200h200m-300-50h100m100 550v150M650 150v250m0-275v300M400 275v500m0-475h250m200 375v200M750 75v150M375 775h475"
+          }
+        )
+      ]
+    }
+  );
+  var Phylogram_default = SvgPhylogram;
+
+  // build/lib-react-tsx/structure/3DModelText.tsx
+  var React161 = __toESM(require_react(), 1);
+  var import_jsx_runtime161 = __toESM(require_jsx_runtime(), 1);
+  var Svg3DModelText = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime161.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime161.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime161.jsx)("path", { d: "M404.514 595.703c0 27.632-5.257 52.182-15.784 73.675-10.526 21.339-25.287 39.323-44.146 53.94-18.859 14.465-41.364 25.574-67.674 33.175-26.316 7.602-54.964 11.264-86.104 11.264-18.853 0-36.54-1.32-53.062-3.95-16.521-2.781-31.139-6.137-43.854-10.084-12.716-4.093-23.242-8.184-31.568-12.43-8.189-4.378-13.596-7.602-16.225-9.943-2.64-2.19-4.537-4.818-5.709-7.602-1.314-2.914-2.486-6.28-3.509-10.087-1.023-3.938-1.749-8.767-2.188-14.618-.44-5.841-.583-12.857-.583-21.194 0-13.74 1.166-23.243 3.36-28.5 2.338-5.27 5.847-7.887 10.378-7.887 2.777 0 7.749 1.89 14.761 5.84 7.018 3.795 15.938 7.898 26.75 12.43 10.823 4.376 23.538 8.48 38.157 12.418 14.47 3.805 31.134 5.698 49.696 5.698 15.641 0 29.533-1.894 41.517-5.545 11.984-3.663 22.213-8.921 30.551-15.652 8.48-6.721 14.761-14.761 18.853-24.407 4.097-9.504 6.291-20.173 6.291-31.867 0-12.858-2.634-24.407-7.6-34.637-4.972-10.383-12.429-19.15-22.219-26.464-9.801-7.162-22.225-12.86-37.277-16.808-14.916-4.092-32.603-5.996-52.918-5.996h-47.947c-3.651 0-6.869-.583-9.35-1.605-2.64-.88-4.829-3.068-6.434-6.137-1.755-3.223-2.926-7.458-3.658-13.013-.731-5.698-1.023-12.87-1.023-21.636 0-8.326.292-15.058 1.023-20.46.731-5.267 1.903-9.36 3.36-12.143 1.612-2.915 3.657-4.818 5.995-5.984q3.73-1.762 8.772-1.76h48.381c16.664 0 31.282-1.902 44.151-5.697 12.858-3.95 23.682-9.361 32.305-16.521 8.767-7.16 15.345-15.785 20.024-25.868 4.527-10.234 6.726-21.35 6.726-33.626 0-9.502-1.462-18.418-4.68-26.75-3.069-8.475-7.75-15.79-13.887-21.922-6.138-6.138-14.036-10.966-23.825-14.48-9.646-3.652-21.053-5.406-34.208-5.406-14.91 0-28.797 2.194-41.952 6.583-13.155 4.532-24.847 9.354-35.374 14.618-10.384 5.264-19.293 10.229-26.459 14.76-7.309 4.539-12.721 6.865-16.076 6.865-2.343 0-4.389-.583-5.995-1.457-1.759-1.028-3.217-2.92-4.388-5.846-1.023-2.783-1.903-7.018-2.486-12.43-.583-5.406-.88-12.418-.88-20.898 0-7.155.154-13.155.44-17.83.297-4.681.88-8.635 1.76-11.847.726-3.063 1.897-5.846 3.212-8.034 1.171-2.338 3.366-4.818 6.138-7.601 2.926-2.628 8.778-6.726 17.544-12.132 8.921-5.417 20.03-10.675 33.472-15.79 13.452-5.263 28.802-9.503 46.483-13.155 17.543-3.503 36.551-5.27 57.158-5.27 26.756 0 50.581 3.069 71.337 9.367 20.612 6.28 38.003 15.344 52.181 27.185 14.178 11.835 24.854 26.454 32.163 43.707 7.16 17.247 10.812 36.694 10.812 58.467 0 16.812-2.046 32.448-6.43 47.066-4.24 14.622-10.521 27.633-18.71 39.04-8.332 11.397-18.709 21.043-31.133 29.083-12.43 8.04-26.75 14.036-42.975 17.984v1.309c19.293 2.2 36.837 7.16 52.181 14.772 15.498 7.6 28.505 17.093 39.175 28.5 10.675 11.396 19.001 24.266 24.704 38.74 5.708 14.32 8.479 29.82 8.479 46.483zm558.54-122.94c0 50.73-6.721 94.287-20.019 130.398-13.305 36.1-32.306 65.633-57.158 88.435-24.854 22.802-54.959 39.609-90.482 50.278-35.665 10.682-77.914 16.08-127.026 16.08h-132.29c-9.504 0-17.396-2.781-23.825-8.325q-9.652-8.332-9.651-27.19V239.325c0-12.578 3.217-21.636 9.651-27.191 6.429-5.555 14.321-8.332 23.825-8.332h142.079c49.409 0 91.362 5.846 125.713 17.395 34.351 11.544 63.444 28.654 86.978 51.307 23.533 22.659 41.512 50.719 53.793 84.196 12.276 33.333 18.412 72.065 18.412 116.063zm-116.494 3.805c0-26.311-3.075-50.575-9.213-73.233-6.143-22.52-16.081-42.103-29.676-58.613-13.448-16.526-30.838-29.54-52.188-38.746-21.19-9.35-49.112-14.034-83.755-14.034h-56.861v376.997h58.615c30.843 0 56.867-4.093 77.91-11.99 21.194-8.041 38.739-20.172 52.917-36.254s24.705-36.244 31.723-60.222c7.019-23.98 10.528-51.895 10.528-83.905z" })
+      ]
+    }
+  );
+  var DModelText_default = Svg3DModelText;
+
+  // build/lib-react-tsx/structure/3DModel.tsx
+  var React162 = __toESM(require_react(), 1);
+  var import_jsx_runtime162 = __toESM(require_jsx_runtime(), 1);
+  var Svg3DModel = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime162.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime162.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)("path", { d: "M502.616 698.225c111.244 0 201.965-90.735 201.965-201.985s-90.72-201.999-201.965-201.999c-111.248 0-201.983 90.749-201.983 201.999 0 111.249 90.737 201.985 201.983 201.985z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60.471,
+            d: "m449.349 384.629-100.541-138.86m421.97 527.157L601.53 598.317m178.829-380.158L609.042 390.712M416.17 508.564 244.836 681.133"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            strokeWidth: 60.471,
+            d: "M852.9 245.769c56.541 0 102.665-46.109 102.665-102.664 0-56.542-46.124-102.652-102.665-102.652-56.545 0-102.682 46.11-102.682 102.652.001 56.555 46.14 102.664 102.682 102.664zm-556.502 5.653c56.541 0 102.68-46.124 102.68-102.666 0-56.54-46.139-102.652-102.68-102.652-56.54 0-102.665 46.112-102.665 102.652.001 56.542 46.125 102.666 102.665 102.666zM149.512 850.318c56.54 0 102.65-46.125 102.65-102.667 0-56.556-46.11-102.664-102.65-102.664-56.557 0-102.681 46.108-102.681 102.664.001 56.542 46.125 102.667 102.681 102.667zm697.732 104.527c56.544 0 102.668-46.124 102.668-102.665 0-56.558-46.124-102.668-102.668-102.668-56.54 0-102.648 46.11-102.648 102.668.001 56.541 46.11 102.665 102.648 102.665z"
+          }
+        )
+      ]
+    }
+  );
+  var DModel_default = Svg3DModel;
+
+  // build/lib-react-tsx/structure/Abundance.tsx
+  var React163 = __toESM(require_react(), 1);
+  var import_jsx_runtime163 = __toESM(require_jsx_runtime(), 1);
+  var SvgAbundance = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime163.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime163.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime163.jsxs)(
           "g",
           {
             stroke: "none",
@@ -34920,7 +35089,7 @@
             },
             wordSpacing: 0,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime160.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime163.jsx)(
                 "path",
                 {
                   d: "M305.857 267.242q7.003 7.11 11.147 16.589t4.144 25.221q0 17.773-6.002 33.177-5.859 15.404-18.15 26.406-12.004 10.664-28.295 16.42-16.15 5.585-39.3 5.585-26.44 0-45.446-4.908-18.864-4.91-30.726-11.003v-55.352h5.574q12.29 8.803 29.296 15.235 17.15 6.432 31.298 6.432 8.288 0 18.006-1.524 9.718-1.692 16.435-7.109 5.288-4.231 8.432-10.156 3.143-6.094 3.143-17.435 0-11.003-4.287-16.927-4.287-6.094-11.29-8.632-7.001-2.71-16.863-2.878-9.861-.338-18.292-.338h-11.72v-45.027h12.148q11.147 0 19.722-.847t14.577-3.893q6.288-3.216 9.432-8.464 3.144-5.416 3.144-15.741 0-7.619-3.287-12.188-3.287-4.74-8.288-7.448-5.574-3.047-13.149-4.062t-13.004-1.016q-13.434 0-29.154 5.585-15.72 5.417-30.44 15.743h-5.287v-54.674q11.718-5.586 31.869-10.664 20.15-5.247 40.872-5.247 20.15 0 35.299 4.231 15.148 4.063 25.009 11.003 11.718 8.293 17.435 20.143t5.716 27.76q0 20.99-11.004 37.578-11.004 16.42-29.01 20.99v2.369q7.287 1.186 15.434 4.74 8.145 3.555 14.862 10.325m228.942 118.152h-167.06v-41.64q19.15-16.42 38.3-34.87 19.292-18.45 30.868-31.823 17.292-19.805 24.58-34.531t7.289-29.115q0-17.265-9.432-26.574-9.29-9.48-26.867-9.48-13.149 0-27.725 6.432-14.434 6.432-26.867 16.42h-4.573v-56.03q10.147-5.246 29.868-10.494 19.865-5.247 39.73-5.247 40.014 0 61.021 19.974 21.009 19.804 21.009 56.198 0 23.867-10.147 45.363-10.004 21.498-30.726 44.35-13.004 14.218-26.152 26.236-13.149 11.849-18.721 16.589H534.8z",
@@ -34928,11 +35097,11 @@
                   fontSize: 318.532
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime160.jsx)("path", { d: "M853.23 476.853q0 57.291-41.115 93.229-40.894 35.677-111.25 35.677-40.675 0-71.017-8.333-30.12-8.594-56.504-21.615v-92.969h9.234q26.164 24.74 58.484 38.021 32.54 13.281 62.44 13.281 7.696 0 20.228-1.562t20.447-5.208q9.674-4.688 15.83-11.72 6.377-7.03 6.377-20.833 0-12.76-9.235-21.875-9.014-9.375-26.603-14.323-18.469-5.208-39.136-9.635-20.447-4.688-38.476-11.719-41.334-15.885-59.583-42.969-18.029-27.343-18.029-67.708 0-54.167 40.895-88.281 41.114-34.376 105.534-34.376 32.32 0 63.76 7.553 31.661 7.291 54.747 18.49V319.3h-9.015q-19.787-18.75-48.59-31.25-28.582-12.76-58.483-12.76-10.554 0-21.107 1.823-10.334 1.562-20.008 6.25-8.574 3.906-14.73 11.979-6.157 7.812-6.157 17.969 0 15.364 9.894 23.698 9.894 8.073 37.377 14.843 18.029 4.427 34.519 8.594 16.71 4.167 35.837 11.459 37.597 14.583 55.406 39.843 18.029 25 18.029 65.105" })
+              /* @__PURE__ */ (0, import_jsx_runtime163.jsx)("path", { d: "M853.23 476.853q0 57.291-41.115 93.229-40.894 35.677-111.25 35.677-40.675 0-71.017-8.333-30.12-8.594-56.504-21.615v-92.969h9.234q26.164 24.74 58.484 38.021 32.54 13.281 62.44 13.281 7.696 0 20.228-1.562t20.447-5.208q9.674-4.688 15.83-11.72 6.377-7.03 6.377-20.833 0-12.76-9.235-21.875-9.014-9.375-26.603-14.323-18.469-5.208-39.136-9.635-20.447-4.688-38.476-11.719-41.334-15.885-59.583-42.969-18.029-27.343-18.029-67.708 0-54.167 40.895-88.281 41.114-34.376 105.534-34.376 32.32 0 63.76 7.553 31.661 7.291 54.747 18.49V319.3h-9.015q-19.787-18.75-48.59-31.25-28.582-12.76-58.483-12.76-10.554 0-21.107 1.823-10.334 1.562-20.008 6.25-8.574 3.906-14.73 11.979-6.157 7.812-6.157 17.969 0 15.364 9.894 23.698 9.894 8.073 37.377 14.843 18.029 4.427 34.519 8.594 16.71 4.167 35.837 11.459 37.597 14.583 55.406 39.843 18.029 25 18.029 65.105" })
             ]
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime160.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime163.jsx)(
           "path",
           {
             stroke: "none",
@@ -34947,20 +35116,20 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime160.jsx)("path", { fill: "none", strokeWidth: 40, d: "M103.12 30H892v935.636H103.12Z" })
+        /* @__PURE__ */ (0, import_jsx_runtime163.jsx)("path", { fill: "none", strokeWidth: 40, d: "M103.12 30H892v935.636H103.12Z" })
       ]
     }
   );
   var Abundance_default = SvgAbundance;
 
   // build/lib-react-tsx/structure/Atomistic2.tsx
-  var React161 = __toESM(require_react(), 1);
-  var import_jsx_runtime161 = __toESM(require_jsx_runtime(), 1);
+  var React164 = __toESM(require_react(), 1);
+  var import_jsx_runtime164 = __toESM(require_jsx_runtime(), 1);
   var SvgAtomistic2 = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime161.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime164.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -34972,8 +35141,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime161.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime161.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime164.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
           "path",
           {
             fill: "none",
@@ -34983,7 +35152,7 @@
             d: "M328.953 111.543c74.852-43.268 209.754 50.505 301.387 209.26 91.634 158.754 105.289 322.444 30.6 365.548-74.854 43.103-209.755-50.506-301.388-209.26-91.635-158.756-105.288-322.445-30.6-365.548"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime161.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
           "path",
           {
             fill: "none",
@@ -34993,7 +35162,7 @@
             d: "M782.35 232.953c43.103 74.853-50.506 209.754-209.26 301.387-158.755 91.635-322.445 105.29-365.548 30.6-43.268-74.853 50.505-209.755 209.26-301.388 158.755-91.634 322.444-105.287 365.548-30.599"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime161.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
           "path",
           {
             fill: "none",
@@ -35009,13 +35178,13 @@
   var Atomistic2_default = SvgAtomistic2;
 
   // build/lib-react-tsx/structure/AtomisticElectron.tsx
-  var React162 = __toESM(require_react(), 1);
-  var import_jsx_runtime162 = __toESM(require_jsx_runtime(), 1);
+  var React165 = __toESM(require_react(), 1);
+  var import_jsx_runtime165 = __toESM(require_jsx_runtime(), 1);
   var SvgAtomisticElectron = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime162.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime165.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35027,9 +35196,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime162.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)("path", { fill: "none", d: "M352-84h150v50H352z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime165.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)("path", { fill: "none", d: "M352-84h150v50H352z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
           "path",
           {
             fill: "none",
@@ -35039,7 +35208,7 @@
             d: "M499.318 174.78c-180.085 0-326.065 145.98-326.065 326.212 0 180.088 145.98 326.065 326.065 326.065 180.084 0 326.212-145.977 326.212-326.065 0-180.232-146.128-326.212-326.212-326.212"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
           "path",
           {
             fill: "none",
@@ -35049,7 +35218,7 @@
             d: "M329.396 129.742c-54.712 0-99.15 44.439-99.15 99.151s44.438 99.15 99.15 99.15 99.15-44.438 99.15-99.15-44.438-99.15-99.15-99.15"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
           "path",
           {
             fill: "#fefefe",
@@ -35058,7 +35227,7 @@
             d: "M329.396 147.32c-45.057 0-81.573 36.516-81.573 81.573s36.516 81.573 81.573 81.573 81.574-36.516 81.574-81.573-36.517-81.573-81.574-81.573"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
           "path",
           {
             fill: "none",
@@ -35068,20 +35237,20 @@
             d: "M275.655 224.893h103.483"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime162.jsx)("circle", { cx: 500.098, cy: 501.154, r: 25 })
+        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)("circle", { cx: 500.098, cy: 501.154, r: 25 })
       ]
     }
   );
   var AtomisticElectron_default = SvgAtomisticElectron;
 
   // build/lib-react-tsx/structure/AtomisticNeutron.tsx
-  var React163 = __toESM(require_react(), 1);
-  var import_jsx_runtime163 = __toESM(require_jsx_runtime(), 1);
+  var React166 = __toESM(require_react(), 1);
+  var import_jsx_runtime166 = __toESM(require_jsx_runtime(), 1);
   var SvgAtomisticNeutron = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime163.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime166.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35094,8 +35263,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime163.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime163.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime166.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime166.jsx)(
           "path",
           {
             fill: "none",
@@ -35107,7 +35276,7 @@
             clipRule: "evenodd"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime163.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime166.jsx)(
           "path",
           {
             fill: "none",
@@ -35117,7 +35286,7 @@
             clipRule: "evenodd"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime163.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime166.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -35125,20 +35294,20 @@
             clipRule: "evenodd"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime163.jsx)("path", { d: "M580.458 584.001q0 3.48-1.212 6.204-1.208 2.724-3.254 4.538-2.044 1.817-4.841 2.646c-2.797.829-3.755.831-5.675.831h-16.943c-3.532 0-6.58-.351-9.153-1.057s-4.938-1.993-7.107-3.86c-2.17-1.863-4.257-4.385-6.273-7.564-2.016-3.174-4.291-7.285-6.816-12.327l-48.704-91.521a442 442 0 0 1-8.618-17.624 319 319 0 0 1-7.873-18.379h-.3c.404 7.261.703 14.498.912 21.707.195 7.212.298 14.647.298 22.311v102.417a4.7 4.7 0 0 1-.828 2.724q-.834 1.211-2.878 2.041c-1.364.553-3.2.98-5.522 1.282-2.323.304-5.292.456-8.923.456-3.527 0-6.455-.152-8.771-.456q-3.483-.453-5.453-1.282c-1.308-.553-2.211-1.234-2.719-2.041-.508-.808-.758-1.715-.758-2.724V416.387c0-4.74 1.391-8.293 4.159-10.666q4.16-3.552 10.21-3.553h21.33q5.75.001 9.682.984c2.622.657 4.973 1.738 7.032 3.25 2.073 1.514 4.013 3.606 5.829 6.278q2.722 4.012 5.591 9.91l38.126 71.552c2.211 4.337 4.409 8.6 6.58 12.785a481 481 0 0 1 6.271 12.557 2175 2175 0 0 1 5.9 12.331 674 674 0 0 1 5.604 12.101h.146c-.3-7.059-.528-14.421-.675-22.086a1096 1096 0 0 1-.237-21.939v-91.822c0-1.008.307-1.915.912-2.723q.906-1.21 3.024-2.118 2.122-.907 5.599-1.287c2.316-.25 5.294-.379 8.924-.379q5.142.002 8.625.379c2.322.254 4.104.682 5.369 1.287 1.258.605 2.143 1.311 2.643 2.118q.764 1.21.766 2.723z" })
+        /* @__PURE__ */ (0, import_jsx_runtime166.jsx)("path", { d: "M580.458 584.001q0 3.48-1.212 6.204-1.208 2.724-3.254 4.538-2.044 1.817-4.841 2.646c-2.797.829-3.755.831-5.675.831h-16.943c-3.532 0-6.58-.351-9.153-1.057s-4.938-1.993-7.107-3.86c-2.17-1.863-4.257-4.385-6.273-7.564-2.016-3.174-4.291-7.285-6.816-12.327l-48.704-91.521a442 442 0 0 1-8.618-17.624 319 319 0 0 1-7.873-18.379h-.3c.404 7.261.703 14.498.912 21.707.195 7.212.298 14.647.298 22.311v102.417a4.7 4.7 0 0 1-.828 2.724q-.834 1.211-2.878 2.041c-1.364.553-3.2.98-5.522 1.282-2.323.304-5.292.456-8.923.456-3.527 0-6.455-.152-8.771-.456q-3.483-.453-5.453-1.282c-1.308-.553-2.211-1.234-2.719-2.041-.508-.808-.758-1.715-.758-2.724V416.387c0-4.74 1.391-8.293 4.159-10.666q4.16-3.552 10.21-3.553h21.33q5.75.001 9.682.984c2.622.657 4.973 1.738 7.032 3.25 2.073 1.514 4.013 3.606 5.829 6.278q2.722 4.012 5.591 9.91l38.126 71.552c2.211 4.337 4.409 8.6 6.58 12.785a481 481 0 0 1 6.271 12.557 2175 2175 0 0 1 5.9 12.331 674 674 0 0 1 5.604 12.101h.146c-.3-7.059-.528-14.421-.675-22.086a1096 1096 0 0 1-.237-21.939v-91.822c0-1.008.307-1.915.912-2.723q.906-1.21 3.024-2.118 2.122-.907 5.599-1.287c2.316-.25 5.294-.379 8.924-.379q5.142.002 8.625.379c2.322.254 4.104.682 5.369 1.287 1.258.605 2.143 1.311 2.643 2.118q.764 1.21.766 2.723z" })
       ]
     }
   );
   var AtomisticNeutron_default = SvgAtomisticNeutron;
 
   // build/lib-react-tsx/structure/Atomistic.tsx
-  var React164 = __toESM(require_react(), 1);
-  var import_jsx_runtime164 = __toESM(require_jsx_runtime(), 1);
+  var React167 = __toESM(require_react(), 1);
+  var import_jsx_runtime167 = __toESM(require_jsx_runtime(), 1);
   var SvgAtomistic = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime164.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime167.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35150,8 +35319,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime164.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)(
           "path",
           {
             fill: "none",
@@ -35161,7 +35330,7 @@
             d: "M498.035 147.601c-151.635 0-274.552 122.917-274.552 274.675 0 151.637 122.917 274.551 274.552 274.551 151.634 0 274.677-122.914 274.677-274.551 0-151.758-123.043-274.675-274.677-274.675"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)(
           "path",
           {
             fill: "none",
@@ -35171,7 +35340,7 @@
             d: "M321.396 107.742c-54.712 0-99.15 44.439-99.15 99.151s44.438 99.15 99.15 99.15 99.15-44.438 99.15-99.15-44.438-99.15-99.15-99.15"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)(
           "path",
           {
             fill: "#fefefe",
@@ -35180,7 +35349,7 @@
             d: "M321.396 125.32c-45.057 0-81.573 36.516-81.573 81.573s36.516 81.573 81.573 81.573 81.574-36.516 81.574-81.573-36.517-81.573-81.574-81.573"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)(
           "path",
           {
             fill: "none",
@@ -35190,7 +35359,7 @@
             d: "M498.035 294.903c-70.309 0-127.373 56.94-127.373 127.373 0 70.309 57.064 127.251 127.373 127.251 70.31 0 127.373-56.942 127.373-127.251 0-70.432-57.063-127.373-127.373-127.373"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime164.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)(
           "path",
           {
             fill: "none",
@@ -35206,13 +35375,13 @@
   var Atomistic_default = SvgAtomistic;
 
   // build/lib-react-tsx/structure/Bohr.tsx
-  var React165 = __toESM(require_react(), 1);
-  var import_jsx_runtime165 = __toESM(require_jsx_runtime(), 1);
+  var React168 = __toESM(require_react(), 1);
+  var import_jsx_runtime168 = __toESM(require_jsx_runtime(), 1);
   var SvgBohr = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime165.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime168.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35224,8 +35393,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime165.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime168.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
           "path",
           {
             fill: "none",
@@ -35235,7 +35404,7 @@
             d: "M490.253 62.562c-187.603 0-339.69 152.088-339.69 339.69 0 187.481 152.087 339.57 339.69 339.57 187.48 0 339.57-152.089 339.57-339.57 0-187.602-152.09-339.69-339.57-339.69"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
           "path",
           {
             fill: "none",
@@ -35245,7 +35414,7 @@
             d: "M490.253 195.592c-114.22 0-206.66 92.441-206.66 206.66 0 114.1 92.44 206.662 206.66 206.662 114.098 0 206.66-92.563 206.66-206.661 0-114.22-92.562-206.66-206.66-206.66"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
           "path",
           {
             fill: "none",
@@ -35255,7 +35424,7 @@
             d: "M490.253 326.272c-41.95 0-75.981 34.03-75.981 75.98 0 41.954 34.03 75.859 75.98 75.859 41.954 0 75.859-33.905 75.859-75.858 0-41.95-33.905-75.981-75.858-75.981"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime165.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -35269,13 +35438,13 @@
   var Bohr_default = SvgBohr;
 
   // build/lib-react-tsx/structure/Conformers.tsx
-  var React166 = __toESM(require_react(), 1);
-  var import_jsx_runtime166 = __toESM(require_jsx_runtime(), 1);
+  var React169 = __toESM(require_react(), 1);
+  var import_jsx_runtime169 = __toESM(require_jsx_runtime(), 1);
   var SvgConformers = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime166.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime169.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35287,21 +35456,21 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime166.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime166.jsx)("path", { d: "M607.912 83.936a15 15 0 0 0-10.676 4.017L439.258 235.32H204.564l-147.023-144a15.002 15.002 0 0 0-23.303 18.526l151.397 248.283a15 15 0 0 0 12.808 7.191H449.84a15 15 0 0 0 12.709-7.033l157.627-251.396a15.002 15.002 0 0 0-12.264-22.955ZM533.836 188.12l-92.295 147.2H206.865l-84.414-138.432 65.496 64.146a15 15 0 0 0 10.496 4.285h246.725a15 15 0 0 0 10.23-4.03zm416.182 153.446a15 15 0 0 0-10.706 3.993L790.632 483.64l-236.056 1.52a15 15 0 0 0-12.47 6.81L389.15 726.695a15.002 15.002 0 0 0 22.524 19.407l144.144-127.934L796.85 613.6a15 15 0 0 0 12.396-6.985l152.955-242.052a15.002 15.002 0 0 0-12.183-22.997zm-74.76 104.424L788.2 583.758l-238.486 4.52a15 15 0 0 0-9.672 3.779l-64.865 57.57 87.658-134.52 233.826-1.505a15 15 0 0 0 10.111-4.008z" })
+        title ? /* @__PURE__ */ (0, import_jsx_runtime169.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime169.jsx)("path", { d: "M607.912 83.936a15 15 0 0 0-10.676 4.017L439.258 235.32H204.564l-147.023-144a15.002 15.002 0 0 0-23.303 18.526l151.397 248.283a15 15 0 0 0 12.808 7.191H449.84a15 15 0 0 0 12.709-7.033l157.627-251.396a15.002 15.002 0 0 0-12.264-22.955ZM533.836 188.12l-92.295 147.2H206.865l-84.414-138.432 65.496 64.146a15 15 0 0 0 10.496 4.285h246.725a15 15 0 0 0 10.23-4.03zm416.182 153.446a15 15 0 0 0-10.706 3.993L790.632 483.64l-236.056 1.52a15 15 0 0 0-12.47 6.81L389.15 726.695a15.002 15.002 0 0 0 22.524 19.407l144.144-127.934L796.85 613.6a15 15 0 0 0 12.396-6.985l152.955-242.052a15.002 15.002 0 0 0-12.183-22.997zm-74.76 104.424L788.2 583.758l-238.486 4.52a15 15 0 0 0-9.672 3.779l-64.865 57.57 87.658-134.52 233.826-1.505a15 15 0 0 0 10.111-4.008z" })
       ]
     }
   );
   var Conformers_default = SvgConformers;
 
   // build/lib-react-tsx/structure/Diastereotopic.tsx
-  var React167 = __toESM(require_react(), 1);
-  var import_jsx_runtime167 = __toESM(require_jsx_runtime(), 1);
+  var React170 = __toESM(require_react(), 1);
+  var import_jsx_runtime170 = __toESM(require_jsx_runtime(), 1);
   var SvgDiastereotopic = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime167.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime170.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35314,9 +35483,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("path", { d: "M252.565 300.988c0 1.382-.436 2.695-1.39 3.79-.939 1.164-2.477 2.111-4.59 2.77-2.12.731-4.96 1.313-8.531 1.748-3.577.443-8.026.66-13.486.66-5.544 0-10.139-.216-13.78-.66-3.578-.434-6.497-1.017-8.533-1.748-2.048-.659-3.579-1.606-4.448-2.77-.954-1.095-1.388-2.408-1.388-3.79V189.2H93.022v111.788a6 6 0 0 1-1.312 3.79c-.876 1.164-2.329 2.111-4.517 2.77q-3.172 1.096-8.533 1.748c-3.571.443-8.089.66-13.633.66-5.396 0-9.922-.216-13.563-.66-3.642-.434-6.561-1.017-8.679-1.748-2.113-.659-3.643-1.606-4.59-2.77-.955-1.095-1.39-2.408-1.39-3.79V39.873c0-1.39.435-2.702 1.39-3.789.948-1.173 2.478-2.12 4.59-2.779 2.118-.723 5.037-1.305 8.679-1.747 3.641-.436 8.167-.653 13.563-.653 5.542 0 10.062.218 13.633.653q5.36.663 8.533 1.747c2.188.659 3.641 1.606 4.517 2.779.878 1.086 1.312 2.398 1.312 3.789v101.501h103.396V39.873c0-1.39.436-2.702 1.388-3.789.869-1.173 2.399-2.12 4.448-2.779 2.036-.723 4.955-1.305 8.533-1.747q5.463-.654 13.78-.653c5.459 0 9.909.218 13.486.653q5.356.663 8.531 1.747c2.111.659 3.65 1.606 4.59 2.779.953 1.086 1.39 2.398 1.39 3.789v261.115zM967.05 165.071c0 25.301-3.361 47.033-9.989 65.037-6.639 18.011-16.118 32.747-28.517 44.119-12.391 11.374-27.414 19.759-45.131 25.085-17.796 5.318-38.868 8.021-63.367 8.021h-65.99c-4.736 0-8.674-1.39-11.888-4.16-3.2-2.772-4.812-7.292-4.812-13.563V48.622c0-6.272 1.612-10.792 4.812-13.563 3.214-2.772 7.151-4.154 11.888-4.154h70.881c24.644 0 45.565 2.912 62.704 8.68 17.13 5.753 31.644 14.285 43.389 25.588 11.738 11.305 20.706 25.302 26.831 42.001 6.115 16.624 9.189 35.948 9.189 57.897zm-58.118 1.894c0-13.12-1.529-25.231-4.597-36.527-3.057-11.226-8.018-21.002-14.804-29.238-6.699-8.244-15.381-14.735-26.033-19.324q-15.85-7-41.774-7.001h-28.362v188.052H822.6c15.389 0 28.362-2.042 38.865-5.978 10.568-4.014 19.325-10.062 26.397-18.083 7.074-8.027 12.321-18.083 15.822-30.047 3.502-11.958 5.248-25.884 5.248-41.854z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime167.jsxs)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("path", { d: "M252.565 300.988c0 1.382-.436 2.695-1.39 3.79-.939 1.164-2.477 2.111-4.59 2.77-2.12.731-4.96 1.313-8.531 1.748-3.577.443-8.026.66-13.486.66-5.544 0-10.139-.216-13.78-.66-3.578-.434-6.497-1.017-8.533-1.748-2.048-.659-3.579-1.606-4.448-2.77-.954-1.095-1.388-2.408-1.388-3.79V189.2H93.022v111.788a6 6 0 0 1-1.312 3.79c-.876 1.164-2.329 2.111-4.517 2.77q-3.172 1.096-8.533 1.748c-3.571.443-8.089.66-13.633.66-5.396 0-9.922-.216-13.563-.66-3.642-.434-6.561-1.017-8.679-1.748-2.113-.659-3.643-1.606-4.59-2.77-.955-1.095-1.39-2.408-1.39-3.79V39.873c0-1.39.435-2.702 1.39-3.789.948-1.173 2.478-2.12 4.59-2.779 2.118-.723 5.037-1.305 8.679-1.747 3.641-.436 8.167-.653 13.563-.653 5.542 0 10.062.218 13.633.653q5.36.663 8.533 1.747c2.188.659 3.641 1.606 4.517 2.779.878 1.086 1.312 2.398 1.312 3.789v101.501h103.396V39.873c0-1.39.436-2.702 1.388-3.789.869-1.173 2.399-2.12 4.448-2.779 2.036-.723 4.955-1.305 8.533-1.747q5.463-.654 13.78-.653c5.459 0 9.909.218 13.486.653q5.356.663 8.531 1.747c2.111.659 3.65 1.606 4.59 2.779.953 1.086 1.39 2.398 1.39 3.789v261.115zM967.05 165.071c0 25.301-3.361 47.033-9.989 65.037-6.639 18.011-16.118 32.747-28.517 44.119-12.391 11.374-27.414 19.759-45.131 25.085-17.796 5.318-38.868 8.021-63.367 8.021h-65.99c-4.736 0-8.674-1.39-11.888-4.16-3.2-2.772-4.812-7.292-4.812-13.563V48.622c0-6.272 1.612-10.792 4.812-13.563 3.214-2.772 7.151-4.154 11.888-4.154h70.881c24.644 0 45.565 2.912 62.704 8.68 17.13 5.753 31.644 14.285 43.389 25.588 11.738 11.305 20.706 25.302 26.831 42.001 6.115 16.624 9.189 35.948 9.189 57.897zm-58.118 1.894c0-13.12-1.529-25.231-4.597-36.527-3.057-11.226-8.018-21.002-14.804-29.238-6.699-8.244-15.381-14.735-26.033-19.324q-15.85-7-41.774-7.001h-28.362v188.052H822.6c15.389 0 28.362-2.042 38.865-5.978 10.568-4.014 19.325-10.062 26.397-18.083 7.074-8.027 12.321-18.083 15.822-30.047 3.502-11.958 5.248-25.884 5.248-41.854z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime170.jsxs)(
           "g",
           {
             fill: "none",
@@ -35324,27 +35493,27 @@
             strokeLinejoin: "round",
             strokeMiterlimit: 22.926,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("path", { strokeWidth: 37.088, d: "M508.229 777.649v148.985" }),
-              /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("path", { strokeWidth: 37.086, d: "M572.738 814.893 443.717 889.39" }),
-              /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("path", { strokeWidth: 37.084, d: "m572.738 889.39-129.021-74.497" })
+              /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("path", { strokeWidth: 37.088, d: "M508.229 777.649v148.985" }),
+              /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("path", { strokeWidth: 37.086, d: "M572.738 814.893 443.717 889.39" }),
+              /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("path", { strokeWidth: 37.084, d: "m572.738 889.39-129.021-74.497" })
             ]
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("path", { d: "M472.871 641.211 210.263 386.17l103.529-73.225 207.06 320.692 444.43 222.213-22.727 42.928-434.331-222.215L73.902 893.727l-22.728-40.403z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime167.jsx)("path", { d: "m538.127 585.561 34.592-34.599 34.599 34.599-34.599 34.591zm63.779-63.89 34.596-34.596 34.594 34.594-34.596 34.597zm63.921-63.755 34.6-34.6 34.597 34.597-34.6 34.6zm63.838-63.894 34.592-34.601 34.6 34.601-34.6 34.591z" })
+        /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("path", { d: "M472.871 641.211 210.263 386.17l103.529-73.225 207.06 320.692 444.43 222.213-22.727 42.928-434.331-222.215L73.902 893.727l-22.728-40.403z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("path", { d: "m538.127 585.561 34.592-34.599 34.599 34.599-34.599 34.591zm63.779-63.89 34.596-34.596 34.594 34.594-34.596 34.597zm63.921-63.755 34.6-34.6 34.597 34.597-34.6 34.6zm63.838-63.894 34.592-34.601 34.6 34.601-34.6 34.591z" })
       ]
     }
   );
   var Diastereotopic_default = SvgDiastereotopic;
 
   // build/lib-react-tsx/structure/Lcao.tsx
-  var React168 = __toESM(require_react(), 1);
-  var import_jsx_runtime168 = __toESM(require_jsx_runtime(), 1);
+  var React171 = __toESM(require_react(), 1);
+  var import_jsx_runtime171 = __toESM(require_jsx_runtime(), 1);
   var SvgLcao = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime168.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime171.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35356,8 +35525,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime168.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime171.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)(
           "path",
           {
             fill: "none",
@@ -35365,7 +35534,7 @@
             d: "M467.491 268.613a199.64 198.45 0 0 1-199.64 198.45 199.64 198.45 0 0 1-199.638-198.45 199.64 198.45 0 0 1 199.639-198.45 199.64 198.45 0 0 1 199.639 198.45Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)(
           "path",
           {
             stroke: "none",
@@ -35380,7 +35549,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)(
           "path",
           {
             fill: "none",
@@ -35389,7 +35558,7 @@
             transform: "skewY(.891)scale(.99988 1)"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)(
           "path",
           {
             stroke: "none",
@@ -35404,7 +35573,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)(
           "path",
           {
             fill: "none",
@@ -35412,7 +35581,7 @@
             d: "M945.323 263.687a199.64 198.45 0 0 1-199.64 198.45 199.64 198.45 0 0 1-199.638-198.45 199.64 198.45 0 0 1 199.639-198.45 199.64 198.45 0 0 1 199.639 198.45Z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime168.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)(
           "path",
           {
             stroke: "none",
@@ -35433,13 +35602,13 @@
   var Lcao_default = SvgLcao;
 
   // build/lib-react-tsx/structure/LewisNitrogen.tsx
-  var React169 = __toESM(require_react(), 1);
-  var import_jsx_runtime169 = __toESM(require_jsx_runtime(), 1);
+  var React172 = __toESM(require_react(), 1);
+  var import_jsx_runtime172 = __toESM(require_jsx_runtime(), 1);
   var SvgLewisNitrogen = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime169.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime172.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35451,9 +35620,9 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime169.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime169.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime169.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime172.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)("path", { fill: "none", d: "M500 100h150v50H500z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
           "path",
           {
             stroke: "none",
@@ -35469,7 +35638,7 @@
             wordSpacing: 0
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime169.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -35483,13 +35652,13 @@
   var LewisNitrogen_default = SvgLewisNitrogen;
 
   // build/lib-react-tsx/structure/LewisOxygen.tsx
-  var React170 = __toESM(require_react(), 1);
-  var import_jsx_runtime170 = __toESM(require_jsx_runtime(), 1);
+  var React173 = __toESM(require_react(), 1);
+  var import_jsx_runtime173 = __toESM(require_jsx_runtime(), 1);
   var SvgLewisOxygen = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime170.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime173.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35501,8 +35670,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime170.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime170.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime173.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -35510,7 +35679,7 @@
             d: "M410.638 50c27.52 0 49.793 22.273 49.793 49.792s-22.273 49.793-49.793 49.793-49.792-22.273-49.792-49.793S383.118 50 410.638 50m167.22 0c27.518 0 49.792 22.273 49.792 49.792s-22.274 49.793-49.792 49.793c-27.403 0-49.795-22.273-49.795-49.793S550.455 50 577.858 50"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime170.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
           "path",
           {
             fill: "none",
@@ -35520,7 +35689,7 @@
             d: "M384.168 280.304c-64.136 67.401-64.136 176.78 0 244.183 64.252 67.517 168.385 67.517 232.521 0 64.25-67.403 64.25-176.782 0-244.183-64.136-67.517-168.27-67.517-232.521 0"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime170.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -35534,13 +35703,13 @@
   var LewisOxygen_default = SvgLewisOxygen;
 
   // build/lib-react-tsx/structure/Magnifier5.tsx
-  var React171 = __toESM(require_react(), 1);
-  var import_jsx_runtime171 = __toESM(require_jsx_runtime(), 1);
+  var React174 = __toESM(require_react(), 1);
+  var import_jsx_runtime174 = __toESM(require_jsx_runtime(), 1);
   var SvgMagnifier5 = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime171.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime174.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35552,13 +35721,13 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime171.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)("path", { d: "M580.305 27.525c-182.445 0-331.588 149.146-331.588 331.59 0 181.776 148.064 330.45 329.596 331.537a27 27 0 0 0 1.992.051c182.444 0 331.59-149.143 331.59-331.588 0-182.444-149.146-331.59-331.59-331.59zm0 53.409c153.404 0 278.181 124.777 278.181 278.181S733.71 637.297 580.305 637.297s-278.18-124.778-278.18-278.182S426.901 80.934 580.305 80.934z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)("path", { d: "M349.785 547.707a26.7 26.7 0 0 0-22.53 10.7L101.993 860.013a26.707 26.707 0 1 0 42.791 31.96l209.268-280.19 36.043 26.974-209.3 280.234a26.707 26.707 0 1 0 42.79 31.96L448.85 649.343a26.707 26.707 0 0 0-5.395-37.36l-78.803-58.978a26.7 26.7 0 0 0-14.867-5.299z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)("path", { d: "M203.086 907.97a26.7 26.7 0 0 0-22.313 11.05c-3.228 4.333-9.171 5.195-13.582 1.91a26.707 26.707 0 1 0-31.904 42.83c27.7 20.634 67.628 14.94 88.318-12.836a26.707 26.707 0 0 0-20.52-42.953Z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)("path", { d: "M129.361 900.033a26.707 26.707 0 0 0-14.65 48.254l20.478 15.4a26.707 26.707 0 1 0 32.1-42.685l-20.478-15.4a26.7 26.7 0 0 0-17.45-5.569z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)("path", { d: "M124.285 848.992a26.7 26.7 0 0 0-22.312 11.049c-20.634 27.7-14.941 67.63 12.836 88.32a26.707 26.707 0 1 0 31.904-42.832c-4.334-3.228-5.195-9.172-1.91-13.582a26.707 26.707 0 0 0-20.518-42.955zm456.02-752.33c-144.618 0-262.617 117.992-262.617 262.453 0 144.157 117.507 261.933 261.707 262.43a12 12 0 0 0 .91.023c144.461 0 262.453-117.991 262.453-262.453S724.766 96.662 580.305 96.662zm0 24.574c131.098 0 237.879 106.781 237.879 237.88 0 131.097-106.781 237.878-237.88 237.878-131.27 0-238.042-106.78-238.042-237.879s106.773-237.879 238.043-237.879z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime171.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime174.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime174.jsx)("path", { d: "M580.305 27.525c-182.445 0-331.588 149.146-331.588 331.59 0 181.776 148.064 330.45 329.596 331.537a27 27 0 0 0 1.992.051c182.444 0 331.59-149.143 331.59-331.588 0-182.444-149.146-331.59-331.59-331.59zm0 53.409c153.404 0 278.181 124.777 278.181 278.181S733.71 637.297 580.305 637.297s-278.18-124.778-278.18-278.182S426.901 80.934 580.305 80.934z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime174.jsx)("path", { d: "M349.785 547.707a26.7 26.7 0 0 0-22.53 10.7L101.993 860.013a26.707 26.707 0 1 0 42.791 31.96l209.268-280.19 36.043 26.974-209.3 280.234a26.707 26.707 0 1 0 42.79 31.96L448.85 649.343a26.707 26.707 0 0 0-5.395-37.36l-78.803-58.978a26.7 26.7 0 0 0-14.867-5.299z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime174.jsx)("path", { d: "M203.086 907.97a26.7 26.7 0 0 0-22.313 11.05c-3.228 4.333-9.171 5.195-13.582 1.91a26.707 26.707 0 1 0-31.904 42.83c27.7 20.634 67.628 14.94 88.318-12.836a26.707 26.707 0 0 0-20.52-42.953Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime174.jsx)("path", { d: "M129.361 900.033a26.707 26.707 0 0 0-14.65 48.254l20.478 15.4a26.707 26.707 0 1 0 32.1-42.685l-20.478-15.4a26.7 26.7 0 0 0-17.45-5.569z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime174.jsx)("path", { d: "M124.285 848.992a26.7 26.7 0 0 0-22.312 11.049c-20.634 27.7-14.941 67.63 12.836 88.32a26.707 26.707 0 1 0 31.904-42.832c-4.334-3.228-5.195-9.172-1.91-13.582a26.707 26.707 0 0 0-20.518-42.955zm456.02-752.33c-144.618 0-262.617 117.992-262.617 262.453 0 144.157 117.507 261.933 261.707 262.43a12 12 0 0 0 .91.023c144.461 0 262.453-117.991 262.453-262.453S724.766 96.662 580.305 96.662zm0 24.574c131.098 0 237.879 106.781 237.879 237.88 0 131.097-106.781 237.878-237.88 237.878-131.27 0-238.042-106.78-238.042-237.879s106.773-237.879 238.043-237.879z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime174.jsx)(
           "path",
           {
             stroke: "none",
@@ -35571,13 +35740,13 @@
   var Magnifier5_default = SvgMagnifier5;
 
   // build/lib-react-tsx/structure/Orbital.tsx
-  var React172 = __toESM(require_react(), 1);
-  var import_jsx_runtime172 = __toESM(require_jsx_runtime(), 1);
+  var React175 = __toESM(require_react(), 1);
+  var import_jsx_runtime175 = __toESM(require_jsx_runtime(), 1);
   var SvgOrbital = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime172.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime175.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35589,8 +35758,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime172.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime175.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
           "path",
           {
             fill: "none",
@@ -35601,14 +35770,14 @@
             d: "M495.208 408.23c-19.731 19.591-94.242 91.617-105.556 105.143-102.382 133.565.138 234.568 105.418 236.36 108.178 1.795 219.39-99.07 114.248-236.36-26.352-31.048-63.885-64.578-104.865-105.558-5.795-5.795-3.174-5.519-9.245.415"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
           "path",
           {
             stroke: "none",
             d: "M495.208 408.23c-19.731 19.591-94.242 91.617-105.556 105.143-102.382 133.565.138 234.568 105.418 236.36 108.178 1.795 219.39-99.07 114.248-236.36-26.352-31.048-63.885-64.578-104.865-105.558-5.795-5.795-3.174-5.519-9.245.415"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
           "path",
           {
             fill: "none",
@@ -35619,7 +35788,7 @@
             d: "M499.486 313.16c156.197 0 283 56.158 283 125.426 0 69.126-126.803 125.287-283 125.287-156.334 0-283-56.16-283-125.287 0-69.268 126.666-125.426 283-125.426m0 80.581c97.414 0 176.34 20.008 176.34 44.845 0 24.696-78.926 44.705-176.34 44.705-97.416 0-176.34-20.009-176.34-44.705 0-24.837 78.924-44.845 176.34-44.845"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
           "path",
           {
             fillRule: "evenodd",
@@ -35627,7 +35796,7 @@
             d: "M499.486 313.16c156.197 0 283 56.158 283 125.426 0 69.126-126.803 125.287-283 125.287-156.334 0-283-56.16-283-125.287 0-69.268 126.666-125.426 283-125.426m0 80.581c97.414 0 176.34 20.008 176.34 44.845 0 24.696-78.926 44.705-176.34 44.705-97.416 0-176.34-20.009-176.34-44.705 0-24.837 78.924-44.845 176.34-44.845"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
           "path",
           {
             fill: "none",
@@ -35638,7 +35807,7 @@
             d: "M495.208 386.29c-19.731-18.49-94.242-86.928-105.556-99.623C287.27 160 389.79 64.517 495.07 62.723c108.178-1.794 219.39 93.828 114.248 223.944-26.352 29.39-63.885 61.126-104.865 99.9-5.795 5.518-3.174 5.38-9.245-.277"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime172.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
           "path",
           {
             stroke: "none",
@@ -35651,13 +35820,13 @@
   var Orbital_default = SvgOrbital;
 
   // build/lib-react-tsx/structure/SearchLipinski.tsx
-  var React173 = __toESM(require_react(), 1);
-  var import_jsx_runtime173 = __toESM(require_jsx_runtime(), 1);
+  var React176 = __toESM(require_react(), 1);
+  var import_jsx_runtime176 = __toESM(require_jsx_runtime(), 1);
   var SvgSearchLipinski = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime173.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime176.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -35669,8 +35838,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime173.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime176.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime176.jsx)(
           "path",
           {
             fill: "none",
@@ -35685,7 +35854,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime176.jsx)(
           "path",
           {
             fill: "none",
@@ -35700,7 +35869,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime176.jsx)(
           "path",
           {
             fill: "none",
@@ -35715,7 +35884,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime176.jsx)(
           "path",
           {
             fill: "none",
@@ -35730,7 +35899,7 @@
             textRendering: "geometricPrecision"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime173.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime176.jsx)(
           "path",
           {
             strokeWidth: 74.462,
@@ -35748,229 +35917,9 @@
   var SearchLipinski_default = SvgSearchLipinski;
 
   // build/lib-react-tsx/structure/Search.tsx
-  var React174 = __toESM(require_react(), 1);
-  var import_jsx_runtime174 = __toESM(require_jsx_runtime(), 1);
-  var SvgSearch5 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime174.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime174.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime174.jsxs)(
-          "g",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeMiterlimit: 22.926,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime174.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.298,
-                  d: "M415.199 668.968c-173.539 0-315.081-141.541-315.081-315.079 0-173.545 141.542-315.093 315.081-315.093 173.553 0 315.099 141.548 315.099 315.093 0 173.538-141.546 315.079-315.099 315.079"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime174.jsx)(
-                "path",
-                {
-                  strokeWidth: 46.296,
-                  d: "M887.36 888.085 654.566 576.416l-81.491 60.867 232.794 311.669m0 0c12.383 16.576 36.082 20.013 52.657 7.634m0 0 21.208-15.843m0 0c16.576-12.389 20.012-36.083 7.626-52.656"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime174.jsx)(
-                "path",
-                {
-                  strokeWidth: 21.304,
-                  d: "M415.199 612.475c-142.419 0-258.587-116.169-258.587-258.586 0-142.43 116.168-258.59 258.587-258.59 142.437 0 258.598 116.162 258.598 258.59 0 142.416-116.161 258.586-258.598 258.586"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime174.jsx)(
-                "path",
-                {
-                  strokeWidth: 40.213,
-                  d: "m266.632 268.108 148.567-85.779 148.583 85.779v171.553l-148.583 85.78-148.567-85.78z"
-                }
-              )
-            ]
-          }
-        )
-      ]
-    }
-  );
-  var Search_default5 = SvgSearch5;
-
-  // build/lib-react-tsx/structure/So4.tsx
-  var React175 = __toESM(require_react(), 1);
-  var import_jsx_runtime175 = __toESM(require_jsx_runtime(), 1);
-  var SvgSo4 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime175.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "111 11 780.9 780.9",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime175.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M449.65 685.624c-3.342 12.496-16.276 20.051-28.918 16.566-12.498-3.342-20.053-16.278-16.712-28.92zm0 0 149.093-556.129-45.63-12.207L404.021 673.27zm103.464-568.336c3.343-12.642 16.279-20.053 28.92-16.71 12.643 3.341 20.052 16.274 16.709 28.917z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M594.966 52.332c-36.472-9.737-73.82 11.916-83.556 48.245s11.916 73.82 48.247 83.557c36.325 9.736 73.675-11.916 83.41-48.245 9.735-36.33-11.772-73.821-48.1-83.557M443.11 618.776c-36.328-9.735-73.675 11.772-83.41 48.102-9.737 36.475 11.77 73.821 48.245 83.556 36.328 9.735 73.675-11.772 83.41-48.244 9.737-36.329-11.77-73.675-48.245-83.414"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 58.853,
-            d: "M356.939 362.729c-21.362 79.779 26.01 161.739 105.79 183.1 79.779 21.36 161.739-26.013 183.1-105.791 21.36-79.634-26.014-161.738-105.79-183.1-79.635-21.362-161.74 26.012-183.1 105.791"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M785.623 453.114c12.497 3.343 20.053 16.278 16.567 28.92-3.343 12.643-16.277 20.052-28.92 16.71zm0 0L229.495 304.021l-12.207 45.63 555.981 149.093zM217.288 349.65c-12.642-3.342-20.054-16.275-16.711-28.918 3.343-12.497 16.276-20.054 28.918-16.711z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M152.331 307.944c-9.735 36.33 11.916 73.676 48.246 83.412s73.82-11.77 83.557-48.245c9.737-36.33-11.916-73.676-48.245-83.412-36.33-9.736-73.822 11.77-83.558 48.245"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            fill: "#fefefe",
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M375.539 367.67c-18.6 69.46 22.669 140.959 92.13 159.559s140.96-22.67 159.56-92.133c18.6-69.46-22.67-140.957-92.133-159.557-69.46-18.601-140.957 22.669-159.557 92.13"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            fillRule: "evenodd",
-            stroke: "none",
-            d: "M718.776 459.657c-9.736 36.325 11.772 73.675 48.102 83.41 36.475 9.735 73.822-11.772 83.556-48.101 9.735-36.472-11.771-73.82-48.244-83.556-36.33-9.736-73.675 11.916-83.414 48.247"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 14.532,
-            d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50 50 0 0 1-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726s.577-.146.88-.146c.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.4 41.4 0 0 0-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394s4.65-3.051 7.556-3.923c2.907-.872 5.96-1.308 9.3-1.308q2.617 0 5.232.436c1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308q-.217.655-.433.872c-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871q-3.268 0-5.666.871c-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.5 10.5 0 0 0-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342q3.27 1.744 5.667 4.36c1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711m-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881s4.214 4.94 7.266 6.54c3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50 50 0 0 1-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726s.577-.146.88-.146c.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.4 41.4 0 0 0-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394s4.65-3.051 7.556-3.923c2.907-.872 5.96-1.308 9.3-1.308q2.617 0 5.232.436c1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308q-.217.655-.433.872c-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871q-3.268 0-5.666.871c-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.5 10.5 0 0 0-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342q3.27 1.744 5.667 4.36c1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711m-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881s4.214 4.94 7.266 6.54c3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 7.266,
-            d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.9 2.9 0 0 1-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime175.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.9 2.9 0 0 1-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z"
-          }
-        )
-      ]
-    }
-  );
-  var So4_default = SvgSo4;
-
-  // build/lib-react-tsx/structure/StructuralIsomers.tsx
-  var React176 = __toESM(require_react(), 1);
-  var import_jsx_runtime176 = __toESM(require_jsx_runtime(), 1);
-  var SvgStructuralIsomers = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime176.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "33.8 -6.9 924.8 924.8",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime176.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime176.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M91.996 338.219c-11.394 6.58-15.407 21.185-8.827 32.74 6.58 11.395 21.185 15.087 32.58 8.507zm0 0 391.436-225.97 23.753 41.245-391.436 225.972zm415.189-184.725c11.395-6.74 15.407-21.344 8.827-32.74-6.58-11.394-21.185-15.245-32.58-8.505zm157.278 648.643H329.201l.321-47.825h335.265zm-335.102-23.911-.16 23.91c-13.321 0-23.914-10.75-23.753-23.91.16-13.32 10.913-23.914 24.234-23.914zm-20.542-11.878L476.37 478.912l41.247 23.751L349.904 790.1Zm188.255-275.56-20.704-11.876c6.74-11.557 21.346-15.41 32.74-8.829s15.247 21.185 8.507 32.58zm20.543-12.198 167.711 287.44-41.245 24.396-167.713-287.44Zm147.008 299.636 20.703-12.198c6.742 11.394 2.731 26-8.667 32.74-11.394 6.74-26.16 3.05-32.74-8.343zM876.313 472.87c11.232 6.58 25.999 2.73 32.74-8.666 6.579-11.556 2.887-26.16-8.507-32.74zm0 0L484.876 246.9l24.235-41.407 391.435 225.972zM509.111 205.493c-11.235-6.58-26-2.566-32.74 8.827-6.58 11.396-2.89 26 8.505 32.58z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime176.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M876.313 379.466c11.232 6.58 25.999 2.727 32.74-8.668 6.579-11.555 2.887-26.16-8.507-32.74zm0 0L484.876 153.494l24.235-41.405 391.435 225.97zM509.111 112.089c-11.235-6.58-26-2.569-32.74 8.827-6.58 11.393-2.89 25.998 8.505 32.578z"
-          }
-        )
-      ]
-    }
-  );
-  var StructuralIsomers_default = SvgStructuralIsomers;
-
-  // build/lib-react-tsx/structure/StructuralIsomers2.tsx
   var React177 = __toESM(require_react(), 1);
   var import_jsx_runtime177 = __toESM(require_jsx_runtime(), 1);
-  var SvgStructuralIsomers2 = ({
+  var SvgSearch5 = ({
     title,
     titleId,
     ...props
@@ -35988,8 +35937,228 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime177.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime177.jsx)("path", { d: "M797.952 261.166q0 20.894-5.188 37.395c-3.463 11.001-8.608 20.361-15.481 28.036-6.832 7.628-15.304 13.484-25.375 17.521-10.115 4.037-21.779 6.034-35.041 6.034-13.087 0-24.485-1.686-34.247-5.102-9.757-3.416-17.876-8.649-24.351-15.66-6.523-7.052-11.401-15.969-14.641-26.792-3.236-10.824-4.88-23.644-4.88-38.459 0-13.618 1.731-25.861 5.236-36.73 3.459-10.867 8.604-20.094 15.436-27.725q10.245-11.443 25.417-17.564c10.069-4.081 21.824-6.079 35.131-6.079 12.775 0 23.997 1.686 33.759 5.057 9.711 3.373 17.876 8.562 24.396 15.57 6.563 7.054 11.488 15.881 14.815 26.616 3.376 10.689 5.014 23.29 5.014 37.882zm-35.84 1.819c0-8.873-.709-16.9-2.084-24.132-1.375-7.229-3.771-13.441-7.099-18.585-3.327-5.146-7.763-9.139-13.306-11.932-5.548-2.839-12.466-4.26-20.806-4.26-8.383 0-15.437 1.598-21.07 4.747-5.589 3.194-10.16 7.407-13.619 12.687-3.463 5.278-5.899 11.444-7.364 18.497-1.422 7.098-2.13 14.551-2.13 22.447 0 9.183.71 17.433 2.084 24.751 1.378 7.32 3.727 13.574 7.013 18.763 3.283 5.19 7.719 9.181 13.262 11.887 5.542 2.751 12.51 4.126 20.937 4.126 8.387 0 15.39-1.597 21.024-4.703 5.638-3.106 10.205-7.363 13.664-12.731q5.192-8.05 7.319-18.763c1.466-7.14 2.175-14.769 2.175-22.799zm195.842 79.534a3.46 3.46 0 0 1-.842 2.308c-.578.708-1.51 1.287-2.794 1.685q-1.932.666-5.189 1.065c-2.175.266-4.881.4-8.208.4q-5.053 0-8.382-.4c-2.171-.265-3.948-.62-5.19-1.065-1.239-.398-2.171-.977-2.705-1.685a3.46 3.46 0 0 1-.845-2.308v-68H860.9v68c0 .844-.268 1.641-.798 2.308-.531.708-1.421 1.287-2.752 1.685q-1.93.666-5.188 1.065c-2.175.266-4.925.4-8.296.4q-4.923 0-8.251-.4c-2.215-.265-3.993-.62-5.276-1.065-1.289-.398-2.22-.977-2.795-1.685a3.46 3.46 0 0 1-.845-2.308V183.673c0-.843.268-1.64.845-2.307.575-.708 1.507-1.288 2.795-1.686 1.284-.445 3.062-.8 5.276-1.065q3.328-.4 8.251-.4c3.372 0 6.121.133 8.296.4q3.258.397 5.188 1.065c1.332.398 2.221.978 2.752 1.686.53.667.798 1.465.798 2.307v61.745h62.898v-61.745c0-.843.268-1.64.845-2.307.534-.708 1.467-1.288 2.705-1.686 1.242-.445 3.02-.8 5.19-1.065q3.329-.4 8.382-.4c3.327 0 6.033.133 8.208.4q3.258.397 5.189 1.065c1.285.398 2.216.978 2.794 1.686.575.667.842 1.465.842 2.307zM584.268 503.718c0 13.926-1.73 26.394-5.188 37.394-3.459 11-8.604 20.359-15.481 28.034-6.832 7.63-15.303 13.483-25.372 17.521-10.114 4.038-21.778 6.035-35.044 6.035-13.086 0-24.488-1.686-34.245-5.104-9.76-3.413-17.876-8.648-24.354-15.656-6.52-7.054-11.399-15.968-14.64-26.793-3.238-10.824-4.879-23.645-4.879-38.456 0-13.622 1.73-25.861 5.235-36.729 3.459-10.869 8.604-20.096 15.435-27.724q10.247-11.445 25.418-17.569c10.068-4.081 21.824-6.076 35.133-6.076 12.774 0 24.001 1.686 33.759 5.057 9.714 3.371 17.875 8.561 24.396 15.569 6.568 7.052 11.489 15.882 14.816 26.615 3.37 10.69 5.011 23.287 5.011 37.882zm-35.841 1.816c0-8.87-.711-16.9-2.085-24.129-1.376-7.23-3.771-13.441-7.1-18.587-3.322-5.145-7.759-9.138-13.307-11.934-5.542-2.836-12.464-4.256-20.804-4.256-8.385 0-15.44 1.597-21.072 4.747-5.589 3.192-10.158 7.406-13.619 12.687-3.458 5.276-5.899 11.443-7.364 18.496-1.417 7.098-2.128 14.549-2.128 22.444 0 9.187.713 17.434 2.086 24.752 1.375 7.32 3.726 13.576 7.008 18.766s7.719 9.181 13.262 11.887c5.546 2.752 12.51 4.127 20.941 4.127 8.384 0 15.393-1.598 21.026-4.702 5.634-3.108 10.204-7.364 13.663-12.731 3.459-5.37 5.9-11.622 7.321-18.766 1.461-7.141 2.172-14.771 2.172-22.801z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime177.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime177.jsxs)(
+          "g",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeMiterlimit: 22.926,
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime177.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.298,
+                  d: "M415.199 668.968c-173.539 0-315.081-141.541-315.081-315.079 0-173.545 141.542-315.093 315.081-315.093 173.553 0 315.099 141.548 315.099 315.093 0 173.538-141.546 315.079-315.099 315.079"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime177.jsx)(
+                "path",
+                {
+                  strokeWidth: 46.296,
+                  d: "M887.36 888.085 654.566 576.416l-81.491 60.867 232.794 311.669m0 0c12.383 16.576 36.082 20.013 52.657 7.634m0 0 21.208-15.843m0 0c16.576-12.389 20.012-36.083 7.626-52.656"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime177.jsx)(
+                "path",
+                {
+                  strokeWidth: 21.304,
+                  d: "M415.199 612.475c-142.419 0-258.587-116.169-258.587-258.586 0-142.43 116.168-258.59 258.587-258.59 142.437 0 258.598 116.162 258.598 258.59 0 142.416-116.161 258.586-258.598 258.586"
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime177.jsx)(
+                "path",
+                {
+                  strokeWidth: 40.213,
+                  d: "m266.632 268.108 148.567-85.779 148.583 85.779v171.553l-148.583 85.78-148.567-85.78z"
+                }
+              )
+            ]
+          }
+        )
+      ]
+    }
+  );
+  var Search_default5 = SvgSearch5;
+
+  // build/lib-react-tsx/structure/So4.tsx
+  var React178 = __toESM(require_react(), 1);
+  var import_jsx_runtime178 = __toESM(require_jsx_runtime(), 1);
+  var SvgSo4 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime178.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "111 11 780.9 780.9",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime178.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M449.65 685.624c-3.342 12.496-16.276 20.051-28.918 16.566-12.498-3.342-20.053-16.278-16.712-28.92zm0 0 149.093-556.129-45.63-12.207L404.021 673.27zm103.464-568.336c3.343-12.642 16.279-20.053 28.92-16.71 12.643 3.341 20.052 16.274 16.709 28.917z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M594.966 52.332c-36.472-9.737-73.82 11.916-83.556 48.245s11.916 73.82 48.247 83.557c36.325 9.736 73.675-11.916 83.41-48.245 9.735-36.33-11.772-73.821-48.1-83.557M443.11 618.776c-36.328-9.735-73.675 11.772-83.41 48.102-9.737 36.475 11.77 73.821 48.245 83.556 36.328 9.735 73.675-11.772 83.41-48.244 9.737-36.329-11.77-73.675-48.245-83.414"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 58.853,
+            d: "M356.939 362.729c-21.362 79.779 26.01 161.739 105.79 183.1 79.779 21.36 161.739-26.013 183.1-105.791 21.36-79.634-26.014-161.738-105.79-183.1-79.635-21.362-161.74 26.012-183.1 105.791"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M785.623 453.114c12.497 3.343 20.053 16.278 16.567 28.92-3.343 12.643-16.277 20.052-28.92 16.71zm0 0L229.495 304.021l-12.207 45.63 555.981 149.093zM217.288 349.65c-12.642-3.342-20.054-16.275-16.711-28.918 3.343-12.497 16.276-20.054 28.918-16.711z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M152.331 307.944c-9.735 36.33 11.916 73.676 48.246 83.412s73.82-11.77 83.557-48.245c9.737-36.33-11.916-73.676-48.245-83.412-36.33-9.736-73.822 11.77-83.558 48.245"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            fill: "#fefefe",
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M375.539 367.67c-18.6 69.46 22.669 140.959 92.13 159.559s140.96-22.67 159.56-92.133c18.6-69.46-22.67-140.957-92.133-159.557-69.46-18.601-140.957 22.669-159.557 92.13"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            fillRule: "evenodd",
+            stroke: "none",
+            d: "M718.776 459.657c-9.736 36.325 11.772 73.675 48.102 83.41 36.475 9.735 73.822-11.772 83.556-48.101 9.735-36.472-11.771-73.82-48.244-83.556-36.33-9.736-73.675 11.916-83.414 48.247"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 14.532,
+            d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50 50 0 0 1-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726s.577-.146.88-.146c.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.4 41.4 0 0 0-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394s4.65-3.051 7.556-3.923c2.907-.872 5.96-1.308 9.3-1.308q2.617 0 5.232.436c1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308q-.217.655-.433.872c-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871q-3.268 0-5.666.871c-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.5 10.5 0 0 0-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342q3.27 1.744 5.667 4.36c1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711m-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881s4.214 4.94 7.266 6.54c3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M455.754 418.53c0 3.633-.72 6.83-2.035 9.591-1.31 2.907-3.197 5.377-5.668 7.266-2.324 2.035-5.085 3.488-8.282 4.505-3.343 1.017-6.686 1.453-10.463 1.453-2.616 0-5.087-.145-7.265-.582a50 50 0 0 1-5.96-1.598c-1.743-.726-3.196-1.308-4.358-2.035-1.167-.726-2.035-1.308-2.471-1.743-.433-.437-.88-1.018-1.023-1.89-.288-.725-.288-1.598-.288-2.906 0-.872 0-1.598.144-2.18 0-.58.144-1.017.288-1.453.144-.29.288-.58.576-.726s.577-.146.88-.146c.575 0 1.31.292 2.325 1.018 1.023.58 2.324 1.308 3.922 2.18 1.599.725 3.633 1.598 5.813 2.179 2.325.726 4.941 1.163 7.847 1.163 2.326 0 4.36-.29 6.25-1.018 1.743-.582 3.34-1.453 4.795-2.47 1.31-1.163 2.324-2.47 3.051-4.069.72-1.598 1.023-3.488 1.023-5.522 0-2.18-.432-4.069-1.454-5.522-1.023-1.599-2.325-3.052-3.923-4.214a41.4 41.4 0 0 0-5.667-3.197c-2.034-1.018-4.214-2.035-6.394-3.052-2.325-1.017-4.359-2.18-6.539-3.342-2.034-1.309-3.925-2.761-5.523-4.36-1.598-1.744-3.052-3.632-4.069-5.958-1.023-2.325-1.452-4.94-1.452-8.137s.576-6.104 1.743-8.72c1.167-2.47 2.907-4.65 4.941-6.394s4.65-3.051 7.556-3.923c2.907-.872 5.96-1.308 9.3-1.308q2.617 0 5.232.436c1.744.292 3.343.727 4.941 1.163 1.598.582 2.906 1.017 4.069 1.744 1.311.581 2.034 1.018 2.47 1.453.288.437.576.727.734.872.145.291.145.582.289.872 0 .29.144.726.144 1.163 0 .582.144 1.162.144 1.889 0 .726-.144 1.453-.144 2.034 0 .437-.144 1.017-.288 1.308q-.217.655-.433.872c-.288.146-.576.291-.864.291-.433 0-1.023-.29-2.035-.872-.879-.58-2.034-1.162-3.488-1.889-1.311-.726-2.906-1.308-4.795-1.889-1.89-.582-3.924-.871-6.25-.871q-3.268 0-5.666.871c-1.598.581-2.906 1.309-3.924 2.325-1.023.872-1.888 2.035-2.325 3.343a10.5 10.5 0 0 0-.879 4.214c0 2.18.576 4.069 1.6 5.667 1.022 1.454 2.323 2.906 3.923 4.07 1.743 1.307 3.632 2.324 5.667 3.341l6.54 3.052c2.178 1.017 4.358 2.18 6.393 3.342q3.27 1.744 5.667 4.36c1.745 1.598 3.051 3.633 4.069 5.812 1.023 2.325 1.599 4.942 1.599 8.138zm89.369-18.019c0 6.249-.72 11.916-2.324 17.002-1.454 5.087-3.633 9.3-6.54 12.933-3.052 3.488-6.684 6.249-11.188 8.138-4.36 1.89-9.592 2.761-15.55 2.761-5.813 0-10.899-.871-15.113-2.616-4.215-1.743-7.847-4.214-10.608-7.556-2.76-3.342-4.795-7.411-6.249-12.352-1.311-4.94-2.034-10.608-2.034-17.002 0-6.103.72-11.626 2.325-16.711 1.453-4.941 3.633-9.3 6.684-12.788 2.906-3.488 6.54-6.249 11.044-8.138 4.506-1.889 9.59-2.761 15.549-2.761 5.814 0 10.754.871 14.967 2.47 4.215 1.744 7.849 4.36 10.61 7.557 2.76 3.342 4.94 7.41 6.248 12.352 1.453 4.795 2.179 10.463 2.179 16.711m-10.899.726c0-4.36-.432-8.573-1.167-12.352-.879-3.778-2.178-6.975-3.923-9.881-1.89-2.761-4.213-4.94-7.265-6.394-3.052-1.599-6.83-2.325-11.335-2.325-4.504 0-8.284.726-11.335 2.47-3.052 1.599-5.522 3.924-7.41 6.685-1.89 2.906-3.198 6.103-4.07 9.881-.879 3.779-1.167 7.702-1.167 11.77 0 4.506.288 8.72 1.023 12.644.865 3.778 2.18 7.12 3.924 9.881s4.214 4.94 7.266 6.54c3.052 1.598 6.83 2.325 11.334 2.325 4.505 0 8.283-.872 11.48-2.616 3.052-1.599 5.522-3.924 7.41-6.685 1.891-2.906 3.198-6.248 4.07-10.027.72-3.778 1.167-7.702 1.167-11.916z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 7.266,
+            d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.9 2.9 0 0 1-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M594.824 457.913c0 1.163-.144 2.033-.447 2.614-.288.582-.72.87-1.311.87H585.8v13.371c0 .293 0 .582-.144.728-.144.144-.289.288-.72.435a2.9 2.9 0 0 1-1.312.288c-.432 0-1.167.147-1.89.147-.865 0-1.453-.147-2.034-.147-.432 0-.864-.144-1.31-.288-.289-.147-.433-.293-.577-.435-.144-.147-.144-.435-.144-.728v-13.37H551.51c-.432 0-.72 0-1.023-.144-.288 0-.432-.293-.72-.44-.144-.288-.288-.723-.432-1.158-.145-.582-.145-1.163-.145-1.891s0-1.163.145-1.745c0-.435 0-.87.144-1.31.144-.435.144-.87.432-1.158.144-.44.288-.874.576-1.163l22.816-38.655c.144-.146.432-.437.72-.582.289-.291.735-.437 1.168-.58.432-.146 1.167-.146 1.89-.292h2.468c1.167 0 2.038 0 2.908.146.735 0 1.311.145 1.89.29.433.146.865.292 1.167.436.144.29.289.582.289.872v40.398h7.266c.432 0 1.023.288 1.31.87.29.582.448 1.456.448 2.619zm-17.148-38.22h-.144l-20.633 34.73h20.78z"
+          }
+        )
+      ]
+    }
+  );
+  var So4_default = SvgSo4;
+
+  // build/lib-react-tsx/structure/StructuralIsomers.tsx
+  var React179 = __toESM(require_react(), 1);
+  var import_jsx_runtime179 = __toESM(require_jsx_runtime(), 1);
+  var SvgStructuralIsomers = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime179.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "33.8 -6.9 924.8 924.8",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime179.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime179.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M91.996 338.219c-11.394 6.58-15.407 21.185-8.827 32.74 6.58 11.395 21.185 15.087 32.58 8.507zm0 0 391.436-225.97 23.753 41.245-391.436 225.972zm415.189-184.725c11.395-6.74 15.407-21.344 8.827-32.74-6.58-11.394-21.185-15.245-32.58-8.505zm157.278 648.643H329.201l.321-47.825h335.265zm-335.102-23.911-.16 23.91c-13.321 0-23.914-10.75-23.753-23.91.16-13.32 10.913-23.914 24.234-23.914zm-20.542-11.878L476.37 478.912l41.247 23.751L349.904 790.1Zm188.255-275.56-20.704-11.876c6.74-11.557 21.346-15.41 32.74-8.829s15.247 21.185 8.507 32.58zm20.543-12.198 167.711 287.44-41.245 24.396-167.713-287.44Zm147.008 299.636 20.703-12.198c6.742 11.394 2.731 26-8.667 32.74-11.394 6.74-26.16 3.05-32.74-8.343zM876.313 472.87c11.232 6.58 25.999 2.73 32.74-8.666 6.579-11.556 2.887-26.16-8.507-32.74zm0 0L484.876 246.9l24.235-41.407 391.435 225.972zM509.111 205.493c-11.235-6.58-26-2.566-32.74 8.827-6.58 11.396-2.89 26 8.505 32.58z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime179.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M876.313 379.466c11.232 6.58 25.999 2.727 32.74-8.668 6.579-11.555 2.887-26.16-8.507-32.74zm0 0L484.876 153.494l24.235-41.405 391.435 225.97zM509.111 112.089c-11.235-6.58-26-2.569-32.74 8.827-6.58 11.393-2.89 25.998 8.505 32.578z"
+          }
+        )
+      ]
+    }
+  );
+  var StructuralIsomers_default = SvgStructuralIsomers;
+
+  // build/lib-react-tsx/structure/StructuralIsomers2.tsx
+  var React180 = __toESM(require_react(), 1);
+  var import_jsx_runtime180 = __toESM(require_jsx_runtime(), 1);
+  var SvgStructuralIsomers2 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime180.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      xmlSpace: "preserve",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime180.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime180.jsx)("path", { d: "M797.952 261.166q0 20.894-5.188 37.395c-3.463 11.001-8.608 20.361-15.481 28.036-6.832 7.628-15.304 13.484-25.375 17.521-10.115 4.037-21.779 6.034-35.041 6.034-13.087 0-24.485-1.686-34.247-5.102-9.757-3.416-17.876-8.649-24.351-15.66-6.523-7.052-11.401-15.969-14.641-26.792-3.236-10.824-4.88-23.644-4.88-38.459 0-13.618 1.731-25.861 5.236-36.73 3.459-10.867 8.604-20.094 15.436-27.725q10.245-11.443 25.417-17.564c10.069-4.081 21.824-6.079 35.131-6.079 12.775 0 23.997 1.686 33.759 5.057 9.711 3.373 17.876 8.562 24.396 15.57 6.563 7.054 11.488 15.881 14.815 26.616 3.376 10.689 5.014 23.29 5.014 37.882zm-35.84 1.819c0-8.873-.709-16.9-2.084-24.132-1.375-7.229-3.771-13.441-7.099-18.585-3.327-5.146-7.763-9.139-13.306-11.932-5.548-2.839-12.466-4.26-20.806-4.26-8.383 0-15.437 1.598-21.07 4.747-5.589 3.194-10.16 7.407-13.619 12.687-3.463 5.278-5.899 11.444-7.364 18.497-1.422 7.098-2.13 14.551-2.13 22.447 0 9.183.71 17.433 2.084 24.751 1.378 7.32 3.727 13.574 7.013 18.763 3.283 5.19 7.719 9.181 13.262 11.887 5.542 2.751 12.51 4.126 20.937 4.126 8.387 0 15.39-1.597 21.024-4.703 5.638-3.106 10.205-7.363 13.664-12.731q5.192-8.05 7.319-18.763c1.466-7.14 2.175-14.769 2.175-22.799zm195.842 79.534a3.46 3.46 0 0 1-.842 2.308c-.578.708-1.51 1.287-2.794 1.685q-1.932.666-5.189 1.065c-2.175.266-4.881.4-8.208.4q-5.053 0-8.382-.4c-2.171-.265-3.948-.62-5.19-1.065-1.239-.398-2.171-.977-2.705-1.685a3.46 3.46 0 0 1-.845-2.308v-68H860.9v68c0 .844-.268 1.641-.798 2.308-.531.708-1.421 1.287-2.752 1.685q-1.93.666-5.188 1.065c-2.175.266-4.925.4-8.296.4q-4.923 0-8.251-.4c-2.215-.265-3.993-.62-5.276-1.065-1.289-.398-2.22-.977-2.795-1.685a3.46 3.46 0 0 1-.845-2.308V183.673c0-.843.268-1.64.845-2.307.575-.708 1.507-1.288 2.795-1.686 1.284-.445 3.062-.8 5.276-1.065q3.328-.4 8.251-.4c3.372 0 6.121.133 8.296.4q3.258.397 5.188 1.065c1.332.398 2.221.978 2.752 1.686.53.667.798 1.465.798 2.307v61.745h62.898v-61.745c0-.843.268-1.64.845-2.307.534-.708 1.467-1.288 2.705-1.686 1.242-.445 3.02-.8 5.19-1.065q3.329-.4 8.382-.4c3.327 0 6.033.133 8.208.4q3.258.397 5.189 1.065c1.285.398 2.216.978 2.794 1.686.575.667.842 1.465.842 2.307zM584.268 503.718c0 13.926-1.73 26.394-5.188 37.394-3.459 11-8.604 20.359-15.481 28.034-6.832 7.63-15.303 13.483-25.372 17.521-10.114 4.038-21.778 6.035-35.044 6.035-13.086 0-24.488-1.686-34.245-5.104-9.76-3.413-17.876-8.648-24.354-15.656-6.52-7.054-11.399-15.968-14.64-26.793-3.238-10.824-4.879-23.645-4.879-38.456 0-13.622 1.73-25.861 5.235-36.729 3.459-10.869 8.604-20.096 15.435-27.724q10.247-11.445 25.418-17.569c10.068-4.081 21.824-6.076 35.133-6.076 12.774 0 24.001 1.686 33.759 5.057 9.714 3.371 17.875 8.561 24.396 15.569 6.568 7.052 11.489 15.882 14.816 26.615 3.37 10.69 5.011 23.287 5.011 37.882zm-35.841 1.816c0-8.87-.711-16.9-2.085-24.129-1.376-7.23-3.771-13.441-7.1-18.587-3.322-5.145-7.759-9.138-13.307-11.934-5.542-2.836-12.464-4.256-20.804-4.256-8.385 0-15.44 1.597-21.072 4.747-5.589 3.192-10.158 7.406-13.619 12.687-3.458 5.276-5.899 11.443-7.364 18.496-1.417 7.098-2.128 14.549-2.128 22.444 0 9.187.713 17.434 2.086 24.752 1.375 7.32 3.726 13.576 7.008 18.766s7.719 9.181 13.262 11.887c5.546 2.752 12.51 4.127 20.941 4.127 8.384 0 15.393-1.598 21.026-4.702 5.634-3.108 10.204-7.364 13.663-12.731 3.459-5.37 5.9-11.622 7.321-18.766 1.461-7.141 2.172-14.771 2.172-22.801z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
           "path",
           {
             fill: "none",
@@ -36006,13 +36175,13 @@
   var StructuralIsomers2_default = SvgStructuralIsomers2;
 
   // build/lib-react-tsx/structure/UnsaturationFormula.tsx
-  var React178 = __toESM(require_react(), 1);
-  var import_jsx_runtime178 = __toESM(require_jsx_runtime(), 1);
+  var React181 = __toESM(require_react(), 1);
+  var import_jsx_runtime181 = __toESM(require_jsx_runtime(), 1);
   var SvgUnsaturationFormula = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime178.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime181.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -36024,8 +36193,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime178.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime178.jsxs)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime181.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime181.jsxs)(
           "g",
           {
             stroke: "none",
@@ -36038,8 +36207,8 @@
             },
             wordSpacing: 0,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime178.jsx)("path", { d: "M304.813 630.063q0 5.859-.47 10.078-.234 3.984-.937 7.03-.703 2.813-1.875 4.923t-3.75 4.922q-2.578 2.578-10.078 6.797-7.265 4.218-18.047 8.203-10.547 3.75-24.375 6.328-13.594 2.578-29.531 2.578-31.172 0-56.25-9.61t-42.656-28.593Q99.266 623.5 89.89 594.906q-9.375-28.593-9.375-66.562 0-38.672 10.312-68.672 10.313-30 28.828-50.39t44.297-30.938q26.016-10.547 57.188-10.547 12.656 0 24.375 2.11t21.562 5.624q10.078 3.281 18.047 7.735 7.969 4.453 11.016 7.734 3.28 3.047 4.453 5.156 1.172 2.11 1.875 5.39.703 3.282.937 7.735.469 4.453.469 11.016 0 7.031-.469 11.953t-1.64 7.969-2.813 4.453-3.75 1.406q-3.515 0-8.906-3.984-5.39-4.219-14.063-9.14-8.437-5.157-20.39-9.141-11.719-4.22-28.125-4.22-18.047 0-32.344 7.5-14.062 7.266-24.14 21.094-9.844 13.594-15 33.047-5.157 19.454-5.157 43.829 0 26.718 5.39 46.406 5.626 19.453 15.704 32.11 10.312 12.655 24.61 18.984 14.53 6.093 32.577 6.093 16.407 0 28.36-3.75 11.953-3.984 20.39-8.672 8.672-4.687 14.063-8.437 5.625-3.75 8.672-3.75 2.344 0 3.75.937t2.344 3.75 1.406 7.97q.469 4.921.469 13.359" }),
-              /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime181.jsx)("path", { d: "M304.813 630.063q0 5.859-.47 10.078-.234 3.984-.937 7.03-.703 2.813-1.875 4.923t-3.75 4.922q-2.578 2.578-10.078 6.797-7.265 4.218-18.047 8.203-10.547 3.75-24.375 6.328-13.594 2.578-29.531 2.578-31.172 0-56.25-9.61t-42.656-28.593Q99.266 623.5 89.89 594.906q-9.375-28.593-9.375-66.562 0-38.672 10.312-68.672 10.313-30 28.828-50.39t44.297-30.938q26.016-10.547 57.188-10.547 12.656 0 24.375 2.11t21.562 5.624q10.078 3.281 18.047 7.735 7.969 4.453 11.016 7.734 3.28 3.047 4.453 5.156 1.172 2.11 1.875 5.39.703 3.282.937 7.735.469 4.453.469 11.016 0 7.031-.469 11.953t-1.64 7.969-2.813 4.453-3.75 1.406q-3.515 0-8.906-3.984-5.39-4.219-14.063-9.14-8.437-5.157-20.39-9.141-11.719-4.22-28.125-4.22-18.047 0-32.344 7.5-14.062 7.266-24.14 21.094-9.844 13.594-15 33.047-5.157 19.454-5.157 43.829 0 26.718 5.39 46.406 5.626 19.453 15.704 32.11 10.312 12.655 24.61 18.984 14.53 6.093 32.577 6.093 16.407 0 28.36-3.75 11.953-3.984 20.39-8.672 8.672-4.687 14.063-8.437 5.625-3.75 8.672-3.75 2.344 0 3.75.937t2.344 3.75 1.406 7.97q.469 4.921.469 13.359" }),
+              /* @__PURE__ */ (0, import_jsx_runtime181.jsx)(
                 "path",
                 {
                   d: "M465.688 706.188q0 14.93-4.57 27.726-4.571 12.645-13.407 21.938-8.836 9.14-21.785 14.472-12.95 5.18-29.86 5.18-13.71 0-23.918-3.2-10.207-3.046-17.671-8.835-7.465-5.942-12.188-14.32-4.723-8.38-7.617-18.891-2.742-10.512-3.809-22.852-1.066-12.34-1.066-26.203 0-11.578 1.066-24.223 1.219-12.644 4.418-24.832 3.352-12.187 9.293-23.156 5.942-11.12 15.235-19.347 9.445-8.38 22.699-13.254 13.406-4.875 31.687-4.875 5.79 0 11.578.761 5.942.61 10.97 1.676 5.027 1.067 8.53 2.438 3.504 1.37 4.57 2.437 1.22.914 1.829 2.133.61 1.219.914 2.742.457 1.371.61 3.504t.152 5.18q0 4.722-.305 7.922-.152 3.046-.762 4.875-.61 1.675-1.676 2.437t-2.59.762q-1.828 0-4.722-.914-2.895-1.067-7.008-2.285-4.113-1.22-9.75-2.133-5.484-.914-12.797-.914-12.34 0-20.87 4.57-8.532 4.57-13.864 12.492-5.332 7.77-7.77 18.13t-2.59 21.937q3.352-2.133 7.618-4.266 4.418-2.133 9.445-3.656 5.18-1.524 11.121-2.438 5.942-1.066 12.645-1.066 14.93 0 25.593 4.113t17.368 11.73q6.855 7.618 10.054 18.434 3.2 10.817 3.2 24.07m-39.305 3.808q0-7.77-1.371-13.558-1.371-5.942-4.418-9.903-3.047-4.113-8.074-6.094-5.028-2.132-12.188-2.132-4.266 0-8.379.761-4.113.762-8.074 2.133t-7.617 3.352q-3.657 1.828-6.856 3.96 0 16.301 1.828 27.27 1.828 10.817 5.332 17.215 3.657 6.398 8.989 9.14 5.484 2.59 12.644 2.59 7.008 0 12.188-2.59 5.332-2.59 8.836-7.312t5.332-10.969q1.828-6.398 1.828-13.863",
@@ -36047,8 +36216,8 @@
                   fontSize: "65%"
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime178.jsx)("path", { d: "M745.203 667.563q0 2.343-1.64 4.218-1.407 1.875-4.922 3.047-3.516 1.172-9.375 1.875-5.86.703-14.766.703-9.14 0-15.234-.703-5.86-.703-9.375-1.875-3.282-1.172-4.922-3.047-1.407-1.875-1.407-4.218V544.984H570.126v122.578q0 2.344-1.406 4.22-1.407 1.874-4.922 3.046-3.516 1.172-9.375 1.875-5.86.703-15 .703-8.906 0-15-.703-5.86-.703-9.375-1.875-3.516-1.172-5.156-3.047-1.407-1.875-1.407-4.218V381.156q0-2.344 1.407-4.219 1.64-1.875 5.156-3.046 3.515-1.172 9.375-1.875 6.094-.704 15-.704 9.14 0 15 .704 5.86.703 9.375 1.875 3.515 1.171 4.922 3.046t1.406 4.22v111.327h113.438V381.156q0-2.344 1.406-4.219 1.64-1.875 4.922-3.046 3.515-1.172 9.375-1.875 6.093-.704 15.234-.704 8.906 0 14.766.704 5.859.703 9.375 1.875 3.515 1.171 4.922 3.046 1.64 1.875 1.64 4.22z" }),
-              /* @__PURE__ */ (0, import_jsx_runtime178.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime181.jsx)("path", { d: "M745.203 667.563q0 2.343-1.64 4.218-1.407 1.875-4.922 3.047-3.516 1.172-9.375 1.875-5.86.703-14.766.703-9.14 0-15.234-.703-5.86-.703-9.375-1.875-3.282-1.172-4.922-3.047-1.407-1.875-1.407-4.218V544.984H570.126v122.578q0 2.344-1.406 4.22-1.407 1.874-4.922 3.046-3.516 1.172-9.375 1.875-5.86.703-15 .703-8.906 0-15-.703-5.86-.703-9.375-1.875-3.516-1.172-5.156-3.047-1.407-1.875-1.407-4.218V381.156q0-2.344 1.407-4.219 1.64-1.875 5.156-3.046 3.515-1.172 9.375-1.875 6.094-.704 15-.704 9.14 0 15 .704 5.86.703 9.375 1.875 3.515 1.171 4.922 3.046t1.406 4.22v111.327h113.438V381.156q0-2.344 1.406-4.219 1.64-1.875 4.922-3.046 3.515-1.172 9.375-1.875 6.093-.704 15.234-.704 8.906 0 14.766.704 5.859.703 9.375 1.875 3.515 1.171 4.922 3.046 1.64 1.875 1.64 4.22z" }),
+              /* @__PURE__ */ (0, import_jsx_runtime181.jsx)(
                 "path",
                 {
                   d: "M926.938 706.188q0 14.93-4.57 27.726-4.571 12.645-13.407 21.938-8.836 9.14-21.785 14.472-12.95 5.18-29.86 5.18-13.71 0-23.918-3.2-10.207-3.046-17.671-8.835-7.465-5.942-12.188-14.32-4.723-8.38-7.617-18.891-2.742-10.512-3.809-22.852-1.066-12.34-1.066-26.203 0-11.578 1.066-24.223 1.219-12.644 4.418-24.832 3.352-12.187 9.293-23.156 5.942-11.12 15.235-19.347 9.445-8.38 22.699-13.254 13.406-4.875 31.687-4.875 5.79 0 11.578.761 5.942.61 10.97 1.676 5.027 1.067 8.53 2.438 3.504 1.37 4.57 2.437 1.22.914 1.829 2.133.61 1.219.914 2.742.457 1.371.61 3.504t.152 5.18q0 4.722-.305 7.922-.152 3.046-.762 4.875-.61 1.675-1.676 2.437t-2.59.762q-1.827 0-4.722-.914-2.895-1.067-7.008-2.285-4.113-1.22-9.75-2.133-5.484-.914-12.797-.914-12.34 0-20.87 4.57-8.532 4.57-13.864 12.492-5.332 7.77-7.77 18.13t-2.59 21.937q3.352-2.133 7.618-4.266 4.418-2.133 9.445-3.656 5.18-1.524 11.121-2.438 5.942-1.066 12.645-1.066 14.93 0 25.593 4.113t17.368 11.73q6.855 7.618 10.054 18.434 3.2 10.817 3.2 24.07m-39.305 3.808q0-7.77-1.371-13.558-1.371-5.942-4.418-9.903-3.047-4.113-8.074-6.094-5.028-2.132-12.188-2.132-4.266 0-8.379.761-4.113.762-8.074 2.133t-7.617 3.352q-3.657 1.828-6.856 3.96 0 16.301 1.828 27.27 1.829 10.817 5.332 17.215 3.657 6.398 8.989 9.14 5.484 2.59 12.644 2.59 7.008 0 12.188-2.59 5.332-2.59 8.836-7.312t5.332-10.969q1.828-6.398 1.828-13.863",
@@ -36065,13 +36234,13 @@
   var UnsaturationFormula_default = SvgUnsaturationFormula;
 
   // build/lib-react-tsx/structure/UnsaturationStructure.tsx
-  var React179 = __toESM(require_react(), 1);
-  var import_jsx_runtime179 = __toESM(require_jsx_runtime(), 1);
+  var React182 = __toESM(require_react(), 1);
+  var import_jsx_runtime182 = __toESM(require_jsx_runtime(), 1);
   var SvgUnsaturationStructure = ({
     title,
     titleId,
     ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime179.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime182.jsxs)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -36084,8 +36253,8 @@
       "aria-labelledby": titleId,
       ...props,
       children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime179.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime179.jsx)(
+        title ? /* @__PURE__ */ (0, import_jsx_runtime182.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime182.jsx)(
           "path",
           {
             fill: "none",
@@ -36102,261 +36271,9 @@
   var UnsaturationStructure_default = SvgUnsaturationStructure;
 
   // build/lib-react-tsx/structure/Virtual.tsx
-  var React180 = __toESM(require_react(), 1);
-  var import_jsx_runtime180 = __toESM(require_jsx_runtime(), 1);
-  var SvgVirtual = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime180.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime180.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime180.jsxs)("g", { transform: "rotate(113.866 257.648 239.32)", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "path",
-            {
-              strokeLinejoin: "round",
-              strokeWidth: 60,
-              d: "M133.234 116.347h170v170h-170z"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "circle",
-            {
-              cx: 568.114,
-              cy: 201.347,
-              r: 100,
-              strokeLinejoin: "round",
-              strokeWidth: 60
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "path",
-            {
-              fill: "#000",
-              stroke: "#000",
-              strokeWidth: 100,
-              d: "M245.509 201.347h290.42"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "path",
-            {
-              strokeLinejoin: "round",
-              strokeWidth: 60,
-              d: "M133.234 116.347h170v170h-170z"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "circle",
-            {
-              cx: 568.114,
-              cy: 201.347,
-              r: 100,
-              strokeLinejoin: "round",
-              strokeWidth: 60
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "path",
-            {
-              fill: "#000",
-              stroke: "#000",
-              strokeWidth: 100,
-              d: "M245.509 201.347h290.42"
-            }
-          )
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime180.jsxs)("g", { transform: "rotate(-34.262 235.323 312.714)", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "circle",
-            {
-              cx: 820.135,
-              cy: 570.359,
-              r: 100,
-              strokeLinejoin: "round",
-              strokeWidth: 60
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "path",
-            {
-              fill: "#000",
-              stroke: "#000",
-              strokeWidth: 100,
-              d: "M497.53 570.36h290.42"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-            "circle",
-            {
-              cx: 459.581,
-              cy: 570.359,
-              r: 100,
-              strokeLinejoin: "round",
-              strokeWidth: 60
-            }
-          )
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-          "path",
-          {
-            strokeLinejoin: "round",
-            strokeWidth: 60,
-            d: "m379.552 600.377 161.717 52.417-52.417 161.717-161.717-52.417z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-          "path",
-          {
-            fill: "#000",
-            stroke: "#000",
-            strokeWidth: 100,
-            d: "m460.048 716.167 276.269 89.547"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime180.jsx)(
-          "path",
-          {
-            strokeLinejoin: "round",
-            strokeWidth: 60,
-            d: "m737.4 714.35 161.716 52.417L846.7 928.485l-161.717-52.418z"
-          }
-        )
-      ]
-    }
-  );
-  var Virtual_default = SvgVirtual;
-
-  // build/lib-react-tsx/tga/Assignment.tsx
-  var React181 = __toESM(require_react(), 1);
-  var import_jsx_runtime181 = __toESM(require_jsx_runtime(), 1);
-  var SvgAssignment8 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime181.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "34.1 40.4 931.1 931.1",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime181.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime181.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M111.035 811.032c0 12.99 8.7 23.41 19.543 23.41 10.725 0 19.421-10.42 19.421-23.408zm0 0V162.018H150v649.018zM150 162.016c0-12.848-8.696-23.266-19.421-23.266-10.844 0-19.545 10.418-19.545 23.266z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime181.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 38.845,
-            d: "m130.575 131.361 49.93 65.898m-99.856 0 49.929-65.898"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime181.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M150.002 811.032c-14.71 0-26.508 8.701-26.508 19.426 0 10.841 11.798 19.543 26.505 19.543zm0 0h734.904V850H150zM884.906 850c14.546 0 26.344-8.702 26.344-19.545 0-10.723-11.798-19.422-26.344-19.422z"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime181.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            strokeWidth: 38.845,
-            d: "m918.636 830.458-65.895 50.045m0-99.974 65.895 49.927"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime181.jsx)(
-          "path",
-          {
-            fill: "none",
-            strokeWidth: 29.999,
-            d: "M188.047 294.563c83.578 2.32 143.94 23.215 150.902 134.65s44.11 132.331 155.546 134.654c111.435 2.32 171.797 58.036 188.048 102.147S749.87 719.41 796.3 724.055c46.431 4.64 44.11 4.64 44.11 4.64"
-          }
-        )
-      ]
-    }
-  );
-  var Assignment_default8 = SvgAssignment8;
-
-  // build/lib-react-tsx/xps/Request.tsx
-  var React182 = __toESM(require_react(), 1);
-  var import_jsx_runtime182 = __toESM(require_jsx_runtime(), 1);
-  var SvgRequest4 = ({
-    title,
-    titleId,
-    ...props
-  }) => /* @__PURE__ */ (0, import_jsx_runtime182.jsxs)(
-    "svg",
-    {
-      xmlns: "http://www.w3.org/2000/svg",
-      fill: "currentColor",
-      stroke: "currentColor",
-      viewBox: "0 0 1000 1000",
-      width: "1em",
-      height: "1em",
-      "aria-labelledby": titleId,
-      ...props,
-      children: [
-        title ? /* @__PURE__ */ (0, import_jsx_runtime182.jsx)("title", { id: titleId, children: title }) : null,
-        /* @__PURE__ */ (0, import_jsx_runtime182.jsx)(
-          "path",
-          {
-            fill: "#000",
-            stroke: "none",
-            d: "M172.145 163.208h97.108l50.597 87.768 49.041-87.768h96.135l-88.74 138.17L473.394 448.5H374.34l-56.241-91.66-56.436 91.66h-98.47l98.47-148.679zm329.272 0h146.538q47.873 0 71.615 22.77 23.937 22.768 23.937 64.803 0 43.202-26.078 67.528-25.882 24.326-79.204 24.326h-48.262V448.5h-88.546zm88.546 121.629h21.601q25.493 0 35.807-8.757 10.315-8.952 10.315-22.77 0-13.427-8.952-22.768t-33.667-9.341h-25.104zm184.291 69.279 83.875-5.254q2.725 20.434 11.093 31.137 13.622 17.32 38.92 17.32 18.878 0 28.997-8.757 10.314-8.952 10.314-20.629 0-11.092-9.73-19.85-9.73-8.757-45.149-16.54-57.992-13.04-82.707-34.64-24.91-21.602-24.91-55.074 0-21.99 12.65-41.45 12.844-19.656 38.337-30.749 25.688-11.287 70.253-11.287 54.684 0 83.29 20.434 28.803 20.239 34.252 64.609l-83.097 4.865q-3.308-19.266-14.012-28.023-10.508-8.757-29.19-8.757-15.374 0-23.159 6.616-7.784 6.422-7.784 15.763 0 6.811 6.422 12.26 6.228 5.644 29.58 10.51 57.798 12.454 82.708 25.298 25.104 12.65 36.39 31.526 11.482 18.877 11.482 42.23 0 27.439-15.179 50.597t-42.424 35.223q-27.244 11.871-68.695 11.871-72.783 0-100.806-28.023t-31.72-71.226",
-            "aria-label": "XPS",
-            fontFamily: "Arial Black",
-            fontSize: 398.552,
-            fontWeight: 700,
-            style: {
-              lineHeight: 1.25
-            },
-            transform: "scale(.83636 1.19566)"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime182.jsx)(
-          "path",
-          {
-            stroke: "none",
-            d: "M973.852 153.252V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307z"
-          }
-        )
-      ]
-    }
-  );
-  var Request_default4 = SvgRequest4;
-
-  // build/lib-react-tsx/xray/Request.tsx
   var React183 = __toESM(require_react(), 1);
   var import_jsx_runtime183 = __toESM(require_jsx_runtime(), 1);
-  var SvgRequest5 = ({
+  var SvgVirtual = ({
     title,
     titleId,
     ...props
@@ -36373,21 +36290,273 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime183.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime183.jsxs)("g", { transform: "rotate(113.866 257.648 239.32)", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "path",
+            {
+              strokeLinejoin: "round",
+              strokeWidth: 60,
+              d: "M133.234 116.347h170v170h-170z"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "circle",
+            {
+              cx: 568.114,
+              cy: 201.347,
+              r: 100,
+              strokeLinejoin: "round",
+              strokeWidth: 60
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "path",
+            {
+              fill: "#000",
+              stroke: "#000",
+              strokeWidth: 100,
+              d: "M245.509 201.347h290.42"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "path",
+            {
+              strokeLinejoin: "round",
+              strokeWidth: 60,
+              d: "M133.234 116.347h170v170h-170z"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "circle",
+            {
+              cx: 568.114,
+              cy: 201.347,
+              r: 100,
+              strokeLinejoin: "round",
+              strokeWidth: 60
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "path",
+            {
+              fill: "#000",
+              stroke: "#000",
+              strokeWidth: 100,
+              d: "M245.509 201.347h290.42"
+            }
+          )
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime183.jsxs)("g", { transform: "rotate(-34.262 235.323 312.714)", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "circle",
+            {
+              cx: 820.135,
+              cy: 570.359,
+              r: 100,
+              strokeLinejoin: "round",
+              strokeWidth: 60
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "path",
+            {
+              fill: "#000",
+              stroke: "#000",
+              strokeWidth: 100,
+              d: "M497.53 570.36h290.42"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+            "circle",
+            {
+              cx: 459.581,
+              cy: 570.359,
+              r: 100,
+              strokeLinejoin: "round",
+              strokeWidth: 60
+            }
+          )
+        ] }),
         /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+          "path",
+          {
+            strokeLinejoin: "round",
+            strokeWidth: 60,
+            d: "m379.552 600.377 161.717 52.417-52.417 161.717-161.717-52.417z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+          "path",
+          {
+            fill: "#000",
+            stroke: "#000",
+            strokeWidth: 100,
+            d: "m460.048 716.167 276.269 89.547"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+          "path",
+          {
+            strokeLinejoin: "round",
+            strokeWidth: 60,
+            d: "m737.4 714.35 161.716 52.417L846.7 928.485l-161.717-52.418z"
+          }
+        )
+      ]
+    }
+  );
+  var Virtual_default = SvgVirtual;
+
+  // build/lib-react-tsx/tga/Assignment.tsx
+  var React184 = __toESM(require_react(), 1);
+  var import_jsx_runtime184 = __toESM(require_jsx_runtime(), 1);
+  var SvgAssignment8 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime184.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "34.1 40.4 931.1 931.1",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime184.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime184.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M111.035 811.032c0 12.99 8.7 23.41 19.543 23.41 10.725 0 19.421-10.42 19.421-23.408zm0 0V162.018H150v649.018zM150 162.016c0-12.848-8.696-23.266-19.421-23.266-10.844 0-19.545 10.418-19.545 23.266z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime184.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 38.845,
+            d: "m130.575 131.361 49.93 65.898m-99.856 0 49.929-65.898"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime184.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M150.002 811.032c-14.71 0-26.508 8.701-26.508 19.426 0 10.841 11.798 19.543 26.505 19.543zm0 0h734.904V850H150zM884.906 850c14.546 0 26.344-8.702 26.344-19.545 0-10.723-11.798-19.422-26.344-19.422z"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime184.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 38.845,
+            d: "m918.636 830.458-65.895 50.045m0-99.974 65.895 49.927"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime184.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeWidth: 29.999,
+            d: "M188.047 294.563c83.578 2.32 143.94 23.215 150.902 134.65s44.11 132.331 155.546 134.654c111.435 2.32 171.797 58.036 188.048 102.147S749.87 719.41 796.3 724.055c46.431 4.64 44.11 4.64 44.11 4.64"
+          }
+        )
+      ]
+    }
+  );
+  var Assignment_default8 = SvgAssignment8;
+
+  // build/lib-react-tsx/xps/Request.tsx
+  var React185 = __toESM(require_react(), 1);
+  var import_jsx_runtime185 = __toESM(require_jsx_runtime(), 1);
+  var SvgRequest4 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime185.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime185.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime185.jsx)(
+          "path",
+          {
+            fill: "#000",
+            stroke: "none",
+            d: "M172.145 163.208h97.108l50.597 87.768 49.041-87.768h96.135l-88.74 138.17L473.394 448.5H374.34l-56.241-91.66-56.436 91.66h-98.47l98.47-148.679zm329.272 0h146.538q47.873 0 71.615 22.77 23.937 22.768 23.937 64.803 0 43.202-26.078 67.528-25.882 24.326-79.204 24.326h-48.262V448.5h-88.546zm88.546 121.629h21.601q25.493 0 35.807-8.757 10.315-8.952 10.315-22.77 0-13.427-8.952-22.768t-33.667-9.341h-25.104zm184.291 69.279 83.875-5.254q2.725 20.434 11.093 31.137 13.622 17.32 38.92 17.32 18.878 0 28.997-8.757 10.314-8.952 10.314-20.629 0-11.092-9.73-19.85-9.73-8.757-45.149-16.54-57.992-13.04-82.707-34.64-24.91-21.602-24.91-55.074 0-21.99 12.65-41.45 12.844-19.656 38.337-30.749 25.688-11.287 70.253-11.287 54.684 0 83.29 20.434 28.803 20.239 34.252 64.609l-83.097 4.865q-3.308-19.266-14.012-28.023-10.508-8.757-29.19-8.757-15.374 0-23.159 6.616-7.784 6.422-7.784 15.763 0 6.811 6.422 12.26 6.228 5.644 29.58 10.51 57.798 12.454 82.708 25.298 25.104 12.65 36.39 31.526 11.482 18.877 11.482 42.23 0 27.439-15.179 50.597t-42.424 35.223q-27.244 11.871-68.695 11.871-72.783 0-100.806-28.023t-31.72-71.226",
+            "aria-label": "XPS",
+            fontFamily: "Arial Black",
+            fontSize: 398.552,
+            fontWeight: 700,
+            style: {
+              lineHeight: 1.25
+            },
+            transform: "scale(.83636 1.19566)"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime185.jsx)(
+          "path",
+          {
+            stroke: "none",
+            d: "M973.852 153.252V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307z"
+          }
+        )
+      ]
+    }
+  );
+  var Request_default4 = SvgRequest4;
+
+  // build/lib-react-tsx/xray/Request.tsx
+  var React186 = __toESM(require_react(), 1);
+  var import_jsx_runtime186 = __toESM(require_jsx_runtime(), 1);
+  var SvgRequest5 = ({
+    title,
+    titleId,
+    ...props
+  }) => /* @__PURE__ */ (0, import_jsx_runtime186.jsxs)(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      fill: "currentColor",
+      stroke: "currentColor",
+      viewBox: "0 0 1000 1000",
+      width: "1em",
+      height: "1em",
+      "aria-labelledby": titleId,
+      ...props,
+      children: [
+        title ? /* @__PURE__ */ (0, import_jsx_runtime186.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime186.jsx)(
           "path",
           {
             stroke: "none",
             d: "M973.852 153.252V602.74l-49.7.403V153.652zm0 449.489c0 35.273-15.23 67.332-40.084 90.582l-33.865-36.075c15.03-14.025 24.248-33.265 24.248-54.103zm-40.084 90.582c-24.444 22.643-57.91 36.87-94.585 36.87l.404-49.695c23.642 0 45.086-9.018 60.316-23.25zm-94.585 36.87H377.47l.401-49.695h461.717zM377.67 705.345l-.2 24.848c-13.828 0-24.85-11.019-24.85-24.848.2-13.828 11.423-24.847 25.25-24.847zm18.837 16.235-217.03 251.696-37.674-32.266 217.03-251.899ZM160.64 957.244l18.837 16.032c-9.018 10.621-24.849 11.821-35.27 2.804-10.22-8.815-11.422-24.646-2.404-35.07zm-24.248-5.008 53.506-251.702 48.496 9.623-53.506 251.898zm77.754-246.89-24.448-5.008c2.805-13.43 16.032-22.246 29.658-19.442 13.427 2.804 22.044 15.83 19.038 29.457zm-.2 24.847H160.84l.401-49.695h53.105zm-53.106 0c-36.672 0-70.139-14.025-94.386-36.669l34.267-36.472c15.43 14.428 36.873 23.446 60.52 23.446zm-94.386-36.669c-24.65-23.047-40.08-55.112-40.08-90.38l49.899-.403c0 20.844 9.218 40.28 24.448 54.311zm-40.08-90.38v-449.49l49.899-.401V602.74zm0-449.491c0-35.47 15.43-67.534 40.28-90.58l33.867 36.072c-15.03 14.027-24.248 33.065-24.248 54.107Zm40.28-90.58C90.902 40.228 124.368 26 161.24 26l-.4 49.899c-23.647 0-45.09 8.817-60.32 23.246zM161.24 26h678.346l-.404 49.899H160.84zm678.346 0c36.669 0 70.136 14.228 94.383 36.873l-34.268 36.473c-15.427-14.63-36.871-23.447-60.519-23.447Zm94.383 36.873c24.652 23.045 39.882 55.11 39.882 90.379l-49.7.401c0-21.041-9.22-40.28-24.45-54.307zM608.631 427.327c11.694-7.59 15.182-23.388 7.59-35.287-7.59-11.694-23.387-14.976-35.286-7.18zm0 0-119.402 77.96-27.696-42.467 119.402-77.96zM461.533 462.82c-11.694 7.59-15.182 23.387-7.59 35.287 7.59 11.694 23.387 14.976 35.286 7.18zM315.872 296.437c18.258 0 34.876-7.591 46.98-19.49l35.698 35.697c-21.337 21.337-50.88 34.672-83.089 34.672zm46.775-19.696c12.105-12.104 19.695-28.516 19.695-46.775l50.88-.411c0 32.415-13.336 61.752-34.672 83.089zm19.695-46.775c0-18.465-7.59-35.287-19.695-47.392l36.108-36.108c21.131 21.337 34.466 50.674 34.466 83.09zm-19.695-47.392c-12.104-12.104-28.927-19.695-47.186-19.695l.41-50.879c32.21 0 61.547 13.335 82.884 34.467zm-47.186-19.695c-18.464 0-35.082 7.59-47.186 19.49l-35.698-35.697C253.914 125.335 283.457 112 315.872 112Zm-47.186 19.49c-11.9 12.104-19.49 28.722-19.49 47.186l-50.88.411c0-32.415 13.336-61.958 34.672-83.294zm-19.49 47.186c0 18.26 7.59 35.082 19.695 47.186l-36.108 36.108c-21.131-21.336-34.466-50.674-34.466-82.883zm19.695 47.186c12.104 12.105 28.927 19.696 47.392 19.696l-.411 50.879c-32.415 0-61.753-13.335-83.09-34.467z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime186.jsx)(
           "path",
           {
             stroke: "none",
             d: "M692.746 433.277c18.259 0 34.876-7.591 46.981-19.695l35.905 35.902c-21.339 21.337-50.676 34.672-83.296 34.672zm46.981-19.49c12.104-12.104 19.49-28.722 19.49-46.981l50.878-.411c0 32.21-13.13 61.753-34.463 83.089zm19.49-46.981c0-18.464-7.386-35.288-19.49-47.392l36.106-36.107c21.133 21.336 34.262 50.674 34.262 83.088zm-19.695-47.186c-12.104-12.31-28.927-19.696-47.186-19.696l.41-51.084c32.416 0 61.959 13.335 83.088 34.467zm-47.186-19.696c-18.26 0-34.877 7.386-46.982 19.285l-35.697-35.697c21.336-21.337 50.674-34.672 83.089-34.672zm-46.982 19.285c-12.104 12.105-19.49 28.722-19.49 47.186l-50.879.411c0-32.415 13.336-61.957 34.672-83.294zm-19.49 47.186c0 18.26 7.591 35.082 19.696 47.187l-36.108 36.107c-21.337-21.336-34.467-50.673-34.467-82.883Zm19.696 47.187c12.104 12.104 28.927 19.695 47.186 19.695l-.411 50.88c-32.21 0-61.753-13.336-82.884-34.468zM386.856 580.17c18.259 0 34.877-7.386 46.98-19.49l35.699 35.902c-21.337 21.337-50.675 34.467-83.09 34.467zm46.98-19.49c11.9-12.105 19.49-28.722 19.49-46.982l50.88-.41c0 32.62-13.335 61.957-34.466 83.293zm19.49-46.982c0-18.259-7.59-34.876-19.694-47.185l36.312-36.108c21.132 21.131 34.262 50.469 34.262 82.884zm-19.694-47.185c-12.31-12.105-28.928-19.696-47.187-19.696l.411-50.879c32.415 0 61.753 13.13 83.089 34.467zm-47.187-19.696c-18.464 0-35.081 7.591-46.98 19.49l-35.903-35.697c21.336-21.336 50.879-34.672 83.294-34.672zm-46.98 19.696c-12.105 11.899-19.49 28.516-19.49 46.776l-50.88.41c0-32.414 13.13-61.957 34.467-83.088zm-19.49 46.776c0 18.464 7.385 35.081 19.694 47.39l-36.312 36.109c-21.131-21.337-34.261-50.674-34.261-83.09Zm19.694 47.39c12.105 12.105 28.723 19.49 47.187 19.49l-.411 50.88c-32.415 0-61.752-13.13-83.089-34.261z"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime183.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime186.jsx)(
           "path",
           {
             stroke: "none",
@@ -36400,16 +36569,16 @@
   var Request_default5 = SvgRequest5;
 
   // build/react-docs.tsx
-  var import_jsx_runtime184 = __toESM(require_jsx_runtime(), 1);
-  (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime184.jsx)(App, {}));
+  var import_jsx_runtime187 = __toESM(require_jsx_runtime(), 1);
+  (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime187.jsx)(App, {}));
   function App() {
-    return /* @__PURE__ */ (0, import_jsx_runtime184.jsx)("div", { className: "w-screen flex flex-row flex-wrap", children: Object.entries(react_index_exports).map(([name, Component]) => /* @__PURE__ */ (0, import_jsx_runtime184.jsxs)(
+    return /* @__PURE__ */ (0, import_jsx_runtime187.jsx)("div", { className: "w-screen flex flex-row flex-wrap", children: Object.entries(react_index_exports).map(([name, Component]) => /* @__PURE__ */ (0, import_jsx_runtime187.jsxs)(
       "div",
       {
         className: "flex flex-col items-center justify-center p-4 border",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime184.jsx)("div", { children: name }),
-          /* @__PURE__ */ (0, import_jsx_runtime184.jsx)("div", { className: "text-red-500", children: /* @__PURE__ */ (0, import_jsx_runtime184.jsx)(Component, { className: "w-16 h-16" }) })
+          /* @__PURE__ */ (0, import_jsx_runtime187.jsx)("div", { children: name }),
+          /* @__PURE__ */ (0, import_jsx_runtime187.jsx)("div", { className: "text-red-500", children: /* @__PURE__ */ (0, import_jsx_runtime187.jsx)(Component, { className: "w-16 h-16" }) })
         ]
       },
       name
