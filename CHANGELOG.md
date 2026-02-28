@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/cheminfo/font/compare/v1.19.0...v1.20.0) (2026-02-28)
+
+
+### Features
+
+* add fix-molfile icon ([#66](https://github.com/cheminfo/font/issues/66)) ([e449561](https://github.com/cheminfo/font/commit/e449561c41b69d1fe6e0be3f235cf24cb213ea5c))
+
 ## [1.19.0](https://github.com/cheminfo/font/compare/v1.18.0...v1.19.0) (2026-02-28)
 
 
