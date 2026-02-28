@@ -1,9 +1,6 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(find:*)",
-      "Bash(git mv:*)",
-      "Bash(git rm:*)"
-    ]
+    "allow": ["Bash(find:*)", "Bash(open /tmp/fix-molfile-test.html)"],
+    "additionalDirectories": ["/tmp"]
   }
 }
