@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg stroke="currentColor" fill="currentColor" version="1.1"
-	 id="svg4152" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+<svg stroke="currentColor" fill="currentColor"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
-	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000">
 <g>
-	
+
 		<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="65.8106" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
 		M499.757,948.085c246.683,0,447.882-201.198,447.882-447.892c0-246.688-201.199-447.886-447.882-447.886
 		c-246.688,0-447.89,201.198-447.89,447.886C51.867,746.887,253.069,948.085,499.757,948.085z"/>

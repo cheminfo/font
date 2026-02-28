@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg stroke="currentColor" fill="currentColor" version="1.1"
-	 id="svg4152" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+<svg stroke="currentColor" fill="currentColor"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
-	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000">
 <g>
 	<path d="M252.565,300.988c0,1.382-0.436,2.695-1.39,3.79c-0.939,1.164-2.477,2.111-4.59,2.77c-2.12,0.731-4.96,1.313-8.531,1.748
 		c-3.577,0.443-8.026,0.66-13.486,0.66c-5.544,0-10.139-0.216-13.78-0.66c-3.578-0.434-6.497-1.017-8.533-1.748
@@ -26,19 +24,19 @@
 		h-28.362v188.052H822.6c15.389,0,28.362-2.042,38.865-5.978c10.568-4.014,19.325-10.062,26.397-18.083
 		c7.074-8.027,12.321-18.083,15.822-30.047C907.186,196.861,908.932,182.935,908.932,166.965z"/>
 	<g>
-		
+
 			<line fill="none"  stroke-width="37.0882" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="508.229" y1="777.649" x2="508.229" y2="926.634"/>
-		
+
 			<line fill="none"  stroke-width="37.086" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="572.738" y1="814.893" x2="443.717" y2="889.39"/>
-		
+
 			<line fill="none"  stroke-width="37.0839" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="572.738" y1="889.39" x2="443.717" y2="814.893"/>
 	</g>
-	<polygon points="472.871,641.211 210.263,386.17 313.792,312.945 520.852,633.637 965.282,855.85 942.555,898.778 508.224,676.563 
+	<polygon points="472.871,641.211 210.263,386.17 313.792,312.945 520.852,633.637 965.282,855.85 942.555,898.778 508.224,676.563
 		73.902,893.727 51.174,853.324 	"/>
 	<polygon points="538.127,585.561 572.719,550.962 607.318,585.561 572.719,620.152 	"/>
-	
+
 		<rect x="612.05" y="497.254" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -182.4829 602.8436)" width="48.927" height="48.924"/>
-	
+
 		<rect x="675.966" y="433.443" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -118.636 629.4039)" width="48.932" height="48.928"/>
 	<polygon points="729.665,394.022 764.257,359.421 798.857,394.022 764.257,428.613 	"/>
 </g>
