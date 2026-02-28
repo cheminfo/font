@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
   <!-- Document outline with folded corner -->
   <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="36"
     d="M150 50 L700 50 L850 200 L850 950 L150 950 Z"/>

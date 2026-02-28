@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg stroke="currentColor" fill="currentColor" version="1.1"
-	 id="svg4152" sodipodi:docname="icons.svg" inkscape:version="0.91 r13725" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+<svg stroke="currentColor" fill="currentColor"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
-	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000">
 <g>
 	<path d="M235.272,294.355c0,1.324-0.394,2.506-1.192,3.506c-0.792,1.045-2.045,1.907-3.883,2.635
 		c-1.786,0.722-4.225,1.245-7.325,1.639c-3.101,0.405-7,0.536-11.809,0.536c-4.748,0-8.64-0.131-11.739-0.536
@@ -22,9 +20,9 @@
 		c-1.315,6.537-1.984,13.202-1.984,19.996c0,7.193,0.602,14.24,1.718,21.17c1.194,6.863,3.04,12.994,5.737,18.268
 		c2.646,5.282,6.141,9.508,10.496,12.734c4.416,3.241,9.963,4.818,16.619,4.818c3.367,0,6.604-0.458,9.765-1.448
 		c3.17-0.929,6.399-2.507,9.697-4.683c3.236-2.25,6.664-5.083,10.091-8.641c3.494-3.504,7.325-7.85,11.413-13.072V110.784z"/>
-	
+
 		<polyline fill="none"  stroke-width="49.8592" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" points="
-		34.5,703.843 131.345,703.843 182.496,557.417 238.63,703.843 326.45,703.843 386.051,173.312 444.162,703.843 552.832,703.843 
+		34.5,703.843 131.345,703.843 182.496,557.417 238.63,703.843 326.45,703.843 386.051,173.312 444.162,703.843 552.832,703.843
 		610.941,173.312 670.544,703.843 758.369,703.843 814.503,557.417 865.657,703.843 962.5,703.843 	"/>
 </g>
 </svg>

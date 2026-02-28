@@ -25638,7 +25638,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -27155,7 +27154,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -27413,7 +27411,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "245.5 148.1 523.6 523.6",
@@ -28485,7 +28482,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -28736,7 +28732,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      id: "Layer_1",
       "data-name": "Layer 1",
       viewBox: "9 21 546.5 546.5",
       width: "1em",
@@ -30170,7 +30165,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -30242,7 +30236,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "33.3 33.3 933.3 933.3",
@@ -30285,7 +30278,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -30425,7 +30417,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "21.1 24.3 947.3 947.3",
@@ -30534,7 +30525,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -30773,11 +30763,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
-      id: "svg4152",
-      x: 0,
-      y: 0,
-      enableBackground: "new 0 0 1000 1000",
       viewBox: "34.1 40.5 930.9 930.9",
       width: "1em",
       height: "1em",
@@ -30786,49 +30771,34 @@
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("title", { id: titleId, children: title }) : null,
         /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("style", { children: ".st0{fill:none;stroke:#000;stroke-width:38.8466;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:9.4994}" }),
+        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { d: "M111.078 811.15c0 13.062 8.787 23.512 19.474 23.512s19.473-10.45 19.473-23.511zm0 0V162.105h38.947v649.047zm38.947-649.046c0-12.824-8.787-23.274-19.473-23.274-10.925 0-19.474 10.45-19.474 23.274z" }),
         /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-          "filter",
+          "path",
           {
-            id: "filter907",
-            width: 1.079,
-            height: 1.248,
-            x: -0.04,
-            y: -0.124,
-            colorInterpolationFilters: "sRGB",
-            children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("feGaussianBlur", { id: "feGaussianBlur909", stdDeviation: 1.527 })
+            strokeWidth: 92.255,
+            d: "m130.552 131.468 49.871 65.784m-99.743 0 49.872-65.784",
+            className: "st0"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)("g", { id: "g6050", transform: "translate(1485.641 -1771.974)scale(2.37485)", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-            "path",
-            {
-              id: "path5963",
-              d: "M-578.8 1087.7c0 5.5 3.7 9.9 8.2 9.9s8.2-4.4 8.2-9.9zm0 0V814.4h16.4v273.3zm16.4-273.3c0-5.4-3.7-9.8-8.2-9.8-4.6 0-8.2 4.4-8.2 9.8z"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { id: "path5965", d: "m-570.6 801.5 21 27.7", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { id: "path5967", d: "m-591.6 829.2 21-27.7", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-            "path",
-            {
-              id: "path5969",
-              d: "M-562.4 1087.7c-6.2 0-11.2 3.7-11.2 8.2 0 4.6 5 8.2 11.2 8.2zm0 0H-253v16.4h-309.5v-16.4zm309.4 16.4c6.1 0 11.1-3.7 11.1-8.2s-5-8.2-11.1-8.2z"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { id: "path5971", d: "m-238.8 1095.8-27.7 21.1", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { id: "path5973", d: "m-266.5 1074.8 27.7 21", className: "st0" }),
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
-            "path",
-            {
-              id: "path857",
-              fill: "none",
-              stroke: "#000",
-              strokeMiterlimit: 9.499,
-              strokeWidth: 30,
-              d: "M-551.6 1040c7.1 1.1 22 2.3 38.5-4.5 3.1-1.3 12.3-5.2 20-12.6 17-16.4 12-36.4 19.6-65.6 6.1-23.4 22.5-61 39.5-61 21.7 0 39.9 61.1 41.8 67.6 11.2 37.6 5.1 55.6 21 67.1 8.7 6.3 21.6 6.6 47.5 7.2 18.6.5 33.9-.8 44.2-1.9"
-            }
-          )
-        ] })
+        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("path", { d: "M150.025 811.15c-14.724 0-26.598 8.788-26.598 19.474 0 10.925 11.874 19.474 26.598 19.474zm0 0h734.779v38.948H149.788v-38.947zm734.779 38.948c14.487 0 26.36-8.787 26.36-19.474s-11.873-19.473-26.36-19.473z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+          "path",
+          {
+            strokeWidth: 92.255,
+            d: "m918.527 830.387-65.783 50.11m0-99.982 65.783 49.872",
+            className: "st0"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+          "path",
+          {
+            fill: "none",
+            stroke: "#000",
+            strokeMiterlimit: 9.499,
+            strokeWidth: 71.24549999999999,
+            d: "M175.674 697.87c16.861 2.612 52.246 5.462 91.431-10.687 7.363-3.087 29.211-12.349 47.497-29.923 40.373-38.947 28.499-86.444 46.548-155.79 14.486-55.572 53.434-144.866 93.806-144.866 51.534 0 94.757 145.103 99.269 160.54 26.598 89.294 12.112 132.042 49.872 159.352 20.66 14.962 51.296 15.674 112.805 17.1 44.172 1.187 80.507-1.9 104.968-4.513"
+          }
+        )
       ]
     }
   );
@@ -30884,7 +30854,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -30911,7 +30880,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -30938,7 +30906,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31016,7 +30983,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31095,7 +31061,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "-2 24.6 970.5 970.5",
@@ -31365,7 +31330,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31414,7 +31378,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31473,7 +31436,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31574,7 +31536,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31653,7 +31614,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31690,7 +31650,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31760,7 +31719,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "55.3 46.1 900.4 900.4",
@@ -31798,7 +31756,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31859,7 +31816,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -31896,7 +31852,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32013,7 +31968,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32186,7 +32140,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32224,7 +32177,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32274,7 +32226,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32334,7 +32285,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32394,7 +32344,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32452,7 +32401,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32498,7 +32446,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32550,7 +32497,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32601,7 +32547,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32682,7 +32627,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32754,7 +32698,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "13.9 -33.6 972.2 972.2",
@@ -32826,7 +32769,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32873,7 +32815,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -32931,7 +32872,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -33065,7 +33005,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -33137,7 +33076,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -33232,7 +33170,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -33270,7 +33207,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -33373,7 +33309,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -33478,7 +33413,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -35142,7 +35076,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -35169,7 +35102,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -35405,7 +35337,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -35625,7 +35556,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -36078,7 +36008,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -36298,7 +36227,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
@@ -36395,7 +36323,6 @@
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      xmlSpace: "preserve",
       fill: "currentColor",
       stroke: "currentColor",
       viewBox: "0 0 1000 1000",
