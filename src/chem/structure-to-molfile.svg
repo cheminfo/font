@@ -13,14 +13,14 @@
   </g>
   <!-- Downward arrow -->
   <path
-     d="M 475,430 L 475,600 L 380,600 L 500,710 L 620,600 L 525,600 L 525,430 Z"
+     d="M 475,430 L 475,550 L 380,550 L 500,700 L 620,550 L 525,550 L 525,430 Z"
      stroke="none" />
   <!-- ".mol" text at the bottom -->
   <text
-     x="500" y="920"
+     x="500" y="950"
      text-anchor="middle"
      font-family="sans-serif"
      font-weight="bold"
-     font-size="220"
+     font-size="280"
      stroke="none">.mol</text>
 </svg>

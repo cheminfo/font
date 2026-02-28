@@ -26279,10 +26279,10 @@
           "text",
           {
             x: 500,
-            y: 220,
+            y: 250,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 220,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: ".mol"
@@ -26292,17 +26292,17 @@
           "path",
           {
             stroke: "none",
-            d: "M350 310v210h-70l90 140 90-140h-70V310Zm260 350V450h-70l90-140 90 140h-70v210Z"
+            d: "M350 340v190h-70l90 130 90-130h-70V340Zm260 320V450h-70l90-110 90 110h-70v210Z"
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(
           "text",
           {
             x: 500,
-            y: 910,
+            y: 920,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 220,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: ".smi"
@@ -26340,7 +26340,7 @@
             y: 240,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 250,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: ".mol"
@@ -26652,7 +26652,7 @@
             d: "m175 108 217 125 217-125 217 125"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("path", { stroke: "none", d: "M475 300v280h-95l120 130 120-130h-95V300Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("path", { stroke: "none", d: "M475 300v260h-95l120 150 120-150h-95V300Z" }),
         /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(
           "text",
           {
@@ -26660,7 +26660,7 @@
             y: 940,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 220,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: "CCCC"
@@ -26698,7 +26698,7 @@
             y: 260,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 230,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: ".mol"
@@ -26839,7 +26839,7 @@
       xmlns: "http://www.w3.org/2000/svg",
       fill: "currentColor",
       stroke: "currentColor",
-      viewBox: "14.4 -10.6 972.2 972.2",
+      viewBox: "0 0 1000 1000",
       width: "1em",
       height: "1em",
       "aria-labelledby": titleId,
@@ -26853,13 +26853,13 @@
             y: 240,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 220,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: "CCCC"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("path", { stroke: "none", d: "M475 300v270h-95l120 130 120-130h-95V300Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("path", { stroke: "none", d: "M475 300v250h-95l120 150 120-150h-95V300Z" }),
         /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
           "path",
           {
@@ -26909,15 +26909,15 @@
             children: "CCC"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("path", { stroke: "none", d: "M475 340v260h-95l120 150 120-150h-95V340Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("path", { stroke: "none", d: "M475 340v210h-95l120 150 120-150h-95V340Z" }),
         /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(
           "text",
           {
             x: 500,
-            y: 940,
+            y: 950,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 220,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: ".mol"
@@ -26952,16 +26952,16 @@
           "text",
           {
             x: 500,
-            y: 170,
+            y: 250,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 200,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: "CCCC"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)("path", { stroke: "none", d: "M475 220v180h-85l110 120 110-120h-85V220Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime36.jsx)("path", { stroke: "none", d: "M475 280v110h-95l120 150 120-150h-95V280Z" }),
         /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
           "rect",
           {
@@ -27095,15 +27095,15 @@
             ]
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("path", { stroke: "none", d: "M475 430v170h-95l120 110 120-110h-95V430Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("path", { stroke: "none", d: "M475 430v120h-95l120 150 120-150h-95V430Z" }),
         /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
           "text",
           {
             x: 500,
-            y: 920,
+            y: 950,
             stroke: "none",
             fontFamily: "sans-serif",
-            fontSize: 220,
+            fontSize: 280,
             fontWeight: "bold",
             textAnchor: "middle",
             children: ".mol"

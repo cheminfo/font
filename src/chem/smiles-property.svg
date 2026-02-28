@@ -6,15 +6,15 @@
    viewBox="0 0 1000 1000">
   <!-- "CCCC" SMILES text at the top -->
   <text
-     x="500" y="170"
+     x="500" y="250"
      text-anchor="middle"
      font-family="sans-serif"
      font-weight="bold"
-     font-size="200"
+     font-size="280"
      stroke="none">CCCC</text>
   <!-- Downward arrow -->
   <path
-     d="M 475,220 L 475,400 L 390,400 L 500,520 L 610,400 L 525,400 L 525,220 Z"
+     d="M 475,280 L 475,390 L 380,390 L 500,540 L 620,390 L 525,390 L 525,280 Z"
      stroke="none" />
   <!-- Calculator body (rounded rectangle) -->
   <rect x="250" y="570" width="500" height="410" rx="40" ry="40"

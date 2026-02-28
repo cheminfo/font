@@ -6,26 +6,26 @@
    viewBox="0 0 1000 1000">
   <!-- ".mol" text at the top -->
   <text
-     x="500" y="220"
+     x="500" y="250"
      text-anchor="middle"
      font-family="sans-serif"
      font-weight="bold"
-     font-size="220"
+     font-size="280"
      stroke="none">.mol</text>
   <!-- Down arrow (left side) -->
   <path
-     d="M 350,310 L 350,520 L 280,520 L 370,660 L 460,520 L 390,520 L 390,310 Z"
+     d="M 350,340 L 350,530 L 280,530 L 370,660 L 460,530 L 390,530 L 390,340 Z"
      stroke="none" />
   <!-- Up arrow (right side) -->
   <path
-     d="M 610,660 L 610,450 L 540,450 L 630,310 L 720,450 L 650,450 L 650,660 Z"
+     d="M 610,660 L 610,450 L 540,450 L 630,340 L 720,450 L 650,450 L 650,660 Z"
      stroke="none" />
   <!-- ".smi" text at the bottom -->
   <text
-     x="500" y="910"
+     x="500" y="920"
      text-anchor="middle"
      font-family="sans-serif"
      font-weight="bold"
-     font-size="220"
+     font-size="280"
      stroke="none">.smi</text>
 </svg>

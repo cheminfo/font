@@ -3,18 +3,18 @@
    xmlns="http://www.w3.org/2000/svg"
    width="1000"
    height="1000"
-   viewBox="14.4 -10.6 972.2 972.2">
+   viewBox="0 0 1000 1000">
   <!-- "CCCC" SMILES text at the top -->
   <text
      x="500" y="240"
      text-anchor="middle"
      font-family="sans-serif"
      font-weight="bold"
-     font-size="220"
+     font-size="280"
      stroke="none">CCCC</text>
   <!-- Downward arrow -->
   <path
-     d="M 475,300 L 475,570 L 380,570 L 500,700 L 620,570 L 525,570 L 525,300 Z"
+     d="M 475,300 L 475,550 L 380,550 L 500,700 L 620,550 L 525,550 L 525,300 Z"
      stroke="none" />
   <!-- Butane zigzag molecule (3 equal bonds, length ~250, 120° angles) -->
   <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="36"
