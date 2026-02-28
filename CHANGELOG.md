@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.0](https://github.com/cheminfo/font/compare/v1.18.0...v1.19.0) (2026-02-28)
+
+
+### Features
+
+* add converter, iupac-to-structure and structure-to-molfile ([#64](https://github.com/cheminfo/font/issues/64)) ([02a2c4d](https://github.com/cheminfo/font/commit/02a2c4d77dbd79178f9935cc22d2682366576ff9))
+
 ## [1.18.0](https://github.com/cheminfo/font/compare/v1.17.0...v1.18.0) (2026-02-25)
 
 
