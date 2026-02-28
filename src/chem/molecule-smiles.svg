@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg stroke="currentColor" fill="currentColor"
    xmlns="http://www.w3.org/2000/svg"
    width="1000"
@@ -9,7 +8,7 @@
     d="M 175,108 L 392,233 L 609,108 L 826,233"/>
   <!-- Downward arrow -->
   <path
-     d="M 475,300 L 475,580 L 380,580 L 500,710 L 620,580 L 525,580 L 525,300 Z"
+     d="M 475,300 L 475,560 L 380,560 L 500,710 L 620,560 L 525,560 L 525,300 Z"
      stroke="none" />
   <!-- "CCCC" SMILES text at the bottom -->
   <text
@@ -17,6 +16,6 @@
      text-anchor="middle"
      font-family="sans-serif"
      font-weight="bold"
-     font-size="220"
+     font-size="280"
      stroke="none">CCCC</text>
 </svg>

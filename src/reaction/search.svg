@@ -1,148 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg stroke="currentColor" fill="currentColor"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1000"
    height="1000"
-   id="svg4152"
-   version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   viewBox="0 0 1000 1000"
-   sodipodi:docname="search-reaction.svg">
-  <defs
-     id="defs5498">
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker4233"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="TriangleOutL">
-      <path
-         transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         id="path4235" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker4755"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="TriangleOutL">
-      <path
-         transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         id="path4757" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="Arrow1Lend"
-       style="overflow:visible;"
-       inkscape:isstock="true">
-      <path
-         id="path4164"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow2Lend"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="Arrow2Lend"
-       style="overflow:visible;"
-       inkscape:isstock="true">
-      <path
-         id="path4182"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
-         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         transform="scale(1.1) rotate(180) translate(1,0)" />
-    </marker>
-  </defs>
-  <sodipodi:namedview
-     inkscape:window-height="838"
-     inkscape:window-width="1440"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     id="base"
-     showgrid="true"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:zoom="0.5"
-     inkscape:cx="357.82213"
-     inkscape:cy="459.29481"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:current-layer="svg4152"
-     inkscape:window-maximized="1"
-     objecttolerance="20">
-    <sodipodi:guide
-       orientation="horizontal"
-       position="200"
-       id="guide5596"
-       inkscape:locked="false" />
-    <inkscape:grid
-       type="xygrid"
-       id="grid3430"
-       empspacing="50" />
-    <sodipodi:guide
-       position="550,1000"
-       orientation="0,1"
-       id="guide4169"
-       inkscape:locked="false" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata5594">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+   viewBox="0 0 1000 1000">
   <path
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.85045242;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     inkscape:connector-curvature="0"
-     id="path3953"
      d="m 423.17675,667.08943 c -166.18084,0 -301.7205,-135.54038 -301.7205,-301.72044 0,-166.18306 135.53894,-301.72646 301.7205,-301.72646 166.18083,0 301.72496,135.54413 301.72496,301.72646 0,166.17932 -135.54413,301.72044 -301.72496,301.72044"
      class="fil0 str0" />
   <polyline
      transform="matrix(74.462113,0,0,74.462113,95.03115,37.217434)"
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:0.709741;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     id="polyline3955"
      points="10.4788,11.2768 7.48502,7.2687 6.43703,8.05147 9.43078,12.0595 "
      class="fil0 str1" />
   <path
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     inkscape:connector-curvature="0"
-     id="path3957"
      d="m 797.26695,935.19304 c 11.8548,15.876 34.55109,19.16526 50.42506,7.30567"
      class="fil0 str1" />
   <line
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     id="line3959"
      y2="927.32996"
      x2="868"
      y1="942.49811"
@@ -150,30 +25,21 @@
      class="fil0 str1" />
   <path
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:52.8488121;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     inkscape:connector-curvature="0"
-     id="path3961"
      d="m 868,927.33018 c 15.87398,-11.85822 19.16193,-34.54486 7.30397,-50.41866"
      class="fil0 str1" />
   <path
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke-width:24.31917572;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     inkscape:connector-curvature="0"
-     id="path3963"
      d="m 423.17675,612.99199 c -136.3818,0 -247.623,-111.2412 -247.623,-247.623 0,-136.38854 111.2412,-247.62304 247.623,-247.62304 136.38703,0 247.62299,111.2345 247.62299,247.62304 0,136.3818 -111.23596,247.623 -247.62299,247.623"
      class="fil0 str2" />
   <g
      transform="matrix(35.155889,0,0,35.155889,68.928018,24.115819)"
-     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-     id="_204789840">
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
     <path
-       inkscape:connector-curvature="0"
        d="m 5.56627,8.61685 h 6.94087 c 0.232047,0 0.421825,0.189826 0.421825,0.421825 v 1.45724 c 0,0.231999 -0.189826,0.421825 -0.421825,0.421825 H 5.56627 c -0.231999,0 -0.421825,-0.189826 -0.421825,-0.421825 v -1.45724 c 0,-0.231999 0.189826,-0.421825 0.421825,-0.421825 z"
-       class="fil1"
-       id="_202924976" />
+       class="fil1" />
     <path
        style="fill-rule:nonzero"
-       inkscape:connector-curvature="0"
        d="M 11.5375,13.5364 V 5.99821 l 3.76907,3.76912 z m 0,-3.76907 m 1.88451,-1.88456 m 0,3.76907"
-       class="fil2"
-       id="_205281080" />
+       class="fil2" />
   </g>
 </svg>

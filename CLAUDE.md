@@ -26,7 +26,7 @@ SVG uses (0,0) at the **top-left** with y increasing **downward**. This is the o
 
 ### Molecule representation
 
-- Use a hexagon for benzene rings with a thin stroke (e.g. stroke-width 24-28)
+- Use a hexagon for benzene rings with a thin stroke
 - Prefer an aromatic circle inside the hexagon over Kekulé double bonds
 - The aromatic circle should have the same stroke-width as the hexagon
 - Add substituent bonds extending from vertices to make it look more molecular
@@ -35,6 +35,25 @@ SVG uses (0,0) at the **top-left** with y increasing **downward**. This is the o
 - Substituent bonds on a hexagon must go along the **radial direction** (from center through vertex, outward), making 120° with both adjacent edges. Never use edge prolongation (which gives 180° with one edge and 60° with the other)
 - For a 30° zigzag chain (bonds at 30° from horizontal), use a **flat-side hexagon** (vertices at 30°, 90°, 150°, 210°, 270°, 330°) and attach the chain at the 30° vertex along its radial direction (121, -70)
 - All molecule lines within an icon (hexagon edges, bonds, aromatic circle) should use the same stroke-width for consistency
+- **Stroke-width scales with bond length**: use `stroke-width ≈ bond_length / 6`. Examples: bond 150 → stroke 26, bond 140 → stroke 24, bond 217 → stroke 36. Larger molecules get thicker lines so they look visually balanced
+
+### Arrows
+
+Arrows are filled shapes (`stroke="none"`) composed of a rectangular shaft and a triangular head. All single arrows must use these consistent dimensions:
+
+- **Shaft width**: 50 units (x from 475 to 525, centered on x=500)
+- **Head width**: 240 units (x from 380 to 620)
+- **Head height**: 150 units (distance from wing baseline to tip)
+
+Example downward arrow path: `M 475,290 L 475,570 L 380,570 L 500,720 L 620,570 L 525,570 L 525,290 Z` — the shaft runs from y=290 to y=570, and the head from y=570 to y=720.
+
+The shaft length varies per icon to fill available space, but the head dimensions (width 240, height 150) must stay constant across all icons.
+
+For **bidirectional arrows** (e.g. converter icon), use narrower arrows side by side: shaft width 40, head width 180, head height 130.
+
+### Text labels
+
+All chemical text labels (CCC, CCCC, .mol, .smi, .sdf) must use **font-size 280**, `font-family="sans-serif"`, `font-weight="bold"`, `text-anchor="middle"`, and `stroke="none"`.
 
 ### Mass spectra
 
