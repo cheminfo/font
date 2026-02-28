@@ -25089,19 +25089,49 @@
       ...props,
       children: [
         title ? /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("title", { id: titleId, children: title }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", { stroke: "none", d: "M118 730V80h24v650Z" }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
           "path",
           {
             fill: "none",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 29.709,
-            d: "M52 330.1c41.584-2.198 64.755 18.303 95.99 52.087 48.583 52.551 59.88 34.243 151.616 54.681C412.72 462.07 493.282 547.111 542.454 632.256c24.59 42.578 34.115 39.736 67.116 3.409C727.599 505.73 800.05 469.199 952 454.837",
-            className: "fil0 str0",
-            clipRule: "evenodd",
-            imageRendering: "optimizeQuality",
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision"
+            strokeWidth: 36,
+            d: "m80 145 50-80 50 80"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", { stroke: "none", d: "M118 718h832v24H118Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 36,
+            d: "m885 690 70 40-70 40"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+          "path",
+          {
+            fill: "none",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 28,
+            d: "M160 322c35-2 55 15 81 44 41 44 51 29 128 46 95 21 163 93 205 165 21 36 29 34 57 3 99-108 160-139 289-151"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+          "text",
+          {
+            x: 550,
+            y: 880,
+            stroke: "none",
+            fontFamily: "sans-serif",
+            fontSize: 160,
+            fontWeight: "bold",
+            textAnchor: "middle",
+            children: "pH"
           }
         )
       ]
