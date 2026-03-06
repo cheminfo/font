@@ -1,0 +1,25 @@
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- ".mol" text at the top -->
+  <text
+     x="500" y="250"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="280"
+     stroke="none">.mol</text>
+  <!-- Downward arrow -->
+  <path
+     d="M 475,340 L 475,460 L 380,460 L 500,610 L 620,460 L 525,460 L 525,340 Z"
+     stroke="none" />
+  <!-- Benzene ring with aromatic circle and substituent bonds -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="26">
+    <polygon points="500,650 630,725 630,875 500,950 370,875 370,725" />
+    <circle cx="500" cy="800" r="71" />
+    <line x1="630" y1="725" x2="760" y2="650" />
+    <line x1="370" y1="875" x2="240" y2="950" />
+  </g>
+</svg>
