@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.0](https://github.com/cheminfo/font/compare/v1.21.0...v1.22.0) (2026-03-06)
+
+
+### Features
+
+* add molfile-to-structure ([#72](https://github.com/cheminfo/font/issues/72)) ([3b0e52c](https://github.com/cheminfo/font/commit/3b0e52c5718a52c3702ca7417e2426f9ee2c329e))
+
 ## [1.21.0](https://github.com/cheminfo/font/compare/v1.20.0...v1.21.0) (2026-03-06)
 
 
