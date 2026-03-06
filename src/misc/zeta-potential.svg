@@ -1,0 +1,72 @@
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+
+  <!-- Central charged particle (outline) -->
+  <circle cx="500" cy="350" r="100" fill="none" stroke-width="22"
+    stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Minus signs inside particle (surface charge) -->
+  <!-- 0° -->
+  <line x1="539" y1="350" x2="561" y2="350" stroke-width="14" stroke-linecap="round" />
+  <!-- 72° -->
+  <line x1="505" y1="297" x2="527" y2="297" stroke-width="14" stroke-linecap="round" />
+  <!-- 144° -->
+  <line x1="449" y1="318" x2="471" y2="318" stroke-width="14" stroke-linecap="round" />
+  <!-- 216° -->
+  <line x1="449" y1="382" x2="471" y2="382" stroke-width="14" stroke-linecap="round" />
+  <!-- 288° -->
+  <line x1="505" y1="403" x2="527" y2="403" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Stern layer boundary (tight dashes) -->
+  <circle cx="500" cy="350" r="185" fill="none" stroke-width="14"
+    stroke-linecap="round" stroke-dasharray="10,12" />
+
+  <!-- Plus signs in Stern layer (counter-ions at r≈142) -->
+  <!-- 0° (642, 350) -->
+  <line x1="629" y1="350" x2="655" y2="350" stroke-width="14" stroke-linecap="round" />
+  <line x1="642" y1="337" x2="642" y2="363" stroke-width="14" stroke-linecap="round" />
+  <!-- 60° (571, 227) -->
+  <line x1="558" y1="227" x2="584" y2="227" stroke-width="14" stroke-linecap="round" />
+  <line x1="571" y1="214" x2="571" y2="240" stroke-width="14" stroke-linecap="round" />
+  <!-- 120° (429, 227) -->
+  <line x1="416" y1="227" x2="442" y2="227" stroke-width="14" stroke-linecap="round" />
+  <line x1="429" y1="214" x2="429" y2="240" stroke-width="14" stroke-linecap="round" />
+  <!-- 180° (358, 350) -->
+  <line x1="345" y1="350" x2="371" y2="350" stroke-width="14" stroke-linecap="round" />
+  <line x1="358" y1="337" x2="358" y2="363" stroke-width="14" stroke-linecap="round" />
+  <!-- 240° (429, 473) -->
+  <line x1="416" y1="473" x2="442" y2="473" stroke-width="14" stroke-linecap="round" />
+  <line x1="429" y1="460" x2="429" y2="486" stroke-width="14" stroke-linecap="round" />
+  <!-- 300° (571, 473) -->
+  <line x1="558" y1="473" x2="584" y2="473" stroke-width="14" stroke-linecap="round" />
+  <line x1="571" y1="460" x2="571" y2="486" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Slipping plane / diffuse layer boundary (wider dashes) -->
+  <circle cx="500" cy="350" r="290" fill="none" stroke-width="14"
+    stroke-linecap="round" stroke-dasharray="28,16" />
+
+  <!-- Mixed ions in diffuse layer (at r≈235) -->
+  <!-- 30° (704, 232) + -->
+  <line x1="691" y1="232" x2="717" y2="232" stroke-width="14" stroke-linecap="round" />
+  <line x1="704" y1="219" x2="704" y2="245" stroke-width="14" stroke-linecap="round" />
+  <!-- 90° (500, 115) − -->
+  <line x1="487" y1="115" x2="513" y2="115" stroke-width="14" stroke-linecap="round" />
+  <!-- 150° (296, 232) + -->
+  <line x1="283" y1="232" x2="309" y2="232" stroke-width="14" stroke-linecap="round" />
+  <line x1="296" y1="219" x2="296" y2="245" stroke-width="14" stroke-linecap="round" />
+  <!-- 210° (296, 468) − -->
+  <line x1="283" y1="468" x2="309" y2="468" stroke-width="14" stroke-linecap="round" />
+  <!-- 270° (500, 585) + -->
+  <line x1="487" y1="585" x2="513" y2="585" stroke-width="14" stroke-linecap="round" />
+  <line x1="500" y1="572" x2="500" y2="598" stroke-width="14" stroke-linecap="round" />
+  <!-- 330° (704, 468) + -->
+  <line x1="691" y1="468" x2="717" y2="468" stroke-width="14" stroke-linecap="round" />
+  <line x1="704" y1="455" x2="704" y2="481" stroke-width="14" stroke-linecap="round" />
+
+  <!-- ζ label at bottom -->
+  <text x="500" y="870" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="250" stroke="none">ζ</text>
+
+</svg>
