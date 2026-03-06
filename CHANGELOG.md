@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/cheminfo/font/compare/v1.20.0...v1.21.0) (2026-03-06)
+
+
+### Features
+
+* add zeta-potential ([#70](https://github.com/cheminfo/font/issues/70)) ([9ec947e](https://github.com/cheminfo/font/commit/9ec947ea7177cd02173273a575b543511979c639))
+
 ## [1.20.0](https://github.com/cheminfo/font/compare/v1.19.0...v1.20.0) (2026-02-28)
 
 
