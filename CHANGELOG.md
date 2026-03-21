@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.0](https://github.com/cheminfo/font/compare/v1.22.0...v1.23.0) (2026-03-21)
+
+
+### Features
+
+* add DOI logo ([#74](https://github.com/cheminfo/font/issues/74)) ([17d6386](https://github.com/cheminfo/font/commit/17d6386043787d33c3001ce64594a143d8ea0524))
+
 ## [1.22.0](https://github.com/cheminfo/font/compare/v1.21.0...v1.22.0) (2026-03-06)
 
 
