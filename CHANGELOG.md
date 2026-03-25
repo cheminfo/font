@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.0](https://github.com/cheminfo/font/compare/v1.23.0...v1.24.0) (2026-03-25)
+
+
+### Features
+
+* add nb-different-hs and nb-different-signals icons ([#76](https://github.com/cheminfo/font/issues/76)) ([66aa325](https://github.com/cheminfo/font/commit/66aa3258df094a945f544b1a7cbda674def616bf))
+
 ## [1.23.0](https://github.com/cheminfo/font/compare/v1.22.0...v1.23.0) (2026-03-21)
 
 
