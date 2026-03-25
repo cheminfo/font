@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
+  <!-- Propan-1-ol molecule: CH₃-CH₂-CH₂-OH with numbered H environments -->
+
+  <!-- Zigzag backbone (bond length ~260, stroke 43) -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="43"
+    d="M 80,460 L 305,330 L 530,460 L 755,330"/>
+
+  <!-- OH label at oxygen end -->
+  <text x="800" y="355" font-family="sans-serif" font-size="100" font-weight="bold" stroke="none">OH</text>
+
+  <!-- Numbered H environment labels -->
+  <!-- 1: CH₃ (3H) at C3, below vertex -->
+  <text x="80" y="610" font-family="sans-serif" font-size="140" font-weight="bold" stroke="none" text-anchor="middle">1</text>
+
+  <!-- 2: CH₂ (2H) at C2, above vertex -->
+  <text x="305" y="240" font-family="sans-serif" font-size="140" font-weight="bold" stroke="none" text-anchor="middle">2</text>
+
+  <!-- 3: CH₂ (2H) at C1, below vertex -->
+  <text x="530" y="610" font-family="sans-serif" font-size="140" font-weight="bold" stroke="none" text-anchor="middle">3</text>
+
+  <!-- 4: OH (1H) at O, above vertex -->
+  <text x="755" y="240" font-family="sans-serif" font-size="140" font-weight="bold" stroke="none" text-anchor="middle">4</text>
+
+  <!-- Count at bottom -->
+  <text x="430" y="870" font-family="sans-serif" font-size="180" font-weight="bold" stroke="none" text-anchor="middle">= 4</text>
+</svg>
