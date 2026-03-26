@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.0](https://github.com/cheminfo/font/compare/v1.24.0...v1.25.0) (2026-03-26)
+
+
+### Features
+
+* add fragment-fingerprints icon ([#78](https://github.com/cheminfo/font/issues/78)) ([0c8bba3](https://github.com/cheminfo/font/commit/0c8bba347c22f67a4852a0f0850796125d5645fc))
+
 ## [1.24.0](https://github.com/cheminfo/font/compare/v1.23.0...v1.24.0) (2026-03-25)
 
 
