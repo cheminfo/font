@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.26.0](https://github.com/cheminfo/font/compare/v1.25.0...v1.26.0) (2026-04-13)
+
+
+### Features
+
+* **mass:** add mixture icon ([#82](https://github.com/cheminfo/font/issues/82)) ([16b5630](https://github.com/cheminfo/font/commit/16b5630380b4894197d27f2d6dbd36dd61a05fc5))
+* **mass:** add peaks-table icon ([#81](https://github.com/cheminfo/font/issues/81)) ([d6ff842](https://github.com/cheminfo/font/commit/d6ff842428d17a6310342f75f68f95efd2f63767))
+* **mass:** add spectra-list icon ([#80](https://github.com/cheminfo/font/issues/80)) ([211b44e](https://github.com/cheminfo/font/commit/211b44ef55bdab130dd6aac239a89a9b82b520c6))
+
 ## [1.25.0](https://github.com/cheminfo/font/compare/v1.24.0...v1.25.0) (2026-03-26)
 
 
