@@ -1,0 +1,27 @@
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Table outline -->
+  <rect x="30" y="50" width="940" height="900" rx="30" ry="30"
+    fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/>
+  <!-- Row dividers -->
+  <line x1="30" y1="275" x2="970" y2="275" stroke-linecap="round" stroke-width="36"/>
+  <line x1="30" y1="500" x2="970" y2="500" stroke-linecap="round" stroke-width="36"/>
+  <line x1="30" y1="725" x2="970" y2="725" stroke-linecap="round" stroke-width="36"/>
+  <!-- Column divider -->
+  <line x1="400" y1="50" x2="400" y2="950" stroke-linecap="round" stroke-width="36"/>
+  <!-- Row 1: mini peak (m/z) + intensity bar -->
+  <line x1="145" y1="255" x2="145" y2="75"  fill="none" stroke-linecap="round" stroke-width="34"/>
+  <rect x="435" y="122" width="465" height="80" rx="20" ry="20" stroke="none"/>
+  <!-- Row 2 -->
+  <line x1="295" y1="480" x2="295" y2="300" fill="none" stroke-linecap="round" stroke-width="34"/>
+  <rect x="435" y="347" width="295" height="80" rx="20" ry="20" stroke="none"/>
+  <!-- Row 3 -->
+  <line x1="180" y1="705" x2="180" y2="525" fill="none" stroke-linecap="round" stroke-width="34"/>
+  <rect x="435" y="572" width="385" height="80" rx="20" ry="20" stroke="none"/>
+  <!-- Row 4 -->
+  <line x1="325" y1="930" x2="325" y2="750" fill="none" stroke-linecap="round" stroke-width="34"/>
+  <rect x="435" y="797" width="225" height="80" rx="20" ry="20" stroke="none"/>
+</svg>
