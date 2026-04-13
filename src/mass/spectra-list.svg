@@ -1,0 +1,48 @@
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Row 1: miniature mass spectrum -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 30 320 L 920 320"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 885 292 L 935 320"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 935 320 L 885 348"/>
+  <line x1="90"  y1="320" x2="90"  y2="80"  fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="240" y1="320" x2="240" y2="170" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="360" y1="320" x2="360" y2="40"  fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="480" y1="320" x2="480" y2="140" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="600" y1="320" x2="600" y2="60"  fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="720" y1="320" x2="720" y2="190" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="850" y1="320" x2="850" y2="110" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <!-- Row 2 -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 30 640 L 920 640"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 885 612 L 935 640"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 935 640 L 885 668"/>
+  <line x1="110" y1="640" x2="110" y2="480" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="220" y1="640" x2="220" y2="380" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="340" y1="640" x2="340" y2="500" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="470" y1="640" x2="470" y2="360" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="580" y1="640" x2="580" y2="440" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="700" y1="640" x2="700" y2="380" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="830" y1="640" x2="830" y2="510" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <!-- Row 3 -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 30 960 L 920 960"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 885 932 L 935 960"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+    d="M 935 960 L 885 988"/>
+  <line x1="80"  y1="960" x2="80"  y2="780" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="210" y1="960" x2="210" y2="700" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="340" y1="960" x2="340" y2="830" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="470" y1="960" x2="470" y2="690" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="590" y1="960" x2="590" y2="820" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="710" y1="960" x2="710" y2="750" fill="none" stroke-linecap="round" stroke-width="32"/>
+  <line x1="840" y1="960" x2="840" y2="680" fill="none" stroke-linecap="round" stroke-width="32"/>
+</svg>
