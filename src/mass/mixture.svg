@@ -1,0 +1,25 @@
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Standard mass spectrum axis (from impurities) -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 42.643,722.441 L 932.372,722.441"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 894.811,683.405 L 946.433,722.441"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="45.698"
+    d="M 946.433,722.441 L 894.811,761.664"/>
+  <text x="716" y="953" text-anchor="middle" font-family="sans-serif" font-size="180" stroke="none">m/z</text>
+  <!-- Compound A: first isotope cluster (solid peaks) -->
+  <line x1="120" y1="722" x2="120" y2="310" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="220" y1="722" x2="220" y2="160" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="320" y1="722" x2="320" y2="260" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="420" y1="722" x2="420" y2="470" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <!-- Separator gap implied by spacing -->
+  <!-- Compound B: second isotope cluster (solid peaks) -->
+  <line x1="540" y1="722" x2="540" y2="500" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="640" y1="722" x2="640" y2="110" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="740" y1="722" x2="740" y2="220" fill="none" stroke-linecap="round" stroke-width="36"/>
+  <line x1="840" y1="722" x2="840" y2="430" fill="none" stroke-linecap="round" stroke-width="36"/>
+</svg>
