@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.27.0](https://github.com/cheminfo/font/compare/v1.26.0...v1.27.0) (2026-04-23)
+
+
+### Features
+
+* add tex icon ([#84](https://github.com/cheminfo/font/issues/84)) ([3c82baf](https://github.com/cheminfo/font/commit/3c82bafce3fac30cc171838d728163fdea9d68c5))
+
 ## [1.26.0](https://github.com/cheminfo/font/compare/v1.25.0...v1.26.0) (2026-04-13)
 
 
