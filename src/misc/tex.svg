@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" viewBox="0 0 1000 1000">
+  <!-- Classic TeX logo: T and X at baseline, E lowered by ~0.5 x-height -->
+  <text x="500" y="610" font-family="serif" font-size="500" font-weight="bold"
+        stroke="none" text-anchor="middle">
+    <tspan>T</tspan><tspan dy="125">E</tspan><tspan dy="-125">X</tspan>
+  </text>
+</svg>
