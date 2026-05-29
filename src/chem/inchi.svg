@@ -1,0 +1,17 @@
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Benzene ring (flat-top hexagon, center 500,190, side 160) -->
+  <polygon fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="26"
+    points="660,190 580,51 420,51 340,190 420,329 580,329"/>
+  <!-- Aromatic circle (radius 83) -->
+  <circle fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="26"
+    cx="500" cy="190" r="83"/>
+  <!-- Downward arrow -->
+  <path stroke="none"
+    d="M 475,356 L 475,565 L 380,565 L 500,715 L 620,565 L 525,565 L 525,356 Z"/>
+  <!-- InChI label -->
+  <text x="500" y="940" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="280" stroke="none">InChI</text>
+</svg>
