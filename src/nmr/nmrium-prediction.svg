@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <!-- NMRium logo -->
+  <g transform="translate(-13.88,-43.33) scale(7.289)">
+    <path fill="#ea580c" stroke="none" fill-rule="evenodd"
+      d="M24.1,10.06V78.23A13.36,13.36,0,0,0,28,87.7h0a13.39,13.39,0,0,0,22.85-9.47V55.42h-.06A31.61,31.61,0,0,1,60.1,33l0,0a31.64,31.64,0,0,1,44.79,0l0,0a31.61,31.61,0,0,1,9.31,22.4v18.7H95.9V55.42A13.36,13.36,0,0,0,92,46h0a13.44,13.44,0,0,0-18.93,0l0,0a13.26,13.26,0,0,0-3.82,8.19V78.23a31.7,31.7,0,0,1-54.12,22.42l0,0a31.61,31.61,0,0,1-9.31-22.4V10.06Z"/>
+  </g>
+
+  <!-- Benzene ring: prediction starts from a structure -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="44"
+    d="M745,560 L909,655 L909,845 L745,940 L581,845 L581,655 Z"/>
+  <circle cx="745" cy="750" r="80" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="44"/>
+</svg>
