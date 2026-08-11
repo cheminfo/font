@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.28.0](https://github.com/cheminfo/font/compare/v1.27.0...v1.28.0) (2026-08-11)
+
+
+### Features
+
+* add inchi icon ([#86](https://github.com/cheminfo/font/issues/86)) ([ac7ba81](https://github.com/cheminfo/font/commit/ac7ba8126dd6766ff6559f89320805cde8890994))
+* add nmrium prediction icon ([#88](https://github.com/cheminfo/font/issues/88)) ([2d679e7](https://github.com/cheminfo/font/commit/2d679e74f9a9c70bc139c2775cf6acacd90f75f6))
+* add nmrium simulation icon ([#89](https://github.com/cheminfo/font/issues/89)) ([e167473](https://github.com/cheminfo/font/commit/e16747328b9fca8b5811bd1dd7dcd5bcd4bc7021))
+
 ## [1.27.0](https://github.com/cheminfo/font/compare/v1.26.0...v1.27.0) (2026-04-23)
 
 
