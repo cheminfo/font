@@ -1,20 +1,25 @@
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg stroke="currentColor" fill="currentColor"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="1000px"
-	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000">
-<g>
-
-		<path fill="none"  stroke-width="43.2546" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
-		M529.4,586.817H47.701l240.852-372.074L529.4,586.817L529.4,586.817z"/>
-
-		<path fill="none"  stroke-width="43.2546" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" d="
-		M951.455,411.419H469.751L710.604,39.344L951.455,411.419L951.455,411.419z"/>
-
-		<line fill="none"  stroke-width="43.2546" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="290.169" y1="212.852" x2="710.378" y2="38.395"/>
-
-		<line fill="none"  stroke-width="43.2546" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="534.877" y1="586.905" x2="949.902" y2="415.042"/>
-
-		<line fill="none"  stroke-width="43.2546" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="50.906" y1="585.358" x2="472.405" y2="409.6"/>
-</g>
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Benzene ring with aromatic circle and substituent bonds -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="26">
+    <polygon points="500,50 630,125 630,275 500,350 370,275 370,125" />
+    <circle cx="500" cy="200" r="71" />
+    <line x1="630" y1="125" x2="760" y2="50" />
+    <line x1="370" y1="275" x2="240" y2="350" />
+  </g>
+  <!-- Downward arrow -->
+  <path
+     d="M 475,430 L 475,570 L 380,570 L 500,720 L 620,570 L 525,570 L 525,430 Z"
+     stroke="none" />
+  <!-- "DBE ?" question at the bottom -->
+  <text
+     x="500" y="950"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="280"
+     stroke="none">DBE ?</text>
 </svg>
