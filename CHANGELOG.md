@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.29.0](https://github.com/cheminfo/font/compare/v1.28.0...v1.29.0) (2026-11-02)
+
+
+### Features
+
+* add chatbot icon ([#91](https://github.com/cheminfo/font/issues/91)) ([bde3d55](https://github.com/cheminfo/font/commit/bde3d5575f4cd73c92b608e779b5286e9e1b1207))
+* add unsaturation tool icon and redesign exercise icons ([#90](https://github.com/cheminfo/font/issues/90)) ([394318e](https://github.com/cheminfo/font/commit/394318e544f62806bf534e43f2c2b86295cbf091))
+
 ## [1.28.0](https://github.com/cheminfo/font/compare/v1.27.0...v1.28.0) (2026-08-11)
 
 
