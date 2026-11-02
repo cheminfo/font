@@ -1,0 +1,20 @@
+<svg stroke="currentColor" fill="currentColor"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000">
+  <!-- Speech bubble forming the robot head, tail at bottom left -->
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" stroke-width="44"
+    d="M 260,210 H 740 A 150,150 0 0 1 890,360 V 600 A 150,150 0 0 1 740,750 H 420 L 230,930 L 300,750 H 260 A 150,150 0 0 1 110,600 V 360 A 150,150 0 0 1 260,210 Z"/>
+  <!-- Antenna -->
+  <line stroke-linecap="round" stroke-width="44" x1="500" y1="210" x2="500" y2="120"/>
+  <circle stroke="none" cx="500" cy="85" r="45"/>
+  <!-- Ears -->
+  <rect stroke="none" x="40" y="400" width="60" height="160" rx="25"/>
+  <rect stroke="none" x="900" y="400" width="60" height="160" rx="25"/>
+  <!-- Eyes -->
+  <circle stroke="none" cx="370" cy="410" r="62"/>
+  <circle stroke="none" cx="630" cy="410" r="62"/>
+  <!-- Smile -->
+  <path fill="none" stroke-linecap="round" stroke-width="44" d="M 380,565 Q 500,645 620,565"/>
+</svg>
